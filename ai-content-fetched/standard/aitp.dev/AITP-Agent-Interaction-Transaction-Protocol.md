@@ -1,0 +1,184 @@
+---
+title: **AITP: 智能体交互与事务协议**
+
+解释：
+- Agent = 智能体（AI技术语境中的标准译法）
+- Interaction = 交互
+- Transaction = 事务（协议/系统语境中的准确译法）
+- Protocol = 协议
+source: aitp.dev
+url: https://aitp.dev
+date: 2026-06-22
+category: standard/aitp.dev
+translated: true
+fetched_at: 2026-06-22T17:38:04.928766
+---
+# **AITP: 智能体交互与事务协议**
+
+解释：
+- Agent = 智能体（AI技术语境中的标准译法）
+- Interaction = 交互
+- Transaction = 事务（协议/系统语境中的准确译法）
+- Protocol = 协议
+
+**来源**: aitp.dev | **日期**: 2026-06-22
+
+---
+
+
+Overview
+
+Version: 0.1.0
+
+Status: Draft
+
+AITP is a spec in progress and we are open to comments, feedback, and contributions!
+
+We are simultaneously writing this spec, integrating AITP support into the
+NEAR AI Hub
+, and building
+AITP-compatible
+agents
+to inform how the protocol should change before v1.0.
+
+Introduction
+​
+
+AITP enables AI agents to communicate securely across trust boundaries while providing extensible mechanisms for structured interactions.
+
+Imagine this scenario:
+You ask your AI assistant to book a flight to Miami. Instead of your assistant needing to navigate airline websites, it can directly communicate with airline booking agents using a standardized protocol. Your assistant and the airline agent exchange structured data about flight options, passenger details, and payment information—all using the same protocol regardless of which airline you choose.
+
+Key Benefits of AITP:
+
+Universal Communication
+: Any AITP-compatible agents can interact, regardless of who built them
+Structured Data Exchange
+: Beyond just text, agents can share UI elements, forms, and payment requests
+Trust Boundary Crossing
+: Secure interaction between agents representing different entities
+Extensible Capabilities
+: New interaction types can be added through the capability system
+
+We envision a future in which most online interactions are conducted by AI agents representing people, businesses, and government entities, communicating with users and with each other. These agents will combine the scale and cost benefits of current online services with the flexibility and personalization of human interactions. Just as HTTP and HTML enable any web browser to visit any website, AITP provides a standard for agent-to-agent and user-to-agent communication, regardless of where those agents run or how they're built.
+
+For a deeper exploration of the problems AITP aims to solve and our vision for the future of agent interactions, see the
+Vision
+page.
+
+Protocol Overview
+​
+
+AITP consists of two pieces:
+
+A core protocol for communicating with agents in
+Chat Threads
+, inspired by and largely compatible with the OpenAI Assistant/Threads API.  Read more about:
+Why Threads?
+Thread Transports
+Thread Specification
+An extensible set of
+Capabilities
+communicated over those chat threads to indicate that the client of an agent (i.e. a user interface or another agent) can support useful standardized features like multimodal input, generative UI, payments, and/or human-in-the-loop attestations.  Read more about:
+What is a Capability?
+Capability Exchange
+Capability List
+
+Why Threads?
+Thread Transports
+Thread Specification
+
+What is a Capability?
+Capability Exchange
+Capability List
+
+These components work together: agents communicate via
+Threads
+, which are transmitted using a
+Transport
+, and exchange structured data using
+Capabilities
+when needed for specific operations.
+
+AITP vs...
+​
+
+Protocol Type
+Purpose
+When to Use
+AITP Relationship
+Multi-agent orchestration
+(CrewAI, Autogen, LangGraph)
+Coordinate agents with same owner
+Internal agent workflows
+Complementary - can use for internal orchestration while using AITP for external communication
+Service metadata protocols
+(MCP, Bitte, llms.txt)
+Help agents use existing APIs
+Accessing traditional services
+Complementary - service agents may use MCP internally while offering AITP externally
+Browser use agents
+(ChatGPT Operator, Proxy, Rabbit LAM)
+Navigate existing websites
+Bridging to current web
+Transitional - useful until AITP adoption grows
+
+While these frameworks and AITP all involve agent communication, AITP specifically addresses interactions across trust boundaries, like a user's agent talking to a business's agent.
+
+There's lots more on this subject on the
+Vision
+page.
+
+How do I get involved?
+​
+
+Join our Telegram community
+:
+https://t.me/nearaialpha
+Build more agents
+: The more AITP-compatible agents there are, the more useful each agent will be.  Agents built on the
+NEAR AI Hub
+support all AITP features.
+Build AITP support into more AI agent frameworks and clients
+: We want every AI agent framework, hosting provider, and chat UI to support AITP.
+Contribute to the protocol
+: open an issue, pull request, or discussion on the
+AITP repo
+.
+
+If you're using AI development aids, the latest specification has been packaged up into
+aitp-repomix.txt
+, perfect for adding to your AI's context so it knows how to use AITP.
+
+Glossary
+​
+
+Term
+Definition
+Agent
+A software entity that uses AI to mimic human-like reasoning for a specific purpose
+Capability
+A standardized message format for a specific interaction type
+Thread
+A conversation between two or more agents and/or humans
+Transport
+A mechanism for transmitting natural language or AITP messages between agents
+Personal Assistant
+An agent that represents a user and interacts with service agents on their behalf
+Service Agent
+An agent that represents a business, service, or organization
+Discovery Agent
+An agent that helps find and connect with appropriate service agents
+Trust Boundary
+The separation between systems or agents with different security domains or owners
+Passthrough
+Pattern where agents forward AITP messages to other connected agents or users
+
+Introduction
+Protocol Overview
+AITP vs...
+How do I get involved?
+Glossary
+
+
+*原文请访问 [aitp.dev](https://aitp.dev)*

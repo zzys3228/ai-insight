@@ -1,11 +1,11 @@
 ---
 title: New to X?
 source: x.com
-url: https://x.com/sama
+url: https://x.com/geoffreyhinton
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T17:30:29.014904
+fetched_at: 2026-06-22T17:36:14.976059
 ---
 # New to X?
 
@@ -13,15 +13,24 @@ fetched_at: 2026-06-22T17:30:29.014904
 
 ---
 
-Sam Altman  
-@sama  
-2025年2月10日  
+Geoffrey Hinton
 
-不了，谢谢，但如果你想要的话，我们会以97.4亿美元的价格收购Twitter  
+@geoffreyhinton
 
-12K  
-17K  
-220K  
-34M
+2025年3月2日
 
-*原文请访问 [x.com](https://x.com/sama)*
+我认为埃隆·马斯克应该被英国皇家学会开除。不是因为他散布阴谋论和行纳粹礼，而是因为他正在对美国科学机构造成巨大的损害。现在让我们看看他是否真的相信言论自由。
+
+2.1K
+
+3.2K
+
+24K
+
+2M
+
+---
+
+**注：** Geoffrey Hinton 被称为"深度学习之父"或"AI教父"，是人工智能领域的权威学者。英国皇家学会（British Royal Society）是英国最具声望的科学学术机构。
+
+*原文请访问 [x.com](https://x.com/geoffreyhinton)*
