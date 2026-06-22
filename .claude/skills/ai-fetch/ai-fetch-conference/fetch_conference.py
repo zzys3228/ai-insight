@@ -144,12 +144,15 @@ def google_io_spa_extractor(html: str, soup: BeautifulSoup, url: str) -> Optiona
 
 def extract_google_io_sessions(html: str) -> Optional[str]:
     """Extract session data from Google I/O page"""
+    import html as html_module
     parts = []
 
+    # Unescape HTML entities
+    unescaped = html_module.unescape(html)
+
     # Pattern 1: Find sessions from data-analytic-event-params attributes
-    # Format: {"sessionName": "Google keynote", "sessionId": "google-keynote-1", ...}
     session_pattern = r'data-analytic-event-params=\'{"sessionName":\s*"([^"]+)",\s*"sessionId":\s*"([^"]+)",\s*"sessionCode":\s*"([^"]+)"'
-    matches = re.findall(session_pattern, html)
+    matches = re.findall(session_pattern, unescaped)
     if matches:
         sessions = []
         for name, session_id, code in matches:
@@ -163,8 +166,24 @@ def extract_google_io_sessions(html: str) -> Optional[str]:
             parts.append(format_google_io_sessions(sessions))
             print(f"    [Found {len(sessions)} sessions from analytics]")
 
-    # Pattern 2: Look for iodata.vars with PA_KEYNOTE_IDS for keynote info
-    iodata_match = re.search(r'window\.iodata\.vars\s*=\s*(\{[^;]+\})', html)
+    # Pattern 2: Extract detailed session data from embedded JSON
+    # Look for sessions array with event_title, event_long_description, etc.
+    session_detail_pattern = r'"event_title":"([^"]+)","event_short_description":"([^"]*)","event_long_description":"([^"]*)"'
+    detail_matches = re.findall(session_detail_pattern, unescaped)
+    if detail_matches and len(detail_matches) > 0:
+        parts.append(f"\n## 详细Sessions列表 ({len(detail_matches)}个)\n")
+        for i, (title, short_desc, long_desc) in enumerate(detail_matches[:20]):
+            if title:
+                parts.append(f"\n### {i+1}. {title}\n")
+                if short_desc:
+                    parts.append(f"{short_desc[:300]}")
+                if long_desc and long_desc != short_desc:
+                    parts.append(f"\n{long_desc[:500]}")
+        if len(detail_matches) > 20:
+            parts.append(f"\n\n... 还有 {len(detail_matches) - 20} 个sessions")
+
+    # Pattern 3: Look for iodata.vars with PA_KEYNOTE_IDS for keynote info
+    iodata_match = re.search(r'window\.iodata\.vars\s*=\s*(\{[^;]+\})', unescaped)
     if iodata_match:
         try:
             iodata = json.loads(iodata_match.group(1))
@@ -174,14 +193,14 @@ def extract_google_io_sessions(html: str) -> Optional[str]:
         except json.JSONDecodeError:
             pass
 
-    # Pattern 3: Extract topic IDs from the page
+    # Pattern 4: Extract topic IDs from the page
     topic_pattern = r'\{"id":(\d+),"name":"([^"]+)"\}'
-    topic_matches = re.findall(topic_pattern, html)
+    topic_matches = re.findall(topic_pattern, unescaped)
     if topic_matches:
         topics = [{'id': int(id), 'name': name} for id, name in topic_matches]
         unique_topics = {t['id']: t for t in topics}.values()
         parts.append(f"\n### 主题分类 ({len(unique_topics)}个)\n")
-        for t in list(unique_topics)[:20]:
+        for t in list(unique_topics)[:25]:
             parts.append(f"- {t['name']}")
 
     return '\n\n'.join(parts) if parts else None

@@ -108,9 +108,15 @@ class FetchDaily:
             elif cat_lower == 'person':
                 urls = [u for u in urls if u['section'] and u['section'].startswith('5.')]
             elif cat_lower == 'conference':
-                # 第2章AI大会 + 第一章含"大会"关键词的URL（如Google I/O、Google Cloud Next）
+                # 第2章AI大会 + 第一章含"大会"的 + 第一章中知名大会URL（如Google I/O、Google Cloud Next）
+                conference_urls = [
+                    'io.google', 'google-cloud-next', 'nvidia.com/gtc',
+                    'build.google', 'microsoft.com/build'
+                ]
                 urls = [u for u in urls if u['section'] and (
-                    u['section'].startswith('2.') or '大会' in u['section']
+                    u['section'].startswith('2.') or
+                    '大会' in u['section'] or
+                    any(cu in u['url'].lower() for cu in conference_urls)
                 )]
             else:
                 urls = [u for u in urls if cat_lower in u['section'].lower()]
@@ -440,7 +446,7 @@ class FetchDaily:
         ConferenceFetcher = import_fetcher('ai_fetch_conference', 'ConferenceFetcher')
         if not urls:
             urls = self.list_urls('conference')
-        fetcher = ConferenceFetcher()
+        fetcher = ConferenceFetcher(use_proxy=True)
         count = 0
         for item in urls:
             url = item['url']
@@ -448,7 +454,8 @@ class FetchDaily:
                 continue
             print(f"Fetching conference: {url}")
             try:
-                conf = fetcher.fetch_conference(url, item.get('section', 'unknown')[:20])
+                # Use fetch_with_subpages to get detailed session info
+                conf = fetcher.fetch_with_subpages(url, item.get('section', 'unknown')[:20], max_subpages=5)
                 md = fetcher.format_as_markdown(conf)
                 output_dir = Path(STORAGE_BASE) / 'conference' / conf.get('name', 'unknown')
                 output_dir.mkdir(parents=True, exist_ok=True)

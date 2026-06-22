@@ -453,5 +453,25 @@
     "url": "https://eccv2026.org",
     "error": "HTTPSConnectionPool(host='eccv2026.org', port=443)",
     "last_try": "2026-06-22T20:42:30.404039"
+  },
+  "957df3dca3af": {
+    "url": "https://qcon.infoq.cn",
+    "error": "Failed to fetch: 451",
+    "last_try": "2026-06-22T21:03:05.334253"
+  },
+  "394339a19a47": {
+    "url": "https://aicon.infoq.cn",
+    "error": "Failed to fetch: 451",
+    "last_try": "2026-06-22T21:03:05.617470"
+  },
+  "6988aaad9b18": {
+    "url": "https://gosim-lang.org",
+    "error": "HTTPSConnectionPool(host='gosim-lang.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
+    "last_try": "2026-06-22T21:02:14.646643"
+  },
+  "a133b45e8e44": {
+    "url": "https://www.intelligenceage.ai",
+    "error": "error",
+    "last_try": "2026-06-22T21:09:55.285550"
   }
 }

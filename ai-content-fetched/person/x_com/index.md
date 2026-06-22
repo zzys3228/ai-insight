@@ -1,124 +1,107 @@
 ---
 title: x.com
 source: x.com
-url: https://x.com/ylecun
+url: https://x.com/geoffreyhinton
 category: person
-fetched_at: 2026-06-22T20:50:20.585498
+fetched_at: 2026-06-22T20:56:35.676361
 ---
 
 # x.com
 
-[Log in](/i/jf/onboarding/web?mode=login)[Sign up](/i/jf/onboarding/web?mode=signup)
+[登录](/i/jf/onboarding/web?mode=login)[注册](/i/jf/onboarding/web?mode=signup)
 
-Yann LeCun
+杰弗里·辛顿
 
-26.4K posts
+153 条帖子
 
-[![](https://pbs.twimg.com/profile_banners/48008938/1642547502)](/ylecun/header_photo)
+[头像](/geoffreyhinton/photo)
 
-[![user avatar](https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_400x400.jpg)](/ylecun/photo)
+杰弗里·辛顿
 
-Yann LeCun
+@geoffreyhinton
 
-@ylecun
+深度学习
 
-Professor at NYU & Executive Chairman at AMI Labs.
-Ex-Chief AI Scientist at Meta.
-Researcher in AI, Machine Learning, Robotics, etc.
-ACM Turing Award Laureate.
+2019年1月加入
 
-New York
+28
 
-[yann.lecun.com](https://t.co/POp7IBHfXy)
+关注[/geoffreyhinton/following)][611.6K
 
-Joined June 2009
+粉丝](/geoffreyhinton/verified_followers)
 
-[787
+帖子帖子回复回复媒体媒体
 
-Following](/ylecun/following)[1.2M
+- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
 
-Followers](/ylecun/verified_followers)
+  [杰弗里·辛顿](https://x.com/geoffreyhinton)
 
-PostsPostsRepliesRepliesMediaMedia
+  [@geoffreyhinton](https://x.com/geoffreyhinton)
 
-* Pinned
+  2025年3月2日[/geoffreyhinton/status/1896277592325714330)
 
-  [![user avatar](https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg)](https://x.com/ylecun)
+  我认为埃隆·马斯克应该被开除出英国皇家学会。不是因为他传播阴谋论和行纳粹礼，而是因为他正在对美国科学机构造成巨大损害。现在让我们看看他是否真的相信言论自由。
 
-  [Yann LeCun](https://x.com/ylecun)
+  2.1K2.1K
 
-  [@ylecun](https://x.com/ylecun)
+  3.2K3.2K
 
-  [Nov 29, 2024](/ylecun/status/1862598063275061484)
+  24K24K
 
-  I do not write posts on X.
-  I tweet links to posts on other platforms.
-  I like and retweet (occasionally)
-  I comment on friends' tweets (rarely)
-  Follow me on...⬇️⬇️⬇️
+  [2M2M](/geoffreyhinton/status/1896277592325714330/quotes)
 
-  951951
+- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
 
-  113113
+  [杰弗里·辛顿](https://x.com/geoffreyhinton)
 
-  1.9K1.9K
+  [@geoffreyhinton](https://x.com/geoffreyhinton)
 
-  [1.7M1.7M](/ylecun/status/1862598063275061484/quotes)
-* [![user avatar](https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg)](https://x.com/ylecun)
+  2023年5月1日[/geoffreyhinton/status/1652993570721210372)
 
-  [Yann LeCun](https://x.com/ylecun)
+  在今天的《纽约时报》上，凯德·梅茨暗示我离开谷歌是为了批评谷歌。实际上，我离开是为了谈论AI的危险，而不用考虑这会对谷歌产生什么影响。谷歌的表现非常负责任。
 
-  [@ylecun](https://x.com/ylecun)
+  596596
 
-  [Jun 2, 2024](/ylecun/status/1797270661192155427)
+  2.8K2.8K
 
-  My opinion of [@elonmusk](https://x.com/elonmusk)
-  I like his cars (I own a 2015 S, and 2023 S), his rockets, his solar energy systems, and his satellite communication system.
-  I also like his positions on open source and patents.
-  But I very much disagree with him on a number of issues.
-  I disagree with Show more
+  15K15K
 
-  2.5K2.5K
+  [3M3M](/geoffreyhinton/status/1652993570721210372/quotes)
 
-  1.8K1.8K
+- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
 
-  17K17K
+  [杰弗里·辛顿](https://x.com/geoffreyhinton)
 
-  [2.7M2.7M](/ylecun/status/1797270661192155427/quotes)
-* [![user avatar](https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg)](https://x.com/ylecun)
+  [@geoffreyhinton](https://x.com/geoffreyhinton)
 
-  [Yann LeCun](https://x.com/ylecun)
+  2025年4月28日[/geoffreyhinton/status/1916916200442912980)
 
-  [@ylecun](https://x.com/ylecun)
+  AGI（通用人工智能）是我们这个时代最重要、也可能最危险的技术。OpenAI正确地认识到，这项技术值得强有力的结构和激励机制来确保其安全开发，而现在他们在试图改变这些结构和激励机制，这是错误的。
+  我们正在敦促... 显示更多
 
-  [May 27, 2024](/ylecun/status/1795219718837616775)
+  943943
 
-  Replying to [@elonmusk](https://x.com/elonmusk) [@bneiluj](https://x.com/bneiluj) and [@how\_many\_roads\_](https://x.com/how_many_roads_)
+  1.7K1.7K
 
-  Over 80 technical papers published since January 2022.
-  What about you?
+  9K9K
 
-  [![](https://pbs.twimg.com/card_img/2067171974426566656/lvTiO1Ls?format=jpg&name=orig)
+  [2.2M2.2M](/geoffreyhinton/status/1916916200442912980/quotes)
 
-  scholar.google.com
+- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
 
-  Yann LeCun
+  [杰弗里·辛顿](https://x.com/geoffreyhinton)
 
-  Executive Chairman AMI Labs & Jacob T Schwarz Professor, Courant Institute, New York University - Cited by 477,510 - AI - machine learning - computer vision - robotics - image compression](https://t.co/jvXvwGCZss)
+  [@geoffreyhinton](https://x.com/geoffreyhinton)
+
+  2025年4月28日[/geoffreyhinton/status/1916915980246389120)
+
+  我认同OpenAI的使命——"确保通用人工智能造福全人类"，我想阻止他们彻底破坏这一使命。
+  我签署了一封致@AGRobBonta和@DE_DOJ的新信，要求他们停止重组。(1/2)
 
   462462
 
-  737737
+  886886
 
-  16K16K
+  7.7K7
 
-  [983K983K](/ylecun/status/1795219718837616775/quotes)
-* [![user avatar](https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg)](https://x.com/ylecun)
-
-  [Yann LeCun](https://x.com/ylecun)
-
-  [@ylecun](https://x.com/ylecun)
-
-  [Jul 25, 2024](/ylecun/status/1816425693380481249)
-
-*原文: https://x.com/ylecun*
+*原文: https://x.com/geoffreyhinton*

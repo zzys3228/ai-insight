@@ -1,262 +1,2023 @@
 ---
-title: The AI SummitNew York
-source: newyork.theaisummit.com
-url: https://newyork.theaisummit.com
+title: CIIS2025第十四届中国智能产业大会
+source: ciis.caai.cn
+url: https://ciis.caai.cn
 date: 2026-06-22
 category: conference/2.1 AI产业生态峰会/2026
 translated: true
-fetched_at: 2026-06-22T20:13:28.082142
-content_sources: [{'type': 'official_website', 'url': 'https://newyork.theaisummit.com', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
+fetched_at: 2026-06-22T21:08:20.267273
+content_sources: [{'type': 'official_website', 'url': 'https://ciis.caai.cn', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
 ---
-# The AI SummitNew York
+# CIIS2025第十四届中国智能产业大会
 
-**来源**: newyork.theaisummit.com | **年份**: 2026 | **日期**: 2026-06-22
+**来源**: ciis.caai.cn | **年份**: 2026 | **日期**: 2026-06-22
 
 ---
 
-December 9-10, 2026 | Javits Center, New York
+EN
 
-The AI Summit
+大会回看
 
-New York
+大会云相册
 
-Turn AI Ambition into
+新闻报道
 
-Real-World Impact
+日程册下载
 
-For a decade, The AI Summit New York has been the trusted platform for enterprise leaders and tech innovators to explore and apply commercial AI. We unite influential minds, pioneering technologies, and practical insight, to transform theoretical discussions into tangible, profitable business outcomes.
+新闻报道
 
-This is where commercial AI comes to life.
+媒体聚焦丨第十四届中国智能产业大会，藏着AI落地的答案
 
-Register Your Interest
+CIIS2025丨双会龙城圆满收官，全景回顾精彩瞬间
 
-Explore sponsor opps
+人民日报丨2025第十四届中国智能产业大会、吴文俊人工智能创新大会在常州举行
 
-5000+ ATTENDEES
+CIIS2025圆桌对话丨在AI浪潮中打造独具特色的产业智能化升级之路
 
-10 STAGES OF CONTENT
+新华日报丨两大平台揭牌 4位院士加盟 常州发力人工智能赛道
 
-350+ SPEAKERS
+新华网丨2025第十四届中国智能产业大会、吴文俊人工智能创新大会在常州举行
 
-IMMERSIVE FEATURES
+共谋“人工智能+”高质量发展，2025第十四届中国智能产业大会与吴文俊人工智能创新大会在常州开幕
 
-VIP EXPERIENCES
+常州发布丨2025第十四届中国智能产业大会、吴文俊人工智能创新大会在常州举行
 
-CUTTING-EDGE AI DEMOS
+倒计时1天丨重磅嘉宾揭晓！CIIS2025邀您共赴思想盛宴
 
-START-UP & INVESTOR VILLAGE
+倒计时2天丨这份大会“宝藏日程”，请立即查收！
 
-The Industry Leaders Sharing Their Knowledge This Year
+CIIS2025专题会议预告丨破界向新：AI驱动的交叉融合与协同发展
 
-Unlock AI’s full potential at The AI Summit London, where theory becomes profitable application.
+AI大咖齐聚！共议「人工智能+」国家战略落地路径
 
-Aaron Rajan
+CIIS2025同期活动预告丨智链无限，AI重塑智慧医疗创新全链条
 
-Chief Digitial Information Officer & Global Vice President
+CIIS2025专题会议预告丨智能时代的虚实融合：3500亿的产业蓝海
 
-Unilever
+CIIS2025专题会议预告丨智能时代创新仪器研制：是使命也是机遇
 
-Elav Horwitz
+CIIS2025专题会议预告丨多模态融合技术解锁复杂场景认知
 
-Chief Innovation Officer
+CIIS2025专题会议预告丨数智原生时代，工业互联网创新发展向强向大
 
-WPP
+CIIS2025专题会议预告丨AI青年说：多元探索 以青促青
 
-Nadia Ivanova
+CIIS2025专题会议预告丨科技暖护全龄，产学研医共探智能康养新机遇
 
-Co-Founder & Chief Product Officer
+CIIS2025专题会议预告丨步入量产时代，具身智能感知与学习如何再突破
 
-Sparrow BioAcoustics
+CIIS2025专题会议预告丨释放基础模型潜能，跨进通用智能大门
 
-Robert Hayes
+CIIS2025专题会议预告丨智能驾驶×智慧物流：政策东风领航热门赛道
 
-Acting Chief AI Officer & Acting Chief Data Officer
+CIIS2025专题会议预告丨政策引领智变，医工交叉赋能智慧医疗
 
-United States Patent and Trademark Office (USPTO)
+CIIS2025专题会议预告丨三维世界认知革命来临，全域空间智能的产业机遇何在？
 
-Sid Vyas
+CIIS2025专题会议预告丨中国大模型登顶后的新长征：从技术破壁到产业破局
 
-Chief Technology Officer, Executive Vice President
+智启龙城 创领未来丨2025第十四届中国智能产业高峰论坛将在常州启幕
 
-LPL Financial
+CIIS2025专题会议预告丨攻坚工业具身智能，掘金国家未来产业
 
-Meet the Expert Line-Up
+CIIS2025主论坛嘉宾揭晓丨产学研先锋对话，共筑前沿成果转化高速路
 
-Now Accepting Session Submissions: Call for Papers
+CIIS2025专题会议预告丨脑机智能与情感计算，从实验室到临床有多远？
 
-Ready to share your expertise and insights with our audience? Please click the Apply Now button for the track that best aligns with your proposed session topic.
+关于大会
 
-You will be prompted to create a profile in our speaker management portal, Sessionboard, where you can submit your session proposal and speaker information.
+中国智能产业大会创办于2011年，由中国人工智能学会倾力打造，是落实《新一代人工智能发展规划》等重大国家战略的核心实践平台。论坛积极响应“人工智能+”行动方案，采用“一年一城”巡回机制，首创“学术引领+产业落地+城市赋能”三维模式，围绕智能制造、智慧医疗、多模态AI等国家战略方向，累计推动超千项技术成果转化，已成为我国AI领域最具影响力的产学研融合标杆。
 
-Once your submission has been received, a member of our production team will review your proposal and follow up with next steps. We look forward to hearing your ideas and potentially welcoming you to the program!
+吴文俊人工智能创新大会以我国智能科学技术最高奖——“吴文俊人工智能科学技术奖”为基石，深度践行创新驱动发展战略。通过构建“获奖人-政府-企业”协同创新网络，推动实验室技术到产业链应用的快速贯通，建立“学术领奖台”与“产业对接台”的双台联动，实现技术成果转化落地。
 
-Next Generation
+本次两大盛会首度联袂登陆常州，以"智启龙城 创领未来"为主题，高效汇聚产业资源，助力智能技术与当地多元场景深度融合，构建高效的产学研创新生态。
 
-Next Generation focuses on cutting-edge AI innovation, experimentation, and the future of intelligent systems. This stage explores how researchers, engineers, and builders are pushing the boundaries of AI capabilities through emerging models, architectures, tools, hardware, and research-driven breakthroughs.
+组织架构
 
-Sessions should showcase forward-thinking ideas, experimental approaches, and next-generation technologies shaping the future of AI. We are particularly interested in technically deep, innovation-led content that highlights novel methodologies, frontier research, advanced engineering challenges, and future-facing applications across the AI ecosystem.
+大会主席
 
-Apply Now
+戴琼海
 
-Applied AI
+中国人工智能学会理事长
 
-Applied AI focuses on how AI systems act, decide, and automate workflows in real-world environments. This stage explores the development and deployment of intelligent systems, including Generative AI, agentic AI, copilots, orchestration frameworks, and multi-agent architectures.
+国务院参事
 
-Sessions should showcase practical approaches to building scalable, reliable, and human-centric AI systems, with a focus on tooling, frameworks, governance, integration, and operational deployment. We are particularly interested in technically credible, practitioner-led content that demonstrates real-world implementation, measurable outcomes, and lessons learned from deploying AI systems at scale.
+清华大学信息科学技术学院院长
 
-Apply Now
+北京信息科学与技术国家研究
 
-Data Excellence
+中心主任
 
-Data Excellence focuses on the foundations that enable scalable, enterprise-ready AI systems. This stage explores how organisations structure, govern, manage, and operationalise data to power AI, LLMs, and intelligent systems effectively at scale.
+中国工程院院士
 
-Sessions should showcase practical approaches to building AI-ready infrastructure, including scalable data platforms, data quality, governance, lineage, orchestration, observability, and real-world implementation strategies. We are particularly interested in technically credible, practitioner-led content that demonstrates measurable impact, lessons learned, and actionable insights for enterprise AI and data teams.
+徐宗本
 
-Apply Now
+数学家、西安交通大学教授
 
-*Submissions should be educational in nature and aligned to a highly technical audience. Commercially-led or overly promotional sessions will not be accepted.
+鹏城国家实验室广州基地
 
-5 Features that Defined 2025
+琶州实验室(黄埔)主任
 
-1. Stellar Conference Speakers
+陕西国家应用数学中心主任
 
-These are the practitioners, not just theorists, sharing real-world insights, challenges, and successes. Expect dynamic perspectives from those driving tangible results across their organizations.
+西安交通大学
 
-2. World-Leading Program
+数学与数学技术研究院院长
 
-With 10 content stages, hands-on workshops, and a focus on case studies, The AI Summit New York equips attendees with the insights needed to implement AI successfully, at scale.
+中国科学院院士
 
-3. AI in Action
+2024吴文俊人工智能科技成就奖获得者
 
-Check out
+郑海荣
 
-The Networking Café, Start-up & Investor Village, VisionAIres Programme (VIP only), Demo Agenda, The AI Trail, Masterclass & Workshop Programme,
+南京大学副校长/教授
 
-plus some surprises across an action-packed two days.
+中国科学院深圳先进技术研究院研究员
 
-4. Sourcing Dilemmas Solved
+医学成像科学与技术系统
 
-Meet 100+ leading tech companies and stress test their latest AI solutions and products. Our Sponsors & Exhibitors have all sorts of surprises and announcements to share this year, so our tenth edition of the event is going to be one to remember!
+全国重点实验室主任
 
-5. AI Network Ignition
+国家高性能医疗器械创新中心主任
 
-The AI Summit New York gathers the brightest minds in the field - spanning a multitude of industries and professions - all with one thing in common: a desire to progress AI. Get the sample list to see for yourself.
+中国科学院院士
 
-Our Ambassador Chapter
+2024吴文俊人工智能技术发明奖
 
-Meet the Expert Advisers Driving the Event's Agenda
+一等奖获得者
 
-At the core of The AI Summit New York is our exceptional Ambassador Chapter – a powerhouse of visionaries from
+程序委员会主席
 
-Kinesso, NBCUniversal, eBay, Sanofi, JP Morgan, the United Nations International Computing Centre, PayPal, Bank of America, IBM
+孙富春
 
-, and more.
+中国人工智能学会副理事长
 
-Bijit Ghosh
+清华大学计算机科学与技术系教授
 
-Managing Director, AI/ML & Data Transformation
+国家杰青获得者
 
-Wells Fargo
+2015吴文俊人工智能科学技术创新
 
-Elise Neel
+一等奖获得者
 
-SVP, Global Strategy & Strategic Partnerships
+庄越挺
 
-Panasonic
+中国人工智能学会副理事长
 
-Jason Harvey
+浙江大学教授
 
-EVP & General Manager
+国家杰青获得者
 
-BET+, Paramount Global
+何晓冬
 
-Maryam Ashoori
+京东集团高级副总裁
 
-Vice President of Product and Engineering
+京东探索研究院副院长
 
-IBM
+2024吴文俊人工智能科技进步奖
 
-Nitzan Mekel
+特等奖获得者
 
-VP, Chief AI Officer
+组织委员会主席
 
-eBay
+林浩哲
 
-Pooja Chandiramani
+中国人工智能学会秘书长
 
-VP, Global Head of Marketing Analytics, Operations, Brand Transformation, and Media Strategy
+何雯
 
-Coach
+中国人工智能学会副秘书长
 
-Wayne Filin-Matthews
+北京主线科技有限公司首席运营官
 
-Vice President, Data, AI, and Architecture (Chief Architect)
+张衡
 
-McDonald’s Corporation
+中以常州科创服务中心主任
 
-Zach Golkhou
+大会嘉宾
 
-Director of Generative AI & Data Science
+主题报告嘉宾
 
-JPMorgan Chase
+徐宗本
 
-By attending The AI Summit New York, you're not just showing up to a conference — you're plugging into the collective expertise of AI’s most influential voices. Our Ambassador Chapter ensures the insights you gain are not only transformative and immediately actionable, but also ahead of the curve, positioning you to lead in the era of intelligent innovation.
+数学家、西安交通大学教授
 
-I was literally blown away by the content, interest and breadth of information. Not to mention the size of the event.
+鹏城国家实验室广州基地
 
-Gordan Milinković
+琶州实验室(黄埔)主任
 
-Partner and Founder
+陕西国家应用数学中心主任
 
-Spike Reply UK
+西安交通大学
 
-Attending an AI Summit event is simply a no-brainer: Yes! That's the answer. Why? Simple. You can support, empower and connect yourself with the AI community around you to build a better society.  That's why the Law of Tech wanted to take this fantastic opportunity
+数学与数学技术研究院院长
 
-Co-Founder
+中国科学院院士
 
-The Law of Tech
+2024吴文俊人工智能科技成就奖获得者
 
-It was great to see the demos and hearing from different companies and industries on their experience so far with AI, the importance of regulations, principles and standards along with communication, trust and connection.
+唐佩福
 
-Anna Dillon
+专业技术少将、主任医师/教授
 
-Senior Project Manager
+解放军总医院骨科医学部主任
 
-easyJet
+国家骨科与运动康复临床医学研究中心主任
 
-Such a wealth of knowledge and experience under one roof. Some amazing speakers at this event. I would encourage anyone with an interest in the topic to attend future events.
+全军训练伤防治重点实验室主任
 
-Director Security Engineering
+中国工程院院士
 
-Liberty Global
+郑海荣
 
-The AI Summit was a privilege to attend, bringing together exceptional minds, industry leaders, and ground-breaking technologies. This extraordinary platform delved deep into the captivating realm of artificial intelligence.
+南京大学副校长/教授
 
-Ali M Bukar
+中国科学院深圳先进技术研究院研究员
 
-Principal - Computer Vision
+医学成像科学与技术系统
 
-Ofcom
+全国重点实验室主任
 
-I really enjoyed the round table discussion and learned a lot from my colleagues' insights. The AI Summit second day was an eye opener.
+国家高性能医疗器械创新中心主任
 
-James Bell
+中国科学院院士
 
-Head of Data Enablement and Operations
+2024吴文俊人工智能技术发明奖
 
-News Corp
+一等奖获得者
 
-The AI Summit
+孙富春
 
-New York
+中国人工智能学会副理事长
 
-December 9-10, 2026
+清华大学计算机科学与技术系教授
 
-Javits Convention Center
+国家杰青获得者
 
-Thank You to All Our 2025 Sponsors & Partners
+2015吴文俊人工智能科学技术创新
 
-See All Sponsors & Partners
+一等奖获得者
+
+何晓冬
+
+京东集团高级副总裁
+
+京东探索研究院副院长
+
+2024吴文俊人工智能科技进步奖
+
+特等奖获得者
+
+陶建华
+
+CAAI 元宇宙技术专委会主任
+
+清华大学自动化系教授
+
+国家杰青获得者
+
+2022吴文 俊人工智能技术发明奖
+
+特等奖获得者
+
+冯俊兰
+
+中国移动集团首席科学家
+
+中国人工智能产业发展联盟副理事长
+
+郭彦东
+
+智平方科技创始人兼CEO
+
+国家级领军人才
+
+专题会议
+
+脑机智能与情感计算专题会议
+
+主席
+
+印二威
+
+军事科学院国防科技创新研究院室
+
+主任/研究员
+
+国家高层次领军人才
+
+2024吴文俊人工智能
+
+自然科学一等奖获得者
+
+胥红来
+
+博睿康创始人/董事长
+
+嘉宾
+
+闫天翼
+
+北京理工大学教授
+
+国家高层次领军人才
+
+金晶
+
+华东理工大学副院长/教授
+
+国家高层次人才
+
+2024获吴文俊人工智能自然科学一等奖
+
+张利剑
+
+中国航天科工集团
+
+脑机创新中心执行主任
+
+中国航天科工集团
+
+二院二零六所专业
+
+副总师/二级研究员
+
+龙善丽
+
+中国兵器工业集团
+
+科技带头人、研究员
+
+李骁健
+
+深圳微灵医疗科技有限公司创始人/董事长
+
+中国科学院深圳先进技术研究院
+
+正高级工程师
+
+孙瑜
+
+柔灵科技创始人兼CEO
+
+大模型前沿技术专题会议
+
+主席
+
+车万翔
+
+哈尔滨工业大学人工智能研究院副院长/计算学部长聘教授
+
+社会计算与交互机器 人研究中心副主任
+
+2024吴文俊人工智能科技进步一等奖获得者
+
+何向南
+
+中国科学技术大学
+
+人工智能与数据科学学院副院长/教授
+
+国家杰青获得者
+
+2024 吴文俊人工智能自然科学奖
+
+一等奖获得者
+
+嘉宾
+
+田奇
+
+华为终端BG首席科学家
+
+国际欧亚科学院院士
+
+2021吴文俊人工智能领域杰出贡献奖
+
+邱锡鹏
+
+复旦大学教授
+
+上海创智学院导师
+
+王士进
+
+科大讯飞副总裁
+
+AI研究院执行院长
+
+认知智能全国重点实验室副主任
+
+2020吴文俊人工智能科技进步奖一等奖
+
+杨耀东
+
+北京大学人工智能安全与治理中心执行主任
+
+智源大模型安全中心主任
+
+国家高层 次人才
+
+国家优青（海外）获得者
+
+王翔
+
+中国科学技术大学特任教授
+
+国家青年人才
+
+2024吴文俊人工智能自然科学一等奖
+
+工业具身智能系统科技创新专题会议
+
+主席
+
+孙富春
+
+中国人工智能学会副理事长
+
+清华大学计算机科学与技术系教授
+
+国家杰青获得者
+
+2015吴文俊人工智能科学技术创新
+
+一等奖获得者
+
+张志琦
+
+常州微亿智造科技有限公司
+
+董事长兼CEO
+
+嘉宾
+
+蔡一茂
+
+北京大学集成电路学院院长
+
+博雅特聘教授
+
+集成电路高精尖创新中心执行主任
+
+国家杰青获得者
+
+曾丹
+
+上海大学通信工程系主任、教授
+
+秦杰
+
+南京航空航天大学
+
+人工智能学院院长助理/教授
+
+脑机智能技术教育部
+
+重点实验室副主任
+
+王敏
+
+华南理工大学
+
+自动化科学与工程学院教授
+
+范济安
+
+中国联通大数据首席科学家
+
+国家特聘专家
+
+彭显明
+
+顺丰科技计算机视觉算法专家
+
+全域空间智能专题会议
+
+主席
+
+熊辉
+
+香港科技大学（广州）协理副校长
+
+人工智能学域讲座教授
+
+沈抖
+
+百度集团执行副总裁
+
+百度智能云事业群总裁
+
+嘉宾
+
+周景博
+
+百度研究院商业智能实验室
+
+负责人、资深研究员
+
+顾晶晶
+
+南京航空航天大学
+
+计算机科学与技术学院教授
+
+金博
+
+大连理工大学教授
+
+广东医科大学特聘教授
+
+孙磊磊
+
+北京航空航天大计算机学院副教授
+
+王栋
+
+大连理工大学
+
+信息与通信工程学院教授
+
+基础模型与通用智能专题会议
+
+主席
+
+黄迪
+
+CAAI 智能交互专委会秘书长
+
+北京航空航天大学教授
+
+2024吴文俊人工智能自然 科学
+
+一等奖获得者
+
+刘聪
+
+科大讯飞股份有限公司
+
+副总裁、研究院院长
+
+2022吴文俊人工智能科技进步
+
+一等奖获得者
+
+嘉宾
+
+宗成庆
+
+中国科学院自动化研究所研究员
+
+庞建新
+
+优必选科技副总裁、研究院副院长
+
+任磊
+
+北京航空航天大学复杂产品智能制造
+
+全国重点实验室副主任/二级教授
+
+国家杰青获得者
+
+章国锋
+
+浙江大学求是特聘教授
+
+国家杰青获得者
+
+刘权
+
+科大讯飞AI研究院副院长
+
+认知智能全国重点实验室人机交互研究室主任
+
+刘敏
+
+湖南大学二级教授
+
+国家杰青获得者
+
+教育部青年长江学者
+
+医工交叉赋能智慧医疗专题会议
+
+主席
+
+郑海荣
+
+南京大学副校长/教授
+
+中国科学院深圳先进技术研究院研究员
+
+医学成像科学与技术系统
+
+全国重点实验室主任
+
+国家高性能医疗器械创新中心主任
+
+中国科学院院士
+
+2024吴文俊人工智能技术发明奖
+
+一等奖获得者
+
+林浩添
+
+中山大学中山眼科中心
+
+主任、医院院长/教授
+
+世界卫生组织视觉健康合作中心主任
+
+眼病防治全国重点实验室主任
+
+国家眼科质控中心（筹）主任
+
+国家高层次人才
+
+2021吴文俊人工智能科技进步
+
+一等奖获得者
+
+嘉宾
+
+田捷
+
+北京航空航天大学
+
+医学科学与工程学院教授
+
+国家杰青获得者
+
+教育部长江学者
+
+刘勇
+
+北京邮电大学人工智能学院副院长/教授
+
+国家杰青获得者
+
+2019吴文俊人工智 能科学奖
+
+一等奖获得者
+
+刘刚
+
+厦门大学南强特聘教授
+
+国家杰青获得者
+
+张龙江
+
+中国人民解放军东部战区总医院
+
+放射诊断科主任、主任医师
+
+教育部长江学者
+
+王珊珊
+
+中国科学院深圳先进技术研究院研究员
+
+国家优青获得者
+
+2024吴文俊人工智能技术发明一等奖
+
+侯勇
+
+华为技术有限公司
+
+医疗行业发展总监
+
+周军
+
+常州市第一人民医院院长/主任医师
+
+刘臻臻
+
+中山大学中山眼科中心主任医师
+
+临床研究中心执行主任
+
+2021吴文俊人工智能科技进步
+
+一 等奖获得者
+
+柳夏林
+
+中山大学中山眼科中心副主任/教授、主任医师、研究员
+
+未来全龄智能康养专题会议
+
+荣誉主席
+
+金征宇
+
+江南大学食品学院教授
+
+中国工程院院士
+
+主席
+
+伍冬睿
+
+华中科技大学人工智能与自动化学院副院长/教授
+
+周剑斌
+
+光大养老健康产业发展有限公司
+
+居家康养业务中心执行副总裁
+
+嘉宾
+
+杨西斌
+
+中国科学院苏州生物医学工程技术研究所副所长、研究员
+
+陈柏
+
+南京航空航天大学机电学院教授
+
+钱鹏江
+
+江南大学人工智能与计算机学院
+
+副院长/教授
+
+张烽
+
+江南大学附属医院临床营养科（功能食品临床评价中心）副主任
+
+GCP机构办公室副主任
+
+李飞
+
+南京佰抗生物科技有限公司
+
+联合创始人、副总经理
+
+多模态融合技术和应用专题会议
+
+荣誉主席
+
+陆汝钤
+
+中国科学院数学与系统科学研究院
+
+研究员
+
+中国科学院院士
+
+2018吴文俊人工智能最高成就奖获得者
+
+主席
+
+张道强
+
+南京航空航天大学人工智能学院
+
+院长/教授
+
+脑机智能技术教育部重点实验室主任
+
+倪昕晔
+
+南京医科大学第三附属医院
+
+（常州市第二人民医院）副院长/教授
+
+嘉宾
+
+宣晓华
+
+华院计算技术（上海）股份有限公司
+
+创始人、董事长
+
+叶育鑫
+
+吉林大学
+
+计算机科学与技术学院教授
+
+王昱婧
+
+博睿康医疗科技（上海）有限公司
+
+产品总监、正高级工程师
+
+孟祥莲
+
+常州工学院教授
+
+具身智能系统的感知与学习专题会议
+
+主席
+
+徐昕
+
+国防科技大学智能科学学院教授
+
+国家杰青获得者
+
+蒋树强
+
+CAAI具身智能专委会主任
+
+中国科学院大学特聘教授
+
+国家杰青获得者
+
+2024吴文俊人工智能自然科学一等奖
+
+嘉宾
+
+刘 勇
+
+浙江大学控制学院智能驾驶与未来交通中心主任/教授、浙江大学 - 天数智芯先进智能计算联合研发中心主任
+
+浙江大学先进智能系统研究中心副主任
+
+吴奇
+
+上海交通大学教授
+
+国家杰青获得者
+
+2024吴文俊人工智能技术发明
+
+二等奖获得者
+
+王松
+
+乐聚机器人合伙人/技术总监
+
+乐聚（苏州）机器人技术有限公司总经理
+
+刘偲
+
+北京航空航天大学人工智能学院副院长/教授
+
+国家优青获得者
+
+苏航
+
+清华大学计算机系副研究员
+
+国家“万人计划”青年拔尖人才
+
+钟将为
+
+联想集团研发高级总监
+
+具身智能机器人研发负责人
+
+智能驾驶与智慧物流专题会议
+
+主席
+
+余贵珍
+
+北京航空航天大学教授
+
+国家级领军人才
+
+张天雷
+
+CAAI智能驾驶专业委员会秘书长
+
+主线科技CEO
+
+高级工程师
+
+嘉宾
+
+王振华
+
+招商新智副总经理/CTO
+
+杨先声
+
+速腾聚创机器人产品线负责人
+
+张宇
+
+浙江大学教授
+
+薛嘉甫
+
+格力博集团电气技术总监
+
+周彬
+
+北航合肥创新研究院
+
+副院长/副教授
+
+智能时代的虚实融合专题会议
+
+主席
+
+陶建华
+
+CAAI 元宇宙技术专委会主任
+
+清华大学自动化系教授
+
+国家杰青获得者
+
+2022吴文 俊人工智能技术发明奖
+
+特等奖获得者
+
+谷雨
+
+CAAI 情感智能专委会副秘书长
+
+电子科技大学“百人计划”研究员
+
+嘉宾
+
+田丰
+
+中国科学院软件研究所副所长/二级研究员
+
+国家级领军人才
+
+陈益强
+
+中国科学院计算技术研究所副所长
+
+移动计算与新型终端北京市重点实验室主任/研究员
+
+2023吴文俊人工智能技术发明
+
+二等奖获得者
+
+桑新柱
+
+北京邮电大学二级教授
+
+国家级人才计划入选者
+
+赵思成
+
+CAAI 情感智能专委会副秘书长
+
+清华大学副研究员
+
+国家级青年人才
+
+钱彦旻
+
+上海交通大学特聘教授
+
+教育部长江学者
+
+国家优青获得者
+
+2020吴文俊人工智能自然科学奖一等奖获得者
+
+数智原生的工业互联网专题会议
+
+主席
+
+丁志军
+
+CAAI 自然计算与数字智能城市专委会副主任
+
+同济大学教授
+
+2024吴文俊人工智能科技进步奖
+
+一等奖获得者
+
+陈晰
+
+中国电力科学研究院人工智能研究所
+
+技术总监、正高级工程师
+
+嘉宾
+
+周孟初
+
+Distinguished Professor in Electrical and Computer Engineering at New Jersey Institute of Technology (NJIT)
+
+计晓军
+
+金蝶工业互联网业务部解决方案总监
+
+中企联高级研究员
+
+张波
+
+上海电力大学副校长/教授
+
+上海市政协委员
+
+陈晓武
+
+宝信软件工业互联网研究院
+
+副院长/大数据中心副主任
+
+严怀成
+
+华东理工大学教授
+
+国家万人计划领军人才
+
+智能时代创新仪器研制专题会议
+
+主席
+
+曹汛
+
+南京大学通信工程系主任
+
+国家杰青获得者
+
+王乐
+
+中国计量大学副校长、党委委员
+
+教育部重大人才奖励计划特聘教授
+
+嘉宾
+
+吴启晖
+
+南京航空航天大学副校长
+
+教育部长江学者特聘教授
+
+卢孝强
+
+福州大学教授/副校长
+
+国家杰青年获得者
+
+柏连发
+
+南京理工大学教授
+
+新生学院院长
+
+史国华
+
+中国科学院特聘核心研究员
+
+王华兵
+
+南京大学教授
+
+超导电子学研究所所长
+
+国家级领军人才
+
+蔚鹏飞
+
+东南大学青年首席教授
+
+国家优青获得者
+
+沈秋
+
+南京大学副教授/电子科学与工程学院院长助理
+
+AI驱动的交叉融合与协同发展专题会议
+
+主席
+
+张伟
+
+山东大学教授
+
+国家级领军人才
+
+郑随兵
+
+睿尔曼智能科技(北京)有限公司CEO
+
+嘉宾
+
+蒋昌俊
+
+中国人工智能学会名誉副理事长
+
+同济大学讲席教授
+
+中国工程院院士
+
+周中元
+
+中国电子科技集团首席科学家、研究员
+
+朱洪波
+
+中国（无锡）物联网研究院院长/教授
+
+张立宁
+
+中国电子科技集团有限公司
+
+电子科学研究院研究员
+
+国家级领军人才
+
+肖甫
+
+南京邮电大学党委常委、副校长
+
+国家杰青获得者
+
+朱江
+
+江苏曙光光电有限公司正高级工程师
+
+高阳
+
+南京大学智能科学与技术学院
+
+党委书记兼执行院长/教授
+
+谢伟迪
+
+上海交通大学副教授
+
+国家级青年人才
+
+人工智能青年科技创新专题会议
+
+主席
+
+王佳
+
+世界青年科学家联合会副秘书长
+
+孙佳月
+
+东北大学人才办副主任/教授
+
+国家青年高层次人才
+
+嘉宾
+
+王庆林
+
+北京理工大学教授
+
+亚太工程组织联合会（FEIAP）新兴技术与职业发展委员会主席
+
+中国科协FEIAP中国委员会主席
+
+张卫东
+
+上海交通大学讲席教授
+
+国家杰青获得者
+
+马展
+
+南京大学教授
+
+高飞
+
+浙江大学控制学院
+
+长聘副教授/研究员
+
+国家优青年获得者
+
+微分智飞（杭州）科技有限公司创始人/CEO
+
+王树波
+
+昆明理工大学教授
+
+国家级青年人才
+
+徐勇
+
+北京理工大学教授
+
+国家优青获得者
+
+朱士茂
+
+深圳大学附属华南医院
+
+医学信息研究所所长
+
+交叉创新中心副主任
+
+肖艺能
+
+南京大学前沿科学学院姑苏青年教授
+
+北京大学人工智能研究院特聘研究员
+
+中国人工智能学会三级党组织联动效能提升对话会
+
+孙富春
+
+中国人工智能学会副理事长
+
+清华大学计算机科学与技术系教授
+
+国家杰青获得者
+
+2015吴文俊人工智能科学技术创新
+
+一等奖获得者
+
+陈雯柏
+
+中国人工智能学会副秘书长
+
+会员服务工委会副主任
+
+北京信息科技大学自动化学院教授
+
+嘉宾
+
+孙富春
+
+中国人工智能学会副理事长
+
+清华大学计算机科学与技术系教授
+
+国家杰青获得者
+
+2015吴文俊人工智能科学技术创新
+
+一等奖获得者
+
+林浩添
+
+中山大学中山眼科中心
+
+主任、医院院长/教授
+
+世界卫生组织视觉健康合作中心主任
+
+眼病防治全国重点实验室主任
+
+国家眼科质控中心（筹）主任
+
+国家高层次人才
+
+2021吴文俊人工智能科技进步
+
+一等奖获得者
+
+何雯
+
+中国人工智能学会副秘书长
+
+北京主线科技有限公司首席运营官
+
+王士进
+
+科大讯飞副总裁
+
+AI研究院执行院长
+
+认知智能全国重点实验室副主任
+
+2020吴文俊人工智能科技进步奖一等奖
+
+钱鹏江
+
+江南大学人工智能与计算机学院
+
+副院长/教授
+
+张道强
+
+南京航空航天大学人工智能学院
+
+院长/教授
+
+脑机智能技术教育部重点实验室主任
+
+陈雯柏
+
+中国人工智能学会副秘书长
+
+会员服务工委会副主任
+
+北京信息科技大学自动化学院教授
+
+会议日程
+
+主题论坛
+
+2025年8月30日  开幕式及主论坛
+
+中国以色列常州创新园会议会展中心
+
+主持人：
+
+孙富春  中国人工智能学会副理事长,清华大学计算机科学与技术系教授,国家杰青获得者,2015吴文俊人工智能科学技术创新一等奖获得者
+
+陈雯柏  中国人工智能学会副秘书长,会员服务工委会副主任,北京信息科技大学自动化学院教授
+
+于涛  清华大学副研究员,国家级青年人才
+
+09:00-10:00  
+                                                    大会开幕式
+
+10:00-10:30  
+                                                    AI: 无限维问题vs有限维技术-浅析大模型架构的设计原理
+
+徐宗本
+
+数学家、西安交通大学教授,鹏城国家实验室广州基地琶州实验室(黄埔)主任,陕西国家应用数学中心主任,西安交通大学数学与数学技术研究院院长,中国科学院院士,2024吴文俊人工智能科技成就奖获得者
+
+10:30-11:00  
+                                                    医学影像与生物智能
+
+郑海荣
+
+南京大学副校长/教授,中国科学院深圳先进技术研究院研究员,医学成像科学与技术系统全国重点实验室主任,国家高性能医疗器械创新中心主任,中国科学院院士,2024吴文俊人工智能技术发明奖一等奖获得者
+
+11:00-11:30  
+                                                    人工智能推动骨科手术技术创新
+
+唐佩福
+
+专业技术少将、主任医师/教授,解放军总医院骨科医学部主任,国家骨科与运动康复临床医学研究中心主任,全军训练伤防治重点实验室主任,中国工程院院士
+
+11:30-12:00  
+                                                    “论道AI”圆桌对话：常州产业智能化转型的未来图景
+
+14:30-15:00  
+                                                    具身智能、模型训练与产业落地
+
+孙富春
+
+中国人工智能学会副理事长,清华大学计算机科学与技术系教授,国家杰青获得者,2015吴文俊人工智能科学技术创新一等奖获得者
+
+15:00-15:30  
+                                                    基础大模型进展：从数字人到具身智能
+
+何晓冬
+
+京东集团高级副总裁,京东探索研究院副院长,2024吴文俊人工智能科技进步奖特等奖获得者
+
+15:30-16:00  
+                                                    大模型技术发展与安全思考
+
+陶建华
+
+CAAI 元宇宙技术专委会主任,清华大学自动化系教授,国家杰青获得者,2022吴文 俊人工智能技术发明奖特等奖获得者
+
+16:00-16:30  
+                                                    AI+行业：向规模要价值，向内核要未来
+
+冯俊兰
+
+中国移动集团首席科学家,中国人工智能产业发展联盟副理事长
+
+16:30-17:00  
+                                                    具身大模型:驱动机器人进入通用智能新时代
+
+郭彦东
+
+智平方科技创始人兼CEO,国家级领军人才
+
+8月30日 下午专题会议
+
+智能时代的虚实融合专题会议
+
+2025年8月30日
+
+常州中吴宾馆1号楼1层八桂厅
+
+主席/主持人：陶建华  CAAI 元宇宙技术专委会主任,清华大学自动化系教授,国家杰青获得者,2022吴文 俊人工智能技术发明奖特等奖获得者
+
+主席/主持人：谷雨  CAAI 情感智能专委会副秘书长,电子科技大学“百人计划”研究员
+
+14:00-14:30  
+                                                    智能时代的人机交互
+
+田丰
+
+中国科学院软件研究所副所长/二级研究员,国家级领军人才
+
+14:30-15:00
+
+
+
+## 2024全球人工智能技术大会
+
+中文
+
+News Report
+
+媒体聚焦丨第十四届中国智能产业大会，藏着AI落地的答案
+
+CIIS2025丨双会龙城圆满收官，全景回顾精彩瞬间
+
+人民日报丨2025第十四届中国智能产业大会、吴文俊人工智能创新大会在常州举行
+
+CIIS2025圆桌对话丨在AI浪潮中打造独具特色的产业智能化升级之路
+
+新华日报丨两大平台揭牌 4位院士加盟 常州发力人工智能赛道
+
+新华网丨2025第十四届中国智能产业大会、吴文俊人工智能创新大会在常州举行
+
+共谋“人工智能+”高质量发展，2025第十四届中国智能产业大会与吴文俊人工智能创新大会在常州开幕
+
+常州发布丨2025第十四届中国智能产业大会、吴文俊人工智能创新大会在常州举行
+
+倒计时1天丨重磅嘉宾揭晓！CIIS2025邀您共赴思想盛宴
+
+倒计时2天丨这份大会“宝藏日程”，请立即查收！
+
+CIIS2025专题会议预告丨破界向新：AI驱动的交叉融合与协同发展
+
+AI大咖齐聚！共议「人工智能+」国家战略落地路径
+
+CIIS2025同期活动预告丨智链无限，AI重塑智慧医疗创新全链条
+
+CIIS2025专题会议预告丨智能时代的虚实融合：3500亿的产业蓝海
+
+CIIS2025专题会议预告丨智能时代创新仪器研制：是使命也是机遇
+
+CIIS2025专题会议预告丨多模态融合技术解锁复杂场景认知
+
+CIIS2025专题会议预告丨数智原生时代，工业互联网创新发展向强向大
+
+CIIS2025专题会议预告丨AI青年说：多元探索 以青促青
+
+CIIS2025专题会议预告丨科技暖护全龄，产学研医共探智能康养新机遇
+
+CIIS2025专题会议预告丨步入量产时代，具身智能感知与学习如何再突破
+
+CIIS2025专题会议预告丨释放基础模型潜能，跨进通用智能大门
+
+CIIS2025专题会议预告丨智能驾驶×智慧物流：政策东风领航热门赛道
+
+CIIS2025专题会议预告丨政策引领智变，医工交叉赋能智慧医疗
+
+CIIS2025专题会议预告丨三维世界认知革命来临，全域空间智能的产业机遇何在？
+
+CIIS2025专题会议预告丨中国大模型登顶后的新长征：从技术破壁到产业破局
+
+智启龙城 创领未来丨2025第十四届中国智能产业高峰论坛将在常州启幕
+
+CIIS2025专题会议预告丨攻坚工业具身智能，掘金国家未来产业
+
+CIIS2025主论坛嘉宾揭晓丨产学研先锋对话，共筑前沿成果转化高速路
+
+CIIS2025专题会议预告丨脑机智能与情感计算，从实验室到临床有多远？
+
+ABOUT GAITC
+
+Communication, Fusion, Integration and Mutual Benefits
+
+Organization
+
+General Co-Chairs
+
+DAI Qionghai
+
+Program Committee Co-Chair
+
+ZHUANG Yueting
+
+Organizing Committee Co-Chairs
+
+Conference Speakers
+
+Keynote Speakers
+
+Tao Jianhua
+
+Forum
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+YANG Yaodong
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Chairmen
+
+Speaker
+
+XUAN Xiaohua
+
+Chairmen
+
+Speaker
+
+WU Qi
+
+LIU Si
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Tao Jianhua
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Chairmen
+
+Speaker
+
+Agenda
+
+Theme Forum
+
+August 30, 2025
+
+Host：
+
+YU Tao
+
+09:00-10:00
+
+10:00-10:30
+
+10:30-11:00
+
+11:00-11:30
+
+11:30-12:00
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+Tao Jianhua
+
+16:00-16:30
+
+16:30-17:00
+
+Afternoon, August 30 Special meetings
+
+August 30, 2025
+
+Chairman/Host：Tao Jianhua
+
+Chairman/Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+August 30, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+August 30, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+17:00-17:30
+
+17:30-18:00
+
+August 30, 2025
+
+Chairhost：
+
+Chairhost：
+
+Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+August 30, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+Afternoon, August 31 Special meetings
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairhost：
+
+09:00-09:30
+
+09:30-10:00
+
+10:00-10:30
+
+10:30-11:00
+
+11:00-11:30
+
+11:30-12:00
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+09:00-09:30
+
+09:30-10:00
+
+10:00-10:30
+
+10:30-11:00
+
+YANG Yaodong
+
+11:00-11:30
+
+11:30-12:00
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+09:00-09:30
+
+09:30-10:00
+
+XUAN Xiaohua
+
+10:00-10:30
+
+10:30-11:00
+
+11:00-11:30
+
+11:30-12:00
+
+August 31, 2025
+
+Chairhost：
+
+Chairhost：
+
+Host：
+
+Host：
+
+09:00-09:05
+
+09:05-09:25
+
+09:25-09:45
+
+09:45-10:05
+
+10:05-10:25
+
+10:25-10:45
+
+10:45-11:05
+
+11:05-11:25
+
+11:25-11:45
+
+11:45-12:30
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+09:00-09:30
+
+09:30-10:00
+
+WU Qi
+
+10:00-10:30
+
+10:30-11:00
+
+LIU Si
+
+11:00-11:30
+
+11:30-12:00
+
+Afternoon, August 31 Special meetings
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:30
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairhost：
+
+Host：
+
+14:00-14:10
+
+14:10-14:20
+
+14:20-14:50
+
+14:50-15:20
+
+15:20-15:50
+
+15:50-16:20
+
+16:20-16:50
+
+16:50-17:20
+
+17:20-17:50
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairhost：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+17:00-17:30
+
+17:30-18:00
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+14:00-14:30
+
+14:30-15:00
+
+15:00-15:30
+
+15:30-16:00
+
+16:00-16:30
+
+16:30-17:00
+
+August 31, 2025
+
+Chairman/Host：
+
+Chairman/Host：
+
+14:00-14:40
+
+14:40-15:10
+
+15:10-15:40
+
+15:40-16:10
+
+16:10-16:40
+
+16:40-17:10
+
+17:10-17:40
+
+17:40-18:10
+
+Partners
+
+Organizer
+
+Cooperative Media
+
+Previous GAITCs
+
+2024
+
+June 22-23
+
+Hangzhou
+
+2023
+
+June 9-11
+
+Hangzhou
+
+2022
+
+November 25-27
+
+Hangzhou
+
+2021
+
+June 5-6
+
+Hangzhou
+
+2020
+
+July 25-26
+
+Hangzhou
+
+2019
+
+May 25-26
+
+Nanjing
+
+2018
+
+May 19-20
+
+Beijing
+
+2017
+
+May 21-22
+
+Beijing
+
+Participation Guide
+
+Participation Guide
+
+meeting time：
+
+Specific address：
+
+Conference consultation
+
+WeChat & Mobile：
+
+13240274156
+
+Conference assistant
+
+WeChat & Mobile：
+
+18610782649
+
+WeChat & Mobile：
+
+13693604621
+
+参展咨询
+
+WeChat & Mobile：
+
+18910064547
+
+Copyright © 2019 中国人工智能学会 京ICP备06029423号
+
+×
 
 ---
 
@@ -267,4 +2028,4 @@ See All Sponsors & Partners
 - [ ] 演讲者文章 ⏳ 待完成
 - [ ] 新闻媒体报道 ⏳ 待完成
 
-*原文请访问 [newyork.theaisummit.com](https://newyork.theaisummit.com)*
+*原文请访问 [ciis.caai.cn](https://ciis.caai.cn)*

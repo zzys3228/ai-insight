@@ -1906,5 +1906,251 @@
     "path": "ai-content-fetched\\person\\x_com\\index.md",
     "fetched_at": "2026-06-22T20:50:20.586146",
     "metadata": {}
+  },
+  "3089e8b9667f": {
+    "url": "https://x.com/demishassabis",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T20:50:39.462688",
+    "metadata": {}
+  },
+  "130b3119f0e1": {
+    "url": "https://arena.ai",
+    "path": "ai-content-fetched\\benchmark\\arena_ai\\index.md",
+    "fetched_at": "2026-06-22T20:51:31.000347",
+    "metadata": {}
+  },
+  "4e177f289f6e": {
+    "url": "https://artificialanalysis.ai",
+    "path": "ai-content-fetched\\benchmark\\artificialanalysis_ai\\index.md",
+    "fetched_at": "2026-06-22T20:52:00.134451",
+    "metadata": {}
+  },
+  "cd5415d2866f": {
+    "url": "https://huggingface.co/spaces/open-llm-leaderboard",
+    "path": "ai-content-fetched\\benchmark\\huggingface_co\\index.md",
+    "fetched_at": "2026-06-22T20:52:23.326438",
+    "metadata": {}
+  },
+  "b33518079d5c": {
+    "url": "https://opencompass.org.cn",
+    "path": "ai-content-fetched\\benchmark\\opencompass_org_cn\\index.md",
+    "fetched_at": "2026-06-22T20:52:27.327997",
+    "metadata": {}
+  },
+  "58572aafa085": {
+    "url": "https://llm-stats.com",
+    "path": "ai-content-fetched\\benchmark\\llm-stats_com\\index.md",
+    "fetched_at": "2026-06-22T20:53:11.777792",
+    "metadata": {}
+  },
+  "805333b8fdeb": {
+    "url": "https://www.datalearner.com",
+    "path": "ai-content-fetched\\benchmark\\datalearner_com\\index.md",
+    "fetched_at": "2026-06-22T20:53:12.347818",
+    "metadata": {}
+  },
+  "b6886b2bcf2c": {
+    "url": "https://www.swebench.com",
+    "path": "ai-content-fetched\\benchmark\\swebench_com\\index.md",
+    "fetched_at": "2026-06-22T20:53:44.265183",
+    "metadata": {}
+  },
+  "cea1b0446cd7": {
+    "url": "https://livecodebench.github.io",
+    "path": "ai-content-fetched\\benchmark\\livecodebench_github_io\\index.md",
+    "fetched_at": "2026-06-22T20:54:26.092601",
+    "metadata": {}
+  },
+  "4590e4066b38": {
+    "url": "https://aider.chat/docs/leaderboards",
+    "path": "ai-content-fetched\\benchmark\\aider_chat\\index.md",
+    "fetched_at": "2026-06-22T20:54:58.223609",
+    "metadata": {}
+  },
+  "ffced1875177": {
+    "url": "https://huggingface.co/spaces/bigcode/bigcodebench",
+    "path": "ai-content-fetched\\benchmark\\huggingface_co\\index.md",
+    "fetched_at": "2026-06-22T20:55:06.051051",
+    "metadata": {}
+  },
+  "ce9308b42e88": {
+    "url": "https://github.com/openai/human-eval",
+    "path": "ai-content-fetched\\benchmark\\github_com\\index.md",
+    "fetched_at": "2026-06-22T20:55:33.276099",
+    "metadata": {}
+  },
+  "635fec48d5c3": {
+    "url": "https://huggingface.co/gaia-benchmark",
+    "path": "ai-content-fetched\\benchmark\\huggingface_co\\index.md",
+    "fetched_at": "2026-06-22T20:55:58.123396",
+    "metadata": {}
+  },
+  "4a7b101e8592": {
+    "url": "https://github.com/THUDM/AgentBench",
+    "path": "ai-content-fetched\\benchmark\\github_com\\index.md",
+    "fetched_at": "2026-06-22T20:56:18.975780",
+    "metadata": {}
+  },
+  "df47f079678b": {
+    "url": "https://www.designarena.ai/?arena=agents&harness=standard",
+    "path": "ai-content-fetched\\benchmark\\designarena_ai\\index.md",
+    "fetched_at": "2026-06-22T20:56:38.491546",
+    "metadata": {}
+  },
+  "4cce46610d2f": {
+    "url": "https://browsecomp.com",
+    "path": "ai-content-fetched\\benchmark\\browsecomp_com\\index.md",
+    "fetched_at": "2026-06-22T20:56:44.921523",
+    "metadata": {}
+  },
+  "24dbba9b294f": {
+    "url": "https://arxiv.org/abs/hal-agent",
+    "path": "ai-content-fetched\\benchmark\\arxiv_org\\index.md",
+    "fetched_at": "2026-06-22T20:57:00.318152",
+    "metadata": {}
+  },
+  "471c8d376832": {
+    "url": "https://webarena.gitlab.io",
+    "path": "ai-content-fetched\\benchmark\\webarena_gitlab_io\\index.md",
+    "fetched_at": "2026-06-22T20:57:12.819049",
+    "metadata": {}
+  },
+  "9f091ce8731d": {
+    "url": "https://github.com/Farama-Foundation/miniwob-plusplus",
+    "path": "ai-content-fetched\\benchmark\\github_com\\index.md",
+    "fetched_at": "2026-06-22T20:57:57.305632",
+    "metadata": {}
+  },
+  "80842edf9dc6": {
+    "url": "https://mmmu-benchmark.github.io",
+    "path": "ai-content-fetched\\benchmark\\mmmu-benchmark_github_io\\index.md",
+    "fetched_at": "2026-06-22T20:58:14.929930",
+    "metadata": {}
+  },
+  "f6ec9cc70a62": {
+    "url": "https://opencompass.org.cn/MMBench",
+    "path": "ai-content-fetched\\benchmark\\opencompass_org_cn\\index.md",
+    "fetched_at": "2026-06-22T20:58:19.229153",
+    "metadata": {}
+  },
+  "dce3c8252ca9": {
+    "url": "https://mathvista.github.io",
+    "path": "ai-content-fetched\\benchmark\\mathvista_github_io\\index.md",
+    "fetched_at": "2026-06-22T20:58:37.703258",
+    "metadata": {}
+  },
+  "cbee41483675": {
+    "url": "https://huggingface.co/spaces/THUDM/SEED-Bench",
+    "path": "ai-content-fetched\\benchmark\\huggingface_co\\index.md",
+    "fetched_at": "2026-06-22T20:58:45.781979",
+    "metadata": {}
+  },
+  "08d76c666e1e": {
+    "url": "https://allenai.org",
+    "path": "ai-content-fetched\\benchmark\\allenai_org\\index.md",
+    "fetched_at": "2026-06-22T20:59:10.011374",
+    "metadata": {}
+  },
+  "9e8762568dc0": {
+    "url": "https://arcprize.org/arc-agi",
+    "path": "ai-content-fetched\\benchmark\\arcprize_org\\index.md",
+    "fetched_at": "2026-06-22T20:59:31.175360",
+    "metadata": {}
+  },
+  "469f5e14a5df": {
+    "url": "https://paperswithcode.com/dataset/gpqa",
+    "path": "ai-content-fetched\\benchmark\\paperswithcode_com\\index.md",
+    "fetched_at": "2026-06-22T20:59:56.884125",
+    "metadata": {}
+  },
+  "4b4486dd4e29": {
+    "url": "https://paperswithcode.com/sota/multiple-choice-on",
+    "path": "ai-content-fetched\\benchmark\\paperswithcode_com\\index.md",
+    "fetched_at": "2026-06-22T21:00:29.147136",
+    "metadata": {}
+  },
+  "852266f809b0": {
+    "url": "https://paperswithcode.com/sota/mathematics-tutoring-on",
+    "path": "ai-content-fetched\\benchmark\\paperswithcode_com\\index.md",
+    "fetched_at": "2026-06-22T21:00:55.724342",
+    "metadata": {}
+  },
+  "45913847e0b4": {
+    "url": "https://mlperf.org",
+    "path": "ai-content-fetched\\benchmark\\mlperf_org\\index.md",
+    "fetched_at": "2026-06-22T21:01:27.740993",
+    "metadata": {}
+  },
+  "daf28e263bfe": {
+    "url": "https://techinsights.com",
+    "path": "ai-content-fetched\\benchmark\\techinsights_com\\index.md",
+    "fetched_at": "2026-06-22T21:01:53.645531",
+    "metadata": {}
+  },
+  "2ae516bb792e": {
+    "url": "https://gartner.com",
+    "path": "ai-content-fetched\\benchmark\\gartner_com\\index.md",
+    "fetched_at": "2026-06-22T21:02:09.339202",
+    "metadata": {}
+  },
+  "149d126ec116": {
+    "url": "https://agentic.ai",
+    "path": "ai-content-fetched\\standard\\agentic_ai\\index.md",
+    "fetched_at": "2026-06-22T21:02:45.128686",
+    "metadata": {}
+  },
+  "f6fae8270e1e": {
+    "url": "https://worldaic.com.cn",
+    "path": "ai-content-fetched\\conference\\2.1 AI产业生态峰会\\index.md",
+    "fetched_at": "2026-06-22T21:03:20.232804",
+    "metadata": {}
+  },
+  "35ddd5e686a9": {
+    "url": "https://importai.substack.com",
+    "path": "ai-content-fetched\\media\\importai_substack_com\\index.md",
+    "fetched_at": "2026-06-22T21:05:04.329385",
+    "metadata": {}
+  },
+  "fd8cd1e82427": {
+    "url": "https://www.deeplearning.ai/the-batch",
+    "path": "ai-content-fetched\\media\\deeplearning_ai\\index.md",
+    "fetched_at": "2026-06-22T21:06:13.521376",
+    "metadata": {}
+  },
+  "c1091f3dfb1e": {
+    "url": "https://bensbites.co",
+    "path": "ai-content-fetched\\media\\bensbites_co\\index.md",
+    "fetched_at": "2026-06-22T21:06:47.515530",
+    "metadata": {}
+  },
+  "705f8340425c": {
+    "url": "https://tldr.tech/ai",
+    "path": "ai-content-fetched\\media\\tldr_tech\\index.md",
+    "fetched_at": "2026-06-22T21:07:01.535926",
+    "metadata": {}
+  },
+  "cc157c44ddff": {
+    "url": "https://thesequence.substack.com",
+    "path": "ai-content-fetched\\media\\thesequence_substack_com\\index.md",
+    "fetched_at": "2026-06-22T21:07:32.483948",
+    "metadata": {}
+  },
+  "e9bbeab1fdab": {
+    "url": "https://lastweekin.ai",
+    "path": "ai-content-fetched\\media\\lastweekin_ai\\index.md",
+    "fetched_at": "2026-06-22T21:08:39.977931",
+    "metadata": {}
+  },
+  "1485c7fc6898": {
+    "url": "https://aidaily.dev",
+    "path": "ai-content-fetched\\media\\aidaily_dev\\index.md",
+    "fetched_at": "2026-06-22T21:09:11.343488",
+    "metadata": {}
+  },
+  "bfa7ee9fe65f": {
+    "url": "https://theresanaiforthat.com",
+    "path": "ai-content-fetched\\media\\theresanaiforthat_com\\index.md",
+    "fetched_at": "2026-06-22T21:09:53.827952",
+    "metadata": {}
   }
 }
