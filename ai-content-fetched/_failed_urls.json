@@ -1,132 +1,25 @@
 {
-  "30dc6ca0a642": {
-    "url": "https://github.com/tiiuae/scai-falcon",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:54:54.115955"
-  },
-  "1bc25a0f6f18": {
-    "url": "https://www.adobe.com/firefly/flourish",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:20:15.293050"
-  },
-  "3ab162784aed": {
-    "url": "https://marketplace.aliyun.com",
-    "error": "HTTPSConnectionPool(host='marketplace.aliyun.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T21:34:14.999165"
-  },
-  "8a66817016a8": {
-    "url": "https://github.com/isaac-sim",
-    "error": "Invalid GitHub URL: https://github.com/isaac-sim",
-    "last_try": "2026-06-22T19:17:43.100824"
-  },
-  "3d6aac9603b3": {
-    "url": "https://github.com/isaac-ros",
-    "error": "Invalid GitHub URL: https://github.com/isaac-ros",
-    "last_try": "2026-06-22T19:17:43.101348"
-  },
-  "bee114852df0": {
-    "url": "https://arxiv.org/abs/2606.20508",
-    "error": "HTTPSConnectionPool(host='arxiv.org', port=443): Max retries exceeded with url: /pdf/2606.20508 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T19:34:52.282283"
-  },
-  "7e0d21299f0b": {
-    "url": "https://www.hengguangda.com",
-    "error": "HTTPSConnectionPool(host='www.hengguangda.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T21:34:16.139681"
-  },
-  "e125aa213a68": {
-    "url": "https://www.w3.org/groups/wg/agents/",
-    "error": "Failed to fetch: 404",
-    "last_try": "2026-06-22T20:11:56.173765"
-  },
-  "5ffccc8223d2": {
-    "url": "https://w3c-cg.github.io",
-    "error": "Failed to fetch: 404",
-    "last_try": "2026-06-22T20:11:57.876367"
-  },
-  "963ac6598b9a": {
-    "url": "https://www.nist.gov/ai-rmf",
-    "error": "Failed to fetch: 404",
-    "last_try": "2026-06-22T20:15:02.064344"
-  },
-  "c0880788903a": {
-    "url": "https://linuxfoundation.org/projects/agntcy",
-    "error": "Failed to fetch: 404",
-    "last_try": "2026-06-22T20:19:37.420279"
-  },
-  "d26d80981251": {
-    "url": "https://cscieeexplore.ieee.org/xpl/recentissue.jsp?punumber=83",
-    "error": "HTTPSConnectionPool(host='cscieeexplore.ieee.org',",
-    "last_try": "2026-06-22T20:39:30.740562"
-  },
-  "3e159ff53f5b": {
-    "url": "https://iccv2027.thecvf.com",
-    "error": "HTTPSConnectionPool(host='iccv2027.thecvf.com', po",
-    "last_try": "2026-06-22T20:42:26.700737"
-  },
-  "4f4f459a6398": {
-    "url": "https://eccv2026.org",
-    "error": "HTTPSConnectionPool(host='eccv2026.org', port=443)",
-    "last_try": "2026-06-22T20:42:30.404039"
-  },
-  "6988aaad9b18": {
-    "url": "https://gosim-lang.org",
-    "error": "fetch error",
-    "last_try": "2026-06-22T21:24:34.841973"
-  },
-  "a133b45e8e44": {
-    "url": "https://www.intelligenceage.ai",
-    "error": "error",
-    "last_try": "2026-06-22T21:09:55.285550"
-  },
-  "56d6ec8c737d": {
-    "url": "https://cac.gov.cn",
-    "error": "fetch error",
-    "last_try": "2026-06-22T21:29:22.780878"
-  },
-  "ceed95d2a522": {
-    "url": "https://www.robotics-science.org",
-    "error": "error",
-    "last_try": "2026-06-22T21:37:20.021616"
-  },
-  "3c3a1b96ae54": {
-    "url": "https://shlab.org.cn",
-    "error": "error",
-    "last_try": "2026-06-22T21:39:34.638310"
-  },
-  "f5c6e6b7dc84": {
-    "url": "https://baai.ac.cn",
-    "error": "error",
-    "last_try": "2026-06-22T21:39:34.845961"
-  },
-  "b3bc4cf68ff9": {
-    "url": "https://www.tuebingen-ai.de",
-    "error": "error",
-    "last_try": "2026-06-22T21:41:06.026285"
-  },
-  "f92dd98ddf32": {
-    "url": "https://mlmi.eng.cam.ac.uk",
-    "error": "error",
-    "last_try": "2026-06-22T21:41:16.954961"
-  },
-  "eb3f57a7c3a7": {
-    "url": "https://www.ia.cas.cn",
-    "error": "error",
-    "last_try": "2026-06-22T21:45:01.680147"
-  },
-  "b830415b51be": {
-    "url": "https://sequoiacap.cn",
-    "error": "error",
-    "last_try": "2026-06-22T22:13:55.070837"
-  },
-  "c335bbceb763": {
-    "url": "https://caict.ac.cn",
-    "error": "fetch error",
-    "last_try": "2026-06-22T23:03:13.947472"
-  },
-  "5543bfdecdb8": {
-    "url": "https://zdnet.com.cn",
-    "error": "fetch error",
-    "last_try": "2026-06-22T23:07:22.365965"
-  }
+  "30dc6ca0a642": "https://github.com/tiiuae/scai-falcon",
+  "1bc25a0f6f18": "https://www.adobe.com/firefly/flourish",
+  "3ab162784aed": "https://marketplace.aliyun.com",
+  "7e0d21299f0b": "https://www.hengguangda.com",
+  "e125aa213a68": "https://www.w3.org/groups/wg/agents/",
+  "5ffccc8223d2": "https://w3c-cg.github.io",
+  "963ac6598b9a": "https://www.nist.gov/ai-rmf",
+  "c0880788903a": "https://linuxfoundation.org/projects/agntcy",
+  "d26d80981251": "https://cscieeexplore.ieee.org/xpl/recentissue.jsp?punumber=83",
+  "3e159ff53f5b": "https://iccv2027.thecvf.com",
+  "4f4f459a6398": "https://eccv2026.org",
+  "6988aaad9b18": "https://gosim-lang.org",
+  "a133b45e8e44": "https://www.intelligenceage.ai",
+  "56d6ec8c737d": "https://cac.gov.cn",
+  "ceed95d2a522": "https://www.robotics-science.org",
+  "3c3a1b96ae54": "https://shlab.org.cn",
+  "f5c6e6b7dc84": "https://baai.ac.cn",
+  "b3bc4cf68ff9": "https://www.tuebingen-ai.de",
+  "f92dd98ddf32": "https://mlmi.eng.cam.ac.uk",
+  "eb3f57a7c3a7": "https://www.ia.cas.cn",
+  "b830415b51be": "https://sequoiacap.cn",
+  "c335bbceb763": "https://caict.ac.cn",
+  "5543bfdecdb8": "https://zdnet.com.cn"
 }

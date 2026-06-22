@@ -1,200 +1,79 @@
 ---
-title: github.com
+title: Isaac Rosalesisaac-ros
 source: github.com
-url: https://github.com/AgilityRobotics
+url: https://github.com/isaac-ros
 category: robot
+fetched_at: 2026-06-22T23:16:18.469365
 ---
 
-# github.com
+# Isaac Rosalesisaac-ros
 
-热门仓库
+**isaac‑ros**
 
-正在加载
-------------------------------
+[关注] [更多]
 
-1. [cassie-doc](/agilityrobotics/cassie-doc) cassie-doc
-   公开
+* [概览](/isaac-ros)  
+* [代码库](/isaac-ros?tab=repositories)  
+* [项目](/isaac-ros?tab=projects)  
+* [软件包](/isaac-ros?tab=packages)  
+* [星标](/isaac-ros?tab=stars)
 
-   Agility Robotics 官方的 Cassie 文档和软件发布仓库。
+Isaac Rosales (isaac‑ros)  
+软件开发人员 – 商业智能分析师  
 
-   Batchfile
-   [60](/agilityrobotics/cassie-doc/stargazers)
-   [23](/agilityrobotics/cassie-doc/forks)
+12 粉丝 · 22 关注  
 
-2. [cache](/agilityrobotics/cache) cache
-   公开
+* remotto.ai  
+* 墨西哥  
+* https://isaacros.com  
+* LinkedIn：in/isaacros  
+* Instagram：isaacros.dev  
 
-   派生自 [kbdharun/cache](/kbdharun/cache)
+---
 
-   在 GitHub Actions 中缓存依赖项和构建输出
+### 成就  
 
-   TypeScript
+[Pair Extraordinaire] [Pull Shark] ×2 [YOLO] [Arctic Code Vault Contributor]  
 
-3. [setup-jfrog-cli](/agilityrobotics/setup-jfrog-cli) setup-jfrog-cli
-   公开
+---
 
-   派生自 [jfrog/setup-jfrog-cli](/jfrog/setup-jfrog-cli)
+### 屏蔽或举报用户  
 
-   在 GitHub Actions 工作流中设置 JFrog CLI
+**屏蔽用户**  
+阻止该用户与您的代码库互动并向您发送通知。  
+[了解更多关于屏蔽用户的信息](https://docs.github.com/articles/blocking-a-user-from-your-personal-account)  
 
-   TypeScript
+您必须登录才能屏蔽用户。  
 
-4. [rules\_nixpkgs](/agilityrobotics/rules_nixpkgs) rules\_nixpkgs
-   公开
+添加可选备注  
+最多 250 个字符。请勿包含任何个人信息，例如真实姓名或电子邮件地址。支持 Markdown。此备注仅对您可见。  
 
-   派生自 [tweag/rules\_nixpkgs](/tweag/rules_nixpkgs)
+[屏蔽用户]  
 
-   用于将 Nixpkgs 包导入 Bazel 的规则。
+**举报滥用**  
+联系 GitHub 支持以举报该用户的行为。  
+[了解更多关于举报滥用](https://docs.github.com/articles/reporting-abuse-or-spam)  
 
-   Starlark
+[举报滥用](/contact/report-abuse?report=isaac-ros+%28user%29)  
 
-5. [jfrog-credential-helpers](/agilityrobotics/jfrog-credential-helpers) jfrog-credential-helpers
-   公开
+---
 
-   派生自 [psigen/jfrog-credential-helpers](/psigen/jfrog-credential-helpers)
+### 固定  
 
-   使用 JFrog API 访问 Artifactory 的 Docker 凭证填充程序
+1. **Astro‑Shadcn‑portfolio**  
+   使用 Shadcn UI 和 React 集成展示您技能的 Astro 项目。  
+   TypeScript  
+   14 星标 · 13 分支  
 
-   Go
+2. **nova**  
+   您团队的知识，作为每次 AI 对话的上下文。  
 
-6. [cluster-api-provider-aws](/agilityrobotics/cluster-api-provider-aws) cluster-api-provider-aws
-   公开
+---
 
-   派生自 [kubernetes-sigs/cluster-api-provider-aws](/kubernetes-sigs/cluster-api-provider-aws)
+### 哎呀！
 
-   Kubernetes Cluster API Provider AWS 为 AWS 上的"自管理"和 EKS Kubernetes 集群提供一致的部署和第二天运营。
+出错了，请刷新页面重试。如果问题仍然存在，请查看 GitHub 状态页面或联系支持。  
 
-   Go
+加载时出错。请重新加载此页面。
 
-### 仓库
-
-正在加载
-
-类型
-
-全部
-
-公开
-
-源代码
-
-派生
-
-已归档
-
-镜像
-
-模板
-
-语言
-
-全部
-
-Batchfile
-
-Elixir
-
-Go
-
-Go Template
-
-Starlark
-
-TypeScript
-
-排序
-
-最近更新
-
-名称
-
-星标
-
-显示 8 个仓库中的 8 个
-
-* [setup-jfrog-cli](/agilityrobotics/setup-jfrog-cli)
-
-  公开
-
-  派生自
-  [jfrog/setup-jfrog-cli](/jfrog/setup-jfrog-cli)
-
-  在 GitHub Actions 工作流中设置 JFrog CLI
-
-  [### 哎呀！
-
-  加载时发生错误。请重新加载此页面。](/agilityrobotics/setup-jfrog-cli/graphs/commit-activity) agilityrobotics/setup-jfrog-cli 过去一年的提交活动
-
-  TypeScript
-
-  0
-
-  Apache-2.0
-  [125](/agilityrobotics/setup-jfrog-cli/forks)
-  [0](/agilityrobotics/setup-jfrog-cli/issues)
-  [0](/agilityrobotics/setup-jfrog-cli/pulls)
-
-  更新于 2026年3月14日
-
-* [sequin](/agilityrobotics/sequin)
-
-  公开
-
-  派生自
-  [sequinstream/sequin](/sequinstream/sequin)
-
-  Postgres 变更数据捕获到流、队列和搜索索引，如 Kafka、SQS、Elasticsearch、HTTP 端点等
-
-  [### 哎呀！
-
-  加载时发生错误。请重新加载此页面。](/agilityrobotics/sequin/graphs/commit-activity) agilityrobotics/sequin 过去一年的提交活动
-
-  Elixir
-
-  0
-
-  MIT
-  [139](/agilityrobotics/sequin/forks)
-  [0](/agilityrobotics/sequin/issues)
-  [0](/agilityrobotics/sequin/pulls)
-
-  更新于 2026年2月23日
-
-* [fluent-bit-helm-charts](/agilityrobotics/fluent-bit-helm-charts)
-
-  公开
-
-  派生自
-  [fluent/helm-charts](/fluent/helm-charts)
-
-  Fluentd 和 Fluent Bit 的 Helm Charts
-
-  [### 哎呀！
-
-  加载时发生错误。请重新加载此页面。](/agilityrobotics/fluent-bit-helm-charts/graphs/commit-activity) agilityrobotics/fluent-bit-helm-charts 过去一年的提交活动
-
-  Go Template
-
-  0
-
-  Apache-2.0
-  [497](/agilityrobotics/fluent-bit-helm-charts/forks)
-  [0](/agilityrobotics/fluent-bit-helm-charts/issues)
-  [0](/agilityrobotics/fluent-bit-helm-charts/pulls)
-
-  更新于 2026年1月21日
-
-* [cluster-api-provider-aws](/agilityrobotics/cluster-api-provider-aws)
-
-  公开
-
-  派生自
-  [kubernetes-sigs/cluster-api-provider-aws](/kubernetes-sigs/cluster-api-provider-aws)
-
-  Kubernetes Cluster API Provider AWS 为 AWS 上的"自管理"和 EKS Kubernetes 集群提供一致的部署和第二天运营。
-
-  [### 哎呀！
-
-  加载时发生错误。请重新加载此页面。](/agilityrobotics/cluster-api-provider-aws/graphs/commit-activity) agilityrobotics/cluster-api-provider-aws 过去一年的提交活动
-
-*原文: https://github.com/AgilityRobotics*
+*原文: https://github.com/isaac-ros
