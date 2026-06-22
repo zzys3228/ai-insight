@@ -5,7 +5,7 @@ url: https://www.nist.gov/caisi
 date: 2026-06-22
 category: standard/nist.gov
 translated: true
-fetched_at: 2026-06-22T17:30:08.714239
+fetched_at: 2026-06-22T17:46:25.646415
 ---
 # 人工智能标准与创新中心（CAISI）
 
@@ -13,10 +13,6 @@ fetched_at: 2026-06-22T17:30:08.714239
 
 ---
 
-**大规模红队竞赛视角下的AI智能体安全洞察**
-
-注：
-- **AI Agent** → AI智能体（或AI代理）
-- **Red-Teaming** → 红队（网络安全领域标准术语）
+**大规模红队竞赛中的 AI 智能体安全洞见**
 
 *原文请访问 [nist.gov](https://www.nist.gov/caisi)*

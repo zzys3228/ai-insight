@@ -5,7 +5,7 @@ url: https://www.datalearner.com
 date: 2026-06-22
 category: benchmark/datalearner
 translated: true
-fetched_at: 2026-06-22T17:30:29.299781
+fetched_at: 2026-06-22T17:47:19.140461
 ---
 # 从评测到落地，更快选对 AI 模型
 

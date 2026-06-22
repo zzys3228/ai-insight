@@ -1,116 +1,118 @@
 ---
-title: **Press releases** → **新闻稿**
+title: 人形机器人。已验证的结果。
 source: agilityrobotics.com
-url: https://www.agilityrobotics.com/press-releases
+url: https://www.agilityrobotics.com
 date: 2026-06-22
 category: robot/agilityrobotics
 translated: true
-fetched_at: 2026-06-22T17:34:50.309357
+fetched_at: 2026-06-22T17:49:21.442063
 ---
-# **Press releases** → **新闻稿**
+# 人形机器人。已验证的结果。
 
 **来源**: agilityrobotics.com | **日期**: 2026-06-22
 
 ---
 
-跳至内容
+# 中文翻译
+
+跳过内容
 
 菜单
 
-新闻稿
+人形机器人。 proven results.
 
-Agility Robotics 宣布与 Toyota Motor Manufacturing Canada 达成商业协议
+公告
+
+我们已为新时代重新调整 Agility。 核心价值观不变，表达更加精准。 了解更多。
+
+解决方案
+
+自动化未来已投入实际工作
+
+Digit 是首款投入生产部署的人形机器人。 Arc 是运行它的云平台。 两者结合，为设施车间带来具有明确 ROI 的先进自动化。 快速部署。 持久转型。 始终以安全为导向。
+
+探索解决方案
+
+→
+
+经现场验证的部署流程，降低您的投资风险
+
+部署 Digit
+
+→
+
+解决方案设置
+
+01
+
+评估 Digit 如何帮助您的设施实现自动化
+
+现场验证
+
+02
+
+作为工作流程的集成部分展示成果
+
+运营影响
+
+03
+
+合作维护吞吐量并确保增长
+
+客户
+
+深受行业巨头信赖
+
+愿景
+
+这一代际转变才刚开始
+
+仓储和工厂是我们建立势能的领域。 我们扎根于此，并持续拓展。 人形机器人所能解决的挑战才刚刚显现。 有些我们已知。 有些尚未命名。 地平线不断延伸，我们也在不断前进。
+
+公司
+
+为安全人形机器人树立标准
+
+不搞空头软件。不搞炒作。只有真正可行的技术。凭借十余年的经验，我们开发并部署了帮助合作伙伴安全自动化重复性和困难工作的工具。每一项突破都指向同一个目标：让人类更有能力。
+
+了解更多关于 Agility →
+
+观看安全演示 →
+
+起源
+
+供应链韧性
+
+Digit 由 Agility 团队在俄勒冈州塞勒姆组装。其近 6,000 个零件中约 80% 采购自美国，我们将供应链冲击降至最低，并按您的时间表交付关键自动化工具。
+
+新闻
+
+查看更多
+
+→
+
+Agility Robotics 与丰田汽车制造加拿大公司宣布商业协议
 
 新闻稿
 
 2026年2月19日
 
-Mercado Libre 与 Agility Robotics 宣布商业协议，部署人形机器人
+Mercado Libre 与 Agility Robotics 宣布商业协议部署人形机器人
 
 新闻稿
 
 2025年12月10日
 
-Agility Robotics 为市场领先的人形机器人 Digit 发布新创新
+Agility Robotics 为市场领先的人形机器人 Digit 宣布创新成果
 
 新闻稿
 
 2025年3月31日
 
-Agility Robotics 扩大与 NVIDIA 的合作关系
+Agility Robotics 扩展与 NVIDIA 的合作关系
 
 新闻稿
 
 2025年3月18日
 
-Agility Robotics 加强领导团队
-
-新闻稿
-
-2024年12月9日
-
-Agility Robotics 宣布与运动技术公司 Schaeffler Group 的战略投资和协议
-
-新闻稿
-
-2024年11月13日
-
-Tompkins Solutions 与 Agility Robotics 合作，推进下一代仓库自动化
-
-新闻稿
-
-2024年10月16日
-
-Agility Robotics 与 Ricoh（理光）合作，支持人形机器人市场的扩展
-
-新闻稿
-
-2024年9月4日
-
-GXO 与 Agility Robotics 签署行业首个多年期协议
-
-新闻稿
-
-2024年6月27日
-
-Agility Robotics 加强领导团队
-
-新闻稿
-
-2024年5月15日
-
-Agility Robotics 与 Zion Solutions Group 以行业首创的合作关系塑造供应链未来
-
-新闻稿
-
-2024年5月6日
-
-Agility Robotics 与 Manhattan Associates 合作，将 AI 驱动的人形机器人引入仓库
-
-新闻稿
-
-2024年4月4日
-
-下一页
-
-→
-
-查看完整故事
-
-媒体咨询
-
-自主机器人领域每天都有新进展。Agility 为您提供最新资讯。
-
-联系新闻团队
-
-→
-
-新闻资料包
-
-随时取用所需内容，包括标志和品牌资产，即刻可用。
-
-下载新闻资料包
-
-↓
-
-*原文请访问 [agilityrobotics.com](https://www.agilityrobotics.com/press-releases)*
+*原文请访问 [agilityrobotics.com](https://www.agilityrobotics.com)*

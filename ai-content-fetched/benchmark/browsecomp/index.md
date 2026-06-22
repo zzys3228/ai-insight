@@ -1,27 +1,21 @@
 ---
-title: "browsecomp" 可以有多种理解，以下是几种可能的翻译：
+title: 在缺乏上下文的情况下，"browsecomp" 可能指 "browse component"（浏览组件）或 "browser competition"（浏览器竞争）。根据常见技术用法，建议译为：
 
-1. **浏览器兼容性** (browse + compatibility) - 最常见的理解
-2. **浏览器比较** (browse + comparison)
-3. **浏览压缩** (browse + compression)
-4. **如果是专有名词/工具名**：保留原词，可译为"浏览康普"或"BrowseComp"
+**浏览组件**（如果指软件模块）或 **浏览器竞争**（如果指市场竞争）。
 
-请提供更多上下文以便准确翻译。
+如需更准确的翻译，请提供更多上下文。
 source: browsecomp.com
 url: https://browsecomp.com
 date: 2026-06-22
 category: benchmark/browsecomp
 translated: true
-fetched_at: 2026-06-22T17:32:26.277680
+fetched_at: 2026-06-22T17:49:07.538126
 ---
-# "browsecomp" 可以有多种理解，以下是几种可能的翻译：
+# 在缺乏上下文的情况下，"browsecomp" 可能指 "browse component"（浏览组件）或 "browser competition"（浏览器竞争）。根据常见技术用法，建议译为：
 
-1. **浏览器兼容性** (browse + compatibility) - 最常见的理解
-2. **浏览器比较** (browse + comparison)
-3. **浏览压缩** (browse + compression)
-4. **如果是专有名词/工具名**：保留原词，可译为"浏览康普"或"BrowseComp"
+**浏览组件**（如果指软件模块）或 **浏览器竞争**（如果指市场竞争）。
 
-请提供更多上下文以便准确翻译。
+如需更准确的翻译，请提供更多上下文。
 
 **来源**: browsecomp.com | **日期**: 2026-06-22
 

@@ -1,13 +1,13 @@
 ---
-title: **LiveCodeBench：面向代码大型语言模型的全面无污染评估**
+title: LiveCodeBench: 全面且无污染的代码大语言模型评估
 source: livecodebench.github.io
 url: https://livecodebench.github.io
 date: 2026-06-22
 category: benchmark/livecodebench.github
 translated: true
-fetched_at: 2026-06-22T17:30:48.965580
+fetched_at: 2026-06-22T17:47:36.990915
 ---
-# **LiveCodeBench：面向代码大型语言模型的全面无污染评估**
+# LiveCodeBench: 全面且无污染的代码大语言模型评估
 
 **来源**: livecodebench.github.io | **日期**: 2026-06-22
 

@@ -1,31 +1,13 @@
 ---
-title: **Translation:**
-
-寻找真正能做事的人工智能
-
-或者更简洁的版本：
-找到真正做事AI
-
----
-
-**Note:** "AI" (Artificial Intelligence / 人工智能) is kept as "AI" because it's a standard technical term widely recognized in both English and Chinese.
+title: **寻找能够真正做事的人工智能**
 source: agentic.ai
 url: https://agentic.ai
 date: 2026-06-22
 category: standard/agentic.ai
 translated: true
-fetched_at: 2026-06-22T17:29:51.393112
+fetched_at: 2026-06-22T17:46:03.829285
 ---
-# **Translation:**
-
-寻找真正能做事的人工智能
-
-或者更简洁的版本：
-找到真正做事AI
-
----
-
-**Note:** "AI" (Artificial Intelligence / 人工智能) is kept as "AI" because it's a standard technical term widely recognized in both English and Chinese.
+# **寻找能够真正做事的人工智能**
 
 **来源**: agentic.ai | **日期**: 2026-06-22
 

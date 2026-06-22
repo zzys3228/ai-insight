@@ -5,7 +5,7 @@ url: https://www.1x.tech/neo
 date: 2026-06-22
 category: robot/1x.tech
 translated: true
-fetched_at: 2026-06-22T17:32:15.001307
+fetched_at: 2026-06-22T17:48:43.201279
 ---
 # NEO
 
@@ -13,16 +13,8 @@ fetched_at: 2026-06-22T17:32:15.001307
 
 ---
 
-**Translation:**
-
 **Helping Hand**
-援助之手 / 贴心帮手
 
-**Provides assistance with everyday tasks**
-提供日常任务协助
-
----
-
-**Note:** "援助之手" is more literal and formal, while "贴心帮手" sounds warmer and more user-friendly, suitable for product names or service descriptions.
+提供日常生活任务的帮助
 
 *原文请访问 [1x.tech](https://www.1x.tech/neo)*

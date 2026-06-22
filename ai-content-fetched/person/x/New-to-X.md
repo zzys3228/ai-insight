@@ -1,11 +1,11 @@
 ---
 title: New to X?
 source: x.com
-url: https://x.com/geoffreyhinton
+url: https://x.com/janleike
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T17:36:14.976059
+fetched_at: 2026-06-22T17:49:34.875065
 ---
 # New to X?
 
@@ -13,24 +13,30 @@ fetched_at: 2026-06-22T17:36:14.976059
 
 ---
 
-Geoffrey Hinton
+**置顶**
 
-@geoffreyhinton
+Jan Leike
 
-2025年3月2日
+@janleike
 
-我认为埃隆·马斯克应该被英国皇家学会开除。不是因为他散布阴谋论和行纳粹礼，而是因为他正在对美国科学机构造成巨大的损害。现在让我们看看他是否真的相信言论自由。
+5月8日
 
-2.1K
+一些个人消息：我将在Anthropic开始一个新的研究项目。非常兴奋！
 
-3.2K
+要让AGI发展良好，需要很多条件，而对齐（alignment）只是其中之一。更多内容即将发布……
 
-24K
+100
 
-2M
+54
+
+2.2K
+
+214K
 
 ---
 
-**注：** Geoffrey Hinton 被称为"深度学习之父"或"AI教父"，是人工智能领域的权威学者。英国皇家学会（British Royal Society）是英国最具声望的科学学术机构。
+**术语说明：**
+- AGI = 通用人工智能（Artificial General Intelligence）
+- alignment = 对齐（AI安全领域的核心概念，指确保AI系统的目标与人类价值观一致）
 
-*原文请访问 [x.com](https://x.com/geoffreyhinton)*
+*原文请访问 [x.com](https://x.com/janleike)*

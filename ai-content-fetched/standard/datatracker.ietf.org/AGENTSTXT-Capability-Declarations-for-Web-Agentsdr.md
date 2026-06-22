@@ -1,13 +1,13 @@
 ---
-title: **AGENTS.TXT：面向 Web 代理的能力声明（draft‑car‑agents‑txt‑wellknown‑00）**
+title: **AGENTS.TXT：面向网页代理的能力声明（草案 draft‑car‑agents‑txt‑wellknown‑00）**
 source: datatracker.ietf.org
 url: https://datatracker.ietf.org/doc/draft-car-agents-txt-wellknown
 date: 2026-06-22
 category: standard/datatracker.ietf.org
 translated: true
-fetched_at: 2026-06-22T17:34:10.028387
+fetched_at: 2026-06-22T17:49:40.130659
 ---
-# **AGENTS.TXT：面向 Web 代理的能力声明（draft‑car‑agents‑txt‑wellknown‑00）**
+# **AGENTS.TXT：面向网页代理的能力声明（草案 draft‑car‑agents‑txt‑wellknown‑00）**
 
 **来源**: datatracker.ietf.org | **日期**: 2026-06-22
 

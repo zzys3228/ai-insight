@@ -1,13 +1,27 @@
 ---
-title: **Aider LLM 排行榜**
+title: **Translation:**
+
+Aider LLM 排行榜
+
+**Notes:**
+- **Aider**: Kept as-is (name of an AI coding assistant tool; sometimes transliterated as "艾德" in Chinese)
+- **LLM**: Kept as-is (standard technical acronym for Large Language Model)
+- **Leaderboards**: 排行榜 (ranking list)
 source: aider.chat
 url: https://aider.chat/docs/leaderboards
 date: 2026-06-22
 category: benchmark/aider.chat
 translated: true
-fetched_at: 2026-06-22T17:31:04.106685
+fetched_at: 2026-06-22T17:47:48.120394
 ---
-# **Aider LLM 排行榜**
+# **Translation:**
+
+Aider LLM 排行榜
+
+**Notes:**
+- **Aider**: Kept as-is (name of an AI coding assistant tool; sometimes transliterated as "艾德" in Chinese)
+- **LLM**: Kept as-is (standard technical acronym for Large Language Model)
+- **Leaderboards**: 排行榜 (ranking list)
 
 **来源**: aider.chat | **日期**: 2026-06-22
 

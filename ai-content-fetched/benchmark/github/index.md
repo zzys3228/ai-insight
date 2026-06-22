@@ -5,7 +5,7 @@ url: https://github.com/Farama-Foundation/miniwob-plusplus
 date: 2026-06-22
 category: benchmark/github
 translated: true
-fetched_at: 2026-06-22T17:32:52.356699
+fetched_at: 2026-06-22T17:49:32.952311
 ---
 # 搜索代码、仓库、用户、问题、拉取请求...
 
@@ -13,9 +13,9 @@ fetched_at: 2026-06-22T17:32:52.356699
 
 ---
 
-**Translation:**
+**Chinese translation:**  
 
-> 加载时出现错误，请重新加载此页面。
+加载时出现错误，请重新加载此页面。
 
 ---
 
