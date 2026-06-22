@@ -166,5 +166,59 @@
     "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20482.md",
     "fetched_at": "2026-06-22T16:36:44.014500",
     "metadata": {}
+  },
+  "c9e6cd4f403f": {
+    "url": "https://arxiv.org/abs/2606.20369",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20369.md",
+    "fetched_at": "2026-06-22T16:37:45.289701",
+    "metadata": {}
+  },
+  "aa07e0093cf7": {
+    "url": "https://arxiv.org/abs/2606.20287",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20287.md",
+    "fetched_at": "2026-06-22T16:38:18.544605",
+    "metadata": {}
+  },
+  "3f9bbe894759": {
+    "url": "https://arxiv.org/abs/2606.20255",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20255.md",
+    "fetched_at": "2026-06-22T16:38:58.015684",
+    "metadata": {}
+  },
+  "b05e59c68bd4": {
+    "url": "https://arxiv.org/abs/2606.20225",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20225.md",
+    "fetched_at": "2026-06-22T16:39:26.264998",
+    "metadata": {}
+  },
+  "d4391bf5b21c": {
+    "url": "https://arxiv.org/abs/2606.20212",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20212.md",
+    "fetched_at": "2026-06-22T16:39:52.853377",
+    "metadata": {}
+  },
+  "ebca4e1a638b": {
+    "url": "https://arxiv.org/abs/2606.20198",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20198.md",
+    "fetched_at": "2026-06-22T16:41:59.733840",
+    "metadata": {}
+  },
+  "faad8104e19b": {
+    "url": "https://arxiv.org/abs/2606.20179",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20179.md",
+    "fetched_at": "2026-06-22T16:43:12.156971",
+    "metadata": {}
+  },
+  "b63409844aaf": {
+    "url": "https://arxiv.org/abs/2606.20164",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20164.md",
+    "fetched_at": "2026-06-22T16:44:00.947484",
+    "metadata": {}
+  },
+  "d6d3c0462995": {
+    "url": "https://arxiv.org/abs/2606.20152",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20152.md",
+    "fetched_at": "2026-06-22T16:45:00.805818",
+    "metadata": {}
   }
 }
