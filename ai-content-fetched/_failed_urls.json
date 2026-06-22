@@ -12,7 +12,7 @@
   "6eec8646764a": {
     "url": "https://github.com/ollama/ollama",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:01.739523"
+    "last_try": "2026-06-22T16:26:13.762014"
   },
   "4c6e2b5d342d": {
     "url": "https://github.com/ggml-org/ggml",
@@ -21,8 +21,8 @@
   },
   "b221ec0a9143": {
     "url": "https://github.com/Mozilla-Ocho/llamafile",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:05.012247"
+    "error": "Failed to fetch README: 403",
+    "last_try": "2026-06-22T16:30:52.110434"
   },
   "2f5b9452f2df": {
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
@@ -61,8 +61,8 @@
   },
   "22212355244a": {
     "url": "https://github.com/useheadroom/headroom",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:18.155807"
+    "error": "Failed to fetch repo info: 404",
+    "last_try": "2026-06-22T16:35:33.825054"
   },
   "5c33f43b602e": {
     "url": "https://github.com/open-webui/open-webui",

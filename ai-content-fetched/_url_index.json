@@ -59,16 +59,112 @@
     "fetched_at": "2026-06-22T15:56:12.683049",
     "metadata": {}
   },
+  "64e64e49fdf7": {
+    "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+    "path": "ai-content-fetched\\github\\deepseek-ai_DeepSeek-R1\\README.md",
+    "fetched_at": "2026-06-22T15:57:08.891889",
+    "metadata": {}
+  },
+  "20c7dc333816": {
+    "url": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+    "path": "ai-content-fetched\\github\\deepseek-ai_DeepSeek-Coder-V2\\README.md",
+    "fetched_at": "2026-06-22T15:57:15.973745",
+    "metadata": {}
+  },
   "cf909fcdfc72": {
     "url": "https://github.com/huggingface/transformers",
     "path": "ai-content-fetched\\github\\huggingface_transformers\\README.md",
-    "fetched_at": "2026-06-22T16:13:58.673009",
+    "fetched_at": "2026-06-22T16:11:07.270413",
     "metadata": {}
   },
   "56312af7b0fd": {
     "url": "https://github.com/huggingface/diffusers",
     "path": "ai-content-fetched\\github\\huggingface_diffusers\\README.md",
-    "fetched_at": "2026-06-22T16:17:16.883459",
+    "fetched_at": "2026-06-22T16:11:35.962463",
+    "metadata": {}
+  },
+  "f54b7122cf96": {
+    "url": "https://github.com/huggingface/text-generation-inference",
+    "path": "ai-content-fetched\\github\\huggingface_text-generation-inference\\README.md",
+    "fetched_at": "2026-06-22T16:11:43.468813",
+    "metadata": {}
+  },
+  "a6f6ce8cf66e": {
+    "url": "https://github.com/openai/whisper",
+    "path": "ai-content-fetched\\github\\openai_whisper\\README.md",
+    "fetched_at": "2026-06-22T16:11:50.520977",
+    "metadata": {}
+  },
+  "31e8e910e4b6": {
+    "url": "https://github.com/openai/CLIP",
+    "path": "ai-content-fetched\\github\\openai_CLIP\\README.md",
+    "fetched_at": "2026-06-22T16:11:57.584567",
+    "metadata": {}
+  },
+  "087dae28b6e3": {
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "path": "ai-content-fetched\\github\\ggml-org_llama\\README.md",
+    "fetched_at": "2026-06-22T16:16:00.107182",
+    "metadata": {}
+  },
+  "4c6e2b5d342d": {
+    "url": "https://github.com/ggml-org/ggml",
+    "path": "ai-content-fetched\\github\\ggml-org_ggml\\README.md",
+    "fetched_at": "2026-06-22T16:27:08.917322",
+    "metadata": {}
+  },
+  "2f5b9452f2df": {
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "path": "ai-content-fetched\\github\\Significant-Gravitas_AutoGPT\\README.md",
+    "fetched_at": "2026-06-22T16:31:23.916706",
+    "metadata": {}
+  },
+  "9bde5582e8ba": {
+    "url": "https://github.com/anomalyco/opencode",
+    "path": "ai-content-fetched\\github\\anomalyco_opencode\\README.md",
+    "fetched_at": "2026-06-22T16:32:03.899367",
+    "metadata": {}
+  },
+  "257b3ca3bb92": {
+    "url": "https://github.com/OpenHands/OpenHands",
+    "path": "ai-content-fetched\\github\\OpenHands_OpenHands\\README.md",
+    "fetched_at": "2026-06-22T16:32:43.961519",
+    "metadata": {}
+  },
+  "3d5faeed8bc8": {
+    "url": "https://github.com/elizaOS/eliza",
+    "path": "ai-content-fetched\\github\\elizaOS_eliza\\README.md",
+    "fetched_at": "2026-06-22T16:33:23.953821",
+    "metadata": {}
+  },
+  "df8f3a7f0f38": {
+    "url": "https://github.com/TransformerOptimus/SuperAGI",
+    "path": "ai-content-fetched\\github\\TransformerOptimus_SuperAGI\\README.md",
+    "fetched_at": "2026-06-22T16:34:04.027827",
+    "metadata": {}
+  },
+  "6698bac42fd5": {
+    "url": "https://github.com/crewAIInc/crewAI",
+    "path": "ai-content-fetched\\github\\crewAIInc_crewAI\\README.md",
+    "fetched_at": "2026-06-22T16:34:44.108570",
+    "metadata": {}
+  },
+  "c44c8513ee9e": {
+    "url": "https://arxiv.org/abs/2606.20527",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20527.md",
+    "fetched_at": "2026-06-22T16:35:26.213781",
+    "metadata": {}
+  },
+  "2aafd26bfc81": {
+    "url": "https://arxiv.org/abs/2606.20487",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20487.md",
+    "fetched_at": "2026-06-22T16:35:58.756873",
+    "metadata": {}
+  },
+  "215406e2e4eb": {
+    "url": "https://arxiv.org/abs/2606.20482",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20482.md",
+    "fetched_at": "2026-06-22T16:36:44.014500",
     "metadata": {}
   }
 }

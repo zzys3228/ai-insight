@@ -45,13 +45,41 @@ class Translator:
     def translate(self, text: str, force: bool = False) -> str:
         """
         Translate text to Chinese. Handles long content by chunking.
-        Currently disabled - all translations skipped for speed.
         """
         if not text or len(text.strip()) < 10:
             return text
 
-        # Skip ALL translations for now - will do later
-        return text
+        if self.is_chinese(text) and not force:
+            return text
+
+        # Skip long content for speed (translations done later)
+        if self.skip_long and len(text) > self.MAX_TRANSLATE_SIZE:
+            print(f"Skipping translation for long content ({len(text)} chars)")
+            return text
+
+        # Extract and protect code blocks
+        code_blocks = self.extract_code_blocks(text)
+        placeholder_map = {}
+        for i, block in enumerate(code_blocks):
+            placeholder = f"__TRANSLATION_PLACEHOLDER_{i}__"
+            placeholder_map[placeholder] = block
+            text = text.replace(block, placeholder)
+
+        # Chunk if needed
+        if len(text) > self.MAX_CHUNK_SIZE:
+            translated = self._translate_chunked(text)
+        else:
+            try:
+                translated = self._call_api(text)
+            except Exception as e:
+                print(f"Translation error: {e}")
+                return text
+
+        # Restore code blocks
+        for placeholder, block in placeholder_map.items():
+            translated = translated.replace(placeholder, block)
+
+        return translated
 
         # Extract and protect code blocks
         code_blocks = self.extract_code_blocks(text)

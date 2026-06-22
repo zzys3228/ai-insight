@@ -223,12 +223,13 @@ class FetchDaily:
                 from _shared.utils import parse_arxiv_id
 
                 paper_id = parse_arxiv_id(url)
+
                 if paper_id:
+                    # Single paper URL
                     result = fetcher.fetch_paper(paper_id)
                     md = fetcher.format_as_markdown(result)
 
-                    # Save
-                    category = 'cs_CL'  # default
+                    category = 'cs_CL'
                     output_dir = Path(STORAGE_BASE) / 'academic' / 'arxiv' / category
                     output_dir.mkdir(parents=True, exist_ok=True)
                     output_file = output_dir / f"{paper_id}.md"
@@ -236,7 +237,39 @@ class FetchDaily:
 
                     self.mark_fetched(url, str(output_file))
                     count += 1
-                    print(f"  -> Saved to {output_file}")
+                    print(f"  -> Saved {paper_id}")
+
+                elif 'arxiv.org/list' in url:
+                    # arXiv list page - discover and fetch recent papers
+                    print(f"  Discovering papers from list page...")
+                    papers = fetcher.fetch_arxiv_list(url)
+                    print(f"  Found {len(papers)} papers")
+
+                    for paper_info in papers[:20]:  # Limit to 20 most recent
+                        pid = paper_info['paper_id']
+                        paper_url = paper_info['url']
+
+                        if not self.should_fetch(paper_url):
+                            continue
+
+                        try:
+                            result = fetcher.fetch_paper(pid)
+                            md = fetcher.format_as_markdown(result)
+
+                            category = 'cs_CL'
+                            output_dir = Path(STORAGE_BASE) / 'academic' / 'arxiv' / category
+                            output_dir.mkdir(parents=True, exist_ok=True)
+                            output_file = output_dir / f"{pid}.md"
+                            output_file.write_text(md, encoding='utf-8')
+
+                            self.mark_fetched(paper_url, str(output_file))
+                            count += 1
+                            print(f"  -> Saved {pid}: {paper_info.get('title', '')[:50]}")
+                            time.sleep(1)  # Be nice to arXiv
+
+                        except Exception as e:
+                            print(f"  -> Error fetching {pid}: {e}")
+                            self.mark_failed(paper_url, str(e))
 
             except Exception as e:
                 print(f"  -> Error: {e}")
