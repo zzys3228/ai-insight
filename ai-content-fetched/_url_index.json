@@ -125,334 +125,286 @@
     "fetched_at": "2026-06-22T16:32:03.899367",
     "metadata": {}
   },
+  "257b3ca3bb92": {
+    "url": "https://github.com/OpenHands/OpenHands",
+    "path": "ai-content-fetched\\github\\OpenHands_OpenHands\\README.md",
+    "fetched_at": "2026-06-22T16:32:43.961519",
+    "metadata": {}
+  },
+  "3d5faeed8bc8": {
+    "url": "https://github.com/elizaOS/eliza",
+    "path": "ai-content-fetched\\github\\elizaOS_eliza\\README.md",
+    "fetched_at": "2026-06-22T16:33:23.953821",
+    "metadata": {}
+  },
+  "df8f3a7f0f38": {
+    "url": "https://github.com/TransformerOptimus/SuperAGI",
+    "path": "ai-content-fetched\\github\\TransformerOptimus_SuperAGI\\README.md",
+    "fetched_at": "2026-06-22T16:34:04.027827",
+    "metadata": {}
+  },
+  "6698bac42fd5": {
+    "url": "https://github.com/crewAIInc/crewAI",
+    "path": "ai-content-fetched\\github\\crewAIInc_crewAI\\README.md",
+    "fetched_at": "2026-06-22T16:34:44.108570",
+    "metadata": {}
+  },
   "c44c8513ee9e": {
     "url": "https://arxiv.org/abs/2606.20527",
     "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20527.md",
-    "fetched_at": "2026-06-22T16:33:18.735527",
+    "fetched_at": "2026-06-22T16:35:26.213781",
     "metadata": {}
   },
   "2aafd26bfc81": {
     "url": "https://arxiv.org/abs/2606.20487",
     "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20487.md",
-    "fetched_at": "2026-06-22T16:33:55.026963",
+    "fetched_at": "2026-06-22T16:35:58.756873",
     "metadata": {}
   },
   "215406e2e4eb": {
     "url": "https://arxiv.org/abs/2606.20482",
     "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20482.md",
-    "fetched_at": "2026-06-22T16:34:50.148117",
+    "fetched_at": "2026-06-22T16:36:44.014500",
     "metadata": {}
   },
-  "ef6771d31757": {
-    "url": "https://blogs.nvidia.com",
-    "path": "ai-content-fetched\\company\\blogs.nvidia\\blogs\\Featured.md",
-    "fetched_at": "2026-06-22T16:35:17.311271",
+  "c9e6cd4f403f": {
+    "url": "https://arxiv.org/abs/2606.20369",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20369.md",
+    "fetched_at": "2026-06-22T16:37:45.289701",
     "metadata": {}
   },
-  "d97cdad1d2b8": {
-    "url": "https://developer.nvidia.com/blog",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-Technical-Blog.md",
-    "fetched_at": "2026-06-22T16:35:22.899568",
+  "aa07e0093cf7": {
+    "url": "https://arxiv.org/abs/2606.20287",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20287.md",
+    "fetched_at": "2026-06-22T16:38:18.544605",
     "metadata": {}
   },
-  "6f0c531f4e99": {
-    "url": "https://research.nvidia.com",
-    "path": "ai-content-fetched\\company\\research.nvidia\\blogs\\Research-at-NVIDIA.md",
-    "fetched_at": "2026-06-22T16:35:33.639927",
+  "3f9bbe894759": {
+    "url": "https://arxiv.org/abs/2606.20255",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20255.md",
+    "fetched_at": "2026-06-22T16:38:58.015684",
     "metadata": {}
   },
-  "ddd2ea26e15d": {
-    "url": "https://www.nvidia.com/gtc/",
-    "path": "ai-content-fetched\\company\\nvidia\\blogs\\Explore-the-Best-of-GTC-2026.md",
-    "fetched_at": "2026-06-22T16:35:48.788804",
+  "b05e59c68bd4": {
+    "url": "https://arxiv.org/abs/2606.20225",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20225.md",
+    "fetched_at": "2026-06-22T16:39:26.264998",
     "metadata": {}
   },
-  "079714062f46": {
-    "url": "https://developer.nvidia.com/cuda-toolkit",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-CUDA-Toolkit.md",
-    "fetched_at": "2026-06-22T16:37:01.749514",
+  "d4391bf5b21c": {
+    "url": "https://arxiv.org/abs/2606.20212",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20212.md",
+    "fetched_at": "2026-06-22T16:39:52.853377",
     "metadata": {}
   },
-  "e2d8d659fde1": {
-    "url": "https://developer.nvidia.com/cudnn",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-cuDNN.md",
-    "fetched_at": "2026-06-22T16:37:20.261099",
+  "ebca4e1a638b": {
+    "url": "https://arxiv.org/abs/2606.20198",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20198.md",
+    "fetched_at": "2026-06-22T16:41:59.733840",
     "metadata": {}
   },
-  "ca6113292303": {
-    "url": "https://developer.nvidia.com/nccl",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-Collective-Communications-Library-NCCL.md",
-    "fetched_at": "2026-06-22T16:37:46.270044",
+  "faad8104e19b": {
+    "url": "https://arxiv.org/abs/2606.20179",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20179.md",
+    "fetched_at": "2026-06-22T16:43:12.156971",
     "metadata": {}
   },
-  "c7937388da61": {
-    "url": "https://developer.nvidia.com/tensorrt",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-TensorRT.md",
-    "fetched_at": "2026-06-22T16:38:00.425376",
+  "b63409844aaf": {
+    "url": "https://arxiv.org/abs/2606.20164",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20164.md",
+    "fetched_at": "2026-06-22T16:44:00.947484",
     "metadata": {}
   },
-  "747ab2f65921": {
-    "url": "https://developer.nvidia.com/tensorrt-llm",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-TensorRT-LLM.md",
-    "fetched_at": "2026-06-22T16:38:10.703820",
+  "d6d3c0462995": {
+    "url": "https://arxiv.org/abs/2606.20152",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20152.md",
+    "fetched_at": "2026-06-22T16:45:00.805818",
     "metadata": {}
   },
-  "46c31ea8e2e1": {
-    "url": "https://developer.nvidia.com/triton-inference-server",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-Dynamo-Triton.md",
-    "fetched_at": "2026-06-22T16:38:28.144393",
+  "a5a139134629": {
+    "url": "https://arxiv.org/abs/2606.20113",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20113.md",
+    "fetched_at": "2026-06-22T16:45:33.694919",
     "metadata": {}
   },
-  "401c1e5645cc": {
-    "url": "https://developer.nvidia.com/nim",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-NIM-for-Developers.md",
-    "fetched_at": "2026-06-22T16:38:37.166785",
+  "6a908aacaaae": {
+    "url": "https://arxiv.org/abs/2606.20097",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20097.md",
+    "fetched_at": "2026-06-22T16:46:17.270052",
     "metadata": {}
   },
-  "242a1382011a": {
-    "url": "https://developer.nvidia.com/nemo",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\Generative-AI.md",
-    "fetched_at": "2026-06-22T16:38:46.821913",
+  "5275d4f28f34": {
+    "url": "https://arxiv.org/abs/2606.20093",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20093.md",
+    "fetched_at": "2026-06-22T16:46:58.653761",
     "metadata": {}
   },
-  "e3909ac29f70": {
-    "url": "https://developer.nvidia.com/riva",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-Riva-for-Developers.md",
-    "fetched_at": "2026-06-22T16:39:22.384274",
+  "d4001bd1d183": {
+    "url": "https://arxiv.org/abs/2606.20089",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20089.md",
+    "fetched_at": "2026-06-22T16:48:14.383858",
     "metadata": {}
   },
-  "b0302c1ddc47": {
-    "url": "https://developer.nvidia.com/deepstream-sdk",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-DeepStream-SDK.md",
-    "fetched_at": "2026-06-22T16:39:32.526350",
+  "742f9d3a569f": {
+    "url": "https://arxiv.org/abs/2606.20072",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20072.md",
+    "fetched_at": "2026-06-22T16:48:48.458078",
     "metadata": {}
   },
-  "501a1379f602": {
-    "url": "https://developer.nvidia.com/isaac",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-Isaac.md",
-    "fetched_at": "2026-06-22T16:39:53.010194",
+  "34ad0835d9e6": {
+    "url": "https://arxiv.org/abs/2606.19946",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.19946.md",
+    "fetched_at": "2026-06-22T16:49:53.661235",
     "metadata": {}
   },
-  "cd3d61dd7efd": {
-    "url": "https://www.nvidia.com/omniverse",
-    "path": "ai-content-fetched\\company\\nvidia\\blogs\\NVIDIA-Omniverse.md",
-    "fetched_at": "2026-06-22T16:40:07.438965",
+  "26b265e26d26": {
+    "url": "https://arxiv.org/abs/2606.19910",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.19910.md",
+    "fetched_at": "2026-06-22T16:50:42.062134",
     "metadata": {}
   },
-  "3d3efe8a2919": {
-    "url": "https://catalog.ngc.nvidia.com",
-    "path": "ai-content-fetched\\company\\catalog.ngc.nvidia\\blogs\\GPU-optimized-AI-Machine-Learning-HPC-Software-NVI.md",
-    "fetched_at": "2026-06-22T16:40:30.196380",
+  "4058d43823f7": {
+    "url": "https://arxiv.org/abs/2606.19881",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.19881.md",
+    "fetched_at": "2026-06-22T16:51:31.618017",
     "metadata": {}
   },
-  "4c93517a07b3": {
-    "url": "https://www.nvidia.com/en-us/ai/cosmos/",
-    "path": "ai-content-fetched\\company\\nvidia\\blogs\\NVIDIA-Cosmos.md",
-    "fetched_at": "2026-06-22T16:40:42.714495",
+  "9f6a8856c51c": {
+    "url": "https://arxiv.org/abs/2606.20544",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20544.md",
+    "fetched_at": "2026-06-22T16:52:24.054980",
     "metadata": {}
   },
-  "6d82ac783d27": {
-    "url": "https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries/cudf",
-    "path": "ai-content-fetched\\company\\developer.nvidia\\blogs\\NVIDIA-cuDF-GPU-Accelerated-Structured-Data-Proces.md",
-    "fetched_at": "2026-06-22T16:40:51.330298",
+  "886be612b7ee": {
+    "url": "https://arxiv.org/abs/2606.20532",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20532.md",
+    "fetched_at": "2026-06-22T16:53:11.081512",
     "metadata": {}
   },
-  "8fbc166b7ae7": {
-    "url": "https://rocm.docs.amd.com",
-    "path": "ai-content-fetched\\company\\rocm.docs.amd\\blogs\\AMD-ROCm-documentation.md",
-    "fetched_at": "2026-06-22T16:41:44.293891",
+  "0606e22aa9b3": {
+    "url": "https://arxiv.org/abs/2606.20529",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20529.md",
+    "fetched_at": "2026-06-22T16:53:41.413918",
     "metadata": {}
   },
-  "4f5c9bb02a94": {
-    "url": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html",
-    "path": "ai-content-fetched\\company\\intel\\blogs\\Develop-and-Scale-Your-Code-with-Confidence.md",
-    "fetched_at": "2026-06-22T16:42:23.335078",
+  "2fc4b62f40d8": {
+    "url": "https://arxiv.org/abs/2606.20526",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20526.md",
+    "fetched_at": "2026-06-22T16:54:59.830835",
     "metadata": {}
   },
-  "1be907030e7b": {
-    "url": "https://www.cerebras.net",
-    "path": "ai-content-fetched\\company\\cerebras.net\\blogs\\The-fastest-inference-is-nowmultimodal.md",
-    "fetched_at": "2026-06-22T16:42:36.673849",
+  "e24791549674": {
+    "url": "https://arxiv.org/abs/2606.20518",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20518.md",
+    "fetched_at": "2026-06-22T16:55:38.174594",
     "metadata": {}
   },
-  "5eae304f679d": {
-    "url": "https://coreweave.com",
-    "path": "ai-content-fetched\\company\\coreweave\\blogs\\CoreWeave-CloudThe-Essential-Cloud-for-AI.md",
-    "fetched_at": "2026-06-22T16:42:59.206714",
+  "fa7f2b860fe8": {
+    "url": "https://arxiv.org/abs/2606.20517",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20517.md",
+    "fetched_at": "2026-06-22T16:56:29.315222",
     "metadata": {}
   },
-  "dd73384c13cf": {
-    "url": "https://platform.openai.com/docs",
-    "path": "ai-content-fetched\\company\\platform.openai\\blogs\\API-Platform.md",
-    "fetched_at": "2026-06-22T16:43:09.932795",
+  "bee114852df0": {
+    "url": "https://arxiv.org/abs/2606.20508",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20508.md",
+    "fetched_at": "2026-06-22T16:57:03.595173",
     "metadata": {}
   },
-  "e4c706adbcfb": {
-    "url": "https://chat.openai.com",
-    "path": "ai-content-fetched\\company\\chat.openai\\blogs\\Whats-on-your-mind-today.md",
-    "fetched_at": "2026-06-22T16:43:42.487777",
+  "1827a676b770": {
+    "url": "https://arxiv.org/abs/2606.20459",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20459.md",
+    "fetched_at": "2026-06-22T16:57:39.657176",
     "metadata": {}
   },
-  "78d7605ec3b6": {
-    "url": "https://openai.com/blog",
-    "path": "ai-content-fetched\\company\\openai\\blogs\\OpenAI-News-OpenAI.md",
-    "fetched_at": "2026-06-22T16:44:14.006803",
+  "ccbbd80255f0": {
+    "url": "https://arxiv.org/abs/2606.20438",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20438.md",
+    "fetched_at": "2026-06-22T16:58:24.974113",
     "metadata": {}
   },
-  "728258c97828": {
-    "url": "https://openai.com/index",
-    "path": "ai-content-fetched\\company\\openai\\blogs\\OpenAI-News-OpenAI.md",
-    "fetched_at": "2026-06-22T16:45:19.272698",
+  "49aa8d8e0eea": {
+    "url": "https://arxiv.org/abs/2606.20381",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20381.md",
+    "fetched_at": "2026-06-22T16:58:52.889429",
     "metadata": {}
   },
-  "a7d4e9103482": {
-    "url": "https://openai.com/index/dall-e-3",
-    "path": "ai-content-fetched\\company\\openai\\blogs\\DALLE-3.md",
-    "fetched_at": "2026-06-22T16:46:51.044251",
+  "2d66c64eddf1": {
+    "url": "https://arxiv.org/abs/2606.20363",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20363.md",
+    "fetched_at": "2026-06-22T16:59:29.438248",
     "metadata": {}
   },
-  "0b8e13fbcaed": {
-    "url": "https://platform.claude.com",
-    "path": "ai-content-fetched\\company\\platform.claude\\blogs\\Claude-Platform.md",
-    "fetched_at": "2026-06-22T16:47:19.543181",
+  "7100edddf192": {
+    "url": "https://arxiv.org/abs/2606.20333",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20333.md",
+    "fetched_at": "2026-06-22T17:00:21.659524",
     "metadata": {}
   },
-  "53f10b5eb7c7": {
-    "url": "https://platform.claude.com/claude-code",
-    "path": "ai-content-fetched\\company\\platform.claude\\blogs\\Claude-Code-Claude-Platform.md",
-    "fetched_at": "2026-06-22T16:47:54.746714",
+  "4d51993444bd": {
+    "url": "https://arxiv.org/abs/2606.20323",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20323.md",
+    "fetched_at": "2026-06-22T17:01:13.263916",
     "metadata": {}
   },
-  "09d991ff9278": {
-    "url": "https://claude.com/platform",
-    "path": "ai-content-fetched\\company\\claude\\blogs\\Build-on-the-Claude-Platform.md",
-    "fetched_at": "2026-06-22T16:48:19.815185",
+  "d57ddad586f6": {
+    "url": "https://arxiv.org/abs/2606.20274",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20274.md",
+    "fetched_at": "2026-06-22T17:01:47.738275",
     "metadata": {}
   },
-  "1ccb2e90f708": {
-    "url": "https://www.anthropic.com/news",
-    "path": "ai-content-fetched\\company\\anthropic\\blogs\\Newsroom.md",
-    "fetched_at": "2026-06-22T16:48:42.789256",
+  "3f3db8d91dfd": {
+    "url": "https://arxiv.org/abs/2606.20264",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20264.md",
+    "fetched_at": "2026-06-22T17:02:08.858641",
     "metadata": {}
   },
-  "7826413b7d9e": {
-    "url": "https://www.anthropic.com/research",
-    "path": "ai-content-fetched\\company\\anthropic\\blogs\\Research.md",
-    "fetched_at": "2026-06-22T16:49:25.113112",
+  "b215e1e56bac": {
+    "url": "https://arxiv.org/abs/2606.20245",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20245.md",
+    "fetched_at": "2026-06-22T17:03:19.554445",
     "metadata": {}
   },
-  "ead887f91d17": {
-    "url": "https://www.anthropic.com/engineering",
-    "path": "ai-content-fetched\\company\\anthropic\\blogs\\Engineering-Anthropic.md",
-    "fetched_at": "2026-06-22T16:50:02.508456",
+  "87fde9d3ad6f": {
+    "url": "https://arxiv.org/abs/2606.20236",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20236.md",
+    "fetched_at": "2026-06-22T17:04:25.474301",
     "metadata": {}
   },
-  "ebd52d79a550": {
-    "url": "https://www.anthropic.com/events",
-    "path": "ai-content-fetched\\company\\anthropic\\blogs\\Anthropic-Events.md",
-    "fetched_at": "2026-06-22T16:50:47.729226",
+  "2ee2a7a94f98": {
+    "url": "https://arxiv.org/abs/2606.20231",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20231.md",
+    "fetched_at": "2026-06-22T17:05:07.920321",
     "metadata": {}
   },
-  "8352ec7a9cf8": {
-    "url": "https://claude.com/blog",
-    "path": "ai-content-fetched\\company\\claude\\blogs\\Blog.md",
-    "fetched_at": "2026-06-22T16:50:57.741040",
+  "c3e87f866c77": {
+    "url": "https://arxiv.org/abs/2606.20227",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20227.md",
+    "fetched_at": "2026-06-22T17:06:08.368049",
     "metadata": {}
   },
-  "9f05dc51736b": {
-    "url": "https://www.deepseek.com",
-    "path": "ai-content-fetched\\company\\deepseek\\blogs\\DeepSeek-æåºæç.md",
-    "fetched_at": "2026-06-22T16:52:03.196445",
+  "58c661815e47": {
+    "url": "https://arxiv.org/abs/2606.20210",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20210.md",
+    "fetched_at": "2026-06-22T17:06:45.306876",
     "metadata": {}
   },
-  "83472c3db1f2": {
-    "url": "https://api-docs.deepseek.com",
-    "path": "ai-content-fetched\\company\\api-docs.deepseek\\blogs\\Your-First-API-Call.md",
-    "fetched_at": "2026-06-22T16:52:27.568148",
+  "9ee1152cf00d": {
+    "url": "https://arxiv.org/abs/2606.20560",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20560.md",
+    "fetched_at": "2026-06-22T17:07:49.071473",
     "metadata": {}
   },
-  "763a6553fae3": {
-    "url": "https://www.deepseek.com/en/news",
-    "path": "ai-content-fetched\\company\\deepseek\\blogs\\DeepSeek-æåºæç.md",
-    "fetched_at": "2026-06-22T16:53:23.382229",
+  "f5f40f1affe6": {
+    "url": "https://arxiv.org/abs/2606.20557",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20557.md",
+    "fetched_at": "2026-06-22T17:09:09.184064",
     "metadata": {}
   },
-  "591a87a69fb7": {
-    "url": "https://docs.mistral.ai",
-    "path": "ai-content-fetched\\company\\docs.mistral.ai\\blogs\\Mistral-AI-Documentation.md",
-    "fetched_at": "2026-06-22T16:53:54.590309",
-    "metadata": {}
-  },
-  "14dd593e3964": {
-    "url": "https://mistral.ai/products/studio/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Build-your-frontier-with-Studio.md",
-    "fetched_at": "2026-06-22T16:54:41.595907",
-    "metadata": {}
-  },
-  "460e1f240378": {
-    "url": "https://mistral.ai/products/forge/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Build-AI-models-that-know-your-enterprise.md",
-    "fetched_at": "2026-06-22T16:55:25.121643",
-    "metadata": {}
-  },
-  "ea01d4aedb63": {
-    "url": "https://mistral.ai/products/vibe/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Work-Vibe.md",
-    "fetched_at": "2026-06-22T16:56:05.399094",
-    "metadata": {}
-  },
-  "4ad84b681905": {
-    "url": "https://mistral.ai/products/vibe/code/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Keep-shipping.md",
-    "fetched_at": "2026-06-22T16:56:18.813261",
-    "metadata": {}
-  },
-  "0f79ee3dfa26": {
-    "url": "https://mistral.ai/products/compute/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\The-frontier-AI-cloud.md",
-    "fetched_at": "2026-06-22T16:56:57.402743",
-    "metadata": {}
-  },
-  "f94ef1b0c9b8": {
-    "url": "https://mistral.ai/news/voxtral-tts/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Speaking-of-Voxtral.md",
-    "fetched_at": "2026-06-22T16:57:07.243034",
-    "metadata": {}
-  },
-  "b7c60b1b56b4": {
-    "url": "https://mistral.ai/news/mistral-ocr-3/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Introducing-Mistral-OCR-3.md",
-    "fetched_at": "2026-06-22T16:57:41.685883",
-    "metadata": {}
-  },
-  "eec23eb399f5": {
-    "url": "https://mistral.ai/news/codestral-25-08/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Announcing-Codestral-2508-and-the-Complete-Mistral.md",
-    "fetched_at": "2026-06-22T16:57:59.525601",
-    "metadata": {}
-  },
-  "b5b5fd2d523a": {
-    "url": "https://mistral.ai/news/pixtral-large/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Pixtral-Large.md",
-    "fetched_at": "2026-06-22T16:58:50.153990",
-    "metadata": {}
-  },
-  "a9babd625657": {
-    "url": "https://mistral.ai/news/devstral-2-vibe-cli/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Introducing-Devstral-2-and-Mistral-Vibe-CLI.md",
-    "fetched_at": "2026-06-22T16:58:59.575345",
-    "metadata": {}
-  },
-  "1bf98a4c946b": {
-    "url": "https://chat.mistral.ai",
-    "path": "ai-content-fetched\\company\\chat.mistral.ai\\blogs\\Vibe.md",
-    "fetched_at": "2026-06-22T16:59:16.188897",
-    "metadata": {}
-  },
-  "484fd5f24de8": {
-    "url": "https://mistral.ai/news/",
-    "path": "ai-content-fetched\\company\\mistral.ai\\blogs\\Latest-updates-from-Mistral.md",
-    "fetched_at": "2026-06-22T16:59:33.748863",
+  "12746e446fc1": {
+    "url": "https://arxiv.org/abs/2606.20547",
+    "path": "ai-content-fetched\\academic\\arxiv\\cs_CL\\2606.20547.md",
+    "fetched_at": "2026-06-22T17:10:48.986453",
     "metadata": {}
   }
 }

@@ -55,6 +55,10 @@ class CompanyFetcher:
         Returns:
             Dictionary with article content
         """
+        # Skip GitHub URLs - they should be handled by GitHub fetcher
+        if 'github.com' in url:
+            raise Exception("GitHub URLs should be handled by GitHub fetcher")
+
         response = self._get(url)
         if response.status_code != 200:
             raise Exception(f"Failed to fetch article: {response.status_code}")

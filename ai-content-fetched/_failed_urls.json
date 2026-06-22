@@ -1,13 +1,13 @@
 {
   "04dbfb04e14b": {
     "url": "https://github.com/NVIDIA/cudnn",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:20:04.021454"
+    "error": "GitHub URLs should be handled by GitHub fetcher",
+    "last_try": "2026-06-22T17:06:58.319283"
   },
   "21da4a2fadc7": {
     "url": "https://github.com/NVIDIA/cuda",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:23:08.873697"
+    "error": "GitHub URLs should be handled by GitHub fetcher",
+    "last_try": "2026-06-22T17:06:58.320051"
   },
   "6eec8646764a": {
     "url": "https://github.com/ollama/ollama",
@@ -193,5 +193,45 @@
     "url": "https://github.com/Farama-Foundation/miniwob-plusplus",
     "error": "Failed to fetch repo info: 403",
     "last_try": "2026-06-22T16:16:58.794677"
+  },
+  "f7b20f09dc04": {
+    "url": "https://www.amd.com/en/accelerators/instinct.html",
+    "error": "HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=30)",
+    "last_try": "2026-06-22T17:07:28.690883"
+  },
+  "15457cc6aca0": {
+    "url": "https://habana.ai",
+    "error": "Failed to fetch article: 403",
+    "last_try": "2026-06-22T17:07:30.612454"
+  },
+  "3edeb65a08e5": {
+    "url": "https://platform.deepseek.com",
+    "error": "Failed to fetch article: 429",
+    "last_try": "2026-06-22T17:07:30.949647"
+  },
+  "f06ee4a2ee28": {
+    "url": "https://chat.deepseek.com",
+    "error": "Failed to fetch article: 429",
+    "last_try": "2026-06-22T17:07:31.388387"
+  },
+  "12c27535acf3": {
+    "url": "https://blog.perplexity.ai",
+    "error": "Failed to fetch article: 403",
+    "last_try": "2026-06-22T17:07:34.332811"
+  },
+  "b15cb05af132": {
+    "url": "https://www.lingyiwanwu.com/blog",
+    "error": "Failed to fetch article: 502",
+    "last_try": "2026-06-22T17:07:34.645271"
+  },
+  "3089cca301e9": {
+    "url": "https://ai.google.dev/jules",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:10:11.715052"
+  },
+  "b65ed513fc84": {
+    "url": "https://deepmind.google/models/sima/",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:10:38.873364"
   }
 }
