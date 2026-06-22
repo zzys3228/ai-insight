@@ -1,21 +1,13 @@
 ---
-title: **去中心化标识符（DID）1.0**
-
-或更完整形式：
-
-**去中心化标识符（DID）第1.0版**
+title: Decentralized Identifiers (DIDs) v1.0
 source: w3.org
 url: https://www.w3.org/TR/did-core
 date: 2026-06-22
 category: standard/w3.org
 translated: true
-fetched_at: 2026-06-22T18:09:35.747014
+fetched_at: 2026-06-22T18:24:58.141133
 ---
-# **去中心化标识符（DID）1.0**
-
-或更完整形式：
-
-**去中心化标识符（DID）第1.0版**
+# Decentralized Identifiers (DIDs) v1.0
 
 **来源**: w3.org | **日期**: 2026-06-22
 

@@ -1,13 +1,13 @@
 ---
-title: AI 排行榜 — 比较 300+ 顶级 AI 模型的智能、速度与价格
+title: AI Leaderboard— Compare 300+ Top AI Models by Intelligence, Speed & Price
 source: llm-stats.com
 url: https://llm-stats.com
 date: 2026-06-22
 category: benchmark/llm-stats
 translated: true
-fetched_at: 2026-06-22T18:18:10.997628
+fetched_at: 2026-06-22T18:23:39.077605
 ---
-# AI 排行榜 — 比较 300+ 顶级 AI 模型的智能、速度与价格
+# AI Leaderboard— Compare 300+ Top AI Models by Intelligence, Speed & Price
 
 **来源**: llm-stats.com | **日期**: 2026-06-22
 
@@ -19,7 +19,7 @@ fetched_at: 2026-06-22T18:18:10.997628
 | 1 | Claude Mythos PreviewUNRELEASEDAnthropic | 65.2 | 70.3 | 56.1 | 46.5 | — | — | — | — | Proprietary |
 | 2 | GPT-5.2 ProOpenAI | 63.3 | 55.3 | — | 28.5 | — | — | — | — | Proprietary |
 | 3 | Claude Opus 4.8Anthropic | 61.3 | 63.2 | 52.5 | 44.1 | 1,571 | 1.0M | 60c/s | $7.22 | Proprietary |
-| 4 | GLM-5.2NEWZhipu AI | 59.0 | 59.1 | 49.5 | 40.0 | 1,126 | 1.0M | 32c/s | $1.73 | Open Source |
+| 4 | GLM-5.2NEWZhipu AI | 59.0 | 59.1 | 49.5 | 40.0 | 1,126 | 1.0M | 34c/s | $1.73 | Open Source |
 | 5 | Claude Fable 5UNRELEASEDAnthropic | 58.6 | 66.3 | 59.0 | 50.3 | 1,899 | — | — | — | Proprietary |
 | 6 | GPT-5.4OpenAI | 57.3 | 54.3 | 42.6 | 36.3 | 1,740 | 1.0M | 127c/s | $3.89 | Proprietary |
 | 7 | GPT-5.1OpenAI | 56.4 | 48.1 | 30.7 | — | 1,250 | 400K | 300c/s | $2.22 | Proprietary |

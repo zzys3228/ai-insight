@@ -1,77 +1,69 @@
 ---
-title: **Translation:**
-
-开始使用 Claude 构建
+title: Start building
+with Claude
 source: docs.anthropic.com
 url: https://docs.anthropic.com
 date: 2026-06-22
 category: standard/docs.anthropic
 translated: true
-fetched_at: 2026-06-22T18:08:39.686259
+fetched_at: 2026-06-22T18:24:34.322150
 ---
-# **Translation:**
-
-开始使用 Claude 构建
+# Start building
+with Claude
 
 **来源**: docs.anthropic.com | **日期**: 2026-06-22
 
 ---
 
-# 中文翻译
+# 翻译 (Navigation Menu)
 
-**解决方案**
+## Solutions 解决方案
+- AI agents - AI智能体
+- Code modernization - 代码现代化
+- Coding - 编程
+- Customer support - 客户支持
+- Education - 教育
+- Financial services - 金融服务
+- Government - 政府
+- Life sciences - 生命科学
 
-- AI代理
-- 代码现代化
-- 编码
-- 客户支持
-- 教育
-- 金融服务
-- 政府
-- 生命科学
+## Partners 合作伙伴
+- Claude on AWS - AWS上的Claude
+- Google Cloud's Vertex AI - Google Cloud的Vertex AI
 
-**合作伙伴**
+## Learn 学习
+- Blog - 博客
+- Courses - 课程
+- Use cases - 使用案例
+- Connectors - 连接器
+- Customer stories - 客户案例
+- Engineering at Anthropic - Anthropic工程团队
+- Events - 活动
+- Powered by Claude - 由Claude驱动
+- Service partners - 服务合作伙伴
+- Startups program - 创业公司计划
 
-- AWS上的Claude
-- Google Cloud的Vertex AI
+## Company 公司
+- Anthropic - Anthropic
+- Careers - 招聘
+- Economic Futures - 经济前景
+- Research - 研究
+- News - 新闻
+- Responsible Scaling Policy - 负责任扩展政策
+- Security and compliance - 安全与合规
+- Transparency - 透明度
 
-**学习资源**
+## Help and security 帮助与安全
+- Availability - 可用性
+- Status - 状态
+- Support - 支持
+- Discord - Discord
 
-- 博客
-- 课程
-- 使用案例
-- 连接器
-- 客户案例
-- Anthropic工程技术
-- 活动
-- 由Claude提供支持
-- 服务合作伙伴
-- 初创企业计划
-
-**公司**
-
-- Anthropic
-- 招聘
-- 经济展望
-- 研究
-- 新闻
-- 负责任扩展政策
-- 安全与合规
-- 透明度
-
-**帮助与安全**
-
-- 可用性
-- 状态
-- 支持
-- Discord
-
-**条款与政策**
-
-- 隐私政策
-- 负责任披露政策
-- 服务条款：商业版
-- 服务条款：消费者版
-- 使用政策
+## Terms and policies 条款与政策
+- Privacy policy - 隐私政策
+- Responsible disclosure policy - 负责任披露政策
+- Terms of service: Commercial - 服务条款：商业版
+- Terms of service: Consumer - 服务条款：消费者版
+- Usage policy - 使用政策
 
 *原文请访问 [docs.anthropic.com](https://docs.anthropic.com)*

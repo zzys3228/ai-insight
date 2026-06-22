@@ -1,23 +1,13 @@
 ---
-title: **欢迎来到代理式AI时代**
-
----
-
-**Note:** 
-- "Agentic AI" (代理式AI) refers to AI systems capable of autonomous decision-making and task execution, distinct from traditional passive AI. The term "代理" (agent) is the standard technical translation in the AI field, though "能动型AI" is also used in some academic contexts.
+title: Welcome to the Era ofAgentic AI
 source: agentics.org
 url: https://agentics.org
 date: 2026-06-22
 category: standard/agentics.org
 translated: true
-fetched_at: 2026-06-22T18:11:15.797238
+fetched_at: 2026-06-22T18:26:07.028831
 ---
-# **欢迎来到代理式AI时代**
-
----
-
-**Note:** 
-- "Agentic AI" (代理式AI) refers to AI systems capable of autonomous decision-making and task execution, distinct from traditional passive AI. The term "代理" (agent) is the standard technical translation in the AI field, though "能动型AI" is also used in some academic contexts.
+# Welcome to the Era ofAgentic AI
 
 **来源**: agentics.org | **日期**: 2026-06-22
 
@@ -25,65 +15,68 @@ fetched_at: 2026-06-22T18:11:15.797238
 
 # 中文翻译
 
-**能够思考、适应和协作的自主智能体**
+能够思考、适应和协作的自主智能体
 
-探索
+**探索**
+
 Agentics
 
-关于我们 →
+**关于**
 
-了解Agentic AI及我们 democratize AI innovation的使命。
+了解Agentic AI以及我们让AI创新民主化的使命。
 
-影响 →
+**影响力**
 
-探索我们通过研发、教育和社区实现的impact路径。
+通过研发、教育和社区发现我们的影响路径。
 
-社区 →
+**社区**
 
-加入我们由开发者、研究人员和爱好者组成的global网络。
+加入我们的全球开发者、研究人员和爱好者网络。
 
-项目 →
+**项目**
 
-探索我们active的开源项目及倡议。
+探索我们活跃的开源项目和倡议。
 
-**什么是Agentic AI？**
+---
 
-Agentic Engineering和Vibe Coding代表了AI辅助开发的different approaches。
+## 什么是 Agentic AI？
 
-**Vibe Coding**
+Agentic工程和Vibe编程代表了AI辅助开发的不同方法。
 
-- 流程和intuitive交互
-- Human-driven反馈循环
+**Vibe编程**
+
+- 流畅和直观的交互
+- 人类驱动的反馈循环
 - 快速构思和探索
 
-**Agentic Engineering**
+**Agentic工程**
 
-- 结构化、process-driven方法
-- Machine-driven反馈循环
-- 深度规划和refinement
+- 结构化、流程驱动的方法
+- 机器驱动的反馈循环
+- 深度规划和优化
 
-这两种方法在现代开发中各有其位置。了解何时使用spectrum中的each。
+两种方法在现代开发中都有其用武之地。了解何时使用每种方法。
 
-**Agentic Foundation的Impact路径**
+---
 
-- **研发**：Agentic系统的Research and development
+## Agentic基金会的影响力路径
 
-- **开源工具包**：Developer resources和libraries
+| | |
+|---|---|
+| **研发** | 智能体系统的研究与开发 |
+| **开源工具包** | 开发者资源和库 |
+| **教育资源** | 认证和学习材料 |
+| **研讨会** | 现场和在线学习课程 |
+| **区域分会** | 全球各地的线下活动 |
+| **AI安全** | 教育和负责任部署工具 |
+| **咨询服务** | 公共、政府和机构指导 |
 
-- **教育资源**：Accreditation和学习材料
+---
 
-- **工作坊**：Live和在线学习sessions
+**全球社区**
 
-- **区域分会**：全球各地的in-person活动
+## 2026 Agentics夏季 Retreat
 
-- **AI安全**：Education和responsible部署工具
-
-- **咨询服务**：Public、government和institutional指导
-
-**> 全球社区**
-
-**Agentics夏季retreat 2026**
-
-四天精心策划的connections，汇聚engineers、研究人员和founders——工作坊、Lake Joseph boat tour，以及在Rocky Crest Resort进行的hands-on agentic AI hacking。
+四天的精心策划的交流活动，汇聚工程师、研究人员和创业者——包括研讨会、约瑟夫湖船游，以及在Rocky Crest度假村进行的实操Agentic AI黑客马拉松。
 
 *原文请访问 [agentics.org](https://agentics.org)*

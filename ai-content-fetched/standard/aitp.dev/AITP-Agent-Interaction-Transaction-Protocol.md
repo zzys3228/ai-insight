@@ -1,33 +1,13 @@
 ---
-title: **Translation:**
-
-**AITP：代理交互与交易协议**
-
-**Breakdown:**
-
-- AITP = Agent Interaction & Transaction Protocol
-- Agent = 代理
-- Interaction = 交互
-- Transaction = 交易
-- Protocol = 协议
+title: AITP: Agent Interaction & Transaction Protocol
 source: aitp.dev
 url: https://aitp.dev
 date: 2026-06-22
 category: standard/aitp.dev
 translated: true
-fetched_at: 2026-06-22T18:13:46.962833
+fetched_at: 2026-06-22T18:27:17.413471
 ---
-# **Translation:**
-
-**AITP：代理交互与交易协议**
-
-**Breakdown:**
-
-- AITP = Agent Interaction & Transaction Protocol
-- Agent = 代理
-- Interaction = 交互
-- Transaction = 交易
-- Protocol = 协议
+# AITP: Agent Interaction & Transaction Protocol
 
 **来源**: aitp.dev | **日期**: 2026-06-22
 

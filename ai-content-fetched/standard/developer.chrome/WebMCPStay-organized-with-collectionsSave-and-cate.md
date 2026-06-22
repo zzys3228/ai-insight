@@ -1,13 +1,13 @@
 ---
-title: **WebMCP**：使用集合保持井井有条；根据您的偏好保存和分类内容。
+title: WebMCPStay organized with collectionsSave and categorize content based on your preferences.
 source: developer.chrome.com
 url: https://developer.chrome.com/docs/ai/webmcp
 date: 2026-06-22
 category: standard/developer.chrome
 translated: true
-fetched_at: 2026-06-22T18:13:25.899867
+fetched_at: 2026-06-22T18:27:07.496407
 ---
-# **WebMCP**：使用集合保持井井有条；根据您的偏好保存和分类内容。
+# WebMCPStay organized with collectionsSave and categorize content based on your preferences.
 
 **来源**: developer.chrome.com | **日期**: 2026-06-22
 

@@ -5,7 +5,7 @@ url: https://www.unitree.com/g1
 date: 2026-06-22
 category: robot/unitree
 translated: true
-fetched_at: 2026-06-22T18:17:13.059075
+fetched_at: 2026-06-22T18:23:19.829939
 ---
 # 
 
@@ -13,82 +13,304 @@ fetched_at: 2026-06-22T18:17:13.059075
 
 ---
 
-**Unitree G1**  
+Unitree G1
 
-人形智能体 AI 化身  
+Humanoid agent AI avatar
 
-起售价 $13.5K  
+Price from $13.5K
 
-视频  
+Video
 
-持续 OTA 软件升级与更新  
+Continuous OTA Software Upgrade and Update
 
-超越常人的灵活性  
+Flexibility beyond ordinary people
 
-超大关节运动角度空间，23~43 个关节电机  
+Extra large joint movement angle space, 23~43 joint motors
 
-模仿 & 强化学习驱动  
+Imitation & reinforcement learning driven
 
-AI 加速的机器人技术日新月异  
+Robotics technology accelerated by AI is upgrading and evolving every day
 
-力控灵巧手，万物操作  
+Force control dexterous hand, manipulation of all things
 
-配合力‑位置混合控制，灵敏可靠，可模拟人手实现对物体的精准操作。  
+Combined with force-position hybrid control, it is sensitive and reliable, and can simulate human hands to achieve precise operation of objects.
 
-机器人世界模型，让我们一起创建  
+Robot world model, letâs create it together
 
-UnifoLM（统一机器人大型模型），共同开启智能新时代  
+UnifoLM (Unified Robot Large Model), create a new era of intelligence together
 
-更灵活，更舒适！  
+More flexible and more comfortable!
 
-开启智能体新时代  
+Start the agent New era
 
----
+Unitree G1 Parameter
 
-## Unitree G1 参数  
+Mechanical Dimensions
 
-### 机械尺寸  
+Model
 
-| 型号 | G1 | G1 EDU |
-|------|----|-------|
-| **高度、宽度、厚度（站立）** | 1320 × 450 × 200 mm | 1320 × 450 × 200 mm |
-| **高度、宽度、厚度（折叠）** | 690 × 450 × 300 mm | 690 × 450 × 300 mm |
-| **重量（含电池）** | 约 35 kg | 约 35 kg+ |
-| **总自由度（关节自由度）** | 23 | 23 ~ 43 |
-| **单腿自由度** | 6 | 6 |
-| **腰部自由度** | 1 | 1 + （可选 2 额外腰部自由度） |
-| **单臂自由度** | 5 | 5 |
-| **单手自由度** | / | 7 （可选三指力控手）+ 2 （可选 2 额外腕部自由度） |
-> \* 三指灵巧手 Dex3‑1 参数：拇指 3 主动自由度；食指 2 主动自由度；中指 2 主动自由度。  
-> \*\* Dex3‑1 可选配触觉传感器阵列。  
+G1
 
-| **关节输出轴承** | 工业级交叉滚子轴承（高精度、高承载） | 同左 |
-| **关节电机** | 低惯性高速内转子 PMSM（永磁同步电机，响应更快、散热更好） | 同左 |
-| **膝关节最大扭矩［1］** | 90 N·m | 120 N·m |
-| **臂最大负载［2］** | 约 2 kg | 约 3 kg |
-| **小腿+大腿长度** | 0.6 m | 0.6 m |
-| **臂展** | 约 0.45 m | 约 0.45 m |
-| **超大关节运动空间** | 腰部关节：Z ±155°<br>膝关节：0 ~ 165°<br>髋关节：P ±154°、R ‑30 ~ +170°、Y ±158° | 腰部关节：Z ±155°、X ±30°、Y ±30°<br>膝关节：0 ~ 165°<br>髋关节：P ±154°、R ‑30 ~ +170°、Y ±158°<br>腕关节：P ±92.5°、Y ±92.5° |
+G1 EDU
 
-### 电气特性  
+Height, Width and Thicknessï¼Standï¼
 
-| 项目 | G1 | G1 EDU |
-|------|----|-------|
-| **全关节空心电气布线** | YES | YES |
-| **关节编码器** | 双编码器 | 双编码器 |
-| **散热系统** | 局部空气冷却 | 局部空气冷却 |
-| **电源** | 13 串锂电池 | 13 串锂电池 |
-| **基本算力** | 8 核高性能 CPU | 8 核高性能 CPU |
-| **感知传感器** | 深度相机 + 3D 激光雷达 | 同左 |
-| **4 麦克风阵列** | YES | YES |
-| **5 W 扬声器** | YES | YES |
-| **WiFi 6、蓝牙 5.2** | YES | YES |
+1320x450x200mm
 
-### 附件  
+1320x450x200mm
 
-| 项目 | G1 | G1 EDU |
-|------|----|-------|
-| **高算力模块** | / | 多品牌多型号可选（如 Orin 等） |
-| **智能电池（快速拆卸）** | 9000 mAh | 9000 mAh
+Height, Width and Thicknessï¼Foldï¼
+
+690x450x300mm
+
+690x450x300mm
+
+Weight (With Battery)
+
+About 35kg
+
+About 35kg+
+
+Total Degrees of Freedomï¼Joint Freedomï¼
+
+23
+
+23 - 43
+
+Single Leg Degrees of Freedom
+
+6
+
+6
+
+Waist Degrees of Freedom
+
+1
+
+1+(Optional 2 additional waist degrees of freedom)
+
+Single Arm Degrees of Freedom
+
+5
+
+5
+
+Single Hand Degrees of Freedom
+
+/
+
+7ï¼Optional Force control of three-fingered handï¼+2(Optional 2 additional wrist degrees of freedom)
+
+*Three-fingered dexterous hand Dex3-1 Parameter: The thumb has 3 active degrees of freedom; the index finger has 2 active degrees of freedom; the middle finger has 2 active degrees of freedom.
+
+**Dex3-1 can optionally be installed with tactile sensor arrays
+
+Joint output bearing
+
+Industrial grade crossed roller bearings (high precision, high load capacity)
+
+Industrial grade crossed roller bearings (high precision, high load capacity)
+
+Joint motor
+
+Low inertia high-speed internal rotor PMSM(permanent magnet synchronous motor,better response speed and heat dissipation)
+
+Low inertia high-speed internal rotor PMSM(permanent magnet synchronous motor,better response speed and heat dissipation)
+
+Maximum Torque of Knee Jointã1ã
+
+90N.m
+
+120N.m
+
+Arm Maximum Loadã2ã
+
+About 2Kg
+
+About 3Kg
+
+Calf + Thigh Length
+
+0.6M
+
+0.6M
+
+Arm Span
+
+About 0.45M
+
+About 0.45M
+
+Extra Large Joint Movement Space
+
+Waist jointï¼ZÂ±155Â°
+
+Knee jointï¼0~165Â°
+
+Hip jointï¼PÂ±154Â°ãR-30~+170Â°ãYÂ±158Â°
+
+Waist jointï¼ZÂ±155Â°ãXÂ±30Â°ãYÂ±30Â°
+
+Knee jointï¼0~165Â°
+
+Hip jointï¼PÂ±154Â°ãR-30~+170Â°ãYÂ±158Â°
+
+Wrist jointï¼PÂ±92.5Â°ãYÂ±92.5Â°
+
+Electrical Characteristics
+
+Full Joint Hollow Electrical Routing
+
+YES
+
+YES
+
+Joint Encoder
+
+Dual encoder
+
+Dual encoder
+
+Cooling System
+
+Local air cooling
+
+Local air cooling
+
+Power Supply
+
+13 string lithium battery
+
+13 string lithium battery
+
+Basic Computing Power
+
+8-core high-performance CPU
+
+8-core high-performance CPU
+
+Sensing Sensor
+
+Depth Camera+3D LiDAR
+
+Depth Camera+3D LiDAR
+
+4 Microphone Array
+
+YES
+
+YES
+
+5W Speaker
+
+YES
+
+YES
+
+WiFi 6 ãBluetooth 5.2
+
+YES
+
+YES
+
+Accessories
+
+High Computing Power Module
+
+/
+
+Multiple brands and models available
+
+such as Orin, etc.
+
+Smart Battery (Quick Release)
+
+9000mAh
+
+9000mAh
+
+Charger
+
+54V 5A
+
+54V 5A
+
+Manual Controller
+
+YES
+
+YES
+
+Other
+
+Battery Life
+
+About 2h
+
+About 2h
+
+Upgraded Intelligent OTA
+
+YES
+
+YES
+
+Secondary Developmentã3ã
+
+/
+
+YES
+
+Warranty Periodã4ã
+
+8 months
+
+18 months
+
+Price(Tax and Shipping cost excluded)
+
+US $13.5K
+
+Contact sales
+
+[1]
+
+The maximum torque of the joint motors of the whole machine is different. This is the maximum torque of the largest joint motor among them.
+
+[2]
+
+The maximum load of the arm varies greatly under different arm extension postures.
+
+[3]
+
+For more information, please read the secondary development manual.
+
+[4]
+
+For more detailed warranty terms, please read the product warranty brochure.
+
+[5]
+
+The above parameters may vary in different scenarios and configurations, please subject to actual situation.
+
+[6]
+
+The humanoid robot has a complex structure and extremely powerful power. Users are asked to keep a sufficient safe distance between the humanoid robot and people.Please use with caution
+
+[7]
+
+The product appearance is subject to change. Please refer to the final product.
+
+[8]
+
+Some sample functions on this page are still being developed and tested, and will be opened to users in the future.
+
+[9]
+
+Currently, the global humanoid robot industry is in the early stages of exploration. Individual users are strongly advised to thoroughly understand the limitations of humanoid robots before making a purchase.
+
+This product is a civilian robot. We kindly request that all users refrain from making any dangerous modifications or using the robot in a hazardous manner.
+
+Please visit Unitree Robotics Website for more related terms and policies, and comply with local laws and regulations.
 
 *原文请访问 [unitree.com](https://www.unitree.com/g1)*

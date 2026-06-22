@@ -1,140 +1,150 @@
 ---
-title: **中文翻译（保持技术术语原样）**  
-
-> 诚邀您参加伦敦 InfoSecurity Europe – OWASP GenAI 与智能体安全峰会，时间为 6 月 2 日至 4 日。  
-
-（其中 “InfoSecurity Europe” 与 “OWASP” 保持英文原名；“GenAI” 为生成式人工智能（Generative AI）的缩写；“智能体安全峰会” 对应 “Agentic Security Summit”。）
+title: Join us in London, 6/2 – 6/4 InfoSecurity Europe – OWASP GenAI and Agentic Security Summit
 source: genai.owasp.org
 url: https://genai.owasp.org
 date: 2026-06-22
 category: standard/genai.owasp.org
 translated: true
-fetched_at: 2026-06-22T18:21:57.242389
+fetched_at: 2026-06-22T18:23:53.250035
 ---
-# **中文翻译（保持技术术语原样）**  
-
-> 诚邀您参加伦敦 InfoSecurity Europe – OWASP GenAI 与智能体安全峰会，时间为 6 月 2 日至 4 日。  
-
-（其中 “InfoSecurity Europe” 与 “OWASP” 保持英文原名；“GenAI” 为生成式人工智能（Generative AI）的缩写；“智能体安全峰会” 对应 “Agentic Security Summit”。）
+# Join us in London, 6/2 – 6/4 InfoSecurity Europe – OWASP GenAI and Agentic Security Summit
 
 **来源**: genai.owasp.org | **日期**: 2026-06-22
 
 ---
 
-# 中文翻译
 
-一个由全球社区驱动、专家主导的倡议，旨在创建免费的开源指导和资源，帮助理解和缓解生成式 AI 应用与采用过程中的安全与风险问题。
+A global community-driven and expert led initiative to create freely available open source guidance and resources for understanding and mitigating security and safety concerns for Generative AI  applications and adoption.
 
-## 最新动态
+What’s New
 
-**自主式 AI 安全与治理现状报告**全面呈现了当前 securing 和 governing 自主式 AI 系统的 landscape。它探讨了相关框架，
+The State of Agentic AI Security and Governance provides a comprehensive view of today’s landscape for securing and governing autonomous AI systems. It explores the frameworks,
 
-**AIUC-1 与 OWASP 代理式应用 Top 10 交叉映射**提供了 AIUC-1 需求与 OWASP 代理式安全倡议 Top 10 之间的双向映射。
+The AIUC-1 Crosswalk of the OWASP Top 10 for Agentic Applications provides a bidirectional mapping between AIUC-1 requirements and the OWASP Agentic Security Initiative’s Top 10
 
-随着组织越来越多地将生成式 AI 和自主代理部署到关键业务工作流程中，传统的应用安全实践已不再足够。AI 系统引入了新的安全风险类别。
+As organizations increasingly deploy generative AI and autonomous agents into business-critical workflows, traditional application security practices are no longer sufficient. AI systems introduce new classes of
 
-作为 OWASP ASI06：记忆与上下文污染条目的共同负责人（OWASP 代理式应用 Top 10 的一部分），我投入了大量时间。
+As co-lead of OWASP ASI06: Memory & Context Poisoning entry as part of OWASP Top 10 for Agentic Applications , I have spent a lot of
 
-**OWASP 生成式 AI 利用综述报告 2026 年第一季度**覆盖时间：2026 年 1 月 1 日至 2026 年 4 月 11 日概述 在过去的两年中，OWASP 生成式 AI 安全
+OWASP GenAI Exploit Round-up Report Q1 2026 Coverage period: January 1, 2026 through April 11, 2026 Overview For the last two years the OWASP GenAI Security
 
-诚邀您参加 2026 年 6 月 4 日（周四）Infosecurity Europe 2026 期间的 OWASP 生成式 AI 安全项目半日峰会，届时全球项目负责人、行业从业者和监管专家将发表演讲
+Join the OWASP GenAI Security Project for a half-day summit on Thursday 4th June at Infosecurity Europe 2026, where global project leaders, industry practitioners and regulatory
 
-生成式 AI 和代理式 AI 正在改变应用的构建、部署和运营方式，但它们也在以传统 AppSec 项目从未设计过的方式扩大攻击面。
+Generative and agentic AI are transforming how applications are built, deployed and operated but they are also expanding the attack surface in ways traditional AppSec programs
 
-**今年再次邀您参加 2026 年 RSAC 大会**，于 3 月 23 日至 26 日在旧金山举行 4 个学习和交流机会！ 我们再次回归
+Join us Again This Year at the RSAC 2026 Conference, in San Francisco March 23rd – 26th 4 Opportunities to Learn and Connect !! Once again
 
-## 附属标准组织和项目
+Affiliated Standards Organizations and Projects
 
-## 我们的倡议
+Our Initiatives
 
-**LLM 和生成式 AI Top 10**
+Top 10 for LLM and GenAI
 
-生成式 AI 和基于大语言模型应用的关键安全风险。
+Key security risks for GenAI and LLM-based applications.
 
-**AI 威胁情报与响应**
+AI Threat Intelligence and Response
 
-追踪攻击者对生成式 AI 的滥用及新兴威胁模式。
+Tracks GenAI misuse by attackers and emerging threat patterns.
 
-**AI 安全治理**
+AI Security Governance
 
-负责任的生成式 AI 项目监督最佳实践和框架。
+Best practices & frameworks for responsible GenAI program oversight.
 
-**安全 AI 采用**
+Secure AI Adoption
 
-负责任的生成式 AI 项目监督框架和政策。
+Frameworks and policies for responsible GenAI program oversight.
 
-**代理式应用安全**
+Agentic App Security
 
-保护自主代理和多步骤 AI 工作流程的安全。
+Securing autonomous agents and multi-step AI workflows.
 
-**数据安全**
+Data Security
 
-保护训练数据和检索数据免遭泄露和篡改。
+Protects training and retrieval data from leaks and tampering.
 
-**红队演练与评估**
+Red Teaming & Evaluation
 
-通过对抗性红队方法测试生成式 AI 系统。
+Testing GenAI systems through adversarial red teaming methods.
 
-**AI 安全解决方案全景**
+AI Security Solution Landscape
 
-应对主要生成式 AI 安全风险的工具和平台。
+Tools and platforms to address top GenAI security risks.
 
-## 行业评价
+What the Industry is saying
 
-## OWASP 生成式 AI 安全项目赞助商
+OWASP Gen AI Security Project Sponsors
 
-## 活动
+Events
 
-**6 月**
-2 日
-上午 8:00（太平洋时间）
+Jun
 
-**6 月**
-4 日
-下午 4:30（太平洋时间）
+2
 
-**线下活动**
-，特色活动
+8:00 AM PDT
 
-诚邀您参加 2026 年 6 月 4 日（周四）Infosecurity Europe 2026 期间的 OWASP 生成式 AI 安全项目半日峰会，届时全球项目负责人、行业从业者和监管专家将发表演讲
+Jun
 
-**5 月**
-27 日
-上午 8:00（太平洋时间）
+4
 
-**5 月**
-27 日
-下午 1:00（太平洋时间）
+4:30 PM PDT
 
-**线上活动**
+In-Person
+,
+Featured
 
-生成式 AI 和代理式 AI 正在改变应用的构建、部署和运营方式，但它们也在以传统 AppSec 项目从未设计过的方式扩大攻击面。
+Join the OWASP GenAI Security Project for a half-day summit on Thursday 4th June at Infosecurity Europe 2026, where global project leaders, industry practitioners and regulatory experts will present
 
-**3 月**
-25 日
-上午 8:00（太平洋时间）
+May
 
-**3 月**
-25 日
-下午 1:15（太平洋时间）
+27
 
-**线下活动**
-，特色活动
+8:00 AM PDT
 
-**今年再次邀您参加 2026 年 RSAC 大会**，于 3 月 23 日至 26 日在旧金山举行 4 个学习和交流机会！ 我们再次回归
+May
 
-**12 月**
-10 日
-下午 2:00（太平洋时间）
+27
 
-**12 月**
-10 日
-晚上 7:00（太平洋时间）
+1:00 PM PDT
 
-**线下活动**
+Virtual
 
-由 OWASP 生成式 AI 安全项目主办，2025 年 12 月 10 日 — 英国伦敦 代理式 AI 安全峰会 – 欧洲站，由 OWASP 生成式 AI 安全项目组织，是一场
+Generative and agentic AI are transforming how applications are built, deployed and operated but they are also expanding the attack surface in ways traditional AppSec programs were never designed
 
-**100+ 支持组织**
+Mar
+
+25
+
+8:00 AM PDT
+
+Mar
+
+25
+
+1:15 PM PDT
+
+In-Person
+,
+Featured
+
+Join us Again This Year at the RSAC 2026 Conference, in San Francisco March 23rd – 26th 4 Opportunities to Learn and Connect !! Once again we are back
+
+Dec
+
+10
+
+2:00 PM PST
+
+Dec
+
+10
+
+7:00 PM PST
+
+In-Person
+
+Hosted by the OWASP GenAI Security Project, December 10, 2025 — London, UK The Agentic AI Security Summit – Europe, organized by the OWASP GenAI Security Project, is a
+
+100+ Supporting Organizations
+
 
 *原文请访问 [genai.owasp.org](https://genai.owasp.org)*

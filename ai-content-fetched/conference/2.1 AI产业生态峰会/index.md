@@ -1,253 +1,262 @@
 ---
-title: **纽约AI峰会**
-
-Note: "AI Summit" is a branded conference series, so the English term "AI" is typically retained in Chinese translations, while "New York" is translated to "纽约". If you want a fully translated version, it could also be **纽约人工智能峰会**.
+title: The AI SummitNew York
 source: newyork.theaisummit.com
 url: https://newyork.theaisummit.com
 date: 2026-06-22
 category: conference/2.1 AI产业生态峰会/2026
 translated: true
-fetched_at: 2026-06-22T18:18:59.426391
+fetched_at: 2026-06-22T18:23:44.678402
 content_sources: [{'type': 'official_website', 'url': 'https://newyork.theaisummit.com', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
 ---
-# **纽约AI峰会**
-
-Note: "AI Summit" is a branded conference series, so the English term "AI" is typically retained in Chinese translations, while "New York" is translated to "纽约". If you want a fully translated version, it could also be **纽约人工智能峰会**.
+# The AI SummitNew York
 
 **来源**: newyork.theaisummit.com | **年份**: 2026 | **日期**: 2026-06-22
 
 ---
 
-# 2026年12月9-10日 | 贾维茨中心，纽约
+December 9-10, 2026 | Javits Center, New York
 
-# AI领袖峰会
+The AI Summit
 
-**纽约**
+New York
 
-**将AI雄心转化为**
+Turn AI Ambition into
 
-**实际影响力**
+Real-World Impact
 
-十年来，纽约AI领袖峰会一直是企业领袖和科技创新者探索及应用商业AI的信赖平台。我们汇聚影响力人物、前沿技术和实用洞察，将理论讨论转化为可触达、可盈利的商业成果。
+For a decade, The AI Summit New York has been the trusted platform for enterprise leaders and tech innovators to explore and apply commercial AI. We unite influential minds, pioneering technologies, and practical insight, to transform theoretical discussions into tangible, profitable business outcomes.
 
-这里是商业AI焕发活力的舞台。
+This is where commercial AI comes to life.
 
-**立即登记参会意向**
+Register Your Interest
 
-**探索赞助合作机会**
+Explore sponsor opps
 
-**5000+ 参会者**
+5000+ ATTENDEES
 
-**10个内容分会场**
+10 STAGES OF CONTENT
 
-**350+ 演讲嘉宾**
+350+ SPEAKERS
 
-**沉浸式体验专区**
+IMMERSIVE FEATURES
 
-**VIP专属体验**
+VIP EXPERIENCES
 
-**前沿AI技术演示**
+CUTTING-EDGE AI DEMOS
 
-**初创企业与投资商对接区**
+START-UP & INVESTOR VILLAGE
 
----
+The Industry Leaders Sharing Their Knowledge This Year
 
-## 今年分享真知灼见的行业领袖
+Unlock AI’s full potential at The AI Summit London, where theory becomes profitable application.
 
-在伦敦AI领袖峰会释放AI的全部潜力，在这里理论转化为可盈利的应用。
+Aaron Rajan
 
-**Aaron Rajan**
-首席数字信息官兼全球副总裁
-联合利华
+Chief Digitial Information Officer & Global Vice President
 
-**Elav Horwitz**
-首席创新官
+Unilever
+
+Elav Horwitz
+
+Chief Innovation Officer
+
 WPP
 
-**Nadia Ivanova**
-联合创始人兼首席产品官
+Nadia Ivanova
+
+Co-Founder & Chief Product Officer
+
 Sparrow BioAcoustics
 
-**Robert Hayes**
-代理首席AI官兼代理首席数据官
-美国专利商标局（USPTO）
+Robert Hayes
 
-**Sid Vyas**
-首席技术官、执行副总裁
+Acting Chief AI Officer & Acting Chief Data Officer
+
+United States Patent and Trademark Office (USPTO)
+
+Sid Vyas
+
+Chief Technology Officer, Executive Vice President
+
 LPL Financial
 
-**查看完整演讲嘉宾阵容**
+Meet the Expert Line-Up
 
----
+Now Accepting Session Submissions: Call for Papers
 
-## 现正接受演讲投稿：征集论文通知
+Ready to share your expertise and insights with our audience? Please click the Apply Now button for the track that best aligns with your proposed session topic.
 
-准备好与我们的观众分享您的专业知识和见解了吗？请点击"立即申请"按钮，选择与您建议的演讲主题最契合的赛道。
+You will be prompted to create a profile in our speaker management portal, Sessionboard, where you can submit your session proposal and speaker information.
 
-系统将提示您在演讲者管理平台Sessionboard中创建个人资料，您可以在此提交演讲提案和演讲嘉宾信息。
+Once your submission has been received, a member of our production team will review your proposal and follow up with next steps. We look forward to hearing your ideas and potentially welcoming you to the program!
 
-您的投稿收到后，制作团队成员将审核您的提案并跟进后续步骤。期待聆听您的想法，并诚挚欢迎您加入我们的节目阵容！
+Next Generation
 
----
+Next Generation focuses on cutting-edge AI innovation, experimentation, and the future of intelligent systems. This stage explores how researchers, engineers, and builders are pushing the boundaries of AI capabilities through emerging models, architectures, tools, hardware, and research-driven breakthroughs.
 
-## 前沿一代
+Sessions should showcase forward-thinking ideas, experimental approaches, and next-generation technologies shaping the future of AI. We are particularly interested in technically deep, innovation-led content that highlights novel methodologies, frontier research, advanced engineering challenges, and future-facing applications across the AI ecosystem.
 
-前沿一代专注于前沿AI创新、实验和智能系统的未来。本舞台探讨研究人员、工程师和构建者如何通过新兴模型、架构、工具、硬件和研究驱动的突破来拓展AI能力的边界。
+Apply Now
 
-演讲应展示前瞻性思想、实验性方法以及塑造AI未来的下一代技术。我们尤其对技术深度强、以创新为导向的内容感兴趣，这些内容重点呈现新颖方法论、前沿研究、先进工程挑战以及整个AI生态系统的未来导向应用。
+Applied AI
 
-**立即申请**
+Applied AI focuses on how AI systems act, decide, and automate workflows in real-world environments. This stage explores the development and deployment of intelligent systems, including Generative AI, agentic AI, copilots, orchestration frameworks, and multi-agent architectures.
 
----
+Sessions should showcase practical approaches to building scalable, reliable, and human-centric AI systems, with a focus on tooling, frameworks, governance, integration, and operational deployment. We are particularly interested in technically credible, practitioner-led content that demonstrates real-world implementation, measurable outcomes, and lessons learned from deploying AI systems at scale.
 
-## 应用AI
+Apply Now
 
-应用AI专注于AI系统如何在真实环境中行动、决策和自动化工作流程。本舞台探讨智能系统的开发和部署，包括生成式AI、代理式AI、Copilot、编排框架和多智能体架构。
+Data Excellence
 
-演讲应展示构建可扩展、可靠、以人为本的AI系统的实用方法，重点关注工具、框架、治理、集成和运营部署。我们尤其对技术可信、由实践者主导的内容感兴趣，这些内容展示真实世界的实施、可衡量的成果以及大规模部署AI系统的经验教训。
+Data Excellence focuses on the foundations that enable scalable, enterprise-ready AI systems. This stage explores how organisations structure, govern, manage, and operationalise data to power AI, LLMs, and intelligent systems effectively at scale.
 
-**立即申请**
+Sessions should showcase practical approaches to building AI-ready infrastructure, including scalable data platforms, data quality, governance, lineage, orchestration, observability, and real-world implementation strategies. We are particularly interested in technically credible, practitioner-led content that demonstrates measurable impact, lessons learned, and actionable insights for enterprise AI and data teams.
 
----
+Apply Now
 
-## 数据卓越
+*Submissions should be educational in nature and aligned to a highly technical audience. Commercially-led or overly promotional sessions will not be accepted.
 
-数据卓越专注于为可扩展、企业级AI系统奠定基础。本舞台探讨组织如何构建、治理、管理和运营数据，以有效地大规模驱动AI、大型语言模型和智能系统。
+5 Features that Defined 2025
 
-演讲应展示构建AI就绪基础设施的实用方法，包括可扩展数据平台、数据质量、治理、血缘关系、编排、可观测性以及真实世界的实施策略。我们尤其对技术可信、由实践者主导的内容感兴趣，这些内容展示可衡量的影响、经验教训以及面向企业AI和数据团队的可执行洞察。
+1. Stellar Conference Speakers
 
-**立即申请**
+These are the practitioners, not just theorists, sharing real-world insights, challenges, and successes. Expect dynamic perspectives from those driving tangible results across their organizations.
 
----
+2. World-Leading Program
 
-*投稿内容应以教育性质为主，并面向高技术水准的受众。商业导向或过度宣传性质的演讲将不被接受。*
+With 10 content stages, hands-on workshops, and a focus on case studies, The AI Summit New York equips attendees with the insights needed to implement AI successfully, at scale.
 
----
+3. AI in Action
 
-## 定义2025年的5大特色
+Check out
 
-### 1. 卓越会议演讲嘉宾
+The Networking Café, Start-up & Investor Village, VisionAIres Programme (VIP only), Demo Agenda, The AI Trail, Masterclass & Workshop Programme,
 
-这些是实践者，而非空谈理论者，分享真实世界的洞察、挑战和成功经验。从在各自组织中推动可衡量成果的领导者那里，期待获得充满活力的视角。
+plus some surprises across an action-packed two days.
 
-### 2. 世界级节目安排
+4. Sourcing Dilemmas Solved
 
-凭借10个内容分会场、实操研讨会和案例研究重点，纽约AI领袖峰会为参会者提供成功实施AI所需的洞察——规模化实施。
+Meet 100+ leading tech companies and stress test their latest AI solutions and products. Our Sponsors & Exhibitors have all sorts of surprises and announcements to share this year, so our tenth edition of the event is going to be one to remember!
 
-### 3. AI在行动
+5. AI Network Ignition
 
-查看：
+The AI Summit New York gathers the brightest minds in the field - spanning a multitude of industries and professions - all with one thing in common: a desire to progress AI. Get the sample list to see for yourself.
 
-**交流咖啡厅、初创企业与投资商对接区、VisionAIres项目（仅限VIP）、演示日程、AI探索之旅、大师班与研讨会项目，**
+Our Ambassador Chapter
 
-以及在为期两天的紧凑活动中更多的惊喜体验。
+Meet the Expert Advisers Driving the Event's Agenda
 
-**了解更多**
+At the core of The AI Summit New York is our exceptional Ambassador Chapter – a powerhouse of visionaries from
 
-### 4. 采购难题迎刃而解
+Kinesso, NBCUniversal, eBay, Sanofi, JP Morgan, the United Nations International Computing Centre, PayPal, Bank of America, IBM
 
-对接100+领先科技公司，现场测试他们最新的AI解决方案和产品。我们的赞助商和参展商今年准备了各种惊喜和公告，因此我们第十届活动将令人难忘！
+, and more.
 
-### 5. AI网络点燃
+Bijit Ghosh
 
-纽约AI领袖峰会汇聚了领域内最聪慧的人才——跨越众多行业和职业——都有一个共同点：推动AI进步的渴望。获取样本名单，亲自见证。
+Managing Director, AI/ML & Data Transformation
 
----
+Wells Fargo
 
-## 我们的大使委员会
+Elise Neel
 
-**认识推动活动议程的专家顾问**
+SVP, Global Strategy & Strategic Partnerships
 
-纽约AI领袖峰会的核心是我们出色的大使委员会——一个由来自以下机构的远见者组成的强大阵容：
+Panasonic
 
-**Kinesso、NBCUniversal、eBay、赛诺菲、摩根大通、联合国国际计算中心、PayPal、美国银行、IBM** 等等。
+Jason Harvey
 
-**Bijit Ghosh**
-董事总经理，AI/ML与数据转型
-富国银行
+EVP & General Manager
 
-**Elise Neel**
-高级副总裁，全球战略与战略合作
-松下
+BET+, Paramount Global
 
-**Jason Harvey**
-执行副总裁兼总经理
-BET+，派拉蒙全球
+Maryam Ashoori
 
-**Maryam Ashoori**
-产品与工程副总裁
+Vice President of Product and Engineering
+
 IBM
 
-**Nitzan Mekel**
-副总裁，首席AI官
+Nitzan Mekel
+
+VP, Chief AI Officer
+
 eBay
 
-**Pooja Chandiramani**
-副总裁，全球营销分析、运营、品牌转型及媒体策略主管
-蔻驰
+Pooja Chandiramani
 
-**Wayne Filin-Matthews**
-副总裁，数据、AI与架构（首席架构师）
-麦当劳公司
+VP, Global Head of Marketing Analytics, Operations, Brand Transformation, and Media Strategy
 
-**Zach Golkhou**
-生成式AI与数据科学总监
-摩根大通
+Coach
 
-通过参加纽约AI领袖峰会，您不仅仅是出席一场会议——您正在接入AI领域最具影响力声音的集体专业知识。我们的嘉宾委员会确保您获得的洞察不仅具有变革性和即时可操作性，而且走在前沿，使您能够在智能创新时代引领潮流。
+Wayne Filin-Matthews
 
----
+Vice President, Data, AI, and Architecture (Chief Architect)
 
-> "内容、兴趣和信息广度真的让我叹为观止。更不用说活动的规模了。"
+McDonald’s Corporation
 
-**Gordan Milinković**
-合伙创始人
+Zach Golkhou
+
+Director of Generative AI & Data Science
+
+JPMorgan Chase
+
+By attending The AI Summit New York, you're not just showing up to a conference — you're plugging into the collective expertise of AI’s most influential voices. Our Ambassador Chapter ensures the insights you gain are not only transformative and immediately actionable, but also ahead of the curve, positioning you to lead in the era of intelligent innovation.
+
+I was literally blown away by the content, interest and breadth of information. Not to mention the size of the event.
+
+Gordan Milinković
+
+Partner and Founder
+
 Spike Reply UK
 
----
+Attending an AI Summit event is simply a no-brainer: Yes! That's the answer. Why? Simple. You can support, empower and connect yourself with the AI community around you to build a better society.  That's why the Law of Tech wanted to take this fantastic opportunity
 
-> "参加AI领袖峰会活动绝对是明智之举：是的！这就是答案。为什么？很简单。您可以支持、赋能并将自己与周围的AI社区连接起来，共同建设更美好的社会。这就是为什么Law of Tech希望抓住这个绝佳机会。"
+Co-Founder
 
-**联合创始人**
 The Law of Tech
 
----
+It was great to see the demos and hearing from different companies and industries on their experience so far with AI, the importance of regulations, principles and standards along with communication, trust and connection.
 
-> "很棒的演示体验，聆听不同公司和行业分享他们迄今为止的AI实践经验，以及法规、原则和标准的重要性，还有沟通、信任和连接。"
+Anna Dillon
 
-**Anna Dillon**
-高级项目经理
-易捷航空
+Senior Project Manager
 
----
+easyJet
 
-> "如此丰富的知识和经验汇聚一堂。这次活动中的一些演讲嘉宾太精彩了。我强烈鼓励任何对这个话题感兴趣的人参加未来的活动。"
+Such a wealth of knowledge and experience under one roof. Some amazing speakers at this event. I would encourage anyone with an interest in the topic to attend future events.
 
-**安全工程总监**
+Director Security Engineering
+
 Liberty Global
 
----
+The AI Summit was a privilege to attend, bringing together exceptional minds, industry leaders, and ground-breaking technologies. This extraordinary platform delved deep into the captivating realm of artificial intelligence.
 
-> "AI领袖峰会是一次难得的参会机会，汇聚了杰出人才、行业领袖和突破性技术。这个非凡平台深入探讨了人工智能的迷人领域。"
+Ali M Bukar
 
-**Ali M Bukar**
-计算机视觉主管
+Principal - Computer Vision
+
 Ofcom
 
----
+I really enjoyed the round table discussion and learned a lot from my colleagues' insights. The AI Summit second day was an eye opener.
 
-> "我非常享受圆桌讨论环节，从同事们的见解中学到了很多。AI领袖峰会的第二天真是令人大开眼界。"
+James Bell
 
-**James Bell**
+Head of Data Enablement and Operations
 
-数据赋能与运营主管  
-新闻集团  
-AI 峰会  
-纽约  
-2026年12月9-10日  
-贾维茨会展中心  
-感谢所有2025年赞助商和合作伙伴  
-查看全部赞助商和合作伙伴
+News Corp
+
+The AI Summit
+
+New York
+
+December 9-10, 2026
+
+Javits Convention Center
+
+Thank You to All Our 2025 Sponsors & Partners
+
+See All Sponsors & Partners
 
 ---
 

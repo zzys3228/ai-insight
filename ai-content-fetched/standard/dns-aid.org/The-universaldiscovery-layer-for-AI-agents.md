@@ -1,13 +1,13 @@
 ---
-title: 面向 AI 智能体的通用发现层。
+title: The universal.discovery layer for AI agents.
 source: dns-aid.org
 url: https://dns-aid.org
 date: 2026-06-22
 category: standard/dns-aid.org
 translated: true
-fetched_at: 2026-06-22T18:14:09.125752
+fetched_at: 2026-06-22T18:27:22.201567
 ---
-# 面向 AI 智能体的通用发现层。
+# The universal.discovery layer for AI agents.
 
 **来源**: dns-aid.org | **日期**: 2026-06-22
 

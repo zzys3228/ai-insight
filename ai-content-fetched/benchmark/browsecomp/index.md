@@ -1,19 +1,13 @@
 ---
-title: **中文译名：**  
-浏览器比较（browsecomp）  
-
-（如果 “browsecomp” 为专有工具或产品名称，则保留原词不变；若作普通概念解释，则译为“浏览器比较”。）
+title: browsecomp
 source: browsecomp.com
 url: https://browsecomp.com
 date: 2026-06-22
 category: benchmark/browsecomp
 translated: true
-fetched_at: 2026-06-22T18:20:19.559292
+fetched_at: 2026-06-22T18:24:26.613073
 ---
-# **中文译名：**  
-浏览器比较（browsecomp）  
-
-（如果 “browsecomp” 为专有工具或产品名称，则保留原词不变；若作普通概念解释，则译为“浏览器比较”。）
+# browsecomp
 
 **来源**: browsecomp.com | **日期**: 2026-06-22
 

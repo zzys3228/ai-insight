@@ -2,17 +2,17 @@
   "04dbfb04e14b": {
     "url": "https://github.com/NVIDIA/cudnn",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:26:59.752808"
+    "last_try": "2026-06-22T17:27:00.060692"
   },
   "21da4a2fadc7": {
     "url": "https://github.com/NVIDIA/cuda",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:30:05.013320"
+    "last_try": "2026-06-22T17:30:05.306454"
   },
   "6eec8646764a": {
     "url": "https://github.com/ollama/ollama",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:33:10.111585"
+    "last_try": "2026-06-22T17:33:10.302506"
   },
   "4c6e2b5d342d": {
     "url": "https://github.com/ggml-org/ggml",
@@ -22,7 +22,7 @@
   "b221ec0a9143": {
     "url": "https://github.com/Mozilla-Ocho/llamafile",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:36:15.199913"
+    "last_try": "2026-06-22T17:36:15.298296"
   },
   "2f5b9452f2df": {
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
@@ -42,12 +42,12 @@
   "3d5faeed8bc8": {
     "url": "https://github.com/elizaOS/eliza",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:42:23.690246"
+    "last_try": "2026-06-22T17:42:22.985503"
   },
   "df8f3a7f0f38": {
     "url": "https://github.com/TransformerOptimus/SuperAGI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:45:28.558159"
+    "last_try": "2026-06-22T17:45:27.826768"
   },
   "6698bac42fd5": {
     "url": "https://github.com/crewAIInc/crewAI",
@@ -62,7 +62,7 @@
   "22212355244a": {
     "url": "https://github.com/useheadroom/headroom",
     "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T18:00:18.409147"
+    "last_try": "2026-06-22T17:59:35.577848"
   },
   "5c33f43b602e": {
     "url": "https://github.com/open-webui/open-webui",
@@ -71,43 +71,43 @@
   },
   "890b45b55993": {
     "url": "https://github.com/Mintplex-Labs/anything-llm",
-    "error": "Failed to fetch README: 403",
-    "last_try": "2026-06-22T18:10:25.634898"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T16:16:21.432666"
   },
   "bb328359daa5": {
     "url": "https://github.com/janhq/jan",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:13:30.448596"
+    "last_try": "2026-06-22T18:09:15.483896"
   },
   "ea9eeb00ad04": {
     "url": "https://github.com/mudler/LocalAI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:16:35.304341"
+    "last_try": "2026-06-22T18:12:20.418571"
   },
   "0c322cf2b8ff": {
     "url": "https://github.com/GreptimeTeam/codebase-memory-mcp",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:19:40.133961"
+    "last_try": "2026-06-22T18:15:25.283007"
   },
   "e36efe8f4ec3": {
     "url": "https://github.com/kilocodeai/kilocode",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:22:44.922619"
+    "last_try": "2026-06-22T18:18:30.098071"
   },
   "8e15e088c323": {
     "url": "https://github.com/Tiklabs/OpenMontage",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:29.592909"
+    "last_try": "2026-06-22T18:21:36.753160"
   },
   "924dd9eb0ce7": {
     "url": "https://github.com/astroslabsai/flue",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:31.240112"
+    "last_try": "2026-06-22T18:24:41.583286"
   },
   "6caed060135f": {
     "url": "https://github.com/vllm-project/vllm",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:32.871983"
+    "last_try": "2026-06-22T18:27:46.370578"
   },
   "d68f391379c8": {
     "url": "https://github.com/ModelTC/lightllm",

@@ -1,21 +1,13 @@
 ---
-title: **Aider LLM 排行榜**
-
-Or if fully translated:
-
-**Aider 大语言模型排行榜**
+title: Aider LLM Leaderboards
 source: aider.chat
 url: https://aider.chat/docs/leaderboards
 date: 2026-06-22
 category: benchmark/aider.chat
 translated: true
-fetched_at: 2026-06-22T18:18:45.844293
+fetched_at: 2026-06-22T18:23:56.185359
 ---
-# **Aider LLM 排行榜**
-
-Or if fully translated:
-
-**Aider 大语言模型排行榜**
+# Aider LLM Leaderboards
 
 **来源**: aider.chat | **日期**: 2026-06-22
 

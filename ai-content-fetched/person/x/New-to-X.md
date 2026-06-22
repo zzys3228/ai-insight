@@ -5,7 +5,7 @@ url: https://x.com/geoffreyhinton
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T18:21:31.633701
+fetched_at: 2026-06-22T18:26:53.814699
 ---
 # New to X?
 
@@ -13,20 +13,16 @@ fetched_at: 2026-06-22T18:21:31.633701
 
 ---
 
-Geoffrey Hinton
+Geoffrey Hinton  
+@geoffreyhinton  
 
-@geoffreyhinton
+2025年3月2日  
 
-2025年3月2日
+我认为埃隆·马斯克应被英国皇家学会除名。不是因为他散布阴谋论和行纳粹礼，而是因为他对美国科研机构造成的巨大损害。现在让我们看看他是否真的相信言论自由。  
 
-我认为埃隆·马斯克应该被逐出英国皇家学会。不是因为他散布阴谋论和行纳粹礼，而是因为他正在对美国科学机构造成巨大损害。现在让我们看看他是否真的相信言论自由。
-
-2.1K
-
-3.2K
-
-24K
-
+2.1K  
+3.2K  
+24K  
 2M
 
 *原文请访问 [x.com](https://x.com/geoffreyhinton)*

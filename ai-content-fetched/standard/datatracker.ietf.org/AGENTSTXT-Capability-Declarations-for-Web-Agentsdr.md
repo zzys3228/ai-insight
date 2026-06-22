@@ -1,39 +1,13 @@
 ---
-title: **Translation:**
-
-AGENTS.TXT：Web 代理的能力声明
-
-draft-car-agents-txt-wellknown-00
-
----
-
-**Notes:**
-- "AGENTS.TXT" is kept as-is (well-known URI identifier)
-- "Capability Declarations" → "能力声明" (standard translation for capability specifications)
-- "Web Agents" → "Web 代理" (common term in networking/web standards)
-- "draft" → kept as "draft" or translated as "草案" (Internet Draft format)
-- The version identifier "00" is typically left unchanged in technical documents
+title: AGENTS.TXT: Capability Declarations for Web Agentsdraft-car-agents-txt-wellknown-00
 source: datatracker.ietf.org
 url: https://datatracker.ietf.org/doc/draft-car-agents-txt-wellknown
 date: 2026-06-22
 category: standard/datatracker.ietf.org
 translated: true
-fetched_at: 2026-06-22T18:10:02.426486
+fetched_at: 2026-06-22T18:25:11.369456
 ---
-# **Translation:**
-
-AGENTS.TXT：Web 代理的能力声明
-
-draft-car-agents-txt-wellknown-00
-
----
-
-**Notes:**
-- "AGENTS.TXT" is kept as-is (well-known URI identifier)
-- "Capability Declarations" → "能力声明" (standard translation for capability specifications)
-- "Web Agents" → "Web 代理" (common term in networking/web standards)
-- "draft" → kept as "draft" or translated as "草案" (Internet Draft format)
-- The version identifier "00" is typically left unchanged in technical documents
+# AGENTS.TXT: Capability Declarations for Web Agentsdraft-car-agents-txt-wellknown-00
 
 **来源**: datatracker.ietf.org | **日期**: 2026-06-22
 

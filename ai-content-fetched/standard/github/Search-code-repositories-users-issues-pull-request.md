@@ -1,13 +1,13 @@
 ---
-title: 搜索代码、仓库、用户、Issue、Pull Request...
+title: Search code, repositories, users, issues, pull requests...
 source: github.com
 url: https://github.com/ggml-org
 date: 2026-06-22
 category: standard/github
 translated: true
-fetched_at: 2026-06-22T18:13:04.345947
+fetched_at: 2026-06-22T18:26:57.084345
 ---
-# 搜索代码、仓库、用户、Issue、Pull Request...
+# Search code, repositories, users, issues, pull requests...
 
 **来源**: github.com | **日期**: 2026-06-22
 
@@ -277,10 +277,6 @@ Repositories
 whisper.cpp
 Public
 Port of OpenAI's Whisper model in C/C++
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/whisper.cpp’s past year of commit activity
 C++
 50,936
@@ -294,6 +290,10 @@ Jun 22, 2026
 llama.cpp
 Public
 LLM inference in C/C++
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/llama.cpp’s past year of commit activity
 C++
 117,635
@@ -306,10 +306,6 @@ Updated
 Jun 22, 2026
 llama.cpp-dev
 Public
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/llama.cpp-dev’s past year of commit activity
 Shell
 3
@@ -323,6 +319,10 @@ Public
 Forked from
 cristianadam/llama.qtcreator
 Local LLM-assisted text completion for Qt Creator.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/llama.qtcreator’s past year of commit activity
 C++
 61
@@ -335,10 +335,6 @@ Jun 21, 2026
 llama-install.sh
 Public
 Build and install script for llama.app
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/llama-install.sh’s past year of commit activity
 Python
 12
@@ -351,6 +347,10 @@ Jun 21, 2026
 llama.vscode
 Public
 VS Code extension for LLM-assisted code/text completion
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/llama.vscode’s past year of commit activity
 TypeScript
 1,402
@@ -363,10 +363,6 @@ Jun 19, 2026
 ggml
 Public
 Tensor library for machine learning
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/ggml’s past year of commit activity
 C++
 14,856
@@ -380,6 +376,10 @@ Jun 19, 2026
 Llama-macOS
 Public
 A cosy home for your LLMs.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/Llama-macOS’s past year of commit activity
 Swift
 1,335
@@ -420,16 +420,6 @@ Jun 17, 2026
 
 Port of OpenAI's Whisper model in C/C++
 
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
-
 LLM inference in C/C++
 
 Uh oh!
@@ -444,8 +434,6 @@ Please reload this page
 
 Local LLM-assisted text completion for Qt Creator.
 
-Build and install script for llama.app
-
 Uh oh!
 
 There was an error while loading.
@@ -455,11 +443,11 @@ Please reload this page
 There was an error while loading.
 Please reload this page
 .
+
+Build and install script for llama.app
 
 VS Code extension for LLM-assisted code/text completion
 
-Tensor library for machine learning
-
 Uh oh!
 
 There was an error while loading.
@@ -470,7 +458,19 @@ There was an error while loading.
 Please reload this page
 .
 
+Tensor library for machine learning
+
 A cosy home for your LLMs.
+
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
 
 llama.cpp's official website
 
