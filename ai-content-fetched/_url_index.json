@@ -2152,5 +2152,479 @@
     "path": "ai-content-fetched\\media\\theresanaiforthat_com\\index.md",
     "fetched_at": "2026-06-22T21:09:53.827952",
     "metadata": {}
+  },
+  "04dbfb04e14b": {
+    "url": "https://github.com/NVIDIA/cudnn",
+    "path": "ai-content-fetched\\company\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:12:41.772351",
+    "metadata": {}
+  },
+  "21da4a2fadc7": {
+    "url": "https://github.com/NVIDIA/cuda",
+    "path": "ai-content-fetched\\company\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:12:52.563691",
+    "metadata": {}
+  },
+  "f7b20f09dc04": {
+    "url": "https://www.amd.com/en/accelerators/instinct.html",
+    "path": "ai-content-fetched\\company\\amd_com\\index.md",
+    "fetched_at": "2026-06-22T21:13:07.047406",
+    "metadata": {}
+  },
+  "15457cc6aca0": {
+    "url": "https://habana.ai",
+    "path": "ai-content-fetched\\company\\habana_ai\\index.md",
+    "fetched_at": "2026-06-22T21:13:43.269088",
+    "metadata": {}
+  },
+  "7c55320286cf": {
+    "url": "https://platform.openai.com/docs/changelog",
+    "path": "ai-content-fetched\\company\\platform_openai_com\\index.md",
+    "fetched_at": "2026-06-22T21:14:07.178843",
+    "metadata": {}
+  },
+  "b5422ec683e3": {
+    "url": "https://docs.anthropic.com/en/docs/about-claude/releases",
+    "path": "ai-content-fetched\\company\\docs_anthropic_com\\index.md",
+    "fetched_at": "2026-06-22T21:14:20.417282",
+    "metadata": {}
+  },
+  "3edeb65a08e5": {
+    "url": "https://platform.deepseek.com",
+    "path": "ai-content-fetched\\company\\platform_deepseek_com\\index.md",
+    "fetched_at": "2026-06-22T21:14:22.339836",
+    "metadata": {}
+  },
+  "f06ee4a2ee28": {
+    "url": "https://chat.deepseek.com",
+    "path": "ai-content-fetched\\company\\chat_deepseek_com\\index.md",
+    "fetched_at": "2026-06-22T21:14:24.536574",
+    "metadata": {}
+  },
+  "a691c08cc40e": {
+    "url": "https://docs.mistral.ai/getting-started/concepts",
+    "path": "ai-content-fetched\\company\\docs_mistral_ai\\index.md",
+    "fetched_at": "2026-06-22T21:14:36.715383",
+    "metadata": {}
+  },
+  "12c27535acf3": {
+    "url": "https://blog.perplexity.ai",
+    "path": "ai-content-fetched\\company\\blog_perplexity_ai\\index.md",
+    "fetched_at": "2026-06-22T21:15:05.939221",
+    "metadata": {}
+  },
+  "b15cb05af132": {
+    "url": "https://www.lingyiwanwu.com/blog",
+    "path": "ai-content-fetched\\company\\lingyiwanwu_com\\index.md",
+    "fetched_at": "2026-06-22T21:16:06.684201",
+    "metadata": {}
+  },
+  "3089cca301e9": {
+    "url": "https://ai.google.dev/jules",
+    "path": "ai-content-fetched\\company\\ai_google_dev\\index.md",
+    "fetched_at": "2026-06-22T21:16:13.221650",
+    "metadata": {}
+  },
+  "b65ed513fc84": {
+    "url": "https://deepmind.google/models/sima/",
+    "path": "ai-content-fetched\\company\\deepmind_google\\index.md",
+    "fetched_at": "2026-06-22T21:16:20.872162",
+    "metadata": {}
+  },
+  "fa2899d55053": {
+    "url": "https://www.adobe.com/sensei.html",
+    "path": "ai-content-fetched\\company\\adobe_com\\index.md",
+    "fetched_at": "2026-06-22T21:16:44.921978",
+    "metadata": {}
+  },
+  "0c91d54fb894": {
+    "url": "https://www.ibm.com/docs/en/watsonx/saas",
+    "path": "ai-content-fetched\\company\\ibm_com\\index.md",
+    "fetched_at": "2026-06-22T21:16:48.801506",
+    "metadata": {}
+  },
+  "546ca0fc0380": {
+    "url": "https://help.aliyun.com/zh/qwen",
+    "path": "ai-content-fetched\\company\\help_aliyun_com\\index.md",
+    "fetched_at": "2026-06-22T21:16:51.523358",
+    "metadata": {}
+  },
+  "22352e737845": {
+    "url": "https://www.aliyun.com/product/dashvector",
+    "path": "ai-content-fetched\\company\\aliyun_com\\index.md",
+    "fetched_at": "2026-06-22T21:17:31.940029",
+    "metadata": {}
+  },
+  "bf9eb47ad360": {
+    "url": "https://www.aliyun.com/product/eiam",
+    "path": "ai-content-fetched\\company\\aliyun_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:14.945617",
+    "metadata": {}
+  },
+  "6ff88df23416": {
+    "url": "https://cloud.baidu.com/product/wenxin",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:23.679060",
+    "metadata": {}
+  },
+  "a9942a8717ba": {
+    "url": "https://cloud.baidu.com/doc/user_guide/releaseNotes",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:30.630639",
+    "metadata": {}
+  },
+  "4af6c14ac87a": {
+    "url": "https://cloud.baidu.com/product/aigc",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:37.368486",
+    "metadata": {}
+  },
+  "28d49ff7946d": {
+    "url": "https://cloud.baidu.com/product/digital",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:44.473352",
+    "metadata": {}
+  },
+  "902ddd6fac00": {
+    "url": "https://cloud.baidu.com/product/bdfm",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:51.018968",
+    "metadata": {}
+  },
+  "f1743186e904": {
+    "url": "https://cloud.baidu.com/doc",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:18:58.034037",
+    "metadata": {}
+  },
+  "64ab6c7a8aa3": {
+    "url": "https://cloud.baidu.com/product/vid",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:05.049087",
+    "metadata": {}
+  },
+  "a7915505d04a": {
+    "url": "https://cloud.baidu.com/product/content-moderation",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:11.054203",
+    "metadata": {}
+  },
+  "4fa12e66baf9": {
+    "url": "https://cloud.baidu.com/product/shengsuan",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:19.979335",
+    "metadata": {}
+  },
+  "e1eeeaef802b": {
+    "url": "https://cloud.baidu.com/product/digital-human",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:27.180720",
+    "metadata": {}
+  },
+  "af8b198f2906": {
+    "url": "https://cloud.baidu.com/product/recommend",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:32.835298",
+    "metadata": {}
+  },
+  "b9c165e631a9": {
+    "url": "https://cloud.baidu.com/product/vip",
+    "path": "ai-content-fetched\\company\\cloud_baidu_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:39.351556",
+    "metadata": {}
+  },
+  "3b4143715a47": {
+    "url": "https://cloud.tencent.com/event/tencent-conference",
+    "path": "ai-content-fetched\\company\\cloud_tencent_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:49.543197",
+    "metadata": {}
+  },
+  "d9b3e1fcef62": {
+    "url": "https://cloud.tencent.com/product/transport-ai",
+    "path": "ai-content-fetched\\company\\cloud_tencent_com\\index.md",
+    "fetched_at": "2026-06-22T21:19:51.664622",
+    "metadata": {}
+  },
+  "7ee33490388b": {
+    "url": "https://gamma.app",
+    "path": "ai-content-fetched\\company\\gamma_app\\index.md",
+    "fetched_at": "2026-06-22T21:20:00.544692",
+    "metadata": {}
+  },
+  "a28f6e0c8352": {
+    "url": "https://elevenlabs.io",
+    "path": "ai-content-fetched\\company\\elevenlabs_io\\index.md",
+    "fetched_at": "2026-06-22T21:21:08.612899",
+    "metadata": {}
+  },
+  "061bff9c1048": {
+    "url": "https://leonardo.ai",
+    "path": "ai-content-fetched\\company\\leonardo_ai\\index.md",
+    "fetched_at": "2026-06-22T21:21:15.527393",
+    "metadata": {}
+  },
+  "fe83e9a94b66": {
+    "url": "https://notion.so",
+    "path": "ai-content-fetched\\company\\notion_so\\index.md",
+    "fetched_at": "2026-06-22T21:22:23.478446",
+    "metadata": {}
+  },
+  "957df3dca3af": {
+    "url": "https://qcon.infoq.cn",
+    "path": "ai-content-fetched\\conference\\qcon_infoq_cn\\index.md",
+    "fetched_at": "2026-06-22T21:22:26.012840",
+    "metadata": {}
+  },
+  "394339a19a47": {
+    "url": "https://aicon.infoq.cn",
+    "path": "ai-content-fetched\\conference\\aicon_infoq_cn\\index.md",
+    "fetched_at": "2026-06-22T21:22:27.939880",
+    "metadata": {}
+  },
+  "cd8e830ad36a": {
+    "url": "https://ciis.caai.cn",
+    "path": "ai-content-fetched\\conference\\ciis_caai_cn\\index.md",
+    "fetched_at": "2026-06-22T21:22:31.846538",
+    "metadata": {}
+  },
+  "c39dd475e002": {
+    "url": "https://london.theaisummit.com/ai-summit-event-series",
+    "path": "ai-content-fetched\\conference\\london_theaisummit_com\\index.md",
+    "fetched_at": "2026-06-22T21:22:53.835771",
+    "metadata": {}
+  },
+  "815a11f622ed": {
+    "url": "https://newyork.theaisummit.com",
+    "path": "ai-content-fetched\\conference\\newyork_theaisummit_com\\index.md",
+    "fetched_at": "2026-06-22T21:23:19.968228",
+    "metadata": {}
+  },
+  "ae8028b20b11": {
+    "url": "https://www.fintechweek.hk",
+    "path": "ai-content-fetched\\conference\\fintechweek_hk\\index.md",
+    "fetched_at": "2026-06-22T21:24:24.003070",
+    "metadata": {}
+  },
+  "0529856e6e79": {
+    "url": "https://www.aiinhealthcare.com",
+    "path": "ai-content-fetched\\conference\\aiinhealthcare_com\\index.md",
+    "fetched_at": "2026-06-22T21:24:28.450398",
+    "metadata": {}
+  },
+  "22a9218ef493": {
+    "url": "https://www.aifinancesummit.com",
+    "path": "ai-content-fetched\\conference\\aifinancesummit_com\\index.md",
+    "fetched_at": "2026-06-22T21:24:31.643947",
+    "metadata": {}
+  },
+  "e9d1cd3886c8": {
+    "url": "https://modelscope.cn",
+    "path": "ai-content-fetched\\conference\\modelscope_cn\\index.md",
+    "fetched_at": "2026-06-22T21:24:33.262756",
+    "metadata": {}
+  },
+  "74ad62c1205d": {
+    "url": "https://archive.fosdem.org",
+    "path": "ai-content-fetched\\conference\\archive_fosdem_org\\index.md",
+    "fetched_at": "2026-06-22T21:25:41.088431",
+    "metadata": {}
+  },
+  "7fca99524da5": {
+    "url": "https://events.linuxfoundation.org",
+    "path": "ai-content-fetched\\conference\\events_linuxfoundation_org\\index.md",
+    "fetched_at": "2026-06-22T21:26:11.482027",
+    "metadata": {}
+  },
+  "2ff50d9ed5d9": {
+    "url": "https://us.pycon.org",
+    "path": "ai-content-fetched\\conference\\us_pycon_org\\index.md",
+    "fetched_at": "2026-06-22T21:27:18.424384",
+    "metadata": {}
+  },
+  "b94b3d0c6162": {
+    "url": "https://thestrangeloop.com",
+    "path": "ai-content-fetched\\conference\\thestrangeloop_com\\index.md",
+    "fetched_at": "2026-06-22T21:27:46.834321",
+    "metadata": {}
+  },
+  "ff37cd8df656": {
+    "url": "https://rsaconference.com",
+    "path": "ai-content-fetched\\conference\\rsaconference_com\\index.md",
+    "fetched_at": "2026-06-22T21:27:55.529956",
+    "metadata": {}
+  },
+  "ee65fad7ffe1": {
+    "url": "https://ai-ethics-and-governance.institute",
+    "path": "ai-content-fetched\\conference\\ai-ethics-and-governance_insti\\index.md",
+    "fetched_at": "2026-06-22T21:29:00.334113",
+    "metadata": {}
+  },
+  "0ddf69940c92": {
+    "url": "https://oecd.ai",
+    "path": "ai-content-fetched\\conference\\oecd_ai\\index.md",
+    "fetched_at": "2026-06-22T21:29:22.545583",
+    "metadata": {}
+  },
+  "22212355244a": {
+    "url": "https://github.com/useheadroom/headroom",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:30:29.246676",
+    "metadata": {}
+  },
+  "890b45b55993": {
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:30:56.420970",
+    "metadata": {}
+  },
+  "bb328359daa5": {
+    "url": "https://github.com/janhq/jan",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:31:24.367236",
+    "metadata": {}
+  },
+  "ea9eeb00ad04": {
+    "url": "https://github.com/mudler/LocalAI",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:31:50.622729",
+    "metadata": {}
+  },
+  "0c322cf2b8ff": {
+    "url": "https://github.com/GreptimeTeam/codebase-memory-mcp",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:32:04.004795",
+    "metadata": {}
+  },
+  "e36efe8f4ec3": {
+    "url": "https://github.com/kilocodeai/kilocode",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:32:29.891835",
+    "metadata": {}
+  },
+  "8e15e088c323": {
+    "url": "https://github.com/Tiklabs/OpenMontage",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:33:15.523104",
+    "metadata": {}
+  },
+  "924dd9eb0ce7": {
+    "url": "https://github.com/astroslabsai/flue",
+    "path": "ai-content-fetched\\github\\github_com\\index.md",
+    "fetched_at": "2026-06-22T21:33:27.696069",
+    "metadata": {}
+  },
+  "2d34099fa297": {
+    "url": "https://www.sglang.io",
+    "path": "ai-content-fetched\\conference\\sglang_io\\index.md",
+    "fetched_at": "2026-06-22T21:35:31.469920",
+    "metadata": {}
+  },
+  "1550f98942aa": {
+    "url": "https://www.anyscale.com/blog",
+    "path": "ai-content-fetched\\conference\\anyscale_com\\index.md",
+    "fetched_at": "2026-06-22T21:35:38.834602",
+    "metadata": {}
+  },
+  "cd8ba1efb73d": {
+    "url": "https://www.tabbyml.com",
+    "path": "ai-content-fetched\\conference\\tabbyml_com\\index.md",
+    "fetched_at": "2026-06-22T21:36:06.890627",
+    "metadata": {}
+  },
+  "802b13222e6c": {
+    "url": "https://siggraph.org",
+    "path": "ai-content-fetched\\academic\\siggraph_org\\index.md",
+    "fetched_at": "2026-06-22T21:36:48.803165",
+    "metadata": {}
+  },
+  "a432d409d7b0": {
+    "url": "https://mlsys.org",
+    "path": "ai-content-fetched\\academic\\mlsys_org\\index.md",
+    "fetched_at": "2026-06-22T21:37:17.188950",
+    "metadata": {}
+  },
+  "016c3128ff72": {
+    "url": "https://ai.stanford.edu/blog/",
+    "path": "ai-content-fetched\\academic\\ai_stanford_edu\\index.md",
+    "fetched_at": "2026-06-22T21:37:49.530455",
+    "metadata": {}
+  },
+  "0421480e7373": {
+    "url": "https://bair.berkeley.edu/blog/",
+    "path": "ai-content-fetched\\academic\\bair_berkeley_edu\\index.md",
+    "fetched_at": "2026-06-22T21:38:23.195995",
+    "metadata": {}
+  },
+  "5a1b8308c37b": {
+    "url": "https://blog.ml.cmu.edu",
+    "path": "ai-content-fetched\\academic\\blog_ml_cmu_edu\\index.md",
+    "fetched_at": "2026-06-22T21:38:49.682576",
+    "metadata": {}
+  },
+  "985ba204bdda": {
+    "url": "https://csail.mit.edu",
+    "path": "ai-content-fetched\\academic\\csail_mit_edu\\index.md",
+    "fetched_at": "2026-06-22T21:39:02.489993",
+    "metadata": {}
+  },
+  "5e862c7d642d": {
+    "url": "https://wp.nyu.edu/cilvr",
+    "path": "ai-content-fetched\\academic\\wp_nyu_edu\\index.md",
+    "fetched_at": "2026-06-22T21:39:29.621018",
+    "metadata": {}
+  },
+  "9f58ed9943ea": {
+    "url": "https://mila.quebec/",
+    "path": "ai-content-fetched\\academic\\mila_quebec\\index.md",
+    "fetched_at": "2026-06-22T21:40:38.245131",
+    "metadata": {}
+  },
+  "0337e39b8db1": {
+    "url": "https://vectorinstitute.ai",
+    "path": "ai-content-fetched\\academic\\vectorinstitute_ai\\index.md",
+    "fetched_at": "2026-06-22T21:41:04.551625",
+    "metadata": {}
+  },
+  "fc4f3c865761": {
+    "url": "https://www.ox.ac.uk",
+    "path": "ai-content-fetched\\academic\\ox_ac_uk\\index.md",
+    "fetched_at": "2026-06-22T21:41:15.835890",
+    "metadata": {}
+  },
+  "21f70540613b": {
+    "url": "https://ai.epfl.ch",
+    "path": "ai-content-fetched\\academic\\ai_epfl_ch\\index.md",
+    "fetched_at": "2026-06-22T21:41:58.742832",
+    "metadata": {}
+  },
+  "50e3e6aef91f": {
+    "url": "https://ai.ethz.ch",
+    "path": "ai-content-fetched\\academic\\ai_ethz_ch\\index.md",
+    "fetched_at": "2026-06-22T21:42:41.954737",
+    "metadata": {}
+  },
+  "da85e503ef23": {
+    "url": "https://iiis.tsinghua.edu.cn",
+    "path": "ai-content-fetched\\academic\\iiis_tsinghua_edu_cn\\index.md",
+    "fetched_at": "2026-06-22T21:43:47.174291",
+    "metadata": {}
+  },
+  "3bfb07a969cb": {
+    "url": "https://nlp.fudan.edu.cn",
+    "path": "ai-content-fetched\\academic\\nlp_fudan_edu_cn\\index.md",
+    "fetched_at": "2026-06-22T21:44:31.511315",
+    "metadata": {}
+  },
+  "7eef1b825bfb": {
+    "url": "https://mmlab.ie.cuhk.edu.hk",
+    "path": "ai-content-fetched\\academic\\mmlab_ie_cuhk_edu_hk\\index.md",
+    "fetched_at": "2026-06-22T21:45:01.413596",
+    "metadata": {}
+  },
+  "bb78aa1ca90f": {
+    "url": "https://x.com/ilyasut",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:46:05.257879",
+    "metadata": {}
   }
 }

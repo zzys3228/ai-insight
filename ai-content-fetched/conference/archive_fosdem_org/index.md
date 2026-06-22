@@ -3,42 +3,40 @@ title: fosdem-2026
 source: archive.fosdem.org
 url: https://archive.fosdem.org
 category: conference
-fetched_at: 2026-06-22T20:07:25.276945
-translated: true
+fetched_at: 2026-06-22T21:25:41.087479
 ---
 
 # fosdem-2026
 
-```markdown
-[FOSDEM 2026](/2026/)
+[fosdem-2026](/2026/)
 =====================
 
-* [主页](/2026/)
-* [关于](/2026/about/)
-* [新闻](/2026/news/)
-* [日程安排](/2026/schedule/)
-* [展位](/2026/stands/)
-* [志愿者](/2026/volunteer/)
-* [实用信息](/2026/practical/)
-* 搜索：
+* [Home](/2026/)
+* [About](/2026/about/)
+* [News](/2026/news/)
+* [Schedule](/2026/schedule/)
+* [Stands](/2026/stands/)
+* [Volunteer](/2026/volunteer/)
+* [Practical](/2026/practical/)
+* Search:
 
-**布鲁塞尔 / 2026年1月31日 & 2月1日**
+Brussels / **31 January & 1 February 2026**
 -------------------------------------------
 
-[日程安排](/2026/schedule/)
+[schedule](/2026/schedule/)
 
-* [新闻](/2026/news/)
-* [赞助商](/2026/about/sponsors/)
-* [联系方式](/2026/contact/)
+* [News](/2026/news/)
+* [Sponsors](/2026/about/sponsors/)
+* [Contact](/2026/contact/)
 
 * [FOSDEM 2026](/2026/)
 * /
-* 往届 FOSDEM
+* Previous FOSDEM Editions
 
-往届 FOSDEM 版本
+Previous FOSDEM Editions
 ========================
 
-指向往届 FOSDEM 归档网站的链接：
+Links to the archived websites of previous FOSDEM editions:
 
 * [2025](https://archive.fosdem.org/2025/)
 * [2024](https://archive.fosdem.org/2024/)
@@ -65,6 +63,5 @@ translated: true
 * [2003](https://archive.fosdem.org/2003/)
 * [2002](https://archive.fosdem.org/2002/)
 * [2001](https://archive.fosdem.org/2001/)
-```
 
-*原文请访问 [https://archive.fosdem.org](https://archive.fosdem.org)*
+*原文: https://archive.fosdem.org*

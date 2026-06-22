@@ -3,73 +3,53 @@ title: The AI Summit Series
 source: london.theaisummit.com
 url: https://london.theaisummit.com/ai-summit-event-series
 category: conference
-fetched_at: 2026-06-22T20:05:03.707577
-translated: true
+fetched_at: 2026-06-22T21:22:53.834708
 ---
 
 # The AI Summit Series
 
-**AI 峰会系列（AI Summit Series）**  
-**全球布局，聚焦本地**  
+# AI 峰会系列
 
-如果您正在构建、购买或投资人工智能，AI 峰会系列是让想法转化为成果的地方。我们去繁从简，聚焦真实用例、现场演示和实战 playbook，帮助您更快部署、更智能治理、更自信地证明 ROI（投资回报率）。不搞炒作，只提供真正能转型的 AI。  
+## 全球布局，本地聚焦
 
-加入遍布全球领先技术中心的精选社区，期待深入洞察和精准对接，将对话转化为合作，离开时带着清晰的下一步计划，能够在下周付诸实践。  
+如果您正在构建、购买或投资人工智能（AI），AI 峰会系列是让想法转化为成果的盛会。我们摒弃流行术语，聚焦真实的用例、现场演示和坦诚的策略手册，帮助您更快部署、更智能治理、更自信地证明投资回报率（ROI）。不搞炒作，只展示变革商业的人工智能。
 
----
+加入我们精心策划的全球领先科技中心社区。期待敏锐的洞察和精准的人脉，将对话转化为合作伙伴关系，让您带着明确的行动路径离开，在下周就能付诸实践。
 
-### 旗舰活动（Flagship Events）
+## 旗舰活动
 
-#### The AI Summit London  
-2026年6月10‑11日 | 2027年6月9‑10日  
-Tobacco Dock, London  
+### 伦敦人工智能峰会
 
-#### The AI Summit New York  
-2026年12月9‑10日 | 2027年12月8‑9日  
-Javits Convention Center, New York  
-[访问](https://newyork.theaisummit.com/)
+2026年6月10-11日 | 2027年6月9-10日
 
----
+伦敦烟草码（Tobacco Dock, London）
 
-### 卫星活动（Satellite Events）
+### 纽约人工智能峰会
 
-#### The AI Summit Singapore at ATx Enterprise  
-2027年5月19‑21日  
-Singapore Expo  
-[访问](https://asiatechxsg.com/aisummitsingapore/)
+2026年12月9-10日 | 2027年12月8-9日
 
-#### The AI Summit at Black Hat USA  
-2026年8月4日 | 2027年8月3日  
-Mandalay Bay, Las Vegas  
-[访问](https://blackhat.com/us-26/ai-summit.html)
+纽约贾维茨会展中心（Javits Convention Center, New York）
 
-#### The AI Summit Australia  
-2026年9月7‑9日 | 2027年9月6‑8日  
-Melbourne Convention and Exhibition Centre  
-[访问](https://australia.theaisummit.com/?utm_campaign=Listing+on+London+site&utm_medium=Website&utm_source=The+AI+Summit+London&utm_content=PromoBox)
+## 卫星活动
 
----
+### 新加坡人工智能峰会 @ ATx Enterprise
 
-### 致谢 2026 年赞助商与合作伙伴（Thank You to Our 2026 Sponsors & Partners）
+2027年5月19-21日
 
-- IBM  
-- Elsewhen  
-- DX  
-- Hewlett Packard Enterprise (HPE)  
-- EY（安永）  
-- Amazon Web Services (AWS)  
-- Italian Trade Agency  
-- NiCE  
-- KPMG  
-- LTX  
-- Tricentis  
-- Reflection AI  
-- Red Hat  
-- WWT（World Wide Technology）  
-- Coreweave  
-- Make  
-- 1Password  
+新加坡博览中心（Singapore Expo）
 
-（以上为赞助商与合作伙伴的标识与名称，均保持原始英文或官方中文译名）
+### 黑帽大会（Black Hat USA）人工智能峰会
 
-*原文请访问 [https://london.theaisummit.com/ai-summit-event-series](https://london.theaisummit.com/ai-summit-event-series)*
+2026年8月4日 | 2027年8月3日
+
+拉斯维加斯曼德勒湾（Mandalay Bay, Las Vegas）
+
+### 澳大利亚人工智能峰会
+
+2026年9月7-9日 | 2027年9月6-8日
+
+墨尔本会议展览中心（Melbourne Convention and Exhibition Centre）
+
+## 感谢我们的2026年赞助商与合作伙伴
+
+*原文: https://london.theaisummit.com/ai-summit-event-series*

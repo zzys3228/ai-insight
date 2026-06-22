@@ -3,12 +3,11 @@ title: www.aiinhealthcare.com
 source: www.aiinhealthcare.com
 url: https://www.aiinhealthcare.com
 category: conference
-fetched_at: 2026-06-22T20:06:43.797542
-translated: true
+fetched_at: 2026-06-22T21:24:28.449541
 ---
 
 # www.aiinhealthcare.com
 
 
 
-*原文请访问 [https://www.aiinhealthcare.com](https://www.aiinhealthcare.com)*
+*原文: https://www.aiinhealthcare.com*

@@ -1,107 +1,111 @@
 ---
 title: x.com
 source: x.com
-url: https://x.com/geoffreyhinton
+url: https://x.com/ilyasut
 category: person
-fetched_at: 2026-06-22T20:56:35.676361
 ---
-
 # x.com
 
-[登录](/i/jf/onboarding/web?mode=login)[注册](/i/jf/onboarding/web?mode=signup)
+[Log in](/i/jf/onboarding/web?mode=login)[Sign up](/i/jf/onboarding/web?mode=signup)
 
-杰弗里·辛顿
+Ilya Sutskever
 
-153 条帖子
+1,196 posts
 
-[头像](/geoffreyhinton/photo)
+[![](https://pbs.twimg.com/profile_banners/1720046887/1648404188)](/ilyasut/header_photo)
 
-杰弗里·辛顿
+[![user avatar](https://pbs.twimg.com/profile_images/1961115716889030656/We74zmE-_400x400.jpg)](/ilyasut/photo)
 
-@geoffreyhinton
+Ilya Sutskever
 
-深度学习
+@ilyasut
 
-2019年1月加入
+SSI [@SSI](https://x.com/SSI)
 
-28
+Joined September 2013
 
-关注[/geoffreyhinton/following)][611.6K
+[3
 
-粉丝](/geoffreyhinton/verified_followers)
+Following](/ilyasut/following)[731.5K
 
-帖子帖子回复回复媒体媒体
+Followers](/ilyasut/verified_followers)
 
-- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
+PostsPostsRepliesRepliesMediaMedia
 
-  [杰弗里·辛顿](https://x.com/geoffreyhinton)
+* [![user avatar](https://pbs.twimg.com/profile_images/1961115716889030656/We74zmE-_normal.jpg)](https://x.com/ilyasut)
 
-  [@geoffreyhinton](https://x.com/geoffreyhinton)
+  [Ilya Sutskever](https://x.com/ilyasut)
 
-  2025年3月2日[/geoffreyhinton/status/1896277592325714330)
+  [@ilyasut](https://x.com/ilyasut)
 
-  我认为埃隆·马斯克应该被开除出英国皇家学会。不是因为他传播阴谋论和行纳粹礼，而是因为他正在对美国科学机构造成巨大损害。现在让我们看看他是否真的相信言论自由。
+  [Nov 20, 2023](/ilyasut/status/1726590052392956028)
 
-  2.1K2.1K
+  I deeply regret my participation in the board's actions. I never intended to harm OpenAI. I love everything we've built together and I will do everything I can to reunite the company.
 
-  3.2K3.2K
+  6.2K6.2K
 
-  24K24K
+  3.5K3.5K
 
-  [2M2M](/geoffreyhinton/status/1896277592325714330/quotes)
+  31K31K
 
-- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
+  [29M29M](/ilyasut/status/1726590052392956028/quotes)
+* [![user avatar](https://pbs.twimg.com/profile_images/1961115716889030656/We74zmE-_normal.jpg)](https://x.com/ilyasut)
 
-  [杰弗里·辛顿](https://x.com/geoffreyhinton)
+  [Ilya Sutskever](https://x.com/ilyasut)
 
-  [@geoffreyhinton](https://x.com/geoffreyhinton)
+  [@ilyasut](https://x.com/ilyasut)
 
-  2023年5月1日[/geoffreyhinton/status/1652993570721210372)
+  [Jun 19, 2024](/ilyasut/status/1803472978753303014)
 
-  在今天的《纽约时报》上，凯德·梅茨暗示我离开谷歌是为了批评谷歌。实际上，我离开是为了谈论AI的危险，而不用考虑这会对谷歌产生什么影响。谷歌的表现非常负责任。
+  I am starting a new company:
 
-  596596
+  [![user avatar](https://pbs.twimg.com/profile_images/1803243852951855104/qamjjZ2a_normal.jpg)](https://x.com/ssi)
 
-  2.8K2.8K
+  [SSI Inc.](https://x.com/ssi)
 
-  15K15K
+  [@ssi](https://x.com/ssi)
 
-  [3M3M](/geoffreyhinton/status/1652993570721210372/quotes)
+  [Jun 19, 2024](/ssi/status/1803472825476587910)
 
-- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
+  Superintelligence is within reach.
+  Building safe superintelligence (SSI) is the most important technical problem of our​​ time.
+  We've started the world’s first straight-shot SSI lab, with one goal and one product: a safe superintelligence.
+  It’s called Safe Superintelligence Show more
 
-  [杰弗里·辛顿](https://x.com/geoffreyhinton)
+  1.5K1.5K
 
-  [@geoffreyhinton](https://x.com/geoffreyhinton)
+  3.1K3.1K
 
-  2025年4月28日[/geoffreyhinton/status/1916916200442912980)
+  30K30K
 
-  AGI（通用人工智能）是我们这个时代最重要、也可能最危险的技术。OpenAI正确地认识到，这项技术值得强有力的结构和激励机制来确保其安全开发，而现在他们在试图改变这些结构和激励机制，这是错误的。
-  我们正在敦促... 显示更多
+  [7.4M7.4M](/ilyasut/status/1803472978753303014/quotes)
+* [![user avatar](https://pbs.twimg.com/profile_images/1961115716889030656/We74zmE-_normal.jpg)](https://x.com/ilyasut)
 
-  943943
+  [Ilya Sutskever](https://x.com/ilyasut)
 
-  1.7K1.7K
+  [@ilyasut](https://x.com/ilyasut)
 
-  9K9K
+  [May 14, 2024](/ilyasut/status/1790517455628198322)
 
-  [2.2M2.2M](/geoffreyhinton/status/1916916200442912980/quotes)
+  After almost a decade, I have made the decision to leave OpenAI.  The company’s trajectory has been nothing short of miraculous, and I’m confident that OpenAI will build AGI that is both safe and beneficial under the leadership of [@sama](https://x.com/sama), [@gdb](https://x.com/gdb), [@miramurati](https://x.com/miramurati) and now, under the Show more
 
-- [头像](https://pbs.twimg.com/profile_images/1084213316963057664/fQGCUSt0_normal.jpg)](https://x.com/geoffreyhinton)
+  1.4K1.4K
 
-  [杰弗里·辛顿](https://x.com/geoffreyhinton)
+  2.3K2.3K
 
-  [@geoffreyhinton](https://x.com/geoffreyhinton)
+  25K25K
 
-  2025年4月28日[/geoffreyhinton/status/1916915980246389120)
+  [5.9M5.9M](/ilyasut/status/1790517455628198322/quotes)
+* [![user avatar](https://pbs.twimg.com/profile_images/1961115716889030656/We74zmE-_normal.jpg)](https://x.com/ilyasut)
 
-  我认同OpenAI的使命——"确保通用人工智能造福全人类"，我想阻止他们彻底破坏这一使命。
-  我签署了一封致@AGRobBonta和@DE_DOJ的新信，要求他们停止重组。(1/2)
+  [Ilya Sutskever](https://x.com/ilyasut)
 
-  462462
+  [@ilyasut](https://x.com/ilyasut)
 
-  886886
+  [Sep 4, 2025](/ilyasut/status/1963627458244350015)
 
-  7.7K7
+  a revolutionary breakthrough if i've ever seen one
 
-*原文: https://x.com/geoffreyhinton*
+  [![user avatar](https://pbs.t
+
+*原文: https://x.com/ilyasut*

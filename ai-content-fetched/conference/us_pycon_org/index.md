@@ -3,72 +3,72 @@ title: PresentingPyCon US 2026
 source: us.pycon.org
 url: https://us.pycon.org
 category: conference
-fetched_at: 2026-06-22T20:08:22.166584
-translated: true
+fetched_at: 2026-06-22T21:27:18.423763
 ---
 
 # PresentingPyCon US 2026
 
-# 中文翻译
-
 ![PyCon US 2026](/2026/static/images/theme/logo.25d1b5ccb097.svg)
 
-可用的翻译版本：
+Translations available:
 [español](/es/2026/)
 
-**为您呈现**
+Presenting
 PyCon US 2026
 ========================
 
-2026年5月13日至5月19日
+May 13 - May 19, 2026
 
-加利福尼亚州·长滩市
+Long Beach, California
 
-#### 注册现已开放！
+#### Registration - Now Open!
 
-欢迎访问[注册信息页面](/2026/attend/information/)获取更多信息并进行注册。
+Find more information and register today via the [Registration Information page](/2026/attend/information/).
 
-[立即注册！](https://us.pycon.org/2026/accounts/dashboard/)
+[Register Today!](https://us.pycon.org/2026/accounts/dashboard/)
 
-#### 会议地点
+#### Where?
 
-[**长滩会议中心 (Long Beach Convention Center)**](https://www.longbeachcc.com/)
+[**Long Beach Convention Center**](https://www.longbeachcc.com/)
 
 18 S Pine Ave  
-Long Beach, CA 90802
+ Long Beach, CA 90802
 
-此地址将引导您前往正确的松树大道入口。
+This address will take you to the correct Pine Avenue entrance.
 
-#### **会议日程安排**：
+#### **Conference breakdown**:
 
-* **培训课程 (Tutorials)**：2026年5月13日至14日
-* **赞助商演讲 (Sponsor Presentations)**：2026年5月14日至15日
-* **主会议 (Main Conference)**：2026年5月15日至17日
-* **招聘会与社区展示 (Job Fair & Community Showcase)**：2026年5月17日
-* **编程冲刺 (Sprints)**：2026年5月18日至19日
+* **Tutorials**: May 13 - 14, 2026
+* **Sponsor Presentations**: May 14 - May 15, 2026
+* **Main Conference**: May 15 - 17, 2026
+* **Job Fair & Community Showcase**: May 17, 2026
+* **Sprints**: May 18 - May 19, 2026
 
-我们非常激动地欢迎我们的社区来到加利福尼亚州长滩市这一新主办城市，参加 PyCon US 2026！请在日历上做好标记，并务必阅读 [关于 PyCon US 页面](/2026/about/pycon/) 以获取更多详细信息。期待在[长滩会议与娱乐中心](https://www.longbeachcc.com/)与大家见面！
+We are so excited to welcome our community to our new host city of Long Beach, California, for PyCon US 2026! Mark your calendars and be sure to read the [About PyCon US page](/2026/about/pycon/) for more details. We can’t wait to see you all at the [Long Beach Convention and Entertainment Center](https://www.longbeachcc.com/)!
 
-#### PyCon US 日程安排现已发布！
+#### The PyCon US Schedule is now live!
 
-开始规划您的[演讲](https://us.pycon.org/2026/schedule/talks/)，了解[主题演讲嘉宾](/2026/about/keynote-speakers/)，并[注册培训课程、峰会及活动](https://us.pycon.org/2026/accounts/dashboard/)！访问[日程页面](https://us.pycon.org/2026/schedule/)查看今年精彩的日程安排。
+Start planning your [talks](https://us.pycon.org/2026/schedule/talks/), meet the [keynote speakers](/2026/about/keynote-speakers/), and [register for tutorials, summits & events](https://us.pycon.org/2026/accounts/dashboard)! [Head to the schedule page](https://us.pycon.org/2026/schedule/) to see this year's stellar lineup.
 
-***请注意：*** PyCon US 2026 将完全以线下形式在加利福尼亚州长滩市举办，主会议日不提供实时流媒体直播。PyCon US 将录制所有演讲轨道、主题演讲和闪电演讲（主会议日，周五至周日），并发布至 [PyCon US YouTube 频道](https://www.youtube.com/c/pyconus)。
+***Please note:*** PyCon US 2026 will take place fully in-person in Long Beach, California with no live streaming of the main conference days. PyCon US will record all Talk tracks, Keynotes and Lightning Talks on the main days of the conference (Friday - Sunday) and publish them to the [PyCon US YouTube Channel](https://www.youtube.com/c/pyconus).
 
-PyCon US 继续将社区安全作为我们的首要任务，并希望 PyCon US 成为一个让每个人都能安心参加的活动。鉴于此，PyCon US 2026 将再次实施健康与安全指南。完整详情请阅读 [PyCon US 2026 健康与安全指南](/2026/about/health-safety-guidelines/)。
+PyCon US continues to keep the safety of our community as our top priority and wants PyCon US to be an event that everyone feels safe attending. With that in mind, PyCon US 2026 will have Health and Safety Guidelines in place again this year. For full details, read the [PyCon US 2026 Health & Safety Guidelines here](/2026/about/health-safety-guidelines/).
 
-如需及时了解详情和公告，请务必在此网站上创建账户并[选择接收 PyCon US 新闻](https://python.us19.list-manage.com/subscribe?u=5697f493c3a48994f504d4deb&id=a0a3bd5663)。此外，请关注我们的 [Bluesky](https://bsky.app/profile/pycon.us)、[X](https://twitter.com/pycon) 和 [Mastodon](https://fosstodon.org/@pycon)，并订阅 [PyCon US 博客](https://pycon.blogspot.com/)。
+To stay informed on details and announcements be sure to create an account here on this website and [opt-in to receive PyCon US News](https://python.us19.list-manage.com/subscribe?u=5697f493c3a48994f504d4deb&id=a0a3bd5663). Also, follow us on [Bluesky](https://bsky.app/profile/pycon.us), [X](https://twitter.com/pycon), and [Mastodon](https://fosstodon.org/@pycon), and subscribe to the [PyCon US Blog](https://pycon.blogspot.com/).
 
----
+Tutorials
+:   May 13 - 14, 2026
 
-**会议日程概览**：
+Sponsor Presentations
+:   May 14 - 15, 2026
 
-| 活动 | 日期 |
-|------|------|
-| 培训课程 (Tutorials) | 2026年5月13日至14日 |
-| 赞助商演讲 (Sponsor Presentations) | 2026年5月14日至15日 |
-| 主会议 (Main Conference) | 2026年5月15日至17日 |
-| 招聘会与社区展示 (Job Fair & Community Showcase) | 2026年5月17日 |
-| 编程冲刺 (Sprints) | 2026年5月18日至19日 |
+Main Conference
+:   May 15 - 17, 2026
 
-*原文请访问 [https://us.pycon.org](https://us.pycon.org)*
+Job Fair & Community Showcase
+:   May 17, 2026
+
+Sprints
+:   May 18 - May 19, 2026
+
+*原文: https://us.pycon.org*

@@ -5,7 +5,7 @@ url: https://io.google
 date: 2026-06-22
 category: conference/google-io/2026
 translated: true
-fetched_at: 2026-06-22T20:54:52.199991
+fetched_at: 2026-06-22T21:11:32.989561
 content_sources: [{'type': 'official_website', 'url': 'https://io.google', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
 ---
 # Catch up onGoogle I/O
@@ -13,27 +13,6 @@ content_sources: [{'type': 'official_website', 'url': 'https://io.google', 'stat
 **来源**: io.google | **年份**: 2026 | **日期**: 2026-06-22
 
 ---
-
-### 主题演讲数量
-共 25 个 PA Keynote
-
-### 导航结构
-- 探索：/2026/explore
-- 社区：/2026/community
-- 谜题：/2026/puzzle
-- 关于：/2026/about
-- 观看主题演讲：/2026/explore/google-keynote-1
-- 观看主题演讲：/2026/explore/developer-keynote-1
-- AI：/2026/explore/?focus_areas=AI
-- Android：/2026/explore/?focus_areas=Android
-- Chrome：/2026/explore/?focus_areas=Chrome
-- 云：/2026/explore/?focus_areas=Cloud
-- I/O 谜题：/2026/puzzle/
-- 常见问题：/2026/about
-
-
-
-## Catch up onGoogle I/O
 
 
 ### 主题演讲数量
@@ -56,147 +35,248 @@ content_sources: [{'type': 'official_website', 'url': 'https://io.google', 'stat
 
 
 
+## Catch up onGoogle I/O
+
+### 主题演讲数量
+共 **25** 场 **PA 主题演讲**  
+
+### 导航结构
+- **探索**：`/2026/explore`  
+- **社区**：`/2026/community`  
+- **解谜**：`/2026/puzzle`  
+- **关于**：`/2026/about`  
+- **观看主题演讲**：`/2026/explore/google-keynote-1`  
+- **观看主题演讲**：`/2026/explore/developer-keynote-1`  
+- **人工智能 (AI)**：`/2026/explore/?focus_
+
+
+
 ## Watch and learn
 
-## 会议分会场（共 4 个）
 
-- **Google 主题演讲**
+## 会议Sessions (共 4 个)
+
+- **Google keynote**
   - ID: google-keynote-1
-  - 编码：IO26_001_GKN
-- **Google 主题演讲**
+  - Code: IO26_001_GKN
+- **Google keynote**
   - ID: google-keynote-1
-  - 编码：IO26_001_GKN
-- **开发者主题演讲**
+  - Code: IO26_001_GKN
+- **Developer keynote**
   - ID: developer-keynote-1
-  - 编码：IO26_003_DKN
-- **开发者主题演讲**
+  - Code: IO26_003_DKN
+- **Developer keynote**
   - ID: developer-keynote-1
-  - 编码：IO26_003_DKN
+  - Code: IO26_003_DKN
 
-## 详细分会场列表（共 83 个）
 
-### 1. 创建高级数据驱动的 Gemini API 应用
+## 详细Sessions列表 (83个)
 
-探索 Gemini API 中最新的文件处理、数据集成和工具功能。构建一个使用全新 File Search 托管型 RAG 系统的文档 AI 系统，并发现批量处理和自动化数据提取的功能。
 
-### 2. Android 开发工具的新功能
 
-了解 Android Studio 的最新更新。探索旨在加速您跨 Android API 工作流程的演示和功能，并第一时间了解适用于 Android 应用开发的最新 Gemini 功能。
+### 1. Create advanced data driven Gemini API apps
 
-### 3. Google Health API：健康的未来
 
-Google Health API：健康的未来
 
-### 4. 让 Material 为你所用
+Explore the latest file handling, data integration, and tooling capabilities within the Gemini API. Build a documentation AI system using the new File Search hosted-RAG system, and discover features for batch processing and automated data extraction.
 
-了解如何在 Material Design 系统的可用性和功能性基础之上，构建属于你自己的精美且高端的设计语言。
 
-### 5. 定义智能代理 AI 时代
+### 2. What\u2019s new in Android development tools
 
-加入 Google AI 领导层的讨论，探讨模型能力的快速提升如何在一个主动型、智能代理 AI 的新时代中改变生产力和信息获取方式。
 
-### 6. Google Antigravity 中的 Google Workspace MCP 服务器
+
+Discover what\u2019s new in Android Studio. Explore demos and features designed to accelerate your workflow across Android APIs, and get a firsthand look at the latest Gemini capabilities for Android app development.
+
+
+### 3. Google Health API: The Future of Wellness
+
+
+Google Health API: The Future of Wellness
+
+
+### 4. Make Material your own
+
+
+
+Discover how to build your own beautiful and premium design language on top of the Material Design system\u2019s foundation of usability and functionality.
+
+
+### 5. Defining the agentic AI era
+
+
+
+Join Googleâs AI leadership to discuss how the rapid acceleration of model capabilities is transforming productivity and access to information in a new era of proactive, agentic AI.
+
+
+### 6. Google Workspace MCP servers in Google Antigravity
+
 
 Google Workspace MCP servers in Google Antigravity
 
-### 7. Web UI 的新功能
 
-快速浏览如今登陆浏览器的最新 UI 功能，重点关注打造美观的网络体验。从滚动触发动画和作用域视图转换等交互功能的更新，到最新的 UI 组件，了解如何使用原生 CSS 和 HTML 原语构建高性能界面。发现如何用更少的代码提供更好的用户体验。
+### 7. What\u2019s new in Web UI
 
-### 8. Google 主题演讲
 
-了解我们如何进一步实现整合全球信息并使其普遍可访问和有用的使命。
 
-### 9. 释放性能：在 Google Tensor 上实现 LiteRT
+Take a fast-paced tour of the latest UI features landing in browsers today, with a lens on making beautiful web experiences. From updates to interactive capabilities like scroll-triggered animations and scoped view transitions, to the latest in UI components, learn how to build performant interfaces using native CSS and HTML primitives. Discover how to ship better user experiences with less code.
+
+
+### 8. Google keynote
+
+
+Discover how we\u2019re furthering our mission to organize the world\u2019s information and make it universally accessible and useful.
+
+
+### 9. Unleash Performance: Implementing LiteRT on Google Tensor
+
 
 Unleash Performance: Implementing LiteRT on Google Tensor
 
-### 10. Google Play 的新功能
 
-了解 Google Play 的最新工具和更新，所有这些都旨在帮助您发展业务。
+### 10. Whatâs new in Google Play
 
-### 11. Google AI 的新功能
 
-探索 Google 端到端 AI 堆栈。了解跨多模态、媒体生成和机器人技术领域的最新模型能力，以及如何使用 Google 基础设施来利用它们。无论您是在构建智能代理、利用新的 vibe-coding 工具，还是在微调和部署开源模型，都能获得构建下一代 AI 应用所需工具的清晰理解。
 
-### 12. Gemma 开放模型家族的新功能
+Learn about the latest tools and updates on Google Play, all designed to help you grow your business.
 
-使用 Gemma 开放模型家族最先进工具构建 AI 应用。发现该家族的最新成员，深入了解使其能够规模化使用的实用工具。探索从模型发现到部署的端到端流程。了解如何使用您喜欢的工具进行 Gemma 实验，并学习跨云端、桌面和移动端直接向用户部署的最佳实践。
 
-### 13. Chrome 的新功能
+### 11. What\u2019s new in Google AI
 
-探索 Web 开发的最新前沿，了解 Chrome 在 2026 年将把浏览器带向何方。探索使网络更强大、更可靠、更智能的新功能。
 
-### 14. Flutter 的新功能
 
-探索最新的 Flutter 框架更新，从性能改进到新功能。深入了解 Flutter GenUI，发现如何即时构建真正的自适应 AI 生成用户体验。了解这些创新如何塑造快速、多平台应用开发的未来。
+Explore Google\u2019s end-to-end AI stack. Learn about the latest model capabilities across multimodal, media generation, and robotics, and how to leverage them using Googleâs infrastructure. Whether you are building intelligent agents, utilizing new vibe-coding tools, or tuning and serving open-source models, gain a clear understanding of the tools needed to build next-generation AI apps.
 
-### 15. Firebase 的新功能
 
-Firebase 正在演变为一个原生智能代理平台，使开发者能够以前所未有的速度构建智能应用。了解如何利用与 Google AI Studio 和 Google Antigravity 的集成来 vibe-coding 全栈应用。获得从原型到生产级 AI 的信心，并使用 Google Cloud 基础设施安全地扩展您的应用。
+### 12. What\u2019s new in the Gemma open model family
 
-### 16. 在 Chrome 中使用内置 AI 构建新功能
 
-踏上由 Chrome 内置 AI API 驱动的旅行博客应用之旅。跟随 Gemini Nano 将非结构化写作转化为自动化工作流程。学习部署 Summarizer、Writer、Rewriter、Language Detector 和 Translator——所有这些都在本地运行，最大限度保护隐私且零服务器成本。然后深入了解 Prompt API，使用 JSON schema 进行结构化数据标记和多模态 alt-text 生成，将这些模式应用到您自己的 Web 应用中。
 
-### 17. 使用 Google Antigravity 和 Flutter 一次 Vibe，多端运行
+Build AI applications with the Gemma family of open models\u2019 state-of-the-art tools. Uncover the newest additions to the family and dive into the practical tools that make them usable at scale. Explore an end-to-end pipeline from model discovery to deployment. Discover how to experiment with Gemma using your favorite tools, and learn best practices for deploying directly to users across cloud, desktop, and mobile.
 
-Vibe coding 是 2026 年开发者的重要技能。了解如何加速您的软件开发，来自利用 Google Antigravity 等智能代理工具的 Google 团队。
 
-### 18. 与 Hartmut Neven 和 James Manyika 共同构建量子 AI 未来
+### 13. What\u2019s new in Chrome
 
-与 Hartmut Neven 和 James Manyika 一起探索量子计算和 AI 的交汇点。发现 AI 如何帮助构建和运营量子计算机，而量子又如何解锁 AI 模型训练、从复杂数据中学习以及加速科学发现的新方式，使量子成为 Google 创新战略的关键部分。
 
-### 19. 关于开发者技艺演进的对谈
 
-加入 Google 开发者团队和 AI 团队的领导者，进行一场关于当今构建软件的真实人类体验的坦诚对话。超越代码生成的炒作，讨论当您在语法上花费的时间减少而在系统架构上花费的时间增加时，日常创造性流程如何转变。探索技艺的演进，当您的伙伴是 AI 时调试是什么样子，并发现您工作的未来会是什么样子。
+Discover the cutting edge of web development and learn where Chrome is taking the browser in 2026. Explore new capabilities that make the web more capable, reliable, and intelligent.
 
-### 20. 使用 Google Play Billing 实施订阅更换
+
+### 14. What\u2019s new in Flutter
+
+
+
+Explore the latest Flutter framework updates, from performance improvements to new features. Dive into Flutter GenUI to discover how to build truly adaptive, AI-generated user experiences on the fly. Learn how these innovations are shaping the future of fast, multi-platform application development.
+
+
+### 15. What\u2019s new in Firebase
+
+
+
+Firebase is evolving into an agent-native platform, empowering developers to build intelligent applications with unprecedented velocity. Learn how to leverage integrations with Google AI Studio and Google Antigravity to vibe-code full-stack apps. Gain confidence to move from prototyping to productionizing AI, and scale your applications securely with Google Cloud infrastructure.
+
+
+### 16. Build new features using built-in AI in Chrome
+
+
+
+Take a journey through a travel blogging app powered by Chrome\u2019s built-in AI APIs. Follow along as Gemini Nano transforms unstructured writing into automated workflows. Learn to deploy the Summarizer, Writer, Rewriter, Language Detector, and Translatorâall running locally for maximum privacy and zero server costs. Then dive into the Prompt API for structured data tagging with JSON schemas and multimodal alt-text generation to extrapolate these patterns into your own web apps.
+
+
+### 17. Vibe once, run anywhere with Google Antigravity and Flutter
+
+
+
+Vibe coding is an important skill for developers in 2026. Learn how to accelerate your software development from Google teams leveraging agentic tools like Google Antigravity.
+
+
+### 18. Building the quantum-AI future with Hartmut Neven and James Manyika
+
+
+
+Join Hartmut Neven and James Manyika to explore the intersection of quantum computing and AI. Discover how AI is helping to build and operate quantum computers, while quantum unlocks new ways for AI models to train, learn from complex data, and accelerate scientific discovery, making quantum a key part of Googleâs innovation strategy.
+
+
+### 19. A fireside chat on the evolution of the developer craft
+
+
+
+Join leaders from Google developer and AI teams for a candid chat about the human experience of building software today. Move beyond the hype of code generation to discuss how daily creative flows shift when you spend less time on syntax and more time on system architecture. Explore the evolution of the craft, what debugging looks like when your partner is an AI, and discover what the future of your work entails.
+
+
+### 20. Implementing subscription replacements with Google Play Billing
+
 
 Implementing subscription replacements with Google Play Billing
 
-...还有 63 个分会场
+
+
+... 还有 63 个sessions
+
 
 ### 主题演讲数量
-共 25 个 PA 主题演讲
+共 25 个 PA Keynote
 
-### 主题分类（22 个）
 
-- Accessibility（无障碍）
-- Ads（广告）
-- AI/Machine Learning（AI/机器学习）
+### 主题分类 (22个)
+
+
+- Accessibility
+
+- Ads
+
+- AI/Machine Learning
+
 - Android
+
 - Angular
+
 - XR
+
 - ChromeOS
-- Cloud（云）
-- Design（设计）
+
+- Cloud
+
+- Design
+
 - Firebase
+
 - Flutter
+
 - Go
+
 - Google Play
-- Location/Maps（位置/地图）
-- Mobile（移动）
-- Quantum（量子）
-- Smart Home（智能家居）
+
+- Location/Maps
+
+- Mobile
+
+- Quantum
+
+- Smart Home
+
 - Wear OS
+
 - Web
+
 - Chrome
+
 - Material Design
-- Google Pay and Wallet（Google Pay 和钱包）
+
+- Google Pay and Wallet
+
 
 ### 导航结构
-- 探索：/2026/explore
-- 社区：/2026/community
-- 谜题：/2026/puzzle
-- 关于：/2026/about
-- 查看所有演讲者：/2026/speakers
-- 了解更多：/2026/explore/google-keynote-1
-- 了解更多：/2026/explore/google-keynote-1
-- 了解更多：/2026/explore/developer-keynote-1
-- 了解更多：/2026/explore/developer-keynote-1
-- I/O 谜题：/2026/puzzle/
-- 常见问题：/2026/about
+- Explore: /2026/explore
+- Community: /2026/community
+- Puzzle: /2026/puzzle
+- About: /2026/about
+- View all speakers: /2026/speakers
+- Learn more: /2026/explore/google-keynote-1
+- Learn more: /2026/explore/google-keynote-1
+- Learn more: /2026/explore/developer-keynote-1
+- Learn more: /2026/explore/developer-keynote-1
+- I/Opuzzle: /2026/puzzle/
+- FAQ: /2026/about
 
 
 

@@ -3,8 +3,7 @@ title: www.fintechweek.hk
 source: www.fintechweek.hk
 url: https://www.fintechweek.hk
 category: conference
-fetched_at: 2026-06-22T20:06:39.334672
-translated: true
+fetched_at: 2026-06-22T21:24:24.001861
 ---
 
 # www.fintechweek.hk
@@ -93,25 +92,6 @@ A New Era of Innovation
 
 ![](https://cdn.prod.website-files.com/660eae4bcbb1b344fa24b619/69af41d3fcfa31c4c2b21a24_home-new-fintech-era-man-2.avif)
 
-**Hong Kong FinTech Week and StartmeupHK** are joining forces to showcase the future of finance and innovation, leveraging Hong Kong’s position as a **"super-connector"**.  
-  
-Forged from over a decade of industry impact and influence, Hong Kong FinTech Week enters a landmark new chapter. Centred on the theme **Fintech Nexus: Bridging the World, Building the Future**, this flagship event serves as a powerful rallying call to drive connectivity and collaboration across global and Chinese Mainland markets.  
-  
-Join Asia’s premier tech event, where global leaders from **AI, fintech, web3, insurtech, greentech, healthtech, startups, ventures, and more** converge to explore the next frontier of technology and turn bold visions into reality.
+*
 
-[Register Now](/tickets)
-
-2025 Government Speakers  (Hong Kong, China)
---------------------------------------------
-
-Chief Executive
-
-,
-
-Hong Kong Special Administrative Region
-
-John KC LEE
-
-Mr John Lee was born in 1957. He joined the Hong Kong Police 
-
-*原文请访问 [https://www.fintechweek.hk](https://www.fintechweek.hk)*
+*原文: https://www.fintechweek.hk*
