@@ -1,0 +1,50 @@
+{
+  "bdd0b728bd80": {
+    "url": "https://github.com/NVIDIA/TensorRT-LLM",
+    "path": "ai-content-fetched\\github\\NVIDIA_TensorRT-LLM\\README.md",
+    "fetched_at": "2026-06-22T15:25:18.172735",
+    "metadata": {}
+  },
+  "51be604eeab6": {
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+    "path": "ai-content-fetched\\github\\deepseek-ai_DeepSeek-V3\\README.md",
+    "fetched_at": "2026-06-22T15:26:19.564274",
+    "metadata": {}
+  },
+  "2d9028ec7d2d": {
+    "url": "https://github.com/pytorch/pytorch",
+    "path": "ai-content-fetched\\github\\pytorch_pytorch\\README.md",
+    "fetched_at": "2026-06-22T15:30:42.510955",
+    "metadata": {}
+  },
+  "0ae999e67f8c": {
+    "url": "https://github.com/meta-llama/llama",
+    "path": "ai-content-fetched\\github\\meta-llama_llama\\README.md",
+    "fetched_at": "2026-06-22T15:31:35.313055",
+    "metadata": {}
+  },
+  "3f28e474ad5a": {
+    "url": "https://github.com/microsoft/autogen",
+    "path": "ai-content-fetched\\github\\microsoft_autogen\\README.md",
+    "fetched_at": "2026-06-22T15:32:35.800479",
+    "metadata": {}
+  },
+  "d83970695e2e": {
+    "url": "https://github.com/microsoft/DeepSpeed",
+    "path": "ai-content-fetched\\github\\microsoft_DeepSpeed\\README.md",
+    "fetched_at": "2026-06-22T15:37:57.187428",
+    "metadata": {}
+  },
+  "bf79ab9c90c5": {
+    "url": "https://github.com/microsoft/semantic-kernel",
+    "path": "ai-content-fetched\\github\\microsoft_semantic-kernel\\README.md",
+    "fetched_at": "2026-06-22T15:46:22.504910",
+    "metadata": {}
+  },
+  "898bf9a77292": {
+    "url": "https://github.com/microsoft/playwright",
+    "path": "ai-content-fetched\\github\\microsoft_playwright\\README.md",
+    "fetched_at": "2026-06-22T15:53:40.987777",
+    "metadata": {}
+  }
+}

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+nohup.out
+
+# Fetched content (large)
+ai-content-fetched/github/
+ai-content-fetched/company/
+ai-content-fetched/academic/
+ai-content-fetched/media/
+
+# Keep metadata files
+!ai-content-fetched/_url_index.json
+!ai-content-fetched/_failed_urls.json
+!ai-content-fetched/_metadata.json
+
+# Skip large cache files
+*.pdf
+*.mp3
+*.mp4
+*.wav
