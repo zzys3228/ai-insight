@@ -1,13 +1,13 @@
 ---
-title: **OpenAI 平台**
+title: OpenAI平台
 source: platform.openai.com
 url: https://platform.openai.com
 date: 2026-06-22
 category: standard/platform.openai
 translated: true
-fetched_at: 2026-06-22T17:58:28.349129
+fetched_at: 2026-06-22T18:08:14.240103
 ---
-# **OpenAI 平台**
+# OpenAI平台
 
 **来源**: platform.openai.com | **日期**: 2026-06-22
 

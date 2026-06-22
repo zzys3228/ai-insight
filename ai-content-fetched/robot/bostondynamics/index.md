@@ -5,7 +5,7 @@ url: https://bostondynamics.com/news
 date: 2026-06-22
 category: robot/bostondynamics
 translated: true
-fetched_at: 2026-06-22T17:58:02.040929
+fetched_at: 2026-06-22T18:08:09.591333
 ---
 # News
 
@@ -14,7 +14,6 @@ fetched_at: 2026-06-22T17:58:02.040929
 ---
 
 媒体报道  
-
-TIME100 2026 年十大最具影响力的硬件公司
+TIME100 2026 年十大最具影响力硬件公司
 
 *原文请访问 [bostondynamics.com](https://bostondynamics.com/news)*

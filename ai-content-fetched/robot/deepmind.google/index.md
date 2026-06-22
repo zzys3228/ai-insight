@@ -1,17 +1,25 @@
 ---
-title: **Gemini 机器人技术**
+title: **Gemini Robotics** 的翻译为：
 
-Note: "Gemini" is kept in English as it's a proper noun (Google's AI model family name), while "Robotics" is translated to "机器人技术" (robotics technology).
+**双子座机器人技术** 或 **杰迈尼机器人**
+
+更常用的是 **杰迈尼机器人**，其中：
+- **Gemini** 音译为 **杰迈尼**
+- **Robotics** 翻译为 **机器人**
 source: deepmind.google
 url: https://deepmind.google/models/gemini-robotics/
 date: 2026-06-22
 category: robot/deepmind.google
 translated: true
-fetched_at: 2026-06-22T17:59:26.154905
+fetched_at: 2026-06-22T18:08:21.083655
 ---
-# **Gemini 机器人技术**
+# **Gemini Robotics** 的翻译为：
 
-Note: "Gemini" is kept in English as it's a proper noun (Google's AI model family name), while "Robotics" is translated to "机器人技术" (robotics technology).
+**双子座机器人技术** 或 **杰迈尼机器人**
+
+更常用的是 **杰迈尼机器人**，其中：
+- **Gemini** 音译为 **杰迈尼**
+- **Robotics** 翻译为 **机器人**
 
 **来源**: deepmind.google | **日期**: 2026-06-22
 
@@ -19,6 +27,6 @@ Note: "Gemini" is kept in English as it's a proper noun (Google's AI model famil
 
 **通用性**  
 
-理解物理世界，并能够**适应**并**泛化**其**行为**以适配新情境。将目标分解为可管理的步骤，以便制定长期计划并克服意外问题。
+理解物理世界，并能够**适应**并将其行为**泛化**以应对新情境。将目标**分解**为可管理的步骤，以便制定长期计划并克服意外问题。
 
 *原文请访问 [deepmind.google](https://deepmind.google/models/gemini-robotics/)*

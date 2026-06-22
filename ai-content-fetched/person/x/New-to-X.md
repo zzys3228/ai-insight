@@ -1,11 +1,11 @@
 ---
 title: New to X?
 source: x.com
-url: https://x.com/sama
+url: https://x.com/ylecun
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T18:05:43.245652
+fetched_at: 2026-06-22T18:08:43.889964
 ---
 # New to X?
 
@@ -13,16 +13,25 @@ fetched_at: 2026-06-22T18:05:43.245652
 
 ---
 
-Sam Altman  
-@sama  
+置顶  
 
-2025年2月10日  
+Yann LeCun  
+@ylecun  
 
-不，谢谢，不过如果你想卖的话，我们愿意以9.74 亿美元收购Twitter。  
+2024年11月29日  
 
-12K  
-17K  
-220K  
-34M
+我在X上不写帖子。  
+我在X上发推文链接到其他平台的内容。  
+偶尔点赞和转发。  
+很少评论朋友的推文。  
+关注我...⬇️⬇️⬇️  
 
-*原文请访问 [x.com](https://x.com/sama)*
+951  
+
+113  
+
+1.9K  
+
+1.7M
+
+*原文请访问 [x.com](https://x.com/ylecun)*
