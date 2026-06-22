@@ -1,13 +1,13 @@
 ---
-title: 开源项目.google.com
+title: 开源.google.com
 source: opensource.googleblog.com
 url: https://opensource.googleblog.com/2026/04
 date: 2026-06-22
 category: standard/opensource.googleblog
 translated: true
-fetched_at: 2026-06-22T17:52:56.380688
+fetched_at: 2026-06-22T18:03:57.570959
 ---
-# 开源项目.google.com
+# 开源.google.com
 
 **来源**: opensource.googleblog.com | **日期**: 2026-06-22
 

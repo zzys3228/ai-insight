@@ -1,13 +1,29 @@
 ---
-title: **Aider LLM 排行榜**
+title: # Translation
+
+**Aider LLM 排行榜**
+
+Or fully translated:
+
+**Aider 大语言模型排行榜**
+
+> **Note:** "Aider" is kept as-is since it's a specific product/tool name. "LLM" (Large Language Model) is commonly used as-is in Chinese tech contexts, though "大语言模型" is the full Chinese translation.
 source: aider.chat
 url: https://aider.chat/docs/leaderboards
 date: 2026-06-22
 category: benchmark/aider.chat
 translated: true
-fetched_at: 2026-06-22T17:58:28.464495
+fetched_at: 2026-06-22T18:07:03.369234
 ---
-# **Aider LLM 排行榜**
+# # Translation
+
+**Aider LLM 排行榜**
+
+Or fully translated:
+
+**Aider 大语言模型排行榜**
+
+> **Note:** "Aider" is kept as-is since it's a specific product/tool name. "LLM" (Large Language Model) is commonly used as-is in Chinese tech contexts, though "大语言模型" is the full Chinese translation.
 
 **来源**: aider.chat | **日期**: 2026-06-22
 

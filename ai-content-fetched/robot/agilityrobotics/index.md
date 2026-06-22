@@ -1,126 +1,85 @@
 ---
-title: **人形机器人。验证结果。**
+title: **Translation:**
 
-Note: "验证结果" (validated results) is the standard technical term in robotics contexts, though "实践证明" (proven in practice) could also be used depending on emphasis.
+Press releases → **新闻稿**
+
+**Notes:**
+- "新闻稿" is the standard, widely-used term in Chinese for written statements distributed to media outlets
+- Alternative terms include "新闻发布" (news release) or "新闻通报" (news bulletin), but "新闻稿" is the most commonly used in professional and media contexts
 source: agilityrobotics.com
-url: https://www.agilityrobotics.com
+url: https://www.agilityrobotics.com/press-releases
 date: 2026-06-22
 category: robot/agilityrobotics
 translated: true
-fetched_at: 2026-06-22T17:58:53.778703
+fetched_at: 2026-06-22T17:59:42.563420
 ---
-# **人形机器人。验证结果。**
+# **Translation:**
 
-Note: "验证结果" (validated results) is the standard technical term in robotics contexts, though "实践证明" (proven in practice) could also be used depending on emphasis.
+Press releases → **新闻稿**
+
+**Notes:**
+- "新闻稿" is the standard, widely-used term in Chinese for written statements distributed to media outlets
+- Alternative terms include "新闻发布" (news release) or "新闻通报" (news bulletin), but "新闻稿" is the most commonly used in professional and media contexts
 
 **来源**: agilityrobotics.com | **日期**: 2026-06-22
 
 ---
 
-# 中文翻译
+跳过内容  
 
-跳过内容
+菜单  
 
-菜单
+新闻稿  
 
-仿人机器人。 proven results.
+2026年2月19日 Agility Robotics 宣布与丰田汽车制造加拿大公司（Toyota Motor Manufacturing Canada）达成商业协议  
+新闻稿  
 
-公告
+2025年12月10日 Mercado Libre 与 Agility Robotics 宣布商业协议，部署人形机器人  
+新闻稿  
 
-我们已经为新时代重新调整了 Agility。核心价值观不变，表达更加精准。了解更多。
+2025年3月31日 Agility Robotics 发布面向市场的领先人形机器人 Digit 的新创新  
+新闻稿  
 
-解决方案
+2025年3月18日 Agility Robotics 扩展与 NVIDIA 的合作关系  
+新闻稿  
 
-自动化未来已在工作中
+2024年12月9日 Agility Robotics 加强领导团队  
+新闻稿  
 
-Digit 是首款投入生产部署的仿人机器人。Arc 是运行它的云平台。两者共同为设施车间带来明确投资回报率的高级自动化。快速部署。持久转型。一切以安全为导向。
+2024年11月13日 Agility Robotics 宣布对运动技术公司 Schaeffler Group 的战略投资及协议  
+新闻稿  
 
-探索解决方案
+2024年10月16日 Tompkins Solutions 与 Agility Robotics 合作，推进下一代仓库自动化  
+新闻稿  
 
-→
+2024年9月4日 Agility Robotics 与 Ricoh 合作，支持人形机器人市场的扩展  
+新闻稿  
 
-经现场验证的部署流程，降低投资风险
+2024年6月27日 GXO 与 Agility Robotics 签署行业首个多年协议  
+新闻稿  
 
-部署 Digit
+2024年5月15日 Agility Robotics 加强领导团队  
+新闻稿  
 
-→
+2024年5月6日 Agility Robotics 与 Zion Solutions Group 通过行业首个合作塑造供应链未来  
+新闻稿  
 
-解决方案设置
+2024年4月4日 Agility Robotics 与 Manhattan Associates 合作，将 AI 驱动的人形机器人引入仓库  
 
-01
+下一页 →  
 
-评估 Digit 如何帮助您的设施实现自动化
+了解更多  
 
-现场验证
+媒体咨询  
 
-02
+自主机器人领域每天都有新进展。Agility 为您提供最新资讯。  
 
-作为工作流程的组成部分展示成果
+联系媒体团队 →  
 
-运营影响
+媒体资料包  
 
-03
+随时取用所需资料。标志和品牌资源，随时可用。  
 
-合作维护产能并确保增长
+下载媒体资料包 ↓
 
-客户
-
-受到行业巨头信赖
-
-愿景
-
-这代人机变革才刚刚开始
-
-仓库和工厂是我们建立势头的地方。我们立足于此，并继续拓展。仿人机器人可以帮忙解决的挑战才刚刚显现。有些我们已经知晓。有些我们尚未命名。地平线不断延伸，我们也在不断前进。
-
-公司
-
-为安全仿人机器人设定标准
-
-没有空头支票。没有炒作。只有实实在在的技术。凭借十余年的经验，我们开发并部署了帮助合作伙伴安全实现重复性和困难工作自动化的工具。每一项突破都指向同一个目标：让人类更有能力。
-
-了解更多关于 Agility
-
-→
-
-观看安全实践
-
-→
-
-起源
-
-供应链弹性
-
-Digit 由 Agility 团队在俄勒冈州塞勒姆组装。其近 6,000 个零部件中约 80% 采购自美国，我们将供应链冲击降至最低，并按您的时间表交付关键自动化工具。
-
-新闻
-
-查看更多
-
-→
-
-Agility Robotics 与丰田汽车制造加拿大公司宣布商业协议
-
-新闻稿
-
-2026 年 2 月 19 日
-
-Mercado Libre 与 Agility Robotics 宣布商业协议，部署仿人机器人
-
-新闻稿
-
-2025 年 12 月 10 日
-
-Agility Robotics 为市场领先仿人机器人 Digit 宣布创新
-
-新闻稿
-
-2025 年 3 月 31 日
-
-Agility Robotics 扩展与 NVIDIA 的合作关系
-
-新闻稿
-
-2025 年 3 月 18 日
-
-*原文请访问 [agilityrobotics.com](https://www.agilityrobotics.com)*
+*原文请访问 [agilityrobotics.com](https://www.agilityrobotics.com/press-releases)*

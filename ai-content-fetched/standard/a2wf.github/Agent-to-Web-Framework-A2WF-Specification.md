@@ -1,13 +1,15 @@
 ---
-title: **Agent‑to‑Web 框架（A2WF）规范**
+title: **中文翻译**  
+代理到Web框架（A2WF）规范
 source: a2wf.github.io
 url: https://a2wf.github.io/spec
 date: 2026-06-22
 category: standard/a2wf.github
 translated: true
-fetched_at: 2026-06-22T17:49:24.395857
+fetched_at: 2026-06-22T18:00:11.301349
 ---
-# **Agent‑to‑Web 框架（A2WF）规范**
+# **中文翻译**  
+代理到Web框架（A2WF）规范
 
 **来源**: a2wf.github.io | **日期**: 2026-06-22
 

@@ -1,13 +1,15 @@
 ---
-title: 寻找能够真正执行任务的 AI
+title: **Translation:**  
+寻找能够真正执行任务的人工智能。
 source: agentic.ai
 url: https://agentic.ai
 date: 2026-06-22
 category: standard/agentic.ai
 translated: true
-fetched_at: 2026-06-22T17:56:19.709746
+fetched_at: 2026-06-22T18:05:29.769964
 ---
-# 寻找能够真正执行任务的 AI
+# **Translation:**  
+寻找能够真正执行任务的人工智能。
 
 **来源**: agentic.ai | **日期**: 2026-06-22
 
@@ -131,11 +133,11 @@ Agentic News monitors thousands of sources for topics you choose, then turns the
 
 Coding Agents
 
-Cursor is a developer-focused AI environment that adds agents, context, and automation around your repositories. It combines an editor-like interface, a CLI, and a cloud agent API to automate code review, bug fixing, CI hygiene, and more. Designed for individual developers and engineering teams who want AI to take real actions in their code and infrastructure, not just chat.
+GitHub Copilot helps you write, review, and adapt code directly in GitHub, your IDE, and the terminal. It supports everything from inline suggestions to agentic coding workflows with broader model choices and enterprise controls.
 
 Coding Agents
 
-GitHub Copilot helps you write, review, and adapt code directly in GitHub, your IDE, and the terminal. It supports everything from inline suggestions to agentic coding workflows with broader model choices and enterprise controls.
+Cursor is a developer-focused AI environment that adds agents, context, and automation around your repositories. It combines an editor-like interface, a CLI, and a cloud agent API to automate code review, bug fixing, CI hygiene, and more. Designed for individual developers and engineering teams who want AI to take real actions in their code and infrastructure, not just chat.
 
 What brings you here?
 

@@ -1,21 +1,13 @@
 ---
-title: **Translation:**
-
-代理网络协议白皮书
-
-**Note:** 如果特指人工智能领域的智能体，可译为：**智能体网络协议白皮书**
+title: **代理网络协议白皮书**
 source: w3c-cg.github.io
 url: https://w3c-cg.github.io/ai-agent-protocol
 date: 2026-06-22
 category: standard/w3c-cg.github
 translated: true
-fetched_at: 2026-06-22T17:53:24.038142
+fetched_at: 2026-06-22T18:04:28.861795
 ---
-# **Translation:**
-
-代理网络协议白皮书
-
-**Note:** 如果特指人工智能领域的智能体，可译为：**智能体网络协议白皮书**
+# **代理网络协议白皮书**
 
 **来源**: w3c-cg.github.io | **日期**: 2026-06-22
 

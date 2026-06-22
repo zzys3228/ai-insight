@@ -1,13 +1,13 @@
 ---
-title: **ISO/IEC JTC 1/SC 42 人工智能**
+title: ISO/IEC JTC 1/SC 42 人工智能
 source: iso.org
 url: https://www.iso.org/committee/6794475.html
 date: 2026-06-22
 category: standard/iso.org
 translated: true
-fetched_at: 2026-06-22T17:56:51.865559
+fetched_at: 2026-06-22T18:06:17.920041
 ---
-# **ISO/IEC JTC 1/SC 42 人工智能**
+# ISO/IEC JTC 1/SC 42 人工智能
 
 **来源**: iso.org | **日期**: 2026-06-22
 

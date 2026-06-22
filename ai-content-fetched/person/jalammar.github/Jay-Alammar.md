@@ -1,28 +1,26 @@
 ---
-title: 杰伊·阿拉马尔
+title: 杰伊·阿拉马尔（Jay Alammar）
 source: jalammar.github.io
 url: https://jalammar.github.io
 date: 2026-06-22
 category: person/jalammar.github
 translated: true
-fetched_at: 2026-06-22T17:53:21.084274
+fetched_at: 2026-06-22T18:04:23.434274
 ---
-# 杰伊·阿拉马尔
+# 杰伊·阿拉马尔（Jay Alammar）
 
 **来源**: jalammar.github.io | **日期**: 2026-06-22
 
 ---
 
-**迁移至 Substack**  
+# Translation
 
-我将**冻结**本博客，转而在此发布文章。Substack 的**写作体验**对我来说更为便捷。请在那里**关注**我，并查看  
+**迁移到 Substack**
 
-**《DeepSeek R‑1 图解》**  
+我将停止更新此博客，改为在我的 Substack 上发布内容。那里的写作体验对我来说更加方便。请在那里关注我，如果你还没有看过，请查看《图解 DeepSeek R-1》。
 
-如果还没有的话。  
+请查看我们的《Transformer LLM 工作原理》课程！
 
-还有我们的 **《Transformer 大语言模型工作原理》** 课程！  
-
-**阅读更多**
+阅读更多
 
 *原文请访问 [jalammar.github.io](https://jalammar.github.io)*

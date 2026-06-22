@@ -1,11 +1,11 @@
 ---
 title: New to X?
 source: x.com
-url: https://x.com/JeffDean
+url: https://x.com/sama
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T17:58:56.529854
+fetched_at: 2026-06-22T18:05:43.245652
 ---
 # New to X?
 
@@ -13,26 +13,16 @@ fetched_at: 2026-06-22T17:58:56.529854
 
 ---
 
-**置顶**
+Sam Altman  
+@sama  
 
-杰夫·迪恩
+2025年2月10日  
 
-@JeffDean
+不，谢谢，不过如果你想卖的话，我们愿意以9.74 亿美元收购Twitter。  
 
-2018年12月3日
+12K  
+17K  
+220K  
+34M
 
-2017年4月，@NewYorker的@jsomers联系我，说他想对我和我的长期同事桑杰·格马瓦特进行一个小型的专题报道，观察我们工作几个小时，也许一起吃个晚饭之类的。
-
-今天发表了。我觉得它非常准确地捕捉了我们的工作风格。
-
-**成就谷歌辉煌的友谊**
-
-来自 newyorker.com
-
-390
-
-1.1K
-
-5.2K
-
-*原文请访问 [x.com](https://x.com/JeffDean)*
+*原文请访问 [x.com](https://x.com/sama)*

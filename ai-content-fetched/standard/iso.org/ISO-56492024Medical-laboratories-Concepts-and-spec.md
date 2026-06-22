@@ -1,13 +1,17 @@
 ---
-title: ISO 5649:2024 医学实验室——实验室自建检测（LDT）的设计、开发、实施和使用概念与规范
+title: **Translation:**
+
+ISO 5649:2024 医学实验室——实验室自建检测的设计、开发、实施及使用概念与规范
 source: iso.org
 url: https://www.iso.org/standard/81506.html
 date: 2026-06-22
 category: standard/iso.org
 translated: true
-fetched_at: 2026-06-22T17:48:53.659781
+fetched_at: 2026-06-22T17:59:26.507556
 ---
-# ISO 5649:2024 医学实验室——实验室自建检测（LDT）的设计、开发、实施和使用概念与规范
+# **Translation:**
+
+ISO 5649:2024 医学实验室——实验室自建检测的设计、开发、实施及使用概念与规范
 
 **来源**: iso.org | **日期**: 2026-06-22
 

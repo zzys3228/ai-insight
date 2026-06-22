@@ -1,13 +1,13 @@
 ---
-title: **@jimkeller 没有发帖**
+title: **@jimkeller** 还未发布（任何内容）。
 source: x.com
 url: https://x.com/jimkeller
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T17:50:26.192557
+fetched_at: 2026-06-22T18:00:39.657294
 ---
-# **@jimkeller 没有发帖**
+# **@jimkeller** 还未发布（任何内容）。
 
 **来源**: x.com | **日期**: 2026-06-22
 
@@ -31,7 +31,7 @@ JimKeller
 回复  
 媒体  
 媒体  
-@jimkeller 还未发布任何内容  
-他们发布后，帖子将显示在此处。
+@jimkeller 还没有发布  
+发布后，帖子会显示在这里。
 
 *原文请访问 [x.com](https://x.com/jimkeller)*

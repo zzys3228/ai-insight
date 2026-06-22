@@ -1,117 +1,142 @@
 ---
-title: 搜索代码、仓库、用户、Issue、Pull Request...
+title: 搜索代码、仓库、用户、问题、拉取请求……
 source: github.com
 url: https://github.com/ggerganov
 date: 2026-06-22
 category: person/github
 translated: true
-fetched_at: 2026-06-22T17:54:46.393867
+fetched_at: 2026-06-22T18:06:11.751940
 ---
-# 搜索代码、仓库、用户、Issue、Pull Request...
+# 搜索代码、仓库、用户、问题、拉取请求……
 
 **来源**: github.com | **日期**: 2026-06-22
 
 ---
 
-ggerganov  
-关注  
-更多  
+**中文翻译（保持技术术语准确）**
 
-概览  
-仓库  
-项目  
-包  
-星标  
-赞助  
+```
+ggerganov
 
-Georgi Gerganov  
-ggerganov  
-关注  
-赞助  
+关注
 
-我喜欢巨大的 .vimrc，无法否认  
+更多
 
-20k 粉丝 · 13 正在关注  
-@huggingface  
-保加利亚·索菲亚  
-12:53 (UTC +03:00)  
-https://ggerganov.com  
-X  
-@ggerganov  
+概览
 
-赞助者  
-+31  
+仓库
 
-成就  
-x4 x4 x4 x4  
+项目
 
-组织  
+软件包
 
----  
+星标
 
-屏蔽或举报用户  
-屏蔽用户  
+赞助
 
-阻止此用户与您的仓库交互并向您发送通知。了解有关屏蔽用户的更多信息。  
+ggerganov
 
-您必须登录才能屏蔽用户。  
+关注
 
-添加可选备注  
-最多 250 个字符。请勿包含任何个人信息，如真实姓名或电子邮件地址。支持 Markdown。此备注仅对您可见。  
+赞助
 
-屏蔽用户  
-举报滥用  
+我喜欢大型 .vimrc，无法撒谎
 
-联系 GitHub 支持以报告此用户的行为。  
-了解有关举报滥用的更多信息。  
+20k
+关注者
+· 13 关注
+@huggingface
+保加利亚·索菲亚
+13:04 (UTC +03:00)
+https://ggerganov.com
 
-更多  
+X
+@ggerganov
 
-概览  
-仓库  
-项目  
-包  
-星标  
-赞助  
+赞助者
++31
 
-置顶  
+成就
 
-加载中  
+x4 x4 x4 x4
 
-ggml‑org/llama.cpp  
-公开  
-C++ 语言实现的 LLM 推理  
-C++ 118k 19.8k  
+组织
 
-ggml‑org/whisper.cpp  
-公开  
-OpenAI Whisper 模型的 C++ 移植  
-C++ 50.9k 5.7k  
+屏蔽或举报用户
+屏蔽用户
+阻止此用户与您的仓库互动或向您发送通知。 了解更多关于屏蔽用户的信息。
 
-ggml‑org/ggml  
-公开  
-机器学习的张量库  
-C++ 14.9k 1.7k  
+您必须登录才能屏蔽用户。
 
-kbd‑audio  
-公开  
-🎤⌨️ 声学键盘窃听  
-C++ 9k 606  
+添加可选备注
+最多250个字符。请勿包含个人信息，例如真实姓名或电子邮件地址。支持 Markdown。此备注仅对您可见。
 
-ggml‑org/llama.vim  
-公开  
-用于 LLM 辅助代码/文本补全的 Vim 插件  
-Vim Script 2.1k 111  
+屏蔽用户
+举报滥用
+联系 GitHub 支持以举报该用户的行为。 了解更多关于举报滥用的信息。
 
-ggml‑org/llama.vscode  
-公开  
-用于 LLM 辅助代码/文本补全的 VS Code 扩展  
-TypeScript 1.4k 136  
+更多
 
-出现错误，请刷新页面重试。  
-如果问题仍然存在，请查看 GitHub 状态页面或联系支持。  
+概览
+仓库
+项目
+软件包
+星标
+赞助
 
-哎呀！加载时出现错误。  
-请重新加载此页面。
+置顶
+
+加载中
+
+ggml‑org/llama.cpp
+
+公开
+使用 C/C++ 实现的大语言模型（LLM）推理
+C++
+118k 19.8k
+
+ggml‑org/whisper.cpp
+
+公开
+在 C/C++ 中移植 OpenAI Whisper 模型
+C++
+50.9k 5.7k
+
+ggml‑org/ggml
+
+公开
+机器学习张量库
+C++
+14.9k 1.7k
+
+kbd‑audio
+
+公开
+🎤⌨️ 声学键盘窃听
+C++
+9k 606
+
+ggml‑org/llama.vim
+
+公开
+用于 LLM 辅助代码/文本补全的 Vim 插件
+Vim Script
+2.1k 111
+
+ggml‑org/llama.vscode
+
+公开
+用于 LLM 辅助代码/文本补全的 VS Code 扩展
+TypeScript
+1.4k 136
+
+哎呀！
+
+加载时出现错误。
+
+请重新加载此页面。如果问题仍然存在，请查看 GitHub 状态页面或联系支持。
+
+出现错误，请刷新页面重试。
+```
 
 *原文请访问 [github.com](https://github.com/ggerganov)*

@@ -1,13 +1,13 @@
 ---
-title: 搜索代码、仓库、用户、问题、拉取请求…
+title: 搜索代码、代码仓库、用户、问题、拉取请求...
 source: github.com
 url: https://github.com/ggml-org
 date: 2026-06-22
 category: standard/github
 translated: true
-fetched_at: 2026-06-22T17:52:43.438825
+fetched_at: 2026-06-22T18:03:42.473326
 ---
-# 搜索代码、仓库、用户、问题、拉取请求…
+# 搜索代码、代码仓库、用户、问题、拉取请求...
 
 **来源**: github.com | **日期**: 2026-06-22
 
@@ -283,7 +283,7 @@ Please reload this page
 .
 ggml-org/llama.cpp’s past year of commit activity
 C++
-117,632
+117,633
 MIT
 19,808
 727
@@ -293,6 +293,10 @@ Updated
 Jun 22, 2026
 llama.cpp-dev
 Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/llama.cpp-dev’s past year of commit activity
 Shell
 3
@@ -322,6 +326,10 @@ Jun 21, 2026
 llama-install.sh
 Public
 Build and install script for llama.app
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/llama-install.sh’s past year of commit activity
 Python
 12
@@ -334,9 +342,13 @@ Jun 21, 2026
 whisper.cpp
 Public
 Port of OpenAI's Whisper model in C/C++
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/whisper.cpp’s past year of commit activity
 C++
-50,934
+50,935
 MIT
 5,687
 1,048
@@ -363,6 +375,10 @@ Jun 19, 2026
 ggml
 Public
 Tensor library for machine learning
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/ggml’s past year of commit activity
 C++
 14,856
@@ -392,10 +408,6 @@ Jun 18, 2026
 llama.pages
 Public
 llama.cpp's official website
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/llama.pages’s past year of commit activity
 Svelte
 16
@@ -406,10 +418,6 @@ Updated
 Jun 18, 2026
 .github
 Public
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/.github’s past year of commit activity
 12
 11
@@ -419,6 +427,16 @@ Updated
 Jun 17, 2026
 
 LLM inference in C/C++
+
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
 
 Uh oh!
 
@@ -444,7 +462,27 @@ Please reload this page
 
 Build and install script for llama.app
 
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
+
 Port of OpenAI's Whisper model in C/C++
+
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
 
 VS Code extension for LLM-assisted code/text completion
 
@@ -460,6 +498,16 @@ Please reload this page
 
 Tensor library for machine learning
 
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
+
 A cosy home for your LLMs.
 
 Uh oh!
@@ -473,26 +521,6 @@ Please reload this page
 .
 
 llama.cpp's official website
-
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
-
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
 
 People
 

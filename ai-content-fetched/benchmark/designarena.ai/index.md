@@ -1,17 +1,33 @@
 ---
-title: **DesignArena** 通常保留原样，若需中文表达，可译为：
+title: # Translation of "DesignArena"
 
-**设计竞技场**（或保留原名 **DesignArena**，并在括号中加注中文译名）
+**DesignArena** can be translated as:
+
+1. **设计竞技场** - Literal translation (descriptive)
+2. **DesignArena** - Keep original (common for tech brands/product names)
+3. **迪赛纳** - Transliteration
+
+---
+
+**Recommendation:** For a product/platform name, **"DesignArena"** is often kept in its original English form in Chinese tech contexts, or translated as **"设计竞技场"** if emphasizing the competitive/staging aspect.
 source: designarena.ai
 url: https://www.designarena.ai/?arena=agents&harness=standard
 date: 2026-06-22
 category: benchmark/designarena.ai
 translated: true
-fetched_at: 2026-06-22T17:48:56.828985
+fetched_at: 2026-06-22T17:59:47.370081
 ---
-# **DesignArena** 通常保留原样，若需中文表达，可译为：
+# # Translation of "DesignArena"
 
-**设计竞技场**（或保留原名 **DesignArena**，并在括号中加注中文译名）
+**DesignArena** can be translated as:
+
+1. **设计竞技场** - Literal translation (descriptive)
+2. **DesignArena** - Keep original (common for tech brands/product names)
+3. **迪赛纳** - Transliteration
+
+---
+
+**Recommendation:** For a product/platform name, **"DesignArena"** is often kept in its original English form in Chinese tech contexts, or translated as **"设计竞技场"** if emphasizing the competitive/staging aspect.
 
 **来源**: designarena.ai | **日期**: 2026-06-22
 

@@ -1,56 +1,42 @@
 ---
-title: **Translation:**
-
-搜索代码、仓库、用户、Issues、拉取请求...
-
-**Notes:**
-
-- "code" → 代码
-- "repositories" → 仓库 (常用简称) 或 代码仓库
-- "users" → 用户
-- "issues" → 问题 或 保留英文 "Issues"
-- "pull requests" → 拉取请求 或 保留英文 "Pull Requests"
-
-> 注：在中文技术界面中，"Issues" 和 "Pull Requests" 通常保留英文原文，以保持专业术语的一致性。
+title: 搜索代码、仓库、用户、问题、拉取请求...
 source: github.com
-url: https://github.com/openai/human-eval
+url: https://github.com/Farama-Foundation/miniwob-plusplus
 date: 2026-06-22
 category: benchmark/github
 translated: true
-fetched_at: 2026-06-22T17:58:51.291379
+fetched_at: 2026-06-22T18:00:54.764713
 ---
-# **Translation:**
-
-搜索代码、仓库、用户、Issues、拉取请求...
-
-**Notes:**
-
-- "code" → 代码
-- "repositories" → 仓库 (常用简称) 或 代码仓库
-- "users" → 用户
-- "issues" → 问题 或 保留英文 "Issues"
-- "pull requests" → 拉取请求 或 保留英文 "Pull Requests"
-
-> 注：在中文技术界面中，"Issues" 和 "Pull Requests" 通常保留英文原文，以保持专业术语的一致性。
+# 搜索代码、仓库、用户、问题、拉取请求...
 
 **来源**: github.com | **日期**: 2026-06-22
 
 ---
 
-加载时出错，请重新加载此页面。
+**Chinese translation:**  
+加载时出现错误，请重新加载此页面。
 
 ---
 
 ### 表格 1
 
 | Name | Name | Last commit message | Last commit date |
-| Latest commitHistory7 Commits7 Commits |
-| data | data |  |  |
-| human_eval | human_eval |  |  |
+| Latest commitHistory284 Commits284 Commits |
+| .github | .github |  |  |
+| docs | docs |  |  |
+| miniwob | miniwob |  |  |
+| tests | tests |  |  |
+| viewer | viewer |  |  |
+| .gitignore | .gitignore |  |  |
+| .pre-commit-config.yaml | .pre-commit-config.yaml |  |  |
+| CODE_OF_CONDUCT.rst | CODE_OF_CONDUCT.rst |  |  |
+| CONTRIBUTING.md | CONTRIBUTING.md |  |  |
 | LICENSE | LICENSE |  |  |
 | README.md | README.md |  |  |
-| requirements.txt | requirements.txt |  |  |
+| miniwobplusplus-text.png | miniwobplusplus-text.png |  |  |
+| py.Dockerfile | py.Dockerfile |  |  |
+| pyproject.toml | pyproject.toml |  |  |
 | setup.py | setup.py |  |  |
 | View all files |
 
-*原文请访问 [github.com](https://github.com/openai/human-eval)*
+*原文请访问 [github.com](https://github.com/Farama-Foundation/miniwob-plusplus)*

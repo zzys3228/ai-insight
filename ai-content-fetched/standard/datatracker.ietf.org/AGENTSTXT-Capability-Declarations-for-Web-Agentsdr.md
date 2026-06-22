@@ -1,13 +1,41 @@
 ---
-title: **AGENTS.TXT：面向网页代理的能力声明（草案 draft‑car‑agents‑txt‑wellknown‑00）**
+title: # Translation
+
+**Title:**
+AGENTS.TXT：Web 代理能力声明
+
+**Draft identifier:**
+draft-car-agents-txt-wellknown-00（IETF 互联网草案第 00 版）
+
+---
+
+**Technical notes:**
+
+- **AGENTS.TXT**：为与 robots.txt 类似的新型 well-known URI（RFC 5785），对应路径为 `.well-known/agents.txt`
+- **Capability Declarations**：指代理能力声明，即 Web 代理向网站声明其功能和支持的操作
+- **draft-car-agents-txt-wellknown-00**：这是 IETF Internet-Draft 的标准命名格式，"car" 通常代表作者/工作组标识
 source: datatracker.ietf.org
 url: https://datatracker.ietf.org/doc/draft-car-agents-txt-wellknown
 date: 2026-06-22
 category: standard/datatracker.ietf.org
 translated: true
-fetched_at: 2026-06-22T17:49:40.130659
+fetched_at: 2026-06-22T18:00:31.465565
 ---
-# **AGENTS.TXT：面向网页代理的能力声明（草案 draft‑car‑agents‑txt‑wellknown‑00）**
+# # Translation
+
+**Title:**
+AGENTS.TXT：Web 代理能力声明
+
+**Draft identifier:**
+draft-car-agents-txt-wellknown-00（IETF 互联网草案第 00 版）
+
+---
+
+**Technical notes:**
+
+- **AGENTS.TXT**：为与 robots.txt 类似的新型 well-known URI（RFC 5785），对应路径为 `.well-known/agents.txt`
+- **Capability Declarations**：指代理能力声明，即 Web 代理向网站声明其功能和支持的操作
+- **draft-car-agents-txt-wellknown-00**：这是 IETF Internet-Draft 的标准命名格式，"car" 通常代表作者/工作组标识
 
 **来源**: datatracker.ietf.org | **日期**: 2026-06-22
 

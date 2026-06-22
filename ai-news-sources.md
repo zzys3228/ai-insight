@@ -132,10 +132,11 @@
 | 26 | | AWS ML Blog | https://aws.amazon.com/blogs/machine-learning | 发布博客 | ✅ | 否 | daily |
 | 27 | Microsoft Azure | Azure OpenAI | https://oai.azure.com | 生成式AI | ✅ | 否 | daily |
 | 28 | | Azure AI Studio | https://ai.azure.com | ML平台 | ✅ | 否 | daily |
-| 29 | | Copilot Studio | https://copilotstudio.microsoft.com | 对话平台 | ✅ | 否 | daily |
-| 30 | | Microsoft Build | https://build.microsoft.com | 年度开发者大会 | ✅302→ | 否 | daily |
-| 31 | | Microsoft Ignite | https://ignite.microsoft.com | 企业大会 | ✅ | 否 | daily |
-| 32 | | Azure Blog | https://azure.microsoft.com/blog | 发布博客 | ✅ | 否 | daily |
+| 29 | Microsoft | Microsoft 365 Copilot | https://copilot.microsoft.com | 企业办公AI | ✅ | 否 | daily |
+| 30 | | Copilot Studio | https://copilotstudio.microsoft.com | 对话平台 | ✅ | 否 | daily |
+| 31 | | Microsoft Build | https://build.microsoft.com | 年度开发者大会 | ✅302→ | 否 | daily |
+| 32 | | Microsoft Ignite | https://ignite.microsoft.com | 企业大会 | ✅ | 否 | daily |
+| 33 | | Azure Blog | https://azure.microsoft.com/blog | 发布博客 | ✅ | 否 | daily |
 | 33 | Apple | Apple Intelligence | https://www.apple.com/apple-intelligence | AI功能 | ✅ | 否 | daily |
 | 34 | | Apple ML | https://machinelearning.apple.com | ML研究博客 | ✅ | 否 | daily |
 | 35 | Meta AI | Llama | https://llama.meta.com | 开源LLM | ✅ | 是 | daily |

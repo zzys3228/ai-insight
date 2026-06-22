@@ -1,13 +1,13 @@
 ---
-title: WebMCP 使用收藏夹保持井井有条，根据您的偏好保存并分类内容。
+title: **WebMCP** 通过集合保持井井有条，按照您的偏好保存并分类内容。
 source: developer.chrome.com
 url: https://developer.chrome.com/docs/ai/webmcp
 date: 2026-06-22
 category: standard/developer.chrome
 translated: true
-fetched_at: 2026-06-22T17:53:14.304833
+fetched_at: 2026-06-22T18:04:13.358165
 ---
-# WebMCP 使用收藏夹保持井井有条，根据您的偏好保存并分类内容。
+# **WebMCP** 通过集合保持井井有条，按照您的偏好保存并分类内容。
 
 **来源**: developer.chrome.com | **日期**: 2026-06-22
 

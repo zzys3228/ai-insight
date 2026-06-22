@@ -1,13 +1,33 @@
 ---
-title: **AI 排行榜——按智能、速度和价格比较 300+ 顶级 AI 模型**
+title: **AI 排行榜 — 按智能、速度和价格对比 300+ 顶级 AI 模型**
+
+Alternative versions:
+
+1. **AI 排行榜 — 按智能、速度与价格对 300+ 顶级 AI 模型进行比较**
+2. **AI 榜单 — 300+ 顶级 AI 模型智能、速度与价格对比排名**
+
+**Note:** 
+- "Leaderboard" is commonly translated as 排行榜/榜单 in Chinese AI context
+- "Intelligence" here refers to AI capability, so 智能 is appropriate
+- "Compare" can be 比較 or 對比; 對比 is more concise for titles
 source: llm-stats.com
 url: https://llm-stats.com
 date: 2026-06-22
 category: benchmark/llm-stats
 translated: true
-fetched_at: 2026-06-22T17:57:59.036084
+fetched_at: 2026-06-22T18:06:24.067020
 ---
-# **AI 排行榜——按智能、速度和价格比较 300+ 顶级 AI 模型**
+# **AI 排行榜 — 按智能、速度和价格对比 300+ 顶级 AI 模型**
+
+Alternative versions:
+
+1. **AI 排行榜 — 按智能、速度与价格对 300+ 顶级 AI 模型进行比较**
+2. **AI 榜单 — 300+ 顶级 AI 模型智能、速度与价格对比排名**
+
+**Note:** 
+- "Leaderboard" is commonly translated as 排行榜/榜单 in Chinese AI context
+- "Intelligence" here refers to AI capability, so 智能 is appropriate
+- "Compare" can be 比較 or 對比; 對比 is more concise for titles
 
 **来源**: llm-stats.com | **日期**: 2026-06-22
 
