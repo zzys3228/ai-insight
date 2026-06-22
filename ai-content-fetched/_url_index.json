@@ -3520,5 +3520,41 @@
     "path": "ai-content-fetched\\conference\\arxiv_org\\index.md",
     "fetched_at": "2026-06-22T23:16:51.673363",
     "metadata": {}
+  },
+  "30dc6ca0a642": {
+    "url": "https://github.com/tiiuae/scai-falcon",
+    "path": "ai-content-fetched\\unknown\\github_com\\index.md",
+    "fetched_at": "2026-06-22T23:21:58.256623",
+    "metadata": {}
+  },
+  "1bc25a0f6f18": {
+    "url": "https://www.adobe.com/firefly/flourish",
+    "path": "ai-content-fetched\\unknown\\adobe_com\\index.md",
+    "fetched_at": "2026-06-22T23:22:54.352561",
+    "metadata": {}
+  },
+  "e125aa213a68": {
+    "url": "https://www.w3.org/groups/wg/agents/",
+    "path": "ai-content-fetched\\unknown\\w3_org\\index.md",
+    "fetched_at": "2026-06-22T23:23:20.700125",
+    "metadata": {}
+  },
+  "5ffccc8223d2": {
+    "url": "https://w3c-cg.github.io",
+    "path": "ai-content-fetched\\unknown\\w3c-cg_github_io\\index.md",
+    "fetched_at": "2026-06-22T23:23:28.260838",
+    "metadata": {}
+  },
+  "963ac6598b9a": {
+    "url": "https://www.nist.gov/ai-rmf",
+    "path": "ai-content-fetched\\unknown\\nist_gov\\index.md",
+    "fetched_at": "2026-06-22T23:23:52.561006",
+    "metadata": {}
+  },
+  "c0880788903a": {
+    "url": "https://linuxfoundation.org/projects/agntcy",
+    "path": "ai-content-fetched\\unknown\\linuxfoundation_org\\index.md",
+    "fetched_at": "2026-06-22T23:24:03.093950",
+    "metadata": {}
   }
 }
