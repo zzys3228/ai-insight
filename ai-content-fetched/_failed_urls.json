@@ -104,36 +104,6 @@
     "error": "Failed to fetch repo info: 403",
     "last_try": "2026-06-22T18:28:54.793434"
   },
-  "6caed060135f": {
-    "url": "https://github.com/vllm-project/vllm",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:31:59.701425"
-  },
-  "d68f391379c8": {
-    "url": "https://github.com/ModelTC/lightllm",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:35:04.569267"
-  },
-  "24dc2be717a3": {
-    "url": "https://github.com/langgenius/dify",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:38:09.508966"
-  },
-  "a57008edf30a": {
-    "url": "https://github.com/comfyanonymous/ComfyUI",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:41:14.391333"
-  },
-  "1213d2eb1025": {
-    "url": "https://github.com/ml-explore/mlx",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:44:19.465052"
-  },
-  "a0131fdee43a": {
-    "url": "https://github.com/continuedev/continue",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:47:24.329025"
-  },
   "509146656116": {
     "url": "https://github.com/THUDM/ChatGLM",
     "error": "Failed to fetch repo info: 403",
@@ -144,40 +114,10 @@
     "error": "Failed to fetch repo info: 403",
     "last_try": "2026-06-22T16:16:44.194446"
   },
-  "f5e4eb044dc6": {
-    "url": "https://github.com/InternLM/InternLM",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:51:49.204682"
-  },
   "30dc6ca0a642": {
     "url": "https://github.com/tiiuae/scai-falcon",
     "error": "Failed to fetch repo info: 403",
     "last_try": "2026-06-22T18:54:54.115955"
-  },
-  "a18080b5131c": {
-    "url": "https://github.com/haotian-liu/LLaVA",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:57:59.020826"
-  },
-  "b44dffcf2ea3": {
-    "url": "https://github.com/salesforce/BLIP",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T19:01:03.877477"
-  },
-  "334df41a788b": {
-    "url": "https://github.com/CompVis/stable-diffusion",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T19:04:08.781638"
-  },
-  "e4a06d2e9dde": {
-    "url": "https://api.github.com/orgs/THUDM/repos",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T19:07:13.666446"
-  },
-  "883f159d38a0": {
-    "url": "https://github.com/ggerganov",
-    "error": "Invalid GitHub URL: https://github.com/ggerganov",
-    "last_try": "2026-06-22T19:07:13.669138"
   },
   "ce9308b42e88": {
     "url": "https://github.com/openai/human-eval",
@@ -304,21 +244,6 @@
     "error": "Failed to fetch article: 404",
     "last_try": "2026-06-22T20:04:24.524806"
   },
-  "2039c356734e": {
-    "url": "https://github.com/ggml-org",
-    "error": "Invalid GitHub URL: https://github.com/ggml-org",
-    "last_try": "2026-06-22T19:17:43.098915"
-  },
-  "1fa673e07408": {
-    "url": "https://github.com/trending",
-    "error": "Invalid GitHub URL: https://github.com/trending",
-    "last_try": "2026-06-22T19:17:43.099541"
-  },
-  "3c2dc9ac2195": {
-    "url": "https://github.com/AgilityRobotics",
-    "error": "Invalid GitHub URL: https://github.com/AgilityRobotics",
-    "last_try": "2026-06-22T19:17:43.100202"
-  },
   "8a66817016a8": {
     "url": "https://github.com/isaac-sim",
     "error": "Invalid GitHub URL: https://github.com/isaac-sim",
@@ -423,11 +348,6 @@
     "url": "https://w3c-cg.github.io",
     "error": "Failed to fetch: 404",
     "last_try": "2026-06-22T20:11:57.876367"
-  },
-  "3e191bb7e79e": {
-    "url": "https://standards.ieee.org",
-    "error": "Failed to fetch: 403",
-    "last_try": "2026-06-22T20:14:50.414569"
   },
   "963ac6598b9a": {
     "url": "https://www.nist.gov/ai-rmf",

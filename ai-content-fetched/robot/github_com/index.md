@@ -4,24 +4,24 @@ source: github.com
 url: https://github.com/AgilityRobotics
 category: robot
 ---
+
 # github.com
 
-# 热门仓库
+热门仓库
 
-加载中
+正在加载
+------------------------------
 
----
-
-## 1. [cassie-doc](/agilityrobotics/cassie-doc) cassie-doc 
+1. [cassie-doc](/agilityrobotics/cassie-doc) cassie-doc
    公开
 
-   Agility Robotics 官方 Cassie 文档和软件发布仓库。
+   Agility Robotics 官方的 Cassie 文档和软件发布仓库。
 
    Batchfile
    [60](/agilityrobotics/cassie-doc/stargazers)
    [23](/agilityrobotics/cassie-doc/forks)
 
-## 2. [cache](/agilityrobotics/cache) cache 
+2. [cache](/agilityrobotics/cache) cache
    公开
 
    派生自 [kbdharun/cache](/kbdharun/cache)
@@ -30,7 +30,7 @@ category: robot
 
    TypeScript
 
-## 3. [setup-jfrog-cli](/agilityrobotics/setup-jfrog-cli) setup-jfrog-cli 
+3. [setup-jfrog-cli](/agilityrobotics/setup-jfrog-cli) setup-jfrog-cli
    公开
 
    派生自 [jfrog/setup-jfrog-cli](/jfrog/setup-jfrog-cli)
@@ -39,50 +39,48 @@ category: robot
 
    TypeScript
 
-## 4. [rules_nixpkgs](/agilityrobotics/rules_nixpkgs) rules_nixpkgs 
+4. [rules\_nixpkgs](/agilityrobotics/rules_nixpkgs) rules\_nixpkgs
    公开
 
-   派生自 [tweag/rules_nixpkgs](/tweag/rules_nixpkgs)
+   派生自 [tweag/rules\_nixpkgs](/tweag/rules_nixpkgs)
 
-   用于将 Nixpkgs 包导入 Bazel 的规则
+   用于将 Nixpkgs 包导入 Bazel 的规则。
 
    Starlark
 
-## 5. [jfrog-credential-helpers](/agilityrobotics/jfrog-credential-helpers) jfrog-credential-helpers 
+5. [jfrog-credential-helpers](/agilityrobotics/jfrog-credential-helpers) jfrog-credential-helpers
    公开
 
    派生自 [psigen/jfrog-credential-helpers](/psigen/jfrog-credential-helpers)
 
-   使用 JFrog API 访问 Artifactory 的 Docker 凭证适配层
+   使用 JFrog API 访问 Artifactory 的 Docker 凭证填充程序
 
    Go
 
-## 6. [cluster-api-provider-aws](/agilityrobotics/cluster-api-provider-aws) cluster-api-provider-aws 
+6. [cluster-api-provider-aws](/agilityrobotics/cluster-api-provider-aws) cluster-api-provider-aws
    公开
 
    派生自 [kubernetes-sigs/cluster-api-provider-aws](/kubernetes-sigs/cluster-api-provider-aws)
 
-   Kubernetes Cluster API Provider AWS 为 AWS 上的"自管理"和 EKS Kubernetes 集群提供一致的部署和日常运维操作
+   Kubernetes Cluster API Provider AWS 为 AWS 上的"自管理"和 EKS Kubernetes 集群提供一致的部署和第二天运营。
 
    Go
 
----
+### 仓库
 
-## 仓库
-
-加载中
+正在加载
 
 类型
 
 全部
 
-公共
+公开
 
 源代码
 
 派生
 
-归档
+已归档
 
 镜像
 
@@ -110,7 +108,7 @@ TypeScript
 
 名称
 
-Stars
+星标
 
 显示 8 个仓库中的 8 个
 
@@ -125,7 +123,7 @@ Stars
 
   [### 哎呀！
 
-  加载时发生错误。请重新加载此页面。](/agilityrobotics/setup-jfrog-cli/graphs/commit-activity) agilityrobotics/setup-jfrog-cli 的年度提交活动
+  加载时发生错误。请重新加载此页面。](/agilityrobotics/setup-jfrog-cli/graphs/commit-activity) agilityrobotics/setup-jfrog-cli 过去一年的提交活动
 
   TypeScript
 
@@ -145,11 +143,11 @@ Stars
   派生自
   [sequinstream/sequin](/sequinstream/sequin)
 
-  Postgres 变更数据捕获至流、队列和搜索索引，如 Kafka、SQS、Elasticsearch、HTTP 端点等
+  Postgres 变更数据捕获到流、队列和搜索索引，如 Kafka、SQS、Elasticsearch、HTTP 端点等
 
   [### 哎呀！
 
-  加载时发生错误。请重新加载此页面。](/agilityrobotics/sequin/graphs/commit-activity) agilityrobotics/sequin 的年度提交活动
+  加载时发生错误。请重新加载此页面。](/agilityrobotics/sequin/graphs/commit-activity) agilityrobotics/sequin 过去一年的提交活动
 
   Elixir
 
@@ -160,6 +158,43 @@ Stars
   [0](/agilityrobotics/sequin/issues)
   [0](/agilityrobotics/sequin/pulls)
 
-  更新于
+  更新于 2026年2月23日
+
+* [fluent-bit-helm-charts](/agilityrobotics/fluent-bit-helm-charts)
+
+  公开
+
+  派生自
+  [fluent/helm-charts](/fluent/helm-charts)
+
+  Fluentd 和 Fluent Bit 的 Helm Charts
+
+  [### 哎呀！
+
+  加载时发生错误。请重新加载此页面。](/agilityrobotics/fluent-bit-helm-charts/graphs/commit-activity) agilityrobotics/fluent-bit-helm-charts 过去一年的提交活动
+
+  Go Template
+
+  0
+
+  Apache-2.0
+  [497](/agilityrobotics/fluent-bit-helm-charts/forks)
+  [0](/agilityrobotics/fluent-bit-helm-charts/issues)
+  [0](/agilityrobotics/fluent-bit-helm-charts/pulls)
+
+  更新于 2026年1月21日
+
+* [cluster-api-provider-aws](/agilityrobotics/cluster-api-provider-aws)
+
+  公开
+
+  派生自
+  [kubernetes-sigs/cluster-api-provider-aws](/kubernetes-sigs/cluster-api-provider-aws)
+
+  Kubernetes Cluster API Provider AWS 为 AWS 上的"自管理"和 EKS Kubernetes 集群提供一致的部署和第二天运营。
+
+  [### 哎呀！
+
+  加载时发生错误。请重新加载此页面。](/agilityrobotics/cluster-api-provider-aws/graphs/commit-activity) agilityrobotics/cluster-api-provider-aws 过去一年的提交活动
 
 *原文: https://github.com/AgilityRobotics*

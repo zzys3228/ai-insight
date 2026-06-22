@@ -4,53 +4,94 @@ source: apptronik.com
 url: https://apptronik.com/apollo
 category: robot
 ---
+
 # Let’s talk about how Apollo can help your operations!
 
-**通用人形机器人**
+## 中文翻译
 
-Apollo 由 Apptronik 在构建超过 10 台机器人（包括 NASA 的 Valkyrie 机器人）方面的经验和专业知识开发而来。  
+[![](https://cdn.prod.website-files.com/646de3abb3e62d339f089e28/649a88fa5c796e2986a32462_apptronik%20text%20logo.svg)](/)
 
-Apollo 在短期内将在仓库和制造工厂运行，随后逐步拓展至建筑、石油和天然气、电子生产、零售、家庭配送、老年护理等领域。  
+* [立即开始](/contact-us)
 
-Apollo 是首款专为**友好交互**、**大规模制造**、**高有效载荷**和**安全性**而设计的商业人形机器人。
+![](https://cdn.prod.website-files.com/646de3abb3e62d339f089e28/64e0d3400967558a3ade8057_APOLLOLOGO.png)
 
----
+### 通用型人形机器人
 
-### 规格参数  
+Apollo是Apptronik在打造包括NASA Valkyrie机器人在内的10余款机器人后推出的产品。
 
-| 项目 | 参数 |
-|------|------|
-| **高度** | 5′8″ （约 1.73 米） |
-| **运行时间** | 每块电池约 4 小时 |
-| **重量** | 160 磅 （约 72.6 千克） |
-| **有效载荷** | 55 磅 （约 25 千克） |
+Apollo将在短期内应用于仓库和制造工厂，并逐步扩展到建筑、石油和天然气、电子产品生产、零售、家庭配送、养老护理等领域。
 
----
+Apollo是首款为友好交互、批量制造、大载荷和高安全性而设计的商用人形机器人。
 
-### 模块化设计  
+![](https://cdn.prod.website-files.com/646de3abb3e62d339f089e28/64e5ecff0fccb0a092f89ddc_WhatsApp%20Image%202023-08-23%20at%204.52.42%20PM.jpeg)
 
-Apollo 采用模块化设计，可安装在任何移动平台上，既可固定不动，也可配备腿部实现全移动。
+![](https://cdn.prod.website-files.com/646de3abb3e62d339f089e28/64e49f4de3eef177a948c864_2%20trans%20edit%20standing.png)
 
-### 直观交互  
+身高
 
-头部、嘴部和胸部的 LED 协同工作，以传达机器人状态信息。
+5'8" (约173厘米)
 
-### 电池续航  
+续航时间
 
-- **热插拔电池组**：每块电池续航约 4 小时，机器人可在现场快速更换电池而无需插电充电（充电期间机器人不可操作）。  
-- 如有需要，Apollo 也可插电充电或通过有线供电实现连续运行。
+每电池组4小时
 
-### 一台机器人，无限可能  
+重量
 
-（配图展示机器人在仓库、搬运、配送等场景的应用）
+160磅 (约72.6公斤)
 
-### 无与伦比的安全性  
+有效载荷
 
-- **外围区域（Perimeter Zone）**：外围区域以及检测到物体时 Apollo 的行为可以根据需要调节，以创建安全的工作环境。  
-- **冲击区域（Impact Zone）**：当检测到移动物体进入冲击半径时，Apollo 会立即停止所有运动。
+55磅 (约25公斤)
 
-### 直观软件  
+![](https://cdn.prod.website-files.com/646de3abb3e62d339f089e28/64e85b8f946301eb2f67c538_pedistal.jpg)
 
-Apollo 的软件套件支持通过点击操作控制人形机器人，使操作简便、直观。
+### 模块化设计
+
+Apollo采用模块化设计，可安装在任意移动平台上，实现固定式或配备腿部的完全移动式部署。
+
+### 直观交互
+
+头部、嘴部和胸部的LED指示灯协同工作，显示机器人状态。
+
+### 电池续航
+
+电池组支持热插拔，每个电池组可续航4小时，Apollo可通过简单更换电池继续工作，无需进行充电——充电期间机器人无法运行。如有需要，Apollo也可插入充电或连接电源实现连续运行。
+
+### 一台机器人，无限可能
+
+[拖车卸货](/solutions/trailer-unloading)
+
+[箱体拣选](/solutions/case-picking)
+
+[码垛](/solutions/palletization)
+
+[设备看护](/solutions/machine-tending)
+
+[工作站配送](/solutions/workcell-delivery)
+
+### 无与伦比的安全性
+
+周边区域
+
+可调整外围区域及Apollo在检测到物体时的行为，创建安全的工作环境。
+
+碰撞区域
+
+当检测到移动物体进入碰撞半径时，Apollo会立即停止任何动作。
+
+### 直观软件
+
+Apollo的软件套件支持点击控制人形机器人和自动化设备，通过部署并全面整合多种解决方案到您的仓库和制造运营中。
+
+![](https://cdn.prod.website-files.com/646de3abb3e62d339f089e28/64be8386e76f3bf2fa3905dd_Intuitive%20Software%20Suite.png)
+
+通用型人形机器人
+
+Apollo具有与人类相似的体型和尺寸。这使其能够适应人类空间并使用我们的工具和设备。这使得人机交互更加自然，并能执行其他类型机器人难以或无法完成的任务。
+
+让我们谈谈Apollo如何帮助您的运营！
+=====================================================
+
+[立即开始](/contact-us)
 
 *原文: https://apptronik.com/apollo*

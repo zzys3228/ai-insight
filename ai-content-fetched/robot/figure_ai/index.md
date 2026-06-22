@@ -4,73 +4,53 @@ source: www.figure.ai
 url: https://www.figure.ai/news
 category: robot
 ---
+
 # Introducing Helix 02: Full-Body Autonomy
 
-1. [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/2IRk51tWw1vBqZ1bYfca14/d34c4c29fa4c18bf110dc0df20adcd96/Thumbnail_Video_Helix.mp4)
+**1. 2026 年 1 月 27 日**  
+   推出 **Helix 02**：全身自主（Full‑Body Autonomy）  
 
-   2026年1月27日
+**2. 2025 年 10 月 9 日**  
+   推出 **Figure 03**  
 
-   Helix 02 介绍：全身自主系统
-   ========================================
+**3. 2026 年 4 月 29 日**  
+   提升 **Figure 03** 生产（Ramping Figure 03 Production）  
 
-2. [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/4xz0lVTGGJN7Jrih05v6gY/537bdcb07de3a28e4116d78b48b96415/Thumbnail_Video__3_.mp4)
+---
 
-   2025年10月9日
+### 全部文章
 
-   Figure 03 介绍
-   =====================
+- **2026 年 5 月 26 日**  
+  **Figure** 与 **Catalyst Brands** 签署协议，扩大人形机器人运营（Humanoid Operations）
 
-3. [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/3ddb6QH7JUyyIQ6hoYe6qo/4be894bde8da0a1f4df783ef34391770/Ramping_Thumbnail_video.mp4)
+- **2026 年 5 月 8 日**  
+  **Helix‑02** 卧室整理（Helix‑02 Bedroom Tidy）
 
-   2026年4月29日
+- **2026 年 3 月 9 日**  
+  **Helix‑02** 客厅整理（Helix‑02 Living Room Tidy）
 
-   Figure 03 生产提升
-   ============================
+- **2025 年 11 月 19 日**  
+  **F.02** 为 **BMW** 生产 30,000 辆汽车做出贡献（F.02 Contributed to the Production of 30,000 Cars at BMW）
 
-所有文章
-============
+- **2025 年 9 月 18 日**  
+  **Project Go‑Big**：互联网规模的人形机器人预训练与人类到机器人直接迁移（Internet‑Scale Humanoid Pretraining and Direct Human‑to‑Robot Transfer）
 
-* [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/5HjYOan2BvAZNWsQyhECu0/b33406faba49dbf6dd9cc08b299cdd75/Thumbnail_Video_Catalyst.mp4)
+- **2025 年 9 月 17 日**  
+  **Figure** 宣布与 **Brookfield** 建立战略合作伙伴关系（Strategic Partnership with Brookfield）
 
-  2026年5月26日
+- **2025 年 9 月 16 日**  
+  **Figure** 完成 **10 亿美元** C 轮融资，融资后估值 **390 亿美元**（Series C Funding at $39 B Post‑Money Valuation）
 
-  Figure 与 Catalyst Brands 签署协议，扩大人形机器人运营规模
-  ========================================================================
-* [图片链接](https://images.ctfassets.net/qx5k8y1u9drj/616ISizQAP1pT471E4Snqh/ee16f939c9d4ca1d820501b3c6b4c336/BEDROOM_TIDY_OPEN_GRAPH_IMAGE__1_.jpg?fm=webp&w=3840&q=70)[视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/7GBmB8G0nJn0v1MO0D1ojG/64a158bab522be3fcfb5293e2f2ddf26/BEDROOM_TIDY_THUMBNAIL_VIDEO_1024_X_820.mp4)
+- **2025 年 9 月 3 日**  
+  **Helix** 装载洗碗机（Helix Loads the Dishwasher）
 
-  2026年5月8日
+- **2025 年 8 月 12 日**  
+  **Helix** 学习叠衣服（Helix Learns to Fold Laundry）
 
-  Helix-02 卧室整理
-  =====================
-* [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/1JeH7Ll5JboDMfbxlcZzQD/926f55e77cd5c7be0f9c3807dc612856/THUMBNAIL_VIDEO__5_.mp4)
+- **2025 年 7 月 17 日**  
+  **F.03** 电池开发（F.03 Battery Development）
 
-  2026年3月9日
-
-  Helix 02 客厅整理
-  =========================
-* [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/40VySCK3cG9H9a33IdTKJe/b6cb8d17bfa26020f278411641d2547d/Thumbnail_Video_F.02_BMW.mp4)
-
-  2025年11月19日
-
-  F.02 为宝马生产 30,000 辆汽车做出贡献
-  ========================================================
-* [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/3K9nHZDobDqOE07x02h1ZF/f2c563fc0bdf7857f07452be38dc2eef/Thumbnail_Video_darker.mp4)
-
-  2025年9月18日
-
-  Go-Big 项目：互联网规模的人形机器人预训练和直接人机迁移
-  ======================================================================================
-* [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/5oirwlRaaFIfY87kXxFVmo/96bda1733279309a5064c6856beac074/Brookfield_THUMBNAIL_VIDEO.mp4)
-
-  2025年9月17日
-
-  Figure 宣布与 Brookfield 建立战略合作伙伴关系
-  ======================================================
-* [视频链接](https://videos.ctfassets.net/qx5k8y1u9drj/3fCuffDZ3uuQESKH9ZJLEZ/350bc903227430d11dbfdfad5b02a4ff/Thumbnail_v2.mp4)
-
-  2025年9月16日
-
-  Figure C 轮融资超过 10 亿美元，投后估值 390 亿美元
-  ======================
+- **2025 年 6 月 7 日**  
+  规模化 **Helix**：人形物流的新标杆（Scaling Helix: a New State of the Art in Humanoid Logistics）
 
 *原文: https://www.figure.ai/news*
