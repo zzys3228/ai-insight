@@ -1,13 +1,13 @@
 {
   "04dbfb04e14b": {
     "url": "https://github.com/NVIDIA/cudnn",
-    "error": "('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))",
-    "last_try": "2026-06-22T17:25:32.116371"
+    "error": "GitHub URLs should be handled by GitHub fetcher",
+    "last_try": "2026-06-22T19:44:00.002486"
   },
   "21da4a2fadc7": {
     "url": "https://github.com/NVIDIA/cuda",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:28:38.545620"
+    "error": "GitHub URLs should be handled by GitHub fetcher",
+    "last_try": "2026-06-22T19:44:00.003308"
   },
   "6eec8646764a": {
     "url": "https://github.com/ollama/ollama",
@@ -61,8 +61,8 @@
   },
   "22212355244a": {
     "url": "https://github.com/useheadroom/headroom",
-    "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T17:48:00.359028"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T18:58:14.898928"
   },
   "5c33f43b602e": {
     "url": "https://github.com/open-webui/open-webui",
@@ -197,12 +197,12 @@
   "f7b20f09dc04": {
     "url": "https://www.amd.com/en/accelerators/instinct.html",
     "error": "HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=30)",
-    "last_try": "2026-06-22T16:42:14.529613"
+    "last_try": "2026-06-22T19:44:30.254906"
   },
   "15457cc6aca0": {
     "url": "https://habana.ai",
     "error": "Failed to fetch article: 403",
-    "last_try": "2026-06-22T16:42:16.384949"
+    "last_try": "2026-06-22T19:44:32.122341"
   },
   "9f05dc51736b": {
     "url": "https://www.deepseek.com",
@@ -212,12 +212,12 @@
   "3edeb65a08e5": {
     "url": "https://platform.deepseek.com",
     "error": "Failed to fetch article: 429",
-    "last_try": "2026-06-22T16:52:27.859175"
+    "last_try": "2026-06-22T19:44:32.495110"
   },
   "f06ee4a2ee28": {
     "url": "https://chat.deepseek.com",
     "error": "Failed to fetch article: 429",
-    "last_try": "2026-06-22T16:52:28.332643"
+    "last_try": "2026-06-22T19:44:32.912586"
   },
   "763a6553fae3": {
     "url": "https://www.deepseek.com/en/news",
@@ -226,33 +226,33 @@
   },
   "12c27535acf3": {
     "url": "https://blog.perplexity.ai",
-    "error": "HTTPSConnectionPool(host='blog.perplexity.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T17:05:28.845483"
+    "error": "Failed to fetch article: 403",
+    "last_try": "2026-06-22T19:45:21.876815"
   },
   "b15cb05af132": {
     "url": "https://www.lingyiwanwu.com/blog",
     "error": "Failed to fetch article: 502",
-    "last_try": "2026-06-22T17:05:29.213615"
+    "last_try": "2026-06-22T19:45:22.227245"
   },
   "3089cca301e9": {
     "url": "https://ai.google.dev/jules",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:10:18.669480"
+    "last_try": "2026-06-22T19:45:43.550639"
   },
   "b65ed513fc84": {
     "url": "https://deepmind.google/models/sima/",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:10:35.899300"
+    "last_try": "2026-06-22T19:45:45.256939"
   },
   "1bc25a0f6f18": {
     "url": "https://www.adobe.com/firefly/flourish",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:20:15.293050"
+    "last_try": "2026-06-22T19:46:17.429713"
   },
   "fa2899d55053": {
     "url": "https://www.adobe.com/sensei.html",
     "error": "HTTPSConnectionPool(host='business.adobe.com', port=443): Read timed out. (read timeout=30)",
-    "last_try": "2026-06-22T17:20:48.051715"
+    "last_try": "2026-06-22T19:46:49.972506"
   },
   "befef87b0578": {
     "url": "https://yiyan.baidu.com",
@@ -267,22 +267,22 @@
   "22352e737845": {
     "url": "https://www.aliyun.com/product/dashvector",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:23:29.889308"
+    "last_try": "2026-06-22T19:46:51.201357"
   },
   "bf9eb47ad360": {
     "url": "https://www.aliyun.com/product/eiam",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:23:31.170599"
+    "last_try": "2026-06-22T19:46:52.452236"
   },
   "3ab162784aed": {
     "url": "https://marketplace.aliyun.com",
     "error": "HTTPSConnectionPool(host='marketplace.aliyun.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T17:23:32.497465"
+    "last_try": "2026-06-22T19:46:53.726136"
   },
   "6ff88df23416": {
     "url": "https://cloud.baidu.com/product/wenxin",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:23:34.534782"
+    "last_try": "2026-06-22T19:46:54.292228"
   },
   "8ba0d8ac953e": {
     "url": "https://create.baidu.com",
@@ -292,21 +292,96 @@
   "4af6c14ac87a": {
     "url": "https://cloud.baidu.com/product/aigc",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:23:51.487878"
+    "last_try": "2026-06-22T19:46:54.736134"
   },
   "28d49ff7946d": {
     "url": "https://cloud.baidu.com/product/digital",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:23:52.757137"
+    "last_try": "2026-06-22T19:46:55.215623"
   },
   "902ddd6fac00": {
     "url": "https://cloud.baidu.com/product/bdfm",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:23:53.432605"
+    "last_try": "2026-06-22T19:46:55.651991"
   },
   "396cb5e37f28": {
     "url": "https://github.com/punkpeye/awesome-mcp-servers",
     "error": "Failed to fetch repo info: 403",
     "last_try": "2026-06-22T18:52:05.173835"
+  },
+  "2039c356734e": {
+    "url": "https://github.com/ggml-org",
+    "error": "Invalid GitHub URL: https://github.com/ggml-org",
+    "last_try": "2026-06-22T18:58:14.902080"
+  },
+  "1fa673e07408": {
+    "url": "https://github.com/trending",
+    "error": "Invalid GitHub URL: https://github.com/trending",
+    "last_try": "2026-06-22T18:58:14.903296"
+  },
+  "3c2dc9ac2195": {
+    "url": "https://github.com/AgilityRobotics",
+    "error": "Invalid GitHub URL: https://github.com/AgilityRobotics",
+    "last_try": "2026-06-22T18:58:14.904125"
+  },
+  "8a66817016a8": {
+    "url": "https://github.com/isaac-sim",
+    "error": "Invalid GitHub URL: https://github.com/isaac-sim",
+    "last_try": "2026-06-22T18:58:14.904972"
+  },
+  "3d6aac9603b3": {
+    "url": "https://github.com/isaac-ros",
+    "error": "Invalid GitHub URL: https://github.com/isaac-ros",
+    "last_try": "2026-06-22T18:58:14.905668"
+  },
+  "f1743186e904": {
+    "url": "https://cloud.baidu.com/doc",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:56.031886"
+  },
+  "64ab6c7a8aa3": {
+    "url": "https://cloud.baidu.com/product/vid",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:56.518684"
+  },
+  "a7915505d04a": {
+    "url": "https://cloud.baidu.com/product/content-moderation",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:56.965434"
+  },
+  "4fa12e66baf9": {
+    "url": "https://cloud.baidu.com/product/shengsuan",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:57.399535"
+  },
+  "e1eeeaef802b": {
+    "url": "https://cloud.baidu.com/product/digital-human",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:57.868097"
+  },
+  "af8b198f2906": {
+    "url": "https://cloud.baidu.com/product/recommend",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:58.414928"
+  },
+  "b9c165e631a9": {
+    "url": "https://cloud.baidu.com/product/vip",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:46:58.823075"
+  },
+  "3b4143715a47": {
+    "url": "https://cloud.tencent.com/event/tencent-conference",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:47:01.193859"
+  },
+  "d9b3e1fcef62": {
+    "url": "https://cloud.tencent.com/product/transport-ai",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T19:47:03.418130"
+  },
+  "7e0d21299f0b": {
+    "url": "https://www.hengguangda.com",
+    "error": "HTTPSConnectionPool(host='www.hengguangda.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
+    "last_try": "2026-06-22T19:49:57.355610"
   }
 }

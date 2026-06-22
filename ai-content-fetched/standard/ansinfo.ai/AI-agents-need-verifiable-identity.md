@@ -1,188 +1,122 @@
 ---
-title: AI agents need verifiable identity.
+title: AI 代理需要可验证的身份。
 source: ansinfo.ai
 url: https://ansinfo.ai
 date: 2026-06-22
 category: standard/ansinfo.ai
 translated: true
-fetched_at: 2026-06-22T18:27:26.754381
+fetched_at: 2026-06-22T19:14:43.307015
 ---
-# AI agents need verifiable identity.
+# AI 代理需要可验证的身份。
 
 **来源**: ansinfo.ai | **日期**: 2026-06-22
 
 ---
 
-ANS | Trust Layer for AI Agents
+# ANS | AI代理的信任层
 
-AI agents need verifiable identity.
+AI代理需要可验证的身份。
 
-As AI agents begin to act across websites, apps, and business systems, every interaction needs a simple way to confirm which agents are legitimate and who operates it. ANS is an open standard that assigns agents identity through domain names and DNS.
+随着AI代理开始在网站、应用程序和业务系统之间执行操作，每次交互都需要一种简单的方式来确认哪些代理是合法的，以及由谁运营。ANS是一个开放标准，通过域名和DNS为代理分配身份。
 
-Support the standard
+**支持该标准**
 
-See how ANS works
+**了解ANS如何运作**
 
-Soon, agents will act on your behalf.
+很快，代理将代表您行事。
 
-Your agent books a barber before your next haircut. A finance agent pays an approved supplier. A procurement agent compares vendors. A customer support agent resolves an issue with another company's agent.
+您的代理会在下次理发前预约理发师。财务代理会向已批准的供应商付款。采购代理会比较供应商。客户支持代理会解决与另一家公司代理的问题。
 
-This is where AI is headed: agents moving across services, systems, and organizations to get work done.
+这就是AI的发展方向：代理在服务、系统和企业之间移动以完成工作。
 
-🧑
+---
 
-▲
+互联网并非为识别代理而构建的。
 
-"Book me a haircut for Thursday."
+身份是网络运行的基础。网站有域名，人们有账户和个人资料，企业有经过验证的数字属性。没有明确的身份，就很难验证您正在与谁或什么东西进行交互。
 
-You
+而现在，代理没有任何标准。随着越来越多的代理上线，在网站、应用程序或平台之间识别它们没有统一的方式。
 
-tell your AI assistant / agent
+没有标准，每个代理交互都需要每次重复询问相同的问题：这个代理是否如它所声称的那样？它应该如何被处理？
 
-← Back
+| ✅ | 🌐 网站 |
+|---|---|
+| ✓ | 域名 |
+| ✓ | DNS + TLS证书 |
 
-Next →
+| ✅ | 👤 个人 |
+|---|---|
+| ✓ | 账户/个人资料 |
+| ✓ | OAuth、OpenID Connect |
 
-▶ Play
+| ✅ | 🏢 企业 |
+|---|---|
+| ✓ | 经过验证的属性 |
+| ✓ | Google商家档案、EV证书 |
 
-🧑
+| ? | 🤖 代理 |
+|---|---|
+| ✗ | 无标准 |
+| ✗ | 尚无共享方式 |
 
-You
+网络的每个参与者都有身份标准。
 
-🤖
+代理还没有——但即将拥有。
 
-AI Assistant / Agent
+**ANS为代理提供了一种标准化的身份识别方式。**
 
-🏅
+ANS是一个开放标准，将AI代理与域名连接，创建一个可识别且可验证的身份，可通过DNS被发现。
 
-ANS Registry
+这意味着代理可以展示它代表谁或什么，其身份锚定在哪里，以及其他代理、平台和系统应如何与它交互。
 
-📅
+ANS没有让每个公司发明自己的代理识别方式，而是为生态系统提供了一个共享的起点。
 
-Calendar Agent
+---
 
-✅
+## 生态系统适配
 
-Done
+**ANS是互补的——而非竞争关系**
 
-The internet was not built to recognize agents.
+发现和信任是不同的挑战。ANS是可以与任何发现机制配合使用的信任层。
 
-Identities are foundational to how the web works. Websites have domains. People have accounts and profiles. Businesses have verified digital properties. Without clear identities, it's hard to verify who or what you're interacting with.
+## 标准融合正在进行中
 
-And right now, agents have nothing standard. As more come online, there is no shared way to identify them across websites, apps, or platforms.
+Infoblox（DNS-AID）、GoDaddy（ANS）和Nemethi（AID）正在积极合作，在 **_ag** 标签下开发共享的DNS配置文件。这是碎片化格局正在整合而非继续分化的第一个具体证据。在共享SVCB记录上的融合——每个协议一条记录，携带所有参与草案的发现元数据——为评估是否基于ANS构建的任何人提供了强大的信任信号。
 
-Without a standard, every agent interaction needs to ask the same questions, each time: Is this agent what it claims to be? How should it be handled?
+| 请求层 | Web Bot Auth |
+|---|---|
+| 发起方 | Cloudflare / IETF WebBotAuth工作组 |
+| 功能 | 每次请求的HTTP签名认证。ANS添加身份后盾：那个签名密钥背后是谁？ |
 
-✓
+| 发现层 | DNS-AID |
+|---|---|
+| 发起方 | Infoblox / IETF dnsop |
+| 功能 | 基于SVCB的代理端点发现。ANS为DNS-AID发现的端点添加信任验证。 |
 
-🌐
+| 引导层 | AID |
+|---|---|
+| 发起方 | agentcommunity.org |
+| 功能 | 最小化基于TXT的引导。ANS添加版本绑定、透明日志和渐进式验证。 |
 
-Website
+| 协议层 | A2A / MCP |
+|---|---|
+| 发起方 | Linux Foundation AAIF |
+| 功能 | 代理之间的通信方式。ANS将协议卡包装成带有身份字段和SCITT收据的信任卡。 |
 
-Domain name
+---
 
-DNS + TLS certificate
+## 构建在互联网已使用的命名系统之上
 
-✓
+就像网站使用域名和DNS让人们轻松找到它们一样，ANS将这种熟悉的模式扩展到AI代理，使用域名和DNS作为代理身份的基础。而且基础设施已经建成并正在使用中。
 
-👤
+这个想法很简单：如果代理代表一个组织或个人行事，它的身份应该锚定在一个域名上。
 
-Person
+**支持该标准**
 
-Account / profile
+帮助塑造AI代理在互联网上的身份识别方式。联系我们或了解ANS如何运作。
 
-OAuth, OpenID Connect
+**支持该标准**
 
-✓
-
-🏢
-
-Business
-
-Verified property
-
-Google Business, EV cert
-
-?
-
-🤖
-
-Agent
-
-No standard
-
-Nothing shared yet
-
-Every actor on the web has an identity standard.
-
-Agents do not — yet.
-
-ANS gives agents a standard way to identify themselves.
-
-ANS is an open standard that connects an AI agent to a domain name, creating a recognizable and verifiable identity that can be discovered through DNS.
-
-That means an agent can show who or what it represents, where its identity is anchored, and how other agents, platforms, and systems should interact with it.
-
-Instead of every company inventing its own way to identify agents, ANS gives the ecosystem a shared starting point.
-
-Ecosystem fit
-
-ANS complements — it doesn't compete
-
-Discovery and trust are different problems. ANS is the trust layer that works with any discovery mechanism.
-
-Standards Convergence in Progress
-
-Infoblox (DNS-AID), GoDaddy (ANS), and Nemethi (AID) are actively collaborating on a shared DNS profile under the
-
-_ag
-
-label. This is the first concrete evidence that the fragmented landscape is consolidating rather than continuing to diverge. The convergence on shared SVCB records — one record per protocol, carrying discovery metadata for all participating drafts — provides a strong trust signal for anyone evaluating whether to build on ANS.
-
-Request layer
-
-Web Bot Auth
-
-Cloudflare / IETF WebBotAuth WG
-
-Per-request HTTP signature authentication. ANS adds the identity backstop: who's behind that signing key?
-
-Discovery layer
-
-DNS-AID
-
-Infoblox / IETF dnsop
-
-SVCB-based agent endpoint discovery. ANS adds trust verification for the endpoints DNS-AID finds.
-
-Bootstrap layer
-
-AID
-
-agentcommunity.org
-
-Minimal TXT-based bootstrap. ANS adds version binding, transparency logs, and graduated verification.
-
-Protocol layer
-
-A2A / MCP
-
-Linux Foundation AAIF
-
-How agents communicate. ANS wraps Protocol Cards into Trust Cards with identity fields and SCITT receipts.
-
-Built on the naming system the internet already uses.
-
-Just like websites use domain names and DNS to make it easy for people to find them, ANS extends that familiar model to AI agents, using domain names and DNS as the foundation for agent identity. And the infrastructure is already built and being used.
-
-The idea is simple: if an agent acts for an organization or individual, its identity should be anchored to a domain.
-
-Support the standard
-
-Help shape how AI agents identify themselves on the internet. Get in touch or explore how ANS works.
-
-Support the standard
-
-See how ANS works
+**了解ANS如何运作**
 
 *原文请访问 [ansinfo.ai](https://ansinfo.ai)*

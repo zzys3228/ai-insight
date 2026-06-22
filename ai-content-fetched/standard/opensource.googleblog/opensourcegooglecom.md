@@ -1,1010 +1,539 @@
 ---
-title: opensource.google.com
+title: **Translation:**
+
+"opensource.google.com" 是 Google 的开源项目网站。
+
+在中文中通常称为：
+- **Google 开源网站**
+- **opensource.google.com**（保持原 URL 不变，因为 URL 作为技术标识符通常不翻译）
+
+**注：** 网址/域名属于技术标识符，一般保留原样，不做文字翻译。
 source: opensource.googleblog.com
 url: https://opensource.googleblog.com/2026/04
 date: 2026-06-22
 category: standard/opensource.googleblog
 translated: true
-fetched_at: 2026-06-22T18:27:01.071433
+fetched_at: 2026-06-22T19:05:42.210360
 ---
-# opensource.google.com
+# **Translation:**
+
+"opensource.google.com" 是 Google 的开源项目网站。
+
+在中文中通常称为：
+- **Google 开源网站**
+- **opensource.google.com**（保持原 URL 不变，因为 URL 作为技术标识符通常不翻译）
+
+**注：** 网址/域名属于技术标识符，一般保留原样，不做文字翻译。
 
 **来源**: opensource.googleblog.com | **日期**: 2026-06-22
 
 ---
 
+2026年4月的帖子
 
-```
-git clone https://github.com/GoogleCloudPlatform/activation-model-scanner.git
-cd activation-model-scanner && pip install -e .
+**征程开启：结识2026年GSoC贡献者！**
 
-# Standard scan (3 concepts: harmful_content, injection_resistance, refusal_capability)
-ams scan ./my-model
+2026年4月30日，星期四
 
-# Quick scan (2 concepts, ~40% faster)
-ams scan ./my-model --mode quick
+作者：Stephanie Taylor、Mary Radomile、Lucila Ortíz，Google Summer of Code
 
-# Full scan (4 concepts including truthfulness)
-ams scan ./my-model --mode full
+热烈欢迎1,141位Google Summer of Code（GSoC）2026贡献者！能与184个 mentor组织共同开启新版活动，我们倍感兴奋。各组织共审阅了创纪录的23,371份提案，为各自社区寻找最佳匹配。
 
-# JSON output for CI/CD pipelines
-ams scan ./my-model --json
+**2026年申请统计：**
 
-```
+- 来自131个国家的15,245名申请者，共提交23,371份提案
+- 超过2,000名mentor和组织管理员
 
-```
-jobs:
-model-safety-check:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v3
+**接下来是什么？**
 
-    - name: Install AMS
-      run: pip install ams-scanner[cli]
+在编写第一行代码之前，还有**社区融合期**。为期3.5周的GSoC传统远不止配置工具那么简单；它是一种沉浸式体验。这是一个专属空间，让贡献者掌握代码库、遵循社区标准，并理解项目背后的"为什么"。到编码阶段开始时，每位贡献者都已准备好将项目基础转化为实际影响。
 
-    - name: Scan model
-      run: |
-        ams scan ./model \
-          --verify meta-llama/Llama-3-8B-Instruct \
-          --json > scan-results.json
+官方编码阶段于**5月25日**开始。对于我们的贡献者来说，这一阶段代表着深入协作开发，提供学习新工具的机会，并为开源项目的心跳做出贡献。
 
-    - name: Upload results
-      uses: actions/upload-artifact@v3
-      with:
-        name: ams-scan-results
-        path: scan-results.json
+**感谢各位Mentor！**
 
-```
+最后，我们想向杰出的**Mentor**和组织管理员表达最深切的感谢。在AI深刻改变开源社区格局之际，GSoC也不例外。你们的耐心、毅力和不懈的志愿者付出是这个项目的心跳，确保其持续成功，让我们欢迎新一代贡献者进入开源生态系统。
 
-```
-# First, create a baseline from the official model
-ams baseline create ./my-model
+---
 
-# Then verify an unknown model against it
-ams scan ./suspicious-model --verify ./my-model
+**AMS发布：用于开源权重LLM安全验证的基于激活的模型扫描器**
 
-```
+2026年4月27日，星期一
 
-```
-# Standard scan (3 concepts: harmful_content, injection_resistance, refusal_capability)
-ams scan ./my-model
+作者：Glen Messenger，Google Kubernetes Engine（GKE）
 
-# Quick scan (2 concepts, ~40% faster)
-ams scan ./my-model --mode quick
+开源权重模型生态系统正在蓬勃发展——其阴影亦然。2025年的一项研究发现，仅在Hugging Face上就存在超过8,000个安全修改过的模型仓库，修改后的模型以74%的不安全请求遵从率应对危险指令，而原始指令微调模型仅为19%。
 
-# Full scan (4 concepts including truthfulness)
-ams scan ./my-model --mode full
+对于部署开源权重模型的组织而言，一个关键问题浮现：你如何知道你下载的模型可以安全运行？
 
-# JSON output for CI/CD pipelines
-ams scan ./my-model --json
+我们认为防御性安全工具应该广泛可用。AMS代表了我们为更安全AI生态系统的贡献——在这个世界里，开发者可以在部署前验证模型完整性。
 
-```
+今天我们发布**AMS（Activation-based Model Scanner，基于激活的模型扫描器）**，这是一个开源工具，在10-40秒内回答这个问题——无需发送任何提示。
 
-```
-from jax.ad_checkpoint import checkpoint_name 
- 
-def layer_name(x, w): 
-  w1, w2 = w 
-  x = checkpoint_name(x, "x") 
-  y = x @ w1 
-  return y @ w2, None  
+**行为测试的问题**
 
-```
+传统安全验证依赖行为测试：发送有害提示，检查模型是否拒绝。这种方法有三个根本性限制。
 
-```
-policy = cp.save_and_offload_only_these_names( 
-  names_which_can_be_saved=[],         # No values stored on device 
-  names_which_can_be_offloaded=["x"],  # Offload activations labeled "x" 
-  offload_src="device",                # Move from device memory 
-  offload_dst="pinned_host"            # To pinned host memory 
-) 
+**速度慢。** 全面基准测试（如HarmBench）需要数百次查询。对于运行持续集成管道或筛选大型模型注册表的组织来说，这可能不切实际。
 
-```
+**不完整。** 没有任何基准测试能覆盖所有有害行为。模型可能在已知测试集上表现出安全行为，同时在新颖或分布外提示上仍不安全。
 
-Posts from April 2026
+**可被操纵。** 模型可以被微调以拒绝基准测试提示，同时遵从新颖攻击——这是纯粹行为评估方法的已知局限性。
 
-The Journey Begins: Meet the 2026 GSoC Contributors!
+**结构化方法**
 
-Thursday, April 30, 2026
+AMS采用完全不同方法。AMS不是测试模型说什么，而是测量模型如何思考。
 
-by
-Stephanie Taylor
-,
-Mary Radomile
-&
-Lucila Ortíz
-, Google Summer of Code
+安全训练在模型激活空间中产生可测量的几何结构。指令微调模型发展出内部"方向向量"——表示，以高统计置信度（4-8σ分离）分离有害内容与良性内容。当安全训练被移除——通过微调、去激活或对未过滤数据进行训练——这种几何结构就会崩塌。
 
-A warm welcome to the 1,141 Contributors of Google Summer of Code (GSoC) 2026! We are excited to start this new edition alongside our 184 mentoring orgs. Organizations reviewed a record-breaking 23,371 proposals to find the best matches for their communities.
+AMS直接测量这种崩塌。该方法基于表征工程的最新研究，该研究表明高级概念在LLM激活空间中线性编码，可以通过中间层隐藏状态的简单线性探针可靠提取。
 
-2026 Application Statistics:
+**AMS检测什么**
 
-15,245 applicants from 131 countries submitting a total of 23,371 proposals
-Over 2,000 mentors and org admins
+AMS作为两级扫描器运行。第一级测量是否存在安全相关的激活结构——无需基线。第二级将模型的激活指纹与已验证基线进行比较，以检测细微修改，包括供应链替换。
 
-What's Next?
+在我们的14个模型配置验证中：
 
-Before the first line of code is written, there is
-Community Bonding
-. This 3.5-week GSoC tradition is about more than just tool configuration; it's about immersion. It's a dedicated space for Contributors to master the codebase, align with community standards, and understand the 'why' behind their projects. By the time the coding period begins, every Contributor is ready to turn project fundamentals into real-world impact.
+- **指令微调模型**（Llama、Gemma、Qwen）显示3.8-8.4σ分离——与强安全训练一致
+- **未审查变体**（Dolphin、Lexi）显示崩塌分离至1.1-1.3σ——标记为严重
+- **去激活模型**显示部分退化至3.3σ——标记为警告
+- **基模型**（无安全训练）显示0.69σ——确认安全结构缺失
+- **量化模型**（INT4/INT8）分离漂移小于5%——可安全扫描生产部署
 
-The official coding period
-begins on
-May 25
-. For our contributors, this period represents a deep dive into collaborative development, offering the chance to learn new tools and contribute to the heartbeat of open source projects.
+**用例**
 
-Thank you, Mentors!
+**CI/CD安全门**
 
-Finally, we want to express our deepest gratitude to our phenomenal
-Mentors
-and
-Org Admins
-. As AI profoundly shifts the landscape of open source communities, GSoC is no exception. Your patience, grit, and tireless volunteer efforts are the heartbeat of this program, ensuring its continued success as we welcome a new generation of contributors into the open source ecosystem.
+将AMS集成到模型部署管道中，在不安全模型进入生产环境前将其阻止。示例GitHub Actions工作流：
 
-Introducing AMS: Activation-based model scanner for open-weight LLM safety verification
+**供应链验证**
 
-Monday, April 27, 2026
+使用第二级指纹比较确认下载的权重与其声明身份匹配。
 
-by
-Glen Messenger
-, Google Kubernetes Engine (GKE)
+**注册表筛选**
 
-The open-weight model ecosystem is thriving—and so is its shadow. A 2025 study identified over 8,000 safety-modified model repositories on Hugging Face alone, with modified models complying with unsafe requests at rates of 74% compared to 19% for their original instruction-tuned counterparts.
+在上传或下载时自动筛选模型，在部署前标记退化的安全结构。
 
-For organizations deploying open-weight models, a critical question emerges: how do you know the model you downloaded is safe to run?
+**工作原理**
 
-We believe defensive security tools should be widely available. AMS represents our contribution to a safer AI ecosystem—one where developers everywhere can verify model integrity before deployment.
+AMS通过待检查模型处理一组对比提示对——仅在是否包含有害内容方面不同的示例。它在中间层（通常为35-40%深度）提取隐藏状态，计算分离两类的方向向量，并测量类别分离为σ分数。
 
-Today we're releasing
-AMS (Activation-based Model Scanner)
-, an open source tool that answers this question in 10–40 seconds—without sending a single prompt.
+关键洞察是，这种测量不需要生成、基准测试查询或真实标签。整个扫描每个提示对只需一次前向传播，通常在GPU硬件上10-40秒完成。
 
-The Problem with Behavioral Testing
+探针由单个方向向量组成（对于标准4096维模型约16KB）。不修改模型权重。该工具适用于任何Hugging Face兼容模型。
 
-Traditional safety verification relies on behavioral testing: send harmful prompts, check if the model refuses. This approach has three fundamental limitations.
+**开始使用**
 
-It's slow.
-Comprehensive benchmarks like HarmBench require hundreds of queries. For organizations running continuous integration pipelines or screening large model registries, this can be impractical.
+AMS现已采用Apache 2.0许可证发布：
 
-It's incomplete.
-No benchmark covers every harmful behavior. Models can exhibit safe behavior on known test sets while remaining unsafe on novel or out-of-distribution prompts.
+GitHub：github.com/GoogleCloudPlatform/activation-model-scanner/
 
-It's gameable.
-Models can be fine-tuned to refuse benchmark prompts while complying with novel attacks—a known limitation of purely behavioral evaluation approaches.
+我们欢迎贡献、新模型家族的基线添加以及社区反馈。请参阅仓库中的贡献指南了解详情。
 
-A Structural Approach
+---
 
-AMS takes a different approach entirely. Instead of testing what a model says, it measures how a model thinks.
+**认识A2Family**
 
-Safety training creates measurable geometric structure in a model's activation space. Instruction-tuned models develop internal "direction vectors"—representations that separate harmful content from benign content with high statistical confidence (4–8σ separation). When safety training is removed—through fine-tuning, abliteration, or training on unfiltered data—this geometric structure collapses.
+2026年4月23日，星期四
 
-AMS measures this collapse directly. The approach is grounded in recent research on representation engineering, which demonstrates that high-level concepts are encoded linearly in LLM activation space and can be reliably extracted via simple linear probes on intermediate-layer hidden states.
+作者：Daryl Ducharme，Google Open Source及Alan Blount，Cloud AI
 
-What AMS Detects
+在Google，我们知道基于开源构建让团队能够更快速地使用有意义的技术获得自由和灵活性。开放推动创新和安全，这是我们使命的核心。当我们展望计算的未来时，我们希望确保所有开源社区的开发者都拥有构建安全协作AI系统所需的基础工具。
 
-AMS operates as a two-tier scanner. Tier 1 measures whether safety-relevant activation structure exists at all—no baseline required. Tier 2 compares a model's activation fingerprint against a verified baseline to detect subtle modifications, including supply chain substitution.
+这就是为什么我们很高兴让您了解"A2Family"——一套旨在帮助您构建、连接和扩展AI代理的开源协议和工具。
 
-In our validation across 14 model configurations:
+**A2A：代理互操作性的基石**
 
-Instruction-tuned models
-(Llama, Gemma, Qwen) show 3.8–8.4σ separation—consistent with strong safety training
-Uncensored variants
-(Dolphin, Lexi) show collapsed separation at 1.1–1.3σ—flagged as CRITICAL
-Abliterated models
-show partial degradation at 3.3σ—flagged as WARNING
-Base models
-(no safety training) show 0.69σ—confirming the absence of safety structure
-Quantized models
-(INT4/INT8) show less than 5% separation drift—safe to scan production deployments
+**Agent2Agent（A2A）协议**是一个开放标准，旨在实现AI代理之间的无缝通信和协作。它为代理互操作性提供了确定性的通用语言，在这个世界上，代理由不同框架和不同供应商构建。
 
-Use Cases
+# 中文翻译
 
-CI/CD Safety Gates
+A2A最初由Google开发，现已捐赠给Linux基金会。正如一句著名的开源格言提醒我们的："如果你想走得快，就独自前行；如果你想走得远，就结伴同行。"A2A将这种协作理念带入AI领域，使代理能够委托子任务、交换信息并协调行动，从而解决单个代理无法解决的复杂问题。
 
-Integrate AMS into your model deployment pipeline to block unsafe models before they reach production. An example Github Actions workflow:
+**MCP与Skills：代理需要工具和技能**
 
-Supply Chain Verification
+从一开始，A2A就热爱MCP，我们也热爱Skills♥️。代理需要发现、协商、对话、制定计划，并在计划失败时进行调整——这是一种与工具完全不同的交互模式，而这正是A2A的设计目标。但为了让您的代理发挥作用，它们需要访问工具，以及关于如何安全可靠地使用这些工具的说明。虽然MCP和A2A可能并非源自同一故事，但它们是一个协同工作更好的大家庭。
 
-Confirm that downloaded weights match their claimed identity using Tier 2 fingerprint comparison.
+当你不确定时——如果是快速确定性资源或操作，那就是工具；但如果你最终可能会进行对话，那就是代理。另一个好的心智模型是："你是使用工具的专家代理吗"（MCP），还是"是否有其他专家代理在与你协作"（A2A）。
 
-Registry Screening
+**A2UI：面向代理驱动界面的协议**
 
-Automatically screen models at upload or download time to flag degraded safety structure before deployment.
+当代理需要与人类交流时，它们如何才能安全地在信任边界之间发送富文本界面？A2UI不使用纯文本响应或有风险的代码执行，而是采用另一种方式。
 
-How It Works
+A2UI使AI代理能够生成丰富的、交互式的用户界面，这些界面可以在Web、移动和桌面平台上呈现——无需执行任意代码。它采用安全设计，允许代理仅通过声明式组件描述使用您目录中的预批准组件。
 
-AMS processes a set of contrastive prompt pairs—examples that differ only in whether they contain harmful content—through the model under inspection. It extracts hidden states at an intermediate layer (typically 35–40% depth), computes a direction vector that separates the two classes, and measures class separation as a σ score.
+您可能也听说过**MCP Apps**（原MCP UI）。它是A2UI的互补替代方案，通过MCP事件和工具调用将您的代理驱动小部件集成在iframe中。A2UI和MCP Apps有一些有趣的配置方式，可以实现iframe内的生成式UI或驱动iframe的生成式UI。
 
-The key insight is that this measurement requires no generation, no benchmark queries, and no ground-truth labels. The entire scan completes in a single forward pass per prompt pair, typically 10–40 seconds on GPU hardware.
+**AG UI协议**由CopilotKit开发，是一个将代理与前端低延迟连接的标准。它让开发者的工作变得轻松许多，集成了大多数代理框架和前端。如果您正在使用AG UI，您已经同时拥有了A2UI和A2A支持！
 
-The probe consists of a single direction vector (~16KB for standard 4096-dimensional models). No model weights are modified. The tool works with any Hugging Face-compatible model.
+**AP2：保障代理经济的安全**
 
-Get Started
+当自主代理发起支付时，现有系统在授权、真实性和问责方面面临挑战。为此，我们推出了**代理支付协议（AP2）**，这是一个面向新兴代理经济的开放协议。
 
-AMS is available now under Apache 2.0:
+AP2可作为A2A协议的开放扩展使用，旨在为开发者、商户和支付行业实现安全、可靠且可互操作的代理商务。该协议使用可验证数字凭证（VDCs）在系统中建立信任——这些凭证是防篡改的加密签名数字对象，构成了交易的基石。
 
-GitHub:
-github.com/GoogleCloudPlatform/activation-model-scanner/
+**UCP：代理商务的通用语言**
 
-We welcome contributions, baseline additions for new model families, and feedback from the communities. See the contributing guide in the repository for details.
+虽然AP2保障交易安全，但**通用商务协议（UCP）**定义了整个购物旅程的构建模块，从发现和购买到售后体验。UCP为平台、代理和企业提供了一种通用语言，允许多样化的商务生态系统通过单一标准进行互操作，无需定制开发。
 
-Meet the A2Family
+UCP使用开放的行业标准无缝连接不同系统，内置支持A2A和AP2协议。它使零售商能够在客户所在的任何地方与他们会面，确保企业保留自己规则的控制权，并作为记录商户完整拥有客户关系。
 
-Thursday, April 23, 2026
+**使用ADK整合一切**
 
-by
-Daryl Ducharme
-, Google Open Source &
-Alan Blount
-, Cloud AI
+协议需要一个坚实的基础来运行。这就是**代理开发套件（ADK）**的用武之地。
 
-At Google, we know that building on open source gives teams the freedom and flexibility to use meaningful technologies faster. Openness drives innovation and security, and it is core to our mission. As we look toward the future of computing, we want to ensure that developers across all open source communities have the foundational tools they need to build secure and collaborative AI systems.
+从技术上讲，ADK不属于A2Family，但它是一个开源代理开发框架，让您能够构建、调试和部署企业级的可靠AI代理。ADK提供Python、TypeScript、Go和Java版本，帮助您构建生产级代理，而不仅仅是原型。它将所有内容整合在一起，让您能够轻松地为代理配备工具、将它们与A2A协议集成，并在您选择的基础设施上实现全球扩展。
 
-That is why we are excited for you to get to know the "A2Family"—a suite of open source protocols and tools designed to help you build, connect, and scale your AI agents.
+Google倡导协作、透明和共同进步，通过开放技术为每个人建设更美好的未来。我们很高兴与您分享这些工具，期待看到我们能够共同创造什么。
 
-A2A: The cornerstone of agent interoperability
+您计划使用A2Family构建什么样的多代理工作流？请在下方评论或在我们的社交媒体上@我们！
 
-The
-Agent2Agent (A2A) Protocol
-is an open standard designed to enable seamless communication and collaboration between AI agents. It provides the definitive common language for agent interoperability in a world where agents are built using diverse frameworks and by different vendors.
+---
 
-Originally developed by Google, A2A has now been donated to the Linux Foundation. As a famous open source aphorism reminds us: "If you want to go fast, go alone. If you want to go far, go together." A2A brings this collaborative philosophy to AI, allowing agents to delegate sub-tasks, exchange information, and coordinate actions to solve complex problems that a single agent cannot.
+**开源协作一周年：庆祝A2A周年纪念**
 
-MCP & Skills: Agents need tools and skills
+2026年4月16日，星期四
 
-Since day one A2A has loved MCP, and we love skills too ♥️.  Agents discover, negotiate, converse, make plans, adapt when those plans don't work out – that's a different interaction pattern than a tool and that's what A2A was built for.  But for your agents to function, they need access to tools, and instructions on how to use those tools safely and securely. While MCP and A2A might not be from the same origin story, they are a family that works better together.
+作者：Patricia Cruz，Google开源团队
 
-When you're not sure – if it's a quick deterministic resource or action, it's a tool, but if you may end up with a conversation, it's an agent. Another good mental model is "are you the expert agent which uses tools" (MCP) or "is there some other expert agent you are collaborating with" (A2A).
+一年前的2025年4月9日，Google宣布了**Agent2Agent（A2A）协议**。我们看到了需要一个"通用语言"的需求，让构建在不同框架上的AI代理能够在多样化系统中良好协作。随后，在2025年6月23日丹佛举行的北美开源峰会上，Mike Smith站在舞台上分享了AI互操作性未来的关键时刻——Google正式将A2A协议捐赠给Linux基金会，将其确立为供应商中立、社区治理的标准。
 
-A2UI: A protocol for agent-driven interfaces
+这一举措的核心信念是：要让AI代理真正改变我们的工作和生活方式，它们必须能够跨框架边界和组织孤岛进行通信，而不被锁定在单一提供商的生态系统中。通过将A2A置于Linux Foundation的中立托管下，我们为整个行业打开了共同构建、贡献和创新的大门。
 
-When agents need to communicate with humans, how can they safely send rich interfaces across trust boundaries? Instead of relying on text-only responses or risky code execution, we use
-A2UI
-.
+**合作伙伴基础**
 
-A2UI enables AI agents to generate rich, interactive user interfaces that render across web, mobile, and desktop platforms—without executing arbitrary code. It is secure by design, allowing agents to use only pre-approved components from your catalog through declarative component descriptions.
+A2A项目的成立离不开我们的创始成员的支持，包括亚马逊云服务（AWS）、思科、微软、Salesforce、SAP和ServiceNow。在过去的12个月里，这个联盟不断壮大，目前已有超过100家科技公司支持该项目。
 
-You may also have heard of
-MCP Apps
-(formerly MCP UI). It is a complementary alternative to A2UI which ships your agent driven widget inside of an iframe orchestrated with MCP events and tool calls.  There are some interesting ways of configuring A2UI and MCP Apps together, for generative UI inside of an iframe or generative UI driving the iframe.
+**从原型到生产**
 
-The
-AG UI protocol
-, developed by CopilotKit, is a standard for connecting agents to front ends with low latency. It makes developer lives much easier, with integrations to most agent frameworks and front ends.  If you are using AG UI, you already have both A2UI and A2A support!
+自捐赠以来的发展势头令人瞩目。这个始于Google主导的项目已演变为横向点对点协作的关键基础设施。就在一个月前的2026年3月，该项目迎来了重要里程碑——发布了**A2A协议v1.0**，这是该标准的第一个稳定、完全可用于生产的版本。
 
-AP2: Securing the agent economy
+社区今年取得的主要成就包括：
 
-When an autonomous agent initiates a payment, current systems struggle with questions of authorization, authenticity, and accountability. To solve this, we introduced the
-Agent Payments Protocol (AP2)
-, an open protocol for the emerging Agent Economy.
+- **增强安全性**：实现代理卡片签名（Signed Agent Cards）以进行加密身份验证，确保多代理工作流中的信任。
+- **Web对齐架构**：完善规范，支持企业级部署中熟悉的负载均衡和安全模式。
+- **生态系统互操作性**：展示如何使用ADK、LangGraph、AG2和CrewAI构建的多样化代理无缝委托任务和协调复杂工作流。
+- **专家教专家**：我们从开放协作中学习，并分享了我们的知识。
 
-Available as an open extension for the A2A protocol, AP2 is designed to enable secure, reliable, and interoperable agent commerce for developers, merchants, and the payments industry. The protocol engineers trust into the system using verifiable digital credentials (VDCs), which are tamper-evident, cryptographically signed digital objects that serve as the building blocks of a transaction.
+**展望未来**
 
-UCP: The common language for agentic commerce
+这个蓬勃发展的代理协议生态系统有助于标准化代理的通信方式、与世界的交互方式以及解决实际问题的方法。A2Family包括AP2（代理支付协议）、A2UI（代理到用户界面）和UCP（通用商务协议），这些是利用A2A开放可扩展性模型为代理通信创建的新协议示例。
 
-While AP2 secures the transaction, the
-Universal Commerce Protocol (UCP)
-defines the building blocks for the entire shopping journey, from discovering and buying to post-purchase experiences. UCP provides a common language for platforms, agents, and businesses, allowing the diverse commerce ecosystem to interoperate through a single standard without the need for custom builds.
+在我们庆祝这一周年之际，我们比以往任何时候都更加致力于"A2Family"。A2A协议被设计为与现有标准（如模型上下文协议MCP）互补——MCP管理内部工具集成，而A2A处理自主实体之间至关重要的外部协调。
 
-UCP seamlessly connects different systems using open industry standards, featuring built-in support for both the A2A and AP2 protocols. It empowers retailers to meet customers wherever they are, ensuring that businesses retain control of their own rules and remain the Merchant of Record with full ownership of the customer relationship.
+我们要感谢充满活力的开发者、贡献者和合作伙伴生态系统，感谢他们在过去一年中帮助将这一协议打造成世界级标准。
 
-Bringing it all together with ADK
+## 加入A2April庆典！
 
-Protocols need a solid foundation to run on. Enter the
-Agent Development Kit (ADK)
-.
+我们整个四月都在庆祝A2A一周年，举办"A2April"活动。您可以通过在社区分享带有#A2April标签的照片来参与其中。为了帮助您营造节日气氛，我们准备了一个纪念派对帽模板，包含完整的组装说明。
 
-Technically not part of the A2Family, ADK is an open-source agent development framework that lets you build, debug, and deploy reliable AI agents at enterprise scale. Available in Python, TypeScript, Go, and Java, ADK helps you build production agents, not just prototypes. It connects everything together, allowing you to easily equip your agents with tools, integrate them with the A2A protocol, and scale them globally on your infrastructure of choice.
+**为创新和开放协作的更多岁月干杯！**
 
-Google champions collaboration, transparency, and shared progress to build a better future for everyone through open technologies. We are thrilled to share these tools with you and cannot wait to see what we can build together.
+## 致谢
 
-What kind of multi-agent workflows are you planning to build with the A2Family? Let us know in the comments below or tag us on social media!
+感谢以下贡献者：Mike Smith、Alan Blount、Kassandra Dhillon、Daryl Ducharme和April Kyle Nassi
 
-A year of open collaboration: Celebrating the anniversary of A2A
+---
 
-Thursday, April 16, 2026
+## Jaspr：为什么用Dart进行Web开发可能是个好主意
 
-by
-Patricia Cruz
-, Google Open Source
+**2026年4月15日，星期三**
 
-One year ago, on April 9th, 2025 Google
-announced the Agent2Agent(A2A) protocol
-. We saw the need for a "common language" that allows AI agents built on different frameworks to collaborate well across diverse systems. Then, on June 23, 2025 at the Open Source Summit North America in Denver, Mike Smith stood on stage to share a pivotal moment for the future of AI interoperability when Google officially
-donated the A2A protocol to the Linux Foundation
-, establishing it as a vendor-neutral, community-governed standard.
+**作者：Kilian Schulte，Netlight**
 
-This move was driven by a core belief: for AI agents to truly transform how we work and live, they must be able to communicate across framework boundaries and organizational silos without being locked into a single provider's ecosystem. By placing A2A under the neutral stewardship of the Linux Foundation, we opened the doors for the entire industry to build, contribute, and innovate together.
+大多数开发者知道Dart是因为它是Flutter（多平台应用框架）的驱动语言。但Dart生态系统能提供的远不止于此。例如：Jaspr，一个提供类似Flutter体验的Web框架，但专门用于在Dart原生环境中构建快速、对SEO友好且动态的网站。
 
-A Foundation of Partners
+Dart在Web上的应用并非新想法。最初，Dart被设计为在浏览器中本地运行，类似于JavaScript。Google甚至开发了AngularDart——一个流行的JS框架的纯Dart版本。虽然该框架现已不再受支持，但它为Dart带来了一些令人惊讶的强大Web工具。回溯到2016年，Google团队选择Dart是因为其强大的类型安全性和卓越的开发体验，从那时起Dart就在不断改进。
 
-The formation of the A2A Project was made possible through the support of our founding members, including Amazon Web Services, Cisco, Microsoft, Salesforce, SAP, and ServiceNow. Over the past twelve months, this coalition has grown, with over 100 technology companies now supporting the project.
+然而，当我2022年开始构建Jaspr时，这些对我来说都是未知的。作为一名从Web开发转型到Flutter的开发者，我逐渐爱上了Dart，并想探索将其用于Web开发。因此，Jaspr始于一个个人挑战：如果一个现代Web框架完全用Dart构建，它会是什么样子？
 
-From Prototype to Production
+将Jaspr作为开源项目创建是我职业生涯中最具挑战性但也最有价值的旅程之一。作为独立维护者起步确实很辛苦，但这带来了绝对的创作自由。我可以探索非传统的想法，按照我设想的方式设计API，并整合其他框架中的现代特性。所有这些都不受流程或路线图的阻碍。我在这个框架上投入了三年多的深夜和周末时间。这种奉献最终以一种我从未想象过的方式得到了回报：Google选择Jaspr来完全重建并驱动官方的Dart和Flutter网站。
 
-The momentum since the donation has been remarkable. What began as a Google-led initiative has evolved into critical infrastructure for horizontal, peer-to-peer collaboration. Just one month ago, in March, the project reached a major milestone with the release of
-A2A Protocol v1.0
-, the first stable, fully production-ready version of the standard.
+### 架构与设计
 
-Key achievements from the community this year include:
+要理解Jaspr的实际工作原理，让我们看看它的底层设计。Jaspr主要面向正在探索Web开发的Flutter开发者。拥有这样一个明确定义的细分市场极大地帮助我塑造了框架并确定了功能优先级，同时也避免了作为维护者被过度分散精力。
 
-Enhanced Security
-: The implementation of Signed Agent Cards for cryptographic identity verification, ensuring trust in multi-agent workflows.
-Web-Aligned Architecture
-: Refined specifications that support familiar load-balancing and security patterns for enterprise-scale deployments.
-Ecosystem Interoperability
-: Demonstrating how diverse agents built with ADK, LangGraph, AG2 and CrewAI can delegate tasks and coordinate complex workflows seamlessly.
-Experts teaching experts:
-We have learned from our open collaboration and have
-shared our knowledge
-.
+Jaspr的核心设计原则之一是它应该看起来和感觉上对Flutter用户来说是熟悉的，同时依赖原生Web技术如HTML和CSS。这使它与Flutter区分开来——Flutter自2021年起也可以面向Web，但 대신 优化的是跨平台渲染一致性。Flutter完全依赖Canvas API进行渲染，这以较慢的加载时间和较低的SEO为代价。因此，对于想要构建快速、优化且SEO友好的网站的Flutter开发者来说，Jaspr正是缺失的那块拼图。
 
-Looking Ahead
+Jaspr产生的语法与Flutter非常接近，而功能更接近于React那样的高效、基于DOM的渲染算法。
 
-This flourishing ecosystem of agent protocols helps standardize how agents communicate, interact with the world, and solve real-world problems. The A2Family includes AP2 (Agent Payment Protocol), A2UI (Agent to User Interface), and UCP (Universal Commerce Protocol), which are examples of new protocols created using A2A's open extensibility model for agent communication.
+如您所见，Jaspr的**StatelessComponent**反映了Flutter的**StatelessWidget**，但像React和JSX一样构建HTML。Jaspr还提供了类型安全的API，可直接在Dart中编写CSS规则。
 
-As we celebrate this first anniversary, we are more committed than ever to the "A2Family." The A2A protocol is designed to be complementary to existing standards like the Model Context Protocol (MCP); while MCP manages internal tool integration, A2A handles the vital external coordination between autonomous entities.
+客户端渲染只是Jaspr能做到的一个方面。Jaspr被构建为一个全栈通用框架，同时支持服务端渲染（SSR）和静态站点生成（SSG）。在JavaScript生态系统中，您通常会发现渲染库（React、Vue）和元框架（Next、Nuxt、Astro）之间存在硬性划分。Jaspr将这些概念组合成一个多功能且连贯的框架。
 
-We want to thank the vibrant ecosystem of developers, contributors, and partners who have helped harden this protocol into a world-class standard over the last year.
+为了用有限的资源实现这一系列功能，我自然需要做出权衡。由于我不想限制任何功能的质量，我的策略更侧重于限制功能到重要的内容上。我还学会了优先考虑简单的解决方案，并设计灵活且可组合的API。
 
-Join the A2April Celebration!
+例如，我构建了**jaspr_content**作为开发内容驱动网站的插件，支持Markdown和其他来源，类似于Astro或VitePress。它提供了构建大型文档网站所需的所有核心功能，而且不是开箱即用地满足所有用例，而是足够灵活和开放，可以完全定制。事实上，**jaspr_content**目前为新的**flutter.dev**和**dart.dev**文档提供支持，这些文档包含超过3,900页。
 
-We're celebrating the first anniversary of A2A all month long with "A2April". You can join the fun by sharing a photo of yourself in the community using the hashtag #A2April. To help you get festive, we've put together a
-commemorative party hat template
-with full assembly instructions.
+### 工具链与开发者体验
 
-Here's to many more years of innovation and open collaboration!
+在我看来，一个框架的好坏取决于它的工具链，而这正是Dart真正闪耀的地方，为Jaspr开发者提供了出色的开发体验。例如，Flutter以其状态热重载而闻名，使您能够即时替换代码而不会丢失客户端状态。但热重载实际上是Dart的特性，由其独特的编译器架构实现。
 
-Acknowledgements
+对于浏览器开发，**dartdevc**编译器执行模块化和增量编译为JavaScript。它支持状态热重载并提供无缝的调试体验。通过巧妙地利用source-map（源码映射），您可以在浏览器中直接逐步调试原生Dart代码，完整体验断点、值检查和运行时表达式求值。
 
-Thank you to the following contributors: Mike Smith, Alan Blount, Kassandra Dhillon, Daryl Ducharme, and April Kyle Nassi
+对于生产构建，Dart使用**dart2js**编译器生成高度优化的、经过tree-shaken（摇树优化）的JavaScript包，或者使用更新的**dart2wasm**编译器通过WebAssembly实现更好的运行时性能。在服务器端，Dart的JIT编译器提供相同的热重载和调试能力，而其AOT编译器将服务器代码编译为优化的、平台特定的原生二进制文件，用于生产环境。
 
-Jaspr: Why web development in Dart might just be a good idea
+Jaspr在这些和其他能力之上构建，例如为开发者提供全栈调试、自定义lint和代码辅助，以及我称之为**component scopes（组件作用域）**的功能。这是一个简洁的编辑器特性，为您的组件添加内联提示，显示它们是在服务器端、客户端还是两端渲染。当构建全栈应用时，这使得推理在特定文件中可以安全使用哪些平台API或库变得更加容易。我还在开发更多功能，使全栈开发体验更加流畅。例如，全栈热重载——在任何服务器端更改时，无论是更新代码还是（例如）编辑markdown文件，新的预渲染HTML都会被"热重载"到页面中，同时保持所有客户端状态。像这样的功能只有在Jaspr将服务器端和客户端渲染结合到一个框架中的方法下才成为可能。
 
-Wednesday, April 15, 2026
+### 影响与展望
 
-by
-Kilian Schulte
-, Netlight
+去年，Google选择Jaspr用于Dart和Flutter网站，包括**dart.dev**、**flutter.dev**和**docs.flutter.dev**（[仓库链接](repo)），这些网站每月有超过一百万活跃用户。这些网站从基于JS和Python的静态站点生成器迁移到Jaspr和**jaspr_content**，实现了统一配置，减少了上下文切换和贡献体验的难度。转向Jaspr还简化了**dart.dev/learn**和**docs.flutter.dev/learn**上全新交互式教程的开发。对我来说，这不仅是对Jaspr能力的难以置信的信任，也是在大规模上dogfood（吃自己的狗粮）Jaspr的好方法；它让我能够投入更多时间和资源来改进Jaspr。
 
-Most developers know Dart as the language that powers Flutter, the multi-platform app framework. But the Dart ecosystem has so much more to offer. For example: Jaspr, a web framework that provides a familiar Flutter-like experience, but is made for building fast, SEO-friendly, and dynamic websites natively in Dart.
+# 翻译
 
-Dart on the web is not a new idea. Initially, Dart was designed to run natively in browsers, similar to JavaScript. Google even developed AngularDart, a pure-Dart version of the popular JS framework. And although this is no longer supported, it resulted in some surprisingly powerful web tooling for Dart.
-Back in 2016
-, teams at Google chose Dart for its strong type safety and excellent development experience, and it has only improved since then.
+随着人工智能不断改变软件开发领域的范围，我认为严格的“领域专家”概念（纯移动端或纯Web端开发者）将变得不那么重要。然而，开发者和团队将越来越重视统一的技术栈，以减少上下文切换并利用统一的工具链。正如React Native因其允许Web开发者复用其技能进行移动开发（或让公司“复用”其开发者）而大受欢迎一样，Jaspr非常适合同时使用Flutter和Web的团队。除了复用现有技能外，Jaspr和Flutter项目还可以共享高达100%的业务逻辑、模型和验证代码。
 
-However, all of this was unknown to me when I started building Jaspr in 2022. As a web developer who had transitioned to Flutter, I had grown to love Dart and wanted to explore using it for web development. So Jaspr started as a personal challenge: What would a modern web framework look like if it was built entirely in Dart?
+Dart的类型安全性和高质量工具使其非常适合现代Web开发。Jaspr进化成了缺失的那块拼图——一个具有现代功能和完善开发体验的内聚框架。
 
-Creating Jaspr as an open source project has been one of the most challenging, but also rewarding journeys of my career. Starting out as a solo maintainer is definitely hard work, but it comes with absolute creative freedom. I can explore unconventional ideas, design APIs exactly how I envision them, and integrate modern features seen in other frameworks. All without being slowed down by processes or roadmaps. I poured more than three years of late nights and weekends into the framework. That dedication finally paid off in a way I had never imagined: Google selected Jaspr to completely rebuild and power the official Dart and Flutter websites.
+我个人将Jaspr视为人工智能趋势的对立面，这种趋势导致所有人趋同使用相同的技术栈，尤其是在Web开发领域。虽然这也有一定好处，但我认为探索替代生态系统具有巨大价值。这可以突破边界、产生新想法，并保持我们行业的活力。
 
-Architecture & design
+如果我的历程有一个关键收获，那就是：**不要害怕构建你想要使用的工具**。你永远不知道那个代码库会带你走向何方，而这可能带来难以置信的回报。
 
-To understand how Jaspr actually works, let's look at its underlying design. Jaspr is primarily targeted at Flutter developers venturing into web development. Having a clearly defined niche like this greatly helped me shape the framework and prioritize features, while not getting spread too thin as a maintainer.
+如果你是一名好奇的Dart或Flutter开发者，想用你已经掌握的技能构建网站，现在是最好的时机。在其[在线 playground](https://jaspr.dev/playground)（也是用Jaspr构建的！）上试用Jaspr，或按照[Jaspr快速入门](https://jaspr.dev/docs/guides/quickstart)开始。
 
-One of Jaspr's core design principles is that it should look and feel familiar to Flutter, while relying on native web technologies like HTML and CSS. This sets it apart from Flutter, which since 2021 can also target the web, but instead optimizes for rendering consistency between platforms. It relies fully on the Canvas API for rendering, which comes at the cost of slower loading times and lower SEO. Therefore, Jaspr is the missing piece for Flutter developers wanting to build fast and optimized websites with great SEO.
+在《[我们用Dart和Jaspr重建了Flutter的网站](https://medium.com/flutter/rebuilding-flutters-websites-with-dart-and-jaspr-5f9b23e8fa86)》中了解更多关于Flutter迁移的信息。
 
-Jaspr results in a syntax that is remarkably close to Flutter's, and functionality that is much closer to something like React with an efficient, DOM-based rendering algorithm.
+哦，如果你想知道"Jaspr"这个名字的由来——它是以我的狗Jasper命名的。如果你碰巧在[jaspr.site](https://jaspr.site)上浏览并想要[见见Jasper](https://jaspr.site/meet-jasper)，请留意……你可能会发现一个献给他小小的彩蛋。
 
-As you can see, Jaspr's
-StatelessComponent
-mirrors Flutter's
-StatelessWidget
-, but constructs HTML similar to React with JSX. Jaspr also provides a type-safe API for writing CSS rules directly in Dart.
+---
 
-Client-side rendering is only one aspect of what Jaspr can do. Jaspr is built as a full-stack general purpose framework supporting both Server-Side Rendering (SSR) and Static Site Generation (SSG). In the JavaScript ecosystem, you usually find a hard split between rendering libraries (React, Vue) and meta-frameworks (Next, Nuxt, Astro). Jaspr combines these concepts into one versatile and coherent framework.
+# 利用CPU内存实现更快、更具成本效益的TPU大语言模型训练
 
-In order to achieve this wide range of features with the limited resources I had, I naturally had to make compromises. Since I didn't want to limit the quality of any feature, my strategy focuses more on limiting features to what's important. I also learned to prioritize simple solutions and to design APIs that are flexible and composable.
+**2026年4月10日，星期五**
 
-For instance, I built
-jaspr_content
-as a plugin for developing content-driven sites from Markdown and other sources, similar to Astro or VitePress. It provides all the core features needed to build massive documentation websites, and instead of serving every use case out of the box, it is flexible and open enough to be fully customizable. In fact,
-jaspr_content
-is what currently powers the new
-flutter.dev
-and
-dart.dev
-documentation, which contain over 3,900 pages.
+作者：
+Keyur Ruganathbhai Ranipa、Qinglan Xiang、Vrushabh Sanghavi、Ramesh AG、Weilin Wang（英特尔）
+以及 Penporn Koanantakool（谷歌）
 
-Tooling and developer experience
+---
 
-In my opinion, a framework is only as good as its tooling, and this is where Dart truly shines and has provided Jaspr developers with a great developer experience. For example, Flutter is known for its stateful hot-reload, enabling you to swap out code instantly without losing client-side state. But hot-reload is actually a
-Dart
-feature, enabled by its unique compiler architecture.
+## 在英特尔至强处理器上进行基于JAX的主机卸载
 
-For browser development, the
-dartdevc
-compiler performs modular and incremental compilation to JavaScript. It supports stateful hot-reload and provides a seamless debugging experience. By cleverly leveraging source-maps, you can step through native Dart code right in the browser, complete with breakpoints, value inspection, and runtime expression evaluation.
+随着大语言模型（LLM）持续扩展到数千亿参数规模，设备内存容量已成为训练的主要限制因素，因为在反向传播过程中需要用到前向传播中每一层的中间激活值。为了减轻设备内存压力，这些激活值可以在反向传播过程中重新计算，通过牺牲内存来换取重新计算。虽然重计算使得更大的模型能够装入有限的设备内存，但它会显著增加训练时间和成本。
 
-For production builds, Dart uses the
-dart2js
-compiler to generate a heavily optimized, tree-shaken JavaScript bundle, or the newer
-dart2wasm
-compiler for even better runtime performance through WebAssembly. On the server side, Dart's JIT compiler provides that same hot-reload and debugging capabilities, while its AOT compiler compiles your server code to optimized, platform-specific, native binaries for production environments.
+配备高级矩阵扩展（AMX）的英特尔至强处理器（第五代和第六代）能够在JAX训练工作流中实现对选定的内存密集型和计算密集型组件进行实际的主机卸载。这种方法可以帮助团队训练更大的模型，减轻加速器内存压力，提高端到端吞吐量，并降低总拥有成本——特别是在基于TPU的谷歌云实例上。
 
-Jaspr builds on top of these and other capabilities, for example by giving developers full-stack debugging, custom lints and code assists, and something I call
-component scopes
-. This is a neat editor feature that adds inline hints to your components, showing whether they are rendered on the server, the client, or both. When building full-stack apps, this makes it much easier to reason about which platform APIs or libraries you can safely use in a specific file. I'm also working on more features to make the full-stack development aspect even smoother. For example, a full-stack hot-reload where on any server-side change, whether updating code or (for example), editing a markdown file, the new pre-rendered HTML is "hot-reloaded" into the page while keeping all client-side state. Features like these are only possible due to Jaspr's approach to combine both server- and client-side rendering into one framework.
+通过发布这些结果和实现细节，谷歌和英特尔旨在促进透明度并与社区分享实践指导。本文描述了如何在TPU平台上启用JAX的激活卸载，并概述了构建可扩展、注重成本的CPU-加速器混合训练工作流的注意事项。
 
-Impact and outlook
+### 主机卸载
 
-Last year, Google selected Jaspr for the Dart and Flutter websites, including
-dart.dev
-,
-flutter.dev
-and
-docs.flutter.dev
-(
-repo
-), which is used by over a million monthly active users. The sites were migrated from JS- and python-based static site generators to Jaspr and
-jaspr_content
-, resulting in a unified setup with less context switching and an easier contribution experience. The move to Jaspr also streamlined the development of brand-new interactive tutorials on
-dart.dev/learn
-and
-docs.flutter.dev/learn
-. For me this is not only an incredible trust in the capabilities of Jaspr, but also a great way to dogfood Jaspr at scale; it allowed me to invest more time and resources into improving Jaspr.
+传统的LLM训练通常仅在设备加速器上完成。然而，现代主机拥有比加速器大得多的内存容量（512GB或更多），并可提供额外的计算能力，例如配备AMX功能的英特尔至强可扩展处理器的TFLOPS。利用主机资源可以是重计算之外的一个很好的替代方案。**主机卸载**在主机和设备之间有选择性地移动计算或数据，以优化性能和内存使用。
 
-With AI constantly shifting the scope of software development, I believe the concept of being a strict "domain expert" (a purely mobile or purely web developer) will matter less. However, developers and teams will increasingly value coherent tech stacks to reduce context-switching and leverage unified tooling. Just as React Native became massively popular because it allowed web developers to reuse their skills for mobile (or for companies to "reuse" their developers), Jaspr is a great option for teams working with both Flutter and the web. Apart from using existing skills, Jaspr and Flutter projects can also share up to 100% of their business logic, models, and validation code.
+**主机内存卸载**将频繁访问的张量保留在设备上，其余的溢出到CPU内存作为额外级别的缓存。
 
-Dart's type safety and high-quality tooling position it well for modern web development. Jaspr evolved to be the missing piece, a cohesive framework with modern features and a great development experience.
+**激活卸载**将在前向传播中在设备上计算的激活值传输到主机，存储在主机内存中，并在反向传播期间将其带回设备进行梯度计算。这解锁了训练更大模型、使用更大批量大小和提高吞吐量的能力。
 
-I personally see Jaspr as an antithesis to the trend of AI causing everyone to converge onto the same stack, especially in web development. While this also has some benefits, I believe there is immense value in exploring alternative ecosystems. This can push boundaries, surface new ideas, and keep our industry vibrant.
+在这篇博客文章中，我们提供了通过JAX卸载激活值的实用指南，以便在配备英特尔至强可扩展处理器的TPU上高效训练更大的模型。
 
-If there's one takeaway from my journey, it's this: Don't be afraid to build the tools you want to use. You never know where that codebase will take you, and it can be incredibly rewarding.
+### 在JAX中启用内存卸载
 
-If you're a Dart or Flutter developer curious about building websites with the skills you already have, there's never been a better time to start. Try out Jaspr now on its
-online playground
-(which is also built with Jaspr!) or by following the
-Jaspr quickstart
-.
+JAX为卸载激活值、模型参数和优化器状态到主机提供了**多种策略**。用户可以使用`checkpoint_names()`为张量创建检查点。下面的代码片段展示了如何创建检查点`x`：
 
-Learn more about Flutter's migration in
-We rebuilt Flutter's websites with Dart and Jaspr
-.
+用户可以提供`checkpoint_policies()`来为中间值选择适当的内存优化策略。有三种策略：
 
-Oh, and if you're wondering where the name "Jaspr" came from — it's named after my dog, Jasper. If you ever find yourself wandering around
-jaspr.site
-and want to
-Meet Jasper
-, keep an eye out… you just might find a little easter egg tribute to him.
+1. 在反向传播期间重新计算（默认行为）
+2. 存储在设备上
+3. 在前向传播后卸载到主机内存并在反向传播期间加载回来
 
-Leveraging CPU memory for faster, cost-efficient TPU LLM training
+下面的代码将`x`从前向传播后的设备移动到固定的主机内存。
 
-Friday, April 10, 2026
-
-by
-Keyur Ruganathbhai Ranipa
-,
-Qinglan Xiang
-,
-Vrushabh Sanghavi
-,
-Ramesh AG
-&
-Weilin Wang
-, Intel
-and
-Penporn Koanantakool
-, Google
-
-Host offloading with JAX on Intel® Xeon® processors
-
-As Large Language Models (LLMs) continue to scale into the hundreds of billions of parameters, device memory capacity has become a big limiting factor in training, as intermediate activations from every layer in the forward pass are needed in the backward pass. To reduce device memory pressure, these activations can be rematerialized during the backward pass, trading memory for recomputation. While rematerialization enables larger models to fit within limited device memory, it significantly increases training time and cost.
-
-Intel® Xeon® processors (5th and 6th Gen) with Advanced Matrix Extensions (AMX) enable practical host offloading of selected memory- and compute-intensive components in JAX training workflows. This approach can help teams train larger models, relieve accelerator memory pressure, improve end-to-end throughput, and reduce total cost of ownership—particularly on TPU-based Google Cloud instances.
-
-By publishing these results and implementation details, Google and Intel aim to promote transparency and share practical guidance with the community. This post describes how to enable activation offloading for JAX on TPU platforms and outlines considerations for building scalable, cost-aware hybrid CPU–accelerator training workflows.
-
-Host offloading
-
-Traditional LLM training is usually done on device accelerators alone. However, modern host machines have much larger memory size than accelerators (512GB or more) and can offer extra compute power, e.g., TFLOPS in case of Intel® Xeon® Scalable Processor with AMX capability. Leveraging host resources can be a great alternative to rematerialization.
-Host offloading
-selectively moves computation or data between host and device to optimize performance and memory usage.
-
-Host memory offloading
-keeps frequently-accessed tensors on the device and spills the rest to CPU memory as an extra level of cache.
-Activation offloading
-transfers activations computed on-device in the forward pass to the host, stores them in the host memory, and brings them back to the device in the backward pass for gradient computation. This unlocks the ability to train larger models, use bigger batch sizes, and improve throughput.
-
-In this blog post, we provide a practical guide to offload activations through JAX to efficiently train larger models on TPUs with an Intel® Xeon® Scalable Processor.
-
-Enabling memory offloading in JAX
-
-JAX offers
-multiple strategies
-for offloading activations, model parameters, and optimizer states to the host. Users can use
-checkpoint_names()
-to create a checkpoint for a tensor. The snippet below shows how to create a checkpoint
-x
-:
-
-Users can provide
-checkpoint_policies()
-to select the appropriate memory optimization strategy for intermediate values. There are three strategies:
-
-Recomputing during backward pass (default behavior)
-Storing on device
-Offloading to host memory after forward pass and loading back during backward pass
-
-The code below moves
-x
-from device to the pinned host memory after the forward pass.
+```python
 from jax import checkpoint_policies as cp
+```
 
-Measuring Host Offloading Benefits on TPU v5p
+### 在TPU v5p上测量主机卸载的效益
 
-We examined TPU host-offloading on JAX on both fine-tuning and training workloads. All our experiments were run on Google Cloud Platform, using a single
-v5p-8 TPU
-instance with single host 4th Gen Intel® Xeon® Scalable Processor.
+我们在微调和训练工作负载上检验了基于JAX的TPU主机卸载。我们所有的实验都在谷歌云平台上运行，使用单个**v5p-8 TPU**实例，配备单台主机第四代英特尔至强可扩展处理器。
 
-Fine-tuning PaliGemma2
-: Using the base PaliGemma2 28B model for vision-language tasks, we
-fine-tuned
-the attention layers of the language model (Gemma2 27B) while keeping all other parameters frozen. During fine-tuning, we set the LLM sequence length to 256 and the batch size to 256.
+**微调PaliGemma2**：使用基础PaliGemma2 28B模型进行视觉语言任务，我们对语言模型（Gemma2 27B）的注意力层进行了**微调**，同时保持所有其他参数冻结。在微调期间，我们将LLM序列长度设置为256，批量大小设置为256。
 
-The default checkpoint policy is
-nothing_saveable
-, which does not keep any activations on-device during the forward pass. The activations are rematerialized during the backward pass for gradient computation. While this approach reduces memory pressure on the TPU, it increases compute time. To apply host offloading, we offload Q, K, and V projection weights using
-save_and_offload_only_these_names
-. These activations are transferred to host memory (D2H) during the forward pass and fetched back during the backward pass (H2D), so the device neither stores nor recomputes them. Figure 2 shows 10% reduction in training time from host offloading. This translates directly into a similar reduction in TPU core-hours, yielding meaningful cost savings. The complete fine-tuning recipe is available at [
-JAX host offloading
-].
+默认检查点策略是`nothing_saveable`，它在前向传播期间不会在设备上保留任何激活值。激活值在反向传播期间为梯度计算进行重新计算。虽然这种方法减少了对TPU的内存压力，但增加了计算时间。为了应用主机卸载，我们使用`save_and_offload_only_these_names`卸载Q、K和V投影权重。这些激活值在前向传播期间传输到主机内存（D2H），并在反向传播期间（D2H）取回，因此设备既不存储也不重新计算它们。图2显示主机卸载使训练时间减少了10%。这直接转化为类似的TPU核心小时减少，产生有意义的成本节约。完整的微调方案可在[JAX主机卸载]获取。
 
-Training Llama2-13B using MaxText:
-MaxText
-offers several
-rematerialization strategies
-that can be specified in the training configuration file. We used the policy
-remat_policy: 'qkv_proj_offloaded'
-to offload Q, K, and V projection weights. Figure 3 shows ~5% reduction in per-step training time compared to fully rematerializing all activations (
-remat_policy: 'full'
-).
+**使用MaxText训练Llama2-13B**：MaxText提供了多种可在训练配置文件中指定的**重计算策略**。我们使用策略`remat_policy: 'qkv_proj_offloaded'`来卸载Q、K和V投影权重。图3显示，与完全重新计算所有激活值（`remat_policy: 'full'`）相比，每个训练步骤的时间减少约5%。
 
-When to offload activations
+### 何时卸载激活值
 
-Activation offloading is beneficial when the time to transfer activations across host and device is lower than the time to recompute them. The timing depends on multiple factors such as PCIe bandwidth, model size, batch size, sequence length, activation tensor sizes, compute capabilities of the device, etc. An additional factor is how much the data movement can be overlapped with computation to keep the device busy.  Figure 4 demonstrates an efficient overlap of the device-to-host transfer with compute during the backward pass in PaliGemma2 28B training.
+当跨主机和设备传输激活值的时间低于重新计算它们的时间时，激活卸载是有益的。时间取决于多种因素，如PCIe带宽、模型大小、批量大小、序列长度、激活张量大小、设备的计算能力等。另一个因素是数据移动可以在多大程度上与计算重叠以保持设备忙碌。图4展示了在PaliGemma2 28B训练期间反向传播中设备到主机传输与计算的有效重叠。
 
-Smaller model variants such as PaliGemma2 3B and 9B did not see benefits from host offloading because it is faster to rematerialize all tensors than to transfer them to and from the host. Therefore, identifying the appropriate workload and offloading policy is crucial to realizing performance gain from host offloading
+# 中文翻译
 
-Call to Action
+较小的模型变体（如 PaliGemma2 3B 和 9B）并未从主机卸载中获益，因为重新生成所有张量的速度比将其传输到主机和从主机传输回来更快。因此，识别适当的工作负载和卸载策略对于从主机卸载中获得性能提升至关重要。
 
-If you train on TPUs and are limited by device memory, consider evaluating activation offloading. Start by labeling candidate activations (for example, Q/K/V projections) and compare step time, memory headroom, and overall cost across representative workloads.
+## 行动呼吁
 
-In our experiments, we observed up to ~10% improvement in end-to-end training time for larger workloads, which can reduce total cost of ownership (TCO) by shortening time-to-train or enabling the same workload on smaller instances.
+如果您在 TPU 上进行训练且受设备内存限制，请考虑评估激活卸载。首先标记候选激活（例如 Q/K/V 投影），然后在代表性工作负载上比较步长时间、内存余量和总体成本。
 
-Acknowledgments
+在我们的实验中，我们观察到较大工作负载的端到端训练时间提升高达约 10%，这可以通过缩短训练时间或在小规模实例上运行相同工作负载来降低总体拥有成本（TCO）。
 
-Emilio Cota, and Karlo Basioli from Google and Eugene Zhulenev (formerly at Google).
+## 致谢
 
-Celebrate A2April!
+感谢 Google 的 Emilio Cota 和 Karlo Basioli，以及前 Google 员工 Eugene Zhulenev。
 
-Thursday, April 9, 2026
+## 庆祝 A2April！
 
-by
-Patricia Cruz
-&
-Daryl Ducharme
-, Google Open Source
+2026 年 4 月 9 日，星期四
 
-Happy 1st Birthday to A2A! Join the community in celebrating the first anniversary of the A2A and
-its recent 1.0 release
-. April 9th marks the
-official birthday
-, and we're celebrating all month long with
-#A2April
-. To help you celebrate, we've used Gemini to make a party hat.
+作者：Patricia Cruz 和 Daryl Ducharme，Google 开源部门
 
-Use the template and instructions below to create your commemorative party hat.
+祝 A2A 一岁生日快乐！与社区一起庆祝 A2A 一周年及其最近的 1.0 版本发布。4 月 9 日是正式生日，我们将整个月都与 #A2April 一起庆祝。为了帮助您庆祝，我们使用 Gemini 制作了一顶派对帽。
 
-Assembly Instructions
+使用下面的模板和说明来制作您的纪念派对帽。
 
-Print:
-Print this document on heavy cardstock for the best results.
-Cut:
-Carefully cut along the solid outer border of the semi-circle template.
-Fold:
-Gently curve the template into a cone shape, overlapping the "Glue/Tape Tab" underneath the opposite edge.
-Secure:
-Use double-sided tape or a glue stick along the tab to hold the cone shape.
-Finish:
-Punch two small holes on opposite sides of the base and thread through an elastic string or ribbon to secure the hat to your head.
+### 装配说明
 
-Party Hat Visualization
+**打印：**
+在厚卡纸上打印此文档以获得最佳效果。
 
-Ways to Celebrate
+**裁剪：**
+小心地沿半圆模板的实线外边框裁剪。
 
-Social Media:
-Share a photo of yourself wearing your hat with the tag #A2April to help generate that social media buzz.
-Blog Series:
-Keep an eye out for the upcoming A2April blog series featuring quotes from the team and stories from the open source community.
-Community Quotes:
-If you're using A2A in production, reach out to us via social media and share your story for the birthday post.
+**折叠：**
+轻轻地将模板弯成圆锥形，将"胶带/胶粘标签"叠压在对面边缘下方。
 
-Kubernetes goes AI-First: Unpacking the new AI conformance program
+**固定：**
+沿着标签使用双面胶带或胶棒来固定圆锥形状。
 
-Monday, April 6, 2026
+**完成：**
+在底座两侧打两个小孔，穿过松紧绳或丝带，将帽子固定在头上。
 
-by
-Duncan Campbell
-,
-Kaslin Fields
-, Developer Source & Signal
-&
-Janet Kuo
-,
-Federico Bongiovanni
-, Google Kubernetes Engine(GKE)
+### 派对帽可视化
 
-As AI workloads move from experimental notebooks into massive production environments, the industry is rallying around a new standard to ensure these workloads remain portable, reliable, and efficient.
+### 庆祝方式
 
-At the heart of this shift is the launch of the
-Certified Kubernetes AI Conformance program
-.
+**社交媒体：**
+戴上帽子的照片并添加 #A2April 标签分享，帮助产生社交媒体热度。
 
-This initiative represents a significant investment in common, accessible, industry-wide standards, ensuring that the benefits of AI-first Kubernetes are available to everyone.
+**博客系列：**
+关注即将推出的 A2April 博客系列，其中包含团队引言和开源社区的故事。
 
-Traditional Kubernetes was built for stateless, cloud-first applications. However, AI workloads introduce unique complexities that standard conformance doesn't fully cover:
+**社区引言：**
+如果您在生产环境中使用 A2A，请通过社交媒体联系我们，分享您的故事用于生日帖子。
 
-Specific Hardware Demands:
-AI models require precise control over accelerators like GPUs and TPUs.
-Networking and Latency:
-Inference and distributed training require low-latency networking and specialized configurations.
-Stateful Nature:
-Unlike traditional web apps, AI often relies on complex, stateful data pipelines.
-
-The AI Conformance program acts as a
-superset
-of standard Kubernetes conformance. To be AI-conformant, a platform must first pass all standard Kubernetes tests and then meet additional requirements specifically for AI.
+---
 
-Key Pillars of the AI Conformance Program
+## Kubernetes 迈向 AI 优先：解读新的 AI 一致性计划
 
-The Kubernetes AI Conformance program is being driven in the open via the
-AI Conformance
-program. This cross-company effort is led by industry experts Janet Kuo (Google), Mario Fahlandt (Kubermatic GmbH), Rita Zhang (Microsoft), and Yuan Tang (RedHat). This program is a collaborative effort within the open source ecosystem, involving multiple organizations and individuals. By developing this program in the open, the community ensures the standard is built on trust and directly addresses the diverse needs of the global ecosystem. The program establishes a verified set of capabilities that platforms across the industry, like Google Kubernetes Engine (GKE) and Azure Kubernetes Service (AKS) are already adopting.
+2026 年 4 月 6 日，星期一
 
-Dynamic Resource Allocation (DRA)
+作者：Duncan Campbell、Kaslin Fields（Developer Source & Signal）和 Janet Kuo、Federico Bongiovanni（Google Kubernetes Engine/GKE）
 
-DRA
-is the cornerstone of the new standard. It shifts resource allocation from simple accelerator quantity to fine-grained hardware control via attributes. For data scientists, this means they can now request specific hardware based on characteristics such as memory capacity or specialized capabilities, ensuring the environment perfectly matches the model's needs.
+随着 AI 工作负载从实验笔记本进入大规模生产环境，行业正在围绕一项新标准团结起来，以确保这些工作负载保持可移植性、可靠性和高效性。
 
-All-or-Nothing Scheduling
-
-Distributed training jobs often face "deadlocks" where some pods start while others wait for resources, wasting expensive GPU time. AI Conformance mandates support for solutions like
-Kueue
-, allowing developers to ensure a job only begins when
-all
-required resources are available, improving cluster efficiency.
+这一转变的核心是**认证 Kubernetes AI 一致性计划**的推出。
 
-Intelligent Autoscaling for AI Workloads
+这一举措代表了对通用、可访问的行业级标准的重大投资，确保 AI 优先 Kubernetes 的优势惠及所有人。
 
-Conformant clusters must support
-Horizontal Pod Autoscaling (HPA)
-based on custom AI metrics, such as GPU or TPU utilization, rather than just standard CPU/memory. This allows clusters to scale up for heavy inference demand and scale down to save costs when idle.
+传统 Kubernetes 是为无状态、云优先应用构建的。然而，AI 工作负载引入了标准一致性无法完全覆盖的独特复杂性：
 
-Standardized Observability for High Performance
+**特定硬件需求：**
+AI 模型需要对 GPU 和 TPU 等加速器的精确控制。
 
-To manage AI at scale, you need deep visibility. The program requires platforms to expose rich accelerator performance metrics directly, enabling teams to monitor inference latency, throughput, and hardware health in a standardized way.
+**网络和延迟：**
+推理和分布式训练需要低延迟网络和特殊配置。
 
-What's Next?
+**有状态特性：**
+与传统 Web 应用不同，AI 通常依赖复杂的有状态数据管道。
 
-The launch of AI Conformance is just the beginning. As we head further into 2026, the community is adding
-automated testing
-for certification and expanding the standard to include more advanced inference patterns and stricter security requirements.
+AI 一致性计划充当标准 Kubernetes 一致性的**超集**。要成为 AI 一致性平台，必须首先通过所有标准 Kubernetes 测试，然后满足专门针对 AI 的额外要求。
 
-The ultimate goal? Making "AI-readiness" an inherent, invisible part of the Kubernetes standard.
+### AI 一致性计划的关键支柱
 
-To get involved and help shape the future of AI on Kubernetes, consider joining
-AI Conformance in Open Source Kubernetes
-. We welcome diverse perspectives, as your expertise and feedback are crucial to building a robust and inclusive standard for all.
+Kubernetes AI 一致性计划通过 **AI Conformance** 计划在开放中推动。这项跨公司努力由行业专家 Janet Kuo（Google）、Mario Fahlandt（Kubermatic GmbH）、Rita Zhang（Microsoft）和 Yuan Tang（RedHat）领导。该计划是开源生态系统内的协作努力，涉及多个组织和个人。通过开放开发该计划，社区确保标准建立在信任基础上，并直接满足全球生态系统的多样化需求。该计划建立了一套经过验证的能力集，行业内的平台（如 Google Kubernetes Engine/GKE 和 Azure Kubernetes Service/AKS）已经在采用。
 
-Gemma 4: Expanding the Gemmaverse with Apache 2.0
+#### 动态资源分配（DRA）
 
-Thursday, April 2, 2026
-
-by
-Nia Castelly
-&
-amanda casari
-, Google Open Source &
-Olivier Lacombe
-, Google DeepMind
-
-Gemma 4: Expanding the Gemmaverse with Apache 2.0
-
-For over 20 years, Google has maintained an unwavering commitment to the open-source community. Our belief has been simple: open technology is
-good for our company, good for our users, and good for our world
-. This commitment to fostering collaborative learning and rigorous testing has consistently proven more effective than pursuing isolated improvements. It's been our approach ever since the 2005 launch of
-Google Summer of Code
-, and through our open-sourcing of
-Kubernetes
-,
-Android
-, and
-Go
-, and it remains central to our ongoing, daily work alongside maintainers and organizations.
-
-Today, we are taking a significant step forward in that journey. Since first launch, the community has downloaded Gemma models over 400 million times and built a vibrant universe of over 100,000 inspiring variants, known in the community as the
-Gemmaverse
-.
-
-The
-release of Gemma 4
-under the
-Apache 2.0 license
-— our most capable open models ranging from edge devices to 31B parameters — provides cutting-edge AI models for this community of developers. The industry-standard Apache license broadens the horizon for Gemma 4's applicability and usefulness, providing well-understood terms for modification, reuse, and further development.
-
-A long legacy of open research
-
-We are committed to making helpful, accessible AI technology and research so that everyone can innovate and grow. That's why many of our innovations are freely available, easy to deploy, and useful to developers across the globe. We have a long history of making our foundational machine-learning research, including
-word2vec
-,
-Jax
-, and the seminal
-Transformers paper
-, publicly available for anyone to use and study.
-
-We accelerated this commitment last year. By sharing models that
-interpret complex genomic data
-and
-identify tumor variants
-, we contributed to the "
-magic cycle
-" of research breakthroughs that translate into real-world impact. This week, however, marks a pivotal moment —
-Gemma 4 models are the first in the Gemmaverse to be released under the OSI-approved Apache 2.0 license.
-
-Empowering developers and researchers to deliver breakthrough innovations
-
-Since we first launched Gemma in 2024, the community of early adopters has grown into a vast ecosystem of builders, researchers, and problem solvers. Gemma is already supporting sovereign digital infrastructure, from automating
-state licensing in Ukraine
-to scaling
-Project Navarasa across India's 22 official languages
-. And we know that developers need autonomy, control, and clarity in licensing for further AI innovation to reach its full potential.
-
-Gemma 4 brings three essential elements of free and open-source software directly to the community:
-
-Autonomy:
-By letting people build on and modify the Gemma 4 models, we are empowering researchers and developers with the freedom to advance their own breakthrough innovations however they see fit.
-Control:
-We understand that many developers require precise control over their development and deployment environments. Gemma 4 allows for local, private execution that doesn't rely on cloud-only infrastructure.
-Clarity:
-By applying the industry-standard Apache 2.0 license terms, we are providing clarity about developers' rights and responsibilities so that they can build freely and confidently from the ground up without the need to navigate prescriptive terms of service.
-
-Building together to drive real-world impact
-
-Gemma 4, as a release, is an invitation. Whether you are
-a scientific researcher exploring the language of dolphins
-, an industry developer building the next generation of open AI agents, or a public institution looking to provide more effective, efficient, and localized services to your citizens, Google is excited to continue building with you. The Gemmaverse is your playground, and with Apache 2.0, the possibilities are more boundless than ever.
-
-We can't wait to see what you build.
-
-Search This Blog
-
-Popular Posts
-
-The Journey Begins: Meet the 2026 GSoC Contributors!
-Journey to JPEG XL: How open source experiments shaped the future of image coding
-A new pkg.go.dev API for Go
-Announcing Apache Iceberg 1.11.0
-Introducing AMS: Activation-based model scanner for open-weight LLM safety verification
-
-Archive
-
-▼
-2026
-(35)
-►
-June
-(8)
-►
-May
-(3)
-▼
-April
-(9)
-The Journey Begins: Meet the 2026 GSoC Contributors!
-Introducing AMS: Activation-based model scanner fo...
-Meet the A2Family
-A year of open collaboration: Celebrating the anni...
-Jaspr: Why web development in Dart might just be a...
-Leveraging CPU memory for faster, cost-efficient T...
-Celebrate A2April!
-Kubernetes goes AI-First: Unpacking the new AI con...
-Gemma 4: Expanding the Gemmaverse with Apache 2.0
-►
-March
-(5)
-►
-February
-(5)
-►
-January
-(5)
-
-►
-June
-(8)
-
-►
-May
-(3)
-
-▼
-April
-(9)
-The Journey Begins: Meet the 2026 GSoC Contributors!
-Introducing AMS: Activation-based model scanner fo...
-Meet the A2Family
-A year of open collaboration: Celebrating the anni...
-Jaspr: Why web development in Dart might just be a...
-Leveraging CPU memory for faster, cost-efficient T...
-Celebrate A2April!
-Kubernetes goes AI-First: Unpacking the new AI con...
-Gemma 4: Expanding the Gemmaverse with Apache 2.0
-
-The Journey Begins: Meet the 2026 GSoC Contributors!
-Introducing AMS: Activation-based model scanner fo...
-Meet the A2Family
-A year of open collaboration: Celebrating the anni...
-Jaspr: Why web development in Dart might just be a...
-Leveraging CPU memory for faster, cost-efficient T...
-Celebrate A2April!
-Kubernetes goes AI-First: Unpacking the new AI con...
-Gemma 4: Expanding the Gemmaverse with Apache 2.0
-
-►
-March
-(5)
-
-►
-February
-(5)
-
-►
-January
-(5)
-
-►
-2025
-(47)
-►
-December
-(6)
-►
-November
-(5)
-►
-October
-(3)
+DRA 是新标准的基石。它将资源分配从简单的加速器数量转移到通过属性的细粒度硬件控制。对于数据科学家而言，这意味着他们现在可以根据内存容量或特殊能力等特性请求特定硬件，确保环境完美匹配模型需求。
+
+#### 全有或全无调度
+
+分布式训练作业经常面临"死锁"，其中一些 pod 启动而其他 pod 等待资源，浪费昂贵的 GPU 时间。AI 一致性要求支持 **Kueue** 等解决方案，允许开发者确保作业仅在所有必需资源可用时才开始，提高集群效率。
+
+#### AI 工作负载的智能自动扩展
+
+一致性集群必须支持基于自定义 AI 指标（如 GPU 或 TPU 利用率）的**水平 Pod 自动扩展（HPA）**，而不仅仅是标准的 CPU/内存。这允许集群在重型推理需求时扩展，在空闲时缩减以节省成本。
+
+#### 高性能标准化可观测性
+
+要在规模上管理 AI，您需要深入的可视性。该计划要求平台直接公开丰富的加速器性能指标，使团队能够以标准化方式监控推理延迟、吞吐量和硬件健康状况。
+
+### 接下来的发展
+
+AI 一致性的推出只是一个开始。随着我们进一步迈入 2026 年，社区正在为认证添加**自动化测试**，并扩展标准以包括更高级的推理模式和更严格的安全要求。
+
+最终目标？让"AI 就绪"成为 Kubernetes 标准的固有、无形的一部分。
+
+要参与并帮助塑造 Kubernetes 上 AI 的未来，请考虑加入**开源 Kubernetes 中的 AI Conformance**。我们欢迎不同的观点，因为您的专业知识和反馈对于为所有人构建强大且包容的标准至关重要。
+
+---
+
+## Gemma 4：以 Apache 2.0 扩展 Gemmaverse
+
+2026 年 4 月 2 日，星期四
+
+作者：Nia Castelly 和 amanda casari（Google 开源）和 Olivier Lacombe（Google DeepMind）
+
+## Gemma 4：以 Apache 2.0 扩展 Gemmaverse
+
+20 多年来，Google 一直保持着对开源社区的坚定承诺。我们的信念很简单：开放技术**对我们的公司有益，对我们的用户有益，对我们的世界有益**。这种培养协作学习和严格测试的承诺一直比追求孤立改进更为有效。自从 2005 年推出 **Google Summer of Code** 以来，以及我们开源 **Kubernetes**、**Android** 和 **Go** 以来，这一直是我们的方法，并且仍然是我们在与维护者和组织者的日常持续工作中坚持的核心。
+
+今天，我们在那段旅程中迈出了重要的一步。自首次发布以来，社区已下载 Gemma 模型超过 4 亿次，并构建了一个由超过 100,000 个令人振奋的变体组成的活跃宇宙，这在社区中被称为 **Gemmaverse**。
+
+**Gemma 4** 以 **Apache 2.0 许可证**发布——我们最强大的开放模型，涵盖从边缘设备到 31B 参数的范围——为这个开发者社区提供尖端 AI 模型。行业标准的 Apache 许可证拓宽了 Gemma 4 的适用性和实用性的视野，为修改、重用和进一步开发提供了易于理解的条款。
+
+### 开放研究的悠久传统
+
+**译文（中文）**
+
+我们致力于打造实用、易获取的 AI 技术和研究，使每个人都能创新并成长。因此，我们的许多创新都免费可用、易于部署，并对全球开发者大有裨益。我们拥有悠久的历史，将包括 **word2vec**、**Jax** 以及开创性的 **Transformers 论文** 在内的基础机器学习研究向公众开放，供任何人使用和学习。
+
+去年我们进一步加速了这一承诺。通过分享能够解读复杂基因组数据并识别肿瘤变异的模型，我们为 **“magic cycle”**（研究突破的“魔法循环”）贡献力量，将科研成果转化为实际影响。然而，本周标志着一个关键时刻——**Gemma 4** 模型是 **Gemmaverse** 中首批在 **OSI 批准的 Apache 2.0** 许可证下发布的模型。
+
+### 赋能开发者和研究者，推动突破性创新
+
+自从 2024 年首次推出 **Gemma** 以来，早期采用者的社区已成长为庞大的建设者、研究者和问题解决者生态系统。Gemma 已经在支持主权数字基础设施，从自动化乌克兰的州级许可，到在印度 22 种官方语言中推广 **Project Navarasa**。我们深知，开发者需要自主性、控制权和许可证的清晰度，以充分发挥进一步 AI 创新的潜力。
+
+**Gemma 4** 将 **自由开源软件（FOSS）** 的三个核心要素直接带给社区：
+
+- **自主性**：通过允许人们基于并修改 **Gemma 4** 模型，我们赋予研究者和开发者自由，以按自己认为合适的方式推进突破性创新。  
+- **控制权**：我们理解许多开发者需要对开发和部署环境进行精细控制。**Gemma 4** 支持本地、私有执行，而不依赖仅限云端的基础设施。  
+- **清晰性**：通过采用行业标准的 **Apache 2.0** 许可证条款，我们为开发者的权利与责任提供明确说明，使他们能够从零开始自由且自信地进行构建，而无需遵循规定性的服务条款。
+
+### 共同构建，推动实际影响
+
+**Gemma 4** 的发布本身是一份邀请。无论您是探索海豚语言的科研人员、开发下一代开放 AI 智能体的行业开发者，还是希望为公民提供更高效、更有效、更本地化服务的公共机构，Google 都期待与您继续共建。**Gemmaverse** 是您的游乐场，而在 **Apache 2.0** 的加持下，可能性比以往任何时候都更加无限。
+
+我们迫不及待想看到您的作品。
+
+The user asks: "Translate to Chinese, keep technical terms accurate:" and then shows a structure that seems like an archive listing of posts, likely from a forum or a site. The data is organized by years (2014, 2013, 2012, 2011, 2010, 2009, 2008). For each year, there are monthly counts with brackets showing the number of posts in each month. The user wants the translation of this structure to Chinese, preserving technical terms accurate. The phrase "keep technical terms accurate" presumably refers to technical terms such as "January", "February", etc., which are proper nouns, but could be translated to Chinese month names: 一月, 二月, etc. Also the year and number counts should be the same.
+
+We need to output the Chinese translation preserving the structure.
+
+We have to translate each line: "September (6)" etc to Chinese "九月 (6)" and preserve the hierarchy:
+
+► 2014 (104)
+ ► December (6)
+ etc.
+
+But note the given structure uses "►" as bullet points. Should we preserve those? Probably yes. The bullet "►" can remain as is. The user may want the output as Chinese but same formatting.
+
+Thus we should translate "September", "August", etc to Chinese month names, with parentheses same.
+
+But what about the "Share"? Possibly they want the "Share" at the end also translated? Actually it's "Share". This might be a UI button. It might be translated to "分享". Should we do that? The user said "Translate to Chinese, keep technical terms accurate:" So yes, "Share" is a UI label, could be "分享".
+
+We need to handle each year block: For each year, we have a bullet line "► 2014 (104)" - that should be "► 2014 (104)". The year is numeric, so not transliteration needed. Then for each month, bullet "► December (6)". The month names: "December" -> "十二月". "November" -> "十一月". "October" -> "十月". "September" -> "九月". "August" -> "八月". "July" -> "七月". "June" -> "六月". "May" -> "五月". "April" -> "四月". "March" -> "三月". "February" -> "二月". "January" -> "一月". Keep the parentheses as numbers.
+
+Now let's ensure we preserve the structure of each block with the indentation. The structure includes a hierarchy: year level, then month level, and month-level entries repeated after year-level? Actually the given source includes:
+
 ►
 September
-(5)
-►
-August
-(5)
-►
-July
-(5)
-►
-June
-(3)
-►
-May
-(5)
-►
-April
-(1)
-►
-March
-(1)
-►
-February
-(3)
-►
-January
-(5)
-
-►
-December
 (6)
 
-►
-November
-(5)
+But it's basically a summary. Let's examine the original text:
 
-►
-October
-(3)
-
+```
 ►
 September
-(5)
-
-►
-August
-(5)
-
-►
-July
-(5)
-
-►
-June
-(3)
-
-►
-May
-(5)
-
-►
-April
-(1)
-
-►
-March
-(1)
-
-►
-February
-(3)
-
-►
-January
-(5)
-
-►
-2024
-(39)
-►
-December
-(4)
-►
-November
-(1)
-►
-October
-(1)
-►
-September
-(3)
-►
-August
-(4)
-►
-July
-(4)
-►
-June
-(4)
-►
-May
-(5)
-►
-April
-(4)
-►
-March
-(2)
-►
-February
 (6)
-►
-January
-(1)
-
-►
-December
-(4)
-
-►
-November
-(1)
-
-►
-October
-(1)
-
-►
-September
-(3)
 
 ►
 August
@@ -1012,781 +541,179 @@ August
 
 ►
 July
-(4)
-
-►
-June
-(4)
-
-►
-May
-(5)
-
-►
-April
-(4)
-
-►
-March
-(2)
-
-►
-February
-(6)
-
-►
-January
-(1)
-
-►
-2023
-(44)
-►
-December
-(5)
-►
-November
-(6)
-►
-October
-(2)
-►
-September
-(3)
-►
-August
-(1)
-►
-July
-(2)
-►
-June
-(5)
-►
-May
-(5)
-►
-April
-(2)
-►
-March
-(6)
-►
-February
-(3)
-►
-January
-(4)
-
-►
-December
-(5)
-
-►
-November
-(6)
-
-►
-October
-(2)
-
-►
-September
-(3)
-
-►
-August
-(1)
-
-►
-July
-(2)
-
-►
-June
-(5)
-
-►
-May
-(5)
-
-►
-April
-(2)
-
-►
-March
-(6)
-
-►
-February
-(3)
-
-►
-January
-(4)
-
-►
-2022
-(44)
-►
-December
-(4)
-►
-November
-(2)
-►
-October
-(7)
-►
-September
-(6)
-►
-August
-(2)
-►
-July
-(3)
-►
-June
-(5)
-►
-May
-(1)
-►
-April
-(2)
-►
-March
-(4)
-►
-February
-(5)
-►
-January
-(3)
-
-►
-December
-(4)
-
-►
-November
-(2)
-
-►
-October
-(7)
-
-►
-September
-(6)
-
-►
-August
-(2)
-
-►
-July
-(3)
-
-►
-June
-(5)
-
-►
-May
-(1)
-
-►
-April
-(2)
-
-►
-March
-(4)
-
-►
-February
-(5)
-
-►
-January
-(3)
-
-►
-2021
-(55)
-►
-December
-(3)
-►
-November
-(7)
-►
-October
-(4)
-►
-September
-(7)
-►
-August
-(5)
-►
-June
-(2)
-►
-May
-(2)
-►
-April
-(6)
-►
-March
-(6)
-►
-February
-(8)
-►
-January
-(5)
-
-►
-December
-(3)
-
-►
-November
-(7)
-
-►
-October
-(4)
-
-►
-September
-(7)
-
-►
-August
-(5)
-
-►
-June
-(2)
-
-►
-May
-(2)
-
-►
-April
-(6)
-
-►
-March
-(6)
-
-►
-February
-(8)
-
-►
-January
-(5)
-
-►
-2020
-(83)
-►
-December
-(7)
-►
-November
-(6)
-►
-October
-(7)
-►
-September
-(5)
-►
-August
-(13)
-►
-July
-(1)
-►
-June
-(7)
-►
-May
-(9)
-►
-April
-(5)
-►
-March
-(13)
-►
-February
-(5)
-►
-January
-(5)
-
-►
-December
-(7)
-
-►
-November
-(6)
-
-►
-October
-(7)
-
-►
-September
-(5)
-
-►
-August
-(13)
-
-►
-July
 (1)
 
 ►
 June
-(7)
-
-►
-May
-(9)
-
-►
-April
-(5)
-
-►
-March
-(13)
-
-►
-February
-(5)
-
-►
-January
-(5)
-
-►
-2019
-(65)
-►
-December
-(6)
-►
-November
-(9)
-►
-October
-(8)
-►
-September
-(5)
-►
-August
-(3)
-►
-July
-(5)
-►
-June
-(4)
-►
-May
-(8)
-►
-April
-(3)
-►
-March
-(7)
-►
-February
-(4)
-►
-January
-(3)
-
-►
-December
 (6)
 
 ►
-November
-(9)
-
-►
-October
-(8)
-
-►
-September
-(5)
-
-►
-August
-(3)
-
-►
-July
-(5)
-
-►
-June
-(4)
-
-►
 May
-(8)
+(6)
 
 ►
 April
-(3)
-
-►
-March
-(7)
-
-►
-February
-(4)
-
-►
-January
-(3)
-
-►
-2018
-(59)
-►
-December
-(4)
-►
-November
-(2)
-►
-October
-(3)
-►
-September
-(2)
-►
-August
-(10)
-►
-July
-(2)
-►
-June
-(3)
-►
-May
-(5)
-►
-April
-(1)
-►
-March
-(16)
-►
-February
-(3)
-►
-January
-(8)
-
-►
-December
-(4)
-
-►
-November
-(2)
-
-►
-October
-(3)
-
-►
-September
-(2)
-
-►
-August
 (10)
 
 ►
-July
-(2)
-
-►
-June
-(3)
-
-►
-May
-(5)
-
-►
-April
-(1)
-
-►
-March
-(16)
-
-►
-February
-(3)
-
-►
-January
-(8)
-
-►
-2017
-(73)
-►
-December
-(4)
-►
-November
-(5)
-►
-October
-(6)
-►
-September
-(7)
-►
-August
-(3)
-►
-July
-(3)
-►
-June
-(3)
-►
-May
-(5)
-►
-April
-(4)
-►
-March
-(13)
-►
-February
-(7)
-►
-January
-(13)
-
-►
-December
-(4)
-
-►
-November
-(5)
-
-►
-October
-(6)
-
-►
-September
-(7)
-
-►
-August
-(3)
-
-►
-July
-(3)
-
-►
-June
-(3)
-
-►
-May
-(5)
-
-►
-April
-(4)
-
-►
-March
-(13)
-
-►
-February
-(7)
-
-►
-January
-(13)
-
-►
-2016
-(85)
-►
-December
-(9)
-►
-November
-(13)
-►
-October
-(13)
-►
-September
-(8)
-►
-August
-(9)
-►
-July
-(5)
-►
-June
-(2)
-►
-May
-(5)
-►
-April
-(3)
-►
-March
-(7)
-►
-February
-(7)
-►
-January
-(4)
-
-►
-December
-(9)
-
-►
-November
-(13)
-
-►
-October
-(13)
-
-►
-September
-(8)
-
-►
-August
-(9)
-
-►
-July
-(5)
-
-►
-June
-(2)
-
-►
-May
-(5)
-
-►
-April
-(3)
-
-►
-March
-(7)
-
-►
-February
-(7)
-
-►
-January
-(4)
-
-►
-2015
-(80)
-►
-December
-(5)
-►
-November
-(7)
-►
-October
-(6)
-►
-September
-(6)
-►
-August
-(4)
-►
-July
-(1)
-►
-June
-(6)
-►
-May
-(6)
-►
-April
-(10)
-►
 March
 (10)
+
 ►
 February
 (11)
+
 ►
 January
 (8)
 
 ►
+2014
+(104)
+►
 December
-(5)
+(6)
+►
+November
+(12)
+►
+October
+(7)
+►
+September
+(8)
+►
+August
+(9)
+►
+July
+(7)
+►
+June
+(10)
+►
+May
+(8)
+►
+April
+(8)
+►
+March
+(11)
+►
+February
+(8)
+►
+January
+(10)
+
+►
+December
+(6)
 
 ►
 November
-(7)
+(12)
 
 ►
 October
-(6)
+(7)
 
+►
+September
+(8)
+
+►
+August
+(9)
+
+►
+July
+(7)
+
+►
+June
+(10)
+
+►
+May
+(8)
+
+►
+April
+(8)
+
+►
+March
+(11)
+
+►
+February
+(8)
+
+►
+January
+(10)
+
+►
+2013
+(100)
+...
+```
+
+So there is an initial block at top: something like "► September (6)" etc before the year. Possibly that's a list of months with their counts for some period preceding the years? It might be a "Archive" summary showing month counts for the most recent year? The format is "►" and then month name and count. The months are listed from September (6) down to January (8). This appears to be for the current year maybe? Actually after this block, they show "► 2014 (104)" and then the months December (6) to January (10). Then there is a blank line and then a second block identical to the first, likely representing the same months as the current year but again? Actually they have two identical blocks: one before the year, then one after the year (maybe for "2014"?). The repeated block is exactly same as before the year: "► December (6)", "► November (12)", etc. Actually after "► 2014 (104)", they list months: December (6), November (12), October (7), September (8), August (9), July (7), June (10), May (8), April (8), March (11), February (8), January (10). Then a blank line and then the same block again: "► December (6)", "► November (12)", etc. Then after that, they go to "► 2013 (100)" and list months again.
+
+Thus the structure is: Year header, then months list, then a duplicate months list (maybe for some reason), then next year.
+
+Thus for translation we should preserve exactly this structure: Year header line (with bullet), months list with bullet, blank line, then duplicate months list with bullet, blank line, next year header line, etc.
+
+But we also need to translate the initial block before the first year header (the block with September, August, etc). Actually the top block includes months from September to January; maybe it's the months for "2015"? But there is no year label. It might be the most recent months that haven't been aggregated under a year? The content appears to start with "► September (6)", "► August (4)", etc. The month names might be English. We must translate those to Chinese. So the top block will be:
+
+► 九月 (6)
+► 八月 (4)
+► 七月 (1)
+► 六月 (6)
+► 五月 (6)
+► 四月 (10)
+► 三月 (10)
+► 二月 (11)
+► 一月 (8)
+
+Then "► 2014 (104)", then the months list: "► 十二月 (6)", "► 十一月 (12)", "► 十月 (7)", "► 九月 (8)", "► 八月 (9)", "► 七月 (7)", "► 六月 (10)", "► 五月 (8)", "► 四月 (8)", "► 三月 (11)", "► 二月 (8)", "► 一月 (10)". Then blank line, then repeat the same months list. Then "► 2013 (100)" and its months list.
+
+We need to maintain bullet formatting. The bullet "►" is a right pointing triangle (Unicode). We can preserve that.
+
+Now we need to ensure that we keep technical terms accurate. Month names are not technical but can be considered proper nouns; we should translate them as Chinese month names (Chinese characters). The numbers are unchanged.
+
+Thus the translation is straightforward.
+
+Potential nuance: "Share" at the end is a UI element. Should we translate "Share" to "分享"? Yes.
+
+Thus output all lines in Chinese.
+
+The final output will be a block with the Chinese translation, preserving formatting.
+
+We need to ensure that each bullet is preceded by a "►" and a space? The original formatting includes "►" then space then month name? Actually in the original text:
+
+```
+►
+September
+(6)
+```
+
+But the representation in the snippet is maybe multi-line. However the original appears to show each bullet on a separate line. Actually it's like:
+
+```
+►
+September
+(6)
+```
+
+But I think it's "► September (6)" combined? The given text is weird: it shows "►" line, then "September", then "(6)" on separate lines. But the structure in the later parts like "► 2014 (104)" seems to be on same line.
+
+Let's examine original again:
+
+```
 ►
 September
 (6)
@@ -1917,522 +844,274 @@ January
 ►
 December
 (7)
-►
-November
-(10)
-►
-October
-(8)
-►
-September
-(9)
-►
-August
-(10)
-►
-July
-(7)
-►
-June
-(7)
-►
-May
-(8)
-►
-April
-(10)
-►
-March
-(9)
-►
-February
-(7)
-►
-January
-(8)
-
-►
-December
-(7)
-
-►
-November
-(10)
-
-►
-October
-(8)
-
-►
-September
-(9)
-
-►
-August
-(10)
-
-►
-July
-(7)
-
-►
-June
-(7)
-
-►
-May
-(8)
-
-►
-April
-(10)
-
-►
-March
-(9)
-
-►
-February
-(7)
-
-►
-January
-(8)
-
-►
-2012
-(93)
-►
-December
-(4)
-►
-November
-(6)
-►
-October
-(9)
-►
-September
-(8)
-►
-August
-(8)
-►
-July
-(5)
-►
-June
-(7)
-►
-May
-(10)
-►
-April
-(5)
-►
-March
-(15)
-►
-February
-(9)
-►
-January
-(7)
-
-►
-December
-(4)
-
-►
-November
-(6)
-
-►
-October
-(9)
-
-►
-September
-(8)
-
-►
-August
-(8)
-
-►
-July
-(5)
-
-►
-June
-(7)
-
-►
-May
-(10)
-
-►
-April
-(5)
-
-►
-March
-(15)
-
-►
-February
-(9)
-
-►
-January
-(7)
-
-►
-2011
-(117)
-►
-December
-(7)
-►
-November
-(14)
-►
-October
-(13)
-►
-September
-(10)
-►
-August
-(6)
-►
-July
-(13)
-►
-June
-(11)
-►
-May
-(5)
-►
-April
-(11)
-►
-March
-(10)
-►
-February
-(10)
-►
-January
-(7)
-
-►
-December
-(7)
-
-►
-November
-(14)
-
-►
-October
-(13)
-
-►
-September
-(10)
-
-►
-August
-(6)
-
-►
-July
-(13)
-
-►
-June
-(11)
-
-►
-May
-(5)
-
-►
-April
-(11)
-
-►
-March
-(10)
-
-►
-February
-(10)
-
-►
-January
-(7)
-
-►
-2010
-(123)
-►
-December
-(9)
-►
-November
-(12)
-►
-October
-(10)
-►
-September
-(14)
-►
-August
-(10)
-►
-July
-(7)
-►
-June
-(10)
-►
-May
-(11)
-►
-April
-(14)
-►
-March
-(13)
-►
-February
-(8)
-►
-January
-(5)
-
-►
-December
-(9)
-
-►
-November
-(12)
-
-►
-October
-(10)
-
-►
-September
-(14)
-
-►
-August
-(10)
-
-►
-July
-(7)
-
-►
-June
-(10)
-
-►
-May
-(11)
-
-►
-April
-(14)
-
-►
-March
-(13)
-
-►
-February
-(8)
-
-►
-January
-(5)
-
-►
-2009
-(124)
-►
-December
-(6)
-►
-November
-(5)
-►
-October
-(11)
-►
-September
-(11)
-►
-August
-(8)
-►
-July
-(13)
-►
-June
-(6)
-►
-May
-(11)
-►
-April
-(16)
-►
-March
-(17)
-►
-February
-(10)
-►
-January
-(10)
-
-►
-December
-(6)
-
-►
-November
-(5)
-
-►
-October
-(11)
-
-►
-September
-(11)
-
-►
-August
-(8)
-
-►
-July
-(13)
-
-►
-June
-(6)
-
-►
-May
-(11)
-
-►
-April
-(16)
-
-►
-March
-(17)
-
-►
-February
-(10)
-
-►
-January
-(10)
-
-►
-2008
-(167)
-►
-December
-(10)
-►
-November
-(11)
-►
-October
-(13)
-►
-September
-(16)
-►
-August
-(12)
-►
-July
-(20)
-►
-June
-(14)
-►
-May
-(21)
-►
-April
-(16)
-►
-March
-(17)
-►
-February
-(17)
-
-►
-December
-(10)
-
-►
-November
-(11)
-
-►
-October
-(13)
-
-►
-September
-(16)
-
-►
-August
-(12)
-
-►
-July
-(20)
-
-►
-June
-(14)
-
-►
-May
-(21)
-
-►
-April
-(16)
-
-►
-March
-(17)
-
-►
-February
-(17)
+...
+```
+
+Thus the formatting is inconsistent. However, for the translation, we can preserve the same line breaks and bullet formatting as they appear.
+
+Given that the user didn't specify a particular format, but "Translate to Chinese, keep technical terms accurate:" and gave a big block. We should replicate the structure with Chinese translations. It may be acceptable to produce a single block where each bullet line includes month name and count on the same line: "► 九月 (6)". That would be a cleaner translation.
+
+But perhaps the original format uses separate lines for month name and count. But it's ambiguous. We can present the translation in a similar style: each bullet line includes month name and count in parentheses on the same line, which is typical for such archives.
+
+Thus we produce:
+
+```
+► 九月 (6)
+► 八月 (4)
+► 七月 (1)
+► 六月 (6)
+► 五月 (6)
+► 四月 (10)
+► 三月 (10)
+► 二月 (11)
+► 一月 (8)
+
+► 2014 (104)
+► 十二月 (6)
+► 十一月 (12)
+► 十月 (7)
+► 九月 (8)
+► 八月 (9)
+► 七月 (7)
+► 六月 (10)
+► 五月 (8)
+► 四月 (8)
+► 三月 (11)
+► 二月 (8)
+► 一月 (10)
+
+► 十二月 (6)
+► 十一月 (12)
+► 十月 (7)
+► 九月 (8)
+► 八月 (9)
+► 七月 (7)
+► 六月 (10)
+► 五月 (8)
+► 四月 (8)
+► 三月 (11)
+► 二月 (8)
+► 一月 (10)
+
+► 2013 (100)
+► 十二月 (7)
+► 十一月 (10)
+► 十月 (8)
+► 九月 (9)
+► 八月 (10)
+► 七月 (7)
+► 六月 (7)
+► 五月 (8)
+► 四月 (10)
+► 三月 (9)
+► 二月 (7)
+► 一月 (8)
+
+► 十二月 (7)
+► 十一月 (10)
+► 十月 (8)
+► 九月 (9)
+► 八月 (10)
+► 七月 (7)
+► 六月 (7)
+► 五月 (8)
+► 四月 (10)
+► 三月 (9)
+► 二月 (7)
+► 一月 (8)
+
+► 2012 (93)
+► 十二月 (4)
+► 十一月 (6)
+► 十月 (9)
+► 九月 (8)
+► 八月 (8)
+► 七月 (5)
+► 六月 (7)
+► 五月 (10)
+► 四月 (5)
+► 三月 (15)
+► 二月 (9)
+► 一月 (7)
+
+► 十二月 (4)
+► 十一月 (6)
+► 十月 (9)
+► 九月 (8)
+► 八月 (8)
+► 七月 (5)
+► 六月 (7)
+► 五月 (10)
+► 四月 (5)
+► 三月 (15)
+► 二月 (9)
+► 一月 (7)
+
+► 2011 (117)
+► 十二月 (7)
+► 十一月 (14)
+► 十月 (13)
+► 九月 (10)
+► 八月 (6)
+► 七月 (13)
+► 六月 (11)
+► 五月 (5)
+► 四月 (11)
+► 三月 (10)
+► 二月 (10)
+► 一月 (7)
+
+► 十二月 (7)
+► 十一月 (14)
+► 十月 (13)
+► 九月 (10)
+► 八月 (6)
+► 七月 (13)
+► 六月 (11)
+► 五月 (5)
+► 四月 (11)
+► 三月 (10)
+► 二月 (10)
+► 一月 (7)
+
+► 2010 (123)
+► 十二月 (9)
+► 十一月 (12)
+► 十月 (10)
+► 九月 (14)
+► 八月 (10)
+► 七月 (7)
+► 六月 (10)
+► 五月 (11)
+► 四月 (14)
+► 三月 (13)
+► 二月 (8)
+► 一月 (5)
+
+► 十二月 (9)
+► 十一月 (12)
+► 十月 (10)
+► 九月 (14)
+► 八月 (10)
+► 七月 (7)
+► 六月 (10)
+► 五月 (11)
+► 四月 (14)
+► 三月 (13)
+► 二月 (8)
+► 一月 (5)
+
+► 2009 (124)
+► 十二月 (6)
+► 十一月 (5)
+► 十月 (11)
+► 九月 (11)
+► 八月 (8)
+► 七月 (13)
+► 六月 (6)
+► 五月 (11)
+► 四月 (16)
+► 三月 (17)
+► 二月 (10)
+► 一月 (10)
+
+► 十二月 (6)
+► 十一月 (5)
+► 十月 (11)
+► 九月 (11)
+► 八月 (8)
+► 七月 (13)
+► 六月 (6)
+► 五月 (11)
+► 四月 (16)
+► 三月 (17)
+► 二月 (10)
+► 一月 (10)
+
+► 2008 (167)
+► 十二月 (10)
+► 十一月 (11)
+► 十月 (13)
+► 九月 (16)
+► 八月 (12)
+► 七月 (20)
+► 六月 (14)
+► 五月 (21)
+► 四月 (16)
+► 三月 (17)
+► 二月 (17)
+
+► 十二月 (10)
+► 十一月 (11)
+► 十月 (13)
+► 九月 (16)
+► 八月 (12)
+► 七月 (20)
+► 六月 (14)
+► 五月 (21)
+► 四月 (16)
+► 三月 (17)
+► 二月 (17)
 
 Share
+```
 
+That would be a straightforward translation.
+
+We need to check counts: We must ensure that the month counts match the original numbers exactly.
+
+Original initial block:
+
+September (6)
+August (4)
+July (1)
+June (6)
+May (6)
+April (10)
+March (10)
+February (11)
+January (8)
+
+So after translation:
+
+九月 (6)
+八月 (4)
+七月 (1)
+六月 (6)
+五月 (6)
+四月 (10)
+三月 (10)
+二月 (11)
+一月 (8)
+
+Yes.
+
+Now check the months for 2014: Provided counts: December (6), November (12), October (7), September (8), August (9), July (7), June (10), May (8), April (8), March (11), February (8), January (10). Yes.
+
+We have repeated that block after a blank line.
+
+Now for 2013: counts: December (7), November (10), October (8), September (9), August (10), July (7), June (7), May (8), April (10), March (9), February (7), January (8). Yes.
+
+Now for 2012: December (4), November (6), October (9), September (8), August (8), July (5), June (7), May (10), April (5), March (15), February (9), January (7). Yes.
+
+Now for 2011: December (7), November (14), October (13), September (10), August (6), July (13), June (11), May (5), April (11), March (10), February (10), January (7). Yes.
+
+Now for 2010: December (9), November (12), October (10), September (14), August (10), July (7), June (10), May (11), April (14), March (13), February (8), January (5). Yes.
+
+Now for 2009: December (6), November (5), October (11), September (11), August (8), July (13), June (6), May (11), April (16), March (17), February (10), January (10). Yes.
+
+Now for 2008: December (10), November (11), October (13), September (16), August (12), July (20), June (14), May (21), April (16), March (17), February (17). Note: In 2008, there is no January entry; we should reflect that. In the original for 2008, there is no January line. The original for 2008 ends with February (17). So we should not include January for 2008. Also there is no duplicate block after 2008? The original includes a duplicate block of months for 2008: After the main list, they have another block similar: "► December (10)", "► November (11)", "► October (13)", "► September (16)", "► August (12)", "► July (20)", "► June (14)", "► May (21)", "► April (16)", "► March (17)", "► February (17)". So we need to include the duplicate block as well, but no January. Also we need to check if there is a duplicate block for 2008 after the main list. The original includes after "► February (17)" (end of main block) there is a blank line and then the duplicate block with same numbers. So we include that.
+
+Thus for 2008 we need two blocks, each with 11 months (December to February). In my translation above, I included a duplicate block with the same months, but I need to ensure no January appears. Let's check my translation above for 2008: I wrote:
+
+```
+► 2008 (167)
+► 十二月 (10)
+► 十一月 (11)
+► 十月 (13)
+► 九月 (16)
+► 八月 (12)
+► 七月 (20)
+► 
 
 *原文请访问 [opensource.googleblog.com](https://opensource.googleblog.com/2026/04)*

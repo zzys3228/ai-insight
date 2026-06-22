@@ -459,6 +459,35 @@ class FetchDaily:
                 self.mark_failed(url, str(e))
         return count
 
+    def fetch_industry(self, urls: List = None):
+        """Fetch industry reports and VC blogs"""
+        IndustryFetcher = import_fetcher('ai_fetch_industry', 'IndustryFetcher')
+        if not urls:
+            urls = [u for u in self.list_urls() if u['section'] and u['section'].startswith('8.')]
+        fetcher = IndustryFetcher()
+        count = 0
+        for item in urls:
+            url = item['url']
+            section = item.get('section', 'industry')
+            if not self.should_fetch(url):
+                continue
+            print(f"Fetching industry: {url}")
+            try:
+                domain = url.split('/')[2].replace('.', '_')
+                data = fetcher.fetch(url, domain)
+                md = fetcher.format_as_markdown(data, category=f'industry/{section}')
+                output_dir = Path(STORAGE_BASE) / 'industry' / domain
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_file = output_dir / 'index.md'
+                output_file.write_text(md, encoding='utf-8')
+                self.mark_fetched(url, str(output_file))
+                count += 1
+                print(f"  -> Saved")
+            except Exception as e:
+                print(f"  -> Error: {e}")
+                self.mark_failed(url, str(e))
+        return count
+
     def fetch_media(self, urls: List = None):
         """Fetch newsletters and podcasts"""
         NewsletterFetcher = import_fetcher('ai_fetch_media', 'NewsletterFetcher')
@@ -528,6 +557,7 @@ def main():
     parser.add_argument('--robot', action='store_true', help='Fetch robot only')
     parser.add_argument('--standard', action='store_true', help='Fetch standard only')
     parser.add_argument('--conference', action='store_true', help='Fetch conference only')
+    parser.add_argument('--industry', action='store_true', help='Fetch industry only')
 
     args = parser.parse_args()
 
@@ -580,6 +610,8 @@ def main():
             total += fetcher.fetch_standard()
         elif args.conference:
             total += fetcher.fetch_conference()
+        elif args.industry:
+            total += fetcher.fetch_industry()
         else:
             # Default: fetch all categories
             print("Fetching all categories...")
@@ -592,6 +624,7 @@ def main():
             total += fetcher.fetch_robot()
             total += fetcher.fetch_standard()
             total += fetcher.fetch_conference()
+            total += fetcher.fetch_industry()
 
         print()
         print(f"Done! Fetched {total} items.")

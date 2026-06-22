@@ -1,653 +1,492 @@
 ---
-title: Agent Network Protocol White Paper
+title: **代理网络协议白皮书**
 source: w3c-cg.github.io
 url: https://w3c-cg.github.io/ai-agent-protocol
 date: 2026-06-22
 category: standard/w3c-cg.github
 translated: true
-fetched_at: 2026-06-22T18:27:11.668947
+fetched_at: 2026-06-22T19:11:23.946833
 ---
-# Agent Network Protocol White Paper
+# **代理网络协议白皮书**
 
 **来源**: w3c-cg.github.io | **日期**: 2026-06-22
 
 ---
 
-Abstract
+# 中文翻译
 
-另见该文档的
+## 摘要
 
-中文版本
+本文探讨了从语义网的愿景到新兴的智能体网络（Agentic Web）的演进历程，并分析了建立标准化智能体网络协议的必要性。尽管二十年前提出的语义网概念具有前瞻性，但由于当时人工智能能力的局限性，语义网并未得到充分实现。随着大语言模型（LLMs）等现代人工智能技术的快速发展，智能体如今已具备自主执行任务、进行复杂推理和解决多步骤问题的能力，从而催生了智能体网络。本文通过系统分析，识别出智能体网络的四个核心趋势：智能体取代传统软件成为互联网基础设施、智能体之间的普遍互联、基于协议的原生连接模式，以及智能体的自主组织与协作能力。同时，研究揭示了当前互联网架构对智能体网络发展构成的三大挑战：限制智能体决策质量的数据孤岛、阻碍智能体交互效率的人机接口，以及阻碍智能体协作的标准协议缺失。针对这些挑战，本文详细阐述了智能体网络协议的设计原则和核心需求，并对当前主要的智能体网络协议倡议（MCP、A2A、ACP、ANP等）进行了系统的比较分析。本文结论强调，建立标准化的智能体网络协议对于打破数据孤岛、实现异构智能体协作、构建人工智能原生数据网络，以及最终实现一个开放高效的智能体网络至关重要，并呼吁所有利益相关方积极参与W3C的标准化进程。
 
-。
+## 引言：从语义网未竟的愿景到智能体网络的曙光
 
-This paper explores the evolution from the vision of the Semantic Web to the emerging Agentic Web, and analyzes the necessity of establishing standardized agent network protocols. Despite the forward-thinking concept of the Semantic Web proposed twenty years ago, it was not fully realized due to the limitations of artificial intelligence capabilities at that time. With the rapid development of modern AI technologies such as Large Language Models (LLMs), agents now possess the ability to autonomously execute tasks, perform complex reasoning, and solve multi-step problems, thus giving rise to the Agentic Web. Through systematic analysis, this paper identifies four core trends of the agent network: agents replacing traditional software as internet infrastructure, universal interconnection between agents, protocol-based native connection patterns, and agents' autonomous organization and collaboration capabilities. Meanwhile, the research reveals three major challenges that the current internet architecture poses to the development of the Agentic Web: data silos limiting the quality of agent decision-making, human-machine interfaces hindering agent interaction efficiency, and the absence of standard protocols impeding agent collaboration. In response to these challenges, this paper elaborates on the design principles and core requirements for agent network protocols, and provides a systematic comparison and analysis of current major agent network protocol initiatives (MCP, A2A, ACP, ANP, etc.). The conclusion emphasizes that establishing standardized agent network protocols is crucial for breaking down data silos, enabling heterogeneous agent collaboration, building AI-native data networks, and ultimately realizing an open and efficient Agentic Web, while calling on all stakeholders to actively participate in W3C's standardization process.
+二十年前，蒂姆·伯纳斯-李及其合作者富有远见地提出了语义网的概念，其核心目标是创建一个以数据为中心、机器可读的万维数据网，使计算机与人类能够更高效地协作。这一概念描绘了一个智能化的未来：日常交易、行政事务和各种生活场景将通过机器对机器的对话由“智能体”自动完成。为实现这一目标，语义网计划通过XML、RDF和本体论等技术为网络上的信息赋予明确的语义定义，使软件智能体能够自主浏览网页，代表用户高效执行复杂任务。
 
-Introduction: From the Unfulfilled Vision of the Semantic Web to the Dawn of the Agentic Web
+**待办事项**：本节需要进一步发展和完善。
 
-Twenty years ago, Tim Berners-Lee and his collaborators visionary proposed the concept of the Semantic Web, with the core objective of creating a data-centric, machine-readable web of data, enabling computers and humans to collaborate more efficiently. This concept depicted an intelligent future: daily transactions, administrative affairs, and various life scenarios would be automatically completed by "intelligent agents" through machine-to-machine dialogues. To achieve this goal, the Semantic Web planned to give clear semantic definitions to information on the web through technologies such as XML, RDF, and Ontology, enabling software agents to autonomously navigate between web pages and efficiently execute complex tasks on behalf of users.
+值得注意的是，语义网的原始概念已经包含了丰富的“智能体”思想。这些智能体被设想为能够代表用户自动执行任务的实体。以大语言模型（LLMs）为代表的技术突破，使智能体能够自主行动、进行复杂推理并解决多步骤问题。这些智能体不再仅仅是被动工具，而已成为数字生态系统中的积极参与者。在此背景下，“智能体网络”或“智能体互联网”的概念应运而生。这一新的网络范式将智能体视为主要参与者，积极与网络资源、服务和其他智能体互动，共同实现用户目标。智能体网络继承了语义网的核心愿景，并利用先进的人工智能能力，致力于构建一个由自主、智能、高效协作的智能体组成的生态系统，逐步将语义网关于机器智能高效处理信息、有效辅助人类的理想变为现实。
 
-TODO: This section needs further development and refinement.
+这一变革预示着用户交互模式的根本转变——从以人为中心通过浏览器点击浏览，转向由智能体驱动的以智能体为中心的交互与协作。在这一新模式中，智能体将直接与其他智能体自主交互，自动完成任务，并根据用户偏好和上下文提供个性化体验。这种以智能体为主导的模式不仅仅是对现有网络的增量更新，而可能引发互联网架构和交互逻辑的深刻变革。用户获取信息的方式也将发生变化，从通过界面主动查询信息，转变为智能体主动执行任务并交付结果，甚至可能绕过传统网站界面。这将推动网络服务设计方法、发现机制和交互模式的全面创新，将互联网推向一个新的发展阶段。
 
-Notably, the original concept of the Semantic Web already included rich "agent" ideas. These agents were envisioned as entities that could automatically execute tasks on behalf of users. The technological breakthroughs represented by Large Language Models (LLMs) have enabled agents to act autonomously, perform complex reasoning, and solve multi-step problems. These agents are no longer just passive tools, but have become active participants in the digital ecosystem. Against this background, the concept of the "Agentic Web" or "Internet of Agents" has emerged. This new network paradigm views agents as primary actors, actively interacting with network resources, services, and other agents to collectively accomplish user goals. The Agentic Web inherits the core vision of the Semantic Web and, leveraging advanced AI capabilities, is committed to building an ecosystem composed of autonomous, intelligent, and efficiently collaborative agents, gradually making the Semantic Web's ideal of machine intelligence efficiently processing information and effectively assisting humans a reality.
+## 智能体网络的潜在趋势
 
-This transformation heralds a fundamental change in user interaction patterns—from human-centered clicking and browsing through browsers to agent-centered interactions and collaborations driven by agents. In this new model, agents would autonomously interact directly with other agents, automatically complete tasks, and provide personalized experiences based on user preferences and context. This agent-dominated model is not just an incremental update to the existing network, but may trigger profound changes in internet architecture and interaction logic. The way users access information would also change, from actively querying information through interfaces to agents actively executing tasks and delivering results, possibly bypassing traditional website interfaces. This would promote a comprehensive innovation in the design methods, discovery mechanisms, and interaction modes of network services, pushing the internet into a new stage of development.
+正如语义网的愿景曾为互联网发展开辟了新的可能性一样，如今，以智能体为中心的智能体网络可能正引领互联网走向一个充满机遇和变革的新时代。这一转变不仅意味着技术进步，还可能代表互联网底层架构和用户交互逻辑的深刻变革。这种由智能体驱动的范式转变可能体现在以下四个关键趋势中。
 
-Potential Trends of the Agentic Web
+### 智能体可能推动传统软件的全面升级
 
-Just as the vision of the Semantic Web once opened up new possibilities for internet development, today, the Agent-centric Agentic Web may be leading the internet toward a new era full of opportunities and transformations. This
-      shift not only suggests technological advancement but also could represent a profound revolution in the underlying architecture of the internet and user interaction logic. This agent-driven paradigm shift is potentially manifested in the following four key trends.
+随着智能体技术的持续发展，我们可能正站在传统软件系统升级的转折点上。智能体有潜力成为下一代互联网的重要基础设施，并可能重塑人们与数字世界互动的方式。在个人层面，个人智能体可能成为用户访问互联网的主要入口，大多数现有网站和应用程序可能会逐步实现智能体化，通过智能体对智能体的交互来传递相应的功能和服务。与依赖手动操作的界面式应用相比，智能体在信息整合、意图识别、决策支持和多模态场景交互方面可能展现出显著优势，可能为用户带来数量级的用户体验提升。
 
-Agents May Drive the Comprehensive Upgrade of Traditional Software
+在企业层面，企业可以部署企业智能体，以提高内部业务流程自动化，并在外部提供更加智能化和个性化的用户体验和服务。
 
-With the continuous evolution of agent technology, we may be standing at a turning point for the upgrade of traditional software systems. Agents have the potential to become important infrastructure for the next generation of the internet and may reshape how people interact with the digital world. At the individual level, personal agents could become the main entry points for users to access the internet, and most existing websites and apps might gradually become agent-enabled, delivering corresponding functions and services through agent-to-agent interactions. Compared to interface-based applications that rely on manual operations, agents may demonstrate significant advantages in information integration, intent recognition, decision support, and multimodal scenario interaction, possibly bringing users order-of-magnitude improvements in user experience.
+与此同时，个人智能体可能直接与企业智能体对接，实现更加精准、高效和安全的服务体验。这种以个人智能体与企业智能体之间点对点、直接连接为特征的新连接模式正在逐步成形，预示着一个更加灵活、智能和去中心化的互联网架构即将到来。
 
-At the enterprise level, companies could deploy enterprise agents to improve internal business process automation and provide more intelligent and personalized user experiences and services externally.
+### 智能体将实现普遍互联
 
-Meanwhile, personal agents might connect directly with enterprise agents to achieve more precise, efficient, and secure service experiences. This new connection paradigm characterized by point-to-point, direct connections between personal agents and enterprise agents is beginning to take shape, suggesting that a more flexible, intelligent, and decentralized internet architecture could be on the horizon.
+# 翻译
 
-Agents Would Achieve Universal Interconnection
+在代理网络（Agentic Web）的格局中，智能体不再是孤立的操作单元，而是可以形成高度互联、协作演化的网络系统。实现任意智能体之间的自由连接，可以从根本上打破当前互联网“平台碎片化”和“数据孤岛”的结构限制，使信息能够在不同领域和系统之间自由流动。这种互联不仅意味着数据互操作性，还代表了智能体动态获取和组合跨平台、跨场景上下文信息的能力，从而在服务个人用户或组织决策时展现出更强的综合感知和推理能力。同时，开放连接机制使智能体能够根据需要调用网络范围的工具和能力资源，构建更复杂、更深度的协作链。在此趋势驱动下，智能体之间的交互可能逐渐取代以人为中心的交互方式，成为未来互联网最核心、最主要的连接形式。
 
-In the landscape of the Agentic Web, agents are no longer isolated operating units but may form a highly interconnected, collaboratively evolving network system. Enabling free connections between any agents could fundamentally break the structural limitations of "platform fragmentation" and "data silos" in the current internet, allowing information to flow freely between different domains and systems. This interconnection not only means data interoperability but also could represent agents' ability to dynamically acquire and combine cross-platform, cross-scenario contextual information, thereby demonstrating stronger comprehensive perception and reasoning capabilities when serving individual users or organizational decision-making. At the same time, open connection mechanisms may enable agents to call upon network-wide tools and capability resources as needed, building more complex and deeper collaboration chains. Driven by this trend, interactions between agents might gradually replace human-centered interaction methods, becoming the most core and primary form of connection in the future internet.
+**智能体可使用原生协议进行连接和交互**
 
-Agents May Use Native Protocols for Connection and Interaction
+目前，人工智能与互联网的交互主要依赖以人为中心的界面方法，如计算机操作使用（Computer Use）和浏览器操作使用（Browser Use）。虽然这些交互路径为人工智能提供了初步的访问能力，但它们本质上是为人机交互而设计的，可能无法充分发挥人工智能在信息解析、语义处理和自动化执行方面的能力。事实上，人工智能更擅长处理结构化数据、语义标注信息和明确的函数调用，而非复杂多变的网页HTML或前端界面。因此，未来的代理网络可能需要开发一套专为人工智能设计的网络协议系统，使智能体能够以机器可读、语义清晰的方式直接交互。这类协议可以发挥类似于人类互联网中HTTP的作用，成为支撑代理网络的基础通信标准。基于此协议系统，还将出现一个专为人工智能设计的、全新的数据网络，使智能体更易于访问和操作。
 
-Currently, AI's interaction with the internet primarily relies on human-centered interface methods, such as Computer Use and Browser Use. While these interaction paths provide AI with preliminary access capabilities, they are essentially designed for human users and may struggle to fully leverage AI's capabilities in information parsing, semantic processing, and automated execution. In fact, AI excels at handling structured data, semantically annotated information, and explicit function calls, rather than complex and variable webpage HTML or frontend interfaces. Therefore, the future Agentic Web may require the development of a network protocol system natively designed for AI, allowing agents to interact directly in a machine-readable, semantically clear manner. Such protocols could play a role similar to HTTP in the human internet, becoming the foundational communication standard supporting the agent network. Based on this protocol system, an entirely new data network specifically designed for AI, more accessible and operable by agents, would also emerge.
+**智能体可实现自组织和协作**
 
-Agents Could Self-Organize and Collaborate
+代理网络演化的另一个关键趋势是，智能体可能具备更广泛的自主组织和协作能力。我们认为，在标准化协议的支持下，智能体可以通过自然语言进行动态协商，快速识别彼此的能力、意图和需求，并在无需预设接口的情况下自主形成协作关系并完成任务分工。这种灵活、高度自适应的交互模式有助于突破传统系统依赖静态接口和人工编排的限制，显著提高网络运行效率和任务响应速度，同时大幅降低人工干预和集成成本。随着协作机制持续演进，一个自驱动、高度可组合、能快速响应的代理网络生态系统可能逐步形成，为复杂任务处理和多智能体系统运行提供坚实基础。
 
-Another key trend in the evolution of the Agentic Web is that agents might possess broader capabilities for autonomous organization and collaboration. We believe that with the support of standardized protocols, agents could dynamically negotiate through natural language, quickly identify each other's capabilities, intentions, and needs, and autonomously form collaborative relationships and complete task divisions without preset interfaces. This flexible, highly adaptive interaction mode may help break through the limitations of traditional systems that rely on static interfaces and manual orchestration, significantly improving network operational efficiency and task response speed while greatly reducing human intervention and integration costs. As collaborative mechanisms continue to evolve, an Agentic Web ecosystem that is self-driven, highly composable, and capable of rapid response may gradually take shape, providing a solid foundation for complex task processing and multi-agent system operations.
+总之，代理网络的兴起不仅表明智能体可以在各种应用中发挥更大作用，也预示着互联网基础设施和交互范式可能面临重塑。要推动这一演进方向，构建智能体网络的新协议体系已成为迫切需求，从而为智能体充分释放其能力提供必要的基础设施和标准支撑。
 
-In summary, the rise of the Agentic Web not only suggests that agents could play a greater role in various applications but also indicates a possible reshaping of internet infrastructure and interaction paradigms. To move in this evolutionary direction, there is an urgent need to build a new protocol system for agent networks, thereby providing the necessary infrastructure and standard support for agents to fully unleash their capabilities.
+**代理网络的挑战：当前互联网的局限性与标准化交互的迫切需求**
 
-Challenges of the Agentic Web: Limitations of the Current Internet and the Urgent Need for Standardized Interaction
+随着人工智能技术的发展，智能体正逐渐成为继网站和应用程序之后互联网生态系统的新一代核心参与者。然而，代理网络的加速演进也暴露了当前互联网技术基础和连接范式的诸多局限性。如果这些问题得不到解决，将严重制约智能体系统的可扩展性和协作效率。主要挑战包括以下三个方面：
 
-With the development of AI technology, agents are gradually becoming the new generation of core participants in the internet ecosystem, following websites and applications. However, the accelerated evolution of the Agentic Web also exposes many limitations in the technical foundation and connection paradigms of the current internet. If these issues are not addressed, they would severely constrain the scalability and collaborative efficiency of agent systems. The main challenges include the following three aspects:
+**缺乏标准协议阻碍智能体协作**：智能体缺乏统一的通信语言和协作规范。虽然自然语言提供了一种通信手段，但不足以支撑大规模、可靠、自动化的智能体协作。建立标准化协议是智能体网络化并发挥集体智能的关键。
 
-Lack of Standard Protocols Impeding Agent Collaboration
+**人机界面制约智能体交互效率**：大多数现有网络服务通过图形用户界面（GUI）为人类设计。智能体需要模拟人类操作来使用这些服务，这使得过程复杂、效率低下且容易出错。迫切需要为智能体提供原生的、机器可读的接口协议，以实现直接、高效的自动化交互。
 
-: Agents lack unified communication languages and collaboration norms. While natural language provides a means of communication, it is insufficient to support large-scale, reliable, automated agent collaboration. Establishing standardized protocols is key to networking agents and leveraging collective intelligence.
+**数据孤岛限制智能体决策质量**：智能体需要整合大量信息以做出高质量决策。没有标准协议，智能体在身份认证和相互通信方面面临困难，当前互联网现有的“数据孤岛”也将继续难以打破。这阻止了智能体获取完整的上下文信息，严重制约了其分析、推理和决策能力。
 
-Human-Machine Interfaces Hindering Agent Interaction Efficiency
+这些挑战，尤其是缺乏标准化智能体网络协议的问题，将导致未来智能体生态系统碎片化。大量异构智能体将成为“智能体孤岛”，难以有效实现互操作和协作，这不仅限制了代理网络的整体潜力，也大幅增加了集成成本和复杂性。
 
-: Most existing network services are designed for humans through graphical user interfaces (GUIs). Agents need to simulate human operations to use these services, making the process complex, inefficient, and error-prone. There is an urgent need to provide native, machine-readable interface protocols for agents to enable direct and efficient automated interactions.
+面对这一局面，建立标准化的智能体网络协议已成为构建真正代理网络的迫切优先事项。这类协议旨在为来自不同平台和供应商的智能体提供统一的发现、识别、验证、通信和协作框架，从而克服互操作障碍，确保安全高效的交互。W3C人工智能代理协议社区组的成立及其使命是对这一需求的积极响应。标准化不仅是技术要求，也是防止代理网络走向割裂、充分发挥其网络效应、实现“数十亿智能体”协作愿景的战略基石。
 
-Data Silos Limiting Agent Decision Quality
+**定义蓝图：智能体网络协议的关键问题和核心需求**
 
-: Agents need to integrate extensive information to make high-quality decisions. Without standard protocols, agents face difficulties in identity authentication and communication with each other, and the existing "data silos" on the current internet would remain difficult to break. This prevents agents from obtaining complete contextual information, severely constraining their analytical, reasoning, and decision-making capabilities.
+为了解决第3章提出的挑战并充分释放代理网络的潜力，设计和实施标准化的智能体网络协议至关重要。这些协议不仅是技术规范，更是构建可互操作、可信赖、高效的智能体生态系统的基石。全面的智能体网络协议框架需要解决一系列关键问题，并满足特定的功能和非功能需求。
 
-These challenges, especially the lack of standardized agent network protocols, would lead to fragmentation of the agent ecosystem in the future. Numerous heterogeneous agents would become "agent islands," making it difficult to interoperate and collaborate effectively, not only limiting the overall potential of the Agentic Web but also significantly increasing integration costs and complexity .
+**智能体网络协议旨在解决的关键问题**
 
-Faced with this situation, establishing standardized agent network protocols has become an urgent priority for building a truly Agentic Web. Such protocols aim to provide a unified framework for discovery, identification, verification, communication, and collaboration among agents from different platforms and vendors, thereby overcoming interoperability barriers and ensuring secure and efficient interactions. The establishment of the W3C AI Agent Protocol Community Group and its mission is an active response to this need. Standardization is not only a technical requirement but also a strategic cornerstone to prevent the Agentic Web from becoming balkanized and to fully leverage its network effects and realize the vision of "billions of agents" working collaboratively.
+**互联互通与打破数据孤岛**：协议需要提供机制，使由不同平台和开发者创建的智能体能够发现、验证、连接和相互通信，从而打破当前互联网上普遍存在的数据孤岛。这要求协议支持跨域通信，促进信息自由流动，确保智能体能够访问高质量决策所需的完整上下文信息。
 
-Defining the Blueprint: Key Issues and Core Requirements for Agent Network Protocols
+# 异构代理之间的协作
 
-To address the challenges presented in Chapter 3 and fully leverage the potential of the Agentic Web, designing and implementing standardized agent network protocols is crucial. These protocols are not just technical specifications but cornerstones for building an interoperable, trustworthy, and efficient agent ecosystem. A comprehensive agent network protocol framework needs to address a series of key issues and meet specific functional and non-functional requirements.
+代理网络（Agentic Web）将由大量具有不同架构、能力和目标的异构代理组成。协议必须能够解决这些异构代理之间的通信和协作问题，例如通过标准化消息格式、交互模式以及能力描述机制，使它们能够相互理解并协同工作。
 
-Key Issues That Agent Network Protocols Aim to Solve
+# 兼容性及标准复用
 
-Interconnection and Breaking Down Data Silos
+为促进广泛采用和集成，代理网络协议应尽可能与现有成熟的Web标准和技术（如HTTP、WebRTC、OpenAPI、WoT等）兼容并复用。这不仅降低了开发和部署门槛，也有助于充分利用现有网络基础设施的稳定性和安全性。
 
-: Protocols need to provide mechanisms for agents created by different platforms and developers to discover, verify, connect, and communicate with each other, thereby breaking down the data silos prevalent in the current internet. This requires protocols to support cross-domain communication and promote the free flow of information, ensuring that agents can access complete contextual information needed for high-quality decision-making.
+# 建立信任并降低协作成本
 
-Collaboration Between Heterogeneous Agents
+在开放的代理网络中，代理之间的信任是核心问题。协议应包含用于建立和验证代理身份、信誉和能力的机制，以降低未知代理之间协作的风险和成本，促进可信赖的交互。
 
-: The Agentic Web would consist of a large number of heterogeneous agents with different architectures, capabilities, and goals. Protocols must be able to address communication and collaboration issues between these heterogeneous agents, for example, through standardized message formats, interaction patterns, and capability description mechanisms, enabling them to understand each other and work together.
+# 高效协作与隐私保护交互模型
 
-Compatibility and Standard Reuse
+协议需要定义代理之间的信息交互模式，同时确保协作效率和用户隐私及数据安全。这涉及对代理身份的可信验证、通信内容加密、支持选择性信息共享，以及定义不同粒度的访问控制机制。
 
-: To promote widespread adoption and integration, agent network protocols should be compatible with and reuse existing mature Web standards and technologies (such as HTTP, WebRTC, OpenAPI, WoT, etc.) whenever possible. This not only reduces development and deployment barriers but also helps fully leverage the stability and security of existing network infrastructure.
+# 代理网络协议的核心功能需求
 
-Building Trust and Reducing Collaboration Costs
+一个完整的代理网络协议应满足以下核心功能需求，以支持代理在代理网络中的有效运行：
 
-: In the open Agentic Web, trust between agents is a core issue. Protocols should include mechanisms for establishing and verifying agent identity, reputation, and capabilities to reduce the risks and costs of collaboration between unknown agents and promote trustworthy interactions.
+## 代理身份
 
-Efficient Collaboration and Privacy-Preserving Interaction Models
+建立统一的身份表示和验证机制，使代理能够在不同平台、服务和域之间进行可信的身份声明和身份认证，从而实现跨平台环境中的互操作性和信任传递。
 
-: Protocols need to define information interaction patterns between agents that ensure both collaboration efficiency and user privacy and data security. This would involve trustworthy verification of agent identities, encrypting communication content, supporting selective information sharing, and defining access control mechanisms of different granularities.
+## 代理描述
 
-Core Functional Requirements for Agent Network Protocols
+建立标准化的代理描述模型，用于表达代理信息、功能、接口和服务范围，使其他代理能够基于统一语义准确理解其能力边界，并实现自动解析和调用。
 
-A comprehensive agent network protocol should meet the following core functional requirements to support the effective operation of agents in the Agentic Web:
+## 代理发现
 
-Agent Identity
+支持代理基于语义匹配、任务需求或能力特征在网络中动态搜索和定位其他合适的代理，从而构建按需协作的分布式代理网络。
 
-: Build unified identity representation and verification mechanisms that enable agents to make trusted identity claims and authentication across different platforms, services, and domains, thereby achieving interoperability and trust transfer in cross-platform environments.
+## 代理数据交换
 
-Agent Description
+制定统一的数据格式和交互流程，用于代理之间可靠地传输信息、指令和上下文，确保跨代理通信中的语义一致性、结构标准化和协作有效性。
 
-: Establish standardized agent description models for expressing agent information, functions, interfaces, and service scope, allowing other agents to accurately understand their capability boundaries based on unified semantics, and enabling automatic parsing and invocation.
+## 代理能力调用
 
-Agent Discovery
+基于身份、描述和发现机制，建立通用的调用机制，支持一个代理调用另一个代理暴露的服务或接口，实现任务委托、流程编排和跨代理协作操作。调用过程需要覆盖包括接口发现、参数传递、权限验证和执行反馈在内的完整闭环，确保调用的准确性、安全性和可审计性。
 
-: Support agents in dynamically searching for and locating other suitable agents in the network based on semantic matching, task requirements, or capability characteristics, thereby building a distributed agent network for on-demand collaboration.
+# 代理身份机制的设计原则
 
-Agent Data Exchange
+正如本文第3章所讨论的，当前互联网中的"数据孤岛"现象严重制约了代理的决策质量和协作效率。没有标准化的身份认证机制，代理之间无法建立可信连接，跨平台信息流动和协作也就无从谈起。因此，代理身份机制的设计不仅是技术要求，更是实现第2章所述"代理普遍互联"愿景的关键基础。为此，代理身份机制的设计应遵循以下核心原则：
 
-: Formulate unified data formats and interaction processes for reliable transmission of information, instructions, and context between agents, ensuring semantic consistency, structural standardization, and collaborative effectiveness in cross-agent communication.
+## 认证与授权的分层设计
 
-Agent Capability Invocation
+代理身份机制首先应聚焦于解决"认证"这一根本问题，即通过密码学手段可靠地确认代理身份。基于公私钥系统的密码学身份是整个信任链的基础，也是所有后续交互和授权的起点。在此基础上，可以通过各种机制灵活扩展授权和权限管理等更高层次的需求，例如使用访问令牌进行会话级授权，或使用可验证凭证（Verifiable Credentials）进行细粒度属性证明和权限声明。必须强调的是，无论采用何种授权机制，密码学身份持有者始终是授权主体——令牌的发放和授权必须可追溯至原始密码学身份，确保授权链的完整性和可验证性。这种分层设计赋予身份机制良好的可扩展性——核心身份验证保持简单可靠，而授权策略可根据具体应用场景进行定制。
 
-: Based on identity, description, and discovery mechanisms, establish a universal invocation mechanism that supports one agent calling the services or interfaces exposed by another agent, enabling task delegation, process orchestration, and cross-agent collaborative operations. The invocation process needs to cover a complete loop including interface discovery, parameter passing, permission verification, and execution feedback, ensuring the accuracy, security, and auditability of the invocation.
+## 联邦身份架构
 
-Design Principles for Agent Identity Mechanisms
+可行的代理身份方案应借鉴电子邮件系统的成功经验——每个平台可以集中管理自己的账户系统，同时通过标准协议实现跨平台互联。这种联邦架构的核心在于采用类似Web DID的方法：每个平台在内部集中管理代理账户和密钥，但通过Web托管以统一方式对外发布分布式身份文档，使外部代理能够通过标准化解析流程获取可信的身份验证证据。正如电子邮件系统允许Gmail用户向Outlook用户发送邮件一样，代理身份机制应支持不同平台上代理之间的相互识别和认证。这一设计意味着现有的集中式标识符系统无需完全重构——只需在现有系统之上添加标准化的身份文档托管和发布机制，即可实现跨系统互操作。这种设计显著降低了技术实现门槛，有助于推动代理网络协议的广泛采用，并防止代理网络陷入本文第3章所警告的"碎片化"陷阱。
 
-As discussed in Chapter 3 of this paper, the "data silo" phenomenon in the current internet severely constrains the decision quality and collaboration efficiency of agents. Without standardized identity authentication mechanisms, agents cannot establish trusted connections, and cross-platform information flow and collaboration become impossible. Therefore, the design of agent identity mechanisms is not only a technical requirement but also a key foundation for realizing the vision of "universal interconnection between agents" described in Chapter 2. To this end, the design of agent identity mechanisms should follow these core principles:
+## 高效的跨平台认证流程
 
-Layered Design of Authentication and Authorization
+在代理之间的跨平台交互场景中，身份认证机制应尽量减少交互轮次，以降低协作成本并提高效率。理想情况下，代理应能够通过在首次请求中携带身份标识符和数字签名来完成验证，无需额外的握手或多轮确认。验证成功后，服务器可返回访问令牌，后续交互只需验证令牌，避免重复进行身份验证的开销。这种"首次请求即验证"的设计模式对于实现本文第4.1节所述的"高效协作"目标至关重要，特别是在代理需要频繁与多个服务器交互的场景中，能够显著降低延迟并提高整体协作效率。
 
-: Agent identity mechanisms should first focus on addressing the fundamental problem of "authentication"—that is, reliably confirming the identity of agents through cryptographic means. Cryptographic identity based on public-private key systems is the foundation of the entire trust chain and the starting point for all subsequent interactions and authorizations. On the basis of reliable authentication, higher-level requirements such as authorization and permission management can be flexibly extended through various mechanisms, such as access tokens for session-level authorization, or Verifiable Credentials (VCs) for fine-grained attribute proofs and permission claims. It must be emphasized that regardless of the authorization mechanism adopted, the cryptographic identity holder is always the subject of authorization—the issuance and authorization of tokens must be traceable to the original cryptographic identity, ensuring the integrity and verifiability of the authorization chain. This layered design gives the identity mechanism good extensibility—core identity verification remains simple and reliable, while authorization strategies can be customized according to specific application scenarios.
+## 双向认证
 
-Federated Identity Architecture
+# 中文翻译
 
-: A viable agent identity scheme should draw on the successful experience of email systems—each platform can manage its own account system in a centralized manner, while achieving cross-platform interconnection through standard protocols. The core of this federated architecture lies in adopting a Web DID-like approach: each platform internally manages agent accounts and keys in a centralized manner, but externally publishes distributed identity documents through web hosting in a unified manner, enabling external agents to obtain trusted identity verification evidence through standardized resolution processes. Just as email systems allow Gmail users to send emails to Outlook users, agent identity mechanisms should support mutual identification and authentication between agents on different platforms. This design means that existing centralized identifier systems do not need to be completely restructured—simply adding standardized identity document hosting and publishing mechanisms on top of existing systems enables cross-system interoperability. This design significantly lowers the threshold for technical implementation, helps promote wide adoption of agent network protocols, and prevents the Agentic Web from falling into the "fragmentation" trap warned about in Chapter 3 of this paper.
+在智能体交互场景中，除了服务端对客户端身份进行验证外，客户端可能还需要验证服务端智能体的身份。虽然HTTPS协议已通过TLS证书提供了基于域名的服务端身份验证，但基于DID的相互认证机制可提供额外价值：一方面，DID认证可以精确到具体的智能体实体，而不仅仅是验证域名所有权；另一方面，该机制使客户端和服务端能够使用一致的、去中心化的身份验证方法，不依赖传统的CA体系。在实现上，服务端可在响应中返回其DID标识符及相应签名，客户端可据此验证服务端智能体的真实身份。需注意的是，DID级别的相互认证与传输层安全（TLS）是互补而非替代关系——前者提供去中心化的细粒度身份保证，位于应用层；后者提供通信安全和基本的域名身份验证，位于传输层。
 
-Efficient Cross-Platform Authentication Process
+**分层授权机制**
 
-: In cross-platform interaction scenarios between agents, identity authentication mechanisms should minimize interaction rounds to reduce collaboration costs and improve efficiency. Ideally, agents should be able to complete verification by carrying identity identifiers and digital signatures in their first request, without requiring additional handshakes or multiple confirmation rounds. After successful verification, the server can return an access token, and subsequent interactions only need to verify the token, avoiding repeated identity verification overhead. This "verify-on-first-request" design pattern is crucial for achieving the "efficient collaboration" goal stated in Section 4.1 of this paper, especially in scenarios where agents need to frequently interact with multiple servers, significantly reducing latency and improving overall collaboration efficiency.
+如本文第4.3节所述，智能体网络协议应支持"人在环中"的可见性需求。身份与授权机制应能区分自动智能体授权和人工授权场景。对于常规、低风险操作（如查询公开信息、访问已授权服务），智能体可代表用户自动完成授权；而对于涉及重要资源或敏感操作（如支付、签署协议、访问私有数据）的请求，应支持人工确认流程。这种分层机制确保人类对关键决策保持最终控制权，在智能体自动化与用户安全之间实现平衡，是构建可信智能体网络（Agentic Web）的重要保障。
 
-Mutual Authentication
+**隐私保护设计**
 
-: In agent interaction scenarios, in addition to server-side verification of client identity, clients may also need to verify the identity of server-side agents. Although the HTTPS protocol already provides domain-name-based server identity verification through TLS certificates, DID-based mutual authentication mechanisms can provide additional value: on one hand, DID authentication can be precise to specific agent entities, rather than just verifying domain ownership; on the other hand, this mechanism allows clients and servers to use consistent, decentralized identity verification methods that do not rely on traditional CA systems. In implementation, the server can return its DID identifier and corresponding signature in the response, and the client can use this to verify the true identity of the server-side agent. It should be noted that DID-level mutual authentication and transport layer security (TLS) are complementary rather than substitutes—the former provides decentralized fine-grained identity assurance at the application layer, while the latter provides communication security and basic domain name identity verification at the transport layer.
+如本文第4.3节所强调，协议设计应嵌入隐私保护机制，避免不必要的数据暴露。在身份层面，这意味着支持"多身份策略"——即用户或智能体可针对不同场景拥有多个独立身份标识符（如维护社交关系、日常购物、服务订阅等），各身份之间相互隔离，防止第三方通过身份关联追踪用户的完整行为轨迹。此外，身份标识符应支持周期性更换或临时身份生成，以进一步增强隐私保护能力。此设计使用户能够在享受智能体网络便利的同时保持对个人数据的控制权，符合相关隐私法规，是实现本文第7章所述"开放网络"愿景的必要条件——真正开放的网络应赋予用户选择权，而非以隐私换取互联互通。
 
-Tiered Authorization Mechanism
+**基于DID的身份：参考实现方案**
 
-: As stated in Section 4.3 of this paper, agent network protocols should support "human-in-the-loop" observability requirements. Identity and authorization mechanisms should be able to distinguish between automatic agent authorization and human manual authorization scenarios. For routine, low-risk operations (such as querying public information, accessing already authorized services), agents can automatically complete authorization on behalf of users; while for requests involving important resources or sensitive operations (such as payments, signing agreements, accessing private data), human confirmation processes should be supported. This tiered mechanism ensures that humans retain ultimate control over critical decisions, achieving a balance between agent automation and user security, and is an important safeguard for building a trustworthy Agentic Web.
+上述设计原则确立了智能体身份机制的需求。本节介绍万维网联盟（W3C）的去中心化标识符（DID），具体为基于Web的智能体DID方法（did:wba），作为满足这些需求并克服传统认证方案局限性的参考实现方法。
 
-Privacy-Preserving Design
+**为何传统方案难以满足智能体网络需求**
 
-: As emphasized in Section 4.3 of this paper, protocol design should embed privacy protection mechanisms to avoid unnecessary data exposure. At the identity level, this means supporting a "multi-identity strategy"—that is, a user or agent can have multiple independent identity identifiers for different scenarios (such as maintaining social relationships, daily shopping, service subscriptions, etc.), with each identity isolated from the others to prevent third parties from tracking users' complete behavioral trajectories through identity correlation. Additionally, identity identifiers should support periodic replacement or temporary identity generation to further enhance privacy protection capabilities. This design enables users to maintain control over their personal data while enjoying the convenience of agent networks, complies with relevant privacy regulations, and is a necessary condition for realizing the "open network" vision described in Chapter 7 of this paper—a truly open network should give users the power of choice, rather than trading privacy for interconnection.
+智能体网络面临独特挑战：来自不同平台的智能体必须动态建立信任，通常没有任何预先存在的关系。传统认证方案并非为此场景设计：
 
-DID-Based Identity: A Reference Implementation Approach
+**OAuth的局限性**：OAuth 2.0假设存在双方都认可的受信任授权服务器。在多平台智能体场景中，这带来了重大挑战：平台X的智能体要访问平台Y的智能体，要么平台Y必须预先将平台X注册为受信任的OAuth客户端，要么双方都信任同一个身份提供商。对于N个平台自由互操作，这需要O(N²)的双边信任协议或依赖一个占主导地位的中心化身份提供商——两者都难以扩展或保持去中心化。新平台面临"冷启动"问题：在与现有平台建立OAuth关系之前无法参与。
 
-The design principles outlined above establish the requirements for agent identity mechanisms. This section presents Decentralized Identifiers (DIDs), specifically the Web-Based Agent DID method (did:wba), as a reference implementation approach that addresses these requirements while overcoming limitations of traditional authentication schemes.
+**传统PKI的局限性**：虽然PKI提供强大的加密保证，但在智能体身份方面存在局限：TLS证书验证的是域名所有权，而非单个智能体身份。同一域名上的多个智能体共享同一证书。PKI设计用于传输层安全，而非对等智能体之间的应用层身份验证。跨域证书验证依赖中心化的证书颁发机构（CA）信任链。在动态生态系统中，智能体频繁创建和退役，证书管理开销很高。
 
-Why Traditional Approaches Fall Short for Agent Networks
+**DID如何解决这些差距**
 
-Agent networks present a unique challenge: agents from different platforms must establish trust
+W3C去中心化标识符（DID）[[DID-CORE]为智能体身份提供了基础，解决了上述局限：
 
-dynamically
+**自主权身份**：每个智能体拥有自己控制的加密身份（公钥-私钥对），独立于任何中心权威机构。
 
-, often without any pre-existing relationship. Traditional authentication approaches were not designed for this scenario:
+**自托管身份文档**：包含公钥的DID文档托管在智能体自己的域名上，消除了对第三方身份提供商的依赖。
 
-OAuth Limitations
+**直接验证**：任何智能体都可以通过获取对方的DID文档并验证加密签名来验证其身份——无需预先建立关系。
 
-: OAuth 2.0 assumes the existence of a trusted authorization server that both parties recognize. In multi-platform agent scenarios, this creates significant challenges:
+**联邦架构**：与电子邮件类似，每个平台集中管理自己的账户，同时通过标准协议实现跨平台互操作性。
 
-For Platform X's agent to access Platform Y's agent, either Platform Y must pre-register Platform X as a trusted OAuth client, or both must trust a common identity provider.
+**基于Web的智能体DID方法（did:wba）**
 
-For N platforms to interoperate freely, this requires either O(N²) bilateral trust agreements or dependence on a dominant centralized identity provider—neither of which scales well or preserves decentralization.
+did:wba方法专门针对智能体通信场景扩展了did:web规范。它继承了基于Web的DID的简洁性，同时增加了针对智能体交互优化的跨平台认证流程。
 
-New platforms face a "cold start" problem: they cannot participate until they establish OAuth relationships with existing platforms.
+**关键特性**：
 
-Traditional PKI Limitations
+- **无需区块链**：与did:btc、did:ethr或did:ion不同，did:wba使用标准Web基础设施（DNS、HTTPS、Web服务器）。这消除了区块链的可扩展性担忧，降低了部署复杂性。
+- **熟悉的基于URL的解析**：如`did:wba:example.com:user:alice`这样的DID解析为`https://example.com/user/alice/did.json`——托管在标准Web服务器上的简单JSON文档。
+- **单次请求认证**：智能体在第一个HTTP请求中包含其DID和加密签名。服务器获取DID文档，验证签名，并返回访问令牌——全部在一次往返中完成。
+- **支持分层授权**：DID文档可包含分别用于常规智能体操作和需要人工授权的敏感操作（humanAuthorization）的不同验证方法，支持前述的分层授权原则。
 
-: While PKI provides strong cryptographic guarantees, it has limitations for agent identity:
+**认证流程**：
 
-TLS certificates verify
+1. 客户端智能体在第一个请求的HTTP Authorization头中包含其DID和签名。
+2. 服务器从客户端域名获取客户端的DID文档（如`https://client-domain.com/agent/did.json`）。
+3. 服务器使用DID文档中的公钥验证签名。
+4. 验证成功后，服务器返回用于后续请求的访问令牌。
 
-domain ownership
+**结果**：跨平台认证在一次往返中完成，无需预先注册。
 
-, not individual agent identity. Multiple agents on the same domain share a single certificate.
+图1：展示智能体如何使用DID进行单次请求认证而无需预先注册的跨平台认证流程
 
-PKI is designed for transport-layer security, not application-layer identity verification between peer agents.
+**实际场景：多平台智能体协作**
 
-Cross-domain certificate verification relies on centralized Certificate Authority (CA) trust chains.
+# 中文翻译
 
-Certificate management overhead is high for dynamic ecosystems where agents are frequently created and retired.
+考虑一个旅行预订场景，其中用户的个人代理（平台A）需要与多个服务代理协调：
 
-How DID Addresses These Gaps
+- 向酒店代理（平台B）查询酒店可用性
+- 通过航空公司代理（平台C）预订航班
+- 通过租车代理（平台D）安排租车
 
-W3C Decentralized Identifiers (DIDs) [[DID-CORE]] provide a foundation for agent identity that addresses the limitations above:
+**使用OAuth**：平台A需要预先在平台B、C和D注册为OAuth客户端——或者所有平台都需要信任一个共同的Identity Provider（这会造成中心化）。添加新的旅行服务平台需要在任何协作发生之前建立新的OAuth关系。
 
-Self-Sovereign Identity
+**使用DID**：每个代理只需在其域名上托管一个DID文档。平台A的代理可以通过获取平台B、C和D的DID文档并验证签名来立即验证和交互。新平台只需托管DID文档即可加入生态系统——无需双边协议或中心化协调。这实现了第2章描述的"代理之间的通用互联互通"愿景。
 
-: Each agent has its own cryptographic identity (public-private key pair) that it controls, independent of any central authority.
+**图2**：跨多个平台的代理之间的信息交互，展示了无需预先建立信任关系的去中心化协作
 
-Self-Hosted Identity Documents
+## 解决采用顾虑
 
-: DID documents containing public keys are hosted on the agent's own domain, eliminating dependence on third-party identity providers.
+一个常见的顾虑是DID引入了不熟悉的概念和学习成本。然而，did:wba的设计旨在最小化这一障碍：
 
-Direct Verification
+**概念简洁性**：DID的核心其实就是"域名 + 路径 + 公钥"。其格式类似于熟悉的模式：
 
-: Any agent can verify another agent's identity by fetching its DID document and verifying cryptographic signatures—no pre-established relationship required.
+- 邮箱：`alice@example.com`
+- DID：`did:wba:example.com:user:alice`
 
-Federated Architecture
+**增量采用**：现有系统无需重构。组织可以在现有认证机制旁边添加DID文档托管，实现渐进式迁移。DID文档只是一个通过HTTPS服务的JSON文件——无需特殊基础设施。
 
-: Like email, each platform manages its own accounts centrally while achieving cross-platform interoperability through standard protocols.
+**熟悉的构建块**：did:wba使用Web开发者已经熟悉的技术：HTTP、JSON、公钥密码学和DNS。认证流程类似于API密钥认证，并具有密码学验证的额外优势。
 
-The Web-Based Agent DID Method (did:wba)
+**工具可用性**：参考实现和库已支持常用编程语言，降低了实现工作量。
 
-The did:wba method extends the did:web specification specifically for agent communication scenarios. It inherits the simplicity of web-based DIDs while adding cross-platform authentication processes optimized for agent interactions.
+## 代理网络协议的关键非功能性需求
 
-Key Characteristics
+除了核心功能外，代理网络协议还必须满足一系列关键非功能性需求，以确保其在实际应用中的安全性、可用性、可扩展性和可控性：
 
-:
+**安全性**：提供完整的身份认证、访问控制、数据完整性验证和通信加密机制，具备抵御常见攻击（如伪造、篡改、重放等）的能力，确保代理之间安全可信的交互。
 
-No Blockchain Required
+**隐私保护**：协议设计应嵌入隐私保护机制，避免不必要的数据暴露和共享，支持在代理交互过程中最小化个人信息传输，并符合相关法律法规要求。
 
-: Unlike did:btc, did:ethr, or did:ion, did:wba uses standard web infrastructure (DNS, HTTPS, web servers). This eliminates blockchain scalability concerns and reduces deployment complexity.
+**可扩展性**：协议设计应具备良好的扩展能力，能够处理不断增加的代理数量和交互量，而不会造成显著的性能下降。
 
-Familiar URL-Based Resolution
+**灵活性**：协议设计应具备良好的演进能力，能够灵活适应未来AI能力演进、新代理角色的出现以及不断变化的交互模式。
 
-: A DID like
+**兼容性**：在适当情况下确保与现有Web协议和标准的兼容性，并使来自不同开发者/平台的代理能够协作工作。
 
-did:wba:example.com:user:alice
+**可审计性**：支持对代理行为和交互过程进行全面记录、追踪和审查，确保在争议或异常行为发生时能够进行验证、分析和责任判定。
 
-resolves to
+**可观测性**：支持人在回路场景，实现对代理行为的监控和控制。
 
-https://example.com/user/alice/did.json
+通过解决上述关键问题并满足这些核心需求，标准化的代理网络协议将为构建繁荣、协作和可信的代理网络（Agentic Web）奠定坚实基础。
 
-—a simple JSON document hosted on a standard web server.
+## 典型代理协议概述
 
-Single-Request Authentication
+本节旨在对当前一些新兴的代理协议提供中立概述，重点介绍它们如何应对前述挑战和需求。这些协议各自针对互操作性和部署场景的不同方面，共同构成了当前代理通信标准化的探索前沿。
 
-: Agents include their DID and a cryptographic signature in the first HTTP request. The server fetches the DID document, verifies the signature, and returns an access token—all in a single round-trip.
+### 模型上下文协议（Model Context Protocol, MCP）
 
-Tiered Authorization Support
+**描述**：MCP是由Anthropic发起并现已开源的广泛采用的开放规范，旨在规范应用程序如何向大语言模型（LLM）提供上下文。它被形象地描述为"AI应用的USB-C接口"，旨在解决AI模型连接外部数据源、工具和系统（如云平台、企业数据库、本地文件）时面临的M×N集成挑战。通过提供统一接口，MCP简化了AI模型与外部世界之间的交互，减少了为每个新数据源或工具构建自定义连接器的需求[[ref11]]。
 
-: DID documents can include separate verification methods for routine agent operations versus sensitive operations requiring human authorization (humanAuthorization), supporting the tiered authorization principle described earlier.
+**关键特性/机制**：MCP采用客户端-服务器架构，其中AI应用程序（如聊天助手、AI驱动的IDE）充当MCP客户端，连接到一个或多个暴露能力或数据的MCP服务器。其核心交互原语包括：工具（可动态调用的可执行函数，如API调用）、资源（供AI参考的结构化静态数据流）和提示（可复用的对话工作流或模板）。协议层处理消息封装、请求/响应映射和通知传递，支持多种传输协议，如用于本地进程的Stdio和用于网络服务的HTTP+SSE。
 
-Authentication Flow
+**重点领域/目标挑战**：MCP的核心目标是：为LLM提供结构化上下文注入、实现工具和知识的灵活插拔、支持安全的基础设施集成，并确保跨不同LLM供应商的兼容性。它旨在增强AI模型的上下文感知和动态工具发现与执行能力。
 
-:
+**核心技术**：JSON-RPC（用于客户端-服务器接口）、HTTP、服务器推送事件（Server-Sent Events, SSE）。
 
-Client agent includes its DID and signature in the HTTP Authorization header of the first request.
+### 代理间协议（Agent-to-Agent Protocol, A2A）
 
-Server fetches the client's DID document from the client's domain (e.g.,
+**描述**：A2A是由Google发起并与超过50家行业合作伙伴共同推动的开放协议，旨在实现不同供应商使用不同框架构建的独立AI代理之间安全、无缝的通信、协作和行动协调。它旨在解决异构代理生态系统中的互操作性问题，允许代理在不暴露其内部状态、记忆或工具的情况下协同工作[[ref8]][[ref9]]。
 
-https://client-domain.com/agent/did.json
+**关键特性/机制**：A2A的核心架构围绕客户端代理和远程代理展开。代理通过"代理卡"（Agent Cards，JSON元数据文档）发布其身份、能力、技能、服务端点和认证要求，实现能力发现。协议支持任务管理生命周期，允许创建、发送和追踪任务状态，并能处理可能需要数小时甚至数天的长时间运行任务。A2A支持多种交互模态，包括文本、文件、结构化JSON数据，以及音频和视频流。
 
-).
+**重点领域/目标挑战**：A2A专注于实现不透明、自主代理之间的动态交互、能力共享和任务协调，特别是在企业级工作流中。它旨在打破代理孤岛、简化企业集成，并培育更加互联、更强大的AI生态系统。A2A解决的问题与MCP不同——MCP侧重于将代理与工具/数据连接，而A2A则专注于代理之间的协作。
 
-Server verifies the signature using the public key from the DID document.
+**核心技术**：
 
-Upon successful verification, server returns an access token for subsequent requests.
+**传输层**：HTTP(S)（作为传输层，需采用 TLS 加密），JSON-RPC 2.0（作为请求和响应的载荷格式），Server-Sent Events (SSE)（用于实现从服务器到客户端的实时流式通信，例如任务状态更新）。
 
-Result: Cross-platform authentication completed in a single round-trip, with no pre-registration required.
+## 代理网络协议（Agent Network Protocol, ANP）
 
-Figure 1: Cross-platform authentication flow showing how agents use DID for single-request authentication without pre-registration
+**描述**
 
-Practical Scenario: Multi-Platform Agent Collaboration
+：ANP 是一款开源协议，其愿景是成为"代理网络时代的 HTTP"，旨在为数十亿代理构建一个开放、安全、高效的协作网络。该协议旨在解决当前互联网基础设施在满足代理网络特定需求方面的不足。ANP 由开源社区开发和维护，致力于保持开放和中立的立场，社区承诺永不商业化 [[ref6]] [[ref7]]。
 
-Consider a travel booking scenario where a user's personal agent (Platform A) needs to coordinate with multiple service agents:
+**关键特性/机制**
 
-Query hotel availability from a hotel agent (Platform B)
+：ANP 主要解决互联网上代理的连接与协作问题，采用三层架构：
 
-Book flights through an airline agent (Platform C)
+**身份与加密通信层**
 
-Arrange car rental via a rental agency agent (Platform D)
+：基于 W3C DID（去中心化标识符）规范构建去中心化身份认证方案和端到端加密通信，使跨平台代理能够不依赖中心化系统进行相互认证。
 
-With OAuth
+**元协议层**
 
-: Platform A would need to be pre-registered as an OAuth client with Platforms B, C, and D—or all platforms would need to trust a common identity provider (creating centralization). Adding a new travel service platform would require establishing new OAuth relationships before any collaboration could occur.
+：用于代理之间协商通信协议的协议，是实现代理网络高效协作的自组织和自协商能力的关键。
 
-With DID
+**应用协议层**
 
-: Each agent simply hosts a DID document on its domain. Platform A's agent can immediately verify and interact with agents on Platforms B, C, and D by fetching their DID documents and verifying signatures. New platforms can join the ecosystem simply by hosting DID documents—no bilateral agreements or central coordination required. This enables the "universal interconnection between agents" vision described in Chapter 2.
+：基于语义网规范，使用 JSON-LD 和 schema.org 描述代理信息、能力和接口。代理的入口是代理描述文档（Agent Description Document）。采用 RFC 8615 设计代理发现机制，使用 W3C VC 实现代理之间交易的身份凭证记录，同时复用 OpenAPI、WebRTC 等众多现有规范。
 
-Figure 2: Information interaction between agents across multiple platforms, demonstrating decentralized collaboration without pre-established trust relationships
+图 3：ANP 三层协议架构，展示了身份层、元协议层和应用协议层及其交互关系
 
-Addressing Adoption Concerns
+**重点领域/目标挑战**
 
-A common concern is that DID introduces unfamiliar concepts and learning overhead. However, did:wba is designed to minimize this barrier:
+：ANP 旨在解决代理互联网的三个核心挑战：实现所有代理之间的互联互通，打破数据孤岛，确保 AI 能够获取完整的上下文信息；提供 AI 原生接口，通过 API 或通信协议高效地与数字世界交互，而非模拟人类操作；利用 AI 实现代理之间的自动组织和协商，构建更具经济效益的协作网络。该协议特别关注开放互联网环境中的去中心化发现与协作，以及跨异构领域的互操作性。
 
-Conceptual Simplicity
+**核心技术**
 
-: At its core, a DID is simply "domain + path + public key." The format mirrors familiar patterns:
+：W3C 去中心化标识符（DID）、JSON-LD、W3C 可验证凭证（VC）、端到端加密技术。
 
-Email:
+---
 
-alice@example.com
+## 代理连接协议（Agent Connect Protocol, ACP）
 
-DID:
+**描述**
 
-did:wba:example.com:user:alice
+：ACP 是一款开源协议，由思科（Cisco）主导，与 LangChain、Galileo 等合作伙伴在 AGNTCY 计划下共同开发，旨在为分布式系统中自主代理的协作和资源共享提供通信层 [[ref12]]。
 
-Incremental Adoption
+**关键特性/机制**
 
-: Existing systems do not require restructuring. Organizations can add DID document hosting alongside their existing authentication mechanisms, enabling gradual migration. The DID document is simply a JSON file served over HTTPS—no special infrastructure required.
+：ACP 采用 RESTful API 作为标准接口，定义了代理的交互方式，包括检索代理可执行的工作流、创建和管理上下文线程，以及运行代理。该协议支持有状态通信线程，允许代理在任务中进行协商和推理，并通过消息传递实现松耦合交互。代理发现通过代理目录（Agent Directory）和 OASF（开放代理模式框架，Open Agentic Schema Framework）文档实现，这些文档是标准化的 JSON 文件，描述了代理的能力、调用方法、输入/输出模式等。ACP 支持异步优先交互、多部分消息和可观测性功能。
 
-Familiar Building Blocks
+**重点领域/目标挑战**
 
-: did:wba uses technologies web developers already know: HTTP, JSON, public-key cryptography, and DNS. The authentication flow resembles API key authentication, with the added benefit of cryptographic verification.
+：ACP 主要解决企业环境中异构代理（在不同的技术栈或框架上构建）之间的通信障碍和协作效率问题。该协议旨在实现可扩展、标准化的多代理交互，使多个代理能够作为一个逻辑单元协同工作以完成复杂任务。
 
-Tooling Availability
+**核心技术**
 
-: Reference implementations and libraries are available for common programming languages, reducing implementation effort.
+：RESTful API、JSON（用于 OASF 文档和消息模式）。可与 LangGraph 等工作流框架集成。
 
-Key Non-Functional Requirements for Agent Network Protocols
+---
 
-In addition to core functionalities, agent network protocols must also meet a series of key non-functional requirements to ensure their security, usability, scalability, and controllability in real-world applications:
+## 代理通信协议（Agent Communication Protocol, ACP）
 
-Security
+**描述**
 
-: Provide complete mechanisms for identity authentication, access control, data integrity verification, and communication encryption, with capabilities to protect against common attacks (such as forgery, tampering, replay, etc.), ensuring secure and trustworthy interactions between agents.
+：代理通信协议（ACP）是 IBM 向 Linux 基金会贡献的开源标准，旨在为异构 AI 代理提供通用语言，以实现连接、协作和复杂任务执行。该协议的主要目标是消除供应商锁定，并通过开放的治理模式促进代理生态系统的发展 [[ref13]]。
 
-Privacy
+**关键特性/机制**
 
-: Protocol design should embed privacy protection mechanisms, avoid unnecessary data exposure and sharing, support minimizing the transmission of personal information during agent interactions, and comply with relevant legal requirements and regulations.
+：ACP 定义了标准化的 RESTful API，支持同步、异步和流式交互，采用点对点交互设计。其核心特性包括：
 
-Scalability
+**无需专用 SDK**
 
-: Protocol design should possess good scaling capabilities to handle increasing numbers of agents and interactions without significant performance degradation.
+：该协议设计为无需专用 SDK 即可实现交互，允许直接使用标准 HTTP 工具，同时也提供 Python/TypeScript SDK。
 
-Flexibility
+**离线发现**
 
-: Protocol design should have good evolutionary capabilities, able to flexibly adapt to future AI capability evolution, emergence of new agent roles, and constantly changing interaction patterns.
+：支持通过嵌入在分发包中的元数据进行代理发现，以实现离线发现，使用代理详情模型（Agent Detail models）描述代理。
 
-Compatibility
+**点对点交互**
 
-: Ensure compatibility with existing Web protocols and standards where appropriate, and enable agents from different developers/platforms to work together collaboratively.
+：强调点对点交互，支持代理之间的直接通信和协作。
 
-Auditability
+**与 MCP 互补**
 
-: Support comprehensive recording, tracing, and review of agent behaviors and interaction processes, ensuring verification, analysis, and accountability determination in case of disputes or abnormal behaviors.
+：与模型上下文协议（Model Context Protocol, MCP）形成互补关系，专注于代理间通信。
 
-Observability
+**重点领域/目标挑战**
 
-: Support human-in-the-loop scenarios, enabling monitoring and control of agent behaviors.
+：ACP 主要解决异构 AI 代理之间的互操作性问题，通过通用通信语言实现跨框架和跨技术栈的代理协作。该协议特别强调避免供应商锁定，使用开源的、Linux 基金会治理模式来确保标准的开放性和中立性。
 
-By addressing the key issues above and meeting these core requirements, standardized agent network protocols would lay a solid foundation for building a prosperous, collaborative, and trustworthy Agentic Web.
+**核心技术**
 
-Overview of Typical Agent Protocols
+：HTTP、JSON、OpenAPI 规范、Python/TypeScript SDK。该协议依赖部署环境的基础 HTTP(S) 和企业级安全实践，支持在安全/物理隔离环境中的发现和交互。
 
-This section aims to provide a neutral overview of some current and emerging agent protocols, highlighting how they address the challenges and requirements discussed earlier. These protocols each target different aspects of interoperability and deployment scenarios, collectively forming the exploratory frontier of current agent communication standardization.
+---
 
-Model Context Protocol (MCP)
+## 协议对比分析
 
-Description
+为清晰对比上述主要协议，下表总结了它们的一些关键特性：
 
-: MCP is a widely adopted open specification initiated by Anthropic and now open-sourced, aimed at specifying how applications provide context to large language models (LLMs). It is metaphorically described as the "USB-C port for AI applications," targeting the M×N integration challenge faced when AI models connect with external data sources, tools, and systems (such as cloud platforms, enterprise databases, local files). By providing a unified interface, MCP simplifies interactions between AI models and the external world, reducing the need to build custom connectors for each new data source or tool [[ref11]].
+| 特性 | 模型上下文协议（MCP） | 代理间协议（A2A） | 代理网络协议（ANP） | 代理连接协议（ACP） | 代理通信协议（ACP） |
+|------|----------------------|-------------------|---------------------|---------------------|---------------------|
+| **主要支持者/发起方** | Anthropic | Google 联合 50+ 行业合作伙伴 | ANP 开源社区 | 思科（AGNTCY 计划） | IBM（贡献给 Linux 基金会） |
+| **主要目标/重点领域** | 为 LLM/代理提供结构化外部上下文，解决 M×N 集成问题 | 跨供应商/框架的异构代理互操作性、任务协作和动态协商 | 互联网上代理的连接与协作 | 企业环境中结构化、持久的多代理协作和工作流 | 为异构 AI 代理提供通用语言以实现连接、协作和复杂任务执行；消除供应商锁定 |
+| **通信模式** | 客户端-服务器 | 客户端-远程代理（点对点概念，可有中介），面向任务 | 点对点协议架构 | RESTful API，基于执行的消息传递，支持有状态线程 | 基于 HTTP 的 RESTful API，支持同步、异步和流式交互；点对点交互 |
+| **核心技术** | JSON-RPC、HTTP、SSE | HTTP(S)、JSON-RPC 2.0、SSE | W3C DID、JSON-LD、W3C VC、端到端加密 | RESTful API、JSON | HTTP、JSON、OpenAPI 规范、Python/TypeScript SDK |
+| **发现机制** | 通常由应用程序集成或由宿主应用程序管理 | | | | |
 
-Key Features/Mechanisms
+# 翻译
 
-: MCP adopts a client-server architecture where AI applications (such as chat assistants, AI-driven IDEs) act as MCP clients, connecting to one or more MCP servers that expose capabilities or data . Its core interaction primitives include: Tools (executable functions that can be dynamically invoked, such as API calls), Resources (structured static data streams for AI reference), and Prompts (reusable conversation workflows or templates). The protocol layer handles message framing, request/response mapping, and notification delivery, supporting various transport protocols such as Stdio for local processes and HTTP+SSE for network services.
+**Agent Card（JSON元数据，通常发布在/.well-known/agent.json）**
 
-Focus Areas/Target Challenges
+基于RFC 8615，通常发布在/.well-known/agent-descriptions
 
-: MCP's core goals are to provide structured context injection for LLMs, enable flexible plugging of tools and knowledge, support secure infrastructure integration, and ensure compatibility across different LLM vendors. It aims to enhance AI models' context awareness and dynamic tool discovery and execution capabilities.
+**Agent目录、Agent清单（JSON）**
 
-Core Technologies Used
+通过元数据（可嵌入分发包中以便离线发现）、Agent详情模型
 
-: JSON-RPC (for client-server interface), HTTP, Server-Sent Events (SSE).
-
-Agent-to-Agent Protocol (A2A)
-
-Description
-
-: A2A is an open protocol initiated by Google and jointly promoted with over 50 industry partners, designed to enable independent AI agents built on different frameworks by different vendors to communicate, collaborate, and coordinate actions securely and seamlessly. It aims to address interoperability issues in heterogeneous agent ecosystems, allowing agents to work together without exposing their internal states, memories, or tools [[ref8]] [[ref9]].
-
-Key Features/Mechanisms
-
-: A2A's core architecture revolves around client agents and remote agents. Agents publish their identities, capabilities, skills, service endpoints, and authentication requirements through "Agent Cards" (JSON metadata documents), enabling capability discovery. The protocol supports task management lifecycle, allowing creation, sending, and tracking of task status, and can handle long-running tasks that might take hours or even days. A2A supports multiple interaction modalities, including text, files, structured JSON data, as well as audio and video streams.
-
-Focus Areas/Target Challenges
-
-: A2A focuses on enabling dynamic interaction, capability sharing, and task coordination between opaque, autonomous agents, especially in enterprise-grade workflows. It aims to break down agent silos, simplify enterprise integration, and foster a more interconnected, powerful AI ecosystem. A2A addresses different problems than MCP, with MCP focusing on connecting agents with tools/data, while A2A focuses on collaboration between agents.
-
-Core Technologies Used
-
-: HTTP(S) (as the transport layer, requiring TLS encryption), JSON-RPC 2.0 (as the payload format for requests and responses), Server-Sent Events (SSE) (for real-time streaming communication from server to client, such as task status updates).
-
-Agent Network Protocol (ANP)
-
-Description
-
-: ANP is an open-source protocol with the vision of becoming "the HTTP of the Agentic Web era," designed to build an open, secure, and efficient collaborative network for billions of agents. It aims to address the inadequacies of current internet infrastructure in meeting the specific needs of agent networks. ANP is developed and maintained by the open-source community, which is committed to an open, neutral stance, and the community pledges never to commercialize [[ref6]] [[ref7]].
-
-Key Features/Mechanisms
-
-: ANP primarily addresses the connection and collaboration of agents on the internet, adopting a three-layer architecture:
-
-Identity and Encrypted Communication Layer
-
-: Builds decentralized authentication schemes and end-to-end encrypted communication based on W3C DID (Decentralized Identifier) specifications, enabling cross-platform agents to authenticate each other without relying on centralized systems.
-
-Meta-Protocol Layer
-
-: A protocol for negotiating communication protocols between agents, key to enabling self-organization and self-negotiation for efficient collaboration in agent networks.
-
-Application Protocol Layer
-
-: Based on Semantic Web specifications, using JSON-LD and schema.org to describe agent information, capabilities, and interfaces. The entry point for an agent is an Agent Description Document. Uses RFC 8615 to design agent discovery mechanisms, W3C VC to implement credential records for transactions between agents, while reusing many existing specifications such as OpenAPI, WebRTC, etc.
-
-Figure 3: ANP three-layer protocol architecture showing the identity layer, meta-protocol layer, and application protocol layer with their interactions
-
-Focus Areas/Target Challenges
-
-: ANP aims to address three core challenges of the agent internet: achieving interconnection between all agents, breaking data silos, and ensuring AI can access complete contextual information; providing AI-native interfaces for efficient interaction with the digital world through APIs or communication protocols rather than mimicking human operations; and utilizing AI for automatic organization and negotiation between agents to build a more economically efficient collaborative network. It particularly focuses on decentralized discovery and collaboration in open internet environments, as well as interoperability across heterogeneous domains.
-
-Core Technologies Used
-
-: W3C Decentralized Identifiers (DIDs), JSON-LD, W3C Verifiable Credentials (VC), end-to-end encryption technologies.
-
-Agent Connect Protocol (ACP)
-
-Description
-
-: ACP is an open-source protocol led by Cisco and developed in collaboration with partners such as LangChain and Galileo as part of the AGNTCY initiative, designed to provide a communication layer for autonomous agents to collaborate and share resources in distributed systems [[ref12]].
-
-Key Features/Mechanisms
-
-: ACP adopts RESTful APIs as the standard interface, defining how agents interact, including retrieving workflows that agents can execute, creating and managing context threads, and running agents. It supports stateful communication threads, allowing agents to negotiate and reason together during tasks, and implements loosely coupled interactions through message passing. Agent discovery is achieved through the Agent Directory and OASF (Open Agentic Schema Framework) documents, which are standardized JSON files describing agent capabilities, invocation methods, input/output patterns, and more. ACP supports asynchronous-first interactions, multi-part messages, and observability features.
-
-Focus Areas/Target Challenges
-
-: ACP primarily addresses communication barriers and collaboration efficiency issues between heterogeneous agents (potentially built on different technology stacks or frameworks) in enterprise environments. It aims to enable scalable, standardized multi-agent interactions, allowing multiple agents to work together as a logical unit to complete complex tasks.
-
-Core Technologies Used
-
-: RESTful APIs, JSON (for OASF documents and message schemas). Can be integrated with workflow frameworks such as LangGraph.
-
-Agent Communication Protocol (ACP)
-
-Description
-
-: Agent Communication Protocol (ACP) is an open-source standard contributed by IBM to the Linux Foundation, designed to provide a shared language for heterogeneous AI agents to enable connection, collaboration, and complex task execution. The protocol's primary goal is to eliminate vendor lock-in and promote the development of agent ecosystems through an open governance model [[ref13]].
-
-Key Features/Mechanisms
-
-: ACP defines a standardized RESTful API that supports synchronous, asynchronous, and streaming interactions, adopting a peer-to-peer interaction design. Its core features include:
-
-No Specialized SDK Required
-
-: The protocol is designed to enable interaction without specialized SDKs, allowing direct use of standard HTTP tools while also providing Python/TypeScript SDKs.
-
-Offline Discovery
-
-: Enables agent discovery through metadata that can be embedded in distribution packages for offline discovery, using Agent Detail models to describe agents.
-
-Peer-to-Peer Interaction
-
-: Emphasizes peer-to-peer interaction, supporting direct communication and collaboration between agents.
-
-Complementary to MCP
-
-: Forms a complementary relationship with Model Context Protocol (MCP), focusing on inter-agent communication.
-
-Focus Areas/Target Challenges
-
-: ACP primarily addresses interoperability issues between heterogeneous AI agents, enabling cross-framework and cross-technology stack agent collaboration through a shared communication language. The protocol particularly emphasizes avoiding vendor lock-in, using an open-source, Linux Foundation governance model to ensure the openness and neutrality of the standard.
-
-Core Technologies Used
-
-: HTTP, JSON, OpenAPI Specification, Python/TypeScript SDKs. The protocol relies on underlying HTTP(S) and enterprise-grade security practices of the deployment environment, supporting discovery and interaction in secure/air-gapped environments.
-
-Protocol Comparison Analysis
-
-To clearly compare the above major protocols, the following table summarizes some of their key features:
-
-Feature
-
-Model Context Protocol (MCP)
-
-Agent-to-Agent Protocol (A2A)
-
-Agent Network Protocol (ANP)
-
-Agent Connect Protocol (ACP)
-
-Agent Communication Protocol (ACP)
-
-Main Supporters/Initiators
-
-Anthropic
-
-Google with 50+ industry partners
-
-ANP open-source community
-
-Cisco (AGNTCY initiative)
-
-IBM (contributed to Linux Foundation)
-
-Main Goals/Focus Areas
-
-Providing structured external context for LLMs/agents, solving M×N integration problems
-
-Cross-vendor/framework heterogeneous agent interoperability, task collaboration, and dynamic negotiation
-
-Agent connection and collaboration on the internet
-
-Structured, persistent multi-agent collaboration and workflows in enterprise environments
-
-Providing shared language for heterogeneous AI agents to enable connection, collaboration and complex task execution; eliminating vendor lock-in
-
-Communication Style
-
-Client-server
-
-Client-remote agent (peer-to-peer concept, can have intermediaries), task-oriented
-
-Peer-to-peer protocol architecture
-
-RESTful API, execution-based messaging, supports stateful threads
-
-HTTP-based RESTful API supporting synchronous, asynchronous and streaming interactions; peer-to-peer interaction
-
-Core Technologies Used
-
-JSON-RPC, HTTP, SSE
-
-HTTP(S), JSON-RPC 2.0, SSE
-
-W3C DIDs, JSON-LD, W3C VC, End-to-End Encryption
-
-RESTful APIs, JSON
-
-HTTP, JSON, OpenAPI Specification, Python/TypeScript SDKs
-
-Discovery Mechanism
-
-Typically application-integrated or managed by host application
-
-Agent Cards (JSON metadata, typically published at /.well-known/agent.json)
-
-Based on RFC 8615, typically published at /.well-known/agent-descriptions
-
-Agent Directory, Agent Manifests (JSON)
-
-Through metadata (can be embedded in distribution packages for offline discovery), Agent Detail model
-
-Identity Management Method
+**身份管理方法**
 
 OAuth 2.1
 
-Out-of-band authentication schemes
+带外认证方案
 
-W3C DIDs (Decentralized Identifiers)
+W3C DID（去中心化标识符）
 
-Depends on enterprise integration (e.g., OAuth)
+取决于企业集成（例如OAuth）
 
-Relies on underlying HTTP(S) and enterprise-grade security practices in deployment environment; protocol itself does not strictly specify
+依赖于底层HTTP(S)及部署环境中的企业级安全实践；协议本身未严格规定
 
-Emphasized Security Features
+**强调的安全特性**
 
-Secure context acquisition (e.g., via TLS), local-first security
+安全上下文获取（例如通过TLS）、本地优先安全
 
-TLS, server authentication, client/user authentication
+TLS、服务器认证、客户端/用户认证
 
-TLS, end-to-end encryption, DID-based authentication
+TLS、端到端加密、基于DID的认证
 
-TLS, enterprise-grade security practices
+TLS、企业级安全实践
 
-Relies on HTTPS transport security; supports discovery in secure/air-gapped environments
+依赖于HTTPS传输安全；支持在安全/物理隔离环境中的发现
 
-State Management
+**状态管理**
 
-Typically stateless or managed by client/host application, though MCP servers may expose stateful resources
+通常无状态或由客户端/主机应用程序管理，尽管MCP服务器可能暴露有状态资源
 
-Supports long-running task state tracking (stateful interactions)
+支持长时间运行任务的狀态跟踪（有状态交互）
 
-Can support stateful interactions (determined by application protocol layer)
+可支持有状态交互（由应用协议层决定）
 
-Stateful communication threads
+有状态通信线程
 
-Supports stateful interactions (e.g., through Await mechanism)
+支持有状态交互（例如通过Await机制）
 
-Key Differentiators/Unique Aspects
+**关键差异化/独特方面**
 
-Focuses on the "last mile" connection between models and tools/data, complementary to other protocols
+专注于模型与工具/数据之间的"最后一公里"连接，对其他协议起到补充作用
 
-Emphasizes open standards for agent collaboration across different systems and vendors, supports multiple interaction modalities
+强调跨不同系统和供应商的Agent协作开放标准，支持多种交互模式
 
-Designed for agent interaction and collaboration in untrusted internet environments
+专为在不可信的互联网环境中的Agent交互与协作而设计
 
-Deep collaboration in controlled enterprise environments
+在受控企业环境中的深度协作
 
-Open-source, Linux Foundation governance, avoids vendor lock-in; emphasizes peer-to-peer interaction; complementary to MCP; designed to interact without specialized SDKs
+开源、Linux基金会治理、避免供应商锁定；强调点对点交互；与MCP互补；设计为无需专用SDK即可交互
 
-Building AI-Native Data Networks Based on Agent Network Protocol
+---
 
-Current internet infrastructure is primarily designed for human interaction through browsers and graphical user interfaces. However, the rise of the Agentic Web requires us to reimagine a network environment more suitable for AI agents' native interactions. This "AI-native data network" would no longer be merely a platform for displaying human information, but an optimized space for agents to efficiently acquire data, invoke services, and collaborate.
+## 基于Agent网络协议构建AI原生数据网络
 
-The core characteristics of such a network would include:
+当前的互联网基础设施主要为人机交互（通过浏览器和图形用户界面）而设计。然而，Agentic Web（Agent化网络）的兴起要求我们重新构想一个更适合AI Agent原生交互的网络环境。这种"AI原生数据网络"将不再仅仅是展示人类信息的平台，而是一个优化空间，使Agent能够高效获取数据、调用服务和协作。
 
-Machine-readable interfaces first
+该网络的核心特征将包括：
 
-: Services and data sources would expose their functionality and information through standardized, agent-friendly APIs (rather than primarily relying on human user interfaces). This would greatly reduce the complexity and overhead for agents to access and utilize network resources.
+**机器可读接口优先**
 
-Enhanced semantic and structured data
+：服务和数据源将通过标准化、Agent友好的API暴露其功能和信息（而不是主要依赖人机用户界面）。这将大大降低Agent访问和利用网络资源的复杂性和开销。
 
-: Data would not only be accessible but also understandable. Drawing on semantic web concepts and combined with modern AI's understanding capabilities, data would be given richer semantic descriptions and structured representations, enabling agents to reason and make decisions more precisely.
+**增强的语义和结构化数据**
 
-Communication protocols optimized for AI
+：数据不仅可访问，而且可理解。借鉴语义网概念并结合现代AI的理解能力，数据将被赋予更丰富的语义描述和结构化表示，使Agent能够更精确地进行推理和决策。
 
-: Beyond general agent network protocols, underlying network communications may also need to be optimized for agent interaction characteristics, such as supporting low-latency, high-throughput multimodal data exchange, and more flexible communication patterns.
+**针对AI优化的通信协议**
 
-Dynamic service discovery and composition
+：除了通用的Agent网络协议外，底层网络通信可能也需要针对Agent交互特性进行优化，例如支持低延迟、高吞吐量的多模态数据交换，以及更灵活的通信模式。
 
-: Agents would be able to dynamically discover needed services and data in this network, and flexibly combine them according to task requirements, achieving complex collaborative task solutions.
+**动态服务发现与组合**
 
-AI-native data networks would be key infrastructure for the Agentic Web to fully realize its potential, enabling agents to interact with the digital world in their most proficient way (i.e., directly processing information through protocols and APIs), thereby catalyzing higher levels of automation, intelligence, and collaborative efficiency.
+：Agent将能够在此网络中动态发现所需的服务和数据，并根据任务需求灵活组合它们，实现复杂的协作任务解决方案。
 
-Future Outlook: Reshaping the Open Network Through Connection
+AI原生数据网络将成为Agentic Web充分发挥其潜力的关键基础设施，使Agent能够以其最熟练的方式（即通过协议和API直接处理信息）与数字世界交互，从而催生更高水平的自动化、智能化和协作效率。
 
-The evolution of the internet profoundly confirms a core principle: "Connection is Power." In a truly open, interconnected network, free interaction between nodes can maximize innovation potential and create enormous value. However, today's internet ecosystem is increasingly dominated by a few large platforms, with vast amounts of data and services confined within closed "digital islands," concentrating the power of connection in the hands of a few tech giants.
+---
 
-The advent of the Agentic Web era provides us with a historic opportunity to reshape this imbalanced landscape. Our goal is to drive the internet from its current generally closed, fragmented state back to its open, freely connected origins. In the future Agentic Web, each agent would simultaneously play the dual roles of information consumer and service provider. More importantly, every node should be able to discover, connect, and interact with any other node in the network without barriers. This vision of universal interconnection would greatly reduce the barriers to information flow and collaboration, returning the power of connection truly to each user and individual agent.
+## 未来展望：通过连接重塑开放网络
 
-This marks an important shift: from platform-centric closed ecosystems to protocol-centric open ecosystems. In the latter, value acquisition depends more on the unique capabilities and contributions that participants bring to the network by following open protocols, rather than relying on control over a closed platform. This shift would stimulate more intense application-layer innovation and competition, as the key to success is no longer "locking in" users, but providing superior agent services, similar to the innovation patterns historically promoted by open protocols like TCP/IP and SMTP.
+互联网的演进深刻证实了一个核心原则："连接即力量"。在一个真正开放、互联的网络中，节点之间的自由交互能够最大化创新潜力并创造巨大价值。然而，当今的互联网生态日益被少数大型平台所主导，大量数据和服务被封闭在孤立的"数字岛屿"内，将连接的力量集中在少数科技巨头手中。
 
-Building the Future of a Collaborative Agentic Web
+Agentic Web时代的到来为我们提供了重塑这一不平衡格局的历史性机遇。我们的目标是推动互联网从当前普遍封闭、碎片化的状态回归其开放、自由连接的起源。在未来的Agentic Web中，每个Agent将同时扮演信息消费者和服务提供者的双重角色。更重要的是，每个节点都应该能够无障碍地发现、连接并与网络中任何其他节点交互。这种普遍互联的愿景将大大降低信息流动和协作的障碍，将连接的力量真正归还给每个用户和个体Agent。
 
-Standardized agent network protocols are crucial for unleashing the potential of the Agentic Web, realizing certain aspects of the original semantic web vision, and fostering innovation. They are the cornerstone for building a network where machines can process information more intelligently and assist humans more effectively.
+这是一个重要转变：从以平台为中心的封闭生态系统转向以协议为中心的开放生态系统。在后者中，价值的获取更多地取决于参与者通过遵循开放协议为网络带来的独特能力和贡献，而不是依赖于对封闭平台的控制。这种转变将激发更激烈的应用层创新和竞争，因为成功的关键不再是"锁定"用户，而是提供卓越的Agent服务——类似于TCP/IP和SMTP等开放协议在历史上所推动的创新模式。
 
-We urge all stakeholders to actively participate in the standardization process through the W3C. This is an opportunity to shape the future network—one that is more intelligent, collaborative, and empowering, built on foundations of openness and trust. A well-designed Agentic Web has tremendous transformative potential, and now is the critical moment to lay its solid foundation.
+---
 
-Security Considerations
+## 构建协作式Agentic Web的未来
 
-This section is expected to be expanded. And warmly welcome contributions from the security community. We are actively following relevant work within W3C,
-    including the
+标准化Agent网络协议对于释放Agentic Web的潜力、实现语义网愿景的某些方面以及促进创新至关重要。它们是构建网络的基石，在这样的网络中，机器能够更智能地处理信息并更有效地协助人类。
 
-AI in the Browser
+我们敦促所有利益相关方通过W3C积极参与标准化进程。这是一个塑造未来网络的机会——一个建立在开放和信任基础上的更加智能、协作和赋权的网络。一个设计良好的Agentic Web具有巨大的变革潜力，现在是奠定坚实基础的关键时刻。
 
-, which will inform our approach to security considerations.
+---
 
-To be added.
+## 安全考量
 
-References
+本节有待扩展。热烈欢迎来自安全社区的贡献。我们正在积极关注W3C内的相关工作，包括**浏览器中的AI**，这将指导我们安全考量方面的方法。
+
+待补充。
+
+---
+
+## 参考文献
 
 Tim Berners-Lee, James Hendler and Ora Lassila. The Semantic Web. Scientific American, 2001.
 

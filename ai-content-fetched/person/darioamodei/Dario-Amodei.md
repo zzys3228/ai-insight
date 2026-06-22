@@ -1,150 +1,72 @@
 ---
-title: Dario Amodei
+title: **达里奥·阿莫代伊**
+
+这是 "Dario Amodei" 的标准中文音译。其中：
+
+- **Dario** → 达里奥 / 達里奧
+- **Amodei** → 阿莫代伊
+
+注：人名通常采用音译，不做字面翻译。
 source: darioamodei.com
 url: https://darioamodei.com
 date: 2026-06-22
 category: person/darioamodei
 translated: true
-fetched_at: 2026-06-22T18:24:15.612426
+fetched_at: 2026-06-22T19:41:57.160762
 ---
-# Dario Amodei
+# **达里奥·阿莫代伊**
+
+这是 "Dario Amodei" 的标准中文音译。其中：
+
+- **Dario** → 达里奥 / 達里奧
+- **Amodei** → 阿莫代伊
+
+注：人名通常采用音译，不做字面翻译。
 
 **来源**: darioamodei.com | **日期**: 2026-06-22
 
 ---
 
-Dario Amodei is the CEO of
+Dario Amodei 是 Anthropic 的首席执行官，Anthropic 是一家公益公司，致力于构建可控制、可解释且安全的 AI 系统。
 
-Anthropic
+……
 
-, a public benefit corporation dedicated to building AI systems that are steerable, interpretable and safe
+更多
 
-.
+此前，Dario 曾担任 OpenAI 研究副总裁，领导了 GPT‑2、GPT‑3 等大型语言模型的研发。他也是基于人类反馈的强化学习（RLHF）的共同发明人。加入 OpenAI 之前，他在 Google Brain 担任高级研究科学家。
 
-...
+Dario 在普林斯顿大学获得生物物理学博士学位（赫兹学者），并曾在斯坦福大学医学院做博士后研究。
 
-More
+随笔  
 
-Previously, Dario served as Vice President of Research at OpenAI, where he led the development of large language models like GPT-2 and GPT-3. He is also the co-inventor of reinforcement learning from human feedback. Before joining OpenAI, he worked at Google Brain as a Senior Research Scientist.
+《技术的青春期》  
+《机器的温情恩典》  
 
-Dario earned his doctorate degree in biophysics from Princeton University as a Hertz Fellow, and was a postdoctoral scholar at the Stanford University School of Medicine.
+短文  
 
-Essays
+关于 AI 指数的政策  
+可解释性的紧迫性  
+关于 DeepSeek 与出口管制  
 
-The Adolescence of Technology
+研究  
 
-Machines of Loving Grace
+Google Scholar  
 
-Short posts
+评论文章  
 
-Policy on the AI Exponential
+AI 需要基本透明度规则（《纽约时报》，2025 年）  
+特朗普可以保持美国的 AI 优势（《华尔街日报》，2025 年）  
 
-The Urgency of Interpretability
+访谈  
 
-On DeepSeek and Export Controls
-
-Research
-
-Google Scholar
-
-Op-eds
-
-AI Needs Basic Transparency Rules
-
-(
-
-NYT
-
-,
-
-2025
-
-)
-
-Trump Can Keep America’s AI Advantage
-
-(
-
-WSJ
-
-,
-
-2025
-
-)
-
-Interviews
-
-"A Cheeky Pint" with John Collison
-
-(
-
-2025
-
-)
-
-In conversation with Alex Kantrowitz
-
-(
-
-2025
-
-)
-
-In conversation with Zanny Minton Beddoes
-
-(
-
-2025
-
-)
-
-Lex Fridman Podcast
-
-(
-
-2024
-
-)
-
-Econ 102 with Noah Smith
-
-(
-
-2024
-
-)
-
-In Good Company Podcast
-
-(
-
-2024
-
-)
-
-TIME interview
-
-(
-
-2024
-
-)
-
-The Ezra Klein Show
-
-(
-
-2024
-
-)
-
-Dwarkesh Podcast
-
-(
-
-2023
-
-)
+“微醺一杯”与约翰·科利森（2025 年）  
+与亚历克斯·坎特罗威茨对话（2025 年）  
+与赞尼·明顿·贝多斯对话（2025 年）  
+Lex Fridman 播客（2024 年）  
+诺亚·史密斯的《经济学 102》（2024 年）  
+《好公司》播客（2024 年）  
+《时代》访谈（2024 年）  
+埃兹拉·克莱因节目（2024 年）  
+Dwarkesh 播客（2023 年）
 
 *原文请访问 [darioamodei.com](https://darioamodei.com)*

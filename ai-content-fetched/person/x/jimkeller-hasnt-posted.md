@@ -1,56 +1,52 @@
 ---
-title: @jimkeller hasn’t posted
+title: **@jimkeller** 还没有发帖
 source: x.com
 url: https://x.com/jimkeller
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T18:26:39.255012
+fetched_at: 2026-06-22T19:46:51.985498
 ---
-# @jimkeller hasn’t posted
+# **@jimkeller** 还没有发帖
 
 **来源**: x.com | **日期**: 2026-06-22
 
 ---
 
-Log in
+登录
 
-Sign up
+注册
 
 JimKeller
 
 0
 
-posts
-
-JimKeller
+帖子
 
 @JimKeller
 
-Joined November 2008
+2008年11月加入
 
-0
-
-Following
+正在关注
 
 21
 
-Followers
+关注者
 
-Posts
+帖子
 
-Posts
+帖子
 
-Replies
+回复
 
-Replies
+回复
 
-Media
+媒体
 
-Media
+媒体
 
-@jimkeller hasn’t posted
+@jimkeller 尚未发布任何内容
 
-When they do, their posts will show up here.
+他们发布动态后，动态会显示在这里。
 
 *原文请访问 [x.com](https://x.com/jimkeller)*

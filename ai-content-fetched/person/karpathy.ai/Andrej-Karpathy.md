@@ -1,13 +1,13 @@
 ---
-title: Andrej Karpathy
+title: **中文译名**：安德烈·卡尔帕西（Andrej Karpathy）
 source: karpathy.ai
 url: https://karpathy.ai
 date: 2026-06-22
 category: person/karpathy.ai
 translated: true
-fetched_at: 2026-06-22T18:27:15.551419
+fetched_at: 2026-06-22T19:48:38.244688
 ---
-# Andrej Karpathy
+# **中文译名**：安德烈·卡尔帕西（Andrej Karpathy）
 
 **来源**: karpathy.ai | **日期**: 2026-06-22
 
