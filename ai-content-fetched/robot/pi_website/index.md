@@ -1,12 +1,12 @@
 ---
 title: www.pi.website
 source: www.pi.website
-url: https://www.pi.website
+url: https://www.pi.website/blog
 category: robot
+fetched_at: 2026-06-22T23:07:58.782555
 ---
-# www.pi.website
 
-Physical Intelligence is bringing general-purpose AI into the physical world. We are a group of engineers, scientists, roboticists, and company builders developing learning algorithms to create a model that will control any robot to do any task.
+# www.pi.website
 
 [π0.7: a Steerable Model with Emergent Capabilities
 
@@ -64,6 +64,6 @@ A new robot action tokenizer that allows us to train generalist policies 5x fast
 
 October 31, 2024
 
-Our first generalist policy, π0, a prototype model that combines large-scal
+Our first generalist policy, π0, a prototype model that combines large-scale multi-task and multi-robot data collection with a new network architecture to enable the most capable and dexterous generalist robot policy to date.](/blog/pi0)
 
-*原文: https://www.pi.website*
+*原文: https://www.pi.website/blog*

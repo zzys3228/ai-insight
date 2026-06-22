@@ -3376,5 +3376,131 @@
     "path": "ai-content-fetched\\robot\\apptronik_com\\index.md",
     "fetched_at": "2026-06-22T23:00:55.282683",
     "metadata": {}
+  },
+  "678c4bcec533": {
+    "url": "https://gartner.com/en/topics/artificial-intelligence",
+    "path": "ai-content-fetched\\industry\\gartner_com\\index.md",
+    "fetched_at": "2026-06-22T23:03:28.401702",
+    "metadata": {}
+  },
+  "51121d47e24d": {
+    "url": "https://mckinsey.com/capabilities/mckinsey-digital",
+    "path": "ai-content-fetched\\industry\\mckinsey_com\\index.md",
+    "fetched_at": "2026-06-22T23:03:47.384447",
+    "metadata": {}
+  },
+  "3d0ba3afeaf0": {
+    "url": "https://www2.deloitte.com/us/en/pages/deloitte-analytics/topics/artificial-intelligence",
+    "path": "ai-content-fetched\\industry\\www2_deloitte_com\\index.md",
+    "fetched_at": "2026-06-22T23:04:00.385315",
+    "metadata": {}
+  },
+  "14cfc710022b": {
+    "url": "https://www.pwc.com/gx/en/issues/artificial-intelligence",
+    "path": "ai-content-fetched\\industry\\pwc_com\\index.md",
+    "fetched_at": "2026-06-22T23:04:58.444469",
+    "metadata": {}
+  },
+  "35314b4d7af4": {
+    "url": "https://www.eye-on.ai",
+    "path": "ai-content-fetched\\media\\eye-on_ai\\index.md",
+    "fetched_at": "2026-06-22T23:05:31.579259",
+    "metadata": {}
+  },
+  "66eeff659224": {
+    "url": "https://www.reddit.com/r/LocalLLaMA",
+    "path": "ai-content-fetched\\media\\reddit_com\\index.md",
+    "fetched_at": "2026-06-22T23:06:39.266595",
+    "metadata": {}
+  },
+  "8f7ca81062ed": {
+    "url": "https://www.reddit.com/r/MachineLearning",
+    "path": "ai-content-fetched\\media\\reddit_com\\index.md",
+    "fetched_at": "2026-06-22T23:06:53.578811",
+    "metadata": {}
+  },
+  "ce16ee815c01": {
+    "url": "https://www.reddit.com/r/Artificial",
+    "path": "ai-content-fetched\\media\\reddit_com\\index.md",
+    "fetched_at": "2026-06-22T23:07:08.164892",
+    "metadata": {}
+  },
+  "1c28af8d2a9b": {
+    "url": "https://www.reddit.com/r/singularity",
+    "path": "ai-content-fetched\\media\\reddit_com\\index.md",
+    "fetched_at": "2026-06-22T23:07:22.164424",
+    "metadata": {}
+  },
+  "888643001835": {
+    "url": "https://www.pingwest.com",
+    "path": "ai-content-fetched\\media\\pingwest_com\\index.md",
+    "fetched_at": "2026-06-22T23:07:31.160957",
+    "metadata": {}
+  },
+  "57079b77206d": {
+    "url": "https://www.pi.website",
+    "path": "ai-content-fetched\\robot\\pi_website\\index.md",
+    "fetched_at": "2026-06-22T23:07:54.653438",
+    "metadata": {}
+  },
+  "b5e2d382816d": {
+    "url": "https://www.pi.website/blog",
+    "path": "ai-content-fetched\\robot\\pi_website\\index.md",
+    "fetched_at": "2026-06-22T23:09:00.893452",
+    "metadata": {}
+  },
+  "2165186616d0": {
+    "url": "https://covariant.ai/robots",
+    "path": "ai-content-fetched\\robot\\covariant_ai\\index.md",
+    "fetched_at": "2026-06-22T23:09:14.132813",
+    "metadata": {}
+  },
+  "20b992158d60": {
+    "url": "https://www.agibot.com",
+    "path": "ai-content-fetched\\robot\\agibot_com\\index.md",
+    "fetched_at": "2026-06-22T23:09:21.182179",
+    "metadata": {}
+  },
+  "746eb82dbb65": {
+    "url": "https://www.agibot.com/news",
+    "path": "ai-content-fetched\\robot\\agibot_com\\index.md",
+    "fetched_at": "2026-06-22T23:09:27.121828",
+    "metadata": {}
+  },
+  "eac4a7a4a81b": {
+    "url": "https://www.unitree.com/h1",
+    "path": "ai-content-fetched\\robot\\unitree_com\\index.md",
+    "fetched_at": "2026-06-22T23:10:00.091362",
+    "metadata": {}
+  },
+  "4fc2265f910c": {
+    "url": "https://www.unitree.com/g1",
+    "path": "ai-content-fetched\\robot\\unitree_com\\index.md",
+    "fetched_at": "2026-06-22T23:10:22.895172",
+    "metadata": {}
+  },
+  "3187decb38e4": {
+    "url": "https://www.ubtrobot.com/cn/walker",
+    "path": "ai-content-fetched\\robot\\ubtrobot_com\\index.md",
+    "fetched_at": "2026-06-22T23:10:23.871490",
+    "metadata": {}
+  },
+  "25e31c87b8f2": {
+    "url": "https://www.galaxybot.com",
+    "path": "ai-content-fetched\\robot\\galaxybot_com\\index.md",
+    "fetched_at": "2026-06-22T23:10:28.418661",
+    "metadata": {}
+  },
+  "b7d569348630": {
+    "url": "https://www.deeprobotech.com",
+    "path": "ai-content-fetched\\robot\\deeprobotech_com\\index.md",
+    "fetched_at": "2026-06-22T23:11:16.957104",
+    "metadata": {}
+  },
+  "0af6de90b53f": {
+    "url": "https://deepmind.google/models/gemini-robotics/",
+    "path": "ai-content-fetched\\robot\\deepmind_google\\index.md",
+    "fetched_at": "2026-06-22T23:11:43.230325",
+    "metadata": {}
   }
 }
