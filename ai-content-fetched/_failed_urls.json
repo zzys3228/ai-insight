@@ -1,18 +1,18 @@
 {
   "04dbfb04e14b": {
     "url": "https://github.com/NVIDIA/cudnn",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:27:00.060692"
+    "error": "('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))",
+    "last_try": "2026-06-22T17:25:32.116371"
   },
   "21da4a2fadc7": {
     "url": "https://github.com/NVIDIA/cuda",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:30:05.306454"
+    "last_try": "2026-06-22T17:28:38.545620"
   },
   "6eec8646764a": {
     "url": "https://github.com/ollama/ollama",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:33:10.302506"
+    "last_try": "2026-06-22T17:31:43.735707"
   },
   "4c6e2b5d342d": {
     "url": "https://github.com/ggml-org/ggml",
@@ -22,7 +22,7 @@
   "b221ec0a9143": {
     "url": "https://github.com/Mozilla-Ocho/llamafile",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:36:15.298296"
+    "last_try": "2026-06-22T17:34:48.766713"
   },
   "2f5b9452f2df": {
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
@@ -37,32 +37,32 @@
   "257b3ca3bb92": {
     "url": "https://github.com/OpenHands/OpenHands",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:09.962441"
+    "last_try": "2026-06-22T17:37:53.814645"
   },
   "3d5faeed8bc8": {
     "url": "https://github.com/elizaOS/eliza",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:42:22.985503"
+    "last_try": "2026-06-22T16:16:11.577303"
   },
   "df8f3a7f0f38": {
     "url": "https://github.com/TransformerOptimus/SuperAGI",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:45:27.826768"
+    "error": "Failed to fetch latest release: 403",
+    "last_try": "2026-06-22T17:41:48.781187"
   },
   "6698bac42fd5": {
     "url": "https://github.com/crewAIInc/crewAI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:14.838380"
+    "last_try": "2026-06-22T17:44:53.752318"
   },
   "78e343869d7e": {
     "url": "https://github.com/langchain-ai/langgraph",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:16.534877"
+    "last_try": "2026-06-22T17:47:58.703542"
   },
   "22212355244a": {
     "url": "https://github.com/useheadroom/headroom",
     "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T17:59:35.577848"
+    "last_try": "2026-06-22T17:48:00.359028"
   },
   "5c33f43b602e": {
     "url": "https://github.com/open-webui/open-webui",
@@ -77,107 +77,107 @@
   "bb328359daa5": {
     "url": "https://github.com/janhq/jan",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:09:15.483896"
+    "last_try": "2026-06-22T16:16:23.049109"
   },
   "ea9eeb00ad04": {
     "url": "https://github.com/mudler/LocalAI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:12:20.418571"
+    "last_try": "2026-06-22T16:16:24.702323"
   },
   "0c322cf2b8ff": {
     "url": "https://github.com/GreptimeTeam/codebase-memory-mcp",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:15:25.283007"
+    "last_try": "2026-06-22T18:55:09.992056"
   },
   "e36efe8f4ec3": {
     "url": "https://github.com/kilocodeai/kilocode",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:18:30.098071"
+    "error": "Failed to fetch repo info: 404",
+    "last_try": "2026-06-22T18:02:08.587277"
   },
   "8e15e088c323": {
     "url": "https://github.com/Tiklabs/OpenMontage",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:21:36.753160"
+    "error": "Failed to fetch repo info: 404",
+    "last_try": "2026-06-22T18:02:18.607506"
   },
   "924dd9eb0ce7": {
     "url": "https://github.com/astroslabsai/flue",
-    "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:24:41.583286"
+    "error": "Failed to fetch repo info: 404",
+    "last_try": "2026-06-22T18:02:28.638632"
   },
   "6caed060135f": {
     "url": "https://github.com/vllm-project/vllm",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T18:27:46.370578"
+    "last_try": "2026-06-22T16:16:32.871983"
   },
   "d68f391379c8": {
     "url": "https://github.com/ModelTC/lightllm",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:34.482357"
+    "last_try": "2026-06-22T18:09:02.886830"
   },
   "24dc2be717a3": {
     "url": "https://github.com/langgenius/dify",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:36.089005"
+    "last_try": "2026-06-22T18:12:07.833734"
   },
   "a57008edf30a": {
     "url": "https://github.com/comfyanonymous/ComfyUI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:37.725757"
+    "last_try": "2026-06-22T18:15:13.234896"
   },
   "1213d2eb1025": {
     "url": "https://github.com/ml-explore/mlx",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:39.357001"
+    "last_try": "2026-06-22T18:18:18.056392"
   },
   "a0131fdee43a": {
     "url": "https://github.com/continuedev/continue",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:40.957200"
+    "last_try": "2026-06-22T18:21:22.935304"
   },
   "509146656116": {
     "url": "https://github.com/THUDM/ChatGLM",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:42.560419"
+    "last_try": "2026-06-22T18:24:27.715891"
   },
   "0e241a9adc8f": {
     "url": "https://github.com/01-ai/Yi",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:44.194446"
+    "last_try": "2026-06-22T18:27:32.600801"
   },
   "f5e4eb044dc6": {
     "url": "https://github.com/InternLM/InternLM",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:45.828035"
+    "last_try": "2026-06-22T18:30:37.451692"
   },
   "30dc6ca0a642": {
     "url": "https://github.com/tiiuae/scai-falcon",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:47.427315"
+    "last_try": "2026-06-22T18:33:42.334169"
   },
   "a18080b5131c": {
     "url": "https://github.com/haotian-liu/LLaVA",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:49.043137"
+    "last_try": "2026-06-22T18:36:47.415555"
   },
   "b44dffcf2ea3": {
     "url": "https://github.com/salesforce/BLIP",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:50.668382"
+    "last_try": "2026-06-22T18:39:52.312861"
   },
   "334df41a788b": {
     "url": "https://github.com/CompVis/stable-diffusion",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:52.354656"
+    "last_try": "2026-06-22T18:42:57.251059"
   },
   "e4a06d2e9dde": {
     "url": "https://api.github.com/orgs/THUDM/repos",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:53.990816"
+    "last_try": "2026-06-22T18:46:02.048526"
   },
   "883f159d38a0": {
     "url": "https://github.com/ggerganov",
     "error": "Invalid GitHub URL: https://github.com/ggerganov",
-    "last_try": "2026-06-22T16:16:53.992405"
+    "last_try": "2026-06-22T18:46:02.050818"
   },
   "ce9308b42e88": {
     "url": "https://github.com/openai/human-eval",
@@ -303,5 +303,10 @@
     "url": "https://cloud.baidu.com/product/bdfm",
     "error": "Failed to fetch article: 404",
     "last_try": "2026-06-22T17:23:53.432605"
+  },
+  "396cb5e37f28": {
+    "url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T18:52:05.173835"
   }
 }

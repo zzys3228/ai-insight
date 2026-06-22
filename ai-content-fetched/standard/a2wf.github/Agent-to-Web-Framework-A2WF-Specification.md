@@ -1,1444 +1,629 @@
 ---
-title: Agent-to-Web Framework (A2WF) Specification
+title: Agent‑to‑Web 框架（A2WF）规范
 source: a2wf.github.io
 url: https://a2wf.github.io/spec
 date: 2026-06-22
 category: standard/a2wf.github
 translated: true
-fetched_at: 2026-06-22T18:25:05.227447
+fetched_at: 2026-06-22T18:53:34.293253
 ---
-# Agent-to-Web Framework (A2WF) Specification
+# Agent‑to‑Web 框架（A2WF）规范
 
 **来源**: a2wf.github.io | **日期**: 2026-06-22
 
 ---
 
-The Agent-to-Web Framework (A2WF) defines
+# 代理到Web框架（A2WF）中文翻译
+
+**Agent-to-Web Framework (A2WF)** 定义了
 
 siteai.json
 
-,
-    a machine-readable policy file that website operators publish to declare
-    which actions AI agents are permitted, restricted, or prohibited from
-    performing on their site. Where robots.txt [[ROBOTS-TXT]]
-    governs what may be
+文件，这是一种机器可读的策略文件，网站运营商通过发布该文件来声明允许、限制或禁止AI代理在其网站上执行的操作。与
 
-crawled
+robots.txt [[ROBOTS-TXT]]
 
-,
+控制可爬取内容不同，
 
 siteai.json
 
-governs
-    what an agent may
+控制代理可以执行的**操作**：提交表单、完成交易、预约，或提取数据。
 
-do
-
-: submit forms, complete transactions,
-    book appointments, or extract data.
-
-This specification defines the file location, syntax, semantics, and
-    conformance requirements for
+本规范定义了
 
 siteai.json
 
-, together with
-    fields that support transparency and human-oversight obligations under
-    the EU AI Act (in particular Articles 14, 26, and 50).
+的文件位置、语法、语义和合规性要求，以及支持欧盟AI法案（尤其是第14条、第26条和第50条）下透明度和人工监督义务的字段。
 
-This document is a
+本文档是由
 
-work in progress
+A2WF社区组
 
-developed by the
+开发的**工作草案**。欢迎在
 
-A2WF Community Group
+GitHub上的A2WF规范仓库
 
-.
-    Comments, issues, and pull requests are welcome at the
+提交评论、问题和拉取请求。
 
-A2WF specification repository on GitHub
-
-.
-
-The Community Group was launched on 29 March 2026. This is the first
-    ReSpec-based revision of the specification and corresponds to the same
-    technical content as
+社区组于2026年3月29日启动。这是该规范的第一个基于ReSpec的修订版，对应于仓库中
 
 specification-v1.0.md
 
-in the repository, restructured to meet
+的相同技术内容，并重新组织以满足
 
-W3C Community Group specification requirements
+W3C社区组规范要求
 
-.
+。
 
-Introduction
+## 引言
 
-AI agents now interact with websites in ways that go well beyond
-    traditional crawling. Agents fill out forms, complete checkouts,
-    schedule appointments, compare prices, and operate accounts on behalf
-    of users. Existing web standards address only adjacent concerns:
+AI代理现在以远超传统爬取的方式与网站交互。代理填写表单、完成结账、预约、比较价格，并代表用户操作账户。现有Web标准仅处理相关但不同的问题：
 
-robots.txt [[ROBOTS-TXT]] governs which URLs may be crawled, with a binary allow/deny model. It says nothing about actions.
+- **robots.txt [[ROBOTS-TXT]]** 控制哪些URL可被爬取，采用二元允许/拒绝模式，不涉及操作。
+- **IETF AIPREF** 表达对训练和内容重用的偏好，不控制交互行为。
+- **Cookie同意横幅** 管理人类对客户端追踪的管理，而非自主代理执行的操作。
 
-IETF AIPREF expresses preferences about training and content reuse. It does not govern interactive behaviour.
-
-Cookie consent banners govern client-side tracking by humans, not actions taken by autonomous agents.
-
-A2WF fills this gap. A site operator places a
+A2WF填补了这一空白。网站运营商将
 
 siteai.json
 
-document at a well-known location and declares, in a structured form,
-    the conditions under which an AI agent may operate on the site.
+文档放置在知名位置，并以结构化形式声明AI代理在网站上操作的条件。
 
-Problem statement
+## 问题陈述
 
-AI agents increasingly interact with websites — browsing products,
-      comparing prices, booking appointments, filling forms, extracting data.
-      Website operators face a critical gap: no standard exists that gives the
-      website operator a machine-readable way to declare:
+AI代理越来越多地与网站交互——浏览产品、比较价格、预约、填写表单、提取数据。网站运营商面临一个关键缺口：目前没有标准能够让网站运营商以机器可读的方式声明：
 
-What agents are
+- 代理**允许**执行的操作（读取目录、搜索、比较价格）。
+- 代理**禁止**执行的操作（批量抓取、发布虚假评论、完成未授权交易）。
+- 需要**人工验证**的操作（结账、预约、联系表单）。
+- 代理必须如何**标识**自己（名称、运营商、目的）。
+- 适用哪些**法律条款**（服务条款、司法管辖、监管合规）。
+- 强制执行哪些**速率限制**（按操作、按分钟、按小时）。
 
-ALLOWED
+现有代理端标准（MCP [[MCP]]、A2A [[A2A]]、企业IAM）从代理运营商的角度管理代理。A2WF通过从**网站运营商**的角度提供管理来填补这一空白。
 
-to do (read catalogues, search, compare prices).
+## 解决方案
 
-What agents
-
-MUST NOT
-
-do (bulk scrape, post fake reviews, complete unauthorised transactions).
-
-What requires
-
-HUMAN VERIFICATION
-
-(checkout, booking, contact forms).
-
-How agents must
-
-IDENTIFY
-
-themselves (name, operator, purpose).
-
-What
-
-LEGAL TERMS
-
-apply (Terms of Service, jurisdiction, regulatory compliance).
-
-What
-
-RATE LIMITS
-
-are enforced (per action, per minute, per hour).
-
-Current agent-side standards (MCP [[MCP]],
-      A2A [[A2A]], enterprise IAM) govern agents from the
-      agent operator's perspective. A2WF fills the gap by providing
-      governance from the
-
-website operator's
-
-perspective.
-
-Proposed solution:
+### siteai.json
 
 siteai.json
 
-siteai.json
-
-is a JSON-based policy file provided by
-      website operators to declare permissions, restrictions, agent
-      identification requirements, and legal terms in machine-readable form.
-      Its design intent is to give the website side of the agent ecosystem
-      a single, discoverable, structured artifact — comparable in
-      role to
+是一种基于JSON的策略文件，由网站运营商提供，以机器可读的形式声明权限、限制、代理标识要求和法律条款。其设计目的是为代理生态系统的网站端提供一个单一、可发现、结构化的产物——在角色上可比拟
 
 robots.txt
 
-[[ROBOTS-TXT]] for crawlers — but expressing actions, not just
-      paths.
+[[ROBOTS-TXT]]对爬虫的作用——但表达的是操作而非仅仅是路径。
 
-Relationship to Schema.org
+### 与Schema.org的关系
 
-This specification uses Schema.org [[SCHEMA-ORG]]
-      vocabulary where applicable for site-level concepts (WebSite,
-      Organization, ContactPoint), avoiding reinvention of standard terms.
-      It complements Schema.org by introducing governance structures not
-      covered there: permissions, scraping policies, agent identification,
-      human verification, and legal enforcement metadata.
+本规范在适用的情况下使用Schema.org [[SCHEMA-ORG]]词汇来表达站点级概念（WebSite、Organization、ContactPoint），避免重新发明标准术语。它通过引入Schema.org未涵盖的管理结构来补充Schema.org：权限、抓取策略、代理标识、人工验证和法律执行元数据。
 
-An AI agent uses
+AI代理首先使用
 
 siteai.json
 
-first to obtain the
-      governance rules, then uses detailed Schema.org markup found on
-      specific pages for in-depth entity information.
+获取管理规则，然后使用特定页面上发现的详细Schema.org标记来获取实体信息。
 
-Relationship to existing standards
+### 与现有标准的关系
 
-Standard
+| 标准 | 范围 | 与A2WF的关系 |
+|------|------|-------------|
+| robots.txt | 爬取 | 互补——A2WF通过`discovery.robotsTxt`引用robots.txt。 |
+| sitemap.xml | URL列表 | 独立——两个文件可共存。 |
+| llms.txt | LLM内容指导 | 互补——A2WF通过`discovery.llmsTxt`引用它。 |
+| MCP / A2A | 代理端协议 | 互补——A2WF通过`discovery.mcpEndpoint`/`discovery.a2aAgentCard`引用端点。 |
+| Schema.org | 页面级实体词汇 | A2WF在适用时复用Schema.org术语。 |
 
-Scope
-
-Relationship to A2WF
-
-robots.txt
-
-Crawling
-
-Complementary — A2WF references robots.txt via
-
-discovery.robotsTxt
-
-.
-
-sitemap.xml
-
-URL listing
-
-Independent — both files may coexist.
-
-llms.txt
-
-Content guidance for LLMs
-
-Complementary — A2WF references it via
-
-discovery.llmsTxt
-
-.
-
-MCP / A2A
-
-Agent-side protocols
-
-Complementary — A2WF references endpoints via
-
-discovery.mcpEndpoint
-
-/
-
-discovery.a2aAgentCard
-
-.
-
-Schema.org
-
-Page-level entity vocabulary
-
-A2WF reuses Schema.org terms where applicable.
-
-Approach to multilinguality
+### 多语言处理方法
 
 siteai.json
 
-is a single canonical document in one language,
-      identified via
+是一个单一语言的规范文档，通过
 
 identity.inLanguage
 
-using a BCP 47 tag.
-      Multilingual sites SHOULD provide alternate language versions through
-      site infrastructure (separate origins, Accept-Language negotiation, or
-      regional siteai.json variants) rather than embedding multilingual
-      content inside a single file.
+使用BCP 47标签标识。多语言网站应通过站点基础设施（独立来源、Accept-Language协商或区域性siteai.json变体）提供替代语言版本，而非在单个文件内嵌入多语言内容。
 
-Intended audience
+## 预期受众
 
-Website operators
+- **网站运营商**：发布面向AI代理的管理策略。
+- **AI代理运营商**：实施合规的消费者行为。
+- **工具开发者**：为siteai.json文件构建生成器、验证器或审计工具。
+- **合规和法律团队**：将声明的策略映射到监管框架。
+- **监管机构和合规官员**：了解siteai.json如何实现机器可读的AI管理。
 
-publishing governance policies for AI agents.
+## 约定和术语
 
-AI agent operators
-
-implementing conforming consumer behaviour.
-
-Tool authors
-
-building generators, validators, or auditing tools for siteai.json files.
-
-Compliance and legal teams
-
-mapping declared policies to regulatory frameworks.
-
-Regulators & compliance officers
-
-: how
-
-siteai.json
-
-enables machine-readable AI governance.
-
-Conventions and terminology
-
-The format is JSON [[RFC8259]], UTF-8 encoded. Data types
-      used in this specification are: String, Object, Array, Boolean,
-      Integer. URLs are valid URIs, preferably canonical and absolute.
-      Language tags follow IETF BCP 47 [[BCP47]]. Date-time values follow
-      ISO 8601 / [[RFC3339]]. Schema.org vocabulary is referenced from
+格式为JSON [[RFC8259]]，UTF-8编码。本规范使用的数据类型为：String、Object、Array、Boolean、Integer。URL是有效的URI，最好是规范的和绝对的。语言标签遵循IETF BCP 47 [[BCP47]]。日期时间值遵循ISO 8601 / [[RFC3339]]。Schema.org词汇从
 
 https://schema.org/
 
-[[SCHEMA-ORG]].
+[[SCHEMA-ORG]]引用。
 
-The key words
+本文档中的关键词
 
-MUST
+**MUST**（必须）、
 
-,
+**MUST NOT**（禁止）、
 
-MUST NOT
+**REQUIRED**（必需）、
 
-,
+**SHOULD**（应该）、
 
-REQUIRED
+**SHOULD NOT**（不应该）、
 
-,
+**RECOMMENDED**（推荐）、
 
-SHOULD
+**MAY**（可以）和
 
-,
+**OPTIONAL**（可选）
 
-SHOULD NOT
+应按照BCP 14 [[RFC2119]] [[RFC8174]]中的描述进行解释，但仅当它们以全大写形式出现时（如此处所示）才适用。
 
-,
+本文档定义了两类产品：
 
-RECOMMENDED
-
-,
-
-MAY
-
-, and
-
-OPTIONAL
-
-in this document are to be
-      interpreted as described in BCP 14 [[RFC2119]] [[RFC8174]] when, and
-      only when, they appear in all capitals, as shown here.
-
-This document defines two classes of products:
-
-publishing site
-
-(the website operator publishing a
+**发布站点**（发布
 
 siteai.json
 
-) and
+的网站运营商）和
 
-consuming agent
+**消费代理**（检索并执行该文件的AI代理）。每个产品的合规性标准在其各自章节中陈述。
 
-(the AI agent that retrieves and acts on it).
-    Conformance criteria for each are stated in their respective sections.
+## 文件位置和发现
 
-File location and discovery
+### 首选方法：根URL
 
-Preferred method: root URL
-
-A publishing site MUST serve
+发布站点**必须**从其来源根部的知名位置提供
 
 siteai.json
 
-from the
-      well-known location at the root of its origin:
+：
 
+```
 https://example.com/siteai.json
+```
 
-The file MUST be served with HTTP status
+该文件**必须**使用HTTP状态
 
 200 OK
 
-and
+和
 
 Content-Type: application/json
 
-.
+提供服务。
 
-Alternative:
+### 替代方案：robots.txt指令
+
+发布站点**可以**使用以下非标准但通用的指令在
 
 robots.txt
 
-directive
-
-A publishing site MAY also declare the location of its
+中声明其
 
 siteai.json
 
-in
+的位置：
 
-robots.txt
-
-using the
-      non-standard but conventional directive:
-
+```
 SiteAI: https://example.com/siteai.json
+```
 
-Alternative: HTML
+### 替代方案：HTML <link>标签
 
-<link>
-
-tag
-
-A publishing site MAY include a
+发布站点**可以**在文档头部包含
 
 <link>
 
-element in
-      the document head:
+元素：
 
+```html
 <link rel="siteai" href="https://example.com/siteai.json">
+```
 
-Alternative: well-known URI
+### 替代方案：知名URI
 
-A publishing site MAY also serve the file at
-
-/.well-known/siteai.json
-
-for compatibility with
-      well-known URI conventions [[RFC8615]]. When both a root and
-      well-known location are present, they MUST point to the same
-      content.
-
-Priority and retrieval
-
-Consuming agents SHOULD retrieve
-
-siteai.json
-
-in the
-      following order, stopping at the first successful retrieval:
-
-Root URL (
-
-/siteai.json
-
-)
-
-Well-known URI (
+发布站点**可以**通过知名URI约定 [[RFC8615]]在
 
 /.well-known/siteai.json
 
-)
+提供文件以保持兼容性。当根位置和知名位置同时存在时，它们**必须**指向相同内容。
 
-HTML
+### 优先级和检索
 
-<link rel="siteai">
-
-in the home page
-
-SiteAI:
-
-directive in
-
-robots.txt
-
-File serving requirements
-
-The file MUST be served over HTTPS.
-
-The file SHOULD be cacheable with reasonable
-
-Cache-Control
-
-headers (e.g.
-
-max-age=3600
-
-).
-
-The file SHOULD be at most a few hundred kilobytes; consuming
-          agents MAY truncate or reject responses larger than 1 MiB.
-
-Format specification — required elements
-
-Top-level structure
-
-A
+消费代理**应该**按以下顺序检索
 
 siteai.json
+
+，在首次成功检索时停止：
+
+1. 根URL（`/siteai.json`）
+2. 知名URI（`/.well-known/siteai.json`）
+3. 首页中的HTML `<link rel="siteai">`
+4. robots.txt中的`SiteAI:`指令
+
+### 文件服务要求
+
+- 文件**必须**通过HTTPS提供服务。
+- 文件**应该**使用合理的`Cache-Control`头可缓存（例如`max-age=3600`）。
+- 文件**应该**最多几百KB；消费代理**可以**截断或拒绝大于1 MiB的响应。
+
+## 格式规范——必需元素
+
+# 顶层结构
+
+## A. siteai.json 文档结构
 
 document MUST consist of a single JSON
-      object [[RFC8259]]. The root object MUST contain:
+对象 [[RFC8259]]。根对象必须包含：
 
-specVersion
+**specVersion**
 
-(String):
+(String)：必需。
 
-REQUIRED.
-
-Must be
+必须为
 
 "1.0"
 
-.
+。
 
-identity
+**identity**
 
-(Object):
+(Object)：必需。
 
-REQUIRED.
+核心网站标识。
 
-Core website identification.
+**permissions**
 
-permissions
+(Object)：必需。
 
-(Object):
+Agent 访问策略。
 
-REQUIRED.
+根对象应包含：
 
-Agent access policies.
+**@context**
 
-The root object SHOULD contain:
-
-@context
-
-(String): RECOMMENDED.
+(String)：推荐。
 
 "https://schema.org"
 
-.
+。
 
-agentIdentification
+**agentIdentification**
 
-(Object): RECOMMENDED.
+(Object)：推荐。
 
-scraping
+**scraping**
 
-(Object): RECOMMENDED.
+(Object)：推荐。
 
-The root object MAY contain additional members defined in
+根对象可包含
 
-Optional governance extensions
+可选治理扩展
 
-.
-      Consuming agents MUST ignore any unrecognised members.
+中定义的其他成员。
+消费型 Agent 必须忽略任何无法识别的成员。
 
-The
+---
 
-identity
+## identity 对象（必需）
 
-object (REQUIRED)
+提供关于发布网站的核心标识和上下文信息。适用时，字段使用 Schema.org WebSite 词汇。
 
-Provides core identifying and contextual information about the
-      publishing site. Where applicable, fields use Schema.org WebSite
-      vocabulary.
+| 字段 | 类型 | 需求 | 描述 |
+|------|------|------|------|
+| @type | String | 推荐 | "WebSite"。Schema.org 类型声明。 |
+| domain | String | 必需 | 规范绝对 URL（schema:WebSite.url）。 |
+| name | String | 必需 | 官方站点/品牌名称（schema:WebSite.name）。 |
+| description | String | 可选 | 一般网站描述（schema:WebSite.description）。 |
+| purpose | String | 推荐 | 简洁的 AI 聚焦网站主要目标和受众描述。A2WF 专用。 |
+| inLanguage | String | 必需 | 主要语言，使用 BCP 47 标签。 |
+| category | String | 推荐 | 网站类型，例如："e-commerce"、"healthcare"、"government"、"saas"。 |
+| jurisdiction | String | 推荐 | 法律管辖区域，例如："EU"、"US"、"US-CA"、"CH"。 |
+| applicableLaw | Array<String> | 可选 | 具体法规，例如：["EU AI Act", "GDPR"]。 |
+| contact | String | 可选 | 政策相关问题的电子邮件。 |
 
-Field
+---
 
-Type
+## permissions 对象（必需）
 
-Requirement
+核心治理层。包含三个子对象，控制 Agent 交互的不同方面：
 
-Description
+**read**、
 
-@type
+**action** 和
 
-String
+**data**。
 
-RECOMMENDED
+### 读取权限（Read permissions）
 
-"WebSite"
+控制消费型 Agent 可以访问哪些信息（被动操作）：
 
-. Schema.org type declaration.
+- **productCatalog** — 产品列表、描述、图片、类别
+- **pricing** — 价格、费用、价目表
+- **availability** — 库存水平、预约时段、桌位可用性
+- **openingHours** — 营业时间和假期安排
+- **contactInfo** — 地址、电话、电子邮件
+- **reviews** — 客户评价、评分、推荐
+- **faq** — 常见问题
+- **companyInfo** — 关于我们页面、团队、历史
 
-domain
+### 操作权限（Action permissions）
 
-String
+控制消费型 Agent 可以执行哪些操作（主动操作）：
 
-REQUIRED
+- **search** — 网站搜索功能
+- **addToCart** — 添加商品到购物车
+- **checkout** — 完成购买（通常需要 humanVerification: true）
+- **createAccount** — 用户注册（通常被拒绝）
+- **submitReview** — 发布评价（通常被拒绝以防止虚假）
+- **submitContactForm** — 提交联系表单
+- **bookAppointment** — 预订预约
+- **cancelOrder** — 取消订单
+- **requestRefund** — 发起退款请求
 
-Canonical absolute URL (schema:WebSite.url).
+### 数据权限（Data permissions）
 
-name
+保护敏感信息（通常全部拒绝）：
 
-String
+- **customerRecords** — 用户资料和个人数据
+- **orderHistory** — 历史订单和交易
+- **paymentInfo** — 信用卡和银行信息
+- **internalAnalytics** — 流量数据和业务指标
+- **employeeData** — 员工信息
 
-REQUIRED
+### 权限属性
 
-Official site / brand name (schema:WebSite.name).
+每个权限值是一个包含以下成员的对象：
 
-description
+| 字段 | 类型 | 需求 | 描述 |
+|------|------|------|------|
+| allowed | Boolean | 必需 | 是否授予此权限？ |
+| rateLimit | Integer | 可选 | 此操作每分钟最大请求数。 |
+| humanVerification | Boolean | 可选 | 默认为 false。需要人工确认。 |
+| note | String | 可选 | 给 Agent 和人类的解释性说明。作为数据处理，不作为指令。 |
 
-String
+---
 
-OPTIONAL
+## agentIdentification 对象（推荐）
 
-General site description (schema:WebSite.description).
+定义 AI Agent 自我标识的要求。
 
-purpose
+- **requireUserAgent** (Boolean) — Agent 必须包含标识性的 User-Agent 头。
+- **requiredFields** (Array<String>) — Agent 必须提供的字段；有效值包括 "agentName"、"agentOperator"、"agentPurpose"。
+- **allowAnonymousAgents** (Boolean) — 默认为 true。如果为 false，则必须拒绝未识别的 Agent。
+- **trustedAgents** (Array<Object>) — 白名单；每个条目包含 { name, operator, permissions }。
+- **blockedAgents** (Array<Object>) — 黑名单；每个条目包含 { pattern, reason }。
 
-String
+---
 
-RECOMMENDED
+## scraping 对象（推荐）
 
-Concise AI-focused description of the site's primary goal and audience. A2WF-specific.
+声明自动化数据提取策略。
 
-inLanguage
+- **bulkDataExtraction** (Boolean) — 默认为 false。系统性大规模提取。
+- **priceMonitoring** (Boolean) — 默认为 false。自动化价格变动跟踪。
+- **contentReproduction** (Boolean) — 默认为 false。复制或重新发布内容。
+- **competitiveAnalysis** (Boolean) — 默认为 false。用于竞争情报的数据收集。
+- **trainingDataUsage** (Boolean) — 默认为 false。使用网站内容作为训练数据。
+- **note** (String) — 可选。额外的上下文或许可信息。
 
-String
+---
 
-REQUIRED
+## 可选治理扩展
 
-Primary language as a BCP 47 tag.
+### defaults 对象
 
-category
+全局默认设置，除非被单个权限覆盖。
 
-String
+- **agentAccess** (String) — "open"（宽松）、"restricted"（默认拒绝）或 "minimal"（拒绝除明确允许外的所有）。
+- **requireIdentification** (Boolean) — 默认为 false。
+- **humanVerificationRequired** (Boolean) — 默认为 false。如果为 true，则所有操作都需要人工验证。
+- **maxRequestsPerMinute** (Integer) — 全局每分钟速率限制。
+- **maxRequestsPerHour** (Integer) — 全局每小时速率限制。
+- **respectRobotsTxt** (Boolean) — 默认为 true。
 
-RECOMMENDED
+### humanVerification 对象
 
-Website type, e.g.
+定义敏感操作的人工介入要求。
 
-"e-commerce"
+- **methods** (Array<String>) — 可接受的方法："redirect-to-browser"、"email-confirmation"、"sms-otp"。
+- **requiredFor** (Array<String>) — 需要人工验证的操作名称。
+- **note** (String) — 额外的人类可读说明。
 
-,
+### legal 对象
 
-"healthcare"
+引用服务条款和监管框架。
 
-,
+- **termsUrl** (String) — 推荐。AI 专用服务条款的 URL。
+- **complianceNote** (String) — 可选。人类可读的合规声明。
+- **dataRetention** (String) — 可选。Agent 数据保留规则。
+- **euAiActCompliance** (Object) — 可选。EU AI Act 特定元数据，支持《欧盟人工智能法案》(EU) 2024/1689 [[EU-AI-ACT]]：
+  - **transparencyRequired** (Boolean) — Agent 必须标识自身为 AI。
+  - **riskClassification** (String) — "minimal"、"limited"、"high" 或 "unacceptable"。
+  - **humanOversightMandatory** (Boolean)。
 
-"government"
+### discovery 对象
 
-,
+链接到补充网络资源。
 
-"saas"
+- **mcpEndpoint** (String) — MCP 服务器卡的 URL。
+- **a2aAgentCard** (String) — A2A Agent 卡的 URL。
+- **robotsTxt** (String) — robots.txt 的 URL。
+- **llmsTxt** (String) — llms.txt 文件的 URL。
+- **schemaOrg** (Boolean) — 网站上是否存在 Schema.org 标记。
+- **openApi** (String) — OpenAPI 规范的 URL。
 
-.
+### metadata 对象
 
-jurisdiction
+- **$schema** (String) — 用于验证的 JSON Schema URL。
+- **schemaVersion** (String) — 规范版本，例如 "1.0"。
+- **generatedAt** (String) — 生成时间的 RFC 3339 时间戳。
+- **author** (String) — 策略创建者。
+- **lastUpdated** (String, ISO 日期) — 最后修改日期。
+- **expiresAt** (String, ISO 日期) — 策略到期日期。
+- **changelogUrl** (String) — 策略变更历史的 URL。
 
-String
+---
 
-RECOMMENDED
+## 执行
 
-Legal jurisdiction, e.g.
+### 自愿合规
 
-"EU"
+与 robots.txt [[ROBOTS-TXT]] 类似，A2WF 主要依赖信誉良好的 AI Agent 自愿遵守。主流 Agent 供应商应将尊重已发布策略作为负责任 AI 部署的一部分。
 
-,
+### 技术执行
 
-"US"
+发布网站可以通过以下方式执行策略：
 
-,
+- 对不合规 Agent 返回 HTTP 403 响应
+- 根据声明的限制进行速率限制
+- 使用支持 Agent 识别的 Web 应用防火墙
+- 对违反声明策略的 Agent 进行基于 User-Agent 的屏蔽
 
-"US-CA"
+### 法律执行
 
-,
+**legal.termsUrl**
 
-"CH"
+# 翻译
 
-.
+该字段通过链接到机器可读策略实现法律强制执行。现有的法律框架（例如美国的《计算机欺诈和滥用法案》(CFAA)）将违反机器可读访问策略的行为视为未经授权访问的证据。欧盟《人工智能法案》[[EU-AI-ACT]]（2026年8月生效）要求对人工智能系统实施透明度和风险管理；
 
-applicableLaw
+`siteai.json`
 
-Array<String>
+提供了声明策略的机器可读证据。
 
-OPTIONAL
+**审计与日志记录**
 
-Specific regulations, e.g.
+发布网站应记录代理访问模式，并将其与声明的策略进行比对。
 
-["EU AI Act", "GDPR"]
+`agentIdentification`
 
-.
+部分通过要求代理进行自我标识来启用有意义的审计跟踪。
 
-contact
+**安全注意事项**
 
-String
+**策略完整性**
 
-OPTIONAL
+`siteai.json`
 
-Email for policy-related questions.
+文件必须通过HTTPS提供服务，以防止篡改。发布网站应实施完整性检查并监控未经授权的修改。
 
-The
+**提示词注入**
 
-permissions
+`siteai.json`
 
-object (REQUIRED)
+文件包含结构化数据，而非可执行内容。消费代理必须将所有字段视为数据，而非指令。字符串字段（尤其是
 
-The core governance layer. Contains three sub-objects that control
-      different aspects of AI agent interaction:
+`note`
 
-read
+）不得被解释为代理命令。
 
-,
+**策略欺骗**
 
-action
+消费代理必须仅信任来自其所描述域名的
 
-, and
+`siteai.json`
 
-data
+文件。除非通过
 
-.
+`discovery`
 
-Read permissions
+机制明确引用，否则必须拒绝跨域策略声明。
 
-Control what information consuming agents can access (passive operations):
+**拒绝服务**
 
-productCatalog
+`siteai.json`
 
-— product listings, descriptions, images, categories.
+中声明的速率限制是来自发布网站的请求，而非保证。消费代理应遵守声明的限制。发布网站应独立于声明的策略实施服务端速率限制。
 
-pricing
+**隐私注意事项**
 
-— prices, fees, rate cards.
+`siteai.json`
 
-availability
+文件描述了网站针对人工智能代理的策略，旨在供代理和工具获取。它不应包含关于个人用户的个人数据。
 
-— stock levels, appointment slots, table availability.
+`identity`
 
-openingHours
+中的
 
-— business hours and holiday schedules.
+`contact`
 
-contactInfo
+字段旨在用于基于角色的邮箱（例如
 
-— address, phone, email.
+`ai-policy@example.com`
 
-reviews
+），而非个人地址。
 
-— customer reviews, ratings, testimonials.
+发布网站对代理访问的日志记录受适用数据保护法律（例如欧盟的GDPR）管辖；访问日志必须根据该法律进行处理。
 
-faq
+**版本控制与可扩展性**
 
-— frequently asked questions.
+**版本策略**
 
-companyInfo
+`specVersion`
 
-— about page, team, history.
+字段用于标识规范版本。主要版本（2.0、3.0）可能会引入破坏性更改。v1.x内的次要更新必须保持向后兼容。
 
-Action permissions
+**向前兼容性**
 
-Control what operations consuming agents may perform (active operations):
+消费代理必须忽略任何无法识别的成员。这确保了使用未来扩展创建的文件仍可被v1.0消费者读取。
 
-search
+**可扩展性路线图**
 
-— site search functionality.
+未来的扩展可能包括：
 
-addToCart
+- 动态策略端点（基于API的策略查询）
+- 签名策略（加密验证）
+- 行业特定配置文件（医疗保健、金融、政府）
+- 代理能力匹配
 
-— adding items to a shopping cart.
+**Schema.org对齐**
 
-checkout
+| `siteai.json` 字段 | Schema.org 等价物 |
+|---|---|
+| `@context` | JSON-LD context |
+| `identity.@type` | `schema:WebSite` |
+| `identity.name` | `schema:WebSite.name` |
+| `identity.description` | `schema:WebSite.description` |
+| `identity.inLanguage` | `schema:WebSite.inLanguage` |
+| `identity.domain` | `schema:WebSite.url` |
+| `legal.termsUrl` | `schema:WebSite.publishingPrinciples` |
+| `permissions.*` | A2WF扩展（无Schema.org等价物） |
+| `scraping.*` | A2WF扩展 |
+| `agentIdentification.*` | A2WF扩展 |
+| `humanVerification.*` | A2WF扩展 |
 
-— completing a purchase (typically
+A2WF扩展了Schema.org而非重新定义它。没有Schema.org等价物的字段代表了A2WF独有的新型治理概念。
 
-humanVerification: true
+**文件生态系统**
 
-).
+| 文件 | 用途 | 起始年份 |
+|---|---|---|
+| `/robots.txt` | 抓取权限 | 1994 |
+| `/sitemap.xml` | 搜索引擎URL列表 | 2005 |
+| `/llms.txt` | 大语言模型内容指南 | 2024 |
+| `/.well-known/mcp.json` | MCP服务器发现 | 2024 |
+| `/siteai.json` | AI代理访问治理（A2WF） | 2025 |
 
-createAccount
+每个文件都有其独特的用途。
 
-— user registration (often denied).
+`siteai.json`
 
-submitReview
+是位于所有这些文件之上的治理层。
 
-— posting reviews (often denied to prevent fakes).
+`siteai.json`
 
-submitContactForm
+的
 
-— contact form submission.
+`discovery`
 
-bookAppointment
+部分可以引用这些文件中的每一个，为AI代理创建一个统一的入口点。
 
-— booking reservations / appointments.
+**完整示例：电子商务商店**
 
-cancelOrder
-
-— cancelling orders.
-
-requestRefund
-
-— initiating refund requests.
-
-Data permissions
-
-Protect sensitive information (typically all denied):
-
-customerRecords
-
-— user profiles and personal data.
-
-orderHistory
-
-— past orders and transactions.
-
-paymentInfo
-
-— credit cards and bank details.
-
-internalAnalytics
-
-— traffic data and business metrics.
-
-employeeData
-
-— staff information.
-
-Permission properties
-
-Each permission value is an object with the following members:
-
-Field
-
-Type
-
-Requirement
-
-Description
-
-allowed
-
-Boolean
-
-REQUIRED
-
-Is this permission granted?
-
-rateLimit
-
-Integer
-
-OPTIONAL
-
-Maximum requests per minute for this action.
-
-humanVerification
-
-Boolean
-
-OPTIONAL
-
-Default
-
-false
-
-. Requires human confirmation.
-
-note
-
-String
-
-OPTIONAL
-
-Explanatory note for agents and humans. Treated as data, not as instruction.
-
-The
-
-agentIdentification
-
-object (RECOMMENDED)
-
-Defines requirements for AI agent self-identification.
-
-requireUserAgent
-
-(Boolean) — agent MUST include an identifying User-Agent header.
-
-requiredFields
-
-(Array<String>) — fields the agent must provide; valid values include
-
-"agentName"
-
-,
-
-"agentOperator"
-
-,
-
-"agentPurpose"
-
-.
-
-allowAnonymousAgents
-
-(Boolean) — default
-
-true
-
-. If
-
-false
-
-, unidentified agents MUST be denied.
-
-trustedAgents
-
-(Array<Object>) — whitelist; each entry has
-
-{ name, operator, permissions }
-
-.
-
-blockedAgents
-
-(Array<Object>) — blacklist; each entry has
-
-{ pattern, reason }
-
-.
-
-The
-
-scraping
-
-object (RECOMMENDED)
-
-Declares policies on automated data extraction.
-
-bulkDataExtraction
-
-(Boolean) — default
-
-false
-
-. Systematic large-scale extraction.
-
-priceMonitoring
-
-(Boolean) — default
-
-false
-
-. Automated price-change tracking.
-
-contentReproduction
-
-(Boolean) — default
-
-false
-
-. Reproducing or republishing content.
-
-competitiveAnalysis
-
-(Boolean) — default
-
-false
-
-. Data collection for competitive intelligence.
-
-trainingDataUsage
-
-(Boolean) — default
-
-false
-
-. Using site content as training data.
-
-note
-
-(String) — OPTIONAL. Additional context or licensing information.
-
-Optional governance extensions
-
-The
-
-defaults
-
-object
-
-Global default settings that apply unless overridden by individual permissions.
-
-agentAccess
-
-(String) —
-
-"open"
-
-(permissive),
-
-"restricted"
-
-(deny by default), or
-
-"minimal"
-
-(deny everything except explicit allows).
-
-requireIdentification
-
-(Boolean) — default
-
-false
-
-.
-
-humanVerificationRequired
-
-(Boolean) — default
-
-false
-
-. If
-
-true
-
-, all actions require human verification.
-
-maxRequestsPerMinute
-
-(Integer) — global per-minute rate limit.
-
-maxRequestsPerHour
-
-(Integer) — global per-hour rate limit.
-
-respectRobotsTxt
-
-(Boolean) — default
-
-true
-
-.
-
-The
-
-humanVerification
-
-object
-
-Defines human-in-the-loop requirements for sensitive actions.
-
-methods
-
-(Array<String>) — accepted methods:
-
-"redirect-to-browser"
-
-,
-
-"email-confirmation"
-
-,
-
-"sms-otp"
-
-.
-
-requiredFor
-
-(Array<String>) — names of actions that require human verification.
-
-note
-
-(String) — additional human-readable instructions.
-
-The
-
-legal
-
-object
-
-References Terms of Service and regulatory frameworks.
-
-termsUrl
-
-(String) — RECOMMENDED. URL to AI-specific Terms of Service.
-
-complianceNote
-
-(String) — OPTIONAL human-readable compliance statement.
-
-dataRetention
-
-(String) — OPTIONAL rules for agent data retention.
-
-euAiActCompliance
-
-(Object) — OPTIONAL. EU AI Act-specific metadata
-        supporting Regulation (EU) 2024/1689 [[EU-AI-ACT]]:
-
-transparencyRequired
-
-(Boolean) — agents must identify as AI.
-
-riskClassification
-
-(String) —
-
-"minimal"
-
-,
-
-"limited"
-
-,
-
-"high"
-
-, or
-
-"unacceptable"
-
-.
-
-humanOversightMandatory
-
-(Boolean).
-
-The
-
-discovery
-
-object
-
-Links to complementary web resources.
-
-mcpEndpoint
-
-(String) — URL to an MCP server card.
-
-a2aAgentCard
-
-(String) — URL to an A2A agent card.
-
-robotsTxt
-
-(String) — URL to
-
-robots.txt
-
-.
-
-llmsTxt
-
-(String) — URL to an
-
-llms.txt
-
-file.
-
-schemaOrg
-
-(Boolean) — whether Schema.org markup is present on the site.
-
-openApi
-
-(String) — URL to an OpenAPI specification.
-
-The
-
-metadata
-
-object
-
-$schema
-
-(String) — URL of the JSON Schema for validation.
-
-schemaVersion
-
-(String) — specification version, e.g.
-
-"1.0"
-
-.
-
-generatedAt
-
-(String) — RFC 3339 timestamp of generation.
-
-author
-
-(String) — policy creator.
-
-lastUpdated
-
-(String, ISO date) — last modification date.
-
-expiresAt
-
-(String, ISO date) — policy expiration date.
-
-changelogUrl
-
-(String) — URL to policy change history.
-
-Enforcement
-
-Voluntary compliance
-
-Like robots.txt [[ROBOTS-TXT]], A2WF relies primarily
-      on voluntary compliance by reputable AI agents. Major agent vendors
-      are expected to respect published policies as part of responsible AI
-      deployment.
-
-Technical enforcement
-
-Publishing sites MAY enforce policies through:
-
-HTTP
-
-403
-
-responses to non-compliant agents.
-
-Rate limiting based on declared limits.
-
-Web Application Firewalls with agent-aware rules.
-
-User-Agent-based blocking for agents that violate declared policies.
-
-Legal enforcement
-
-The
-
-legal.termsUrl
-
-field enables legal enforcement by
-      linking to machine-readable policies. Existing legal frameworks
-      (e.g. CFAA in the United States) treat violation of machine-readable
-      access policies as evidence of unauthorised access. The
-      EU AI Act [[EU-AI-ACT]] (effective August 2026)
-      requires transparency and risk management for AI systems;
-
-siteai.json
-
-provides machine-readable evidence of
-      declared policies.
-
-Audit and logging
-
-Publishing site
-
-s SHOULD log agent access patterns and compare them
-      against declared policies. The
-
-agentIdentification
-
-section enables meaningful audit trails by requiring agent
-      self-identification.
-
-Security considerations
-
-Policy integrity
-
-The
-
-siteai.json
-
-file MUST be served over HTTPS to
-      prevent tampering. Publishing sites SHOULD implement integrity checks
-      and monitor for unauthorised modifications.
-
-Prompt injection
-
-The
-
-siteai.json
-
-file contains structured data, not
-      executable content. Consuming agents MUST treat all fields as data,
-      not instructions. String fields (especially
-
-note
-
-) MUST
-      NOT be interpreted as agent commands.
-
-Policy spoofing
-
-Consuming agents MUST only trust
-
-siteai.json
-
-files
-      served from the domain they describe. Cross-domain policy
-      declarations MUST be rejected unless explicitly referenced via the
-
-discovery
-
-mechanism.
-
-Denial of service
-
-Rate limits declared in
-
-siteai.json
-
-are requests from
-      the publishing site, not guarantees. Consuming agents SHOULD respect
-      declared limits. Publishing sites SHOULD implement server-side rate
-      limiting independently of declared policies.
-
-Privacy considerations
-
-The
-
-siteai.json
-
-file describes a site's policy for AI
-    agents and is intended to be fetched by agents and tools. It SHOULD
-    NOT contain personal data about individual users. The
-
-contact
-
-field in
-
-identity
-
-is intended for a role-based mailbox (for example
-
-ai-policy@example.com
-
-) rather than an individual
-    person's address.
-
-Logging of agent access by publishing sites is governed by applicable
-    data protection law (such as the GDPR in the European Union); access
-    logs MUST be processed in accordance with that law.
-
-Versioning and extensibility
-
-Version strategy
-
-The
-
-specVersion
-
-field identifies the specification
-      version. Major versions (2.0, 3.0) MAY introduce breaking changes.
-      Minor updates within v1.x MUST remain backward-compatible.
-
-Forward compatibility
-
-Consuming agents MUST ignore any unrecognised members. This ensures
-      that files created with future extensions remain readable by v1.0
-      consumers.
-
-Extensibility roadmap
-
-Future extensions may include:
-
-Dynamic policy endpoints (API-based policy queries).
-
-Signed policies (cryptographic verification).
-
-Industry-specific profiles (healthcare, finance, government).
-
-Agent capability matching.
-
-Schema.org alignment
-
-siteai.json
-
-field
-
-Schema.org equivalent
-
-@context
-
-JSON-LD context
-
-identity.@type
-
-schema:WebSite
-
-identity.name
-
-schema:WebSite.name
-
-identity.description
-
-schema:WebSite.description
-
-identity.inLanguage
-
-schema:WebSite.inLanguage
-
-identity.domain
-
-schema:WebSite.url
-
-legal.termsUrl
-
-schema:WebSite.publishingPrinciples
-
-permissions.*
-
-A2WF extension (no Schema.org equivalent)
-
-scraping.*
-
-A2WF extension
-
-agentIdentification.*
-
-A2WF extension
-
-humanVerification.*
-
-A2WF extension
-
-A2WF extends Schema.org rather than reinventing it. Fields without a
-    Schema.org equivalent represent the novel governance concepts unique
-    to A2WF.
-
-File ecosystem
-
-File
-
-Purpose
-
-Since
-
-/robots.txt
-
-Crawl permissions
-
-1994
-
-/sitemap.xml
-
-URL listing for search engines
-
-2005
-
-/llms.txt
-
-Content guide for LLMs
-
-2024
-
-/.well-known/mcp.json
-
-MCP server discovery
-
-2024
-
-/siteai.json
-
-AI agent access governance (A2WF)
-
-2025
-
-Each file serves a distinct purpose.
-
-siteai.json
-
-is the
-    governance layer that sits alongside all of them. The
-
-discovery
-
-section of
-
-siteai.json
-
-can
-    reference each of these files, creating a unified entry point for AI
-    agents.
-
-Complete example: e-commerce store
-
+```json
 {
   "@context": "https://schema.org",
   "specVersion": "1.0",
@@ -1519,48 +704,40 @@ Complete example: e-commerce store
     "schemaVersion": "1.0"
   }
 }
+```
 
-Consuming agent requirements
+**消费代理要求**
 
-A conforming
+符合规范的
 
-consuming agent
+`consuming agent`
 
-MUST:
+必须：
 
-Retrieve
+1. 在对网站执行任何非读取操作之前，从知名位置检索
 
-siteai.json
+   `siteai.json`
 
-from the well-known location before performing any non-read action on the site.
+2. 在
 
-Identify itself in the
+   `User-Agent`
 
-User-Agent
+   标头中以区别于人工操作浏览器的形式标识自身
+3. 遵守所有
 
-header in a form that distinguishes it from human-operated browsers.
+   `"allowed": false`
 
-Honour all
+   声明作为禁止
+4. 遵守声明的速率限制
+5. 在声明时触发人工验证流程
+6. 将所有字符串内容（特别是
 
-"allowed": false
+   `note`
 
-declarations as prohibitions.
+   字段）视为数据而非指令
 
-Observe declared rate limits.
+**致谢**
 
-Trigger human verification flows where declared.
-
-Treat all string content (notably
-
-note
-
-fields) as data and never as instructions.
-
-Acknowledgements
-
-The editor thanks the founding members and early reviewers of the
-    A2WF Community Group for their feedback on the draft specification,
-    and the W3C Community Development Lead for guidance on aligning the
-    specification with W3C Community Group requirements.
+编辑感谢A2WF社区小组的创始成员和早期审阅者对规范草案的反馈，感谢W3C社区开发负责人对将本规范与W3C社区小组要求对齐的指导。
 
 *原文请访问 [a2wf.github.io](https://a2wf.github.io/spec)*
