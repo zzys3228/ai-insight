@@ -5,7 +5,7 @@ url: https://www.swebench.com
 date: 2026-06-22
 category: benchmark/swebench
 translated: true
-fetched_at: 2026-06-22T17:47:25.209242
+fetched_at: 2026-06-22T17:58:05.193603
 ---
 # 官方排行榜
 

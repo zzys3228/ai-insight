@@ -5,7 +5,7 @@ url: https://www.sanctuaryai.com/phoenix
 date: 2026-06-22
 category: robot/sanctuaryai
 translated: true
-fetched_at: 2026-06-22T17:35:40.512815
+fetched_at: 2026-06-22T17:51:22.243992
 ---
 # 
 

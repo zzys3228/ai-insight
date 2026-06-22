@@ -1,15 +1,21 @@
 ---
-title: **翻译：**  
-突破性 AI 解决全球最重大的问题。
+title: **突破性AI解决世界最大问题**
+
+Alternatively, more formally:
+
+**突破性人工智能解决世界上最大的挑战**
 source: allenai.org
 url: https://allenai.org
 date: 2026-06-22
 category: benchmark/allenai
 translated: true
-fetched_at: 2026-06-22T17:34:31.025363
+fetched_at: 2026-06-22T17:50:32.489881
 ---
-# **翻译：**  
-突破性 AI 解决全球最重大的问题。
+# **突破性AI解决世界最大问题**
+
+Alternatively, more formally:
+
+**突破性人工智能解决世界上最大的挑战**
 
 **来源**: allenai.org | **日期**: 2026-06-22
 

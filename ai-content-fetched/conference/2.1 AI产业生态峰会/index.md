@@ -1,26 +1,14 @@
 ---
-title: **纽约AI峰会**
-
-or more formally:
-
-**纽约人工智能峰会**
-
-Note: "AI Summit" is the official name of a tech conference series, so the translation preserves the brand recognition. "New York" is transliterated as 纽约 (Nǐyuē).
+title: **纽约人工智能峰会**
 source: newyork.theaisummit.com
 url: https://newyork.theaisummit.com
 date: 2026-06-22
 category: conference/2.1 AI产业生态峰会/2026
 translated: true
-fetched_at: 2026-06-22T17:47:37.861424
+fetched_at: 2026-06-22T17:58:13.522685
 content_sources: [{'type': 'official_website', 'url': 'https://newyork.theaisummit.com', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
 ---
-# **纽约AI峰会**
-
-or more formally:
-
-**纽约人工智能峰会**
-
-Note: "AI Summit" is the official name of a tech conference series, so the translation preserves the brand recognition. "New York" is transliterated as 纽约 (Nǐyuē).
+# **纽约人工智能峰会**
 
 **来源**: newyork.theaisummit.com | **年份**: 2026 | **日期**: 2026-06-22
 

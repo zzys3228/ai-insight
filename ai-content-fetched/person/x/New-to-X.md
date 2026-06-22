@@ -1,11 +1,11 @@
 ---
 title: New to X?
 source: x.com
-url: https://x.com/janleike
+url: https://x.com/JeffDean
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T17:49:34.875065
+fetched_at: 2026-06-22T17:58:56.529854
 ---
 # New to X?
 
@@ -15,28 +15,24 @@ fetched_at: 2026-06-22T17:49:34.875065
 
 **置顶**
 
-Jan Leike
+杰夫·迪恩
 
-@janleike
+@JeffDean
 
-5月8日
+2018年12月3日
 
-一些个人消息：我将在Anthropic开始一个新的研究项目。非常兴奋！
+2017年4月，@NewYorker的@jsomers联系我，说他想对我和我的长期同事桑杰·格马瓦特进行一个小型的专题报道，观察我们工作几个小时，也许一起吃个晚饭之类的。
 
-要让AGI发展良好，需要很多条件，而对齐（alignment）只是其中之一。更多内容即将发布……
+今天发表了。我觉得它非常准确地捕捉了我们的工作风格。
 
-100
+**成就谷歌辉煌的友谊**
 
-54
+来自 newyorker.com
 
-2.2K
+390
 
-214K
+1.1K
 
----
+5.2K
 
-**术语说明：**
-- AGI = 通用人工智能（Artificial General Intelligence）
-- alignment = 对齐（AI安全领域的核心概念，指确保AI系统的目标与人类价值观一致）
-
-*原文请访问 [x.com](https://x.com/janleike)*
+*原文请访问 [x.com](https://x.com/JeffDean)*

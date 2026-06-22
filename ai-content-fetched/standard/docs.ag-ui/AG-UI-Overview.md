@@ -1,205 +1,303 @@
 ---
-title: **AG-UI 概述**
+title: AG-UI 概述
 source: docs.ag-ui.com
 url: https://docs.ag-ui.com
 date: 2026-06-22
 category: standard/docs.ag-ui
 translated: true
-fetched_at: 2026-06-22T17:37:00.913283
+fetched_at: 2026-06-22T17:52:28.820358
 ---
-# **AG-UI 概述**
+# AG-UI 概述
 
 **来源**: docs.ag-ui.com | **日期**: 2026-06-22
 
 ---
 
-# 页面内容
-
-## 标题
-
-**Agent–User Interaction (AG-UI) Protocol**
-
-**Agentic Protocols**
-
-**Building blocks (today & upcoming)**
-
-**Why Agentic Apps need AG-UI**
-
-**The requirements of user‑facing agents**
-
-**AG-UI in Action**
-
-**Supported Integrations**
-
-**Direct to LLM**
-
-**Agent Framework - Partnerships**
-
-**Agent Framework - 1st Party**
-
-**Agent Framework - Community**
-
-**Agent Interaction Protocols**
-
-**Infrastructure / Deployment**
-
-**Specification (standard)**
-
-**SDKs**
-
-**Clients**
-
-**Quick Start**
-
-**Explore AG-UI**
-
-**Resources**
-
-**Contributing**
-
-**Support and Feedback**
-
----
-
-## Agentic Protocols
-
-| 层级 | 协议 / 示例 | 目的 |
-|------|-------------|------|
-| Agent ↔ User Interaction | **AG-UI** (Agent–User Interaction Protocol) | 一个开放的、基于事件的标准，用于将 Agent 连接到用户面向的应用程序——实现实时、多模态、交互式体验。 |
-| Agent ↔ Tools & Data | **MCP** (Model Context Protocol) | 开放标准（由 Anthropic 发起），允许 Agent 安全地连接到外部系统——工具、工作流和数据源。 |
-| Agent ↔ Agent | **A2A** (Agent to Agent) | 开放标准（由 Google 发起），定义了 Agent 如何在分布式 Agent 系统中协调和共享工作。 |
-
----
-
-## Building blocks (today & upcoming)
-
-## Why Agentic Apps need AG-UI
-
-## The requirements of user‑facing agents
-
-Agent 的特点：
-- **长期运行**：并**流式传输中间结果**——通常跨越多轮会话。
-- **非确定性**：能够**非确定性控制应用程序 UI**。
-- Agent 同时混合**结构化 + 非结构化 IO**（例如文本和语音，以及工具调用和状态更新）。
-- Agent 需要用户交互式**组合**：例如，它们可能调用子 Agent，通常是递归的。
-- 还有更多……
-
----
-
-## AG-UI in Action
-
-## Supported Integrations
-
-### Direct to LLM
-
-| Framework | Status | AG-UI Resources |
-|-----------|--------|------------------|
-| Direct to LLM | Supported | Docs |
-
-### Agent Framework - Partnerships
-
-| Framework | Status | AG-UI Resources |
-|-----------|--------|------------------|
-| LangGraph | Supported | Docs, Demos |
-| CrewAI | Supported | Docs, Demos |
-
-### Agent Framework - 1st Party
-
-| Framework | Status | AG-UI Resources |
-|-----------|--------|------------------|
-| Microsoft Agent Framework | Supported | Docs, Demos |
-| Google ADK | Supported | Docs, Demos |
-| AWS Strands Agents | Supported | Docs, Demos |
-| AWS Bedrock AgentCore | Supported | Docs |
-| Mastra | Supported | Docs, Demos |
-| Pydantic AI | Supported | Docs, Demos |
-| Agno | Supported | Docs, Demos |
-| LlamaIndex | Supported | Docs, Demos |
-| AG2 | Supported | Docs, Demos |
-| AWS Bedrock Agents | In Progress | – |
-
-### Agent Framework - Community
-
-| Framework | Status | AG-UI Resources |
-|-----------|--------|------------------|
-| OpenAI Agent SDK | In Progress | – |
-| Cloudflare Agents | In Progress | – |
-
-### Agent Interaction Protocols
-
-| Protocol | Status | AG-UI Resources | Integrations |
-|----------|--------|-----------------|--------------|
-| A2A Middleware | Supported | Docs | Partnership |
-
-### Infrastructure / Deployment
-
-| Platform | Status | AG-UI Resources | Integrations |
-|----------|--------|-----------------|--------------|
-| Amazon Bedrock AgentCore | Supported | Docs | 1st Party |
-
-### Specification (standard)
-
-| Framework | Status | AG-UI Resources |
-|-----------|--------|------------------|
-| Oracle Agent Spec | Supported | Docs, Demos |
-
-### SDKs
-
-| SDK | Status | AG-UI Resources | Integrations |
-|-----|--------|-----------------|--------------|
-| Kotlin | Supported | Getting Started | Community |
-| Golang | Supported | Getting Started | Community |
-| Dart | Supported | Getting Started | Community |
-| Java | Supported | Getting Started | Community |
-| Rust | Supported | Getting Started | Community |
-| .NET | In Progress | PR | Community |
-| Nim | In Progress | PR | Community |
-| Flowise | In Progress | GitHub Source | Community |
-| Langflow | In Progress | GitHub Source | Community |
-
-### Clients
-
-| Client | Status | AG-UI Resources | Integrations |
-|--------|--------|-----------------|--------------|
-| CopilotKit | Supported | Getting Started | 1st Party |
-| Terminal + Agent | Supported | Getting Started | Community |
-| React Native | Help Wanted | GitHub Source | Community |
-
----
-
-## Quick Start
-
-- Build agentic applications
-- Build new AG-UI integrations
-- Build AG-UI compatible clients
-
----
-
-## Explore AG-UI
-
-- Core architecture
-- Events
-
----
-
-## Resources
-
-- Developing with Cursor
-- Troubleshooting AG-UI
-
----
-
-## Contributing
-
-## Support and Feedback
-
-对于与 AG-UI 规范、SDK 或文档（开源）相关的错误报告和功能请求，请提交 GitHub Issue。
-
-对于关于 AG-UI 的讨论或问答，请加入 Discord 社区。
-
----
-
-Was this page helpful?
-*此页面对您有帮助吗？*
+# 翻译
+
+在本页
+
+Agent-User 交互 (AG-UI) 协议
+Agentic 协议
+构建模块（当前和即将推出）
+为什么 Agentic 应用需要 AG-UI
+用户界面代理的需求
+AG-UI 实践
+支持的集成
+直连 LLM
+Agent 框架 - 合作伙伴
+Agent 框架 - 第一方
+Agent 框架 - 社区
+Agent 交互协议
+基础设施 / 部署
+规范（标准）
+SDK
+客户端
+快速开始
+探索 AG-UI
+资源
+贡献
+支持和反馈
+
+用户界面代理的需求
+
+直连 LLM
+Agent 框架 - 合作伙伴
+Agent 框架 - 第一方
+Agent 框架 - 社区
+Agent 交互协议
+基础设施 / 部署
+规范（标准）
+SDK
+客户端
+
+Agentic 协议
+
+层级
+协议 / 示例
+目的
+Agent ↔ 用户交互
+AG-UI
+（Agent-User 交互协议）
+开放的、基于事件的连接标准，将 Agent 与用户界面应用相连——实现实时、多模态、交互式体验。
+Agent ↔ 工具和数据
+MCP
+（模型上下文协议）
+开放标准（由 Anthropic 发起），让 Agent 能够安全地连接到外部系统——工具、工作流和数据源。
+Agent ↔ Agent
+A2A
+（Agent 到 Agent）
+开放标准（由 Google 发起），定义了 Agent 在分布式 Agentic 系统中协调和共享工作的方式。
+
+构建模块（当前和即将推出）
+
+为什么 Agentic 应用需要 AG-UI
+
+用户界面代理的需求
+
+Agent 是
+长期运行的
+并且
+流式传输中间结果——通常跨越多轮会话。
+Agent 是
+非确定性的
+可以
+非确定性控制应用界面
+。
+Agent 同时混合
+结构化和非结构化输入输出
+（例如：文本和语音，以及工具调用和状态更新）。
+Agent 需要用户交互式
+组合
+：例如，它们可能调用子 Agent，通常是递归的。
+以及更多……
+
+AG-UI 实践
+
+支持的集成
+
+直连 LLM
+
+框架
+状态
+AG-UI 资源
+直连 LLM
+支持中
+文档
+
+Agent 框架 - 合作伙伴
+
+框架
+状态
+AG-UI 资源
+LangGraph
+支持中
+文档
+、演示
+CrewAI
+支持中
+文档
+、演示
+
+Agent 框架 - 第一方
+
+框架
+状态
+AG-UI 资源
+Microsoft Agent Framework
+支持中
+文档
+、演示
+Google ADK
+支持中
+文档
+、演示
+AWS Strands Agents
+支持中
+文档
+、演示
+AWS Bedrock AgentCore
+支持中
+文档
+Mastra
+支持中
+文档
+、演示
+Pydantic AI
+支持中
+文档
+、演示
+Agno
+支持中
+文档
+、演示
+LlamaIndex
+支持中
+文档
+、演示
+AG2
+支持中
+文档
+演示
+AWS Bedrock Agents
+进行中
+–
+
+Agent 框架 - 社区
+
+框架
+状态
+AG-UI 资源
+OpenAI Agent SDK
+进行中
+–
+Cloudflare Agents
+进行中
+–
+
+Agent 交互协议
+
+协议
+状态
+AG-UI 资源
+集成
+A2A 中间件
+支持中
+文档
+合作伙伴
+
+基础设施 / 部署
+
+平台
+状态
+AG-UI 资源
+集成
+Amazon Bedrock AgentCore
+支持中
+文档
+第一方
+
+规范（标准）
+
+框架
+状态
+AG-UI 资源
+Oracle Agent 规范
+支持中
+文档
+、演示
+
+SDK
+
+SDK
+状态
+AG-UI 资源
+集成
+Kotlin
+支持中
+入门指南
+社区
+Golang
+支持中
+入门指南
+社区
+Dart
+支持中
+入门指南
+社区
+Java
+支持中
+入门指南
+社区
+Rust
+支持中
+入门指南
+社区
+.NET
+进行中
+PR
+社区
+Nim
+进行中
+PR
+社区
+Flowise
+进行中
+GitHub 源码
+社区
+Langflow
+进行中
+GitHub 源码
+社区
+
+客户端
+
+客户端
+状态
+AG-UI 资源
+集成
+CopilotKit
+支持中
+入门指南
+第一方
+终端 + Agent
+支持中
+入门指南
+社区
+React Native
+需要帮助
+GitHub 源码
+社区
+
+快速开始
+
+构建 Agentic 应用
+
+构建新的 AG-UI 集成
+
+构建 AG-UI 兼容客户端
+
+探索 AG-UI
+
+核心架构
+
+事件
+
+资源
+
+使用 Cursor 开发
+
+AG-UI 故障排除
+
+贡献
+
+支持和反馈
+
+对于与 AG-UI 规范、SDK 或文档（开源）相关的错误报告和功能请求，请
+创建 GitHub issue
+对于关于 AG-UI 的讨论或问答，请加入
+Discord 社区
+
+本页对您有帮助吗？
 
 *原文请访问 [docs.ag-ui.com](https://docs.ag-ui.com)*

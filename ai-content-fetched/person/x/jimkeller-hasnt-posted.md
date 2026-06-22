@@ -5,7 +5,7 @@ url: https://x.com/jimkeller
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T17:36:03.075771
+fetched_at: 2026-06-22T17:50:26.192557
 ---
 # **@jimkeller 没有发帖**
 
@@ -13,36 +13,25 @@ fetched_at: 2026-06-22T17:36:03.075771
 
 ---
 
-登录
-
-注册
-
-JimKeller
-
-0
-
-帖子
-
-@JimKeller
-
-2008年11月加入
-
-0
-
-关注中
-
-21
-
-粉丝
-
-帖子
-
-回复
-
-媒体
-
-@jimkeller 还没有发布任何内容
-
-他们发布内容后，帖子会显示在这里。
+登录  
+注册  
+JimKeller  
+0  
+帖子  
+JimKeller  
+@JimKeller  
+2008年11月加入  
+0  
+关注  
+21  
+粉丝  
+帖子  
+帖子  
+回复  
+回复  
+媒体  
+媒体  
+@jimkeller 还未发布任何内容  
+他们发布后，帖子将显示在此处。
 
 *原文请访问 [x.com](https://x.com/jimkeller)*

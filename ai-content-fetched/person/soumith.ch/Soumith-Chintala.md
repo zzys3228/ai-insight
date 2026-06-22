@@ -1,13 +1,13 @@
 ---
-title: 苏米特·钦塔拉
+title: 苏米特·金塔拉
 source: soumith.ch
 url: https://soumith.ch
 date: 2026-06-22
 category: person/soumith.ch
 translated: true
-fetched_at: 2026-06-22T17:42:59.752249
+fetched_at: 2026-06-22T17:55:01.931564
 ---
-# 苏米特·钦塔拉
+# 苏米特·金塔拉
 
 **来源**: soumith.ch | **日期**: 2026-06-22
 

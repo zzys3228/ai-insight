@@ -1,72 +1,96 @@
 ---
-title: 达里奥·阿莫德伊
+title: 达里奥·阿莫迪
 source: darioamodei.com
 url: https://darioamodei.com
 date: 2026-06-22
 category: person/darioamodei
 translated: true
-fetched_at: 2026-06-22T17:46:56.424928
+fetched_at: 2026-06-22T17:56:29.952710
 ---
-# 达里奥·阿莫德伊
+# 达里奥·阿莫迪
 
 **来源**: darioamodei.com | **日期**: 2026-06-22
 
 ---
 
-# 中文翻译
+以下是中文翻译：
 
-达里奥·阿莫迪（Dario Amodei）是 Anthropic 公司的首席执行官。Anthropic 是一家公益公司，致力于构建可控制、可解释且安全的人工智能系统。
+---
+
+Dario Amodei 是 Anthropic 的 CEO。Anthropic 是一家公益公司，致力于构建可控制、可解释且安全的人工智能系统。
 
 ...
 
-更多
+更多内容
 
-此前，达里奥曾担任 OpenAI 研究副总裁，领导开发了 GPT-2 和 GPT-3 等大语言模型。他也是基于人类反馈的强化学习（RLHF）的共同发明人。加入 OpenAI 之前，他在谷歌大脑（Google Brain）担任高级研究科学家。
+此前，Dario 曾担任 OpenAI 研究副总裁，领导开发了 GPT-2 和 GPT-3 等大型语言模型。他也是"基于人类反馈的强化学习"（RLHF）的共同发明人。在加入 OpenAI 之前，他在 Google Brain 担任高级研究科学家。
 
-达里奥在普林斯顿大学获得生物物理学博士学位（赫兹学者），并曾在斯坦福大学医学院担任博士后学者。
+Dario 在普林斯顿大学获得生物物理学博士学位（赫兹奖学金获得者），并在斯坦福大学医学院担任博士后学者。
 
-**文章**
+文章
 
-技术的青春期
+技术青春期
 
-恩赐之机
+恩赐之机器
 
 短文
 
-关于人工智能指数增长的政策
+关于人工智能指数增长的策略
 
 可解释性的紧迫性
 
-论 DeepSeek 与出口管制
+论 DeepSeek 和出口管制
 
-**研究**
+研究
 
-Google Scholar
+Google Scholar 学术主页
 
-**评论文章**
+评论文章
 
-人工智能需要基本透明度规则（《纽约时报》，2025年）
+AI 需要基本透明规则
 
-特朗普可以保持美国的人工智能优势（《华尔街日报》，2025年）
+（《纽约时报》, 2025）
 
-**访谈**
+特朗普可以保持美国的 AI 优势
 
-"一杯啤酒的调侃"（与约翰·科林森对话，2025年）
+（《华尔街日报》, 2025）
 
-亚历克斯·坎特罗维茨访谈（2025年）
+访谈
 
-赞尼·明顿·贝多斯访谈（2025年）
+与 John Collison 的"俏皮品脱"对话
 
-Lex Fridman 播客（2024年）
+（2025）
 
-诺亚·史密斯的经济学102（2024年）
+与 Alex Kantrowitz 的对话
 
-In Good Company 播客（2024年）
+（2025）
 
-《时代》专访（2024年）
+与 Zanny Minton Beddoes 的对话
 
-埃兹拉·克莱因访谈节目（2024年）
+（2025）
 
-Dwarkesh 播客（2023年）
+Lex Fridman 播客
+
+（2024）
+
+Noah Smith 的经济学 102
+
+（2024）
+
+In Good Company 播客
+
+（2024）
+
+《时代》专访
+
+（2024）
+
+The Ezra Klein Show
+
+（2024）
+
+Dwarkesh Podcast
+
+（2023）
 
 *原文请访问 [darioamodei.com](https://darioamodei.com)*

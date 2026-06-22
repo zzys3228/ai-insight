@@ -1,25 +1,21 @@
 ---
-title: **智能体网络协议白皮书**
+title: **Translation:**
 
-Technical breakdown:
-- Agent = 智能体 (in AI/agent contexts)
-- Network = 网络
-- Protocol = 协议
-- White Paper = 白皮书
+代理网络协议白皮书
+
+**Note:** 如果特指人工智能领域的智能体，可译为：**智能体网络协议白皮书**
 source: w3c-cg.github.io
 url: https://w3c-cg.github.io/ai-agent-protocol
 date: 2026-06-22
 category: standard/w3c-cg.github
 translated: true
-fetched_at: 2026-06-22T17:37:57.062174
+fetched_at: 2026-06-22T17:53:24.038142
 ---
-# **智能体网络协议白皮书**
+# **Translation:**
 
-Technical breakdown:
-- Agent = 智能体 (in AI/agent contexts)
-- Network = 网络
-- Protocol = 协议
-- White Paper = 白皮书
+代理网络协议白皮书
+
+**Note:** 如果特指人工智能领域的智能体，可译为：**智能体网络协议白皮书**
 
 **来源**: w3c-cg.github.io | **日期**: 2026-06-22
 

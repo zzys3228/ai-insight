@@ -1,21 +1,13 @@
 ---
-title: **AI智能体的通用discovery层**
-
-注：此翻译保留了"discovery layer"这一技术组件名称的英文写法，这是技术文档中的常见做法。如果您希望完全中文化，可译为：
-
-**AI智能体的通用发现层**
+title: **AI智能体的通用发现层**
 source: dns-aid.org
 url: https://dns-aid.org
 date: 2026-06-22
 category: standard/dns-aid.org
 translated: true
-fetched_at: 2026-06-22T17:38:19.881197
+fetched_at: 2026-06-22T17:53:49.841609
 ---
-# **AI智能体的通用discovery层**
-
-注：此翻译保留了"discovery layer"这一技术组件名称的英文写法，这是技术文档中的常见做法。如果您希望完全中文化，可译为：
-
-**AI智能体的通用发现层**
+# **AI智能体的通用发现层**
 
 **来源**: dns-aid.org | **日期**: 2026-06-22
 

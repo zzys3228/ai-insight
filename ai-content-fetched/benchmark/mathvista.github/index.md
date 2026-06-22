@@ -5,7 +5,7 @@ url: https://mathvista.github.io
 date: 2026-06-22
 category: benchmark/mathvista.github
 translated: true
-fetched_at: 2026-06-22T17:34:13.487245
+fetched_at: 2026-06-22T17:50:22.669304
 ---
 # MathVista
 

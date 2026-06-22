@@ -5,7 +5,7 @@ url: https://karpathy.ai
 date: 2026-06-22
 category: person/karpathy.ai
 translated: true
-fetched_at: 2026-06-22T17:37:55.187319
+fetched_at: 2026-06-22T17:51:56.270443
 ---
 # 安德烈·卡尔帕西
 

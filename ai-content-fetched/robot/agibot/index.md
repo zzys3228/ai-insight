@@ -5,7 +5,7 @@ url: https://www.agibot.com/news
 date: 2026-06-22
 category: robot/agibot
 translated: true
-fetched_at: 2026-06-22T17:37:54.772343
+fetched_at: 2026-06-22T17:54:52.643278
 ---
 # 
 

@@ -1,13 +1,13 @@
 ---
-title: **寻找能够真正做事的人工智能**
+title: 寻找能够真正执行任务的 AI
 source: agentic.ai
 url: https://agentic.ai
 date: 2026-06-22
 category: standard/agentic.ai
 translated: true
-fetched_at: 2026-06-22T17:46:03.829285
+fetched_at: 2026-06-22T17:56:19.709746
 ---
-# **寻找能够真正做事的人工智能**
+# 寻找能够真正执行任务的 AI
 
 **来源**: agentic.ai | **日期**: 2026-06-22
 

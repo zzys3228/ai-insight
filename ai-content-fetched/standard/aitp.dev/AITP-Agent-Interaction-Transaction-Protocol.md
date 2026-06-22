@@ -1,25 +1,13 @@
 ---
-title: **AITP: 智能体交互与事务协议**
-
-解释：
-- Agent = 智能体（AI技术语境中的标准译法）
-- Interaction = 交互
-- Transaction = 事务（协议/系统语境中的准确译法）
-- Protocol = 协议
+title: AITP：代理交互与事务协议
 source: aitp.dev
 url: https://aitp.dev
 date: 2026-06-22
 category: standard/aitp.dev
 translated: true
-fetched_at: 2026-06-22T17:38:04.928766
+fetched_at: 2026-06-22T17:53:40.469759
 ---
-# **AITP: 智能体交互与事务协议**
-
-解释：
-- Agent = 智能体（AI技术语境中的标准译法）
-- Interaction = 交互
-- Transaction = 事务（协议/系统语境中的准确译法）
-- Protocol = 协议
+# AITP：代理交互与事务协议
 
 **来源**: aitp.dev | **日期**: 2026-06-22
 

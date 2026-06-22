@@ -5,7 +5,7 @@ url: https://x.com/elonmusk
 date: 2026-06-22
 category: robot/x
 translated: true
-fetched_at: 2026-06-22T17:46:15.738978
+fetched_at: 2026-06-22T17:56:25.058327
 ---
 # 
 
@@ -15,30 +15,44 @@ fetched_at: 2026-06-22T17:46:15.738978
 
 **置顶**
 
-**埃隆·马斯克** @elonmusk
+Elon Musk
+
+@elonmusk
 
 6月15日
 
-让我们的太阳产生知觉，理解宇宙，并将意识的曙光延伸到群星
+让我们的太阳拥有意识，理解宇宙，并将意识的光芒延伸至星辰
 
-**马克·安德森** 🇺🇸 @pmarca
+Marc Andreessen 🇺🇸
+
+@pmarca
 
 6月15日
 
 文章
 
-**SpaceX与有知觉的太阳**
+**SpaceX与有意识的太阳**
 
-作者：@mikeg0和本人
+作者：@mikemcg0 及本人
 
-埃隆·马斯克在SpaceX的薪酬方案围绕两个目标设定。第一个奖项在公司估值达到7.5万亿美元并建立......时解锁。
+埃隆·马斯克在SpaceX的薪酬方案围绕两个目标设计。第一个奖励在公司估值达到7.5万亿美元并建立……时归属。
 
-1.2万
+12K
 
-1.4万
+14K
 
-6.2万
+62K
 
-6600万
+66M
+
+---
+
+**术语说明：**
+- "sentient" 译为"有意识的"
+- "valuation" 译为"估值"
+- "trillion" 按中国习惯译为"万亿"（7.5万亿美元）
+- "vests" 在薪酬语境下译为"归属"
+- "compensation package" 译为"薪酬方案"
+- "宇宙"和"意识"等科技术语保持标准译法
 
 *原文请访问 [x.com](https://x.com/elonmusk)*

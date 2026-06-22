@@ -1,21 +1,13 @@
 ---
-title: **独立的人工智能分析**
-
-Or more concisely:
-
-**AI 独立分析**
+title: 人工智能的独立分析
 source: artificialanalysis.ai
 url: https://artificialanalysis.ai
 date: 2026-06-22
 category: benchmark/artificialanalysis.ai
 translated: true
-fetched_at: 2026-06-22T17:46:01.661259
+fetched_at: 2026-06-22T17:56:11.151119
 ---
-# **独立的人工智能分析**
-
-Or more concisely:
-
-**AI 独立分析**
+# 人工智能的独立分析
 
 **来源**: artificialanalysis.ai | **日期**: 2026-06-22
 
