@@ -90,10 +90,27 @@ class FetchDaily:
 
         if category:
             cat_lower = category.lower()
-            # Filter by section name OR by URL domain
-            urls = [u for u in urls if
-                    cat_lower in u['section'].lower() or
-                    (cat_lower == 'github' and 'github.com' in u['url'].lower())]
+            if cat_lower == 'company':
+                # Company URLs: sections starting with "1." (company sections)
+                urls = [u for u in urls if u['section'] and u['section'].startswith('1.')]
+            elif cat_lower == 'github':
+                urls = [u for u in urls if 'github.com' in u['url'].lower()]
+            elif cat_lower == 'academic':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('4.')]
+            elif cat_lower == 'media':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('9.')]
+            elif cat_lower == 'benchmark':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('6.')]
+            elif cat_lower == 'robot':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('10.')]
+            elif cat_lower == 'standard':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('7.')]
+            elif cat_lower == 'person':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('5.')]
+            elif cat_lower == 'conference':
+                urls = [u for u in urls if u['section'] and u['section'].startswith('2.')]
+            else:
+                urls = [u for u in urls if cat_lower in u['section'].lower()]
 
         return urls
 

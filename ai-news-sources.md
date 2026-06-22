@@ -80,23 +80,25 @@
 | 33 | | Le Chat | https://chat.mistral.ai | 对话助手 | ✅ | 是 | daily |
 | 34 | | Mistral News | https://mistral.ai/news/ | 官方博客 | ✅ | 是 | daily |
 | 35 | | La Plateforme | https://console.mistral.ai | 控制台 | ✅302→ | 是 | daily |
-| 36 | xAI | Grok API | https://console.x.ai/ | 产品页 | ⚠️403 | 是 | both |
-| 37 | | xAI News | https://x.ai/blog | 官方博客 | ⚠️403 | 是 | daily |
-| 38 | Cohere | Command API | https://docs.cohere.com/docs/command | API文档 | ✅ | 否 | daily |
-| 39 | | Command A+ | https://cohere.com/blog/command-a-plus | 高性能模型 | ✅ | 否 | daily |
-| 40 | | Aya Models | https://docs.cohere.com/docs/aya | 多语言模型 | ✅ | 否 | daily |
-| 41 | | Transcribe | https://cohere.com/blog/transcribe | 语音转文字 | ✅ | 否 | daily |
-| 42 | | Embed API | https://docs.cohere.com/docs/embeddings | 向量API | ✅ | 否 | daily |
-| 43 | | Rerank | https://docs.cohere.com/docs/rerank | 搜索重排 | ✅ | 否 | daily |
-| 44 | | North | https://cohere.com/blog/north-mini-code | 企业AI平台 | ✅ | 否 | daily |
-| 45 | | Cohere Blog | https://cohere.com/blog | 研究博客 | ✅ | 否 | daily |
-| 30 | AI21 Labs | Jurassic-2 | https://www.ai21.com | 文本生成AI | ✅ | 是 | daily |
-| 31 | | AI21 Blog | https://www.ai21.com/blog | 研究博客 | ✅ | 是 | daily |
-| 32 | Stability AI | Stability AI News | https://stability.ai/news-updates | 公司动态/发布 | ✅302→ | 是 | daily |
-| 33 | Together AI | Together Blog | https://www.together.ai/blog | 研究博客 | ✅ | 是 | daily |
-| 34 | Replicate | Replicate | https://replicate.com | 模型运行平台 | ✅ | 是 | daily |
-| 35 | Perplexity | Perplexity Blog | https://blog.perplexity.ai | 研究博客 | ✅ | 是 | daily |
-| 36 | 01.AI | Yi系列博客 | https://www.lingyiwanwu.com/blog | 开源LLM | ✅ | 否 | daily |
+| 36 | xAI | Grok-4.3 | https://docs.x.ai | 文本生成模型 | ✅ | 是 | both |
+| 37 | | Voice API | https://docs.x.ai | TTS/STT/实时语音 | ✅ | 是 | daily |
+| 38 | | Imagine API | https://docs.x.ai | 图像/视频生成 | ✅ | 是 | daily |
+| 39 | | xAI Blog | https://x.ai/blog | 官方博客 | ✅ | 是 | daily |
+| 40 | Cohere | Command API | https://docs.cohere.com/docs/command | API文档 | ✅ | 否 | daily |
+| 41 | | Command A+ | https://cohere.com/blog/command-a-plus | 高性能模型 | ✅ | 否 | daily |
+| 42 | | Aya Models | https://docs.cohere.com/docs/aya | 多语言模型 | ✅ | 否 | daily |
+| 43 | | Transcribe | https://cohere.com/blog/transcribe | 语音转文字 | ✅ | 否 | daily |
+| 44 | | Embed API | https://docs.cohere.com/docs/embeddings | 向量API | ✅ | 否 | daily |
+| 45 | | Rerank | https://docs.cohere.com/docs/rerank | 搜索重排 | ✅ | 否 | daily |
+| 46 | | North | https://cohere.com/blog/north-mini-code | 企业AI平台 | ✅ | 否 | daily |
+| 47 | | Cohere Blog | https://cohere.com/blog | 研究博客 | ✅ | 否 | daily |
+| 48 | AI21 Labs | Jurassic-2 | https://www.ai21.com | 文本生成AI | ✅ | 是 | daily |
+| 49 | | AI21 Blog | https://www.ai21.com/blog | 研究博客 | ✅ | 是 | daily |
+| 50 | Stability AI | Stability AI News | https://stability.ai/news-updates | 公司动态/发布 | ✅302→ | 是 | daily |
+| 51 | Together AI | Together Blog | https://www.together.ai/blog | 研究博客 | ✅ | 是 | daily |
+| 52 | Replicate | Replicate | https://replicate.com | 模型运行平台 | ✅ | 是 | daily |
+| 53 | Perplexity | Perplexity Blog | https://blog.perplexity.ai | 研究博客 | ✅ | 是 | daily |
+| 54 | 01.AI | Yi系列博客 | https://www.lingyiwanwu.com/blog | 开源LLM | ✅ | 否 | daily |
 
 ### 1.3 综合科技-海外
 
@@ -104,54 +106,63 @@
 |---|------|------|-----|---------|------|------|------|
 | 1 | Google Cloud | Vertex AI | https://cloud.google.com/vertex-ai | ML平台 | ✅ | 是 | daily |
 | 2 | | Gemini API | https://ai.google.dev/gemini-api | 生成式AI | ✅ | 是 | daily |
-| 3 | | Gemini | https://deepmind.google/models/gemini/ | Google基础模型总览 | ✅ | 是 | daily |
-| 4 | | Gemini Omni | https://deepmind.google/models/gemini-omni/ | 多模态端侧模型 | ✅ | 是 | daily |
-| 5 | | Gemini in Workspace | https://workspace.google.com | 企业AI | ✅ | 是 | daily |
-| 6 | | Google I/O | https://io.google | 年度开发者大会 | ✅ | 是 | daily |
-| 7 | | Google Cloud Next | https://cloud.google.com/events/google-cloud-next | Cloud年度大会 | ✅ | 是 | daily |
-| 8 | | Google AI Blog | https://blog.google/technology/ai | AI博客 | ✅ | 是 | daily |
-| 9 | | Google Cloud Blog | https://cloud.google.com/blog | Cloud博客 | ✅ | 是 | daily |
-| 10 | AWS | AWS AI服务总览 | https://aws.amazon.com/machine-learning | AI服务入口 | ✅ | 否 | daily |
-| 11 | | Amazon Bedrock | https://aws.amazon.com/bedrock/ | 生成式AI | ✅ | 否 | both |
-| 12 | | Amazon Q Business | https://aws.amazon.com/q/business | 企业AI | ✅ | 否 | daily |
-| 13 | | Amazon Q Developer | https://aws.amazon.com/q/developer/ | AI编程 | ✅ | 否 | both |
-| 14 | | Amazon SageMaker | https://aws.amazon.com/sagemaker | ML平台 | ✅ | 否 | both |
-| 15 | | AWS re:Invent | https://aws.amazon.com/reinvent/ | 年度大会 | ✅ | 否 | daily |
-| 16 | | AWS ML Blog | https://aws.amazon.com/blogs/machine-learning | 发布博客 | ✅ | 否 | daily |
-| 17 | Microsoft Azure | Azure OpenAI | https://oai.azure.com | 生成式AI | ✅ | 否 | daily |
-| 18 | | Azure AI Studio | https://ai.azure.com | ML平台 | ✅ | 否 | daily |
-| 19 | | Copilot Studio | https://copilotstudio.microsoft.com | 对话平台 | ✅ | 否 | daily |
-| 20 | | Microsoft Build | https://build.microsoft.com | 年度开发者大会 | ✅302→ | 否 | daily |
-| 21 | | Microsoft Ignite | https://ignite.microsoft.com | 企业大会 | ✅ | 否 | daily |
-| 22 | | Azure Blog | https://azure.microsoft.com/blog | 发布博客 | ✅ | 否 | daily |
-| 23 | Apple | Apple Intelligence | https://www.apple.com/apple-intelligence | AI功能 | ✅ | 否 | daily |
-| 24 | | Apple ML | https://machinelearning.apple.com | ML研究博客 | ✅ | 否 | daily |
-| 25 | Meta AI | Llama | https://llama.meta.com | 开源LLM | ✅ | 是 | daily |
-| 26 | | Meta AI Blog | https://ai.meta.com/blog | 研究博客 | ✅ | 是 | daily |
-| 27 | | PyTorch | https://pytorch.org | ML框架 | ✅ | 否 | daily |
-| 28 | | PyTorch GitHub | https://github.com/pytorch/pytorch | 全球最大ML框架 | ✅ | 是 | daily |
-| 29 | | Llama GitHub | https://github.com/meta-llama/llama | 开源LLM基座 | ✅ | 是 | daily |
-| 30 | | AutoGen | https://github.com/microsoft/autogen | 多Agent协作框架 | ✅ | 是 | daily |
-| 31 | | DeepSpeed | https://github.com/microsoft/DeepSpeed | 分布式训练/ZeRO | ✅ | 是 | daily |
-| 32 | | Semantic Kernel | https://github.com/microsoft/semantic-kernel | AI应用编排 | ✅ | 是 | daily |
-| 33 | | Playwright | https://github.com/microsoft/playwright | 浏览器自动化 | ✅ | 是 | daily |
-| 34 | | TensorFlow | https://www.tensorflow.org | ML框架 | ✅ | 是 | daily |
-| 35 | | BERT | https://github.com/google-research/bert | 预训练模型 | ✅ | 是 | daily |
-| 36 | | JAX/Flax | https://github.com/google/jax | 高性能ML框架 | ✅ | 是 | daily |
-| 37 | | Gemma | https://ai.google.dev/gemma | 开源LLM | ✅ | 是 | daily |
-| 38 | | Transformers | https://github.com/huggingface/transformers | NLP标准库 | ✅ | 是 | daily |
-| 39 | | Diffusers | https://github.com/huggingface/diffusers | 图像生成库 | ✅ | 是 | daily |
-| 40 | | TGI | https://github.com/huggingface/text-generation-inference | 推理框架 | ✅ | 是 | daily |
-| 41 | | Whisper | https://github.com/openai/whisper | 语音识别 | ✅ | 是 | daily |
-| 42 | | CLIP | https://github.com/openai/CLIP | 图文对比学习 | ✅ | 是 | daily |
-| 43 | Salesforce | Einstein AI | https://www.salesforce.com/ai | 企业AI | ✅ | 是 | daily |
-| 44 | Adobe | Firefly AI | https://www.adobe.com/firefly | 生成式AI | ✅ | 是 | daily |
-| 45 | | Adobe AI Blog | https://www.adobe.com/firefly/flourish | AI博客 | ✅ | 是 | daily |
-| 46 | | Adobe Sensei | https://www.adobe.com/sensei.html | AI/ML平台 | ✅ | 是 | daily |
-| 47 | IBM | watsonx | https://www.ibm.com/watsonx | 企业AI平台 | ✅ | 否 | daily |
-| 48 | | IBM Research | https://research.ibm.com | 研究博客 | ✅ | 是 | daily |
-| 49 | Baidu | ERNIE Bot | https://yiyan.baidu.com | 文心一言 | ✅ | 否 | daily |
-| 50 | | 百度AI Lab | https://research.baidu.com | 研究博客 | ✅ | 否 | daily |
+| 3 | | Gemini in Workspace | https://workspace.google.com | 企业AI | ✅ | 是 | daily |
+| 4 | | Google I/O | https://io.google | 年度开发者大会 | ✅ | 是 | daily |
+| 5 | | Google Cloud Next | https://cloud.google.com/events/google-cloud-next | Cloud年度大会 | ✅ | 是 | daily |
+| 6 | | Google AI Blog | https://blog.google/technology/ai | AI博客 | ✅ | 是 | daily |
+| 7 | | Google Cloud Blog | https://cloud.google.com/blog | Cloud博客 | ✅ | 是 | daily |
+| 8 | Google DeepMind | Gemini | https://deepmind.google/models/gemini/ | Google基础模型总览 | ✅ | 是 | daily |
+| 9 | | Gemini Omni | https://deepmind.google/models/gemini-omni/ | 多模态端侧模型 | ✅ | 是 | daily |
+| 10 | | Veo | https://deepmind.google/models/veo/ | 视频生成 | ✅ | 是 | daily |
+| 11 | | Imagen | https://deepmind.google/models/imagen/ | 图像生成 | ✅ | 是 | daily |
+| 12 | | Lyria | https://deepmind.google/models/lyria/ | 音乐生成 | ✅ | 是 | daily |
+| 13 | | Gemma | https://ai.google.dev/gemma | 开源LLM | ✅ | 是 | daily |
+| 14 | | Jules | https://ai.google.dev/jules | 编程Agent | ✅ | 是 | daily |
+| 15 | | AlphaFold | https://deepmind.google/models/alphafold/ | 蛋白质结构预测 | ✅ | 是 | daily |
+| 16 | | SIMA | https://deepmind.google/models/sima/ | 3D世界Agent | ✅ | 是 | daily |
+| 17 | | DeepMind Blog | https://deepmind.google/blog | 研究博客 | ✅ | 是 | daily |
+| 18 | AWS | AWS AI服务总览 | https://aws.amazon.com/machine-learning | AI服务入口 | ✅ | 否 | daily |
+| 19 | | Amazon Bedrock | https://aws.amazon.com/bedrock/ | 生成式AI | ✅ | 否 | both |
+| 20 | | Bedrock AgentCore | https://aws.amazon.com/bedrock/agentcore | Agent编排 | ✅ | 否 | daily |
+| 21 | | Amazon Q Business | https://aws.amazon.com/q/business | 企业AI | ✅ | 否 | daily |
+| 22 | | Amazon Q Developer | https://aws.amazon.com/q/developer/ | AI编程 | ✅ | 否 | both |
+| 23 | | Amazon SageMaker | https://aws.amazon.com/sagemaker | ML平台 | ✅ | 否 | both |
+| 24 | | SageMaker HyperPod | https://aws.amazon.com/sagemaker/hyperpod | 分布式训练 | ✅ | 否 | daily |
+| 25 | | AWS re:Invent | https://aws.amazon.com/reinvent/ | 年度大会 | ✅ | 否 | daily |
+| 26 | | AWS ML Blog | https://aws.amazon.com/blogs/machine-learning | 发布博客 | ✅ | 否 | daily |
+| 27 | Microsoft Azure | Azure OpenAI | https://oai.azure.com | 生成式AI | ✅ | 否 | daily |
+| 28 | | Azure AI Studio | https://ai.azure.com | ML平台 | ✅ | 否 | daily |
+| 29 | | Copilot Studio | https://copilotstudio.microsoft.com | 对话平台 | ✅ | 否 | daily |
+| 30 | | Microsoft Build | https://build.microsoft.com | 年度开发者大会 | ✅302→ | 否 | daily |
+| 31 | | Microsoft Ignite | https://ignite.microsoft.com | 企业大会 | ✅ | 否 | daily |
+| 32 | | Azure Blog | https://azure.microsoft.com/blog | 发布博客 | ✅ | 否 | daily |
+| 33 | Apple | Apple Intelligence | https://www.apple.com/apple-intelligence | AI功能 | ✅ | 否 | daily |
+| 34 | | Apple ML | https://machinelearning.apple.com | ML研究博客 | ✅ | 否 | daily |
+| 35 | Meta AI | Llama | https://llama.meta.com | 开源LLM | ✅ | 是 | daily |
+| 36 | | Meta AI Blog | https://ai.meta.com/blog | 研究博客 | ✅ | 是 | daily |
+| 37 | | PyTorch | https://pytorch.org | ML框架 | ✅ | 否 | daily |
+| 38 | | PyTorch GitHub | https://github.com/pytorch/pytorch | 全球最大ML框架 | ✅ | 是 | daily |
+| 39 | | Llama GitHub | https://github.com/meta-llama/llama | 开源LLM基座 | ✅ | 是 | daily |
+| 40 | Microsoft | AutoGen | https://github.com/microsoft/autogen | 多Agent协作框架 | ✅ | 是 | daily |
+| 41 | | DeepSpeed | https://github.com/microsoft/DeepSpeed | 分布式训练/ZeRO | ✅ | 是 | daily |
+| 42 | | Semantic Kernel | https://github.com/microsoft/semantic-kernel | AI应用编排 | ✅ | 是 | daily |
+| 43 | | Playwright | https://github.com/microsoft/playwright | 浏览器自动化 | ✅ | 是 | daily |
+| 44 | Google | TensorFlow | https://www.tensorflow.org | ML框架 | ✅ | 是 | daily |
+| 45 | | BERT | https://github.com/google-research/bert | 预训练模型 | ✅ | 是 | daily |
+| 46 | | JAX/Flax | https://github.com/google/jax | 高性能ML框架 | ✅ | 是 | daily |
+| 47 | HuggingFace | Transformers | https://github.com/huggingface/transformers | NLP标准库 | ✅ | 是 | daily |
+| 48 | | Diffusers | https://github.com/huggingface/diffusers | 图像生成库 | ✅ | 是 | daily |
+| 49 | | TGI | https://github.com/huggingface/text-generation-inference | 推理框架 | ✅ | 是 | daily |
+| 50 | OpenAI开源 | Whisper | https://github.com/openai/whisper | 语音识别 | ✅ | 是 | daily |
+| 51 | | CLIP | https://github.com/openai/CLIP | 图文对比学习 | ✅ | 是 | daily |
+| 52 | Salesforce | Einstein AI | https://www.salesforce.com/ai | 企业AI | ✅ | 是 | daily |
+| 53 | Adobe | Firefly AI | https://www.adobe.com/firefly | 生成式AI | ✅ | 是 | daily |
+| 54 | | Adobe AI Blog | https://www.adobe.com/firefly/flourish | AI博客 | ✅ | 是 | daily |
+| 55 | | Adobe Sensei | https://www.adobe.com/sensei.html | AI/ML平台 | ✅ | 是 | daily |
+| 56 | IBM | watsonx | https://www.ibm.com/watsonx | 企业AI平台 | ✅ | 否 | daily |
+| 57 | | IBM Research | https://research.ibm.com | 研究博客 | ✅ | 是 | daily |
+| 58 | Baidu | ERNIE Bot | https://yiyan.baidu.com | 文心一言 | ✅ | 否 | daily |
+| 59 | | 百度AI Lab | https://research.baidu.com | 研究博客 | ✅ | 否 | daily |
 
 ### 1.4 阿里云产品
 

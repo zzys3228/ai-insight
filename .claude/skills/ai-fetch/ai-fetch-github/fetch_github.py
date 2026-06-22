@@ -36,7 +36,7 @@ class GitHubFetcher:
         }
         self.translator = Translator()
         self.last_request = 0
-        self.delay = 1.5  # Rate limit: 60 req/hr without token
+        self.delay = 10.0  # Rate limit: 60 req/hr without token, use 10s to be safe
         self.use_proxy = use_proxy
 
     def _rate_limit_wait(self):
@@ -169,8 +169,8 @@ class GitHubFetcher:
         else:
             raise Exception(f"Failed to fetch README: {response.status_code}")
 
-    def _get(self, url: str) -> requests.Response:
-        """Make GET request with proxy support"""
+    def _get(self, url: str, retry_count: int = 3) -> requests.Response:
+        """Make GET request with proxy support and retry on 403"""
         proxies = {}
         if self.use_proxy or should_use_proxy(url):
             proxies = {
@@ -178,12 +178,23 @@ class GitHubFetcher:
                 'https': 'http://127.0.0.1:26001'
             }
 
-        return requests.get(
-            url,
-            headers=self.headers,
-            proxies=proxies,
-            timeout=REQUEST_TIMEOUT
-        )
+        for attempt in range(retry_count):
+            response = requests.get(
+                url,
+                headers=self.headers,
+                proxies=proxies,
+                timeout=REQUEST_TIMEOUT
+            )
+
+            if response.status_code == 403:
+                # Rate limited - wait longer and retry
+                wait_time = (attempt + 1) * 30  # 30s, 60s, 90s
+                print(f"  Rate limited (403), waiting {wait_time}s...")
+                time.sleep(wait_time)
+                continue
+            return response
+
+        return response  # Return last response even if failed
 
     def format_as_markdown(self, results: dict, owner: str, repo: str) -> str:
         """

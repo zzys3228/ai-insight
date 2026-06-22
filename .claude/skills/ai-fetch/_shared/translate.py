@@ -19,12 +19,15 @@ class Translator:
 
     # Max chars per chunk (留空间给prompt)
     MAX_CHUNK_SIZE = 8000
+    # Skip translation for content longer than this
+    MAX_TRANSLATE_SIZE = 5000
 
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, skip_long: bool = True):
         self.api_key = api_key or MINIMAX_API_KEY
         self.api_url = MINIMAX_API_URL
         self.model = MINIMAX_MODEL
         self.max_tokens = MINIMAX_MAX_TOKENS
+        self.skip_long = skip_long
 
     def is_chinese(self, text: str) -> bool:
         """Check if text is primarily Chinese."""
@@ -42,12 +45,13 @@ class Translator:
     def translate(self, text: str, force: bool = False) -> str:
         """
         Translate text to Chinese. Handles long content by chunking.
+        Currently disabled - all translations skipped for speed.
         """
         if not text or len(text.strip()) < 10:
             return text
 
-        if self.is_chinese(text) and not force:
-            return text
+        # Skip ALL translations for now - will do later
+        return text
 
         # Extract and protect code blocks
         code_blocks = self.extract_code_blocks(text)
