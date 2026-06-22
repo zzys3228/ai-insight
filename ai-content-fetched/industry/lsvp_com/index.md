@@ -1,92 +1,38 @@
 ---
-title: DEEPENING OUR PARTNERSHIP WITH ANTHROPIC
+title: Sorry, you have been blocked
 source: lsvp.com
 url: https://lsvp.com
-category: industry/8.1 VC/风投机构
-fetched_at: 2026-06-22T19:42:07.330402
-translated: true
+category: industry
 ---
+# Sorry, you have been blocked
 
-# DEEPENING OUR PARTNERSHIP WITH ANTHROPIC
+# 中文翻译
 
-**来源**: lsvp.com | **抓取时间**: 2026-06-22
+请启用 cookies。
 
-**摘要**: Lightspeed Venture Partners is a multi-stage VC firm backing bold founders and disruptive innovations from Seed to Series F.
+抱歉，您已被阻止访问
+============================
 
----
+您无法访问 wpenginepowered.com
+--------------------------------------------
 
-POSSIBILITYGROWS
+为什么我被阻止了？
+------------------------
 
-THE DEEPERYOU GO
+该网站正在使用安全服务来保护自己免受在线攻击。您刚才执行的操作触发了安全解决方案。有多种操作可能导致此阻止，包括提交某个特定词语或短语、SQL 命令或格式错误的数据。
 
-![](https://lsvp.com/wp-content/themes/lsvp/assets/images/bg-partner.png)
+我能做些什么来解决这个问题？
+------------------------------
 
-## over a decade as AI founders' first call
+您可以发送电子邮件给网站所有者，告知他们您被阻止了。请附上此页面出现时您正在进行的操作以及此页面底部的 Cloudflare Ray ID。
 
-* ![](https://lsvp.com/wp-content/uploads/2024/02/abridge-logo-black-1024x177.png)
-* ![](https://lsvp.com/wp-content/uploads/2024/10/Anthropic_logo.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/cartesia.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/03/bg-removed-1779476895155-1024x535.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/Dexterity_logo_transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2024/08/evenup-logo.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/08/Mithril_logo-removebg-preview.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/03/Glean-logo-svg.svg)
-* ![](https://lsvp.com/wp-content/uploads/2023/08/granola_logo_horizontal_transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/07/Inworld-Logo-Black-1024x201.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/06/mistral-ai.svg)
-* ![](https://lsvp.com/wp-content/uploads/2024/02/abridge-logo-black-1024x177.png)
-* ![](https://lsvp.com/wp-content/uploads/2024/10/Anthropic_logo.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/cartesia.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/03/bg-removed-1779476895155-1024x535.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/Dexterity_logo_transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2024/08/evenup-logo.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/08/Mithril_logo-removebg-preview.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/03/Glean-logo-svg.svg)
-* ![](https://lsvp.com/wp-content/uploads/2023/08/granola_logo_horizontal_transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/07/Inworld-Logo-Black-1024x201.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/06/mistral-ai.svg)
+Cloudflare Ray ID: **a0fbdf3a4ad2953e**
+•
 
-* ![](https://lsvp.com/wp-content/uploads/2025/04/pika_logo_200x200.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/Moveworks-dark.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/06/logo-navan-a-1.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/67460f47497562c34ea6f930_Skild-Logo-VectorGraphics-Colored.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/Snorkel-AI-transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2024/05/Suno-Logo-transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/ThoughtSpot.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/typeface.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/tollbit_clear_Logo-removebg-preview.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/XAI_Logo.svg-1024x725.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/pika_logo_200x200.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/Moveworks-dark.png)
-* ![](https://lsvp.com/wp-content/uploads/2023/06/logo-navan-a-1.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/67460f47497562c34ea6f930_Skild-Logo-VectorGraphics-Colored.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/Snorkel-AI-transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2024/05/Suno-Logo-transparent.png)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/ThoughtSpot.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/typeface.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/tollbit_clear_Logo-removebg-preview.svg)
-* ![](https://lsvp.com/wp-content/uploads/2025/04/XAI_Logo.svg-1024x725.png)
+您的 IP:
+点击显示
+5.183.102.110
+•
+性能与安全性由 [Cloudflare](https://www.cloudflare.com/5xx-error-landing) 提供
 
-[![]( https://lsvp.com/wp-content/uploads/2025/09/b2b64405-72fa-4898-98ad-eb215c81f2f6-1-scaled.jpg )](https://lsvp.com/stories/deepening-our-partnership-with-anthropic/)
-
-# DEEPENING OUR PARTNERSHIP WITH ANTHROPIC
-
-AI is different. Its potential to transform our lives is even more profound. As the past three years have shown, the pace and intensity of change have been almost relentless. Amid this whirlwind, Anthropic has stood out as a steady force. Their mission is simple yet powerful: to scale intelligence that is both trustworthy and safe. The team's execution against that vision has been exceptional, and it's why we're proud to deepen our partnership with Anthropic in their Series F.
-
-[READ MORE](https://lsvp.com/stories/deepening-our-partnership-with-anthropic/)
-
-Too often VC only scratches the surface. Continually consuming until there’s a basic understanding of everything, and expertise in nothing.
-Lightspeed takes a different approach.
-
-![](https://lsvp.com/wp-content/uploads/2023/03/logo-lsvp.webp)
-
-Depth is our center of gravity. It’s how we build and maintain a mastery that enables unwavering conviction in the companies we back.
-
-Our depth of commitment means rolling up our sleeves to earn our seat at the table. Depth of relationships means authenticity, transparency and trust. And depth of belief means navigating the peaks and valleys together, regardless of how the terrain unfolds.
-
-Complete immersion is the heart of our philosophy on investing and we believe what separates us from speculators and opportunists. Creating together instead of 
-
-... (内容截断，原始长度 22008 字符)
-
-
-*原文请访问 [https://lsvp.com](https://lsvp.com)*
+*原文: https://lsvp.com*

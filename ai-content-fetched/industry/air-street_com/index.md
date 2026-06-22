@@ -1,91 +1,68 @@
 ---
-title: air-street_com
+title: air-street.com
 source: air-street.com
 url: https://air-street.com
-category: industry/8.1 VC/风投机构
-fetched_at: 2026-06-22T19:41:35.802620
-translated: true
+category: industry
 ---
+# air-street.com
 
-# air-street_com
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201254%201254'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-14-2026-09_40_24-AM.jpg)
 
-**来源**: air-street.com | **抓取时间**: 2026-06-22
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%20640'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-14-2026-09_36_29-AM.jpg)
 
-**摘要**: ## 中文翻译
+[![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/02/ET59037H-Z577-1-800x800.jpg)](https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-blue-2/) 
 
-**Peak Algérie**，领先的质量鞋履和运动鞋品牌，为男士、女士和儿童提供无与伦比的舒适体验。探索我们的鞋履、运动鞋、配饰及服装系列，配备Yalidine配送服务。
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/02/ET59037H-Z577-2-800x800.jpg)
 
----
+[Sélectionner les options](https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-blue-2/) 
+Ce produit a plusieurs variations. Les options peuvent être choisies sur la page du produit
 
-**备注：**
+[Aperçu rapide](https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-blue-2/)
 
-- 原文中"enfant"应为"enfants"（复数形式）
-- "calaquette"、"accessiore"、"vetement"疑似拼写错误
-- "Yalidine"是阿尔及利亚的快递/配送服务公司名称，保持原名
+[Add to compare](https://peakalgerie.com/fr/compare/)
 
----
+[Ajouter à ma liste de souhaits](https://peakalgerie.com/fr/wishlist/)
 
-以下是翻译成中文的内容：
+40
 
-**添加比较链接**: https://peakalgerie.com/fr/compare/
-**添加到心愿单**: https://peakalgerie.com/fr/wishlist/
+41
 
----
+42
 
-### Peak Up30 5.0 White/Orange（白/橙）
+43
 
-价格：16.900 د.ج（阿尔及利亚第纳尔）
+44
 
-- 选择选项：https://peakalgerie.com/fr/produit/peak-up30-5-0-white-orange/
-- 快速查看
+### [Peak Turbo 2.0 Blue](https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-blue-2/)
 
-尺码：40、41、42、43、44、45
+15.900 د.ج
 
----
+[New
 
-### Peak Taichi Up30 3.0 White Yellow（白/黄）
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/06/FW96013-D154-1.jpg)](https://peakalgerie.com/fr/produit/peak-aerospeed/) 
 
-~~15.900 د.ج~~ → **14.400 د.ج**（折扣9%）
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/06/FW96013-D154-2.jpg)
 
-- 选择选项：https://peakalgerie.com/fr/produit/peak-taichi-up30-3-0-white-yellow/
-- 快速查看
+[Sélectionner les options](https://peakalgerie.com/fr/produit/peak-aerospeed/) 
+Ce produit a plusieurs variations. Les options peuvent être choisies sur la page du produit
 
-尺码：44、45
+[Aperçu rapide](https://peakalgerie.com/fr/produit/peak-aerospeed/)
 
----
+[Add to compare](https://peakalgerie.com/fr/compare/)
 
-### Peak Turbo 2.0 Light Grey/Navy（浅灰/藏青）
+[Ajouter à ma liste de souhaits](https://peakalgerie.com/fr/wishlist/)
 
-价格：15.900 د.ج
+### [Peak Aerospeed](https://peakalgerie.com/fr/produit/peak-aerospeed/)
 
-- 选择选项：https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-light-grey-navy/
-- 快速查看
+4.500 د.ج
 
-尺码：40、41、42、43
+[![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/02/ET59037H-2230-1-800x800.jpg)](https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-light-grey-navy/) 
 
----
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E)![](https://peakalgerie.com/wp-content/uploads/2026/02/ET59037H-2230-2-800x800.jpg)
 
-### Peak Taichi Up30 3.0Eilte White/Green（白/绿）
+[Sélectionner les options](https://peakalgerie.com/fr/produit/peak-taichi-sports-shoes-light-grey-navy/) 
+Ce produit a plusieurs variations. Les options peuvent être choisies sur la page du produit
 
-价格：21.900 د.ج
+[Aperçu rapide](https://peakal
 
-- 选择选项：https://peakalgerie.com/fr/produit/peak-taichi-up30-3-0eilte-white-green/
-- 快速查看
-
-尺码：41、44
-
----
-
-**说明**：
-- د.ج = 阿尔及利亚第纳尔（Algerian Dinar）
-- 产品名称、品牌名（Peak、Taichi、Up30、Turbo等）保持原样
-- "Sélectionner les options" = 选择选项
-- "Aperçu rapide" = 快速查看
-- "Add to compare" = 添加到比较
-- "Ajouter à ma liste de souhaits" = 添加到心愿单
-- "Ce produit a plusieurs variations. Les options peuvent être choisies sur la page du produit" = 此产品有多种变体。选项可在产品页面上选择
-
-产品图片链接和SVG占位符代码保持不变。
-
-
-*原文请访问 [https://air-street.com](https://air-street.com)*
+*原文: https://air-street.com*

@@ -508,5 +508,10 @@
     "url": "https://www.ia.cas.cn",
     "error": "error",
     "last_try": "2026-06-22T21:45:01.680147"
+  },
+  "b830415b51be": {
+    "url": "https://sequoiacap.cn",
+    "error": "error",
+    "last_try": "2026-06-22T22:13:55.070837"
   }
 }

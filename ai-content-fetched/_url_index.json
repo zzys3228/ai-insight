@@ -2626,5 +2626,347 @@
     "path": "ai-content-fetched\\person\\x_com\\index.md",
     "fetched_at": "2026-06-22T21:46:05.257879",
     "metadata": {}
+  },
+  "45d6b707a1b7": {
+    "url": "https://x.com/DrJimFan",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:48:21.624174",
+    "metadata": {}
+  },
+  "fa0a7e9e6725": {
+    "url": "https://x.com/JeffDean",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:48:41.136759",
+    "metadata": {}
+  },
+  "12a8b25973e4": {
+    "url": "https://x.com/natfriedman",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:49:45.256229",
+    "metadata": {}
+  },
+  "abe1275002ac": {
+    "url": "https://x.com/janleike",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:50:48.492880",
+    "metadata": {}
+  },
+  "07e70a5d9ffe": {
+    "url": "https://x.com/amandaaskell",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:51:31.015762",
+    "metadata": {}
+  },
+  "4bb232b3ce16": {
+    "url": "https://x.com/jimkeller",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:51:52.341804",
+    "metadata": {}
+  },
+  "52502adafe23": {
+    "url": "https://x.com/geoffreyhinton",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:52:58.121321",
+    "metadata": {}
+  },
+  "96675a576076": {
+    "url": "https://www.worldlabs.ai",
+    "path": "ai-content-fetched\\person\\worldlabs_ai\\index.md",
+    "fetched_at": "2026-06-22T21:53:22.213188",
+    "metadata": {}
+  },
+  "eb00680c3313": {
+    "url": "https://x.com/YoshuaBengio",
+    "path": "ai-content-fetched\\person\\x_com\\index.md",
+    "fetched_at": "2026-06-22T21:53:28.461381",
+    "metadata": {}
+  },
+  "acc24cfcdc8b": {
+    "url": "https://www.deeplearning.ai/blog",
+    "path": "ai-content-fetched\\person\\deeplearning_ai\\index.md",
+    "fetched_at": "2026-06-22T21:53:49.343348",
+    "metadata": {}
+  },
+  "1c0e26f7ab63": {
+    "url": "https://karpathy.ai",
+    "path": "ai-content-fetched\\person\\karpathy_ai\\index.md",
+    "fetched_at": "2026-06-22T21:54:20.930607",
+    "metadata": {}
+  },
+  "6f71e7ad6ce8": {
+    "url": "https://lilianweng.github.io",
+    "path": "ai-content-fetched\\person\\lilianweng_github_io\\index.md",
+    "fetched_at": "2026-06-22T21:54:42.056136",
+    "metadata": {}
+  },
+  "371403c9ce97": {
+    "url": "https://simonwillison.net",
+    "path": "ai-content-fetched\\person\\simonwillison_net\\index.md",
+    "fetched_at": "2026-06-22T21:55:04.935909",
+    "metadata": {}
+  },
+  "b5b75c430378": {
+    "url": "https://huyenchip.com",
+    "path": "ai-content-fetched\\person\\huyenchip_com\\index.md",
+    "fetched_at": "2026-06-22T21:55:24.337702",
+    "metadata": {}
+  },
+  "a34491286310": {
+    "url": "https://jalammar.github.io",
+    "path": "ai-content-fetched\\person\\jalammar_github_io\\index.md",
+    "fetched_at": "2026-06-22T21:55:37.249823",
+    "metadata": {}
+  },
+  "15630b41998a": {
+    "url": "https://magazine.sebastianraschka.com",
+    "path": "ai-content-fetched\\person\\magazine_sebastianraschka_com\\index.md",
+    "fetched_at": "2026-06-22T21:56:40.505641",
+    "metadata": {}
+  },
+  "f94d31b8c422": {
+    "url": "https://soumith.ch",
+    "path": "ai-content-fetched\\person\\soumith_ch\\index.md",
+    "fetched_at": "2026-06-22T21:57:45.217359",
+    "metadata": {}
+  },
+  "78c9f4b04c0d": {
+    "url": "https://huggingface.co",
+    "path": "ai-content-fetched\\person\\huggingface_co\\index.md",
+    "fetched_at": "2026-06-22T21:58:09.515003",
+    "metadata": {}
+  },
+  "6c3555f4bf1e": {
+    "url": "https://vllm.ai",
+    "path": "ai-content-fetched\\person\\vllm_ai\\index.md",
+    "fetched_at": "2026-06-22T21:58:37.964911",
+    "metadata": {}
+  },
+  "835e169d7da7": {
+    "url": "https://sites.google.com/view/stuart-russell",
+    "path": "ai-content-fetched\\person\\sites_google_com\\index.md",
+    "fetched_at": "2026-06-22T21:59:10.717468",
+    "metadata": {}
+  },
+  "a247c0e1859f": {
+    "url": "https://sarahguo.com",
+    "path": "ai-content-fetched\\person\\sarahguo_com\\index.md",
+    "fetched_at": "2026-06-22T21:59:31.080158",
+    "metadata": {}
+  },
+  "f2de86a2dd31": {
+    "url": "https://www.nist.gov/caisi",
+    "path": "ai-content-fetched\\standard\\nist_gov\\index.md",
+    "fetched_at": "2026-06-22T21:59:46.664665",
+    "metadata": {}
+  },
+  "fb9481c1efe1": {
+    "url": "https://www.iso.org/committee/6794475.html",
+    "path": "ai-content-fetched\\standard\\iso_org\\index.md",
+    "fetched_at": "2026-06-22T22:00:30.206126",
+    "metadata": {}
+  },
+  "6dcdf6de10e4": {
+    "url": "https://www.ietf.org",
+    "path": "ai-content-fetched\\standard\\ietf_org\\index.md",
+    "fetched_at": "2026-06-22T22:01:24.504580",
+    "metadata": {}
+  },
+  "fa457a4a1120": {
+    "url": "https://genai.owasp.org",
+    "path": "ai-content-fetched\\standard\\genai_owasp_org\\index.md",
+    "fetched_at": "2026-06-22T22:01:45.218886",
+    "metadata": {}
+  },
+  "d88af1b9049e": {
+    "url": "https://opentelemetry.io",
+    "path": "ai-content-fetched\\standard\\opentelemetry_io\\index.md",
+    "fetched_at": "2026-06-22T22:02:10.191007",
+    "metadata": {}
+  },
+  "bc6fa765416b": {
+    "url": "https://platform.openai.com",
+    "path": "ai-content-fetched\\standard\\platform_openai_com\\index.md",
+    "fetched_at": "2026-06-22T22:02:18.574621",
+    "metadata": {}
+  },
+  "10c8ac9672ec": {
+    "url": "https://docs.anthropic.com",
+    "path": "ai-content-fetched\\standard\\docs_anthropic_com\\index.md",
+    "fetched_at": "2026-06-22T22:02:38.110852",
+    "metadata": {}
+  },
+  "d5cb4a85b229": {
+    "url": "https://www.iso.org/standard/81506.html",
+    "path": "ai-content-fetched\\standard\\iso_org\\index.md",
+    "fetched_at": "2026-06-22T22:03:03.339869",
+    "metadata": {}
+  },
+  "09220666e84a": {
+    "url": "https://www.iso.org/standard/83138.html",
+    "path": "ai-content-fetched\\standard\\iso_org\\index.md",
+    "fetched_at": "2026-06-22T22:04:09.946271",
+    "metadata": {}
+  },
+  "3af7b0f2e719": {
+    "url": "https://www.w3.org/TR/did-core",
+    "path": "ai-content-fetched\\standard\\w3_org\\index.md",
+    "fetched_at": "2026-06-22T22:05:15.488166",
+    "metadata": {}
+  },
+  "09c734990c5f": {
+    "url": "https://a2wf.github.io/spec",
+    "path": "ai-content-fetched\\standard\\a2wf_github_io\\index.md",
+    "fetched_at": "2026-06-22T22:05:52.286121",
+    "metadata": {}
+  },
+  "b2af815ecacb": {
+    "url": "https://datatracker.ietf.org/doc/draft-car-agents-txt-wellknown",
+    "path": "ai-content-fetched\\standard\\datatracker_ietf_org\\index.md",
+    "fetched_at": "2026-06-22T22:06:20.704936",
+    "metadata": {}
+  },
+  "69eebb0309ab": {
+    "url": "https://modelcontextprotocol.io",
+    "path": "ai-content-fetched\\standard\\modelcontextprotocol_io\\index.md",
+    "fetched_at": "2026-06-22T22:06:53.591175",
+    "metadata": {}
+  },
+  "dfa4650a0a1b": {
+    "url": "https://a2a-protocol.org",
+    "path": "ai-content-fetched\\standard\\a2a-protocol_org\\index.md",
+    "fetched_at": "2026-06-22T22:07:00.878067",
+    "metadata": {}
+  },
+  "ee78e202e8b4": {
+    "url": "https://agentics.org",
+    "path": "ai-content-fetched\\standard\\agentics_org\\index.md",
+    "fetched_at": "2026-06-22T22:07:31.180227",
+    "metadata": {}
+  },
+  "1eaefa29d901": {
+    "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+    "path": "ai-content-fetched\\standard\\opentelemetry_io\\index.md",
+    "fetched_at": "2026-06-22T22:07:49.180567",
+    "metadata": {}
+  },
+  "0877aeb405f4": {
+    "url": "https://docs.ag-ui.com",
+    "path": "ai-content-fetched\\standard\\docs_ag-ui_com\\index.md",
+    "fetched_at": "2026-06-22T22:08:19.421174",
+    "metadata": {}
+  },
+  "510000b46834": {
+    "url": "https://opensource.googleblog.com/2026/04",
+    "path": "ai-content-fetched\\standard\\opensource_googleblog_com\\index.md",
+    "fetched_at": "2026-06-22T22:08:44.931765",
+    "metadata": {}
+  },
+  "472aa2ebef9b": {
+    "url": "https://developer.chrome.com/docs/ai/webmcp",
+    "path": "ai-content-fetched\\standard\\developer_chrome_com\\index.md",
+    "fetched_at": "2026-06-22T22:09:16.926570",
+    "metadata": {}
+  },
+  "437c06984a20": {
+    "url": "https://w3c-cg.github.io/ai-agent-protocol",
+    "path": "ai-content-fetched\\standard\\w3c-cg_github_io\\index.md",
+    "fetched_at": "2026-06-22T22:09:49.609516",
+    "metadata": {}
+  },
+  "3fb2fa03079d": {
+    "url": "https://aitp.dev",
+    "path": "ai-content-fetched\\standard\\aitp_dev\\index.md",
+    "fetched_at": "2026-06-22T22:10:09.896378",
+    "metadata": {}
+  },
+  "e5a71ac7e6ba": {
+    "url": "https://dns-aid.org",
+    "path": "ai-content-fetched\\standard\\dns-aid_org\\index.md",
+    "fetched_at": "2026-06-22T22:10:51.293170",
+    "metadata": {}
+  },
+  "3645f725d9e7": {
+    "url": "https://ansinfo.ai",
+    "path": "ai-content-fetched\\standard\\ansinfo_ai\\index.md",
+    "fetched_at": "2026-06-22T22:11:33.782487",
+    "metadata": {}
+  },
+  "9c55141db6b4": {
+    "url": "https://arxiv.org/abs/2606.09751",
+    "path": "ai-content-fetched\\standard\\arxiv_org\\index.md",
+    "fetched_at": "2026-06-22T22:12:43.090371",
+    "metadata": {}
+  },
+  "f4f483bd0e20": {
+    "url": "https://www.ycombinator.com/blog",
+    "path": "ai-content-fetched\\industry\\ycombinator_com\\index.md",
+    "fetched_at": "2026-06-22T22:13:50.060330",
+    "metadata": {}
+  },
+  "c819fdaa0fea": {
+    "url": "https://sequoiacap.com/stories",
+    "path": "ai-content-fetched\\industry\\sequoiacap_com\\index.md",
+    "fetched_at": "2026-06-22T22:14:58.258862",
+    "metadata": {}
+  },
+  "b8947ae4f06e": {
+    "url": "https://www.bvp.com",
+    "path": "ai-content-fetched\\industry\\bvp_com\\index.md",
+    "fetched_at": "2026-06-22T22:15:23.827841",
+    "metadata": {}
+  },
+  "a662a640d3ab": {
+    "url": "https://air-street.com",
+    "path": "ai-content-fetched\\industry\\air-street_com\\index.md",
+    "fetched_at": "2026-06-22T22:16:34.541211",
+    "metadata": {}
+  },
+  "25a55b2e0d65": {
+    "url": "https://lsvp.com",
+    "path": "ai-content-fetched\\industry\\lsvp_com\\index.md",
+    "fetched_at": "2026-06-22T22:16:51.863639",
+    "metadata": {}
+  },
+  "be53260c1f19": {
+    "url": "https://www.hillhousecap.com",
+    "path": "ai-content-fetched\\industry\\hillhousecap_com\\index.md",
+    "fetched_at": "2026-06-22T22:17:14.500977",
+    "metadata": {}
+  },
+  "76126ad002a4": {
+    "url": "https://www.nfx.com",
+    "path": "ai-content-fetched\\industry\\nfx_com\\index.md",
+    "fetched_at": "2026-06-22T22:17:39.546909",
+    "metadata": {}
+  },
+  "4d790a0d2591": {
+    "url": "https://www.indexventures.com",
+    "path": "ai-content-fetched\\industry\\indexventures_com\\index.md",
+    "fetched_at": "2026-06-22T22:18:50.822224",
+    "metadata": {}
+  },
+  "07ff74b56930": {
+    "url": "https://www.weforum.org/topics/artificial-intelligence",
+    "path": "ai-content-fetched\\industry\\weforum_org\\index.md",
+    "fetched_at": "2026-06-22T22:19:04.975513",
+    "metadata": {}
+  },
+  "0851406bbd48": {
+    "url": "https://www.un.org/digital-emerging-technologies/ai-advisory-body",
+    "path": "ai-content-fetched\\industry\\un_org\\index.md",
+    "fetched_at": "2026-06-22T22:19:35.911338",
+    "metadata": {}
+  },
+  "0e4f150c401b": {
+    "url": "https://hai.stanford.edu",
+    "path": "ai-content-fetched\\industry\\hai_stanford_edu\\index.md",
+    "fetched_at": "2026-06-22T22:19:42.889939",
+    "metadata": {}
+  },
+  "50be03b62317": {
+    "url": "https://www.stateof.ai",
+    "path": "ai-content-fetched\\industry\\stateof_ai\\index.md",
+    "fetched_at": "2026-06-22T22:20:09.558845",
+    "metadata": {}
   }
 }
