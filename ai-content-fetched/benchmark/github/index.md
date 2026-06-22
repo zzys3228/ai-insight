@@ -1,23 +1,13 @@
 ---
-title: **搜索代码、代码仓库、用户、问题、拉取请求...**
-
-备选版本：
-
-- **搜索代码、仓库、用户、Issue、拉取请求...**
-- **搜索代码、仓库、用户、问题、PR...**
+title: 搜索代码、代码仓库、用户、议题、Pull Requests...
 source: github.com
-url: https://github.com/THUDM/AgentBench
+url: https://github.com/Farama-Foundation/miniwob-plusplus
 date: 2026-06-22
 category: benchmark/github
 translated: true
-fetched_at: 2026-06-22T18:07:46.413503
+fetched_at: 2026-06-22T18:08:48.371470
 ---
-# **搜索代码、代码仓库、用户、问题、拉取请求...**
-
-备选版本：
-
-- **搜索代码、仓库、用户、Issue、拉取请求...**
-- **搜索代码、仓库、用户、问题、PR...**
+# 搜索代码、代码仓库、用户、议题、Pull Requests...
 
 **来源**: github.com | **日期**: 2026-06-22
 
@@ -30,31 +20,22 @@ fetched_at: 2026-06-22T18:07:46.413503
 ### 表格 1
 
 | Name | Name | Last commit message | Last commit date |
-| Latest commitHistory75 Commits75 Commits |
+| Latest commitHistory284 Commits284 Commits |
 | .github | .github |  |  |
-| assets | assets |  |  |
-| configs | configs |  |  |
-| data | data |  |  |
 | docs | docs |  |  |
-| extra | extra |  |  |
-| scripts | scripts |  |  |
-| src | src |  |  |
+| miniwob | miniwob |  |  |
+| tests | tests |  |  |
+| viewer | viewer |  |  |
 | .gitignore | .gitignore |  |  |
+| .pre-commit-config.yaml | .pre-commit-config.yaml |  |  |
+| CODE_OF_CONDUCT.rst | CODE_OF_CONDUCT.rst |  |  |
+| CONTRIBUTING.md | CONTRIBUTING.md |  |  |
 | LICENSE | LICENSE |  |  |
 | README.md | README.md |  |  |
-| requirements.txt | requirements.txt |  |  |
+| miniwobplusplus-text.png | miniwobplusplus-text.png |  |  |
+| py.Dockerfile | py.Dockerfile |  |  |
+| pyproject.toml | pyproject.toml |  |  |
+| setup.py | setup.py |  |  |
 | View all files |
 
-### 表格 2
-
-| Task Name | Start-up Speed | Memory Consumption |
-| webshop | ~3min | ~15G |
-| mind2web | ~5min | ~1G |
-| db | ~20s | < 500M |
-| alfworld | ~10s | < 500M |
-| card_game | ~5s | < 500M |
-| ltp | ~5s | < 500M |
-| os | ~5s | < 500M |
-| kg | ~5s | < 500M |
-
-*原文请访问 [github.com](https://github.com/THUDM/AgentBench)*
+*原文请访问 [github.com](https://github.com/Farama-Foundation/miniwob-plusplus)*

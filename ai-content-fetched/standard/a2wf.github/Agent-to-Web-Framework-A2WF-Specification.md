@@ -1,15 +1,43 @@
 ---
-title: **中文翻译**  
-代理到Web框架（A2WF）规范
+title: **代理到Web框架（A2WF）规范**
+
+Or alternatively:
+
+**智能体到Web框架（A2WF）规范**
+
+---
+
+**Notes:**
+
+- **Agent** = 代理/智能体 (depending on context; 智能体 is more common in AI contexts, 代理 is traditional computing)
+- **Framework** = 框架
+- **Specification** = 规范/规格说明书
+- **A2WF** is kept as abbreviation (can also be written as A2WF)
+
+Which term do you prefer based on your context?
 source: a2wf.github.io
 url: https://a2wf.github.io/spec
 date: 2026-06-22
 category: standard/a2wf.github
 translated: true
-fetched_at: 2026-06-22T18:00:11.301349
+fetched_at: 2026-06-22T18:09:48.883277
 ---
-# **中文翻译**  
-代理到Web框架（A2WF）规范
+# **代理到Web框架（A2WF）规范**
+
+Or alternatively:
+
+**智能体到Web框架（A2WF）规范**
+
+---
+
+**Notes:**
+
+- **Agent** = 代理/智能体 (depending on context; 智能体 is more common in AI contexts, 代理 is traditional computing)
+- **Framework** = 框架
+- **Specification** = 规范/规格说明书
+- **A2WF** is kept as abbreviation (can also be written as A2WF)
+
+Which term do you prefer based on your context?
 
 **来源**: a2wf.github.io | **日期**: 2026-06-22
 

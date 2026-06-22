@@ -1,13 +1,21 @@
 ---
-title: 去中心化标识符（DID）v1.0
+title: **去中心化标识符（DID）1.0**
+
+或更完整形式：
+
+**去中心化标识符（DID）第1.0版**
 source: w3.org
 url: https://www.w3.org/TR/did-core
 date: 2026-06-22
 category: standard/w3.org
 translated: true
-fetched_at: 2026-06-22T17:59:50.701262
+fetched_at: 2026-06-22T18:09:35.747014
 ---
-# 去中心化标识符（DID）v1.0
+# **去中心化标识符（DID）1.0**
+
+或更完整形式：
+
+**去中心化标识符（DID）第1.0版**
 
 **来源**: w3.org | **日期**: 2026-06-22
 

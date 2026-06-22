@@ -1,41 +1,39 @@
 ---
-title: # Translation
+title: **Translation:**
 
-**Title:**
-AGENTS.TXT：Web 代理能力声明
+AGENTS.TXT：Web 代理的能力声明
 
-**Draft identifier:**
-draft-car-agents-txt-wellknown-00（IETF 互联网草案第 00 版）
+draft-car-agents-txt-wellknown-00
 
 ---
 
-**Technical notes:**
-
-- **AGENTS.TXT**：为与 robots.txt 类似的新型 well-known URI（RFC 5785），对应路径为 `.well-known/agents.txt`
-- **Capability Declarations**：指代理能力声明，即 Web 代理向网站声明其功能和支持的操作
-- **draft-car-agents-txt-wellknown-00**：这是 IETF Internet-Draft 的标准命名格式，"car" 通常代表作者/工作组标识
+**Notes:**
+- "AGENTS.TXT" is kept as-is (well-known URI identifier)
+- "Capability Declarations" → "能力声明" (standard translation for capability specifications)
+- "Web Agents" → "Web 代理" (common term in networking/web standards)
+- "draft" → kept as "draft" or translated as "草案" (Internet Draft format)
+- The version identifier "00" is typically left unchanged in technical documents
 source: datatracker.ietf.org
 url: https://datatracker.ietf.org/doc/draft-car-agents-txt-wellknown
 date: 2026-06-22
 category: standard/datatracker.ietf.org
 translated: true
-fetched_at: 2026-06-22T18:00:31.465565
+fetched_at: 2026-06-22T18:10:02.426486
 ---
-# # Translation
+# **Translation:**
 
-**Title:**
-AGENTS.TXT：Web 代理能力声明
+AGENTS.TXT：Web 代理的能力声明
 
-**Draft identifier:**
-draft-car-agents-txt-wellknown-00（IETF 互联网草案第 00 版）
+draft-car-agents-txt-wellknown-00
 
 ---
 
-**Technical notes:**
-
-- **AGENTS.TXT**：为与 robots.txt 类似的新型 well-known URI（RFC 5785），对应路径为 `.well-known/agents.txt`
-- **Capability Declarations**：指代理能力声明，即 Web 代理向网站声明其功能和支持的操作
-- **draft-car-agents-txt-wellknown-00**：这是 IETF Internet-Draft 的标准命名格式，"car" 通常代表作者/工作组标识
+**Notes:**
+- "AGENTS.TXT" is kept as-is (well-known URI identifier)
+- "Capability Declarations" → "能力声明" (standard translation for capability specifications)
+- "Web Agents" → "Web 代理" (common term in networking/web standards)
+- "draft" → kept as "draft" or translated as "草案" (Internet Draft format)
+- The version identifier "00" is typically left unchanged in technical documents
 
 **来源**: datatracker.ietf.org | **日期**: 2026-06-22
 

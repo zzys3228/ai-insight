@@ -1,11 +1,11 @@
 ---
 title: New to X?
 source: x.com
-url: https://x.com/ylecun
+url: https://x.com/geoffreyhinton
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T18:08:43.889964
+fetched_at: 2026-06-22T18:12:13.040595
 ---
 # New to X?
 
@@ -13,25 +13,16 @@ fetched_at: 2026-06-22T18:08:43.889964
 
 ---
 
-置顶  
+Geoffrey Hinton  
+@geoffreyhinton  
 
-Yann LeCun  
-@ylecun  
+2025年3月2日  
 
-2024年11月29日  
+我认为埃隆·马斯克应该被英国皇家学会开除。不是因为他兜售阴谋论和行纳粹礼，而是因为他正在对美国的科研机构造成巨大的损害。现在让我们看看他是否真的相信言论自由。  
 
-我在X上不写帖子。  
-我在X上发推文链接到其他平台的内容。  
-偶尔点赞和转发。  
-很少评论朋友的推文。  
-关注我...⬇️⬇️⬇️  
+2.1K  
+3.2K  
+24K  
+2M
 
-951  
-
-113  
-
-1.9K  
-
-1.7M
-
-*原文请访问 [x.com](https://x.com/ylecun)*
+*原文请访问 [x.com](https://x.com/geoffreyhinton)*

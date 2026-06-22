@@ -1,13 +1,13 @@
 ---
-title: 面向 AI 代理的 **universal.discovery** 层。
+title: 面向 AI 智能体的通用发现层。
 source: dns-aid.org
 url: https://dns-aid.org
 date: 2026-06-22
 category: standard/dns-aid.org
 translated: true
-fetched_at: 2026-06-22T18:04:59.214597
+fetched_at: 2026-06-22T18:14:09.125752
 ---
-# 面向 AI 代理的 **universal.discovery** 层。
+# 面向 AI 智能体的通用发现层。
 
 **来源**: dns-aid.org | **日期**: 2026-06-22
 

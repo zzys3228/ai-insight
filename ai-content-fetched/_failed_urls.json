@@ -304,89 +304,9 @@
     "error": "'gbk' codec can't encode character '\\xe7' in position 62: illegal multibyte sequence",
     "last_try": "2026-06-22T18:05:05.446537"
   },
-  "22352e737845": {
-    "url": "https://www.aliyun.com/product/dashvector",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:07:25.007914"
-  },
-  "bf9eb47ad360": {
-    "url": "https://www.aliyun.com/product/eiam",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:07:26.279495"
-  },
-  "3ab162784aed": {
-    "url": "https://marketplace.aliyun.com",
-    "error": "HTTPSConnectionPool(host='marketplace.aliyun.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T18:07:27.745735"
-  },
-  "6ff88df23416": {
-    "url": "https://cloud.baidu.com/product/wenxin",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:07:28.712391"
-  },
-  "8ba0d8ac953e": {
-    "url": "https://create.baidu.com",
-    "error": "'gbk' codec can't encode character '\\xe7' in position 70: illegal multibyte sequence",
-    "last_try": "2026-06-22T18:08:35.122551"
-  },
-  "4af6c14ac87a": {
-    "url": "https://cloud.baidu.com/product/aigc",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:35.525179"
-  },
-  "28d49ff7946d": {
-    "url": "https://cloud.baidu.com/product/digital",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:36.199137"
-  },
-  "902ddd6fac00": {
-    "url": "https://cloud.baidu.com/product/bdfm",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:36.615691"
-  },
-  "f1743186e904": {
-    "url": "https://cloud.baidu.com/doc",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:36.963784"
-  },
-  "64ab6c7a8aa3": {
-    "url": "https://cloud.baidu.com/product/vid",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:37.392647"
-  },
-  "a7915505d04a": {
-    "url": "https://cloud.baidu.com/product/content-moderation",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:37.769177"
-  },
-  "4fa12e66baf9": {
-    "url": "https://cloud.baidu.com/product/shengsuan",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:38.162317"
-  },
-  "e1eeeaef802b": {
-    "url": "https://cloud.baidu.com/product/digital-human",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:38.562375"
-  },
-  "af8b198f2906": {
-    "url": "https://cloud.baidu.com/product/recommend",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:39.029293"
-  },
-  "b9c165e631a9": {
-    "url": "https://cloud.baidu.com/product/vip",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:39.420130"
-  },
-  "3b4143715a47": {
-    "url": "https://cloud.tencent.com/event/tencent-conference",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:40.671444"
-  },
-  "d9b3e1fcef62": {
-    "url": "https://cloud.tencent.com/product/transport-ai",
-    "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:08:42.648928"
+  "2165186616d0": {
+    "url": "https://covariant.ai/robots",
+    "error": "Failed to fetch: 404",
+    "last_try": "2026-06-22T18:14:20.390874"
   }
 }

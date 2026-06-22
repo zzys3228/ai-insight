@@ -1,13 +1,25 @@
 ---
-title: 开源.google.com
+title: **Translation:**
+
+This is a URL (web address) and should remain unchanged: **opensource.google.com**
+
+If you need the Chinese explanation:
+- 这是一个网址（URL），保持原样不变
+- 如果是指代该网站，可称为：**谷歌开源项目网站** (Google Open Source)
 source: opensource.googleblog.com
 url: https://opensource.googleblog.com/2026/04
 date: 2026-06-22
 category: standard/opensource.googleblog
 translated: true
-fetched_at: 2026-06-22T18:03:57.570959
+fetched_at: 2026-06-22T18:13:12.543954
 ---
-# 开源.google.com
+# **Translation:**
+
+This is a URL (web address) and should remain unchanged: **opensource.google.com**
+
+If you need the Chinese explanation:
+- 这是一个网址（URL），保持原样不变
+- 如果是指代该网站，可称为：**谷歌开源项目网站** (Google Open Source)
 
 **来源**: opensource.googleblog.com | **日期**: 2026-06-22
 

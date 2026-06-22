@@ -1,13 +1,13 @@
 ---
-title: 搜索代码、代码仓库、用户、问题、拉取请求...
+title: 搜索代码、仓库、用户、Issue、Pull Request...
 source: github.com
 url: https://github.com/ggml-org
 date: 2026-06-22
 category: standard/github
 translated: true
-fetched_at: 2026-06-22T18:03:42.473326
+fetched_at: 2026-06-22T18:13:04.345947
 ---
-# 搜索代码、代码仓库、用户、问题、拉取请求...
+# 搜索代码、仓库、用户、Issue、Pull Request...
 
 **来源**: github.com | **日期**: 2026-06-22
 
@@ -274,21 +274,34 @@ C++
 
 Repositories
 
-llama.cpp
+whisper.cpp
 Public
-LLM inference in C/C++
+Port of OpenAI's Whisper model in C/C++
 Uh oh!
 There was an error while loading.
 Please reload this page
 .
+ggml-org/whisper.cpp’s past year of commit activity
+C++
+50,936
+MIT
+5,687
+1,048
+(10 issues need help)
+156
+Updated
+Jun 22, 2026
+llama.cpp
+Public
+LLM inference in C/C++
 ggml-org/llama.cpp’s past year of commit activity
 C++
-117,633
+117,635
 MIT
-19,808
+19,809
 727
 (30 issues need help)
-1,106
+1,107
 Updated
 Jun 22, 2026
 llama.cpp-dev
@@ -310,10 +323,6 @@ Public
 Forked from
 cristianadam/llama.qtcreator
 Local LLM-assisted text completion for Qt Creator.
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/llama.qtcreator’s past year of commit activity
 C++
 61
@@ -339,30 +348,9 @@ MIT
 0
 Updated
 Jun 21, 2026
-whisper.cpp
-Public
-Port of OpenAI's Whisper model in C/C++
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-ggml-org/whisper.cpp’s past year of commit activity
-C++
-50,935
-MIT
-5,687
-1,048
-(10 issues need help)
-157
-Updated
-Jun 19, 2026
 llama.vscode
 Public
 VS Code extension for LLM-assisted code/text completion
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/llama.vscode’s past year of commit activity
 TypeScript
 1,402
@@ -392,10 +380,6 @@ Jun 19, 2026
 Llama-macOS
 Public
 A cosy home for your LLMs.
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 ggml-org/Llama-macOS’s past year of commit activity
 Swift
 1,335
@@ -408,6 +392,10 @@ Jun 18, 2026
 llama.pages
 Public
 llama.cpp's official website
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/llama.pages’s past year of commit activity
 Svelte
 16
@@ -418,6 +406,10 @@ Updated
 Jun 18, 2026
 .github
 Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 ggml-org/.github’s past year of commit activity
 12
 11
@@ -425,52 +417,6 @@ ggml-org/.github’s past year of commit activity
 0
 Updated
 Jun 17, 2026
-
-LLM inference in C/C++
-
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
-
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
-
-Local LLM-assisted text completion for Qt Creator.
-
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
-
-Build and install script for llama.app
-
-Uh oh!
-
-There was an error while loading.
-Please reload this page
-.
-
-There was an error while loading.
-Please reload this page
-.
 
 Port of OpenAI's Whisper model in C/C++
 
@@ -484,7 +430,7 @@ There was an error while loading.
 Please reload this page
 .
 
-VS Code extension for LLM-assisted code/text completion
+LLM inference in C/C++
 
 Uh oh!
 
@@ -495,6 +441,22 @@ Please reload this page
 There was an error while loading.
 Please reload this page
 .
+
+Local LLM-assisted text completion for Qt Creator.
+
+Build and install script for llama.app
+
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
+
+VS Code extension for LLM-assisted code/text completion
 
 Tensor library for machine learning
 
@@ -510,6 +472,8 @@ Please reload this page
 
 A cosy home for your LLMs.
 
+llama.cpp's official website
+
 Uh oh!
 
 There was an error while loading.
@@ -520,7 +484,15 @@ There was an error while loading.
 Please reload this page
 .
 
-llama.cpp's official website
+Uh oh!
+
+There was an error while loading.
+Please reload this page
+.
+
+There was an error while loading.
+Please reload this page
+.
 
 People
 

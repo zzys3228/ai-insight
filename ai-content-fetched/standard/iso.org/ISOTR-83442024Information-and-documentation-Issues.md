@@ -1,13 +1,13 @@
 ---
-title: **ISO/TR 8344:2024 信息与文献 — 结构化数据环境中记录管理的议题与注意事项**
+title: **ISO/TR 8344:2024 信息与文献 — 结构化数据环境中记录管理的议题与考量**
 source: iso.org
 url: https://www.iso.org/standard/83138.html
 date: 2026-06-22
 category: standard/iso.org
 translated: true
-fetched_at: 2026-06-22T17:59:39.635325
+fetched_at: 2026-06-22T18:09:25.227305
 ---
-# **ISO/TR 8344:2024 信息与文献 — 结构化数据环境中记录管理的议题与注意事项**
+# **ISO/TR 8344:2024 信息与文献 — 结构化数据环境中记录管理的议题与考量**
 
 **来源**: iso.org | **日期**: 2026-06-22
 

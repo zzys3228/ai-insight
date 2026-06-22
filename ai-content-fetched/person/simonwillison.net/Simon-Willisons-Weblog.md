@@ -1,13 +1,13 @@
 ---
-title: **Simon Willison 的博客**
+title: Simon Willison 的博客
 source: simonwillison.net
 url: https://simonwillison.net
 date: 2026-06-22
 category: person/simonwillison.net
 translated: true
-fetched_at: 2026-06-22T18:02:50.507108
+fetched_at: 2026-06-22T18:14:12.638077
 ---
-# **Simon Willison 的博客**
+# Simon Willison 的博客
 
 **来源**: simonwillison.net | **日期**: 2026-06-22
 
@@ -17,25 +17,25 @@ Simon Willison’s Weblog
 
 On
 
+generative-ai
+
+1,838
+
+datasette-agent
+
+17
+
 ai-assisted-programming
 
 390
 
-javascript
+jailbreaking
 
-759
+14
 
-tools
+pelican-riding-a-bicycle
 
-67
-
-webassembly
-
-126
-
-claude-code
-
-117
+119
 
 ...
 

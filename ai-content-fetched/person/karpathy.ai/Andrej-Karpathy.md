@@ -1,17 +1,13 @@
 ---
-title: **安德烈·卡帕西**（Andrej Karpathy）
-
-备注：人名通常采用音译，"Andrej" 对应"安德烈"，"Karpathy" 对应"卡帕西"。他是著名的AI研究员，曾任特斯拉自动驾驶视觉总监、OpenAI研究员，并创建了斯坦福大学CS231n课程。
+title: 安德烈·卡尔帕西
 source: karpathy.ai
 url: https://karpathy.ai
 date: 2026-06-22
 category: person/karpathy.ai
 translated: true
-fetched_at: 2026-06-22T18:02:22.346589
+fetched_at: 2026-06-22T18:13:35.167472
 ---
-# **安德烈·卡帕西**（Andrej Karpathy）
-
-备注：人名通常采用音译，"Andrej" 对应"安德烈"，"Karpathy" 对应"卡帕西"。他是著名的AI研究员，曾任特斯拉自动驾驶视觉总监、OpenAI研究员，并创建了斯坦福大学CS231n课程。
+# 安德烈·卡尔帕西
 
 **来源**: karpathy.ai | **日期**: 2026-06-22
 

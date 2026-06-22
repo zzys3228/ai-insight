@@ -1,17 +1,17 @@
 ---
-title: **Translation:**
+title: **中文翻译**  
 
-ISO 5649:2024 医学实验室——实验室自建检测的设计、开发、实施及使用概念与规范
+ISO 5649:2024 医学实验室 — 概念与规范，用于实验室自行开发检测的设计、开发、实施和使用。
 source: iso.org
 url: https://www.iso.org/standard/81506.html
 date: 2026-06-22
 category: standard/iso.org
 translated: true
-fetched_at: 2026-06-22T17:59:26.507556
+fetched_at: 2026-06-22T18:09:07.278752
 ---
-# **Translation:**
+# **中文翻译**  
 
-ISO 5649:2024 医学实验室——实验室自建检测的设计、开发、实施及使用概念与规范
+ISO 5649:2024 医学实验室 — 概念与规范，用于实验室自行开发检测的设计、开发、实施和使用。
 
 **来源**: iso.org | **日期**: 2026-06-22
 
