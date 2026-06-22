@@ -1,75 +1,60 @@
 ---
-title: Welcome to theIETF
+title: 欢迎来到 IETF
 source: ietf.org
 url: https://www.ietf.org
 date: 2026-06-22
 category: standard/ietf.org
 translated: true
-fetched_at: 2026-06-22T18:23:45.920768
+fetched_at: 2026-06-22T20:12:54.486117
 ---
-# Welcome to theIETF
+# 欢迎来到 IETF
 
 **来源**: ietf.org | **日期**: 2026-06-22
 
 ---
 
+# IETF快照 2025
 
-IETF Snapshot 2025
+想了解2025年IETF活动动态吗？最新一期的IETF快照将回顾前一年的IETF活动情况。
 
-Want to catch up on IETF activity in 2025? The latest edition of the IETF Snapshot provides a recap of IETF activity for the previous year.
+查看更多
 
-See more
+**即将举行的活动**
 
-Upcoming events
+**IETF 126 维也纳**
+IETF 126将于7月18日（周六）开始，持续至7月24日（周五）下午。
+奥地利维也纳
 
-IETF 126 Vienna
-IETF 126 starts Saturday 18 July and runs through Friday afternoon, 24 July.
-Vienna, Austria
-IETF 127 San Francisco
-IETF 127 starts Saturday 14 November and runs through Friday afternoon, 20 November.
-San Francisco, California
+**IETF 127 旧金山**
+IETF 127将于11月14日（周六）开始，持续至11月20日（周五）下午。
+美国加利福尼亚州旧金山
 
-IETF 126 Vienna
+---
 
-IETF 126 starts Saturday 18 July and runs through Friday afternoon, 24 July.
+**最新动态**
 
-IETF 127 San Francisco
+**IETF LLC董事会2026年 retreat**
+IETF Administration LLC董事会于2026年4月29日至30日在阿姆斯特丹举行了年度retreat。除全体董事会成员外，IETF执行董事、财务总监和董事会秘书也出席了会议。以下是我们讨论的主要要点摘要。
+2026年6月4日
 
-IETF 127 starts Saturday 14 November and runs through Friday afternoon, 20 November.
+**IETF Administration LLC 2025年度财务审计**
+IETF Administration LLC董事会已收到外部审计师提交的2025年度财务报表审计报告，审计结果为无保留意见。
+2026年5月26日
 
-What's new?
+---
 
-IETF LLC Board Retreat 2026
-The IETF Administration LLC Board of Directors held its annual retreat 29-30 April 2026 in Amsterdam. In addition to all Board members, the IETF Executive Director, the Director of Finance, and the Board Secretary were present. Here is a short summary of the main points we discussed.
-4 Jun 2026
-IETF Administration LLC 2025 Annual Financial Audit
-IETF Administration LLC Board of Directors received from external auditors the report of a clean result for its 2025 annual financial statement.
-26 May 2026
+**搜索IETF邮件归档**
 
-IETF LLC Board Retreat 2026
+IETF的大部分日常工作通过电子邮件列表进行。新的邮件归档工具现已启用，该工具实现了RFC 6778中制定的要求：
 
-The IETF Administration LLC Board of Directors held its annual retreat 29-30 April 2026 in Amsterdam. In addition to all Board members, the IETF Executive Director, the Director of Finance, and the Board Secretary were present. Here is a short summary of the main points we discussed.
+搜索IETF Datatracker
 
-IETF Administration LLC 2025 Annual Financial Audit
+IETF Datatracker包含IETF文档、工作组、会议、议程、会议记录、演示文稿等数据：
 
-IETF Administration LLC Board of Directors received from external auditors the report of a clean result for its 2025 annual financial statement.
+---
 
-Search the IETF email archive
+**下一次IETF会议**
 
-Much of the daily work of the IETF is conducted on electronic mailing
-                    lists. A new mail archive tool
-                    realizing the requirements developed in
-RFC 6778
-is now in use:
-
-Search IETF Datatracker
-
-The IETF Datatracker contains data about IETF documents, working groups, meetings, agendas, minutes,
-                    presentations, and more:
-
-Next IETF Meeting
-
-Stay tuned for the latest information on the next IETF meeting scheduled for 18-24 July.
-
+下一次IETF会议（定于7月18日至24日）的最新信息，敬请期待。
 
 *原文请访问 [ietf.org](https://www.ietf.org)*

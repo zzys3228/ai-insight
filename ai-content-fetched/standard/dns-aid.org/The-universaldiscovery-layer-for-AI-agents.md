@@ -1,577 +1,995 @@
 ---
-title: **AI智能体的 universal.discovery 层**
+title: **翻译：**
 
-备选译法：
+AI代理的universal.discovery层
 
-- **面向AI智能体的 universal.discovery 层**
-- **AI代理的 universal.discovery 层次**
+---
+
+**说明：**
+- "universal.discovery" 作为技术术语/产品名称保留原样
+- "layer" 译为"层"
+- "AI agents" 译为"AI代理"
 source: dns-aid.org
 url: https://dns-aid.org
 date: 2026-06-22
 category: standard/dns-aid.org
 translated: true
-fetched_at: 2026-06-22T19:13:47.808317
+fetched_at: 2026-06-22T20:18:44.552604
 ---
-# **AI智能体的 universal.discovery 层**
+# **翻译：**
 
-备选译法：
+AI代理的universal.discovery层
 
-- **面向AI智能体的 universal.discovery 层**
-- **AI代理的 universal.discovery 层次**
+---
+
+**说明：**
+- "universal.discovery" 作为技术术语/产品名称保留原样
+- "layer" 译为"层"
+- "AI agents" 译为"AI代理"
 
 **来源**: dns-aid.org | **日期**: 2026-06-22
 
 ---
 
-# IETF 草案 · 开源
+IETF Draft · Open Source
 
-AI 代理的通用发现层。
+The universal
 
-将代理发布到 DNS，像网站一样发现它们，并使用 DNSSEC 验证信任。无中心化注册表，只有信号。
+.
 
-立即开始
+discovery layer for AI agents.
 
-阅读 IETF 草案
+Publish agents to DNS, discover them like websites, and verify trust with DNSSEC. No centralized registry, just signal.
 
-一键安装完整 SDK：
+Get started
+
+Read IETF draft
+
+Install the full SDK in one shot:
 
 pip
 
 docker
 
-源码
+source
 
 pip install "dns-aid[all]"
 
-复制
+Copy
 
 docker compose -f tests/integration/bind/docker-compose.yml up -d
 
-复制
+Copy
 
 git clone https://github.com/infobloxopen/dns-aid-core.git
 
-复制
+Copy
 
-# 核心能力
+Core capabilities
 
-DNS-AID 基于 DNS-AID 协议为您提供的能力。
+What DNS-AID gives you, built on the DNS-AID protocol.
 
-## 核心原则
+Core principle
 
-零新基础设施。
+Zero new infrastructure.
 
-基于您已有的 DNS 构建。
+Built on DNS you already run.
 
-DNS-AID 是现有 SVCB、TXT 和 TLSA 记录之上的命名约定。无新记录类型，无新服务器，无新协议——仅使用 RFC 9460 和 RFC 4033 中的标准。
+DNS-AID is a naming convention on top of existing SVCB, TXT, and TLSA records. No new record types, no new servers, no new protocols — just standards from RFC 9460 and RFC 4033.
 
-规范
+Spec
 
 RFC 9460
 
-安全
+Security
 
 DNSSEC
 
-状态
+Status
 
-IETF 草案
+IETF draft
 
-安全
+Security
 
-DNSSEC 信任链
+DNSSEC trust chain
 
-代理记录的密码学证明，确保真实且未被篡改。
+Cryptographic proof that agent records are authentic and untampered.
 
-协议
+Protocols
 
-协议无关
+Protocol agnostic
 
-MCP、A2A、HTTPS，以及通过 alpn 的任何未来协议。
+MCP, A2A, HTTPS, and any future protocol via
 
-发现
+alpn
 
-三种发现模式
+.
 
-按名称查找、按能力搜索，或爬取域名索引。
+Discovery
 
-企业
+Three discovery modes
 
-分裂视图 DNS
+Lookup by name, search by capability, or crawl a domain index.
 
-向内部和外部提供不同的代理。内置租户隔离。
+Enterprise
+
+Split-horizon DNS
+
+Different agents to internal vs. external. Built-in tenant isolation.
 
 SDK
 
-开源工具包
+Open-source toolkit
 
-CLI、Python SDK、MCP 服务器。八个后端开箱即用。
+CLI, Python SDK, MCP server. Eight backends ship in the box.
 
-性能
+Performance
 
-可缓存且去中心化
+Cacheable & decentralized
 
-DNS 自动缓存。无中心化 API。分布式查询。
+DNS caches automatically. No central API. Distributed lookups.
 
-## DNS-AID 命名空间
+The DNS-AID namespace
 
-代理记录的确定性、可读命名模式。
+A deterministic, human-readable naming pattern for agent records.
 
-### DNS-AID 命名模式
+DNS-AID Naming Pattern
 
-```
-_<agent-name>._<protocol>._agents.<your-domain>
-```
+_<agent-name>
 
-示例：
+.
 
-| 代理名称 | 协议 | 全限定域名 | 说明 |
-|---------|------|-----------|------|
-| _chatbot | _mcp | _agents.example.com | MCP 聊天机器人 |
-| _search | _a2a | _agents.example.com | A2A 搜索代理 |
-| _data-cleaner | _a2a | _agents.acme.com | 基于能力的 |
-| _index | — | _agents.example.com | 完整代理索引 |
+_<protocol>
 
-多租户：
+._agents.<your-domain>
 
-```
-_analytics._mcp._agents.customer1.saas.com
-```
+Examples:
 
-## 代理记录解析
+_chatbot
 
-每个代理都是一个包含机器可读元数据的 SVCB 记录。
+.
 
-```
+_mcp
+
+._agents.example.com
+
+MCP chatbot
+
+_search
+
+.
+
+_a2a
+
+._agents.example.com
+
+A2A search agent
+
+_data-cleaner
+
+.
+
+_a2a
+
+._agents.acme.com
+
+capability-based
+
+_index._agents.example.com
+
+full agent index
+
+Multi-tenant:
+
+_analytics
+
+.
+
+_mcp
+
+._agents.customer1.saas.com
+
+Anatomy of an agent record
+
+Each agent is an SVCB record packed with machine-readable metadata.
+
 _my-agent._mcp._agents.example.com.
+
 3600 IN SVCB 1 agent.example.com. (
-    alpn="mcp"                      ; 通信协议 (mcp, a2a, h2)
-    port=443                        ; 服务端口
-    cap="https://example.com/cap.json" ; 能力文档 URI
-    cap-sha256="abc123..."          ; 防篡改完整性哈希
-    bap="mcp=1.0,a2a=0.2"           ; 批量协议版本声明
-    policy="https://example.com/policy" ; 治理和使用策略 URL
-    realm="production"              ; 租户或环境范围
-    ipv4hint=192.0.2.1              ; 地址提示以减少额外查询
+
+alpn
+
+=
+
+"mcp"
+
+; protocol
+
+port
+
+=443
+
+; service port
+
+cap
+
+=
+
+"https://example.com/cap.json"
+
+; capability doc
+
+cap-sha256
+
+=
+
+"abc123..."
+
+; integrity hash
+
+bap
+
+=
+
+"mcp=1.0,a2a=0.2"
+
+; protocol versions
+
+policy
+
+=
+
+"https://example.com/policy"
+
+; governance URL
+
+realm
+
+=
+
+"production"
+
+; tenant scope
+
+ipv4hint
+
+=192.0.2.1
+
+; address hint
+
 )
-```
 
-| 参数 | 说明 |
-|-----|------|
-| alpn | 通信协议 (mcp, a2a, h2) |
-| port | 服务端口号 |
-| cap | 能力文档 URI |
-| cap-sha256 | 防篡改检测的完整性哈希 |
-| bap | 批量协议版本声明 |
-| policy | 治理和使用策略 URL |
-| realm | 租户或环境范围 |
-| ipv4hint | 地址提示以减少额外查询 |
+alpn
 
-## 工作原理
+Communication protocol (mcp, a2a, h2)
 
-从发布到连接的四个步骤。
+port
 
-**1. 发布您的代理**
+Service port number
 
-使用 CLI 或 SDK 在您域名的 _agents 区域下创建 SVCB 记录，包含端点、协议和能力。
+cap
 
-**2. DNSSEC 签署区域**
+Capability document URI
 
-您的权威 DNS 签署记录，创建从根到您代理的密码学信任链。
+cap-sha256
 
-**3. 代理发现您的**
+Integrity hash for tamper detection
 
-远程代理通过名称、能力类型或完整域名索引查询 DNS 获取您的 SVCB 记录。
+bap
 
-**4. 验证并连接**
+Bulk protocol version declarations
 
-发现者验证 DNSSEC + DANE，然后通过您 SVCB 记录中的协议直接连接。
+policy
 
-## 快速入门
+Governance and usage policy URL
 
-使用 dns-aid-core Python 包快速启动和运行。
+realm
 
-### CLI
+Tenant or environment scope
+
+ipv4hint
+
+Address hint to reduce extra lookups
+
+How it works
+
+Four steps from publish to connect.
+
+1
+
+Publish your agent
+
+Use the CLI or SDK to create an SVCB record under your domain's _agents zone with endpoint, protocol, and capabilities.
+
+2
+
+DNSSEC signs the zone
+
+Your authoritative DNS signs the records, creating a cryptographic chain of trust from root to your agent.
+
+3
+
+Agents discover yours
+
+Remote agents query DNS for your SVCB record by name, capability type, or full domain index.
+
+4
+
+Validate & connect
+
+The discoverer validates DNSSEC + DANE, then connects directly via the protocol in your SVCB record.
+
+Quickstart
+
+Get up and running with the dns-aid-core Python package.
+
+CLI
 
 Python
 
-MCP 服务器
+MCP Server
 
 Docker
 
-#### 安装
+Install
 
-```bash
-pip install "dns-aid[all]"          # 全部功能
-pip install "dns-aid[cli]"          # 仅 CLI
-pip install "dns-aid[route53]"       # AWS 后端
-pip install "dns-aid[cloudflare]"   # Cloudflare 后端
-pip install "dns-aid[nios]"          # Infoblox NIOS 后端
-pip install "dns-aid[mcp]"           # MCP 服务器
-```
+pip install
 
-#### 发布
+"dns-aid[all]"
 
-```bash
+# everything
+
+pip install
+
+"dns-aid[cli]"
+
+# CLI only
+
+pip install
+
+"dns-aid[route53]"
+
+# AWS backend
+
+pip install
+
+"dns-aid[cloudflare]"
+
+# Cloudflare backend
+
+pip install
+
+"dns-aid[nios]"
+
+# Infoblox NIOS backend
+
+pip install
+
+"dns-aid[mcp]"
+
+# MCP server
+
+Publish
+
 dns-aid publish \
-  --name my-chatbot \
-  --domain example.com \
-  --protocol mcp \
-  --endpoint agent.example.com \
-  --capability chat
-```
+  --name
 
-#### 发现
+my-chatbot
 
-```bash
-dns-aid discover example.com
-dns-aid discover example.com --json
-dns-aid discover example.com --use-http-index
-```
+\
+  --domain
 
-#### 验证与诊断
+example.com
 
-```bash
-dns-aid verify _my-chatbot._mcp._agents.example.com
-dns-aid doctor --domain example.com
-```
+\
+  --protocol
 
-#### 调用代理
+mcp
 
-```bash
-# 列出 MCP 代理上的工具
-dns-aid list-tools https://mcp.example.com/mcp
+\
+  --endpoint
 
-# 调用特定工具
-dns-aid call https://mcp.example.com/mcp analyze_security \
-  --arguments '{"domain":"example.com"}'
+agent.example.com
 
-# 向 A2A 代理发送消息（先发现）
-dns-aid message "What is DNS-AID?" \
-  -d ai.infoblox.com \
-  -n security-analyzer
-```
+\
+  --capability
 
-#### 管理
+chat
 
-```bash
-# 从 DNS 中删除代理
-dns-aid delete -n my-chatbot -d example.com -p mcp
-```
+Discover
 
-### Python
+dns-aid discover
 
-#### 发布
+example.com
 
-```python
-from dns_aid import publish
+dns-aid discover
 
-result = await publish(
-    name="my-chatbot",
-    domain="example.com",
-    protocol="mcp",
-    endpoint="agent.example.com",
-    capabilities=["chat", "summarize"],
-    description="通用聊天代理",
+example.com
+
+--json
+dns-aid discover
+
+example.com
+
+--use-http-index
+
+Verify & Diagnose
+
+dns-aid verify
+
+_my-chatbot._mcp._agents.example.com
+
+dns-aid doctor --domain
+
+example.com
+
+Invoke agents
+
+# List tools on an MCP agent
+
+dns-aid list-tools
+
+https://mcp.example.com/mcp
+
+# Call a specific tool
+
+dns-aid call
+
+https://mcp.example.com/mcp
+
+analyze_security
+
+\
+  --arguments
+
+'{"domain":"example.com"}'
+
+# Send a message to an A2A agent (discover-first)
+
+dns-aid message
+
+"What is DNS-AID?"
+
+\
+  -d
+
+ai.infoblox.com
+
+-n
+
+security-analyzer
+
+Manage
+
+# Delete an agent from DNS
+
+dns-aid delete -n
+
+my-chatbot
+
+-d
+
+example.com
+
+-p
+
+mcp
+
+Publish
+
+from
+
+dns_aid
+
+import
+
+publish
+
+result =
+
+await
+
+publish(
+    name=
+
+"my-chatbot"
+
+,
+    domain=
+
+"example.com"
+
+,
+    protocol=
+
+"mcp"
+
+,
+    endpoint=
+
+"agent.example.com"
+
+,
+    capabilities=[
+
+"chat"
+
+,
+
+"summarize"
+
+],
+    description=
+
+"General-purpose chat agent"
+
+,
 )
-print(f"已发布: {result.agent.fqdn}")
-print(f"记录:   {result.records_created}")
-```
+print(f
 
-#### 发现
+"Published: {result.agent.fqdn}"
 
-```python
-import asyncio
-from dns_aid import discover, verify
+)
+print(f
 
-async def main():
-    result = await discover("example.com")
-    for agent in result.agents:
-        print(f"  {agent.name} — {agent.protocol} @ {agent.endpoint_url}")
+"Records:   {result.records_created}"
 
-    check = await verify("_my-agent._mcp._agents.example.com")
-    print(f"DNSSEC 有效: {check.dnssec_valid}")
+)
+
+Discover
+
+import
+
+asyncio
+
+from
+
+dns_aid
+
+import
+
+discover, verify
+
+async def
+
+main
+
+():
+    result =
+
+await
+
+discover(
+
+"example.com"
+
+)
+
+for
+
+agent
+
+in
+
+result.agents:
+        print(f
+
+"  {agent.name} — {agent.protocol} @ {agent.endpoint_url}"
+
+)
+
+    check =
+
+await
+
+verify(
+
+"_my-agent._mcp._agents.example.com"
+
+)
+    print(f
+
+"DNSSEC valid: {check.dnssec_valid}"
+
+)
 
 asyncio.run(main())
-```
 
-#### 发现后调用
+Discover-then-Invoke
 
-```python
-from dns_aid import discover, invoke
+from
 
-async def find_and_call():
-    result = await discover("partner.com", protocol="mcp")
-    agent = result.agents[0]
-    resp = await invoke(agent, method="tools/list")
-    print(f"延迟: {resp.signal.invocation_latency_ms}ms")
-    print(f"数据: {resp.data}")
-```
+dns_aid
 
-### MCP 服务器
+import
 
-```bash
-# stdio 传输 (Claude Desktop)
+discover, invoke
+
+async def
+
+find_and_call
+
+():
+    result =
+
+await
+
+discover(
+
+"partner.com"
+
+, protocol=
+
+"mcp"
+
+)
+    agent = result.agents[
+
+0
+
+]
+    resp =
+
+await
+
+invoke(agent, method=
+
+"tools/list"
+
+)
+    print(f
+
+"Latency: {resp.signal.invocation_latency_ms}ms"
+
+)
+    print(f
+
+"Data:    {resp.data}"
+
+)
+
+Run the MCP Server
+
+# stdio transport (Claude Desktop)
+
 dns-aid-mcp --transport stdio
 
-# HTTP 传输
-dns-aid-mcp --transport http --port 8000
-```
+# HTTP transport
 
-#### 工具
+dns-aid-mcp --transport http --port
 
-| 工具 | 描述 |
-|-----|------|
-| publish_agent_to_dns | 发布代理的端点和能力 |
-| discover_agents_via_dns | 通过 DNS 在任意域名上查找代理 |
-| verify_agent_dns | 验证代理的 DNSSEC、DANE 和端点 |
-| call_agent_tool | 调用已发现 MCP 代理上的工具 |
-| list_agent_tools | 列出远程 MCP 代理上的可用工具 |
-| send_a2a_message | 向已发现 A2A 代理发送消息 |
-| diagnose_environment | 检查 DNS-AID 配置和连接性 |
-| delete_agent_from_dns | 删除代理的 DNS 记录 |
-| list_published_agents | 列出您自己 DNS 区域中的代理 |
-| list_agent_index | 读取域名的代理索引记录 |
-| sync_agent_index | 从实时记录重建域名的代理索引 |
+8000
 
-### 本地游乐场 — 无需凭据
+Tool
 
-```bash
+Description
+
+publish_agent_to_dns
+
+Publish an agent's endpoint and capabilities
+
+discover_agents_via_dns
+
+Find agents on any domain via DNS
+
+verify_agent_dns
+
+Verify DNSSEC, DANE, and endpoint for an agent
+
+call_agent_tool
+
+Invoke a tool on a discovered MCP agent
+
+list_agent_tools
+
+List available tools on a remote MCP agent
+
+send_a2a_message
+
+Message a discovered A2A agent
+
+diagnose_environment
+
+Check DNS-AID configuration and connectivity
+
+delete_agent_from_dns
+
+Remove an agent's DNS records
+
+list_published_agents
+
+List agents in your own DNS zone
+
+list_agent_index
+
+Read a domain's agent index record
+
+sync_agent_index
+
+Rebuild a domain's agent index from live records
+
+Local Playground — zero credentials needed
+
 git clone https://github.com/infobloxopen/dns-aid-core.git
 cd dns-aid-core
-pip install "dns-aid[cli]"
+pip install
+
+"dns-aid[cli]"
 
 docker compose -f tests/integration/bind/docker-compose.yml up -d
 
-# 为本地 BIND9 配置 .env（参见 .env.example）
-dns-aid publish --name test-agent --domain test.dns-aid.local \
-  --protocol mcp --endpoint localhost --backend ddns \
-  --capability chat
+# Configure .env for local BIND9 (see .env.example)
 
-dns-aid discover test.dns-aid.local
-```
+dns-aid publish --name
 
-## 三种发现代理的方式
+test-agent
 
-全部通过标准 DNS 查询。无需特殊客户端。
+--domain
 
-**定向查找**
+test.dns-aid.local
 
-按名称查询
+\
+  --protocol
 
-您知道代理。直接查询其 SVCB 记录获取端点详情。
+mcp
 
-```
+--endpoint
+
+localhost
+
+--backend
+
+ddns
+
+\
+  --capability
+
+chat
+
+dns-aid discover
+
+test.dns-aid.local
+
+Three ways to discover agents
+
+All via standard DNS queries. No special client needed.
+
+Targeted
+
+Lookup by name
+
+You know the agent. Query its SVCB record directly for endpoint details.
+
 dig SVCB _chatbot._mcp._agents.example.com
-```
 
-**能力搜索**
+Capability
 
-按功能搜索
+Search by function
 
-通过功能查找代理。查询代理区域下的能力类型。
+Find agents by what they do. Query a capability type under the agent zone.
 
-```
 dig SVCB _data-cleaner._a2a._agents.example.com
-```
 
-**索引爬取**
+Index
 
-爬取目录
+Crawl the catalog
 
-从已知索引入口点获取域名的完整代理清单。
+Fetch a domain's full agent inventory from a well-known index entry point.
 
-```
 dig TXT _index._agents.example.com
-```
 
-## 架构
+Architecture
 
-跨组织代理发现流程。
+Cross-organization agent discovery flow.
 
-组织 1（发现方）
+ORG 1 (Discovering)
 
-组织 2（发布方）
+ORG 2 (Publishing)
 
-# DNS-AID 技术文档中文翻译
-
-## 架构图
-
-```
 +----------------+                                    +-------------------+
-  |   AI 代理      |---- 1. DNS SVCB 查询 ------------->|   权威 DNS         |
-  |   (org1)       |     _search._a2a._agents.org2.com   |   DNS 服务器      |
-  |                |<--- 2. SVCB 响应 -----------------|   (DNSSEC签名)     |
-  +-------+--------+     alpn="a2a" port=443          +-------------------+
+  |   AI Agent     |---- 1. DNS SVCB Query ----------->|   Authoritative   |
+  |   (org1)       |     _search._a2a._agents.org2.com |   DNS Server      |
+  |                |<--- 2. SVCB Response -------------|   (DNSSEC-signed) |
+  +-------+--------+     alpn="a2a" port=443           +-------------------+
           |               ipv4hint=198.51.100.10
           |
-          |   3. DNSSEC + DANE 验证
+          |   3. DNSSEC + DANE Validation
           |
-          |   4. 直接 A2A / MCP / HTTPS 连接
+          |   4. Direct A2A / MCP / HTTPS Connection
           v
   +----------------+
-  |   AI 代理      |   运行于 198.51.100.10:443
+  |   AI Agent     |   Running at 198.51.100.10:443
   |   (org2)       |
   +----------------+
-```
 
-## DNS 服务提供商
+R53
 
-| 缩写 | 名称 | 说明 |
-|------|------|------|
-| R53 | Amazon Route 53 | AWS 托管区域 |
-| CF | Cloudflare | 全球边缘 DNS |
-| IB | Infoblox NIOS | 企业 DDI |
-| UD | Infoblox UDDI | 通用 DDI 云 |
-| AZ | Azure DNS | 微软云 |
-| GC | Google Cloud DNS | GCP 托管 |
-| NS1 | NS1 | 托管 DNS 和流量调度 |
-| RFC | RFC 2136 DDNS | 任何符合标准的 DNS |
-| B9 | BIND9 | 自托管和本地开发 |
+Amazon Route 53
 
-## 策略执行
+AWS hosted zones
 
-### 概述
+CF
 
-发现机制将代理引导到正确的端点。策略帮助部署表达谁可以调用、需要什么认证，以及应用哪些运行时检查，而无需将主页变成协议备忘录。
+Cloudflare
 
-### 当前状态
+Global edge DNS
 
-### 运行时策略现状
+IB
 
-DNS-AID 学习材料已描述了运行时策略评估，包括发现元数据、认证要求和部署特定的策略包（如 `policy.json`）。
+Infoblox NIOS
 
-### 层次结构
+Enterprise DDI
 
-调用方、目标方和基础设施层面
+UD
 
-团队可以从调用方端和目标端检查开始，然后仅在其 DNS 或流量基础设施支持的情况下添加解析器或代理执行。
+Infoblox UDDI
 
-### 扩展功能
+Universal DDI cloud
 
-本地检查模式
+AZ
 
-某些部署可以添加本地请求或响应检查，用于 PII（个人身份信息）、提示注入或数据处理检查，而无需通过中央策略服务路由流量。
+Azure DNS
 
-### 强制执行内容
+Microsoft cloud
 
-本文档记录的策略示例包括：
+GC
 
-- 调用方域名限制
-- 必需的认证类型
-- 可用性时间窗口
-- 速率限制
-- DNSSEC 敏感决策
-- CEL 表达式以实现更紧密的运行时检查
+Google Cloud DNS
 
-### 重要性
+GCP managed
 
-您可以从当前的运行时策略模型开始，稍后再扩展到解析器或代理执行，而不是在第一天就承诺采用重量级的集中式安全架构。
+NS1
 
-## 开放策略指南
+NS1
 
-### 继续交互式课程
+Managed DNS & traffic steering
 
-## 使用场景
+RFC
 
-真实世界的代理发现场景。
+RFC 2136 DDNS
 
-### 企业场景
+Any standards-compliant DNS
 
-跨组织代理协作
+B9
 
-内部代理查询 DNS 以发现合作伙伴的授权代理，验证委托，并自动发起安全会话。
+BIND9
 
-### 学术场景
+Self-hosted & local dev
 
-研究联盟
+Policy enforcement
 
-大学在其自己的域名下发布代理。合作者在尊重机构信任边界的同时按能力发现服务。
+Discovery gets agents to the right endpoint. Policy helps deployments express who may call, what auth is required, and which runtime checks to apply without turning the homepage into a protocol memo.
 
-### SaaS 场景
+Current
 
-多租户平台
+Runtime policy today
 
-SaaS 提供商在租户特定区域下托管代理。DNS 区域委托为每个客户提供自然的隔离和作用域发现。
+The DNS-AID learning materials already describe runtime policy evaluation alongside discovery metadata, auth requirements, and deployment-specific policy bundles such as
 
-### 边缘场景
+policy.json
 
-物联网和边缘代理
+.
 
-受限设备上的轻量级代理受益于 DNS 的分布式、可缓存架构，以及用于低延迟引导的 SVCB 提示。
+Layers
 
-## 安全与信任
+Caller, target, and infrastructure
 
-建立在互联网久经考验的安全基础设施之上。
+Teams can start with caller-side and target-side checks, then add resolver or proxy enforcement only if their DNS or traffic infrastructure supports it.
 
-### DNSSEC
+Extensions
 
-公共区域强制要求。加密信任链防止欺骗和篡改。
+Local inspection patterns
 
-### DANE / TLSA
+Some deployments may add local request or response inspection for PII, prompt injection, or data handling checks without routing traffic through a central policy service.
 
-将 TLS 证书绑定到 DNS 记录。无需证书颁发机构信任问题即可进行端点验证。
+What gets enforced
 
-### 域名控制验证
+Documented policy examples on this site include caller-domain restrictions, required auth types, availability windows, rate limits, DNSSEC-sensitive decisions, and CEL expressions for tighter runtime checks.
 
-代理通过 DCV TXT 记录证明授权。适用于临时代理的范围化、可验证授权。
+Why it matters
 
-### 能力完整性
+You can start with the current runtime policy model and extend into resolver or proxy enforcement later, instead of committing to a heavyweight centralized security architecture on day one.
 
-cap-sha256 哈希确保能力文档未被篡改。
+Open policy guide
 
-### 分裂视野 DNS
+Continue with the interactive course
 
-内部代理对外界不可见。为不同的解析器上下文提供不同的视图。
+Use cases
 
-### 作用域授权
+Real-world agent discovery scenarios.
 
-TXT 记录定义针对特定服务和操作的每个代理角色和权限。
+Enterprise
 
-## 常见问题
+Cross-org agent collaboration
 
-### DNS-AID 是否需要更改我的 DNS 服务器？
+An internal agent queries DNS to discover a partner's authorized agents, validates delegation, and initiates a secure session automatically.
 
-不需要。DNS-AID 不引入新的 DNS 记录类型、操作码或消息格式。它是在现有 SVCB、TXT 和 TLSA 记录之上的命名约定。任何支持 DNSSEC 和 SVCB 的 DNS 服务器都可以工作。
+Academic
 
-### 它支持哪些代理通信协议？
+Research consortiums
 
-DNS-AID 与协议无关。代理在 SVCB alpn 字段中声明协议。SDK 支持 MCP、A2A 和 HTTPS。新协议通过使用新的 alpn 标识符即可工作。
+Universities publish agents under their own domains. Collaborators discover services by capability while respecting institutional trust boundaries.
 
-### 这与集中式代理注册中心有何不同？
+SaaS
 
-DNS-AID 是去中心化的。每个组织在其自己的域名下发布记录。没有中央注册中心，没有供应商锁定，没有单点故障。
+Multi-tenant platforms
 
-### 支持哪些 DNS 提供商？
+SaaS providers host agents under tenant-specific zones. DNS zone delegation provides natural isolation and scoped discovery per customer.
 
-AWS Route 53、Cloudflare、Infoblox NIOS 和 RFC 2136。包含用于本地开发的 Docker BIND9 操场。后端架构可扩展。
+Edge
 
-### 是否需要 DNSSEC？
+IoT and edge agents
 
-对于公共代理区域，是的。没有 DNSSEC，发现代理就无法验证记录是真实的。对于私有区域，网络级控制可能就足够了。
+Lightweight agents on constrained devices benefit from DNS's distributed, cacheable architecture with SVCB hints for low-latency bootstrapping.
 
-### 如果我的 DNS 提供商不支持自定义 SVCB 参数怎么办？
+Security & trust
 
-SDK 自动处理此问题。自定义参数会优雅地降级到带有 dnsaid_ 前缀的 TXT 记录。所有元数据都会无损保留。
+Built on the internet's battle-tested security infrastructure.
 
-### 我可以在没有云账户的情况下试用吗？
+DNSSEC
 
-可以。仓库包含一个 Docker Compose 设置，带有位于 `tests/integration/bind/` 的本地 BIND9 服务器。运行：
+Mandatory for public zones. Cryptographic chain of trust prevents spoofing and tampering.
 
-```bash
+DANE / TLSA
+
+Binds TLS certificates to DNS records. Endpoint verification without certificate authority trust issues.
+
+Domain Control Validation
+
+Agents prove authorization via DCV TXT records. Scoped, verifiable, and ideal for ephemeral agents.
+
+Capability Integrity
+
+cap-sha256 hash ensures capability documents haven't been tampered with.
+
+Split-Horizon DNS
+
+Internal agents stay invisible externally. Different views for different resolver contexts.
+
+Scoped Authorization
+
+TXT records define per-agent roles and permissions scoped to specific services and operations.
+
+FAQ
+
+Does DNS-AID require changes to my DNS servers?
+
+No. DNS-AID introduces no new DNS record types, opcodes, or message formats. It's a naming convention on top of existing SVCB, TXT, and TLSA records. Any DNS server supporting DNSSEC and SVCB will work.
+
+What agent communication protocols does it support?
+
+DNS-AID is protocol-agnostic. Agents declare protocols in the SVCB alpn field. The SDK supports MCP, A2A, and HTTPS. New protocols work by using new alpn identifiers.
+
+How is this different from a centralized agent registry?
+
+DNS-AID is decentralized. Each organization publishes records under its own domain. No central registry, no vendor lock-in, no single point of failure.
+
+What DNS providers are supported?
+
+AWS Route 53, Cloudflare, Infoblox NIOS, and RFC 2136. A Docker BIND9 playground is included for local dev. The backend architecture is extensible.
+
+Is DNSSEC required?
+
+For public agent zones, yes. Without DNSSEC, discovering agents can't verify records are authentic. For private zones, network-level controls may suffice.
+
+What if my DNS provider doesn't support custom SVCB parameters?
+
+The SDK handles this automatically. Custom parameters are gracefully demoted to TXT records with dnsaid_ prefixes. All metadata is preserved losslessly.
+
+Can I try it without a cloud account?
+
+Yes. The repo includes a Docker Compose setup with a local BIND9 server at tests/integration/bind/. Run
+
 docker compose -f tests/integration/bind/docker-compose.yml up -d
-```
 
-并在本地计算机上使用 DDNS 后端进行完全实验。
+and experiment entirely on your local machine using the DDNS backend.
 
----
+Start discovering agents.
 
-## 开始发现代理
+Install the SDK, publish your first agent, and build on the open universal discovery layer for AI.
 
-安装 SDK，发布您的第一个代理，并在开放的通用 AI 发现层上构建。
+View on GitHub
 
-**在 GitHub 上查看**
-
-**阅读 IETF 草案**
+Read the IETF Draft
 
 *原文请访问 [dns-aid.org](https://dns-aid.org)*

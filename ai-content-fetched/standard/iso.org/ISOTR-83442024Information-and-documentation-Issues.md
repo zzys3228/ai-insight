@@ -1,97 +1,373 @@
 ---
-title: **ISO/TR 8344:2024 信息与文献 — 在结构化数据环境中管理记录的议题与考虑**
+title: ISO/TR 8344:2024 信息与文献 — 结构化数据环境中记录管理的问题与考虑
 source: iso.org
 url: https://www.iso.org/standard/83138.html
 date: 2026-06-22
 category: standard/iso.org
 translated: true
-fetched_at: 2026-06-22T18:25:19.533581
+fetched_at: 2026-06-22T20:14:48.891038
 ---
-# **ISO/TR 8344:2024 信息与文献 — 在结构化数据环境中管理记录的议题与考虑**
+# ISO/TR 8344:2024 信息与文献 — 结构化数据环境中记录管理的问题与考虑
 
 **来源**: iso.org | **日期**: 2026-06-22
 
 ---
 
-# ISO/TR 8344:2024 中文翻译
 
----
+ISO/TR 8344:2024
 
-## 摘要
+Abstract
 
-本文件明确了在结构化数据环境中管理档案（records）的问题和注意事项。
+This document identifies issues and considerations for managing records in structured data environments.
 
----
+This document identifies issues and considerations for managing records in structured data environments.
 
-## 一般信息
+General information
 
-**状态**：已发布
+Status
+:
+Published
+Publication date
+:
+2024-04
+Stage
+: International Standard published [
+60.60
+]
+Edition
+: 1
+Number of pages
+: 61
+Technical Committee :
+ISO/TC 46/SC 11
+ICS
+:
+01.140.20
+RSS
+updates
 
-**发布日期**：2024-04
+Life cycle
 
-**阶段**：国际标准已发布 [60.60]
+Now
+Published
+ISO/TR 8344:2024
+Stage:
+60.60
+00
+Preliminary
+10
+Proposal
+10.99
+2021-06-07
+New project approved
+20
+Preparatory
+20.00
+2023-02-01
+New project registered in TC/SC work programme
+20.20
+2023-02-26
+Working draft (WD) study initiated
+30
+Committee
+30.00
+2023-04-12
+Committee draft (CD) registered
+30.20
+2023-07-05
+CD consultation initiated
+30.60
+2023-08-31
+Close of comment period
+30.99
+2023-10-13
+CD approved for registration as DIS
+40
+Enquiry
+50
+Approval
+50.00
+2023-12-07
+Final text received or FDIS registered for formal approval
+50.20
+2024-01-23
+Proof sent to secretariat or FDIS ballot initiated: 8 weeks
+50.60
+2024-03-20
+Close of voting. Proof returned by secretariat
+60
+Publication
+60.00
+2024-03-20
+International Standard under publication
+60.60
+2024-04-15
+International Standard published
+90
+Review
+90.20
+International Standard under systematic review
+90.92
+International Standard to be revised
+90.93
+International Standard confirmed
+90.99
+Withdrawal of International Standard proposed by TC or SC
+95
+Withdrawal
+95.99
+Withdrawal of International Standard
 
-**版本**：1
+Now
 
-**页数**：61
+ISO/TR 8344:2024
 
-**技术委员会**：ISO/TC 46/SC 11
+00
+Preliminary
+10
+Proposal
+10.99
+2021-06-07
+New project approved
+20
+Preparatory
+20.00
+2023-02-01
+New project registered in TC/SC work programme
+20.20
+2023-02-26
+Working draft (WD) study initiated
+30
+Committee
+30.00
+2023-04-12
+Committee draft (CD) registered
+30.20
+2023-07-05
+CD consultation initiated
+30.60
+2023-08-31
+Close of comment period
+30.99
+2023-10-13
+CD approved for registration as DIS
+40
+Enquiry
+50
+Approval
+50.00
+2023-12-07
+Final text received or FDIS registered for formal approval
+50.20
+2024-01-23
+Proof sent to secretariat or FDIS ballot initiated: 8 weeks
+50.60
+2024-03-20
+Close of voting. Proof returned by secretariat
+60
+Publication
+60.00
+2024-03-20
+International Standard under publication
+60.60
+2024-04-15
+International Standard published
+90
+Review
+90.20
+International Standard under systematic review
+90.92
+International Standard to be revised
+90.93
+International Standard confirmed
+90.99
+Withdrawal of International Standard proposed by TC or SC
+95
+Withdrawal
+95.99
+Withdrawal of International Standard
 
-**ICS**：01.140.20
+10.99
+2021-06-07
+New project approved
 
----
+20.00
+2023-02-01
+New project registered in TC/SC work programme
+20.20
+2023-02-26
+Working draft (WD) study initiated
 
-## 生命周期
+30.00
+2023-04-12
+Committee draft (CD) registered
+30.20
+2023-07-05
+CD consultation initiated
+30.60
+2023-08-31
+Close of comment period
+30.99
+2023-10-13
+CD approved for registration as DIS
 
-**当前状态**：已发布 - ISO/TR 8344:2024
+50.00
+2023-12-07
+Final text received or FDIS registered for formal approval
+50.20
+2024-01-23
+Proof sent to secretariat or FDIS ballot initiated: 8 weeks
+50.60
+2024-03-20
+Close of voting. Proof returned by secretariat
 
-**阶段**：60.60
+60.00
+2024-03-20
+International Standard under publication
+60.60
+2024-04-15
+International Standard published
 
----
+90.20
+International Standard under systematic review
+90.92
+International Standard to be revised
+90.93
+International Standard confirmed
+90.99
+Withdrawal of International Standard proposed by TC or SC
 
-| 阶段代码 | 日期 | 说明 |
-|---------|------|------|
-| **00** | | 预备阶段 |
-| **10** | | 提案阶段 |
-| 10.99 | 2021-06-07 | 新项目获批 |
-| **20** | | 准备阶段 |
-| 20.00 | 2023-02-01 | 新项目已在技术委员会/分委员会工作计划中注册 |
-| 20.20 | 2023-02-26 | 启动工作草案(WD)研究 |
-| **30** | | 委员会阶段 |
-| 30.00 | 2023-04-12 | 委员会草案(CD)已注册 |
-| 30.20 | 2023-07-05 | CD咨询启动 |
-| 30.60 | 2023-08-31 | 意见征集截止 |
-| 30.99 | 2023-10-13 | CD获批注册为DIS |
-| **40** | | 询问阶段 |
-| **50** | | 批准阶段 |
-| 50.00 | 2023-12-07 | 收到最终文本或FDIS注册进行正式批准 |
-| 50.20 | 2024-01-23 | 校样发送至秘书处或FDIS投票启动：8周 |
-| 50.60 | 2024-03-20 | 投票截止。秘书处返回校样 |
-| **60** | | 发布阶段 |
-| 60.00 | 2024-03-20 | 国际标准正在发布中 |
-| 60.60 | 2024-04-15 | 国际标准已发布 |
-| **90** | | 复审阶段 |
-| 90.20 | | 国际标准正在系统复审中 |
-| 90.92 | | 国际标准将被修订 |
-| 90.93 | | 国际标准已确认 |
-| 90.99 | | 技术委员会或分委员会提议撤销国际标准 |
-| **95** | | 撤销阶段 |
-| 95.99 | | 国际标准撤销 |
+95.99
+Withdrawal of International Standard
 
----
+Got a question?
 
-## 技术术语说明
+Check out our
+Help and Support
 
-| 英文术语 | 中文译法 | 说明 |
-|---------|---------|------|
-| Records | 档案/记录 | 在档案管理领域特指"档案" |
-| Structured data environments | 结构化数据环境 | - |
-| Technical Committee | 技术委员会 | - |
-| Working draft (WD) | 工作草案 | - |
-| Committee draft (CD) | 委员会草案 | - |
-| DIS | 国际标准草案 | Draft International Standard |
-| FDIS | 最终国际标准草案 | Final Draft International Standard |
-| Systematic review | 系统复审 | - |
-| ICS | 国际标准分类 | International Classification for Standards |
+Store
+Store
+ICS
+01
+01.140
+01.140.20
+ISO/TR 8344:2024
+
+Standards
+Benefits
+Popular standards
+Conformity assessment
+SDGs
+Sectors
+Health
+IT & related technologies
+Management & services
+Security, safety & risk
+Transport
+Energy
+Environmental sustainability
+Materials
+About ISO
+What we do
+Structure
+Members
+Events
+Strategy
+Insights & news
+Insights
+All insights
+Healthcare
+Artificial intelligence
+Climate change
+Transport
+News
+Expert talk
+Standards world
+Media kit
+Resources
+ISO 22000 explained
+ISO 9001 explained
+ISO 14001 explained
+ISO 42001 explained
+ISO 45001 explained
+Taking part
+Who develops standards
+Deliverables
+Get involved
+Collaborating to accelerate effective climate action
+Resources
+Directives and Policies
+Drafting standards
+Store
+Store
+Publications and products
+
+Benefits
+Popular standards
+Conformity assessment
+SDGs
+
+Health
+IT & related technologies
+Management & services
+Security, safety & risk
+Transport
+Energy
+Environmental sustainability
+Materials
+
+What we do
+Structure
+Members
+Events
+Strategy
+
+Insights
+All insights
+Healthcare
+Artificial intelligence
+Climate change
+Transport
+News
+Expert talk
+Standards world
+Media kit
+Resources
+ISO 22000 explained
+ISO 9001 explained
+ISO 14001 explained
+ISO 42001 explained
+ISO 45001 explained
+
+All insights
+Healthcare
+Artificial intelligence
+Climate change
+Transport
+
+Expert talk
+Standards world
+Media kit
+
+ISO 22000 explained
+ISO 9001 explained
+ISO 14001 explained
+ISO 42001 explained
+ISO 45001 explained
+
+Who develops standards
+Deliverables
+Get involved
+Collaborating to accelerate effective climate action
+Resources
+Directives and Policies
+Drafting standards
+
+Directives and Policies
+Drafting standards
+
+Store
+Publications and products
+
 
 *原文请访问 [iso.org](https://www.iso.org/standard/83138.html)*

@@ -1,13 +1,13 @@
 ---
-title: ISO/IEC JTC 1/SC 42Artificial intelligence
+title: ISO/IEC JTC 1/SC 42 人工智能
 source: iso.org
 url: https://www.iso.org/committee/6794475.html
 date: 2026-06-22
 category: standard/iso.org
 translated: true
-fetched_at: 2026-06-22T18:23:41.432491
+fetched_at: 2026-06-22T20:12:30.323403
 ---
-# ISO/IEC JTC 1/SC 42Artificial intelligence
+# ISO/IEC JTC 1/SC 42 人工智能
 
 **来源**: iso.org | **日期**: 2026-06-22
 

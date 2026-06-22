@@ -5,7 +5,7 @@ url: https://newyork.theaisummit.com
 date: 2026-06-22
 category: conference/2.1 AI产业生态峰会/2026
 translated: true
-fetched_at: 2026-06-22T18:23:44.678402
+fetched_at: 2026-06-22T20:13:28.082142
 content_sources: [{'type': 'official_website', 'url': 'https://newyork.theaisummit.com', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
 ---
 # The AI SummitNew York

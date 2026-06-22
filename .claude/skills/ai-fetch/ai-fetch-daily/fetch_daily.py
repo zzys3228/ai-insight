@@ -108,7 +108,10 @@ class FetchDaily:
             elif cat_lower == 'person':
                 urls = [u for u in urls if u['section'] and u['section'].startswith('5.')]
             elif cat_lower == 'conference':
-                urls = [u for u in urls if u['section'] and u['section'].startswith('2.')]
+                # 第2章AI大会 + 第一章含"大会"关键词的URL（如Google I/O、Google Cloud Next）
+                urls = [u for u in urls if u['section'] and (
+                    u['section'].startswith('2.') or '大会' in u['section']
+                )]
             else:
                 urls = [u for u in urls if cat_lower in u['section'].lower()]
 

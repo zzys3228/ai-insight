@@ -1,283 +1,308 @@
 ---
 title: **Translation:**
 
-WebMCP 使用收藏集保持井井有条 根据您的偏好保存和分类内容。
+WebMCP
+使用收藏夹保持井井有条
+根据您的偏好保存和分类内容。
+
+---
+
+**Technical notes:**
+- "WebMCP" 保持原样（产品名称）
+- "collections" 译为"收藏夹"（内容管理术语）
+- "categorize" 译为"分类"（标准技术术语）
+- "preferences" 译为"偏好"（UI/UX术语）
 source: developer.chrome.com
 url: https://developer.chrome.com/docs/ai/webmcp
 date: 2026-06-22
 category: standard/developer.chrome
 translated: true
-fetched_at: 2026-06-22T19:06:46.560334
+fetched_at: 2026-06-22T20:18:14.393268
 ---
 # **Translation:**
 
-WebMCP 使用收藏集保持井井有条 根据您的偏好保存和分类内容。
+WebMCP
+使用收藏夹保持井井有条
+根据您的偏好保存和分类内容。
+
+---
+
+**Technical notes:**
+- "WebMCP" 保持原样（产品名称）
+- "collections" 译为"收藏夹"（内容管理术语）
+- "categorize" 译为"分类"（标准技术术语）
+- "preferences" 译为"偏好"（UI/UX术语）
 
 **来源**: developer.chrome.com | **日期**: 2026-06-22
 
 ---
 
-# 翻译
 
-主页
-文档
-Chrome 上的 AI
+Home
+Docs
+AI on Chrome
 WebMCP
 
 Alexandra Klepper
 GitHub
 Bluesky
 
-发布时间：2026年5月18日，最后更新：2026年6月9日
+Published: May 18, 2026, Last updated: June 9, 2026
 
-发布时间：2026年5月18日，最后更新：2026年6月9日
+Published: May 18, 2026, Last updated: June 9, 2026
 
 WebMCP
-是一个
-拟议的 Web 标准，用于帮助您为 AI
-代理
-构建和公开结构化工具。WebMCP 提供 JavaScript 并
-标注 HTML 表单元素，使代理能够准确了解如何与
-页面功能进行交互，以支持用户体验。这可以显著提高
-代理操作的性能和可靠性。
+is a
+proposed web standard to help you build and expose structured tools for AI
+agents
+. WebMCP provides JavaScript and
+annotates HTML form elements so that agents know exactly how to interact with
+page features, to support a user's experience. This can significantly improve
+the performance and reliability of agent actuation.
 
-AI 代理是一项较新的技术。它们可以帮助用户更好地完成
-高度复杂和技术性的任务。WebMCP 为代理任务完成提供更高的准确性，
-可以作为渐进式增强功能添加。
+AI agents are a newer technology. They can help human users better complete
+tasks which are highly complex and technical. WebMCP offers higher accuracy for
+agentic task completion, and it can be added as a progressive enhancement.
 
-概述
+Explainer
 Web
-扩展
-Chrome 状态
-意向
+Extensions
+Chrome Status
+Intent
 GitHub
-原始试用
-查看
-实验意向
+Origin trial
+View
+Intent to Experiment
 
-## 为什么选择 WebMCP？
+Why WebMCP?
 
-WebMCP 可以帮助您弥合 Web 应用程序与代理之间的差距，
-通过提供交互规则来提高效率、可靠性和任务完成度。网站不是让代理查看元素
-（如按钮或字段）来理解其目的，而是声明元素的目的，
-以确保其被正确使用。
+WebMCP can help you bridge the gap between web applications and agents,
+improving efficiency, reliability, and task completion, by providing rules for
+interaction. Instead of an agent reviewing the element, such as a button or a
+field, to understand its purpose, the website declares the element's purpose,
+so it's used correctly
 
-这比操作更可靠，因为操作可能有许多步骤，并且每个步骤都会
-给代理留下解释的空间。
+This is more reliable than actuation, which may have numerous steps and leaves
+each step open to interpretation by the agent.
 
-网站可以通过定义一个
-工具
-来共享明确的目的，例如搜索或购买。工具在您的网页上可见地执行，
-以便用户相信任务按预期完成。这也可以保持您的品牌和
-以人为中心的设计选择完整。
+Websites can share explicit purpose, such as search or purchasing, by defining
+a
+tool
+. Tools execute on your webpage visibly, so users gain trust
+that tasks are completed as expected. This also keeps your brand and
+human-centered design choices intact.
 
-WebMCP 支持：
+WebMCP supports:
 
-**发现**
-：页面向代理注册工具的标准方式，例如
+Discovery
+: A standard way for pages to register tools with agents, such
+as
 checkout
-或
+or
 filter_results
-。
-**JSON Schema**
-：输入和预期输出的明确定义，减少幻觉或误解。
-**状态**
-：当前页面上下文的共同理解，使代理知道有哪些资源可以实时操作。
+.
+JSON Schemas
+: Explicit definitions of inputs and expected outputs, to reduce hallucination or misunderstanding.
+State
+: A shared understanding of the current page context, so the agent knows what resources are available to act on in real time.
 
-我们的目标是构建任何具有代理功能的浏览器都可以
-实现并受益的 API，以便用户可以更轻松地完成任务。您可以在
+Our goal is to build APIs that any browser with agentic capabilities can
+implement and benefit from, so your users can more easily complete tasks. You
+can follow along this process on
 GitHub
-上关注此过程。
+.
 
-## 使用案例
+Use cases
 
-您可以在 Web 上通过多种方式使用 WebMCP。例如：
+There are many ways you could use WebMCP on the web. For example:
 
-**帮助您的客户获得支持**
-。如果您向客户提供软件，您可能有一个复杂的支持流程来解答
-许多不同的问题。您可以使用 WebMCP 帮助代理更快地导航到正确的表单，
-并用用户提供的信息填写字段。
-**改进旅行预订**
-。帮助代理以更少的步骤预订复杂的多城市和多乘客行程。
+Help your customers get support
+. If you provide a software to customers, you may have a complex support flow to address many different questions. You can use WebMCP to help an agent more quickly navigate to the right form and fill in fields with user-provided information.
+Improve travel booking
+. Help agents book complex, multi-city and multi-passenger trips with fewer steps.
 
-某些操作可能是敏感的，例如进行购买。您可以包含一个
-命令来请求用户与确认对话框进行交互。
+Some actions may be sensitive, such as making a purchase. You can include a
+command to request user interaction with a confirmation dialog.
 
-实际上，您的工具可以完成以下任务：
+In a practical sense, your tools could accomplish the following tasks:
 
-**填写结构化表单**
-：构建一个
+Fill in structured forms
+: Build a
 submit_application
-工具来帮助代理将
-从与用户的对话中收集的数据正确映射到表单字段。例如，您可以区分
-字段是需要全名还是单独的名和姓。
-**支持以人为本界面中的代理交互**
-：某些字段是
-为人用户设计的，但代理可能无法理解。您可以构建一个
+tool to help agents map data collected from the conversation with the user to form fields correctly. For example, you can differentiate if a field requires a full name versus a separate first and last name.
+Support agent interactions in human-first interfaces
+: Certain fields are
+designed for human users, but may not be understood by agents. You could build
+a
 date_pick
-工具，允许在预订或活动预订中进行复杂的日期和时间选择。
-**更快的应用程序调试**
-：您可以在开发者设置页面上构建一个
+tool that allows for a complex date and time selection in a
+reservation or event booking.
+Quicker application debugging
+: You can build a
 run_diagnostics
-工具，
-以便代理可以触发隐藏在嵌套菜单后面的修复。
+tool on a
+developer settings page, so an agent can trigger fixes that are otherwise
+hidden behind nested menus.
 
-您的使用案例缺失了吗？或者您有想要分享的
-关于 WebMCP 的想法？加入
-早期预览计划
-并分享您的反馈。
+Is your use case missing? Or do you have an idea you're excited to share for
+WebMCP? Join the
+early preview program
+and share your feedback.
 
-## 开始使用
+Get started
 
-从 Chrome 149 开始加入
-WebMCP 原始试用
-。了解更多关于如何
-开始使用原始试用
-的信息。
+Join the
+WebMCP origin trial
+from Chrome 149. Learn more about how to
+get started with origin trials
+.
 
-### 本地 WebMCP
+Local WebMCP
 
-WebMCP 可作为 Chrome 标志用于本地开发：
+WebMCP is available as a Chrome flag for local development:
 
-1. 打开 Chrome 并导航到
+Open Chrome and navigate to
 chrome://flags/#enable-webmcp-testing
-2. 将标志设置为
+Set the flag to
 Enabled
-。
-3. 重新启动 Chrome 以应用更改。
+.
+Relaunch Chrome to apply the changes.
 
-### 使用 WebMCP API
+Use WebMCP APIs
 
-您可以使用两个 API 来设置网站工具：
+There are two APIs you can use to set up your website tools:
 
-**命令式 API**
-：使用标准 JavaScript 定义不同类型的
-工具，例如表单输入、导航工具、状态
-管理或其他功能。
-**声明式 API**
-：向标准
-HTML 表单添加标注以创建 WebMCP 工具。
+Imperative API
+: Define different types of
+tools with standard JavaScript, such as form input, navigation tools, state
+management, or other functions.
+Declarative API
+: Add annotations to a standard
+HTML forms to create a WebMCP tool.
 
-## 局限性
+Limitations
 
-虽然 WebMCP 旨在使代理和人类的复杂任务更简单，但仍有一些
-局限性：
+While WebMCP aims to make complex tasks simpler for agents and humans, there are
+some limitations:
 
-**需要浏览上下文**
-：由于工具调用在 JavaScript 中处理，
-必须打开浏览器标签页或 webview 以提供可见界面和
-浏览器上下文。换句话说，不支持代理或辅助工具在无头状态下调用工具。
-**复杂界面的更多开销**
-：如果您的网站高度复杂，
-您可能需要重构或添加 JavaScript 来处理应用程序和界面状态。
-**工具可发现性**
-：客户端和浏览器必须直接访问网站才能
-知道它是否有可调用的工具。
+Browsing context required
+: As tool calls are handled in JavaScript,
+a browser tab or a webview must be opened to provide a visible interface and
+browser context. In other words, there is no support for agents or assistive
+tools to call tools in a headless state.
+More overhead for complex interfaces
+: If your site is highly complex, you
+likely need to refactor or add JavaScript to handle application and interface state.
+Tool discoverability
+: Clients and browsers must visit a site directly to
+know if it has callable tools.
 
-## 安全和权限
+Security and permissions
 
-WebMCP API 受源隔离要求和权限策略的限制。
+WebMCP APIs are gated by both origin isolation requirements and permissions
+policy.
 
-### 源隔离
+Origin isolation
 
-WebMCP 仅在
-源隔离
-文档中可用。这确保文档的源在工具的整个生命周期中保持稳定。
+WebMCP is only available in
+origin-isolated
+documents. This ensures that the document's origin remains stable throughout
+the tool's lifetime.
 
-如果文档启用了
+If a document has
 document.domain
-（例如，通过使用
+enabled (for example, by using the
 Origin-Agent-Cluster: ?0
-HTTP 头），WebMCP API 将被禁用。
+HTTP header), WebMCP APIs are disabled.
 
-### 权限策略
+Permissions policy
 
-两个 API 都受
+Both APIs are gated by the
 tools
-权限策略的限制。
-该策略默认为
+Permissions Policy
+.
+The policy defaults to
 self
-，允许在顶级和同源上下文中注册工具，
-并在跨源 iframe 中禁用它。
+, which allows tool registration in top-level and
+same-origin contexts, and disables it for cross-origin iframes.
 
-要在跨源 iframe 中允许 WebMCP 工具，请将
+To allow WebMCP tools in a cross-origin iframe, add the
 allow="tools"
-属性添加到 iframe。
+attribute to the iframe.
 
-## 演示
+Demo
 
-涵盖命令式和声明式实现的演示示例
-可用：
+Examples of demos covering both imperative and declarative implementations are
+available:
 
-**WebMCP zaMaker**
-使用 WebMCP 命令式 API。
-**旅行演示（React）**
-使用 WebMCP 命令式 API。
-**Le Petit Bistro 演示**
-使用 WebMCP 声明式 API。
+WebMCP zaMaker
+uses the WebMCP Imperative API.
+Travel demo (React)
+uses the WebMCP Imperative API.
+Le Petit Bistro demo
+uses the WebMCP Declarative API.
 
-您也可以在
+You can also review and explore the demo source code on
 GitHub
-上查看和探索演示源代码。
+.
 
-## 使用检查器扩展模拟代理聊天
+Imitate agent chat with the inspector extension
 
-安装
-Model Context Tool Inspector 扩展
-来体验代理并查看 WebMCP 工具如何
-在实时演示或您自己的应用程序中工作。使用自然语言提示来确定代理
-是否按预期与 WebMCP 工具交互。
+Install the Model Context Tool Inspector Extension
+to experiment with an agent and see how WebMCP tools work in live demos or your
+own applications. Use natural language prompts to determine if the agent
+interacts with WebMCP tools as expected.
 
-使用扩展，您可以：
+With the extension, you can:
 
-查看页面上注册了哪些工具，方法是监控 WebMCP API。
-手动调用工具并执行函数。
-验证您的 JSON Schema 是否正确定义，以及浏览器是否能够解析
-工具期望的数据。
-查看工具返回的结构化输出或错误消息，以确保它们写得清晰
-且格式正确，以便代理能够理解。
+See which tools are registered on a page, by monitoring the WebMCP API.
+Manually call tools and execute functions.
+Verify your JSON Schema is correctly defined and that the browser can parse
+data as the tool expects.
+View structured output or error messages returned by your tool to ensure
+they're written clearly and formatted correctly, so an agent can understand it.
 
-使用自然语言与代理交谈，看看它是否能正确识别
-并调用适当的 WebMCP 工具。您的提示默认发送到
+Talk to the agent using natural language, to see if it can correctly identify
+and invoke the appropriate WebMCP tools. Your prompts are sent by default to the
 gemini-3-flash-preview
-模型。
+model.
 
-## 参与并分享反馈
+Engage and share feedback
 
-WebMCP 正在积极讨论中，未来可能会有变化。如果您
-尝试这些 API 并有反馈，我们非常乐意听取。
+WebMCP is under active discussion and subject to change in the future. If you
+try these APIs and have feedback, we'd love to hear it.
 
-阅读
-WebMCP 概述
-，
-提出问题并参与讨论。
-加入
-WebMCP 原始试用
-阅读
-WebMCP 最佳实践
-。
-在
-Chrome 状态
-上查看 Chrome 的实现。
-阅读我们的
-WebMCP 工具安全指南
-和
-最佳实践
-。
-加入早期预览计划
-以抢先了解新 API 并访问我们的邮件列表。
-如果您对 Chrome 的实现有反馈，请提交
+Read the WebMCP explainer
+,
+raise questions and participate in discussion.
+Join the
+WebMCP origin trial
+Read
+WebMCP best practices
+.
+Review the implementation for Chrome on
+Chrome Status
+.
+Read our
+WebMCP tool security guidance
+and
+best practices
+.
+Join the early preview program
+for an early look at new APIs and access to our mailing list.
+If you have feedback on Chrome's implementation, file a
 Chromium bug
-。
+.
 
-除非另有说明，否则本页内容采用
+Except as otherwise noted, the content of this page is licensed under the
 Creative Commons Attribution 4.0 License
-许可，代码示例采用
+, and code samples are licensed under the
 Apache 2.0 License
-许可。有关详细信息，请参阅
+. For details, see the
 Google Developers Site Policies
-。Java 是 Oracle 和/或其附属公司的注册商标。
+. Java is a registered trademark of Oracle and/or its affiliates.
 
-最后更新于 2026-06-09 UTC。
+Last updated 2026-06-09 UTC.
+
 
 *原文请访问 [developer.chrome.com](https://developer.chrome.com/docs/ai/webmcp)*

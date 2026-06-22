@@ -5,7 +5,7 @@ url: https://www.aifinancesummit.com
 date: 2026-06-22
 category: conference/2.2 行业垂直AI峰会/2026
 translated: true
-fetched_at: 2026-06-22T18:25:43.477615
+fetched_at: 2026-06-22T20:18:45.709114
 content_sources: [{'type': 'official_website', 'url': 'https://www.aifinancesummit.com', 'status': 'completed'}, {'type': 'video_transcript', 'status': 'pending'}, {'type': 'speaker_article', 'status': 'pending'}, {'type': 'news_report', 'status': 'pending'}]
 ---
 # 

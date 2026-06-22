@@ -1,13 +1,13 @@
 ---
-title: Find AI thatactuallydoes things
+title: 寻找能实际执行任务的人工智能
 source: agentic.ai
 url: https://agentic.ai
 date: 2026-06-22
 category: standard/agentic.ai
 translated: true
-fetched_at: 2026-06-22T18:23:23.201982
+fetched_at: 2026-06-22T20:11:54.591438
 ---
-# Find AI thatactuallydoes things
+# 寻找能实际执行任务的人工智能
 
 **来源**: agentic.ai | **日期**: 2026-06-22
 
@@ -135,7 +135,7 @@ GitHub Copilot helps you write, review, and adapt code directly in GitHub, your 
 
 Coding Agents
 
-Cursor is a developer-focused AI environment that adds agents, context, and automation around your repositories. It combines an editor-like interface, a CLI, and a cloud agent API to automate code review, bug fixing, CI hygiene, and more. Designed for individual developers and engineering teams who want AI to take real actions in their code and infrastructure, not just chat.
+OpenHands (formerly OpenDevin) is a fully autonomous open-source AI coding agent. MIT-licensed core, plans + executes Python actions via CodeAct, uses browser + terminal + files. 74.3K GitHub stars and 68.4% on SWE-bench Verified with Opus 4.6.
 
 What brings you here?
 

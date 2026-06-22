@@ -3,7 +3,7 @@ title: Building an Efficient GPU Server
 source: a16z.com
 url: https://a16z.com/ai
 category: industry/8.1 VC/风投机构
-fetched_at: 2026-06-22T19:37:59.237227
+fetched_at: 2026-06-22T20:33:12.770532
 translated: true
 ---
 
@@ -13,163 +13,197 @@ translated: true
 
 ---
 
-# 构建高效GPU服务器
+![](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/GPUServer-Desktop-1920x500px.jpg)
 
-#### 构建您自己的GPU服务器意味着无需调用外部服务API、无数据泄露风险、无使用限制。
 
-[了解更多](/building-an-efficient-gpu-server-with-nvidia-geforce-rtx-4090s-5090s/)
 
-# 为什么AI将拯救世界
+![](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/AISavesWorld-Desktop-1920x500px.jpg)
 
-#### 人工智能不会毁灭人类，而是会增强人类智能。
 
-[了解更多](/ai-will-save-the-world/)
 
-# 小科技议程
+![](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/TechAgenda-Desktop-1920x500px.jpg)
 
-#### 现在，有害的政府政策对推动美国技术领先地位的新创企业构成了最大威胁。
+Infra
 
-[了解更多](/the-little-tech-agenda/)
+# Building an Efficient GPU Server
+
+#### Building your own GPU server means no API calls to external services, no data leakage, and no usage throttles.
+
+[Learn More](/building-an-efficient-gpu-server-with-nvidia-geforce-rtx-4090s-5090s/)
+
+General
+
+# Why AI Will Save the World
+
+#### Artificial intelligence won’t doom humanity but augment human intelligence.
+
+[Learn More](/ai-will-save-the-world/)
+
+General
+
+# The Little Tech Agenda
+
+#### Harmful government policies now pose the greatest threat to startups that power American technological leadership.
+
+[Learn More](/the-little-tech-agenda/)
 
 # AI + a16z
 
-## a16z开源与开发项目
+## a16z Open Source and Dev Projects
 
 [a16z-infra
 
-#### 构建GPU服务器
+#### Build a GPU Server
 
-我们使用NVIDIA GeForce RTX 4090s/5090s从零开始构建了GPU AI工作站。
+We built a GPU AI workstation from scratch with NVIDIA GeForce RTX 4090s/5090s.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-a16z.svg)](https://a16z.com/building-an-efficient-gpu-server-with-nvidia-geforce-rtx-4090s-5090s/)
 
 [a16z-infra
 
 #### /ai-getting-started
 
-4.1k星
+4.1k stars
 
-面向想要体验核心AI技术的JavaScript AI技术栈。
+A simple Javascript AI stack for those who want to play with core AI technologies.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-github.svg)](https://github.com/a16z-infra/ai-getting-started)
 
 [a16z-infra
 
 #### /ai-town
 
-8.3k星
+8.3k stars
 
-MIT许可的可部署入门套件，用于构建AI角色虚拟小镇。
+A MIT-licensed, deployable starter kit for building a virtual town of AI characters.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-github.svg)](https://github.com/a16z-infra/ai-town)
 
 [a16z-infra
 
 #### /companion-app
 
-5.8k星
+5.8k stars
 
-轻量级技术栈，用于创建和托管具有记忆功能的AI伴侣。
+A lightweight stack to create and host your own AI companions with memory.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-github.svg)](https://github.com/a16z-infra/companion-app)
 
 [a16z-infra
 
 #### /llama2-chatbot
 
-1.4k星
+1.4k stars
 
-130亿参数语言模型，针对对话补全进行微调。
+A 13 billion parameter language model, fine tuned for chat completions.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-github.svg)](https://github.com/a16z-infra/llama2-chatbot)
 
 [a16z-infra
 
 #### /llm-app-stack
 
-1.2k星
+1.2k stars
 
-LLM应用堆栈各层级可用工具、项目和供应商列表。
+A list of available tools, projects, and vendors at each layer of the LLM app stack.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-github.svg)](https://github.com/a16z-infra/llm-app-stack)
 
 [a16z Consumer
 
-#### AI产品演示
+#### AI Product Demos
 
-使用最新消费级AI工具和应用的实践实验与副项目。
+Hands-on experiments and side projects using the latest consumer AI tools and apps.
+
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-a16z.svg)](https://a16z.com/category/consumer/creativity/#arts-and-crafts)
 
 [a16z Infra
 
-#### 开源AI资助计划（第一批）
+#### Open Source AI Grants (Batch 1)
 
-资助一小群推进技术前沿的开源开发者。
+Grant funding for a small group of open source developers advancing the state of the art.
 
-## 最新内容
+![](https://a16z.com/wp-content/themes/a16z/assets/images/wr25/icon-a16z.svg)](https://a16z.com/supporting-the-open-source-ai-community/)
 
-主题
+## Latest
 
-* 美国动能
-* 生物+健康
-* 消费者
-* 加密货币
-* 文化领导力基金
-* 企业
-* 金融科技
-* 综合
-* 增长
-* 基础设施
-* 永久
-* 速通
-* 人才×机遇
+Topics
 
-内容类型
+* American Dynamism
+* Bio + Health
+* Consumer
+* Crypto
+* Cultural Leadership Fund
+* Enterprise
+* Fintech
+* General
+* Growth
+* Infra
+* Perennial
+* Speedrun
+* Talent x Opportunity
 
-* 文章
-* 投资新闻
-* 播客节目
+Content Type
 
-基础设施
+* Articles
+* Investment News
+* Podcast Episodes
 
-#### [使用Exa CEO Will Bryk为AI智能体构建搜索](https://a16z.com/podcast/building-search-for-ai-agents-with-exa-ceo-will-bryk/)
+Infra 
 
-Sarah Wang与Will Bryk
+#### [Building Search for AI Agents with Exa CEO Will Bryk](https://a16z.com/podcast/building-search-for-ai-agents-with-exa-ceo-will-bryk/)
 
-企业
+Sarah Wang and Will Bryk
 
-#### [AI智能体与客户数据之战](https://a16z.com/podcast/ai-agents-and-the-fight-for-customer-data/)
+Enterprise 
 
-George Fraser与Martin Casado
+#### [AI Agents and the Fight for Customer Data](https://a16z.com/podcast/ai-agents-and-the-fight-for-customer-data/)
 
-基础设施
+George Fraser and Martin Casado
 
-#### [Steven Sinofsky谈AI PC、NVIDIA与计算未来](https://a16z.com/podcast/steven-sinofsky-on-ai-pcs-nvidia-and-the-future-of-computing/)
+Infra 
 
-Theo Jaffee与Steven Sinofsky
+#### [Steven Sinofsky on AI PCs, NVIDIA, and the Future of Computing](https://a16z.com/podcast/steven-sinofsky-on-ai-pcs-nvidia-and-the-future-of-computing/)
 
-综合
+Theo Jaffee and Steven Sinofsky
 
-#### [为什么10亿美元退出已成过去](https://a16z.com/podcast/why-1b-exits-are-dead/)
+General 
 
-David George与David Clark
+#### [Why $1B Exits are Dead](https://a16z.com/podcast/why-1b-exits-are-dead/)
 
-基础设施
+David George and David Clark
 
-#### [Hugging Face的Clem Delangue谈开源AI与大语言模型泡沫 | MTS Live](https://a16z.com/podcast/hugging-faces-clem-delangue-on-open-source-ai-and-the-llm-bubble-mts-live/)
+Infra 
 
-Theo Jaffee、Sofia Puccini与Clément Delangue
+#### [Hugging Face’s Clem Delangue on Open Source AI and the LLM Bubble | MTS Live](https://a16z.com/podcast/hugging-faces-clem-delangue-on-open-source-ai-and-the-llm-bubble-mts-live/)
 
-综合
+Theo Jaffee, Sofia Puccini, and Clément Delangue
 
-#### [Marc Andreessen谈AI、加州与美国未来 | Joe Rogan](https://a16z.com/podcast/marc-andreessen-on-ai-california-and-the-future-of-america-joe-rogan/)
+General 
 
-Marc Andreessen与Joe Rogan
+#### [Marc Andreessen on AI, California, and the Future of America | Joe Rogan](https://a16z.com/podcast/marc-andreessen-on-ai-california-and-the-future-of-america-joe-rogan/)
 
-美国动能
+Marc Andreessen and Joe Rogan
 
-#### [让美国犯罪成为历史的计划](https://a16z.com/podcast/the-plan-to-make-american-crime-obsolete/)
+American Dynamism 
 
-Col. Jeffrey Glover、Rahul Sidhu与David Ulevitch
+#### [The Plan to Make American Crime Obsolete](https://a16z.com/podcast/the-plan-to-make-american-crime-obsolete/)
 
-美国动能
+Col. Jeffrey Glover, Rahul Sidhu, and David Ulevitch
 
-#### [AI背后的能源、矿产与物理堆栈](https://a16z.com/podcast/energy-minerals-and-the-physical-stack-behind-ai/)
+American Dynamism 
 
-Turner Caldwell、Drew Baglino与Erin Price-Wright
+#### [Energy, Minerals, and the Physical Stack Behind AI](https://a16z.com/podcast/energy-minerals-and-the-physical-stack-behind-ai/)
 
-综合
+Turner Caldwell, Drew Baglino, and Erin Price-Wright
 
-#### [Marc Andreessen谈AI时代的建设者文化](https://a16z.com/podcast/marc-andreessen-on-builder-culture-in-the-age-of-ai/)
+General 
 
-Marc Andreessen与E...
+#### [Marc Andreessen on Builder Culture in the Age of AI](https://a16z.com/podcast/marc-andreessen-on-builder-culture-in-the-age-of-ai/)
+
+Marc Andreessen and E
+
+... (内容截断，原始长度 29805 字符)
 
 
 *原文请访问 [https://a16z.com/ai](https://a16z.com/ai)*
