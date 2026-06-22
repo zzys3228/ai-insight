@@ -320,6 +320,145 @@ class FetchDaily:
 
         return count
 
+    def fetch_benchmark(self, urls: List = None):
+        """Fetch benchmark rankings"""
+        BenchmarkFetcher = import_fetcher('ai_fetch_benchmark', 'BenchmarkFetcher')
+        if not urls:
+            urls = self.list_urls('benchmark')
+        fetcher = BenchmarkFetcher()
+        count = 0
+        for item in urls:
+            url = item['url']
+            if not self.should_fetch(url):
+                continue
+            print(f"Fetching benchmark: {url}")
+            try:
+                name = extract_domain(url).replace('.com', '').replace('.org', '').replace('.io', '')
+                result = fetcher.fetch_benchmark(url, name)
+                md = fetcher.format_as_markdown(result)
+                output_dir = Path(STORAGE_BASE) / 'benchmark' / name
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_file = output_dir / 'index.md'
+                output_file.write_text(md, encoding='utf-8')
+                self.mark_fetched(url, str(output_file))
+                count += 1
+                print(f"  -> Saved")
+            except Exception as e:
+                print(f"  -> Error: {e}")
+                self.mark_failed(url, str(e))
+        return count
+
+    def fetch_person(self, urls: List = None):
+        """Fetch person blogs"""
+        PersonFetcher = import_fetcher('ai_fetch_person', 'PersonFetcher')
+        if not urls:
+            urls = self.list_urls('person')
+        fetcher = PersonFetcher()
+        count = 0
+        for item in urls:
+            url = item['url']
+            if not self.should_fetch(url):
+                continue
+            print(f"Fetching person: {url}")
+            try:
+                person = extract_domain(url).replace('.com', '').replace('.io', '')
+                article = fetcher.fetch_article(url, person)
+                md = fetcher.format_as_markdown(article)
+                output_dir = Path(STORAGE_BASE) / 'person' / person
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_file = output_dir / f"{slugify(article['title'], max_length=50)}.md"
+                output_file.write_text(md, encoding='utf-8')
+                self.mark_fetched(url, str(output_file))
+                count += 1
+                print(f"  -> Saved")
+            except Exception as e:
+                print(f"  -> Error: {e}")
+                self.mark_failed(url, str(e))
+        return count
+
+    def fetch_robot(self, urls: List = None):
+        """Fetch robot news"""
+        RobotFetcher = import_fetcher('ai_fetch_robot', 'RobotFetcher')
+        if not urls:
+            urls = self.list_urls('robot')
+        fetcher = RobotFetcher()
+        count = 0
+        for item in urls:
+            url = item['url']
+            if not self.should_fetch(url):
+                continue
+            print(f"Fetching robot: {url}")
+            try:
+                company = extract_domain(url).replace('.com', '').replace('.ai', '')
+                result = fetcher.fetch_article(url, company)
+                md = fetcher.format_as_markdown(result)
+                output_dir = Path(STORAGE_BASE) / 'robot' / company
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_file = output_dir / 'index.md'
+                output_file.write_text(md, encoding='utf-8')
+                self.mark_fetched(url, str(output_file))
+                count += 1
+                print(f"  -> Saved")
+            except Exception as e:
+                print(f"  -> Error: {e}")
+                self.mark_failed(url, str(e))
+        return count
+
+    def fetch_standard(self, urls: List = None):
+        """Fetch protocol standards"""
+        StandardFetcher = import_fetcher('ai_fetch_standard', 'StandardFetcher')
+        if not urls:
+            urls = self.list_urls('standard')
+        fetcher = StandardFetcher()
+        count = 0
+        for item in urls:
+            url = item['url']
+            if not self.should_fetch(url):
+                continue
+            print(f"Fetching standard: {url}")
+            try:
+                protocol = extract_domain(url).replace('.com', '').replace('.io', '')
+                doc = fetcher.fetch_doc(url, protocol)
+                md = fetcher.format_as_markdown(doc)
+                output_dir = Path(STORAGE_BASE) / 'standard' / protocol
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_file = output_dir / f"{slugify(doc['title'], max_length=50)}.md"
+                output_file.write_text(md, encoding='utf-8')
+                self.mark_fetched(url, str(output_file))
+                count += 1
+                print(f"  -> Saved")
+            except Exception as e:
+                print(f"  -> Error: {e}")
+                self.mark_failed(url, str(e))
+        return count
+
+    def fetch_conference(self, urls: List = None):
+        """Fetch conference info"""
+        ConferenceFetcher = import_fetcher('ai_fetch_conference', 'ConferenceFetcher')
+        if not urls:
+            urls = self.list_urls('conference')
+        fetcher = ConferenceFetcher()
+        count = 0
+        for item in urls:
+            url = item['url']
+            if not self.should_fetch(url):
+                continue
+            print(f"Fetching conference: {url}")
+            try:
+                conf = fetcher.fetch_conference(url, item.get('section', 'unknown')[:20])
+                md = fetcher.format_as_markdown(conf)
+                output_dir = Path(STORAGE_BASE) / 'conference' / conf.get('name', 'unknown')
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_file = output_dir / 'index.md'
+                output_file.write_text(md, encoding='utf-8')
+                self.mark_fetched(url, str(output_file))
+                count += 1
+                print(f"  -> Saved")
+            except Exception as e:
+                print(f"  -> Error: {e}")
+                self.mark_failed(url, str(e))
+        return count
+
     def fetch_media(self, urls: List = None):
         """Fetch newsletters and podcasts"""
         NewsletterFetcher = import_fetcher('ai_fetch_media', 'NewsletterFetcher')
@@ -384,6 +523,11 @@ def main():
     parser.add_argument('--academic', action='store_true', help='Fetch academic only')
     parser.add_argument('--company', action='store_true', help='Fetch company only')
     parser.add_argument('--media', action='store_true', help='Fetch media only')
+    parser.add_argument('--benchmark', action='store_true', help='Fetch benchmark only')
+    parser.add_argument('--person', action='store_true', help='Fetch person only')
+    parser.add_argument('--robot', action='store_true', help='Fetch robot only')
+    parser.add_argument('--standard', action='store_true', help='Fetch standard only')
+    parser.add_argument('--conference', action='store_true', help='Fetch conference only')
 
     args = parser.parse_args()
 
@@ -417,21 +561,37 @@ def main():
 
         total = 0
 
-        if args.github or not any([args.github, args.academic, args.company, args.media]):
-            print("Fetching GitHub...")
+        # Single category mode
+        if args.github:
             total += fetcher.fetch_github()
-
-        if args.academic or not any([args.github, args.academic, args.company, args.media]):
-            print("Fetching Academic...")
+        elif args.academic:
             total += fetcher.fetch_academic()
-
-        if args.company or not any([args.github, args.academic, args.company, args.media]):
-            print("Fetching Company...")
+        elif args.company:
             total += fetcher.fetch_company()
-
-        if args.media or not any([args.github, args.academic, args.company, args.media]):
-            print("Fetching Media...")
+        elif args.media:
             total += fetcher.fetch_media()
+        elif args.benchmark:
+            total += fetcher.fetch_benchmark()
+        elif args.person:
+            total += fetcher.fetch_person()
+        elif args.robot:
+            total += fetcher.fetch_robot()
+        elif args.standard:
+            total += fetcher.fetch_standard()
+        elif args.conference:
+            total += fetcher.fetch_conference()
+        else:
+            # Default: fetch all categories
+            print("Fetching all categories...")
+            total += fetcher.fetch_github()
+            total += fetcher.fetch_academic()
+            total += fetcher.fetch_company()
+            total += fetcher.fetch_media()
+            total += fetcher.fetch_benchmark()
+            total += fetcher.fetch_person()
+            total += fetcher.fetch_robot()
+            total += fetcher.fetch_standard()
+            total += fetcher.fetch_conference()
 
         print()
         print(f"Done! Fetched {total} items.")
