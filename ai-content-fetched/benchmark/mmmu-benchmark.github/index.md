@@ -5,7 +5,7 @@ url: https://mmmu-benchmark.github.io
 date: 2026-06-22
 category: benchmark/mmmu-benchmark.github
 translated: true
-fetched_at: 2026-06-22T18:08:49.868119
+fetched_at: 2026-06-22T18:20:49.918544
 ---
 # MMMU
 

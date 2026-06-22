@@ -1,18 +1,18 @@
 {
   "04dbfb04e14b": {
     "url": "https://github.com/NVIDIA/cudnn",
-    "error": "GitHub URLs should be handled by GitHub fetcher",
-    "last_try": "2026-06-22T17:21:33.423042"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T17:26:59.752808"
   },
   "21da4a2fadc7": {
     "url": "https://github.com/NVIDIA/cuda",
-    "error": "GitHub URLs should be handled by GitHub fetcher",
-    "last_try": "2026-06-22T17:21:33.423590"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T17:30:05.013320"
   },
   "6eec8646764a": {
     "url": "https://github.com/ollama/ollama",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:26:13.762014"
+    "last_try": "2026-06-22T17:33:10.111585"
   },
   "4c6e2b5d342d": {
     "url": "https://github.com/ggml-org/ggml",
@@ -21,8 +21,8 @@
   },
   "b221ec0a9143": {
     "url": "https://github.com/Mozilla-Ocho/llamafile",
-    "error": "Failed to fetch README: 403",
-    "last_try": "2026-06-22T16:30:52.110434"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T17:36:15.199913"
   },
   "2f5b9452f2df": {
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
@@ -42,12 +42,12 @@
   "3d5faeed8bc8": {
     "url": "https://github.com/elizaOS/eliza",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:11.577303"
+    "last_try": "2026-06-22T17:42:23.690246"
   },
   "df8f3a7f0f38": {
     "url": "https://github.com/TransformerOptimus/SuperAGI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:16:13.222762"
+    "last_try": "2026-06-22T17:45:28.558159"
   },
   "6698bac42fd5": {
     "url": "https://github.com/crewAIInc/crewAI",
@@ -62,7 +62,7 @@
   "22212355244a": {
     "url": "https://github.com/useheadroom/headroom",
     "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T17:16:28.634159"
+    "last_try": "2026-06-22T18:00:18.409147"
   },
   "5c33f43b602e": {
     "url": "https://github.com/open-webui/open-webui",
@@ -71,38 +71,38 @@
   },
   "890b45b55993": {
     "url": "https://github.com/Mintplex-Labs/anything-llm",
-    "error": "Failed to fetch latest release: 403",
-    "last_try": "2026-06-22T16:39:37.258038"
+    "error": "Failed to fetch README: 403",
+    "last_try": "2026-06-22T18:10:25.634898"
   },
   "bb328359daa5": {
     "url": "https://github.com/janhq/jan",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:42:42.236057"
+    "last_try": "2026-06-22T18:13:30.448596"
   },
   "ea9eeb00ad04": {
     "url": "https://github.com/mudler/LocalAI",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:45:47.240780"
+    "last_try": "2026-06-22T18:16:35.304341"
   },
   "0c322cf2b8ff": {
     "url": "https://github.com/GreptimeTeam/codebase-memory-mcp",
-    "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T17:16:18.563243"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T18:19:40.133961"
   },
   "e36efe8f4ec3": {
     "url": "https://github.com/kilocodeai/kilocode",
-    "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T16:47:23.888170"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T18:22:44.922619"
   },
   "8e15e088c323": {
     "url": "https://github.com/Tiklabs/OpenMontage",
-    "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T16:47:33.912229"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T16:16:29.592909"
   },
   "924dd9eb0ce7": {
     "url": "https://github.com/astroslabsai/flue",
-    "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T16:47:43.914894"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T16:16:31.240112"
   },
   "6caed060135f": {
     "url": "https://github.com/vllm-project/vllm",
@@ -127,37 +127,37 @@
   "1213d2eb1025": {
     "url": "https://github.com/ml-explore/mlx",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:53:37.118611"
+    "last_try": "2026-06-22T16:16:39.357001"
   },
   "a0131fdee43a": {
     "url": "https://github.com/continuedev/continue",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:56:42.056478"
+    "last_try": "2026-06-22T16:16:40.957200"
   },
   "509146656116": {
     "url": "https://github.com/THUDM/ChatGLM",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T16:59:46.910909"
+    "last_try": "2026-06-22T16:16:42.560419"
   },
   "0e241a9adc8f": {
     "url": "https://github.com/01-ai/Yi",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:02:51.798298"
+    "last_try": "2026-06-22T16:16:44.194446"
   },
   "f5e4eb044dc6": {
     "url": "https://github.com/InternLM/InternLM",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:05:56.749547"
+    "last_try": "2026-06-22T16:16:45.828035"
   },
   "30dc6ca0a642": {
     "url": "https://github.com/tiiuae/scai-falcon",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:09:01.895923"
+    "last_try": "2026-06-22T16:16:47.427315"
   },
   "a18080b5131c": {
     "url": "https://github.com/haotian-liu/LLaVA",
     "error": "Failed to fetch repo info: 403",
-    "last_try": "2026-06-22T17:12:06.857678"
+    "last_try": "2026-06-22T16:16:49.043137"
   },
   "b44dffcf2ea3": {
     "url": "https://github.com/salesforce/BLIP",
@@ -171,13 +171,13 @@
   },
   "e4a06d2e9dde": {
     "url": "https://api.github.com/orgs/THUDM/repos",
-    "error": "Failed to fetch repo info: 404",
-    "last_try": "2026-06-22T17:13:28.508124"
+    "error": "Failed to fetch repo info: 403",
+    "last_try": "2026-06-22T16:16:53.990816"
   },
   "883f159d38a0": {
     "url": "https://github.com/ggerganov",
     "error": "Invalid GitHub URL: https://github.com/ggerganov",
-    "last_try": "2026-06-22T17:13:28.510547"
+    "last_try": "2026-06-22T16:16:53.992405"
   },
   "ce9308b42e88": {
     "url": "https://github.com/openai/human-eval",
@@ -194,119 +194,114 @@
     "error": "Failed to fetch repo info: 403",
     "last_try": "2026-06-22T16:16:58.794677"
   },
-  "2039c356734e": {
-    "url": "https://github.com/ggml-org",
-    "error": "Invalid GitHub URL: https://github.com/ggml-org",
-    "last_try": "2026-06-22T17:16:28.636011"
-  },
-  "1fa673e07408": {
-    "url": "https://github.com/trending",
-    "error": "Invalid GitHub URL: https://github.com/trending",
-    "last_try": "2026-06-22T17:16:28.636546"
-  },
-  "3c2dc9ac2195": {
-    "url": "https://github.com/AgilityRobotics",
-    "error": "Invalid GitHub URL: https://github.com/AgilityRobotics",
-    "last_try": "2026-06-22T17:16:28.637017"
-  },
-  "8a66817016a8": {
-    "url": "https://github.com/isaac-sim",
-    "error": "Invalid GitHub URL: https://github.com/isaac-sim",
-    "last_try": "2026-06-22T17:16:28.637478"
-  },
-  "3d6aac9603b3": {
-    "url": "https://github.com/isaac-ros",
-    "error": "Invalid GitHub URL: https://github.com/isaac-ros",
-    "last_try": "2026-06-22T17:16:28.637994"
-  },
-  "e3909ac29f70": {
-    "url": "https://developer.nvidia.com/riva",
-    "error": "HTTPSConnectionPool(host='developer.nvidia.com', port=443): Max retries exceeded with url: /riva (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T17:20:29.146701"
-  },
-  "3d3efe8a2919": {
-    "url": "https://catalog.ngc.nvidia.com",
-    "error": "HTTPSConnectionPool(host='catalog.ngc.nvidia.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "last_try": "2026-06-22T17:21:12.979291"
-  },
   "f7b20f09dc04": {
     "url": "https://www.amd.com/en/accelerators/instinct.html",
     "error": "HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=30)",
-    "last_try": "2026-06-22T17:22:29.976558"
+    "last_try": "2026-06-22T16:42:14.529613"
   },
   "15457cc6aca0": {
     "url": "https://habana.ai",
     "error": "Failed to fetch article: 403",
-    "last_try": "2026-06-22T17:22:32.109728"
-  },
-  "dd73384c13cf": {
-    "url": "https://platform.openai.com/docs",
-    "error": "('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))",
-    "last_try": "2026-06-22T17:23:13.974545"
+    "last_try": "2026-06-22T16:42:16.384949"
   },
   "9f05dc51736b": {
     "url": "https://www.deepseek.com",
     "error": "'gbk' codec can't encode character '\\xe6' in position 65: illegal multibyte sequence",
-    "last_try": "2026-06-22T17:32:13.040523"
+    "last_try": "2026-06-22T16:52:03.197802"
   },
   "3edeb65a08e5": {
     "url": "https://platform.deepseek.com",
     "error": "Failed to fetch article: 429",
-    "last_try": "2026-06-22T17:32:40.836359"
+    "last_try": "2026-06-22T16:52:27.859175"
   },
   "f06ee4a2ee28": {
     "url": "https://chat.deepseek.com",
     "error": "Failed to fetch article: 429",
-    "last_try": "2026-06-22T17:32:41.202669"
+    "last_try": "2026-06-22T16:52:28.332643"
   },
   "763a6553fae3": {
     "url": "https://www.deepseek.com/en/news",
     "error": "'gbk' codec can't encode character '\\xe6' in position 65: illegal multibyte sequence",
-    "last_try": "2026-06-22T17:34:43.186202"
+    "last_try": "2026-06-22T16:53:23.383609"
   },
   "12c27535acf3": {
     "url": "https://blog.perplexity.ai",
-    "error": "Failed to fetch article: 403",
-    "last_try": "2026-06-22T17:47:01.104469"
+    "error": "HTTPSConnectionPool(host='blog.perplexity.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
+    "last_try": "2026-06-22T17:05:28.845483"
   },
   "b15cb05af132": {
     "url": "https://www.lingyiwanwu.com/blog",
     "error": "Failed to fetch article: 502",
-    "last_try": "2026-06-22T17:47:01.547466"
+    "last_try": "2026-06-22T17:05:29.213615"
   },
   "3089cca301e9": {
     "url": "https://ai.google.dev/jules",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:51:19.286020"
+    "last_try": "2026-06-22T17:10:18.669480"
   },
   "b65ed513fc84": {
     "url": "https://deepmind.google/models/sima/",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T17:51:43.069781"
+    "last_try": "2026-06-22T17:10:35.899300"
   },
   "1bc25a0f6f18": {
     "url": "https://www.adobe.com/firefly/flourish",
     "error": "Failed to fetch article: 404",
-    "last_try": "2026-06-22T18:00:23.040574"
+    "last_try": "2026-06-22T17:20:15.293050"
   },
   "fa2899d55053": {
     "url": "https://www.adobe.com/sensei.html",
     "error": "HTTPSConnectionPool(host='business.adobe.com', port=443): Read timed out. (read timeout=30)",
-    "last_try": "2026-06-22T18:00:55.643960"
+    "last_try": "2026-06-22T17:20:48.051715"
   },
   "befef87b0578": {
     "url": "https://yiyan.baidu.com",
     "error": "'gbk' codec can't encode character '\\xe6' in position 59: illegal multibyte sequence",
-    "last_try": "2026-06-22T18:02:51.334559"
+    "last_try": "2026-06-22T17:21:46.126655"
   },
   "1b7abfdf1913": {
     "url": "https://research.baidu.com",
     "error": "'gbk' codec can't encode character '\\xe7' in position 62: illegal multibyte sequence",
-    "last_try": "2026-06-22T18:05:05.446537"
+    "last_try": "2026-06-22T17:22:38.647139"
   },
-  "2165186616d0": {
-    "url": "https://covariant.ai/robots",
-    "error": "Failed to fetch: 404",
-    "last_try": "2026-06-22T18:14:20.390874"
+  "22352e737845": {
+    "url": "https://www.aliyun.com/product/dashvector",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:23:29.889308"
+  },
+  "bf9eb47ad360": {
+    "url": "https://www.aliyun.com/product/eiam",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:23:31.170599"
+  },
+  "3ab162784aed": {
+    "url": "https://marketplace.aliyun.com",
+    "error": "HTTPSConnectionPool(host='marketplace.aliyun.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
+    "last_try": "2026-06-22T17:23:32.497465"
+  },
+  "6ff88df23416": {
+    "url": "https://cloud.baidu.com/product/wenxin",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:23:34.534782"
+  },
+  "8ba0d8ac953e": {
+    "url": "https://create.baidu.com",
+    "error": "'gbk' codec can't encode character '\\xe7' in position 70: illegal multibyte sequence",
+    "last_try": "2026-06-22T17:23:50.860204"
+  },
+  "4af6c14ac87a": {
+    "url": "https://cloud.baidu.com/product/aigc",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:23:51.487878"
+  },
+  "28d49ff7946d": {
+    "url": "https://cloud.baidu.com/product/digital",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:23:52.757137"
+  },
+  "902ddd6fac00": {
+    "url": "https://cloud.baidu.com/product/bdfm",
+    "error": "Failed to fetch article: 404",
+    "last_try": "2026-06-22T17:23:53.432605"
   }
 }

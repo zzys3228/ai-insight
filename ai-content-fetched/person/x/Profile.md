@@ -5,7 +5,7 @@ url: https://x.com/YoshuaBengio
 date: 2026-06-22
 category: person/x
 translated: true
-fetched_at: 2026-06-22T18:13:09.211219
+fetched_at: 2026-06-22T18:21:38.190139
 ---
 # Profile
 
@@ -13,7 +13,9 @@ fetched_at: 2026-06-22T18:13:09.211219
 
 ---
 
-**Translation:**
+Here is the Chinese translation:
+
+---
 
 个人资料
 
@@ -25,7 +27,7 @@ fetched_at: 2026-06-22T18:13:09.211219
 
 账户已被停用
 
-X 暂停违反
+X 会停用违反
 
 X 规则的账户
 

@@ -1,43 +1,17 @@
 ---
-title: # Translation
+title: **ARC-AGI 系列**
 
-**ARC-AGI Series**
-
-**Translation: ARC-AGI 系列**
-
----
-
-## Technical Terms Explained
-
-| Term | Full Form | Chinese |
-|------|-----------|---------|
-| ARC | Abstraction and Reasoning Corpus | 抽象推理语料库 |
-| AGI | Artificial General Intelligence | 通用人工智能 |
-
-**Note:** "ARC-AGI" is a proper name referring to the well-known AI benchmark created by François Chollet. As a technical term/name, it is typically kept in its original form while "Series" is translated as **系列**.
+Note: "ARC-AGI" is typically kept in English as it's an acronym (Abstraction and Reasoning Corpus for Artificial General Intelligence), while "Series" is translated to "系列".
 source: arcprize.org
 url: https://arcprize.org/arc-agi
 date: 2026-06-22
 category: benchmark/arcprize
 translated: true
-fetched_at: 2026-06-22T18:09:50.157392
+fetched_at: 2026-06-22T18:21:40.131741
 ---
-# # Translation
+# **ARC-AGI 系列**
 
-**ARC-AGI Series**
-
-**Translation: ARC-AGI 系列**
-
----
-
-## Technical Terms Explained
-
-| Term | Full Form | Chinese |
-|------|-----------|---------|
-| ARC | Abstraction and Reasoning Corpus | 抽象推理语料库 |
-| AGI | Artificial General Intelligence | 通用人工智能 |
-
-**Note:** "ARC-AGI" is a proper name referring to the well-known AI benchmark created by François Chollet. As a technical term/name, it is typically kept in its original form while "Series" is translated as **系列**.
+Note: "ARC-AGI" is typically kept in English as it's an acronym (Abstraction and Reasoning Corpus for Artificial General Intelligence), while "Series" is translated to "系列".
 
 **来源**: arcprize.org | **日期**: 2026-06-22
 

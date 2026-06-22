@@ -5,7 +5,7 @@ url: https://huggingface.co/gaia-benchmark
 date: 2026-06-22
 category: benchmark/huggingface.co
 translated: true
-fetched_at: 2026-06-22T18:07:27.330198
+fetched_at: 2026-06-22T18:19:03.853578
 ---
 # GAIA
 

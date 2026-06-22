@@ -1,19 +1,19 @@
 ---
-title: 搜索代码、代码仓库、用户、议题、Pull Requests...
+title: 搜索代码、仓库、用户、问题、拉取请求...
 source: github.com
 url: https://github.com/Farama-Foundation/miniwob-plusplus
 date: 2026-06-22
 category: benchmark/github
 translated: true
-fetched_at: 2026-06-22T18:08:48.371470
+fetched_at: 2026-06-22T18:20:48.359533
 ---
-# 搜索代码、代码仓库、用户、议题、Pull Requests...
+# 搜索代码、仓库、用户、问题、拉取请求...
 
 **来源**: github.com | **日期**: 2026-06-22
 
 ---
 
-加载时出现错误，请重新加载此页面。
+加载时发生错误，请重新加载本页面。
 
 ---
 

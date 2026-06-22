@@ -5,7 +5,7 @@ url: https://sarahguo.com
 date: 2026-06-22
 category: person/sarahguo
 translated: true
-fetched_at: 2026-06-22T18:09:14.234202
+fetched_at: 2026-06-22T18:18:52.660408
 ---
 # Sarah Guo
 
@@ -13,166 +13,146 @@ fetched_at: 2026-06-22T18:09:14.234202
 
 ---
 
-# 萨拉·郭
+# 萨拉·郭（Sarah Guo）
 
-Conviction创始人。投资人。创业助手。
+Conviction创始人。投资人。创业助力者。
 
-Twitter · LinkedIn
+Twitter
 
-## 关于我
+·
 
-在威斯康星州、新泽西州和新英格兰地区出生和长大。
+LinkedIn
 
-第一台电脑运行的是Linux系统。
+关于我
+
+在威斯康星州、新泽西州、新英格兰地区出生和成长。
+
+第一台电脑运行的是Linux。
 
 第一款电脑游戏是XBill。
 
 我用软件做的第一个东西是一只机器狗。
 
-热爱互联网、冰上运动、阅读、博弈论和市场。
+热爱互联网、滑冰、书籍、博弈论和市场。
 
-初高中时期参与过地方和州的政治活动。
+中学和高中时期曾参与地方/州级政治活动。
 
-就读于宾夕法尼亚大学，学习了文学、经济学、统计学和建筑学。
+就读于宾夕法尼亚大学（Penn），广泛涉猎：文学、经济学、统计学、建筑学。
 
-从10岁起就经常在创业公司办公室出入。
+从10岁起就经常在创业公司办公室里玩。
 
 曾在高盛短暂工作。
 
-在Greylock担任约10年普通合伙人（专注软件、基础设施/安全、加密货币和AI）。
+在Greylock担任普通合伙人约10年（软件、基础设施/安全、加密货币、AI）。
 
-2022年创立Conviction——一家AI原生投资公司。
+2022年创立Conviction，一家AI原生投资公司。
 
-主持一档探索前沿领域的播客节目《No Priors》。
+主持探索前沿的播客节目No Priors。
 
-现居硅谷。在这儿建立家庭和社区。
+现居硅谷。正在此地建立家庭和社区。
 
-我目前正在阅读《制造原子弹》。
+我目前正在阅读《原子弹的制造》（The Making of the Atomic Bomb）。
 
-欢迎给我推荐书籍！
+欢迎向我推荐书籍！
 
-## 文章
+# 文章
 
-《软件丰裕》
-《品味》
-《节奏》
-迈克·弗纳尔 @Conviction
-《非正常市场》
-《以Conviction起航》
+Software Abundance
 
-## 公司
+Taste
+
+Pace
+
+Mike Vernal @Conviction
+
+Not A Normal Market
+
+Launching With Conviction
+
+# 公司
 
 Onyx Security
+
 Day AI
+
 Sunday Robotics
+
 Baseten
+
 Sola
+
 Design Goes Public
+
 Distributed Spectrum
+
 Harvey
+
 Cartesia
 
-## 书架
+# 书架
 
 我喜爱并推荐的书。
 
-《制造原子弹》 — 理查德·罗兹
-《生命之问》 — 尼克·莱恩
-《梦想机器》 — M·米切尔·沃尔德罗普
-《长日将尽》 — 石黑一雄
-《思考，快与慢》 — 丹尼尔·卡尼曼
-《枪炮、病菌与钢铁》 — 贾雷德·戴蒙德
-《创业维艰》 — 杰西卡·利文斯顿
-《雪崩》 — 尼尔·斯蒂芬森
+《原子弹的制造》——理查德·罗兹（Richard Rhodes）
 
-## 信念
+《生死问题》（The Vital Question）——尼克·莱恩（Nick Lane）
 
-** intellectual honesty is rare and decisive **
+《梦机器》（The Dream Machine）——M. 米切尔·沃尔德罗普（M. Mitchell Waldrop）
 
-Most people avoid conflict and defend status. If you are willing to tolerate uncomfortable tension in the pursuit of truth, that compounds better than baseline talent.
+《长日将尽》——石黑一雄（Kazuo Ishiguro）
 
-真诚的求知精神既罕见又具有决定性意义。
+《思考，快与慢》——丹尼尔·卡尼曼（Daniel Kahneman）
 
-大多数人会避免冲突并维护现状。如果你愿意为了追求真理而承受不适，这种品质会比基础天赋产生更长期的复利效应。
+《枪炮、病菌与钢铁》——贾雷德·戴蒙德（Jared Diamond）
 
-** Curiosity is alpha **
+《创业百态》（Founders at Work）——杰西卡·利文斯顿（Jessica Livingston）
 
-Pull on loose threads! Borrowed narratives dominate thinking. Curiosity is how you step outside them, notice problems, generate ideas, and create a better model of the world.
+《雪崩》——尼尔·斯蒂芬森（Neal Stephenson）
 
-好奇心是超额收益的来源。
+# 信念
 
-追根究底！借来的叙事主导着思维。好奇心能让你走出这些叙事框架，发现问题，产生想法，并建立更好的世界模型。
+**智识诚实罕见且具决定性。**
 
-** As institutions grow, coordination costs outpace capability **
+大多数人会回避冲突、维护现状。如果你愿意在追求真理的过程中承受不适，这种品质会比基础天赋产生更好的复利效应。
 
-Past a certain size, adding people mostly adds friction. AI exponentially increases individual leverage, and the advantage goes toward small, aligned teams.
+**好奇心是阿尔法收益。**
 
-随着机构成长，协调成本超过能力增长。
+去拉扯那些松散的线头！借来的叙事主导着思维。好奇心能让你走出这些叙事，发现问题，产生想法，并建立更好的世界模型。
 
-超过一定规模后，增加人员主要增加的是摩擦。AI以指数级速度提升个人杠杆效应，优势向小型、目标一致团队倾斜。
+**随着机构壮大，协调成本超过能力增长。**
 
-** Talent and competence are unevenly distributed **
+超过一定规模后，人员增加主要带来摩擦。AI指数级提升个人杠杆，而优势向小型、目标一致团队倾斜。
 
-That is empirical, not ideological. Markets and competition sort more fairly than any selection committee.
+**人才和能力分布不均。**
 
-天赋和能力分布不均。
+这是实证结论，而非意识形态。市场和竞争比任何选拔委员会都更公平地筛选人才。
 
-这是经验事实，不是意识形态。市场和竞争比任何选拔委员会都更公平地筛选人才。
+**停滞不可辩护。**
 
-** Stagnation is indefensible **
+反对经济和技术进步的人，对繁荣的来源存在误解。创业精神和竞争是我们发现的唯一能可靠产生进步的动力源，而且我们仍然需要更多这样的动力。
 
-People who oppose economic and technical progress are confused about where prosperity comes from. Entrepreneurship and competition are the only engines we have found that reliably produce progress, and we still need a lot more of it.
+**世界需要更多创业精神。**
 
-停滞是不可原谅的。
+进步来自那些将资本、劳动力和声誉置于风险中、让结果说话的人。我们目前拥有的还远远不够。
 
-反对经济和技术进步的人对繁荣的来源存在误解。创业精神和竞争是我们发现的唯一能可靠产生进步的动力，而且我们目前仍然需要更多这样的动力。
+**快速反馈胜于正确理论。**
 
-** The world needs more entrepreneurship **
+与市场互动比那些起点大致正确但更新缓慢的理念能让你更快收敛。
 
-Progress comes from people who put capital, work, and reputation at risk and let results decide. We need far more of this than we currently have.
+**信念过滤噪音。**
 
-世界需要更多创业精神。
+没有它，速度只会导致瞎折腾。在信息和杠杆泛滥的环境中（如当今！），信念需要足够稳定以经受检验。信念是使行动成为可能的暂时悬置怀疑。有时候这种怀疑的悬置需要持续数年。
 
-进步来自那些将资本、时间和声誉置于风险中、让结果说话的人。我们目前需要的远比我们拥有的更多。
+**人类潜力被严重低估。**
 
-** Fast feedback beats correct theory **
+我们的许多系统是为控制和可读性而建，而非为杠杆效应。更好的工具和丰裕扩展了个体能尝试的边界。
 
-Meeting the market helps you converge faster than ideas that start out ~right but update slowly.
+**人在正确条件下可以巨大成长。**
 
-快速反馈优于正确理论。
+即使是我们视为固定的特质，如工作态度、雄心和风险承受力，也对激励、期望和社会环境有强烈反应。人类是社会性动物。把自己放入正确的社群和游戏中。
 
-市场反馈帮助你比那些起点正确但更新缓慢的想法更快收敛。
+**能动性是系统设计的产物。**
 
-** Conviction filters noise **
-
-Without it, speed makes for thrash. In environments flooded with information and leverage (like today!), beliefs need to be held steady long enough to be tested. Conviction is the temporary suspension of doubt that makes action possible. Sometimes that suspension of doubt needs to last years.
-
-信念过滤噪音。
-
-没有它，速度只会导致无效折腾。在信息和杠杆泛滥的环境中（比如当今！），信念需要保持足够稳定以通过检验。信念是使行动成为可能的暂时悬置怀疑。有时候这种怀疑的悬置需要持续数年。
-
-** Human potential is massively underutilized **
-
-Many of our systems are built for control and legibility, not leverage. Better tools and abundance expand what individuals can attempt.
-
-人类潜力严重未被充分利用。
-
-我们的许多系统是为了控制和可见性而构建的，而非为了杠杆效应。更好的工具和丰裕扩展了个人可以尝试的边界。
-
-** People can grow enormously under the right conditions **
-
-Even traits we treat as fixed, like work ethic, ambition, and risk tolerance, respond strongly to incentives, expectations, and social context. Humans are social animals. Put yourself in the right community and game.
-
-人在正确条件下可以巨大成长。
-
-即使是我们视为固定的特质，如工作态度、雄心壮志和风险承受能力，也会对激励、期望和社会环境做出强烈反应。人类是社会性动物。让自己置身于正确的社群和游戏中。
-
-** Agency is a product of system design **
-
-People act when they have ownership, consequences, and upside. Incentives and inspiration are the highest leverage place to intervene.
-
-能动性是系统设计的产物。
-
-当人们拥有所有权、后果和上行空间时才会行动。激励和愿景是最高杠杆的干预点。
+当人们拥有所有权、承担后果并有上行空间时，他们才会行动。激励和愿景是杠杆效应最高的发生地。
 
 *原文请访问 [sarahguo.com](https://sarahguo.com)*

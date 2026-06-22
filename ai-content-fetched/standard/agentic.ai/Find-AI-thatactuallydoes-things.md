@@ -1,375 +1,433 @@
 ---
-title: **Translation:**  
-寻找能够真正执行任务的人工智能。
+title: 寻找真正能执行任务的人工智能。
 source: agentic.ai
 url: https://agentic.ai
 date: 2026-06-22
 category: standard/agentic.ai
 translated: true
-fetched_at: 2026-06-22T18:05:29.769964
+fetched_at: 2026-06-22T18:17:35.365867
 ---
-# **Translation:**  
-寻找能够真正执行任务的人工智能。
+# 寻找真正能执行任务的人工智能。
 
 **来源**: agentic.ai | **日期**: 2026-06-22
 
 ---
 
+# 人工智能体工具精选目录
 
-The curated directory for agentic AI. We evaluate every tool for autonomy, decision-making, and real-world action—so you don't have to guess.
+我们为每一个工具评估自主性、决策能力和真实世界行动力——因此你无需猜测。
 
-Try “best coding agent” or “AI for customer support”
+尝试搜索"最佳编码智能体"或"客户支持人工智能"
 
-Featured Tools
+**精选工具**
 
-Research & Intelligence
+**研究与情报**
 
-Reads thousands of sources on your topics and files only what changed. So what's moving that you haven't caught yet?
+读取数千个与你主题相关的来源，仅归档有变化的内容。那么，有什么是值得关注但你还没注意到的？
 
-Learning & Education
+**学习与教育**
 
-Every answer about early Buddhism taps straight to the Pali Canon line it came from. How often is the popular version actually in the texts?
+关于早期佛教的每一个答案都直接追溯到其对应的巴利文经文。流行版本实际上有多少是原文内容？
 
-Research & Intelligence
+**研究与情报**
 
-Runs the same story through a Left and a Right lens, then keeps only what they agree on. Surprised how much that is?
+将同一故事通过左翼和右翼视角进行分析，然后仅保留双方共识的内容。惊讶于共识竟有这么多？
 
-Personal Assistants
+**个人助理**
 
-Turns an idea into a step-by-step plan in a minute, each task tagged you, AI, or expert. How few are actually yours?
+在一分钟内将一个想法转化为逐步计划，每个任务标记为"你"、"AI"或"专家"。实际上有多少任务属于你自己？
 
-What launched · what we re-scored
+---
 
-Launch
-Gadgetlesstech
-Why is Gadgetlesstech betting four parts can fix how local businesses show up in AI search?
-Launch
-LiftU
-LiftU's ₹2,499 growth suite comes after it passed 200 brands, but which Indian MSMEs will actually use it?
-Launch
-Ethos Media & Marketing
-Ethos M2 launched FOCAS AMS on June 19, but its CRM and content tools target a harder problem.
+## 新上线 · 重新评分
 
-Why is Gadgetlesstech betting four parts can fix how local businesses show up in AI search?
+**上线**
+**Gadgetlesstech**
+为什么Gadgetlesstech押注四个部分可以解决本地企业在AI搜索中的展示问题？
 
-LiftU's ₹2,499 growth suite comes after it passed 200 brands, but which Indian MSMEs will actually use it?
+**上线**
+**LiftU**
+LiftU的₹2,499增长套件是在其突破200个品牌后推出的，但哪些印度中小企业会真正使用它？
 
-Ethos M2 launched FOCAS AMS on June 19, but its CRM and content tools target a harder problem.
+**上线**
+**Ethos Media & Marketing**
+Ethos M2于6月19日推出FOCAS AMS，但其CRM和内容工具针对的是一个更难解决的问题。
 
-12
-→
-10
-Dust
-Triggered by:
-Reliance's JioHotstar unveiled JAMS at its AGM, promising AI media production for Indian and global audiences.
-yesterday
-· re-evaluated against the news
-7
-→
-8
-Coda AI
-Triggered by:
-Z.ai's GLM-5.2 beats GPT-5.5 on coding benchmarks at one-sixth the cost, challenging the premium model play.
-yesterday
-· re-evaluated against the news
-10
-→
-12
-Relevance AI
-Triggered by:
-Z.ai's GLM-5.2 beats GPT-5.5 on coding benchmarks at one-sixth the cost, challenging the premium model play.
-3d ago
-· re-evaluated against the news
-10
-→
-13
-SentinelOne Purple AI
-Triggered by:
-SentinelOne is plugging Prompt Security into Amazon Bedrock AgentCore to add runtime guardrails for enterprise agents.
-3d ago
-· re-evaluated against the news
+---
 
-Triggered by:
-Reliance's JioHotstar unveiled JAMS at its AGM, promising AI media production for Indian and global audiences.
+**Gadgetlesstech**
+为什么Gadgetlesstech押注四个部分可以解决本地企业在AI搜索中的展示问题？
 
-yesterday
-· re-evaluated against the news
+**LiftU**
+LiftU的₹2,499增长套件是在其突破200个品牌后推出的，但哪些印度中小企业会真正使用它？
 
-Triggered by:
-Z.ai's GLM-5.2 beats GPT-5.5 on coding benchmarks at one-sixth the cost, challenging the premium model play.
+**Ethos M2**
+Ethos M2于6月19日推出FOCAS AMS，但其CRM和内容工具针对的是一个更难解决的问题。
 
-yesterday
-· re-evaluated against the news
+---
 
-Triggered by:
-Z.ai's GLM-5.2 beats GPT-5.5 on coding benchmarks at one-sixth the cost, challenging the premium model play.
+**12 → 10**
+**Dust**
 
-3d ago
-· re-evaluated against the news
+触发原因：
+Reliance的JioHotstar在年度股东大会上发布JAMS，承诺为印度和全球观众提供AI媒体制作。
 
-Triggered by:
-SentinelOne is plugging Prompt Security into Amazon Bedrock AgentCore to add runtime guardrails for enterprise agents.
+昨天 · 根据新闻重新评估
 
-3d ago
-· re-evaluated against the news
+---
 
-What people are clicking
+**7 → 8**
+**Coda AI**
 
-Coding Agents
+触发原因：
+Z.ai的GLM-5.2在编码基准测试中击败GPT-5.5，成本仅为后者的六分之一，挑战高端模型策略。
 
-Cline is an AI coding assistant for VS Code that can inspect your project, edit files, run terminal commands, and use a browser while asking for permission at each step. It is aimed at developers working on real codebases who want more than code completion.
+昨天 · 根据新闻重新评估
 
-Coding Agents
+---
 
-Windsurf Editor is an AI-powered IDE for developers that blends chat, autocomplete, and agentic code actions into the editor itself. It’s available for Mac, Windows, and Linux, and is aimed at speeding up day-to-day coding work on real codebases.
+**10 → 12**
+**Relevance AI**
 
-Personal Assistants
+触发原因：
+Z.ai的GLM-5.2在编码基准测试中击败GPT-5.5，成本仅为后者的六分之一，挑战高端模型策略。
 
-Wingman is a messaging-first autonomous AI agent by Emergent. It connects to your email, calendar, Slack, CRM, and GitHub, then handles scheduling, research, sales support, and admin tasks through WhatsApp and Telegram conversations.
+3天前 · 根据新闻重新评估
 
-Research & Intelligence
+---
 
-Agentic News monitors thousands of sources for topics you choose, then turns the results into deduplicated briefings and AI answers. It is aimed at people who need ongoing monitoring for competitors, markets, regulations, or niche interests.
+**10 → 13**
+**SentinelOne Purple AI**
 
-Coding Agents
+触发原因：
+SentinelOne正在将Prompt Security集成到Amazon Bedrock AgentCore中，为企业智能体添加运行时防护栏。
 
-GitHub Copilot helps you write, review, and adapt code directly in GitHub, your IDE, and the terminal. It supports everything from inline suggestions to agentic coding workflows with broader model choices and enterprise controls.
+3天前 · 根据新闻重新评估
 
-Coding Agents
+---
 
-Cursor is a developer-focused AI environment that adds agents, context, and automation around your repositories. It combines an editor-like interface, a CLI, and a cloud agent API to automate code review, bug fixing, CI hygiene, and more. Designed for individual developers and engineering teams who want AI to take real actions in their code and infrastructure, not just chat.
+**触发原因：**
+Reliance的JioHotstar在年度股东大会上发布JAMS，承诺为印度和全球观众提供AI媒体制作。
 
-What brings you here?
+昨天 · 根据新闻重新评估
 
-We organize tools by who they help—pick your path
+---
 
-Personal & Consumer
+**触发原因：**
+Z.ai的GLM-5.2在编码基准测试中击败GPT-5.5，成本仅为后者的六分之一，挑战高端模型策略。
 
-AI tools to enrich your personal life, learning, and productivity. Automate the busywork so you can focus on what matters.
+昨天 · 根据新闻重新评估
 
-Teams & Builders
+---
 
-AI solutions for businesses, developers, and teams. From devtools to sales automation to agent infrastructure.
+**触发原因：**
+Z.ai的GLM-5.2在编码基准测试中击败GPT-5.5，成本仅为后者的六分之一，挑战高端模型策略。
 
-Don't miss the next great AI tool
+3天前 · 根据新闻重新评估
 
-Join the Agentic AI Insider for weekly picks matched to your interests, head-to-head comparisons, and early access to new listings before anyone else sees them. Your free account unlocks saved tools, personalized recommendations, and AI stack tracking.
+---
 
-Expert Guides
+**触发原因：**
+SentinelOne正在将Prompt Security集成到Amazon Bedrock AgentCore中，为企业智能体添加运行时防护栏。
 
-Curated rankings backed by our 36-point agenticness framework
+3天前 · 根据新闻重新评估
 
-Best AI Coding Agents in 2026
+---
 
-Every AI coding agent, scored on our independent 36-point rubric — no pay-for-placement. See which ones really write, debug, and ship code, with honest strengths and weak spots.
+## 用户正在点击的工具
 
-Best Free AI Coding Agents in 2026
+**编码智能体**
 
-The best AI coding agents that cost nothing to start — open-source tools you self-host plus generous free tiers from top vendors, each scored on our independent 36-point agenticness rubric.
+**Cline**是一款面向VS Code的AI编码助手，可以检查你的项目、编辑文件、运行终端命令并使用浏览器，每一步都会请求权限。它面向希望在真实代码库上获得超越代码补全功能的开发者。
 
-Best Enterprise AI Coding Agents in 2026
+**编码智能体**
 
-Compare the best AI coding agents for enterprise teams. SOC 2 compliance, SSO, admin controls, and deployment options that meet security and procurement requirements at scale.
+**Windsurf Editor**是一款面向开发者的AI驱动集成开发环境（IDE），将聊天、自动补全和智能体代码操作融为一体。它支持Mac、Windows和Linux，旨在加速日常编码工作。
 
-Best Open-Source AI Coding Agents in 2026
+**个人助理**
 
-Self-hostable, inspectable, bring-your-own-model AI coding agents — the open-source alternatives to Cursor and Copilot, ranked by our independent 36-point agenticness rubric.
+**Wingman**是Emergent推出的以消息传递为先的自主AI智能体。它连接你的邮箱、日历、Slack、CRM和GitHub，然后通过WhatsApp和Telegram对话处理日程安排、研究、销售支持和行政任务。
 
-Best AI Research & Analysis Agents in 2026
+**研究与情报**
 
-Compare the best AI research agents for literature review, deep analysis, and knowledge synthesis. Find tools that go beyond search to deliver cited, structured insights.
+**Agentic News**监控数千个来源以追踪你选择的主题，然后将结果转化为去重简报和AI答案。它面向需要持续监控竞争对手、市场动态、法规或小众兴趣的用户。
 
-Best General-Purpose AI Agents in 2026
+**编码智能体**
 
-The best general-purpose AI agents — beyond chat to browse the web, run code, and finish multi-step tasks. From ChatGPT and Claude to open-source rivals, scored on our 36-point rubric.
+**GitHub Copilot**帮助你在GitHub、IDE和终端中直接编写、审查和适配代码。它支持从内联建议到智能体编码工作流程的各种功能，提供更广泛的模型选择和企业控制选项。
 
-Best AI Finance & Planning Tools in 2026
+**编码智能体**
 
-Compare the best AI finance tools for budgeting, investing, tax planning, and financial analysis. Find tools that go beyond spreadsheets to deliver intelligent, personalized financial guidance.
+**Cursor**是一个面向开发者的AI环境，围绕你的代码仓库添加智能体、上下文和自动化功能。它结合了类编辑器界面、CLI和云智能体API，可自动执行代码审查、缺陷修复、CI维护等功能。专为希望AI在其代码和基础设施中采取真实行动（而不仅仅是聊天）的个人开发者和工程团队设计。
 
-Best AI Sales & Marketing Tools in 2026
+---
 
-The best AI sales & marketing agents for lead gen, outreach, content, and campaigns — scored on our independent 36-point rubric so you can tell real automation from a template engine.
+## 是什么让你来到这里？
 
-Browse by Category
+我们按服务对象组织工具——选择你的路径
 
-Every tool is evaluated, categorized, and scored for agenticness
+**个人与消费者**
 
-For People
+丰富你个人生活、学习和生产力的AI工具。自动化繁琐工作，让你专注于重要的事情。
 
-AI agents that can browse the web, manage files, run code, and take autonomous action on your behalf. From OpenClaw to ChatGPT Agent, these tools go beyond chat to actually do things for you.
+**团队与构建者**
 
-9
-tools
+面向企业、开发者团队的AI解决方案。从开发工具到销售自动化再到智能体基础设施。
 
-AI that writes, reviews, and ships code. From IDE-integrated copilots like Cursor to autonomous engineers like Devin, these agents are transforming how software gets built.
+---
 
-18
-tools
+## 不要错过下一个出色的AI工具
 
-General-purpose AI assistants for everyday tasks, scheduling, and personal productivity. Examples: Lindy, Reclaim AI, Motion. NOT for domain-specific assistants (use health-wellness, finance-planning, etc. for those).
+加入Agentic AI Insider，获取与你兴趣匹配的每周精选、头对头比较，以及抢先访问新上线工具的机会。你的免费账户可解锁工具收藏、个性化推荐和AI技术栈追踪。
 
-9
-tools
+---
 
-AI tools where the PRIMARY purpose is writing, content creation, or creative work. Examples: Sudowrite, Jasper, Copy.ai, Midjourney. NOT for tools that happen to generate text as a secondary feature.
+## 专家指南
 
-14
-tools
+基于我们36点智能体化评估框架的精选排名
 
-AI agents that control your browser and desktop to complete tasks. From Claude Computer Use to Chrome Auto Browse, these tools interact with existing software on your behalf.
+**2026年最佳AI编码智能体**
 
-6
-tools
+每一个AI编码智能体都按照我们独立的36点评分标准进行评估——无付费排名。了解哪些工具真正能够编写、调试和交付代码，以及其真实的优势与不足。
 
-AI agents for deep research, fact-finding, and synthesis. These tools go beyond search to analyze multiple sources, produce structured reports, and surface insights you'd miss on your own.
+**2026年最佳免费AI编码智能体**
 
-7
-tools
+完全免费使用的最佳AI编码智能体——包括自托管的开源工具和顶级供应商的慷慨免费套餐，每个工具都按照我们独立的36点智能体化评估框架进行评分。
 
-AI tutors, study assistants, and learning companions where EDUCATION is the primary purpose. Examples: Learny AI, Duolingo Max, Khanmigo. NOT for tools that have educational content but serve another primary purpose.
+**2026年最佳企业级AI编码智能体**
 
-8
-tools
+面向企业团队的最佳AI编码智能体对比。SOC 2合规、SSO、管理员控制以及满足大规模安全采购要求的部署选项。
 
-AI for fitness, mental health, nutrition, medical guidance, and wellbeing. Examples: Ada Health, Fitbit AI, Wysa. This is the category for health-focused tools even if they have automation or learning features.
+**2026年最佳开源AI编码智能体**
 
-9
-tools
+可自托管、可审查、支持自带模型的AI编码智能体——Cursor和Copilot的开源替代品，按照我们独立的36点智能体化评估框架排名。
 
-Personal finance AI, budgeting, investing, and financial planning tools. Examples: Wealthfront, YNAB, Trim, Cleo. This is the category for finance-focused tools even if they automate financial tasks.
+**2026年最佳AI研究与分析智能体**
 
-11
-tools
+面向文献综述、深度分析和知识合成的最佳AI研究智能体对比。寻找超越搜索、交付带引用的结构化洞察的工具。
 
-Smart home AI, IoT automation, and household management. Examples: Home Assistant, SmartThings. For consumer home/life automation, NOT business workflow automation.
+**2026年最佳通用AI智能体**
 
-7
-tools
+最佳通用AI智能体——超越聊天，实现网页浏览、代码运行和多步骤任务完成。从ChatGPT和Claude到开源竞争者，按照我们的36点框架进行评分。
 
-AI tools for composing music, generating soundtracks, and producing audio. From text-to-song generators to cinematic soundtrack composers, these tools help you create music without traditional instruments.
+**2026年最佳AI金融与规划工具**
 
-5
-tools
+面向预算编制、投资、税务规划和财务分析的最佳AI金融工具对比。寻找超越电子表格、提供智能个性化财务指导的工具。
 
-AI for creating, editing, and producing video content. From text-to-video generation to AI-powered podcast editing and real-time video translation, these tools transform media production.
+**2026年最佳AI销售与营销工具**
 
-6
-tools
+面向潜在客户生成、外联、内容和营销活动的最佳AI销售与营销智能体——按照我们独立的36点智能体化评估框架评分，让你能够区分真正的自动化和模板引擎。
 
-AI tools for graphic design, UI/UX, presentations, and visual content. Generate layouts, create brand-consistent designs, and build polished visuals from natural language prompts.
+---
 
-6
-tools
+## 按类别浏览
 
-AI-powered translation and localization tools for documents, websites, and software. Go beyond word-for-word translation with context-aware AI that handles technical terminology and brand voice.
+每个工具都经过评估、分类和智能体化评分
 
-5
-tools
+**面向个人**
 
-For Teams
+可浏览网页、管理文件、运行代码并代表你采取自主行动的AI智能体。从OpenClaw到ChatGPT智能体，这些工具超越聊天，真正为你做事。
 
-AI agents for lead generation, sales outreach, content marketing, and campaign automation. Examples: Reply.io, Conversica, Regie.ai, Drift. Primary purpose must be sales/marketing.
+**9个工具**
 
-20
-tools
+**编码与开发**
 
-AI-powered support agents, help desk automation, and customer service. Examples: Forethought, Ultimate.ai, Intercom Fin, Zendesk AI. For tools where PRIMARY purpose is customer support.
+编写、审查和交付代码的AI。 从Cursor等IDE集成副驾驶到Devin等自主工程师，这些智能体正在改变软件开发的方式。
 
-13
-tools
+**18个工具**
 
-AI coding assistants, code review tools, and developer productivity solutions for teams. Write code faster, catch bugs earlier, and automate the tedious parts of software development.
+**通用助手**
 
-13
-tools
+面向日常任务、日程安排和个人生产力的通用AI助手。示例：Lindy、Reclaim AI、Motion。不包括领域特定助手（健康与保健、财务规划等请使用相应分类）。
 
-AI for data analysis, business intelligence, visualization, and reporting. Examples: ThoughtSpot, Julius, Powerdrill. Primary purpose must be working with data/analytics.
+**9个工具**
 
-13
-tools
+# AI工具分类
 
-GENERAL-PURPOSE workflow automation platforms that connect multiple apps/services. Examples: Zapier, Make, n8n, Relay. NOT for domain-specific tools - use their domain category instead (finance-planning for financial automation, sales-marketing for sales automation, etc.).
+## AI写作、内容创作与创意工具
 
-13
-tools
+以写作、内容创作或创意工作为主要功能的AI工具。示例：Sudowrite、Jasper、Copy.ai、Midjourney。不包括仅将文本生成作为辅助功能的工具。
 
-Open-source frameworks and SDKs for building custom AI agents. From LangChain to CrewAI, these tools let developers create, orchestrate, and deploy multi-agent systems.
+14个工具
 
-13
-tools
+## 浏览器与桌面控制AI代理
 
-The plumbing layer for AI agents: memory systems, tool integrations, observability, sandboxing, and identity management. Essential building blocks for production agent deployments.
+控制浏览器和桌面以完成任务的AI代理。从Claude Computer Use到Chrome Auto Browse，这些工具代表你与现有软件进行交互。
 
-21
-tools
+6个工具
 
-Full-stack platforms for deploying AI agents at organizational scale. Built-in governance, compliance, audit trails, and admin controls for enterprises that need agents they can trust.
+## 深度研究AI代理
 
-18
-tools
+用于深度研究、事实查找和综合分析的AI代理。这些工具超越搜索功能，可分析多个来源、生成结构化报告，并发现你独自难以发现的洞察。
 
-AI for market research, competitive intelligence, deep analysis, and knowledge synthesis. Examples: Perplexity Pro, Elicit. Primary purpose must be research/analysis.
+7个工具
 
-9
-tools
+## AI教育辅导与学习助手
 
-AI for recruiting, HR processes, expense management, and operational efficiency. Examples: Fyle, Moveworks. For tools where HR/ops is the primary domain.
+以教育为主要功能的AI导师、学习助手和学习伙伴。示例：Learny AI、Duolingo Max、Khanmigo。不包括拥有教育内容但以其他功能为主要用途的工具。
 
-7
-tools
+8个工具
 
-AI for contract review, legal research, compliance, and document analysis. These tools help legal teams draft, review, and manage contracts faster while reducing risk.
+## 健康与保健AI
 
-5
-tools
+健身、心理健康、营养、医疗指导和健康领域的AI。示例：Ada Health、Fitbit AI、Wysa。即使具有自动化或学习功能，仍属于健康导向工具的类别。
 
-AI-powered threat detection, security operations, and vulnerability management. Autonomous security agents that detect, investigate, and respond to threats in real time.
+9个工具
 
-9
-tools
+## 个人财务AI
 
-AI for demand forecasting, supply chain optimization, and logistics management. Predict demand, optimize inventory, and gain real-time visibility across your supply chain.
+个人财务AI、预算编制、投资和财务规划工具。示例：Wealthfront、YNAB、Trim、Cleo。即使自动化财务任务，仍属于金融导向工具的类别。
 
-4
-tools
+11个工具
 
-AI for architectural design, building configuration, and construction planning. Generate floor plans, optimize building layouts, and analyze environmental impact with generative AI.
+## 智能家居与物联网自动化
 
-5
-tools
+智能家居AI、物联网自动化和家庭管理。示例：Home Assistant、SmartThings。适用于消费级家庭/生活自动化，不适用于业务流程自动化。
 
-AI for event management, attendee matchmaking, and conference coordination. Automate scheduling, personalize attendee experiences, and optimize event logistics.
+7个工具
 
-5
-tools
+## AI音乐创作与音频制作
 
-AI agents for voice interactions, phone calls, and conversational interfaces. Build and deploy voice bots, automate phone outreach, and create natural speech-to-speech experiences with ultra-low latency.
+用于作曲、配乐生成和音频制作的AI工具。从文本转歌曲生成器到电影配乐制作工具，这些工具帮助你无需传统乐器即可创作音乐。
 
-12
-tools
+5个工具
 
-AI agents that autonomously browse the web, interact with websites, fill forms, extract data, and complete multi-step browser tasks. From headless automation to visual browsing agents.
+## AI视频创作与制作
 
-8
-tools
+用于创建、编辑和制作视频内容的AI。从文本转视频生成到AI驱动的播客编辑和实时视频翻译，这些工具改变了媒体制作方式。
 
-Frameworks and platforms for coordinating multiple AI agents working together. Build agent teams, manage inter-agent communication, and orchestrate parallel workflows with shared memory and tool access.
+6个工具
 
-7
-tools
+## AI图形设计与视觉内容
 
-What Makes a Tool “Agentic”?
+用于平面设计、UI/UX、演示文稿和视觉内容的AI工具。通过自然语言提示生成布局、创建品牌一致的设计并制作精美视觉作品。
 
-We evaluate every tool using our 36-point scoring system. “Agentic” means AI that can decide and act in a loop—not just generate text.
-Read the full guide
-.
+6个工具
 
-Takes a goal and runs a decide → act → observe loop
+## AI翻译与本地化
 
-Executes real actions via APIs, tools, or external systems
+用于文档、网站和软件的AI驱动翻译与本地化工具。超越逐字翻译，提供上下文感知的AI，处理专业术语和品牌语调。
 
-Adjusts next steps based on results and changing context
+5个工具
 
+## 销售与营销AI代理
+
+用于潜在客户开发、销售外联、内容营销和活动自动化的AI代理。示例：Reply.io、Conversica、Regie.ai、Drift。主要功能必须是销售/营销。
+
+20个工具
+
+## 客户支持AI代理
+
+AI驱动的支持代理、服务台自动化和客户服务。示例：Forethought、Ultimate.ai、Intercom Fin、Zendesk AI。适用于以客户支持为主要功能的工具。
+
+13个工具
+
+## AI编程助手与开发工具
+
+AI编程助手、代码审查工具和团队开发效率解决方案。更快地编写代码、更早地发现bug，并自动化软件开发中的繁琐工作。
+
+13个工具
+
+## 数据分析与商业智能
+
+用于数据分析、商业智能、可视化和报告的AI。示例：ThoughtSpot、Julius、Powerdrill。主要功能必须是处理数据/分析。
+
+13个工具
+
+## 通用工作流自动化平台
+
+连接多个应用/服务的通用工作流自动化平台。示例：Zapier、Make、n8n、Relay。不适用于领域特定工具——请使用其对应领域类别（财务规划用于金融自动化，销售营销用于销售自动化等）。
+
+13个工具
+
+## 开源AI代理框架与SDK
+
+用于构建自定义AI代理的开源框架和SDK。从LangChain到CrewAI，这些工具让开发者能够创建、协调和部署多代理系统。
+
+13个工具
+
+## AI代理基础设施层
+
+AI代理的基础设施层：记忆系统、工具集成、可观测性、沙箱化和身份管理。是生产环境代理部署的重要组成部分。
+
+21个工具
+
+## 企业级AI代理全栈平台
+
+在组织规模上部署AI代理的全栈平台。为需要可信赖代理的企业提供内置治理、合规、审计追踪和管理控制。
+
+18个工具
+
+## 市场研究与竞争情报AI
+
+用于市场研究、竞争情报、深度分析和知识综合的AI。示例：Perplexity Pro、Elicit。主要功能必须是研究/分析。
+
+9个工具
+
+## 人力资源与运营AI
+
+用于招聘、HR流程、费用管理和运营效率的AI。示例：Fyle、Moveworks。适用于HR/运营作为主要领域的工具。
+
+7个工具
+
+## 法律AI
+
+用于合同审查、法律研究、合规和文档分析的AI。这些工具帮助法务团队更快地起草、审查和管理合同，同时降低风险。
+
+5个工具
+
+## 安全与威胁检测AI
+
+AI驱动的威胁检测、安全运营和漏洞管理。可自主检测、调查和实时响应威胁的安全代理。
+
+9个工具
+
+## 供应链与物流AI
+
+用于需求预测、供应链优化和物流管理的AI。预测需求、优化库存并在整个供应链中获得实时可见性。
+
+4个工具
+
+## 建筑设计AI
+
+用于建筑设计、建筑配置和施工规划的AI。使用生成式AI生成平面图、优化建筑布局并分析环境影响。
+
+5个工具
+
+## 活动管理AI
+
+用于活动管理、参会者匹配和会议协调的AI。自动化日程安排、个性化参会者体验并优化活动物流。
+
+5个工具
+
+## 语音交互与对话AI代理
+
+用于语音交互、电话和对话界面的AI代理。构建和部署语音机器人、自动化电话外联，并以超低延迟创建自然的语音对话体验。
+
+12个工具
+
+## 网页浏览AI代理
+
+可自主浏览网页、与网站交互、填写表单、提取数据并完成多步骤浏览器任务的AI代理。从无头自动化到可视化浏览代理。
+
+8个工具
+
+## 多代理编排框架与平台
+
+用于协调多个AI代理协同工作的框架和平台。构建代理团队、管理代理间通信，并通过共享内存和工具访问编排并行工作流。
+
+7个工具
+
+## 什么让工具具有"代理性"？
+
+我们使用36点评分系统评估每个工具。"代理性"意味着AI可以在循环中做出决定并采取行动——而不仅仅是生成文本。
+阅读完整指南
+。
+
+接收目标并运行决定→行动→观察循环
+
+通过API、工具或外部系统执行实际动作
+
+根据结果和变化的环境调整后续步骤
 
 *原文请访问 [agentic.ai](https://agentic.ai)*
