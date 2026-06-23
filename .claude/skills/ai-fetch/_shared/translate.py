@@ -1,137 +1,141 @@
 """
-Translation module using MiniMax API
+Translation module using MiniMax API via curl subprocess.
+This avoids Python's requests library encoding issues on Windows.
 """
 
+import subprocess
+import json
 import re
 import time
-import requests
-from typing import Optional, List
-from .config import (
-    MINIMAX_API_KEY,
-    MINIMAX_API_URL,
-    MINIMAX_MODEL,
-    MINIMAX_MAX_TOKENS,
-)
+import tempfile
+from pathlib import Path
+from typing import Optional
+from .config import MINIMAX_API_KEY, MINIMAX_API_URL, MINIMAX_MODEL
 
 
 class Translator:
-    """Translator using MiniMax API"""
-
-    # Translate up to 10000 chars, chunk longer content
-    MAX_TRANSLATE_LEN = 10000
-    CHUNK_SIZE = 8000
+    CHUNK_SIZE = 1500
 
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or MINIMAX_API_KEY
         self.api_url = MINIMAX_API_URL
         self.model = MINIMAX_MODEL
-        self.max_tokens = MINIMAX_MAX_TOKENS
 
     def is_chinese(self, text: str) -> bool:
-        """Check if text is primarily Chinese."""
         if not text or len(text.strip()) < 10:
             return False
-        chinese_chars = len(re.findall(r'[一-鿿]', text))
-        total_chars = len(text.strip())
-        return chinese_chars / max(total_chars, 1) > 0.3
+        chinese = len(re.findall(r'[一-鿿]', text))
+        return chinese / len(text.strip()) > 0.3
 
-    def translate(self, text: str, force: bool = False) -> str:
-        """Translate text to Chinese (with chunking for long content)."""
+    def translate(self, text: str) -> str:
         if not text or len(text.strip()) < 10:
             return text
-
-        if self.is_chinese(text) and not force:
+        if self.is_chinese(text):
             return text
-
-        # Chunk long content
         if len(text) > self.CHUNK_SIZE:
-            return self._translate_chunked(text)
+            return self._chunked(text)
+        return self._call(text)
+
+    def _chunked(self, text: str) -> str:
+        parts = []
+        for i in range(0, len(text), self.CHUNK_SIZE):
+            chunk = text[i:i+self.CHUNK_SIZE]
+            try:
+                parts.append(self._call(chunk))
+            except Exception as e:
+                parts.append(chunk)
+            time.sleep(0.2)
+        return '\n'.join(parts)
+
+    def _call(self, text: str) -> str:
+        """Call MiniMax API via curl subprocess for correct UTF-8 handling."""
+        import tempfile
+        import os
+
+        # Use temp file to avoid Windows pipe encoding issues
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False, encoding='utf-8') as f:
+            temp_path = f.name
 
         try:
-            return self._call_api(text)
-        except Exception as e:
-            print(f"Translation error: {e}")
+            # Build curl command that writes to temp file
+            # Use larger max_tokens to avoid truncation (min 500 for simple translations)
+            max_tokens_value = max(500, min(4096, len(text) * 4))
+            cmd = [
+                'curl', '-s', '--max-time', '60', '-X', 'POST',
+                self.api_url,
+                '-H', f'Authorization: Bearer {self.api_key}',
+                '-H', 'Content-Type: application/json',
+                '-d', json.dumps({
+                    'model': self.model,
+                    'max_tokens': max_tokens_value,
+                    'messages': [{'role': 'user', 'content': f'Translate to Chinese:\n\n{text}'}]
+                }, ensure_ascii=False),
+                '-o', temp_path
+            ]
+
+            subprocess.run(cmd, timeout=90)
+
+            # Read response as binary to handle encoding correctly
+            with open(temp_path, 'rb') as f:
+                raw_bytes = f.read()
+
+            # Decode with surrogateescape to preserve any problematic bytes
+            content = raw_bytes.decode('utf-8', errors='surrogateescape')
+
+            # Parse JSON
+            data = json.loads(content)
+
+            # Extract text from response (supports both OpenAI and Anthropic formats)
+            text_result = None
+
+            # Anthropic format
+            for block in data.get('content', []):
+                if isinstance(block, dict) and block.get('type') == 'text':
+                    text_result = block.get('text', '')
+                    break
+
+            # OpenAI format fallback
+            if text_result is None:
+                text_result = data.get('choices', [{}])[0].get('message', {}).get('content', '')
+
+            if text_result:
+                return self._clean_translation(text_result)
+
             return text
 
-    def _translate_chunked(self, text: str) -> str:
-        """Translate long content by chunking."""
-        paragraphs = text.split('\n\n')
-        chunks = []
-        current_chunk = []
-        current_len = 0
+        except subprocess.TimeoutExpired:
+            return text
+        except json.JSONDecodeError:
+            return text
+        except Exception:
+            return text
+        finally:
+            # Clean up temp file
+            if os.path.exists(temp_path):
+                try:
+                    os.remove(temp_path)
+                except Exception:
+                    pass
 
-        for para in paragraphs:
-            para_len = len(para)
-            if current_len + para_len > self.CHUNK_SIZE and current_chunk:
-                chunks.append('\n\n'.join(current_chunk))
-                current_chunk = [para]
-                current_len = para_len
-            else:
-                current_chunk.append(para)
-                current_len += para_len
+    def _clean_translation(self, text: str) -> str:
+        """Clean up translation output."""
+        # Remove "Translation:" prefix if present
+        text = re.sub(r'^\*\*Translation:\*\*\s*', '', text, flags=re.IGNORECASE)
+        text = re.sub(r'^Translation:\s*', '', text, flags=re.IGNORECASE)
 
-        if current_chunk:
-            chunks.append('\n\n'.join(current_chunk))
+        # Remove thinking/reasoning blocks
+        text = re.sub(r'<thinking>.*?</thinking>', '', text, flags=re.DOTALL | re.IGNORECASE)
 
-        # Translate each chunk
-        results = []
-        for i, chunk in enumerate(chunks):
-            print(f"  Translating chunk {i+1}/{len(chunks)}...")
-            try:
-                translated = self._call_api(chunk)
-                results.append(translated)
-            except Exception as e:
-                print(f"  Chunk {i+1} failed: {e}")
-                results.append(chunk)
-            time.sleep(0.5)  # Rate limit
+        # Remove markdown formatting that might be added
+        text = text.strip()
 
-        return '\n\n'.join(results)
-
-    def _call_api(self, text: str) -> str:
-        """Call MiniMax API for translation."""
-        payload = {
-            "model": self.model,
-            "messages": [
-                {
-                    "role": "user",
-                    "content": f"Translate to Chinese, keep technical terms accurate:\n\n{text}"
-                }
-            ],
-            "max_tokens": min(8192, len(text) * 2)
-        }
-
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
-
-        response = requests.post(
-            self.api_url,
-            headers=headers,
-            json=payload,
-            timeout=60
-        )
-
-        if response.status_code != 200:
-            raise Exception(f"API error: {response.status_code}")
-
-        result = response.json()
-        choices = result.get('choices', [])
-        if choices:
-            message = choices[0].get('message', {})
-            content = message.get('content', '')
-            if content:
-                return content.strip()
         return text
 
 
-# Singleton instance
-_translator = None
-
+_tr = None
 
 def get_translator() -> Translator:
-    """Get or create singleton translator instance"""
-    global _translator
-    if _translator is None:
-        _translator = Translator()
-    return _translator
+    global _tr
+    if _tr is None:
+        _tr = Translator()
+    return _tr

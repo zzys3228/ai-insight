@@ -66,8 +66,18 @@ class CompanyFetcher:
         return self._parse_article(response.text, url, company)
 
     def _parse_article(self, html: str, url: str, company: str) -> dict:
-        """Parse article HTML to extract content"""
+        """Parse article HTML to extract content with proper cleaning"""
         soup = BeautifulSoup(html, 'html.parser')
+
+        # Remove unwanted elements first
+        for tag in soup.find_all(['script', 'style', 'nav', 'footer', 'header',
+                                   'noscript', 'iframe', 'svg', 'form']):
+            tag.decompose()
+
+        # Also remove common nav/footer/sidebar classes
+        for elem in soup.find_all(class_=['nav', 'navbar', 'sidebar', 'cookie', 'consent',
+                                            'cookie-banner', 'popup', 'modal', 'footer', 'header']):
+            elem.decompose()
 
         # Extract title
         title = ''
@@ -77,35 +87,46 @@ class CompanyFetcher:
 
         # Extract date
         date = ''
-        date_tag = soup.find('time') or soup.find(class_=['date', 'published', 'timestamp'])
+        date_tag = soup.find('time') or soup.find(class_=['date', 'published', 'timestamp', 'meta-date'])
         if date_tag:
             date = date_tag.get('datetime', '') or date_tag.get_text(strip=True)
             date = date[:10] if len(date) > 10 else date
 
         # Extract author
         author = ''
-        author_tag = soup.find(class_=['author', 'byline'])
+        author_tag = soup.find(class_=['author', 'byline', 'post-author'])
         if author_tag:
             author = author_tag.get_text(strip=True)
 
-        # Extract main content
+        # Extract main content - try multiple selectors
         content = ''
-        article_tag = soup.find('article') or soup.find(class_=['content', 'post-content', 'article-content'])
+        article_tag = (soup.find('article') or
+                       soup.find(class_=['post-content', 'article-content', 'entry-content', 'content']) or
+                       soup.find('main'))
         if article_tag:
-            content = article_tag.get_text(separator='\n\n', strip=True)
+            # Extract paragraphs, avoiding short snippets (likely nav/menu items)
+            paragraphs = []
+            for p in article_tag.find_all(['p', 'h2', 'h3', 'h4', 'li']):
+                text = p.get_text(strip=True)
+                # Only include substantial text (not short nav items)
+                if len(text) > 30:
+                    paragraphs.append(text)
+            content = '\n\n'.join(paragraphs)
 
-        # Fallback to body
-        if not content:
+        # Fallback to body if no content found
+        if not content or len(content) < 100:
             body = soup.find('body')
             if body:
-                # Remove script and style
-                for tag in body.find_all(['script', 'style', 'nav', 'footer', 'header']):
-                    tag.decompose()
-                content = body.get_text(separator='\n\n', strip=True)
+                paragraphs = []
+                for p in body.find_all(['p', 'h2', 'h3', 'h4']):
+                    text = p.get_text(strip=True)
+                    if len(text) > 30:
+                        paragraphs.append(text)
+                content = '\n\n'.join(paragraphs)
 
         # Translate
         title_zh = self.translator.translate(title)
-        content_zh = self.translator.translate(content) if content else ''
+        content_zh = self.translator.translate(content) if content and len(content) > 50 else ''
 
         return {
             'title': title,

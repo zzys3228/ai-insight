@@ -1,75 +1,120 @@
 # AI Fetch Conference Skill
 
 ## Description
-Fetches conference agenda, speaker information, and presentation content. Supports both traditional websites and modern SPA (Single Page Applications) like Google I/O.
+Fetches conference agenda, session descriptions, and full transcripts. Supports both traditional websites and modern SPA (Single Page Applications) like Google I/O.
 
 ## Architecture
-- **Generic extractors**: Work for most conference sites (HTML parsing, meta tags)
-- **Site-specific extractors**: Registered for special handling (e.g., Google I/O SPA)
-- **Extractor registry**: Allows adding custom extractors per-conference
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                   ConferenceFetcher                      │
+├─────────────────────────────────────────────────────────┤
+│  Extractors           │  Transcript Sources             │
+│  ─────────────        │  ─────────────────            │
+│  GoogleIOExtractor    │  BlogArticleSource (优先)     │
+│  GenericExtractor     │  PageTranscriptSource          │
+│  [可扩展]             │  YouTubeTranscriptSource       │
+└─────────────────────────────────────────────────────────┘
+```
+
+## Features
+- **Session 列表**: 提取所有 session 标题和描述
+- **完整文字稿**: 从 blog/页面/YouTube 获取完整 transcript
+- **Playwright 支持**: SPA 页面 JavaScript 渲染
+- **通用可扩展**: 支持添加新的 extractor 和 transcript source
 
 ## Usage
+
+### 基本用法
 ```bash
-# Basic fetch
+# 抓取 session 列表
 python fetch_conference.py --url <url> --name <name> --year <year>
 
-# With subpage discovery (recommended for SPA sites)
-python fetch_conference.py --url <url> --name <name> --year <year> --subpages --max-subpages 5
+# 使用 Playwright (SPA 网站)
+python fetch_conference.py --url https://io.google --name google-io --year 2026 --playwright
 
-# Via ai-fetch-daily
-python fetch_daily.py --conference
+# 获取完整文字稿 (transcripts)
+python fetch_conference.py --url https://io.google --name google-io --year 2026 --playwright --transcripts --max-transcripts 5
 ```
 
-## CLI Arguments
-| Argument | Description |
-|----------|-------------|
-| `--url` | Conference URL (required) |
-| `--name` | Conference name (required) |
-| `--year` | Conference year (optional, defaults to current year) |
-| `--subpages` | Discover and fetch sub-pages (keynotes, sessions) |
-| `--max-subpages` | Max sub-pages to fetch (default: 10) |
-| `--discover` | Only discover agenda links without fetching |
+### 参数说明
+| 参数 | 说明 |
+|------|------|
+| `--url` | 大会 URL |
+| `--name` | 大会名称 |
+| `--year` | 年份 (默认当前年) |
+| `--playwright` | 使用浏览器渲染 SPA |
+| `--wait` | Playwright 等待秒数 |
+| `--transcripts` | 获取完整文字稿 |
+| `--max-transcripts` | 最大文字稿数量 |
+| `--no-translate` | 跳过翻译 |
 
-## Supported Conferences
-| Conference | URL | Type | Features |
-|-----------|-----|------|----------|
-| WAIC | worldaic.com.cn | Traditional | Full HTML extraction |
-| Google I/O | io.google | SPA | Sessions JSON, keynotes, topics |
-| NVIDIA GTC | nvidia.com/gtc | Traditional | Full HTML extraction |
-| NeurIPS | nips.cc | Traditional | Full HTML extraction |
-| ICML | icml.cc | Traditional | Full HTML extraction |
+## Transcript 来源 (优先级顺序)
 
-## Output
-Files saved to: `ai-content-fetched/conference/{name}/{year}/index.md`
+1. **Blog Article**: 从官方博客获取完整文章 (keynote)
+2. **Page Transcript**: 从 session 页面提取嵌入文字稿
+3. **YouTube Caption**: 从 YouTube 字幕获取
 
-Content includes:
-- Conference overview and title
-- Agenda/sessions with descriptions
-- Speaker information (when available)
-- Topic categories
-- Navigation structure (for SPA sites)
-
-## Adding Site-Specific Extractors
-Extend `ConferenceFetcher` with custom extractors:
+## 添加新的 Transcript Source
 
 ```python
-fetcher = ConferenceFetcher(use_proxy=True)
-fetcher.add_extractor(priority=100, name="my_conference", extractor=my_extractor)
-conf = fetcher.fetch_with_subpages(url, name, year)
+from fetch_conference import TranscriptSource, ConferenceFetcher
+
+class MyTranscriptSource(TranscriptSource):
+    def fetch(self, session_url: str, session_id: str) -> Optional[str]:
+        # 实现获取文字稿的逻辑
+        return transcript
+
+fetcher = ConferenceFetcher()
+fetcher.transcript_sources.append(MyTranscriptSource())
 ```
 
-Extractor function signature:
+## 添加新的 Conference Extractor
+
 ```python
-def my_extractor(html: str, soup: BeautifulSoup, url: str) -> Optional[str]:
-    # Return extracted content or None if not applicable
-    if 'my-conference.com' not in url:
-        return None
-    # Extract and return content
-    return extracted_content
+from fetch_conference import ConferenceExtractor, Session
+
+class MyConferenceExtractor(ConferenceExtractor):
+    def extract_sessions(self, html: str, url: str) -> List[Session]:
+        sessions = []
+        # 解析 HTML 提取 sessions
+        return sessions
+
+fetcher = ConferenceFetcher()
+fetcher.set_extractor(MyConferenceExtractor())
 ```
 
-## Technical Details
-1. **Phase 1**: Extract content using registered extractors (priority-ordered)
-2. **Phase 2**: Discover sub-pages (keynotes, sessions, speakers)
-3. **Phase 3**: Fetch discovered sub-pages
-4. **Phase 4**: Translate content (if enabled in config)
+## 支持的大会
+
+| 大会 | URL | 类型 | Transcript |
+|------|-----|------|-----------|
+| Google I/O | io.google | SPA | ✅ blog.google |
+| NVIDIA GTC | nvidia.com/gtc | Traditional | ⏳ 待实现 |
+| NeurIPS | nips.cc | Traditional | ⏳ 待实现 |
+
+## 输出格式
+
+```markdown
+---
+title: google-io
+source: io.google
+category: conference/google-io/2026
+---
+
+# google-io 2026
+
+## Sessions (83个)
+
+### 1. Google keynote
+描述摘要...
+
+---
+
+#### 完整文字稿
+
+I/O 2026: Welcome to the agentic Gemini era...
+
+Editor's note: Below is an edited transcript...
+
+It's been an extraordinary year...
+```

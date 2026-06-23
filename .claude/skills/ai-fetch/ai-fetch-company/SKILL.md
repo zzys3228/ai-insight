@@ -31,5 +31,13 @@ Files saved to: `ai-content-fetched/company/{company}/blogs/{article_slug}.md`
 
 ## Technical
 - HTML scraping with BeautifulSoup
-- JS rendering with Playwright for dynamic pages
-- Translation via MiniMax API
+- Content cleaning: removes nav/footer/sidebar/cookie elements
+- Filters short text snippets (<30 chars) to avoid menu items
+- Translation via MiniMax API (UTF-8 via curl subprocess)
+- Only translates articles with substantial content (>50 chars)
+
+## Quality Standards
+- Clean Chinese translation (no English navigation mixed in)
+- No page footers or cookie banners
+- Proper frontmatter format
+- Original links preserved

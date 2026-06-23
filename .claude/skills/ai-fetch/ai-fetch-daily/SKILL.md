@@ -37,3 +37,16 @@
 
 ## 配置
 读取 `ai-news-sources.md` 获取URL列表
+
+## 质量标准
+所有抓取内容必须符合以下标准：
+- **翻译质量**：英文全文翻译为中文，无混杂英文导航
+- **内容清洗**：移除页脚、导航菜单、Cookie提示等无关内容
+- **格式规范**：Frontmatter完整，包含title/url/date/category/translated
+- **编码正确**：无mojibake（乱码），使用UTF-8
+
+## 翻译模块
+- 使用MiniMax API via curl subprocess（避免Windows编码问题）
+- 跳过短内容（<10字符）
+- 中文内容保留原文
+- max_tokens >= 500避免截断

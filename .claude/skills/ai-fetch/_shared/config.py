@@ -17,7 +17,9 @@ CN_DOMAINS = [
     'autohome.com.cn', 'lizhi.fm', 'itheima.com',
     'qunar.com', 'mogujie.com', 'vip.com', 'meituan.com',
     'dianping.com', 'ele.me', ' damai.cn', 'taopiaopiao.com',
-    'kxai.com',  # MiniMax related
+    # MiniMax related - 直连不需代理
+    'minimaxi.com', 'minimax.io', 'minimaxi.cn',
+    'kxai.com', 'ailab.com',
 ]
 
 # Storage paths
@@ -38,7 +40,7 @@ STORAGE_STRUCTURE = {
 
 # MiniMax API configuration
 MINIMAX_API_KEY = "REDACTED_API_KEY"
-MINIMAX_API_URL = "https://api.minimaxi.com/v1/text/chatcompletion_v2"
+MINIMAX_API_URL = "https://api.minimaxi.com/anthropic/v1/messages"
 MINIMAX_MODEL = "MiniMax-M2.7"
 MINIMAX_MAX_TOKENS = 4096
 
