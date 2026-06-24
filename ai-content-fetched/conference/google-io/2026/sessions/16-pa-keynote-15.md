@@ -1,6 +1,6 @@
 ---
 title: Building the quantum-AI future with Hartmut Neven and James Manyika
-title_zh: 与Hartmut Neven和James Manyika共同构建量子‑人工智能的未来
+title_zh: 与Hartmut Neven和James Manyika共同构建量子-人工智能的未来
 category: conference/google-io/2026/sessions
 date: 2026-05-20
 time: 11:00 - 11:45 PT
@@ -9,6 +9,9 @@ type: 技术演讲
 level: Beginner
 speakers: jmanyika, neven
 video: https://www.youtube.com/watch?v=yQPnb4gxKRc
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 # 与Hartmut Neven和James Manyika共同构建量子‑人工智能的未来
 

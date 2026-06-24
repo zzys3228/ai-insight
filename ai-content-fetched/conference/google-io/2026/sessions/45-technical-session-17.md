@@ -3,19 +3,22 @@ title: Modernize authentication with passkeys, digital credentials, and more
 title_zh: 使用通行密钥、数字凭证等实现身份验证现代化
 category: conference/google-io/2026/sessions
 date: 2026-05-21
-time:  PT
+time: PT
 track: Chrome
 type: 技术演讲
 level: Intermediate
 speakers: nmarkoborodova, nsatragno
 video: https://www.youtube.com/watch?v=xzMx2khmGJ4
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 
 # 使用通行密钥、数字凭证等实现身份验证现代化
 
-## 📋 摘要
+## 📋 演讲摘要
 
-**📅 日期**: 2026-05-21 | **🕐 时间**:  PT | **📂 分类**: Chrome | **🎯 类型**: 技术演讲 | **📊 等级**: Intermediate
+**📅 日期**: 2026-05-21 | **🕐 时间**: PT | **📂 分类**: Chrome | **🎯 类型**: 技术演讲 | **📊 等级**: Intermediate
 
 **👤 演讲者**: nmarkoborodova, nsatragno
 
@@ -163,4 +166,5 @@ signal API 可以帮你解决这个问题，它能确保用户的通行密钥保
 > 我是 Natalia，来自 Chrome 团队。咱们下期见，编程愉快！
 
 > [音乐]
----
+
+*原文请访问 [Google I/O](https://www.youtube.com/watch?v=xzMx2khmGJ4)*

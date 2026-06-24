@@ -9,23 +9,19 @@ type: 技术演讲
 level: Intermediate
 speakers: katelovett, lite, yenkhanh
 video: https://www.youtube.com/watch?v=I1uIbGh1dGE
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 # Flutter 的新功能
 
-## 📋 摘要
+## 📋 演讲摘要
 
 **📅 日期**: 2026-05-20 | **🕐 时间**: 10:00 - 10:45 PT | **📂 分类**: Flutter | **🎯 类型**: 技术演讲 | **📊 等级**: Intermediate
 
 **👤 演讲者**: katelovett, lite, yenkhanh
 
-探索最新的Flutter框架更新，从性能改进到新功能。深入了解Flutter GenUI，发现如何即时构建真正自适应的AI生成用户体验。了解这些创新如何塑造快速、多平台应用开发的未来。
-
----
-## 📝 详细原文
-
-探索最新的Flutter框架更新，从性能提升到新特性。深入了解Flutter GenUI，发现如何即时构建真正自适应、AI生成的用户体验。了解这些创新如何塑造快速、跨平台应用开发的未来。
-
-**原文（English）**: Explore the latest Flutter framework updates, from performance improvements to new features. Dive into Flutter GenUI to discover how to build truly adaptive, AI-generated user experiences on the fly. Learn how these innovations are shaping the future of fast, multi-platform application development.
+介绍Flutter 3.44和Dart 3.12正式发布，展示生态规模（1700贡献者、13亿次下载）、Dart语言升级、开发者体验优化、代理式开发能力、Flutter GenUI等新特性。
 
 ---
 ## 📝 内容总结
@@ -55,9 +51,11 @@ Flutter 贡献者已达 **1700 人**，过去一年合并 5800+ 变更；pub.dev
 - **代理式热重载**自动连接运行中的应用，实现实时 UI 更新
 - 发布 **Dart & Flutter 代理技能**，遵循渐进式披露原则，基于最佳实践提升代码质量
 
-**愿景**：通过社区共建，让 Flutter 和 Dart 为全平台提供最高效、最高品质的全栈动态用户体验。
+**核心要点：生态规模显著增长、Dart Cloud Functions for Firebase上线、代理式开发能力、Flutter GenUI SDK**
 
 ---
+
+*原文请访问 [Google I/O](https://www.youtube.com/watch?v=I1uIbGh1dGE)*
 
 ## 📝 完整文字稿
 
