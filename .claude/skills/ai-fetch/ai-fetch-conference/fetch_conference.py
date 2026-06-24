@@ -128,41 +128,31 @@ class YouTubeCaptionSource(TranscriptSource):
         import tempfile
         import os
 
+        # Cookies file path (if exists)
+        cookies_file = Path(__file__).parent / "cookies.txt"
+
         try:
-            # Create temp dir for caption file
             with tempfile.TemporaryDirectory() as tmpdir:
                 output_file = os.path.join(tmpdir, 'caption')
 
-                # Run yt-dlp to download subtitles
-                cmd = [
-                    'python', '-m', 'yt_dlp',
-                    '--write-auto-subs',  # Get auto-generated captions
-                    '--sub-langs', 'en',
-                    '--skip-download',
-                    '--convert-subs', 'srt',
-                    '-o', output_file,
-                    f'https://www.youtube.com/watch?v={video_id}'
-                ]
+                cmd = ['python', '-m', 'yt_dlp', '--write-auto-subs', '--sub-langs', 'en', '--skip-download', '--convert-subs', 'srt']
 
-                result = subprocess.run(
-                    cmd,
-                    capture_output=True,
-                    timeout=120,
-                    env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
-                )
+                # Add cookies if available
+                if cookies_file.exists():
+                    cmd.extend(['--cookies', str(cookies_file)])
 
-                # Check for srt file
+                cmd.extend(['-o', output_file, f'https://www.youtube.com/watch?v={video_id}'])
+
+                result = subprocess.run(cmd, capture_output=True, timeout=120, env={**os.environ, 'PYTHONIOENCODING': 'utf-8'})
+
                 srt_file = output_file + '.en.srt'
                 if os.path.exists(srt_file):
                     with open(srt_file, 'r', encoding='utf-8') as f:
                         content = f.read()
-
-                    # Parse SRT to plain text
                     text = self._parse_srt(content)
                     if len(text) > 100:
                         return text
 
-                # Also check for vtt
                 vtt_file = output_file + '.en.vtt'
                 if os.path.exists(vtt_file):
                     with open(vtt_file, 'r', encoding='utf-8') as f:
@@ -272,13 +262,24 @@ class BlogArticleSource(TranscriptSource):
 class Session:
     def __init__(self):
         self.id = ""
-        self.title = ""
-        self.description = ""
+        self.uid = ""
+        self.title = ""           # 原标题
+        self.title_zh = ""        # 中文标题
         self.short_description = ""
+        self.description = ""     # 原描述
+        self.description_zh = ""  # 中文描述
         self.url = ""
         self.video_url = ""
-        self.speakers = []
-        self.transcript = None
+        self.speakers = []       # 原始speaker对象列表
+        self.speaker_names = []  # speaker ldap列表
+        self.start_time = ""
+        self.end_time = ""
+        self.session_date = ""
+        self.track = ""          # 分类
+        self.track_zh = ""        # 中文分类
+        self.content_type = ""   # 类型：技术演讲/工作坊/编程实验室/主题演讲
+        self.level = ""          # 等级：Beginner/Intermediate
+        self.transcript = None   # 完整字幕
         self.transcript_source = ""
 
 
@@ -302,21 +303,67 @@ class GoogleIOExtractor(ConferenceExtractor):
     """Extractor for Google I/O conferences"""
 
     def extract_sessions(self, html: str, url: str) -> List[Session]:
+        import json
         unescaped = html_module.unescape(html)
         sessions = []
 
-        # Pattern for sessions with descriptions
-        pattern = r'"event_title"\s*:\s*"([^"]+)"\s*,\s*"event_short_description"\s*:\s*"([^"]*)"\s*,\s*"event_long_description"\s*:\s*"([^"]*)"'
+        # Find sessions JSON array in the HTML
+        # Pattern: sessions="[{...}]"
+        pattern = r'sessions="(\[.*?\])"'
+        match = re.search(pattern, unescaped, re.DOTALL)
 
-        for match in re.findall(pattern, unescaped):
-            title, short_desc, long_desc = match
-            if title and len(title) > 1:
-                s = Session()
-                s.title = self._clean(title)
-                s.short_description = self._clean(short_desc)
-                s.description = self._clean(long_desc) if long_desc else self._clean(short_desc)
-                s.id = self._to_id(s.title)
-                s.url = f"https://io.google/2026/explore/{s.id}"
+        if not match:
+            return sessions
+
+        try:
+            data = json.loads(match.group(1))
+        except json.JSONDecodeError:
+            return sessions
+
+        for item in data:
+            s = Session()
+
+            # Basic fields
+            s.id = str(item.get('id', ''))
+            s.uid = item.get('uid', '')
+            s.title = self._clean(item.get('event_title', ''))
+            s.short_description = self._clean(item.get('event_short_description', ''))
+            s.description = self._clean(item.get('event_long_description', '')) or s.short_description
+
+            # Time fields
+            s.start_time = item.get('start_time') or ''
+            s.end_time = item.get('end_time') or ''
+            s.session_date = item.get('session_date') or ''
+
+            # Content type, level
+            s.content_type = item.get('content_type', '')
+            s.level = item.get('level', '')
+
+            # Track (topic)
+            topics = item.get('topics', [])
+            if topics and isinstance(topics, list):
+                s.track = topics[0].get('name', '') if topics else ''
+
+            # Speakers
+            speakers = item.get('speaker', [])
+            if speakers and isinstance(speakers, list):
+                s.speaker_names = [sp.get('ldap', '') for sp in speakers if sp.get('ldap')]
+
+            # Video URL from youtube_vod_id
+            youtube_id = item.get('youtube_vod_id')
+            if youtube_id:
+                s.video_url = f"https://www.youtube.com/watch?v={youtube_id}"
+
+            # URL
+            dest_url = item.get('destination_url', '')
+            if dest_url:
+                s.url = dest_url
+            elif s.uid:
+                s.url = f"https://io.google/2026/explore/{s.uid}"
+            else:
+                s.url = f"https://io.google/2026/explore/{self._to_id(s.title)}"
+
+            if s.title:
                 sessions.append(s)
 
         return sessions
@@ -325,12 +372,14 @@ class GoogleIOExtractor(ConferenceExtractor):
         return session.url
 
     def _clean(self, text: str) -> str:
-        return text.replace('\\u2019', "'").replace('\\u201c', '"').replace('\\u201d', '"').replace('\\n', ' ').replace('\\r', '')
+        if not text:
+            return ""
+        text = text.replace('\\u2019', "'").replace('\\u201c', '"').replace('\\u201d', '"')
+        text = text.replace('\\n', ' ').replace('\\r', '').replace('\\', '')
+        return text.strip()
 
     def _to_id(self, title: str) -> str:
         # Convert title to URL-friendly ID
-        import re
-        # Simple slugify
         slug = title.lower()
         slug = re.sub(r'[^a-z0-9\s-]', '', slug)
         slug = re.sub(r'[\s]+', '-', slug)
@@ -593,7 +642,7 @@ class ConferenceFetcher:
         return None
 
     def format_as_markdown(self, conf: dict, translate: bool = True) -> str:
-        """Format conference as markdown"""
+        """Format conference as markdown with optional translation"""
         md = format_markdown_frontmatter(
             title=conf['name'],
             source=conf['source'],
@@ -604,8 +653,15 @@ class ConferenceFetcher:
             fetched_at=get_file_timestamp(),
         )
 
-        md += f"# {conf['name']} {conf['year']}\n\n"
-        md += f"**来源**: {conf['source']} | **日期**: {conf['date']}\n\n"
+        # Translate name and source if needed
+        conf_name = conf['name']
+        conf_source = conf['source']
+        if translate and self.translator:
+            conf_name = self.translator.translate(conf['name']) or conf['name']
+            conf_source = self.translator.translate(conf['source']) or conf['source']
+
+        md += f"# {conf_name} {conf['year']}\n\n"
+        md += f"**来源**: {conf_source} | **日期**: {conf['date']}\n\n"
         md += "---\n\n"
 
         # Sessions
@@ -613,21 +669,80 @@ class ConferenceFetcher:
         md += f"## Sessions ({len(sessions)}个)\n\n"
 
         for i, session in enumerate(sessions, 1):
-            md += f"### {i}. {session.title}\n\n"
+            # Translate title
+            title = session.title
+            if translate and self.translator:
+                title = self.translator.translate(session.title) or session.title
 
+            md += f"### {i}. {title}\n\n"
+
+            # Session metadata
+            meta_parts = []
+
+            # Time and date
+            if session.session_date:
+                date_str = session.session_date
+                if translate:
+                    # Convert date format
+                    date_str = self.translator.translate(date_str) or date_str
+                meta_parts.append(f"📅 {date_str}")
+
+            if session.start_time:
+                # Format time (10:00:00 -> 10:00)
+                start = session.start_time[:5] if session.start_time else ""
+                end = session.end_time[:5] if session.end_time else ""
+                if start and end:
+                    time_str = f"{start} - {end}"
+                elif start:
+                    time_str = start
+                else:
+                    time_str = ""
+                if time_str:
+                    meta_parts.append(f"🕐 {time_str} PT")
+
+            # Track
+            if session.track:
+                track = session.track
+                if translate:
+                    track = self.translator.translate(track) or track
+                meta_parts.append(f"📂 {track}")
+
+            # Content type
+            if session.content_type:
+                ct = session.content_type
+                if translate:
+                    ct = self.translator.translate(ct) or ct
+                meta_parts.append(f"🎯 {ct}")
+
+            # Level
+            if session.level:
+                meta_parts.append(f"📊 {session.level}")
+
+            if meta_parts:
+                md += " | ".join(meta_parts) + "\n\n"
+
+            # Speakers (ldap)
+            if session.speaker_names:
+                md += f"👤 **演讲者**: {', '.join(session.speaker_names)}\n\n"
+
+            # Description
             if session.description:
-                md += f"{session.description}\n\n"
-
-            if session.speakers:
-                md += f"**演讲者**: {', '.join(session.speakers)}\n\n"
+                desc = session.description
+                if translate and self.translator:
+                    desc = self.translator.translate(desc) or desc
+                md += f"{desc}\n\n"
 
             # Transcript
             if session.transcript:
                 md += "---\n\n"
                 md += f"#### 完整文字稿\n\n"
-                md += session.transcript[:5000]  # Limit length
-                if len(session.transcript) > 5000:
-                    md += f"\n\n... (共 {len(session.transcript)} 字符)"
+
+                # Translate transcript if needed
+                transcript = session.transcript
+                if translate and self.translator:
+                    transcript = self.translator.translate(transcript) or transcript
+
+                md += transcript  # 保留完整字幕，不截断
                 md += "\n\n"
 
             md += "---\n\n"
@@ -637,10 +752,18 @@ class ConferenceFetcher:
         if playlist_transcripts:
             md += f"\n\n## YouTube 视频文字稿 ({len(playlist_transcripts)}个)\n\n"
             for title, transcript in playlist_transcripts.items():
-                md += f"### {title}\n\n"
-                md += transcript[:3000]
-                if len(transcript) > 3000:
-                    md += f"\n\n... (共 {len(transcript)} 字符)"
+                # Translate YouTube title
+                display_title = title
+                if translate and self.translator:
+                    display_title = self.translator.translate(title) or title
+
+                md += f"### {display_title}\n\n"
+
+                # Translate transcript if needed
+                if translate and self.translator:
+                    transcript = self.translator.translate(transcript) or transcript
+
+                md += transcript  # 保留完整字幕，不截断
                 md += "\n\n---\n\n"
 
         return md

@@ -1,0 +1,874 @@
+[music]
+>> Amazing. Welcome everyone.
+Welcome to Google IO. Welcome to what's
+new in Google AI and welcome to the
+first sessions of the day after the
+keynotes. Is everybody really excited?
+>> Woo!
+>> Amazing. So, I am so grateful to be here
+today with my colleague Amar. My name is
+Paige. I'm the engineering lead for a
+developer relations team at Google
+DeepMind. And Amar
+>> I lead product and design on AI Studio.
+>> Very cool. And today we're going to be
+attempting to condense into 45 minutes
+an overview of everything that we've
+been doing at Google in the AI space.
+It's going to be really hard.
+But the good news is that for the rest
+of today and the rest of tomorrow and
+further on in the week, we have a whole
+bunch of other talks that are intended
+to be deep dives for some of the things
+that we'll just be touching on lightly
+today.
+So, I don't think it's a secret that
+we've been shipping at a pretty
+relentless
+>> An insane amount of pace. I think if you
+just look at 2024 when we had the 1.5
+series of models, we're just cracking
+the nut on multi-modality and look where
+we are now.
+>> Exactly. And today we released Gemini
+3.5 Flash, which we'll be talking about
+in a second.
+But it's everything from frontier models
+to open models and more.
+Our Gemini 3 model lineup has expanded
+pretty significantly both today and over
+the course of the last couple of months.
+We've got Gemini 3.5 Pro, which is still
+kind of our our best and brightest model
+to use
+for complex problems. 3.5 Flash for kind
+of performance and speed and cost. This
+is also the Flash series is the default
+in AI Studio's build, right?
+>> Yeah, we use 3.5 Flash as our default
+model for building apps and it's
+incredibly capable. In fact, the AI
+Studio mobile app that'll be coming out
+in a few weeks,
+a bunch of it was built with 3.5 flash.
+So, it's just been amazing to see it
+trip across both Android and iOS.
+>> Amazing. And then also 3.1 flashlight,
+which is really great for kind of these
+these use cases that require low
+latency, but can also save you a lot of
+costs, which is pretty cool. Um, it's
+not just us using Gemini 3. We are
+blessed to have a whole bunch of
+customers across the industry. Um,
+Databricks, GitHub, Harvey, um, Warp,
+and a whole bunch more that have Gemini
+3 running in production. Um, and Gemini
+is really remarkable in the industry
+because it's great at understanding all
+of these many different modalities, um,
+text and image and audio and video and
+code, um, but it can also output
+multiple modalities.
+>> Yeah, I think one of my favorite things
+is because it understands so many
+modalities, when you're building,
+especially when you're building apps,
+um, I upload a video of an animation,
+and it can understand the frames of that
+animation and then recreate that in
+code. And so, video understanding just
+unlocks a whole new set of use cases,
+uh, and I mean, so does all the other
+modalities.
+>> Yep. And the screenshots that you can
+take and use to inform the front-end
+design for some of Build's features are
+really, really powerful tools as well.
+Um, our generative media models are kind
+of testaments to this fact, um, that
+we're able to output video, um, we can
+output audio. We have some pretty
+exciting text-to-speech models and
+Gemini live models, um, and then also
+our live API, which we'll demo in just a
+second, gives you real-time interactions
+with the, uh, with Gemini itself. Um,
+and today,
+uh, you know, we've talked a lot about
+nano banana, um, aka Gemini 3.1 flash
+image,
+um, which gives you high-fidelity visual
+assets. Um, we've got nano banana 2,
+which you can try yourself in AI Studio.
+And today we've basically released Nano
+Banana for video.
+>> [laughter]
+>> Gemini only Omni Flash, which allows you
+to create anything from any input
+starting with video.
+>> Starting with video and I think the
+other thing is editing is such a tedious
+task, especially getting the little
+details right. And the fact that we have
+Nano Banana style editing for video now
+is like super exciting and in the API
+soon, so that'll be really fun to build
+with as well.
+>> 100% and if you haven't had a chance to
+try it yet, there's a really nice AI
+demo garden in the back of this
+building. If you're on site,
+that should allow you to create a
+commercial starring yourself using using
+Omni. It's called Omni Marshall.
+Be patient if there's a line.
+>> [laughter]
+>> But it's a lot of fun to try.
+If you're curious about generative
+media, make sure to go to this session.
+Build creative apps with Gen Media Suite
+later this week
+with a couple of a couple of folks from
+our team
+and they will be able to answer all of
+your questions.
+All of these models are stitched
+together and anti-gravity as kind of
+like the IDE that powers these
+experiences. We're all using
+anti-gravity pretty heavily at Google
+internally.
+>> Every day.
+>> Every single day to check in to check in
+code, to help review code, to kind of
+design these new experiences. And we're
+also using AI Studio
+for everything from product ideation to
+building apps to rapid prototyping.
+Because it is the fastest path from
+prompt to apps, but I really hate
+slides.
+>> Me too. I hate slides.
+>> Okay, so we both hate slides. It's much
+more fun to show these things in action.
+So let's go ahead and go to some demos
+so you can actually see these tools and
+we'll see how well the Wi-Fi holds up.
+Excellent.
+>> Okay, back in the playground.
+>> Back in the playground.
+>> So, for those who are not familiar, this
+is the AI Studio playground and
+homepage. Here, you can experiment with
+all of DeepMind's latest models. Uh you
+can tweak all the parameters to see
+what's what they're capable of. It's an
+amazing way to just get a sense of all
+the capabilities. And uh you can just
+take uh code snippets from here and go
+and build apps with them as well. But
+Paige, you want to kick it off with a
+demo?
+>> Yeah, absolutely. I'm going to zoom in a
+little bit so uh so we can see, and then
+also show you how you can uh kind of
+select different media types in AI
+Studio if you haven't seen this before.
+Um you can add files from Drive, you can
+upload files, record audio, camera, um
+add YouTube videos, um and you can also
+select some sample media. So, if I was
+to select um this video, add it to the
+prompt, um we've got Gemini 3.1
+flashlight pulled up, which is again
+kind of our most
+>> Cops optimized model. You can say
+>> It should be pretty fast. Um you can say
+create a table with timestamps
+um for all of the dinosaurs you see in
+this video. Um make sure to include a
+fun fact about each dinosaur. Um hit uh
+hit run. Um and we can see the number of
+tokens that's pulled from this
+5-minute-ish long video, it's around
+31,000.
+Um
+>> Fast.
+>> Very fast. We've got a table with the
+dinosaur name, the timestamps, the fun
+fact. And then if I hover over this
+token consumption, you can see that it
+took about a penny and a half in order
+to do all that work. Um which is pretty
+wild. And and then, just like Amar said,
+if you click get code, you can see all
+of the code that you would need to use
+to replicate whatever you just did,
+including search as a one-liner for a
+tool call, um this thinking config, and
+then the model selection that we have
+here up at the top. Um so that is
+playground in a nutshell. Um and it
+allows you to experiment not just with
+our Gemini family of models, but also
+things like uh like Nano Banana and some
+of the other video generation models
+that we have along the way.
+Um we also talked a little bit about
+Gemini Live.
+>> this one.
+>> Yes. And so Gemini Live gives you the
+opportunity to have a real-time
+conversation with the model, um but also
+share multimodal content. It's been
+around for a while, um but it's really
+really cool to think about building into
+your apps. Um so if I click share
+screen,
+it's going to ask me to select a Chrome
+tab. I'm going to go ahead and select
+that dinosaur table that we just created
+previously, though you could select any
+app or any tab. Um I'm going to go back
+to uh Google AI Studio, and I'm going to
+say,
+"Hey there, Gemini. Could you tell me
+what you see on the screen?"
+>> I am looking at the Google AI Studio.
+The main part of the screen shows a
+table of dinosaurs with timestamps and
+fun facts about them. For instance, it
+says Ornithomimus was a speedy dinosaur.
+Is there anything specific you'd like me
+to focus on?
+>> Does anybody speak a language other than
+English in the room?
+>> Arabic?
+>> Arabic. Awesome. I also heard Brazilian
+Portuguese or Portuguese Portuguese.
+>> Ooh.
+>> Excellent. [laughter]
+What? Chinese? Awesome. So I'm going to
+ask uh I'm going to ask uh the model to
+repeat what it just said, um but to say
+it in Chinese, and then we'll also try
+another couple of languages, but you
+have to fact-check me, um if that's
+okay. Cool.
+Hey there, Gemini. Could you repeat what
+you just said, but could you tell me in
+Chinese, please?
+>> Hǎo de. Méi wèntí. Wǒ kàn dào de shì
+Google
+>> Did it do okay?
+>> Excellent.
+>> Let's go.
+>> Wonderful. Amazing.
+>> [applause]
+>> Very cool. And then you can also So that
+was just kind of asking it to change
+languages dynamically within the context
+of the conversation. You can also say in
+the system instructions, only respond to
+the user in Brazilian Portuguese.
+If I have a person who will fact-check
+me in the audience for Brazilian
+Portuguese, yeah, excellent. And then
+I'm going to turn on grounding with
+Google Search and we are going to ask
+Gemini a question as well. So.
+Hey there, Gemini. Can you tell me what
+you see? Can you tell me what you see?
+>> [snorts]
+>> It was right. Okay.
+Cool, cool. Amazing. And then since it's
+got grounding with Google Search, I
+could also say,
+"Hey there, Gemini. Could you tell me
+what the weather is like today in
+Mountain View, California?"
+Was that also correct? Yep. Excellent.
+And you can also see the sources that it
+pulled in to help ground its outputs.
+And just like before, you can click get
+code and see everything that you would
+need in order to replicate the
+experiment that we just tried.
+>> That's awesome.
+>> Um so this is uh in in Python and
+TypeScript and .NET, whatever your
+favorite language might be, um both
+programmatic or uh computery, and uh AI
+Studio is really just a magical place to
+get started with all of these things. Um
+but it's not just the playground.
+>> Not just the playground. Yeah, there's a
+lot more.
+>> You want to show us builds and what
+you've all been cooking there?
+>> Yeah, so uh if you don't want to click
+get code and actually take code and
+build in an IDE, we offer a completely
+batteries-included building experience,
+and that's build mode here. So I'm just
+going to click that, and build mode
+effectively allows you to prompt any
+idea into life, uh and you'll be able to
+pick between all the capabilities that
+we have to offer. So you can do
+text-to-speech, music generation,
+databases, and the new thing we've added
+that we're super excited about is
+building Android apps directly from AI
+Studio. And so what I'm really excited
+about is you won't have to deal with any
+of the setup of Android apps or getting
+a simulator or anything like that
+working. You'll just be able to prompt
+an app to existence. So an idea I had
+was around this piano,
+but I wanted to do it for this foldable
+phone I have over here. Um and so
+>> Which is very fancy. How do I get one of
+those?
+>> Um you know, you just expense one.
+>> [laughter]
+>> So
+So all you have to do is say I want to
+make a foldable piano app
+for fold phones
+where the top half
+of the screen is a tutorial,
+and the bottom half are piano keys that
+I can play.
+>> Awesome.
+>> And the other thing I'll just show you
+is we just left it for a second, and
+it'll even give you suggestions that you
+can tab into your prompt. And so this
+just helps you build out a more complete
+prompt. If you don't know where to go,
+or if you're just curious about where
+the the could take you, which is always
+really fun.
+>> Yeah, so you can tap your complete your
+way into a startup idea.
+>> Yeah.
+>> what you were telling me?
+>> Exactly.
+>> Amazing.
+>> But, you know, I don't like that idea.
+So, I'm going to keep that away for now.
+And so, I can go ahead and hit build,
+and it'll go and start to build this
+idea out.
+Um and so, the other thing you'll see is
+AI Studio says right here it's
+generating a theme. Um and so, what's
+happening is while your app is building
+on the left, AI Studio is also able to
+de- design a bunch of uh design themes
+for your app. Um and super fun to just
+see the inspiration kind of come through
+from the model. So, you can see it's
+kind of giving us some interface ideas
+on how it's designing the app.
+>> Oh, that's pretty.
+>> You know, we can choose between a few
+different ones. Um even a video tutorial
+idea, which is pretty cool.
+Um or this elegant dark one, which I
+really do like.
+>> That is very pretty. I like the pastel
+colors.
+>> Yeah, super nice. I like the little glow
+it added. So, these things help you kind
+of, you know, I can hit select this
+design and I'll just add that prompt in.
+Or I can just skip that and let it build
+that first version of the app. Um but
+while that builds, I actually did start
+this before this demo.
+Um so, I do have it here. I'm just going
+to refresh this.
+Um and then we can go and build that one
+as well.
+>> And this app is generated natively in
+Kotlin, is that right?
+>> It's natively in Kotlin. And so, again,
+similar prompts. You can see my first
+prompt again, build a piano app,
+foldable thing. And if I hit code, you
+can see all the Kotlin code.
+And the other thing you saw earlier was
+we said that Antigravity Export is also
+in the app.
+>> Yeah.
+>> You can click export and then take that
+over
+uh and go from there.
+>> And it will also remember all of the
+context, all of the history, all of the
+kind of back-and-forth that you had in
+AI Studio as it brings it into
+Antigravity.
+>> Exactly. So, the whole conversation kind
+of flows through, which is which is
+really nice.
+But, okay. So, we have this install
+button. I'm just going to zoom out for a
+sec. Um and it allows you to basically
+connect any phone and then install it
+via USB. Uh Um, the USB can sometimes be
+fiddly on stage, so we're going to try
+something.
+Um, just going to kill the USB
+connection.
+And unlock my phone.
+Let's see if this works.
+>> Amazing.
+>> Yeah. [laughter]
+Let's see if it installs the latest
+version. Allow.
+Okay. Seems to be installing.
+And then
+hopefully any second now on AI Studio we
+will see the new build complete.
+>> Will install to the device. There it
+goes.
+>> So it's installed on the device and you
+can see I have this piano app now on my
+foldable phone.
+Um
+Yeah.
+>> [applause]
+>> Amazing.
+>> Yeah, and super fun because I think
+you're just going to see so many new
+developers come through who just wanted
+to make apps for their phone or the web
+and all they have to do is describe an
+AI Studio.
+>> Do you want to do you want to start it a
+little bit?
+>> Should I play it? Yeah. See how it goes.
+>> I'm not sure if y'all can hear here, but
+it looks like it's popped up on the
+screen as well.
+>> Yeah.
+>> So maybe maybe we could also try in the
+Android emulator.
+>> Well, the emulator is getting audio
+soon.
+>> Got you.
+>> [laughter]
+>> Got you.
+>> Yeah, I'm not very good, but this is
+what exactly why I need this app.
+So yeah, this is coming and then soon
+we'll also have Play Store distribution
+as well. So you'll be able to just
+submit an app from the place to the Play
+Store from here
+and then you're published to the world.
+>> Amazing.
+>> Yeah.
+Uh, alongside Android development soon
+we'll also have the ability to build
+Well, actually rolling out today is
+Workspace apps as well.
+>> Which means you can connect Gmail and
+calendar and all of the other Workspace
+products into AI Studio. Is that right?
+Just through prompting?
+>> Just through prompting.
+>> Yep.
+>> Yeah. Do you have an idea?
+>> I I have an idea about
+um
+So, I know that we've been talking about
+our meeting invites
+and our calendars are a little bit
+overwhelmed.
+Wasn't there an idea that you had around
+sort of calendar roulette?
+>> I did. I did. You know, I've already
+built that one. Should I show you?
+>> Yep, let's see it.
+>> It's uh it's a pretty fun one. Um
+It's a slightly scary app for those who
+might not want to, you know, trust a
+model to do this, but I basically was
+like, "Hey, just look at my calendar,
+find any meeting, and then just delete
+it."
+>> [laughter]
+>> But definitely ask me before you do that
+because I I need to check if I can
+>> sure it's not a meeting with Logan.
+>> And make sure it's not a meeting with
+Logan, [laughter] yeah. So, we're just
+going to sign in.
+Uh a little risky.
+And then you can see it's like picked up
+some meetings, you know, it's it's got
+that, and I can spin it, and then it's
+going to go and figure out what meeting
+to delete.
+>> I love that it's got all of the IO,
+keynote, launch cow, all of these
+[laughter] things.
+>> Yeah.
+>> Um and it's automatically used OAuth to
+to log you in with your Google account
+based on our Firebase integration.
+>> Exactly. And so, you can see it even
+knows there are 15 events later today.
+So, I definitely want to get out of few
+of those. I'll be using this app to make
+that happen.
+>> Excellent. Sounds good to me.
+So cool. So So, this is a great overview
+of playground and build some of the
+newest features in both.
+>> Yeah.
+>> Um and I think that we're really, really
+excited to see what y'all can create
+with AI Studio and with all of these
+tools.
+To access it, all people have to do is
+go to ai.dev, right?
+>> Yeah, they only they only have to go to
+ai.dev. Somebody's telling me to spin
+this wheel, and I'm too afraid to see
+what it's going to do live. So, we'll
+save that for later, you and me.
+>> [laughter]
+>> Cool, cool, cool. Well, let's go back.
+So, this is a brief taste of all of the
+things that we've been building in the
+AI Studio team. Um if you're curious
+about AI Studio, you're in luck because
+the next section is all about AI Studio
+and to gravity um and how you can
+incorporate those workflows into your
+own projects.
+Um we've also released something called
+the interactions API within AI Studio.
+So you can create an API key and get
+started with agents um and build new
+agentic experiments with the uh with the
+Gemini APIs. If you're curious about
+that, about our managed agent platform,
+um we talked a little bit about it in
+the keynotes earlier this morning. But
+>> it's basically giving you the ability to
+uh that same vibe coding style that you
+just saw where you can describe in
+natural language anything. Uh it will
+generate a managed agent for you
+connecting to services and running on a
+cloud VM.
+>> Yeah. And it's the anti-gravity agent
+powering all of it, which is really
+awesome. So you have the exact same
+power and capabilities working in an
+environment with just one API call.
+>> Amazing. Uh and if you're curious about
+that, um make sure to go see the build
+agents with Gemini API session with
+Philip and Thor um later this week. Uh
+they'll also be touching a little bit
+around the Gemini Live API, around our
+text-to-speech models, and all of the
+things that you can do with those.
+Um
+we've not only been shipping frontier
+models.
+>> Right.
+>> And something that's really near and
+dear to my heart is open models.
+>> Open models, open-source models. And I
+think to see how far Gemma 4 has come uh
+and what's possible with it. And
+especially the demos we've been seeing
+this week on how it's running on device
+and pulling off some incredible things.
+>> Absolutely. And Gemma 4 is available to
+test out in the playground in AI Studio
+as well for folks who want to get
+started. An under known fact, I think,
+is that you get a non-zero number of uh
+Gemma calls on the the APIs for free. Um
+so if you wanted to incorporate it into
+your app, it's great at understanding
+video, audio,
+images, text, code, kind of all of the
+above.
+And you can kind of compare and contrast
+with the Gemini models and other models
+that you might have incorporated into
+your apps as well.
+We've got a huge huge Gemma 4 community
+that's pulling
+pulling down many many downloads across
+across the world. Gemma supports over
+140 different languages. You can find it
+today on Hugging Face. It has a 256,000
+token context window.
+And if you want to learn more about the
+Gemma open model family, make sure to
+check out the session with Olivier, Gus,
+and Ian
+also later this week. We've also been
+really blessed to have strong
+partnerships with the Unsloth community,
+with Llama,
+and many many others like Kaggle
+to bring these Gemma models into the
+world. And it's it's been
+you know, only the beginning for what's
+possible with Gemma 4.
+So, this is also for folks who haven't
+tried running models at the edge before.
+Have actually I'm really curious. How
+many folks have used open models before
+or using them in your projects?
+Few hands. If not, definitely make sure
+to try out the Google AI Edge Gallery.
+It's a great way to bring down costs for
+your projects, especially as the models
+that you can use on mobile devices, on
+laptops are getting more and more
+powerful.
+>> Yeah, I especially love the offline
+usage because I was on a plane ride for
+about 8 hours and Gemma 4 by coding with
+it and it actually worked really well.
+>> Amazing.
+>> So, it's amazing to see that all run
+locally.
+>> Yep. And Gemma 4 can run on your laptop.
+Gemma 2 can even run on a mobile device.
+So, I think we've added it to the Pixel
+10 Um, so that it can power some of the
+on device agentic use cases that that
+folks might want on on Android and on
+Pixel devices.
+And again, if you're curious about on
+device ML, um, Sachin and Aaron will
+tell you all about it later this week,
+too.
+Um,
+Google is kind of special though and the
+in the sense that we aren't just a
+company that has, uh, you know, models
+that are available via REST APIs, models
+that are available to download and to
+fine-tune and to use for your projects.
+We also have our open-source TPU
+software stack.
+>> Yeah.
+>> Um, so everything from inference to
+post-training, pre-training, and model
+building, um, kind of the usual suspects
+like vLLM, um, for TPU inference, um,
+for both JAX and PyTorch, T5X for
+post-training with RL and agentic
+workflows, MAX Text, um, and then also
+JAX and Torch TPU, um, for making TPUs
+run really, really fast and in a really
+performant way. Um, it's been amazing to
+see how much JAX has been able to push
+the boundaries for every single model
+that we build at Google. Um, and our
+DeepMind team is exclusively using JAX
+to build out all of its all of its
+models and infrastructure.
+And if you're curious about that, uh,
+make sure to go to Josh, uh, Josh's
+session, um, later this week where he'll
+be talking about how you can scale AI,
+um, with the TPU software stack.
+Uh, this full stack approach is really
+unique. Um, everything from AI
+infrastructure to data, to models, to
+our AI platform on Cloud, um, to things
+like agents and apps via Gemini Spark,
+via AI Studio, um, and more. And also
+all of this being done in a very secure
+way. Um, I was really excited to see the
+SynthID announcements earlier today.
+>> the partners. Yeah.
+>> Yeah, partnering with, uh, even, uh, you
+know, other model service providers
+across the industry, um, and attempting
+to do this in a way that really,
+um, is kind of putting safety and
+responsibility at
+>> I think we'll need to give the calendar
+alert app to everybody here to clear
+their schedule for all these sessions,
+yeah.
+>> This is true.
+>> [laughter]
+>> Amazing. So, what's next? Like, I guess
+that's the the general question. Like,
+>> Always.
+>> given given all of these things that
+exist today, that were announced today,
+this overwhelming onslaught of AI
+that's, uh, even just from Google and
+the DeepMind team that's being released
+into the world, um, what are you most
+excited about that's coming next?
+>> Well, I love all the robotic stuff. It's
+always super exciting. I know you love
+the robots, too.
+>> I really, really love the robotic stuff.
+Um, especially especially since because
+of the Gemini APIs, they can be put
+pretty much anywhere.
+>> On anywhere, but
+>> Any any device that can call a REST API
+is capable of using, uh, using our
+robotics.
+>> Yeah, and there was a great demo of
+Reachy Mini from Hugging Face, and it
+was using Gemini robotics, uh, and
+that's open source as well, the that
+project.
+>> Yeah.
+>> Um, but yeah, we recently announced
+Gemini robotics 1.6,
+um, and it's just, uh, incredible to see
+that out in the wild now.
+>> Yeah, and I I think it's also, uh,
+really powerful in the sense that, you
+know, you mentioned the Reachy Mini,
+>> Yeah.
+>> there's also a beautiful open-source
+project from Stanford called the Pupper,
+uh, which is used for their CS
+curriculum. It, uh, has a Raspberry Pi
+powering it behind the scenes, all of
+the parts are 3D printed, um, but since
+it's just kind of using this commodity
+hardware, it can call the Gemini Live
+API, use Gemini robotics ER to kind of
+manipulate this little robotic dog, and
+you can ask it to do anything from like
+follow me, and it will follow you around
+the stage.
+>> Very cool.
+>> Yeah, or to like go and fetch that ball.
+>> training is needed for that one?
+>> Mostly, uh, so it's not any training
+required. It's, uh, you know, batteries
+included, like the the first dog that
+you do not have to train.
+>> Yeah.
+>> But the, uh, but you just have a
+conversation with Pupper and it's
+capable of having a
+having kind of this dynamic uh interop
+with you across a broad spectrum of use
+cases.
+>> That's awesome.
+>> Yeah.
+In addition to that, we also have our
+world model family, um Genie 3, which
+was touched on a little bit today in the
+keynote.
+>> Yeah, part of the Omni model and that
+gives it the understanding of the
+physics of the world and how things
+actually work. Uh and that's why you see
+the video coherence is so good cuz it
+actually understands how things actually
+need to work in the real world.
+>> Absolutely. And you can describe any
+world that you would like to experience
+and then navigate around it using your
+arrow keys in order to create uh create
+a short video. So, as an example, um
+this is a prompt that uh you know, a
+tranquil waterfall cliff area featuring
+dynamic water physics. And then a
+character, which is a high-speed paper
+airplane. And so, you can see similar to
+what Omar was just mentioning, the
+physics of the airplane as it's kind of
+interacting with some of the splashes,
+um the physics of the currents in the
+river, how this is moving and banking.
+>> Um and then even the reflections of the
+light on on the water.
+>> It's so so nice. Could you play it
+again, please?
+Awesome, thank you. And so, you can see
+even the splashes um kind of going down
+in the water as it jumps off the
+waterfall. Um so, I strongly strongly
+encourage you all to play around with
+Genie 3. It's available today if you
+have a Google AI Ultra subscription, um
+in addition to many, many of the other
+products that were featured in the
+keynotes this morning.
+Awesome.
+And then
+So, I think the the most important thing
+to call out is that we're building kind
+of the first generation of tools for
+people who are AI native. Um and who
+really don't have to ask for permission
+in order to create anything that they've
+been imagining.
+>> I keep telling people all you literally
+have to do is just go to that prompt box
+and describe your idea. And people have
+asked me, you know, what what is the tip
+you have or something for folks. And I
+usually just go in assuming that the
+idea I have is going to work.
+>> Yep.
+>> Uh and you'll realize how far you can
+actually push the model uh to make your
+idea very real. And if it doesn't work
+in this iteration, I guarantee you
+another model iteration and you'll be
+able to make that idea come to life.
+>> Yep. And since we've been adding
+databases to AI Studio, authentication,
+um even things like these workspace
+integrations, it really does feel like
+you can go very, very far without ever
+needing to leave the browser and popping
+into an IDE.
+>> Yeah. And soon on your phone, too, with
+the AI Studio mobile app coming very
+soon.
+>> Amazing. And the uh like I can't wait
+for this world where I'm just walking
+around, describe an idea that I have,
+and then by the time I get home, it's
+already landed in my inbox.
+>> You're just a few weeks away from that.
+>> Very cool. Amazing. So, for anyone who
+is uh curious, excited, who wants to try
+out and test more, wants to try our
+models,
+um
+uh make sure to go to ais.studio/build.
+Um and we also just want to say thank
+you so much for coming to IO this year,
+for your energy, for your excitement.
+>> Yeah.
+>> Um we really appreciate y'all
+uh and can't wait to see what you build.
+>> [applause]
+>> Yeah.
+>> Yep.

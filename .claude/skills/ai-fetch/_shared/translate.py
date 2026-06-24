@@ -52,38 +52,40 @@ class Translator:
         import tempfile
         import os
 
-        # Use temp file to avoid Windows pipe encoding issues
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False, encoding='utf-8') as f:
-            temp_path = f.name
-
         try:
-            # Build curl command that writes to temp file
-            # Use larger max_tokens to avoid truncation (min 500 for simple translations)
+            # Write JSON to temp file to avoid command line encoding issues
             max_tokens_value = max(500, min(4096, len(text) * 4))
+            request_data = json.dumps({
+                'model': self.model,
+                'max_tokens': max_tokens_value,
+                'messages': [{'role': 'user', 'content': f'翻译成中文，只返回翻译结果，不要解释：\n\n{text}'}]
+            }, ensure_ascii=False)
+
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as f:
+                f.write(request_data)
+                temp_req_path = f.name
+
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False, encoding='utf-8') as f:
+                temp_out_path = f.name
+
+            # Use @file syntax to avoid command line encoding issues
             cmd = [
                 'curl', '-s', '--max-time', '60', '-X', 'POST',
                 self.api_url,
                 '-H', f'Authorization: Bearer {self.api_key}',
                 '-H', 'Content-Type: application/json',
-                '-d', json.dumps({
-                    'model': self.model,
-                    'max_tokens': max_tokens_value,
-                    'messages': [{'role': 'user', 'content': f'Translate to Chinese:\n\n{text}'}]
-                }, ensure_ascii=False),
-                '-o', temp_path
+                '-d', '@' + temp_req_path,
+                '-o', temp_out_path
             ]
 
             subprocess.run(cmd, timeout=90)
 
-            # Read response as binary to handle encoding correctly
-            with open(temp_path, 'rb') as f:
+            # Read response
+            with open(temp_out_path, 'rb') as f:
                 raw_bytes = f.read()
 
-            # Decode with surrogateescape to preserve any problematic bytes
-            content = raw_bytes.decode('utf-8', errors='surrogateescape')
-
             # Parse JSON
-            data = json.loads(content)
+            data = json.loads(raw_bytes)
 
             # Extract text from response (supports both OpenAI and Anthropic formats)
             text_result = None
@@ -107,28 +109,23 @@ class Translator:
             return text
         except json.JSONDecodeError:
             return text
-        except Exception:
+        except Exception as e:
+            print(f"Translation error: {e}")
             return text
         finally:
-            # Clean up temp file
-            if os.path.exists(temp_path):
-                try:
-                    os.remove(temp_path)
-                except Exception:
-                    pass
+            # Clean up temp files
+            for p in [temp_req_path, temp_out_path]:
+                if os.path.exists(p):
+                    try:
+                        os.remove(p)
+                    except Exception:
+                        pass
 
     def _clean_translation(self, text: str) -> str:
         """Clean up translation output."""
-        # Remove "Translation:" prefix if present
-        text = re.sub(r'^\*\*Translation:\*\*\s*', '', text, flags=re.IGNORECASE)
-        text = re.sub(r'^Translation:\s*', '', text, flags=re.IGNORECASE)
-
-        # Remove thinking/reasoning blocks
-        text = re.sub(r'<thinking>.*?</thinking>', '', text, flags=re.DOTALL | re.IGNORECASE)
-
-        # Remove markdown formatting that might be added
+        # Remove markdown formatting
+        text = re.sub(r'\*\*(.*?)\*\*', r'\1', text)
         text = text.strip()
-
         return text
 
 
