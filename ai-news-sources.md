@@ -21,92 +21,100 @@
 | 7 | | cuDNN | https://developer.nvidia.com/cudnn | 加速库 | ✅ | - | - |
 | 8 | | NCCL | https://developer.nvidia.com/nccl | 多卡通信 | ✅ | - | - |
 | 9 | | TensorRT | https://developer.nvidia.com/tensorrt | 推理优化 | ✅ | - | - |
-| 9.1 | | TensorRT Release Notes | https://docs.nvidia.com/deeplearning/tensorrt/release-notes/ | 产品更新日志 | ✅ | - | - |
-| 10 | | TensorRT-LLM | https://developer.nvidia.com/tensorrt-llm | 大模型推理 | ✅ | - | - |
-| 11 | | TensorRT-LLM GitHub | https://github.com/NVIDIA/TensorRT-LLM | 企业级LLM推理优化核心框架 | ✅ | 否 | daily |
-| 12 | | Triton Inference Server | https://developer.nvidia.com/triton-inference-server | 模型服务 | ✅ | - | - |
-| 13 | | NVIDIA NIM | https://developer.nvidia.com/nim | 推理微服务 | ✅ | - | - |
-| 14 | | NeMo | https://developer.nvidia.com/nemo | 生成式AI套件 | ✅ | - | - |
-| 15 | | Riva | https://developer.nvidia.com/riva | 语音AI | ✅ | - | - |
-| 15.1 | | Riva Release Notes | https://docs.nvidia.com/riva/ | 产品更新日志 | ✅ | - | - |
-| 16 | | DeepStream | https://developer.nvidia.com/deepstream-sdk | 视频AI | ✅ | - | - |
-| 17 | | Isaac 机器人平台 | https://developer.nvidia.com/isaac | 机器人仿真 | ✅ | - | - |
-| 18 | | Omniverse | https://www.nvidia.com/omniverse | 数字孪生 | ✅ | - | - |
-| 19 | | NGC 容器仓库 | https://catalog.ngc.nvidia.com | 镜像仓库 | ✅ | - | - |
-| 20 | | Cosmos 物理世界模型 | https://www.nvidia.com/en-us/ai/cosmos/ | 物理AI基座模型 | ✅ | - | - |
-| 21 | | cuDF/RAPIDS | https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries/cudf | GPU数据分析库 | ✅ | - | - |
-| 22 | | cuDNN GitHub | https://github.com/NVIDIA/cudnn | GPU加速库 | ✅ | - | - |
-| 23 | | CUDA GitHub | https://github.com/NVIDIA/cuda | 基础工具包 | ✅ | - | - |
-| 24 | AMD | AMD ROCm | https://rocm.docs.amd.com | 开源AI计算平台 | ✅ | - | - |
-| 25 | | AMD Instinct | https://www.amd.com/en/accelerators/instinct.html | AI GPU | ✅ | - | - |
-| 26 | Intel | Intel Gaudi | https://habana.ai | AI加速器 | ✅ | - | - |
-| 27 | | oneAPI | https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html | 异构计算框架 | ✅ | - | - |
-| 28 | Cerebras | Cerebras WSE-3 | https://www.cerebras.net | 晶圆级AI芯片 | ✅ | 是 | daily |
-| 29 | CoreWeave | CoreWeave Cloud | https://coreweave.com | AI云计算 | ✅ | 是 | daily |
+| 10 | | TensorRT Release Notes | https://docs.nvidia.com/deeplearning/tensorrt/release-notes/ | 产品更新日志 | ✅ | - | - |
+| 11 | | TensorRT-LLM | https://developer.nvidia.com/tensorrt-llm | 大模型推理 | ✅ | - | - |
+| 12 | | TensorRT-LLM GitHub | https://github.com/NVIDIA/TensorRT-LLM | 企业级LLM推理优化核心框架 | ✅ | 否 | daily |
+| 13 | | Triton Inference Server | https://developer.nvidia.com/triton-inference-server | 模型服务 | ✅ | - | - |
+| 14 | | NVIDIA NIM | https://developer.nvidia.com/nim | 推理微服务 | ✅ | - | - |
+| 15 | | NeMo | https://developer.nvidia.com/nemo | 生成式AI套件 | ✅ | - | - |
+| 16 | | NeMo Release Notes | https://docs.nvidia.com/nemo/ | 产品更新日志 | ✅ | - | - |
+| 17 | | Riva | https://developer.nvidia.com/riva | 语音AI | ✅ | - | - |
+| 18 | | Riva Release Notes | https://docs.nvidia.com/riva/ | 产品更新日志 | ✅ | - | - |
+| 19 | | DeepStream | https://developer.nvidia.com/deepstream-sdk | 视频AI | ✅ | - | - |
+| 20 | | Isaac 机器人平台 | https://developer.nvidia.com/isaac | 机器人仿真 | ✅ | - | - |
+| 21 | | Isaac Release Notes | https://docs.nvidia.com/isaac/ | 产品更新日志 | ✅ | - | - |
+| 22 | | Omniverse | https://www.nvidia.com/omniverse | 数字孪生 | ✅ | - | - |
+| 23 | | NGC 容器仓库 | https://catalog.ngc.nvidia.com | 镜像仓库 | ✅ | - | - |
+| 24 | | Cosmos 物理世界模型 | https://www.nvidia.com/en-us/ai/cosmos/ | 物理AI基座模型 | ✅ | - | - |
+| 25 | | cuDF/RAPIDS | https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries/cudf | GPU数据分析库 | ✅ | - | - |
+| 26 | | cuDNN GitHub | https://github.com/NVIDIA/cudnn | GPU加速库 | ✅ | - | - |
+| 27 | | CUDA GitHub | https://github.com/NVIDIA/cuda | 基础工具包 | ✅ | - | - |
+| 28 | AMD | AMD ROCm | https://rocm.docs.amd.com | 开源AI计算平台 | ✅ | - | - |
+| 29 | | AMD Instinct | https://www.amd.com/en/accelerators/instinct.html | AI GPU | ✅ | - | - |
+| 30 | Intel | Intel Gaudi | https://habana.ai | AI加速器 | ✅ | - | - |
+| 31 | | oneAPI | https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html | 异构计算框架 | ✅ | - | - |
+| 32 | Cerebras | Cerebras WSE-3 | https://www.cerebras.net | 晶圆级AI芯片 | ✅ | 是 | daily |
+| 33 | CoreWeave | CoreWeave Cloud | https://coreweave.com | AI云计算 | ✅ | 是 | daily |
 
 ### 1.2 大模型原生企业
 
 | # | 三级 | 源名 | URL | 推荐理由 | 状态 | 代理 | 用途 |
 |---|------|------|-----|---------|------|------|------|
 | 1 | OpenAI | OpenAI API | https://platform.openai.com/docs | API文档 | ✅302→ | 是 | both |
-| 1.1 | | OpenAI Release Notes | https://platform.openai.com/docs/changelog | 产品更新日志 | ✅302→ | 是 | daily |
-| 2 | | ChatGPT | https://chat.openai.com | 产品页 | ⚠️403 | 是 | both |
-| 3 | | OpenAI Blog | https://openai.com/blog | 官方博客 | ⚠️403 | 是 | both |
-| 4 | | OpenAI DevDay | https://openai.com/index | 年度开发者大会 | ⚠️403 | 是 | daily |
-| 5 | | DALL-E | https://openai.com/index/dall-e-3 | 图像生成 | ⚠️403 | 是 | daily |
-| 6 | Anthropic | Claude API | https://platform.claude.com | API文档 | ✅ | 否 | both |
-| 7 | | Claude Code | https://platform.claude.com/claude-code | AI编程 | ✅ | 否 | both |
-| 8 | | Claude Managed Agents | https://claude.com/platform | Agent编排API | ✅ | 是 | daily |
-| 9 | | Anthropic News | https://www.anthropic.com/news | 官方新闻 | ✅ | 否 | daily |
-| 10 | | Anthropic Research | https://www.anthropic.com/research | 研究博客 | ✅ | 是 | daily |
-| 11 | | Anthropic Engineering | https://www.anthropic.com/engineering | 工程博客 | ✅ | 是 | daily |
-| 12 | | Anthropic Events | https://www.anthropic.com/events | 发布会/演讲 | ✅ | 是 | daily |
-| 13 | | Claude Blog | https://claude.com/blog | 用户博客/产品更新 | ✅302→ | 是 | daily |
-| 13.1 | | Anthropic Releases | https://docs.anthropic.com/en/docs/about-claude/releases | 产品更新日志 | ✅ | 是 | daily |
-| 14 | DeepSeek | DeepSeek 官网 | https://www.deepseek.com | 产品页 | ✅ | 否 | both |
-| 15 | | DeepSeek API | https://api-docs.deepseek.com | API文档 | ✅ | 否 | both |
-| 16 | | DeepSeek 开放平台 | https://platform.deepseek.com | 模型调用平台 | ✅ | 否 | both |
-| 17 | | DeepSeek App | https://chat.deepseek.com | C端产品 | ✅ | 否 | both |
-| 18 | | DeepSeek News | https://www.deepseek.com/en/news | 官方博客 | ✅ | 否 | daily |
-| 19 | | DeepSeek-V3 | https://github.com/deepseek-ai/DeepSeek-V3 | 国产开源强模型 | ✅ | 否 | daily |
-| 20 | | DeepSeek-R1 | https://github.com/deepseek-ai/DeepSeek-R1 | 推理优化模型 | ✅ | 否 | daily |
-| 21 | | DeepSeek-Coder V2 | https://github.com/deepseek-ai/DeepSeek-Coder-V2 | 编程辅助模型 | ✅ | 否 | daily |
-| 22 | Mistral | Mistral API | https://docs.mistral.ai | API文档 | ✅ | 是 | both |
-| 22.1 | | Mistral Docs | https://docs.mistral.ai/getting-started/concepts | 产品文档 | ✅ | 是 | daily |
-| 23 | | Mistral Studio | https://mistral.ai/products/studio/ | 模型部署平台 | ✅ | 是 | daily |
-| 24 | | Mistral Forge | https://mistral.ai/products/forge/ | 模型训练/对齐/评估 | ✅ | 是 | daily |
-| 25 | | Mistral Vibe | https://mistral.ai/products/vibe/ | Agent开发平台 | ✅ | 是 | daily |
-| 26 | | Mistral Vibe Code | https://mistral.ai/products/vibe/code/ | 编码Agent | ✅ | 是 | daily |
-| 27 | | Mistral Compute | https://mistral.ai/products/compute/ | 训练/推理基础设施 | ✅ | 是 | daily |
-| 28 | | Voxtral | https://mistral.ai/news/voxtral-tts/ | 语音TTS/转录 | ✅ | 是 | daily |
-| 29 | | Mistral OCR | https://mistral.ai/news/mistral-ocr-3/ | 文档OCR | ✅ | 是 | daily |
-| 30 | | Codestral | https://mistral.ai/news/codestral-25-08/ | 编程模型 | ✅ | 是 | daily |
-| 31 | | Pixtral | https://mistral.ai/news/pixtral-large/ | 多模态模型 | ✅ | 是 | daily |
-| 32 | | Devstral | https://mistral.ai/news/devstral-2-vibe-cli/ | 代码Agent | ✅ | 是 | daily |
-| 33 | | Le Chat | https://chat.mistral.ai | 对话助手 | ✅ | 是 | daily |
-| 34 | | Mistral News | https://mistral.ai/news/ | 官方博客 | ✅ | 是 | daily |
-| 35 | | La Plateforme | https://console.mistral.ai | 控制台 | ✅302→ | 是 | daily |
-| 36 | xAI | Grok-4.3 | https://docs.x.ai | 文本生成模型 | ✅ | 是 | both |
-| 37 | | Voice API | https://docs.x.ai | TTS/STT/实时语音 | ✅ | 是 | daily |
-| 38 | | Imagine API | https://docs.x.ai | 图像/视频生成 | ✅ | 是 | daily |
-| 39 | | xAI Blog | https://x.ai/blog | 官方博客 | ✅ | 是 | daily |
-| 40 | Cohere | Command API | https://docs.cohere.com/docs/command | API文档 | ✅ | 否 | daily |
-| 41 | | Command A+ | https://cohere.com/blog/command-a-plus | 高性能模型 | ✅ | 否 | daily |
-| 42 | | Aya Models | https://docs.cohere.com/docs/aya | 多语言模型 | ✅ | 否 | daily |
-| 43 | | Transcribe | https://cohere.com/blog/transcribe | 语音转文字 | ✅ | 否 | daily |
-| 44 | | Embed API | https://docs.cohere.com/docs/embeddings | 向量API | ✅ | 否 | daily |
-| 45 | | Rerank | https://docs.cohere.com/docs/rerank | 搜索重排 | ✅ | 否 | daily |
-| 46 | | North | https://cohere.com/blog/north-mini-code | 企业AI平台 | ✅ | 否 | daily |
-| 47 | | Cohere Blog | https://cohere.com/blog | 研究博客 | ✅ | 否 | daily |
-| 48 | | Cohere Newsroom | https://cohere.com/newsroom | 产品更新 | ✅ | 否 | daily |
-| 49 | AI21 Labs | Jurassic-2 | https://www.ai21.com | 文本生成AI | ✅ | 是 | daily |
-| 50 | | AI21 Blog | https://www.ai21.com/blog | 研究博客 | ✅ | 是 | daily |
-| 51 | Stability AI | Stability AI News | https://stability.ai/news-updates | 公司动态/发布 | ✅302→ | 是 | daily |
-| 52 | Together AI | Together Blog | https://www.together.ai/blog | 研究博客 | ✅ | 是 | daily |
-| 53 | Replicate | Replicate | https://replicate.com | 模型运行平台 | ✅ | 是 | daily |
-| 54 | | Replicate Changelog | https://replicate.com/changelog | 产品更新日志 | ✅ | 是 | daily |
-| 55 | Perplexity | Perplexity Blog | https://blog.perplexity.ai | 研究博客 | ✅ | 是 | daily |
-| 56 | 01.AI | Yi系列博客 | https://www.lingyiwanwu.com/blog | 开源LLM | ✅ | 否 | daily |
+| 2 | | OpenAI Release Notes | https://platform.openai.com/docs/changelog | 产品更新日志 | ✅302→ | 是 | daily |
+| 3 | | ChatGPT | https://chat.openai.com | 产品页 | ⚠️403 | 是 | both |
+| 4 | | OpenAI Blog | https://openai.com/blog | 官方博客 | ⚠️403 | 是 | both |
+| 5 | | OpenAI DevDay | https://openai.com/index | 年度开发者大会 | ⚠️403 | 是 | daily |
+| 6 | | DALL-E | https://openai.com/index/dall-e-3 | 图像生成 | ⚠️403 | 是 | daily |
+| 7 | Anthropic | Claude API | https://platform.claude.com | API文档 | ✅ | 否 | both |
+| 8 | | Claude Code | https://platform.claude.com/claude-code | AI编程 | ✅ | 否 | both |
+| 9 | | Claude Managed Agents | https://claude.com/platform | Agent编排API | ✅ | 是 | daily |
+| 10 | | Anthropic News | https://www.anthropic.com/news | 官方新闻 | ✅ | 否 | daily |
+| 11 | | Anthropic Research | https://www.anthropic.com/research | 研究博客 | ✅ | 是 | daily |
+| 12 | | Anthropic Engineering | https://www.anthropic.com/engineering | 工程博客 | ✅ | 是 | daily |
+| 13 | | Anthropic Events | https://www.anthropic.com/events | 发布会/演讲 | ✅ | 是 | daily |
+| 14 | | Claude Blog | https://claude.com/blog | 用户博客/产品更新 | ✅302→ | 是 | daily |
+| 15 | | Anthropic Releases | https://docs.anthropic.com/en/docs/about-claude/releases | 产品更新日志 | ✅ | 是 | daily |
+| 16 | DeepSeek | DeepSeek 官网 | https://www.deepseek.com | 产品页 | ✅ | 否 | both |
+| 17 | | DeepSeek API | https://api-docs.deepseek.com | API文档 | ✅ | 否 | both |
+| 18 | | DeepSeek 开放平台 | https://platform.deepseek.com | 模型调用平台 | ✅ | 否 | both |
+| 19 | | DeepSeek App | https://chat.deepseek.com | C端产品 | ✅ | 否 | both |
+| 20 | | DeepSeek News | https://www.deepseek.com/en/news | 官方博客 | ✅ | 否 | daily |
+| 21 | | DeepSeek-V3 | https://github.com/deepseek-ai/DeepSeek-V3 | 国产开源强模型 | ✅ | 否 | daily |
+| 22 | | DeepSeek-R1 | https://github.com/deepseek-ai/DeepSeek-R1 | 推理优化模型 | ✅ | 否 | daily |
+| 23 | | DeepSeek-Coder V2 | https://github.com/deepseek-ai/DeepSeek-Coder-V2 | 编程辅助模型 | ✅ | 否 | daily |
+| 24 | Mistral | Mistral API | https://docs.mistral.ai | API文档 | ✅ | 是 | both |
+| 25 | | Mistral Release Notes | https://docs.mistral.ai/changelog | 产品更新日志 | ✅ | 是 | daily |
+| 26 | | Mistral Studio | https://mistral.ai/products/studio/ | 模型部署平台 | ✅ | 是 | daily |
+| 27 | | Mistral Forge | https://mistral.ai/products/forge/ | 模型训练/对齐/评估 | ✅ | 是 | daily |
+| 28 | | Mistral Vibe | https://mistral.ai/products/vibe/ | Agent开发平台 | ✅ | 是 | daily |
+| 29 | | Mistral Vibe Code | https://mistral.ai/products/vibe/code/ | 编码Agent | ✅ | 是 | daily |
+| 30 | | Mistral Compute | https://mistral.ai/products/compute/ | 训练/推理基础设施 | ✅ | 是 | daily |
+| 31 | | Voxtral | https://mistral.ai/news/voxtral-tts/ | 语音TTS/转录 | ✅ | 是 | daily |
+| 32 | | Mistral OCR | https://mistral.ai/news/mistral-ocr-3/ | 文档OCR | ✅ | 是 | daily |
+| 33 | | Codestral | https://mistral.ai/news/codestral-25-08/ | 编程模型 | ✅ | 是 | daily |
+| 34 | | Pixtral | https://mistral.ai/news/pixtral-large/ | 多模态模型 | ✅ | 是 | daily |
+| 35 | | Devstral | https://mistral.ai/news/devstral-2-vibe-cli/ | 代码Agent | ✅ | 是 | daily |
+| 36 | | Le Chat | https://chat.mistral.ai | 对话助手 | ✅ | 是 | daily |
+| 37 | | Mistral News | https://mistral.ai/news/ | 官方博客 | ✅ | 是 | daily |
+| 38 | | La Plateforme | https://console.mistral.ai | 控制台 | ✅302→ | 是 | daily |
+| 39 | xAI | Grok-4.3 | https://docs.x.ai | 文本生成模型 | ✅ | 是 | both |
+| 40 | | Voice API | https://docs.x.ai | TTS/STT/实时语音 | ✅ | 是 | daily |
+| 41 | | Imagine API | https://docs.x.ai | 图像/视频生成 | ✅ | 是 | daily |
+| 42 | | xAI Blog | https://x.ai/blog | 官方博客 | ✅ | 是 | daily |
+| 43 | Cohere | Command API | https://docs.cohere.com/docs/command | API文档 | ✅ | 否 | daily |
+| 44 | | Command A+ | https://cohere.com/blog/command-a-plus | 高性能模型 | ✅ | 否 | daily |
+| 45 | | Aya Models | https://docs.cohere.com/docs/aya | 多语言模型 | ✅ | 否 | daily |
+| 46 | | Transcribe | https://cohere.com/blog/transcribe | 语音转文字 | ✅ | 否 | daily |
+| 47 | | Embed API | https://docs.cohere.com/docs/embeddings | 向量API | ✅ | 否 | daily |
+| 48 | | Rerank | https://docs.cohere.com/docs/rerank | 搜索重排 | ✅ | 否 | daily |
+| 49 | | North | https://cohere.com/blog/north-mini-code | 企业AI平台 | ✅ | 否 | daily |
+| 50 | | Cohere Blog | https://cohere.com/blog | 研究博客 | ✅ | 否 | daily |
+| 51 | | Cohere Newsroom | https://cohere.com/newsroom | 产品更新 | ✅ | 否 | daily |
+| 52 | AI21 Labs | Jurassic-2 | https://www.ai21.com | 文本生成AI | ✅ | 是 | daily |
+| 53 | | AI21 Blog | https://www.ai21.com/blog | 研究博客 | ✅ | 是 | daily |
+| 54 | Stability AI | Stability AI News | https://stability.ai/news-updates | 公司动态/发布 | ✅302→ | 是 | daily |
+| 55 | Together AI | Together Blog | https://www.together.ai/blog | 研究博客 | ✅ | 是 | daily |
+| 56 | Replicate | Replicate | https://replicate.com | 模型运行平台 | ✅ | 是 | daily |
+| 57 | | Replicate Changelog | https://replicate.com/changelog | 产品更新日志 | ✅ | 是 | daily |
+| 58 | Perplexity | Perplexity Blog | https://blog.perplexity.ai | 研究博客 | ✅ | 是 | daily |
+| 59 | 01.AI | Yi系列博客 | https://www.lingyiwanwu.com/blog | 开源LLM | ✅ | 否 | daily |
+| 60 | Moonshot AI | Kimi 开放平台 | https://platform.kimi.com | API文档 | ✅ | 否 | daily |
+| 61 | | Kimi K2.6/K2.7 API | https://platform.kimi.com/docs/ | 模型API文档 | ✅ | 否 | daily |
+| 62 | | Kimi K2.6 Agent集群/Claw | https://www.kimi.com/blog/kimi-k2-6 | Agent集群(300子代理)+Claw群组+技能 | ✅ | 否 | daily |
+| 63 | | Kimi 官网 | https://www.kimi.com | 产品页 | ✅ | 否 | both |
+| 64 | | Kimi 新闻 | https://www.moonshot.cn/news | 官方新闻 | ✅ | 否 | daily |
+| 65 | | Kimi Changelog | https://platform.kimi.com/changelog/ | 产品更新日志 | ✅302→ | 否 | daily |
 
 ### 1.3 综合科技-海外
 
@@ -176,32 +184,32 @@
 | 62 | IBM | watsonx | https://www.ibm.com/watsonx | 企业AI平台 | ✅ | 否 | daily |
 | 63 | | watsonx Release Notes | https://www.ibm.com/docs/en/watsonx/saas | 产品更新日志 | ✅ | 否 | daily |
 | 64 | | IBM Research | https://research.ibm.com | 研究博客 | ✅ | 是 | daily |
-| 64 | Baidu | ERNIE Bot | https://yiyan.baidu.com | 文心一言 | ✅ | 否 | daily |
-| 65 | | 百度AI Lab | https://research.baidu.com | 研究博客 | ✅ | 否 | daily |
+| 65 | Baidu | ERNIE Bot | https://yiyan.baidu.com | 文心一言 | ✅ | 否 | daily |
+| 66 | | 百度AI Lab | https://research.baidu.com | 研究博客 | ✅ | 否 | daily |
 
 ### 1.4 阿里云产品
 
 | # | 源名 | URL | 推荐理由 | 状态 | 代理 | 用途 |
 |---|------|-----|---------|------|------|------|
 | 1 | 通义千问 Qwen | https://qwenlm.github.io | 生成式AI | ✅ | 否 | both |
-| 1.1 | | Qwen Release Notes | https://help.aliyun.com/zh/qwen | 产品更新日志 | ✅ | 否 | daily |
-| 2 | 模型服务灵积 | https://dashscope.console.aliyun.com | API平台 | ✅ | 否 | both |
-| 3 | PAI ML平台 | https://help.aliyun.com/zh/pai | ML平台 | ✅ | 否 | both |
-| 3.1 | | PAI Release Notes | https://help.aliyun.com/zh/pai/user-guide/pai-release-notes | 产品更新日志 | ✅ | 否 | daily |
-| 4 | 云栖大会 | https://yunqi.aliyun.com | 年度大会 | ✅ | 否 | both |
-| 5 | 阿里云天基博客 | https://yq.aliyun.com | 技术博客 | ✅ | 否 | daily |
-| 6 | 千问云 MaaS | https://tongyi.aliyun.com | Agent驱动MaaS平台 | ✅ | 否 | both |
-| 7 | 百炼大模型平台 | https://www.aliyun.com/product/bailian | 一站式大模型开发平台 | ✅ | 否 | both |
-| 7.1 | | 百炼 Release Notes | https://www.alibabacloud.com/help/en/model-studio/latest/release-notes | 产品更新日志 | ✅ | 否 | daily |
-| 8 | PAI-灵骏 | https://www.aliyun.com/product/pai | 万亿参数模型训推一体 | ✅ | 否 | daily |
-| 9 | 无影 AgentBay | https://www.aliyun.com/product/agentbay | AI Agent云端沙箱环境 | ✅ | 否 | daily |
-| 10 | OpenTrek 智能体工厂 | https://www.aliyun.com/product/opentrek | 智能体全链路闭环构建 | ✅ | 否 | daily |
-| 11 | 通义灵码 Qoder CN | https://www.aliyun.com/product/qoder | 智能编码辅助 | ✅ | 否 | daily |
-| 12 | 骡子快跑 MuleRun | https://www.aliyun.com/product/mulerun | AI原生智能办公平台 | ✅ | 否 | daily |
-| 13 | DashVector | https://www.aliyun.com/product/dashvector | 向量检索服务 | ✅ | 否 | daily |
-| 14 | 虚拟数字人 | https://www.aliyun.com/product/eiam | AI数字人构建 | ✅ | 否 | daily |
-| 15 | AI应用市场 | https://marketplace.aliyun.com | 一站式AI产品交易平台 | ✅ | 否 | daily |
-| 16 | Agentic Cloud | https://summit.aliyun.com/2026 | 全栈Agent云服务 | ✅ | 否 | daily |
+| 2 | | Qwen Release Notes | https://help.aliyun.com/zh/qwen | 产品更新日志 | ✅ | 否 | daily |
+| 3 | 模型服务灵积 | https://dashscope.console.aliyun.com | API平台 | ✅ | 否 | both |
+| 4 | PAI ML平台 | https://help.aliyun.com/zh/pai | ML平台 | ✅ | 否 | both |
+| 5 | | PAI Release Notes | https://help.aliyun.com/zh/pai/user-guide/pai-release-notes | 产品更新日志 | ✅ | 否 | daily |
+| 6 | 云栖大会 | https://yunqi.aliyun.com | 年度大会 | ✅ | 否 | both |
+| 7 | 阿里云天基博客 | https://yq.aliyun.com | 技术博客 | ✅ | 否 | daily |
+| 8 | 千问云 MaaS | https://tongyi.aliyun.com | Agent驱动MaaS平台 | ✅ | 否 | both |
+| 9 | 百炼大模型平台 | https://www.aliyun.com/product/bailian | 一站式大模型开发平台 | ✅ | 否 | both |
+| 10 | | 百炼 Release Notes | https://www.alibabacloud.com/help/en/model-studio/latest/release-notes | 产品更新日志 | ✅ | 否 | daily |
+| 11 | PAI-灵骏 | https://www.aliyun.com/product/pai | 万亿参数模型训推一体 | ✅ | 否 | daily |
+| 12 | 无影 AgentBay | https://www.aliyun.com/product/agentbay | AI Agent云端沙箱环境 | ✅ | 否 | daily |
+| 13 | OpenTrek 智能体工厂 | https://www.aliyun.com/product/opentrek | 智能体全链路闭环构建 | ✅ | 否 | daily |
+| 14 | 通义灵码 Qoder CN | https://www.aliyun.com/product/qoder | 智能编码辅助 | ✅ | 否 | daily |
+| 15 | 骡子快跑 MuleRun | https://www.aliyun.com/product/mulerun | AI原生智能办公平台 | ✅ | 否 | daily |
+| 16 | DashVector | https://www.aliyun.com/product/dashvector | 向量检索服务 | ✅ | 否 | daily |
+| 17 | 虚拟数字人 | https://www.aliyun.com/product/eiam | AI数字人构建 | ✅ | 否 | daily |
+| 18 | AI应用市场 | https://marketplace.aliyun.com | 一站式AI产品交易平台 | ✅ | 否 | daily |
+| 19 | Agentic Cloud | https://summit.aliyun.com/2026 | 全栈Agent云服务 | ✅ | 否 | daily |
 
 ### 1.5 百度智能云产品
 
@@ -209,30 +217,30 @@
 |---|------|-----|---------|------|------|------|
 | 1 | 文心大模型 ERNIE 5.0 | https://wenxin.baidu.com | 原生全模态大模型 | ✅ | 否 | both |
 | 2 | 千帆大模型平台 | https://cloud.baidu.com/product/wenxin | 企业级Agent开发平台 | ✅ | 否 | both |
-| 2.1 | | ERNIE Release Notes | https://cloud.baidu.com/doc/user_guide/releaseNotes | 产品更新日志 | ✅ | 否 | daily |
-| 3 | Create开发者大会 | https://create.baidu.com | 年度大会 | ✅ | 否 | both |
-| 4 | 百度研究院 | https://research.baidu.com | 研究博客 | ✅ | 否 | daily |
-| 5 | 百度百舸 AI计算平台 | https://cloud.baidu.com/product/aigc | 大模型训推一体化 | ✅ | 否 | daily |
-| 6 | DuClaw Agent服务 | https://cloud.baidu.com/product/duclaw | 零部署Agent服务 | ✅ | 否 | daily |
-| 7 | 数字员工 | https://cloud.baidu.com/product/digital | 可进化企业级Agent | ✅ | 否 | daily |
-| 8 | 百度伐谋 | https://cloud.baidu.com/product/bdfm | 超级决策智能体 | ✅ | 否 | daily |
-| 9 | 智能文档分析 | https://cloud.baidu.com/doc | 文档处理智能助手 | ✅ | 否 | daily |
-| 10 | 视频生成 | https://cloud.baidu.com/product/vid | 文生视频/图生视频 | ✅ | 否 | daily |
-| 11 | 司南内容审核 | https://cloud.baidu.com/product/content-moderation | 多模态内容审核 | ✅ | 否 | daily |
-| 12 | 百度胜算 | https://cloud.baidu.com/product/shengsuan | AI超级数据库 | ✅ | 否 | daily |
-| 13 | 数字人实时语音 | https://cloud.baidu.com/product/digital-human | AI数字人 | ✅ | 否 | daily |
-| 14 | 智能推荐引擎 | https://cloud.baidu.com/product/recommend | 个性化推荐 | ✅ | 否 | daily |
-| 15 | 百度一见·视觉智能体 | https://cloud.baidu.com/product/vip | 云边协同视觉智能 | ✅ | 否 | daily |
+| 3 | | ERNIE Release Notes | https://cloud.baidu.com/doc/user_guide/releaseNotes | 产品更新日志 | ✅ | 否 | daily |
+| 4 | Create开发者大会 | https://create.baidu.com | 年度大会 | ✅ | 否 | both |
+| 5 | 百度研究院 | https://research.baidu.com | 研究博客 | ✅ | 否 | daily |
+| 6 | 百度百舸 AI计算平台 | https://cloud.baidu.com/product/aigc | 大模型训推一体化 | ✅ | 否 | daily |
+| 7 | DuClaw Agent服务 | https://cloud.baidu.com/product/duclaw | 零部署Agent服务 | ✅ | 否 | daily |
+| 8 | 数字员工 | https://cloud.baidu.com/product/digital | 可进化企业级Agent | ✅ | 否 | daily |
+| 9 | 百度伐谋 | https://cloud.baidu.com/product/bdfm | 超级决策智能体 | ✅ | 否 | daily |
+| 10 | 智能文档分析 | https://cloud.baidu.com/doc | 文档处理智能助手 | ✅ | 否 | daily |
+| 11 | 视频生成 | https://cloud.baidu.com/product/vid | 文生视频/图生视频 | ✅ | 否 | daily |
+| 12 | 司南内容审核 | https://cloud.baidu.com/product/content-moderation | 多模态内容审核 | ✅ | 否 | daily |
+| 13 | 百度胜算 | https://cloud.baidu.com/product/shengsuan | AI超级数据库 | ✅ | 否 | daily |
+| 14 | 数字人实时语音 | https://cloud.baidu.com/product/digital-human | AI数字人 | ✅ | 否 | daily |
+| 15 | 智能推荐引擎 | https://cloud.baidu.com/product/recommend | 个性化推荐 | ✅ | 否 | daily |
+| 16 | 百度一见·视觉智能体 | https://cloud.baidu.com/product/vip | 云边协同视觉智能 | ✅ | 否 | daily |
 
 ### 1.6 腾讯云产品
 
 | # | 源名 | URL | 推荐理由 | 状态 | 代理 | 用途 |
 |---|------|-----|---------|------|------|------|
 | 1 | 混元大模型 Hy3 | https://cloud.tencent.com/product/hunyuan | 生成式AI，OpenRouter周榜第一 | ✅ | 否 | both |
-| 1.1 | | 混元 Release Notes | https://cloud.tencent.com/document/product/845 | 产品更新日志 | ✅ | 否 | daily |
-| 2 | 腾讯云TI平台 | https://cloud.tencent.com/product/ti | ML平台 | ✅ | 否 | both |
-| 3 | 腾讯全球数字生态大会 | https://cloud.tencent.com/event/tencent-conference | 年度大会 | ✅ | 否 | both |
-| 4 | WorkBuddy 云电脑 | https://cloud.tencent.com/developer/article/2651884 | C端AI桌面智能体 | ✅ | 否 | both |
+| 2 | | 混元 Release Notes | https://cloud.tencent.com/document/product/845 | 产品更新日志 | ✅ | 否 | daily |
+| 3 | 腾讯云TI平台 | https://cloud.tencent.com/product/ti | ML平台 | ✅ | 否 | both |
+| 4 | 腾讯全球数字生态大会 | https://cloud.tencent.com/event/tencent-conference | 年度大会 | ✅ | 否 | both |
+| 5 | WorkBuddy 云电脑 | https://cloud.tencent.com/developer/article/2651884 | C端AI桌面智能体 | ✅ | 否 | both |
 | 5 | ADP 3.0 智能体平台 | https://cloud.tencent.com/product/adp | 企业级智能体开发底座 | ✅ | 否 | daily |
 | 6 | 企微AI智能体 | https://work.weixin.qq.com | 企业微信专属AI | ✅ | 否 | daily |
 | 7 | 腾讯会议AI同传 | https://meeting.tencent.com | 会议实时翻译 | ✅ | 否 | daily |
