@@ -3,29 +3,25 @@ title: Grow your business with Google Play
 title_zh: 借助 Google Play 发展业务
 category: conference/google-io/2026/sessions
 date: 2026-05-21
-time:  PT
+time: PT
 track: AI/机器学习
 type: 技术演讲
 level: Beginner
 speakers: lidiab, phalene
 video: https://www.youtube.com/watch?v=alVIYAu51V8
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 # 借助 Google Play 发展业务
 
-## 📋 摘要
+## 📋 演讲摘要
 
-**📅 日期**: 2026-05-21 | **🕐 时间**:  PT | **📂 分类**: AI/机器学习 | **🎯 类型**: 技术演讲 | **📊 等级**: Beginner
+**📅 日期**: 2026-05-21 | **🕐 时间**: PT | **📂 分类**: AI/机器学习 | **🎯 类型**: 技术演讲 | **📊 等级**: Beginner
 
 **👤 演讲者**: lidiab, phalene
 
 发现平台更新和改进如何让 Play Console 使业务增长比以往更轻松。了解用于管理日常任务的新节省时间工具、推动增长的深度洞察以及提升收入的强大变现工具。
-
----
-## 📝 详细原文
-
-了解平台更新和 Play Console 的增强功能如何让业务增长比以往更轻松。学习用于管理日常任务的新省时工具、推动增长的深入洞察以及提升收入的有力变现工具。
-
-**原文（English）**: Discover how platform updates and enhancements to Play Console make growing your business easier than ever. Learn about new time-savers for managing day-to-day tasks, deeper insights to drive growth, and powerful monetization tools to boost revenue.
 
 ---
 ## 📝 内容总结
@@ -134,4 +130,5 @@ Play 最厉害的一点就是用户基数特别大，而且还在涨。最近，
 最后，说到更灵活的定价，你现在可以在支持的市场里，把商品价格最高设到 8000 美元。想了解更多细节，记得去看看 Play……（内容到此处结束） 翻译成中文口语：
 
 y 控制台帮助中心。别忘了，获取所有这些变现功能（包括订阅流失减少工具、预购、自动充值等）最快的方式，就是直接集成 Play 结算库。这还能帮你避免中间件 SDK 中常见的功能限制。要想充分释放 Play 结算平台的能力，包括今天发布的最新工具和功能，我们强烈建议你升级到 Play 结算库 9.0，预计 5 月底上线。提醒一下，我们会继续为每个 Play 结算库的主要版本提供 2 年的支持。也就是说，版本 7 的支持将在 2026 年 11 月结束，届时你需要升级才能发布新版本的应用。我们的分享就到这里啦。希望你今天了解了如何借助 Play 节省时间、获得深度洞察、提升收益。我们也很高兴能和你分享这些内容。感谢你抽出宝贵时间，也感谢你在 Google Play 上的精彩付出。>> [音乐]
----
+
+*原文请访问 [Google I/O](https://www.youtube.com/watch?v=alVIYAu51V8)*

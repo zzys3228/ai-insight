@@ -3,18 +3,21 @@ title: Deploy Android on-device AI with ML Kit GenAI and LiteRT-LM
 title_zh: 使用 ML Kit GenAI 和 LiteRT-LM 在 Android 上部署设备端 AI
 category: conference/google-io/2026/sessions
 date: 2026-05-21
-time:  PT
+time: PT
 track: AI/机器学习
 type: 技术演讲
 level: Intermediate
 speakers: carenc, erintwalsh
 video: https://www.youtube.com/watch?v=Z7zx_sTbFPI
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 # 使用 ML Kit GenAI 和 LiteRT-LM 在 Android 上部署设备端 AI
 
-## 📋 摘要
+## 📋 演讲摘要
 
-**📅 日期**: 2026-05-21 | **🕐 时间**:  PT | **📂 分类**: AI/机器学习 | **🎯 类型**: 技术演讲 | **📊 等级**: Intermediate
+**📅 日期**: 2026-05-21 | **🕐 时间**: PT | **📂 分类**: AI/机器学习 | **🎯 类型**: 技术演讲 | **📊 等级**: Intermediate
 
 **👤 演讲者**: carenc, erintwalsh
 
@@ -104,4 +107,4 @@ video: https://www.youtube.com/watch?v=Z7zx_sTbFPI
 
 开始定制方案的第一步，是为你的场景选择最合适的模型。你可能想用Gemma这样的开源模型，或者自带模型。为了在Android上获得最佳性能，请始终使用能可靠解决你场景的最小模型。我们来演示一下用Gemma 270M来微调一个特定任务——这是一个参数为2.7亿的高效模型。假设一个真实的场景：也许你正在为农民开发一个农业科技应用…… 在印度马哈拉施特拉邦的农村。你的后台用英文提供农业见解和天气预警，但你需要把这些信息翻译成马拉地语，这样用户才能真正看懂。你需要模型捕捉到这门语言的实际细微差别，特别是瓦尔哈迪方言、当地的农耕口语和地方俚语。但由于农村地区没有网络，它必须能离线运行。Gemma 270M 可以解决这个需求，但如果针对这个方言进行微调，效果会好得多。首先创建一个专门的数据集，或者从 Hugging Face 上抓取一个公开的英马对话数据集。这能给模型提供数千对配对的句子。你可以直接在 Google Colab 笔记本里用 Hugging Face TRL 库和 SFT 训练器这些社区工具进行微调。加载你的地方数据集，训练模型，直到它能稳定地生成准确的、本地化的翻译。一旦你的模型会说当地方言，就用更轻量的 TLM 命令行工具，把模型转换并量化成针对手机硬件限制优化的格式。这个工具能转换你微调好的模型，直接输出更轻量的 TLM 文件格式。想了解具体怎么转换，可以去看更轻量 TLM CLI 的文档。当你要把自己定制的更轻量 TLM 模型集成到自己的 app 里时，可以用更轻量 TLM API 来管理会话，并在本地直接写推理。首先，你用模型路径和你偏好的硬件后端（比如 CPU、GPU 或 NPU）来初始化引擎，然后在后台加载你的模型。接着你实例化一个对话对象，它会自动帮你管理上下文窗口和聊天记录。最后，为了给用户那种快速打字的效果体验，你可以用 send message 异步接口。它会返回一个列式数据流，让你能把模型生成的 token 直接流式推送到你的 UI 上。把模型跑起来装到你自己的开发者手机上是个大胜利。但是，你怎么保证你的定制模型在整个生态里都能顺畅运行，哪怕是老款设备呢？Google AI Edge 门户可以自动帮你搞定——它会在 Google 实验室里 100 多台真实的安卓物理设备上对你的更轻量 TLM 文件进行基准测试。这样你就能在真正进入生产之前，看到模型在所有这些设备上的表现。虽然今天我们用的是 Gemma 270M 做例子，但需要强调的是，这套基于 Google AI Edge 的流程对任何开源模型都适用。总结一下，当你需要真正定制化的体验时——比如离线的地方方言翻译器——Google AI Edge 和更轻量 TLM 就是你的解决方案。通过把微调好的模型打包成更轻量 TLM 格式，你就能突破新设备的限制，扩展到更广泛、更多样化的安卓设备上。如果你想动手实操，我们有三个很棒的资源给你。想学习怎么训练自己的定制模型，可以去看 Gemma 实战指南。当你准备把模型塞进 app 的时候，Google AI Edge 的文档里什么都有，从 API 参考到性能评估工具应有尽有。如果你想直接上手代码、今天就试试不同的开源模型，可以在 Play 商店下载 AI Edge Gallery app，或者去 GitHub 上 fork 下来。我们希望通过 ML Kit GenAI API（用于大多数开箱即用方案）和更轻量 TLM（用于更定制化的场景）来实现在端侧 GenAI，能让你更有信心。希望这次概览能给你更多底气。我们很期待看到你们把端侧 GenAI 带到安卓 app 里的各种花样。想开始上手的话，可以点开视频下方链接的资源，覆盖了今天讲的所有内容。>> [音乐]
 
----
+*原文请访问 [Google I/O](https://www.youtube.com/watch?v=Z7zx_sTbFPI)*

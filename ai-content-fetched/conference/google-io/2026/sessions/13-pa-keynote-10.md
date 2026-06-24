@@ -9,23 +9,19 @@ type: 技术演讲
 level: Beginner
 speakers: bramus, unakravets
 video: https://www.youtube.com/watch?v=uT7MVcCQ4rw
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 # Web UI 有什么新功能
 
-## 📋 摘要
+## 📋 演讲摘要
 
 **📅 日期**: 2026-05-20 | **🕐 时间**: 10:00 - 10:45 PT | **📂 分类**: 设计 | **🎯 类型**: 技术演讲 | **📊 等级**: Beginner
 
 **👤 演讲者**: bramus, unakravets
 
-快速浏览今天登陆浏览器的最新UI特性，着眼于打造美观的网页体验。从交互能力的更新（如滚动触发动画和作用域视图过渡）到最新的UI组件，学习如何使用原生CSS和HTML原语构建高性能界面。发现如何用更少的代码交付更好的用户体验。
-
----
-## 📝 详细原文
-
-快速浏览当今浏览器中最新的UI功能，聚焦于打造美观的网页体验。从交互功能的更新（如滚动触发动画和作用域视图过渡）到最新的UI组件，学习如何使用原生CSS和HTML原语构建高性能界面。发现如何用更少的代码实现更好的用户体验。
-
-**原文（English）**: Take a fast-paced tour of the latest UI features landing in browsers today, with a lens on making beautiful web experiences. From updates to interactive capabilities like scroll-triggered animations and scoped view transitions, to the latest in UI components, learn how to build performant interfaces using native CSS and HTML primitives. Discover how to ship better user experiences with less code.
+快速浏览浏览器最新UI特性，展示五大用户体验原则、contrast-color/light-dark等新API、样式查询、Canvas中的HTML等现代Web开发能力。
 
 ---
 ## 📝 内容总结
@@ -46,9 +42,11 @@ video: https://www.youtube.com/watch?v=uT7MVcCQ4rw
 
 3. **全新开发范式**：**Canvas 中的 HTML**，将可访问的 DOM 内容带入 Canvas 体验，架起高性能图形与语义化 Web 之间的桥梁。
 
-演讲强调，这些能力让 Web 体验更"高品质"，同时降低开发者实现动态个性化的门槛。
+**核心要点：五大用户体验原则、contrast-color/light-dark新API、样式查询、Canvas中的HTML**
 
 ---
+
+*原文请访问 [Google I/O](https://www.youtube.com/watch?v=uT7MVcCQ4rw)*
 
 ## 📝 完整文字稿
 

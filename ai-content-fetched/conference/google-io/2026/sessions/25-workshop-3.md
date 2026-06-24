@@ -9,32 +9,22 @@ type: 工作坊
 level: Beginner
 speakers: andyzg, craiglabenz, rodydavis
 video: https://www.youtube.com/watch?v=UNdQhnpm8GY
+source: io.google.com
+translated: true
+fetched_at: 2026-06-24T10:00:00
 ---
 # 一次共鸣，任意运行，尽在 Google Antigravity 与 Flutter
 
-## 📋 摘要
+## 📋 演讲摘要
 
 **📅 日期**: 2026-05-20 | **🕐 时间**: 16:00 - 16:45 PT | **📂 分类**: AI/机器学习 | **🎯 类型**: 工作坊 | **📊 等级**: Beginner
 
 **👤 演讲者**: andyzg, craiglabenz, rodydavis
 
-Vibe coding 是 2026 年开发者的一项重要技能。学习如何通过 Google 团队利用像 Google Antigravity 这样的代理工具加速你的软件开发。
-
----
-## 📝 详细原文
-
-Vibe coding 是 2026 年开发者的重要技能。学习如何借助 Google 团队提供的代理工具（如 Google Antigravity）加速软件开发。
-
-**原文（English）**: Vibe coding is an important skill for developers in 2026. Learn how to accelerate your software development from Google teams leveraging agentic tools like Google Antigravity.
+Vibe coding 是 2026 年开发者的一项重要技能，学习如何通过 Google Antigravity 代理工具加速软件开发。
 
 ---
 ## 📝 内容总结
-
-以下是为该会议演讲生成的简洁总结：
-
----
-
-**《一次共鸣，任意运行，尽在 Google Antigravity 与 Flutter》演讲总结**
 
 本次演讲重点介绍了 Google Antigravity 与 Flutter 的结合，展示如何实现"一次开发，任意平台运行"的愿景。
 
@@ -52,9 +42,7 @@ Vibe coding 是 2026 年开发者的重要技能。学习如何借助 Google 团
 
 ---
 
-如需调整风格或补充特定细节，请告知。
-
----
+*原文请访问 [Google I/O](https://www.youtube.com/watch?v=UNdQhnpm8GY)*
 
 ## 📝 完整文字稿
 
