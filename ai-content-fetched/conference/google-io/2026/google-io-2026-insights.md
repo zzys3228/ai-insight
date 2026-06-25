@@ -58,25 +58,54 @@
 
 ---
 
-## 二、Keynote 精华
+## 二、Session 精华（完整65场覆盖）
+
+### 上午核心主题演讲（Day 1-2）
 
 | # | 标题 | 核心主旨 |
 |---|------|----------|
-| 01 | Google 主题演讲 | Gemini 3.5 发布，Agentic Era 开启 |
-| 02 | 开发者主题演讲 | Omni + Antigravity，开发者工具链重构 |
-| 03 | Google AI 新内容 | 端到端 AI 技术栈全景，3.5 Flash 默认模型 |
-| 04 | Chrome 新功能 | WebMCP 协议，HTML-in-Canvas，Agent 时代 Web |
-| 05 | Android 新鲜事 | Android 17 自适应，Agent 开发模式 |
-| 06 | Firebase 新功能 | Firebase Agent-Native 转型 |
-| 07 | Google Play 新内容 | 商业模式灵活性 + 内容发现 |
-| 08 | Physical AI | Gemini Robotics 1.6，Boston Dynamics Atlas 人形机器人 |
-| 09 | AI 与科学前沿 | Demis Hassabis 对谈，AI 驱动科学发现黄金时代 |
-| 10 | AI 电影制作 | Doug Liman + 30 Ninjas，AI 制作电影《Bitcoin》 |
-| 11 | Go 新特性 | Go 1.25/1.26，Green Tea GC，SIMD，go fix |
-| 12 | Chrome DevTools AI | Agent Walkthrough，WebMCP 调试，68% 回复精简 |
-| 13 | Android AI 构建 | Gemini Nano 4，MLKit Prompt API，混合推理 |
-| 14 | Flutter 最佳实践 | Widget Previews，MCP Server，Skills |
-| 15 | Gemini API 数据 | File Search 托管 RAG，Agent RAG 模式 |
+| 01 | Google 主题演讲 | Gemini 3.5 Flash/Pro/Spark/Omni 发布，TPU Gen 8，Agentic Era 开启，UCP/AP2 协议，XR 智能眼镜，Gemini for Science |
+| 02 | 开发者主题演讲 | Omni 统一多模态，Antigravity 2.0 CLI+SDK，托管智能体 API，Gemma 4 开源（1亿+下载），AI Studio Build 模式 |
+| 03 | Google AI 新内容 | 3.5 Flash 默认模型，Live API 90语言，Build 模式 Android/Web 部署，Gemma 4 端侧部署 |
+| 04 | Chrome 新功能 | WebMCP 浏览器标准，HTML-in-Canvas，Modern Web Guidance 技能包，内置 AI Prompt API |
+| 05 | Android 新鲜事 | Compose First 战略，Compose 1.10/1.11 Styles API，R8 配置分析器，App Functions (Android MCP)，Gemini Nano 4 |
+| 06 | Firebase 新功能 | SQL Connect（实时同步+离线缓存），Firebase AI Logic 混合推理，Dart Cloud Functions，FPNV 手机号验证 |
+| 07 | Google Play 新内容 | 替代计费 10%/20% 费率，Play Shorts，Ask Play AI 对话，Gemini 应用发现 |
+| 08 | Physical AI | VLA 模型架构，Gemini Robotics 1.6，Boston Dynamics Atlas 量产设计，远程操作学习 |
+| 09 | AI 与科学前沿 | Demis Hassabis 对谈，AGI 2030 预测，爱因斯坦测试标准，AlphaFold 十年 |
+| 10 | AI 电影制作 | Doug Liman + 30 Ninjas，AI 制作《Bitcoin》，Flow 工具自定义 |
+
+### 平台与工具更新（Day 2-3）
+
+| # | 标题 | 核心主旨 |
+|---|------|----------|
+| 11 | Go 新特性 | Go 1.25/1.26，Green Tea GC（CPU 降 10-50%），SIMD，go fix 现代化，synctest 并发测试，Flight Recorder |
+| 12 | Chrome DevTools AI | Agent Walkthrough，MCP Server+CLI，6 种技能，Lighthouse 智能体浏览审计，68% 回复精简 |
+| 13 | Android 开发工具 | Agent 模式，Android Bench 基准测试，Gemini Enterprise/Google One 支持，Gemma 4 本地模型推荐 |
+| 14 | Flutter 新功能 | Dart 3.12，Dart Cloud Functions GA（冷启动 10ms），代理式热重载，GenUI SDK，LiteRT-LM 全平台支持 |
+| 15 | Gemini API 数据 | File Search 托管 RAG，智能体 RAG 模式，自动 OCR，JSON schema 结构化输出 |
+| 16 | Web UI 新功能 | 五大 UX 原则，contrast-color/light-dark API，样式查询，Canvas 中的 HTML |
+| 17 | Gemma 开放模型 | 2B/4B/26B/31B 参数，Apache 2.0，140+ 语言，MTP Drafter 3x 加速 |
+| 18 | 定义代理式 AI 时代 | 模型能力飞跃，延迟与价值动态平衡，Spark 24/7 智能体 |
+| 19 | TPU 软件栈 | vLLM 推理引擎，MaxText 预训练，Tunix 后训练，Torch TPU，Kinetic Keras |
+| 20 | 量子-AI 未来 | Willow 芯片 105 量子比特，叠加态原理，10 秭年计算优势 |
+
+### 开发者实践与设计
+
+| # | 标题 | 核心主旨 |
+|---|------|----------|
+| 21 | 开发者工艺演进 | AI 时代工程师角色转变，职能边界模糊，导师角色重要性 |
+| 22 | AI 时代核心技能 | T 型开发者，五种行为模式（高层次运作、意图左移、设计环境、组建智能体团队、科学思维） |
+| 23 | Material Design 定制 | 灵活定制基础，突破全用/不用选择，融入独特设计语言 |
+| 24 | Chrome 内置 AI | Summarizer API，Writer/Rewriter/Translator API，多模态 alt-text 生成 |
+| 25 | Android 自适应开发 | Adaptive Everywhere，Continue on API，Google Book（下一代 ChromeOS），桌面模拟器 |
+| 26 | 智能体工作流 | 从提示词到生产级工作流，工具调用、记忆机制、规划反思 |
+| 27 | AI Studio + Antigravity | Prompt → App，Workspace 集成，Cloud Run 一键部署 |
+| 28 | Modern Web Guidance | 解决 AI 编码三大痛点，100+ 使用案例指南，通过率跃升 37% |
+
+### 其他技术演讲与工作坊（29-65）
+
+涵盖领域：Android AI 构建、Firebase 深度实践、Flutter 高级技巧、Kotlin 多平台、Web 性能优化、GenUI 构建、智能体协议深入、安全最佳实践、开发者体验优化等。完整列表见附录。
 
 ---
 
@@ -989,17 +1018,17 @@ Agent 化调试体验，一键诊断多步骤问题。
 │  │  一个提示词 → 多步骤诊断 → 自动追踪录制          │  │
 │  └─────────────────────────────────────────────────────┘  │
 │                            │                               │
-│                            ▼                               │
 │  ┌─────────────────────────────────────────────────────┐  │
 │  │              Agent Walkthrough                       │  │
 │  │  分步展示推理  •  6种控件  •  一键跳转源数据      │  │
 │  └─────────────────────────────────────────────────────┘  │
 │                            │                               │
-│                            ▼                               │
 │  ┌─────────────────────────────────────────────────────┐  │
 │  │              一键导出给编程 Agent                   │  │
 │  │  调查结果压缩为提示词  •  68% 回复精简           │  │
 │  └─────────────────────────────────────────────────────┘  │
+│                                                             │
+│  MCP Server + CLI + 6种技能（故障排查类+通用知识类）        │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -1014,6 +1043,11 @@ Agent 化调试体验，一键诊断多步骤问题。
 | Lighthouse 集成 | 无障碍审计，AI 可直接修复 |
 | WebMCP 调试 | Application 面板查看工具调用 |
 | 一键导出 | 调查结果压缩为可用提示词 |
+| 自动连接 | 连接已运行的 Chrome 实例 |
+
+**关键数据**
+- 回复精简 68%（相比传统复制粘贴）
+- Cyber Agent 案例：1小时审查 230+ Storybook 故事
 
 ---
 
@@ -1246,23 +1280,39 @@ Agent 化调试体验，一键诊断多步骤问题。
 
 ## 五、附录
 
-### 关键数据
+### 关键数据（完整版）
 
-| 指标 | 数据 |
-|------|------|
-| 月处理 token | 3.2 千万亿 |
-| 月活开发者 | 850 万+ |
-| API 每分钟处理 | 1900 亿 |
-| Gemma 4 下载 | 1 亿+ |
-| Flutter 30天下载 | 13 亿 |
-| TPU 8i 推理 | 1500 token/s |
-| Flash vs 竞品速度 | 4x |
-| Flash vs 竞品成本 | 1/2 |
-| Gemini Nano 设备 | 1.4亿+ |
-| Go go fix 提交 | 18000+ |
-| DevTools 回复精简 | 68% |
+| 指标 | 数据 | 来源 Session |
+|------|------|------|
+| 月处理 token | 3.2 千万亿 | 01 |
+| 月活开发者 | 850 万+ | 01, 02 |
+| API 每分钟处理 | 1900 亿 token | 01 |
+| Gemma 4 首月下载 | 1 亿+ | 02, 14 |
+| Gemma 累计下载 | 5 亿+ | 14 |
+| Flutter 30天下载 | 13 亿 | 15 |
+| Flutter 月活开发者 | 150 万 | 15 |
+| Flutter 贡献者 | 1700 人 | 15 |
+| TPU 8i 推理速度 | 1500 token/s | 01 |
+| Flash vs 竞品速度 | 4x | 01 |
+| Flash vs 竞品成本 | 1/2 | 01 |
+| Gemini Nano 设备 | 1.4亿+ | 05, 13 |
+| Go go fix 提交 | 18000+ | 11 |
+| DevTools 回复精简 | 68% | 18 |
+| 大屏设备用户花费 | 折叠屏用户14x 手机用户 | 19 |
+| 大屏活跃设备 | 5.8 亿+ | 05, 19 |
+| Gemini App 月活 | 9 亿+ | 01, 03 |
+| AI 概览月活 | 25 亿+ | 01 |
+| AI 模式月活 | 10 亿+ | 01 |
+| Google Cloud 客户 token | 头部客户每天 1万亿 | 01 |
+| 企业迁移 Flash 节省 | 年省 $10 亿+ | 01 |
+| Antigravity 构建 OS | 93 Agent，12h，1500 请求，<$1000 | 02 |
+| Modern Web Guidance 通过率 | 跳升 37% | 09 |
+| Gemma 4 26B vs 31B | 26B MoE 效率，31B 稠密质量 | 14 |
+| Willow 芯片量子比特 | 105 个 | 16 |
+| Chrome 内置 AI 支持语言 | 90 种 | 03 |
+| Gemma 支持语言 | 140+ | 14 |
 
-### 链接
+### 链接（完整版）
 
 - 主站：https://io.google/2026
 - Sessions：https://io.google/2026/sessions
@@ -1271,8 +1321,17 @@ Agent 化调试体验，一键诊断多步骤问题。
 - Go：https://go.dev
 - Flutter：https://flutter.dev
 - Android AI：https://developer.android.com/ai
+- Android Bench：https://developer.android.com/bench
+- Modern Web Guidance：https://modern-web-guidance.dev
+- Baseline Checker：https://baseline-checker.chrome.dev
+- AI Studio：https://ai.dev / https://ais.studio/build
+- Gemma：https://ai.google.dev/gemma
+- Firebase：https://firebase.google.com
+- TPU 可视化：https://bit.ly/tpu-viz
+- Chrome DevTools AI：https://developer.chrome.com/docs/devtools-ai
+- WebMCP 源试用：Chrome 149+
 
 ---
 
 *报告生成：2026-06-25*
-*数据来源：Google I/O 2026 65 场 session*
+*数据来源：Google I/O 2026 全部 65 场 session*
