@@ -1,0 +1,14 @@
+=== Keynotes ===
+2026-05-20 10:00 - 10:45: Android 开发工具的新功能
+2026-05-20 10:00 - 10:45: 定义代理式人工智能时代
+2026-05-20 10:00 - 10:45: Web UI 有什么新功能
+2026-05-19 10:00 - 11:45: Google 主题演讲
+2026-05-19 16:30 - 17:15: Google Play 有什么新内容
+2026-05-19 15:30 - 16:15: Google AI 有什么新内容
+2026-05-20 10:00 - 10:45: Gemma 开放模型系列有什么新内容
+2026-05-19 15:30 - 16:15: Chrome 有什么新功能
+2026-05-20 10:00 - 10:45: Flutter 的新功能
+2026-05-19 16:30 - 17:15: Firebase 有什么新功能
+Traceback (most recent call last):
+  File "<stdin>", line 40, in <module>
+UnicodeEncodeError: 'gbk' codec can't encode character '\u202f' in position 34: illegal multibyte sequence

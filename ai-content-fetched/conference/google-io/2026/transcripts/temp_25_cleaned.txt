@@ -1,0 +1,734 @@
+Kind: captions
+Language: en
+&gt;&gt; Well, hello everyone. Welcome and thank
+you for coming to Vibe Once Run
+Everywhere with Google's Anti-Gravity
+and Flutter.
+So, my name is Craig. I'm from the
+Flutter Developer Relations team and
+today I'm joined by Roddy from the
+Anti-Gravity Developer Relations team
+and Andy from the Anti-Gravity
+engineering team.
+Now, today we're excited to share with
+you a lot of workflows that as
+developers and builders you can add to
+your toolkit to not only generate code,
+but also work with non-coding assets,
+generally reduce your toil, ship your
+marketing materials, and more.
+So, this session is going to be showing
+all the ways that we're building with
+agents. Ever since agents came onto the
+scene, especially given how rapidly
+models have been increasing in
+capability and scope, there's been a
+massive shift in how we utilize them in
+the software development life cycle.
+Anti-Gravity, as you might have guessed
+on the title screen, is Google's premier
+way to integrate agents into your
+Anti-Gravity launched in September and
+it's an AI-native experience. While
+there are plenty of other platforms that
+you can choose from, Anti-Gravity is
+trying to bring the best of Google all
+into one place, integrating the agents,
+tools, and workflows that you're already
+used to. So, Andy, want to give us a
+quick overview of Anti-Gravity?
+Absolutely.
+So, the spirit of Anti-Gravity is a
+tight feedback loop between planning,
+acting, and verifying.
+So, to start off, after firing off your
+prompt, Anti-Gravity can create various
+artifacts as well as an implementation
+plan, which you can iterate using the
+model of your choice to really dial in
+all of the details.
+Once it starts working, you can also
+always just step in and run the code,
+test it out, read through the response,
+or if you want to, you can let the agent
+go ahead and build the entire system's
+autonomously.
+It's also inherently multimodal. We use
+a lot of image generations, screenshots,
+video recordings from the testing
+process, and also surfacing a lot of
+these all within anti-gravity, so that
+you can review its work.
+Once it's all done generating, the agent
+can then decide what kind of artifacts
+need to be generated, including coming
+up with a plan.
+Lastly, anti-gravity closes the loop by
+confirming that complete the the plan
+fully and correctly.
+This includes running your app, taking
+screenshots, and clicking the buttons
+using Chrome's browser integration, and
+of course, running your actual tests and
+making sure they work.
+And in Flutter's case, because Dart is
+so strongly typed, it also includes
+getting rock solid signal from the
+analysis server, so that if there are
+any problems, it can correct it, which
+accelerates correct outcomes.
+Now, obviously, this verification step
+might bounce back to the act step as
+necessary, since any failing tests or
+broken flows, which feed back into the
+agent, and the agent would then need to
+make new changes into the code base.
+Once it's all done, anti-gravity writes
+up a walk-through what it did,
+explaining what
+explaining its implementation, as well
+as the reasoning behind its decisions.
+This loop powers the full gamut of
+developer tasks, including testing,
+debugging, migrations, deployments,
+refactors, entirely new features, and
+even non-coding tasks, which is a
+growing use case.
+So, this brings us to where it's like
+building in 2026.
+Google's models went through a
+tremendous increase in capability around
+December of last year, coinciding with
+the launch of Gemini 3,
+which has been in anti-gravity since day
+one. When coding agents first hit the
+scene, the focus was starting with
+observation, and then we were reviewing
+every step,
+and every single line. But, as models
+improved, the industry shifted towards
+agentic engineering. Now, humans are
+still in the loop and they focus on the
+design and the lofty conceptual goals
+over the small details.
+And we can let the agents tackle the
+individual components and going until
+the product meets our specific
+specifications.
+But models still make mistakes and
+that's why it's critical to have an
+agent harness that allows you to review
+outputs, quickly make changes, and
+provide a direction when you're the
+agent is unsure.
+Antigravity brings the loop, but you're
+still the human in the center of it. You
+focus on your vision and what you want
+to accomplish and let the agent help you
+execute it.
+A downstream outcome of this is that So,
+we have new capabilities for developers,
+PMs, and designers. And so, we're all
+wearing new hats.
+The roles are starting to blur.
+While it might seem overwhelming
+and you have this expectation to do
+more, it actually empowers you to value
+your colleagues time. Now, you can come
+with a really strong prototype. A
+designer can work on a prototype that
+they give over to a developer and a
+developer can have a first draft of a
+design that a designer can take so much
+further. This saves time and money.
+There's a far less back and forth during
+the prototype phase and instead of
+struggling on describing your vision,
+you can simply say, "This works and this
+is where I'm wanting to take it."
+If a picture is worth a thousand words,
+then a prototype can save a thousand
+All right. So, that is a quick tour of
+Antigravity. What about the other half
+of the title, Flutter?
+All [cheering] right.
+Yeah, so Flutter is Google's
+cross-platform UI toolkit. You may have
+heard of it. And it delivers
+pixel-perfect rendering across any
+screen. Flutter delivers this by
+rendering a canvas with the host
+platform or operating system into which
+it pours whatever pixels your app needs
+from one frame to the next. And Flutter
+is written in Dart, a language of
+Google's invention, which originally
+debuted in 2011, and which is a glove
+fit for Flutter.
+And Dart compiles down to native machine
+code on non-web platforms or JavaScript
+and Wasm on web platforms, which
+delivers native performance anywhere
+your Flutter app runs.
+And Flutter and Dart also deliver an
+outstanding developer experience,
+including keystroke speed static
+analysis on your whole project,
+including very large codebases.
+And stateful hot reload actually
+accelerates agents just as much as human
+agents or as human developers are
+accelerated, rebuilding your app in less
+than a second and capturing your heart
+in far less time.
+a lot of people might be thinking,
+"Why bother using Flutter in this new AI
+era if an agent can just write all the
+code? Why not just have it write an iOS,
+an Android, and a web project
+separately?"
+is actually a pretty good question. And
+it's one that I was thinking about
+really hard last year when I was working
+on the 2025 version of what's new in
+Flutter, and it's what inspired a slide
+that simply said, "Vibe once, run
+And that answer is all about having a
+single source of truth. If you have an
+agent write a single cross-platform
+application, then you naturally just
+avoid all of the problems that spring up
+from different language details or
+different native feature
+implementations. And then you also don't
+have to spend the rest of your life
+playing whack-a-mole chasing down all
+the small discrepancies between these
+different experiences.
+And additionally, as Andy teased
+earlier, Dart's strong typing gives LLMs
+really great signal about what is going
+on with your code. Now, languages with
+looser typing systems often require a
+lot more analysis from the LLM to figure
+out whether or not a given piece of code
+is correct in all scenarios. But,
+Flutter is able to tell the LLM very
+concrete things about function signature
+mismatches, differences in class shapes,
+or other objective facts about your
+code. Now, you pair this with hot reload
+and Flutter accelerates you
+tremendously.
+And with agentic coding,
+time is money both figuratively and
+literally. So, not only is Flutter able
+to get to working code more quickly, but
+then it doesn't have to start over and
+do the whole thing again.
+Truly, we think that Flutter's value
+proposition is as strong as ever.
+All right, but enough for all this
+preamble, let's talk about what we're
+building today. So, our goal was to
+build a game where you pilot a moon
+lander onto an asteroid. We wanted it to
+feature dynamic things like procedurally
+generated levels, custom shaders, and
+particle effects. And of course, it had
+to be fun and easy to play. Now, the
+game is called Dash Lander, even though
+we didn't have the heart to put Dash out
+into the cold deep vacuum of space. But,
+spoiler alert for later, I don't
+actually know if we ended up delivering
+on the easy-to-play part, especially on
+mobile, but we can all figure that out
+for ourselves at the end.
+But, building the app is only part of
+the story. There's not just code,
+there's also marketing materials,
+coordinating with the rest of your team,
+and we are going to cover the full stack
+of things today.
+So, Roddy touched on this earlier, but
+building apps today looks very different
+from how we did it in the past.
+Prototypes not only save a thousand
+meetings, but being able to arrive at
+one implies figuring what you want to
+make, often by trial and error.
+With tools like anti-gravity and Gemini,
+you can make these wrong decisions
+faster. You can try out different
+techniques and figure out which paths
+are dead ends and which one really
+resonate with your vision, and get to
+where you would have normally spent 6
+months or over maybe a year on in a
+matter of weeks or days.
+And then, even if you decide to
+completely rewrite your your code after
+the MVP, the initial prototype still is
+very very important because it helps you
+crystallize exactly what you need to
+You've already done the wrong decisions,
+figuring out what you want to build, and
+with this fresh pair of eyes, agent
+assisted or not, know exactly what you
+want to build is really going to help
+you get to your end vision faster. And
+plus, you have this rich prototype that
+you can pass on to the agent so that the
+agent can always consult it for any
+complex game logic.
+But along with that, it's also important
+to recognize what we're not building
+today. So, we're not building a
+high-performance real-time multiplayer
+And again, you might ask, "Well, why
+not? Again, if agents can just write all
+the code, make me a real-time
+multiplayer game."
+that's because
+with real-time multiplayer games, code
+is only part of the story. Networking
+guarantees the introduction of some
+latency, which doesn't really fit with
+the experience that we were trying to go
+for, to say nothing of the exponential
+increase in back-end complexity that
+you're signing up for.
+So, instead, we realized that we could
+deliver about 90% of that same kind of
+fun multiplayer experience by just
+having players face off against
+historical sessions in like a challenge
+mode from past high scores. And this
+allows us to rely on very simple back
+ends that don't you know, they scale on
+their own, they don't make that our
+problem, like Firebase hosting. So, our
+app can now serve the millions of users
+that we'll obviously be hitting it soon
+without us having to have solved all
+those problems. And this final design
+was born out of failing fast because an
+earlier version of Dash Lander did have
+players battling it out with AI bots,
+but then that was just really
+complicated and we thought, "I don't
+want to do that anymore." So, we leaned
+into using AI logic that was just
+written in all of our brains by having
+people play against past sessions. And
+that's the best code ever, code that we
+neither wrote nor will maintain.
+All right, onto phase one, research.
+To make an asteroid Lander fund, you
+obviously need assets.
+We started out by using Google's Lyra to
+make the background music.
+And that works really great. We used the
+audio players package to set it up in
+the background, but then it was time to
+start to make some more assets for the
+Obviously, there's things you can do
+like public domain, but I wanted to take
+it a step further. So, I literally went
+in my garage and outside and I used a
+hose to grab engine noise recorded with
+a mic. And then I went and I finally
+spray cans to get like the RCS
+I had an idea and I was able to spend
+more of my time working on real audio
+engineering like I used to, but having
+anti-gravity bring it into the game to
+do a lot more of the fun. And I feel
+like that's where I've really enjoyed
+using this agentive coding.
+But not just audio, we also need
+visuals. And so, we used Stitch and
+Gemini Canvas. Gemini wrote the particle
+effects directly in the code and we used
+tools like Nano Banana to generate the
+And of course, with a game like this, we
+need physics. And so, we used Gemini
+Deep Research, which we'll talk about in
+a second, to be able to find the
+accurate types of things we needed for
+the things like the reaction control
+system, the zero atmosphere physics, and
+so many other things that were needed to
+build a game like this beyond the
+So, as Roddy mentioned, to to achieve
+this, we used Gemini Deep Research. It
+found the exact physics formulas we
+needed to build this, which we then
+transpiled into Dart with an
+anti-gravity and included inside of the
+Gemini Deep Research is also incredible
+for doing some more research about
+things you're curious about, such as
+investigating product market fit, uh
+investigating competitors, finding
+potential pitfalls, and understanding
+the market viability for Dash Lander.
+So, once Gemini Deep Research uh
+generates a lot of its findings, we can
+then copy-paste all of that with an
+anti-gravity.
+So, now we'll move on to phase two,
+which is the prototyping phase.
+We actually started in AI Studio, which
+is powered by anti-gravity in the build
+mode now. You might be wondering, why
+would we prototype something outside of
+our build environment? Well, AI Studio
+provides an incredible sandbox for
+generating throwaway code rapidly. Not
+only can we build something there, we
+can share it with teammates, we can get
+feedback from family members, and we can
+have something where we're happy with it
+before we start building the thing
+that's ready for production.
+We can get working concept without a
+single line of code ourselves, and this
+rich prototype acts as context
+compression that we'll send to the model
+later. And we can lock in all of those
+micro-decisions early.
+Once we're happy with the AI Studio, we
+can just export it and move our code
+directly into anti-gravity.
+So, simultaneously, Craig was doing the
+same prompt through Gemini Canvas, which
+wrote another moon lander. But, his
+version ended up not using the zero
+atmosphere RCS controls that we were
+looking for. But, his design came out a
+lot more visually appealing. So, we end
+up merging the best of both worlds and
+had both prototypes that we used to
+build our game.
+Once we were ready to start working on
+the Flutter Flutter version with an
+anti-gravity, we equipped our agent
+manager with the skills and the MCP
+servers for the tech stack of our
+choice. This Flutter uh Firebase,
+there's a Flutter based game engine
+called Flame, and then of course Gemini
+We were also able to add the entire
+JavaScript code base into our repository
+so that Anti-Gravity could reference it.
+With all of our context and integration
+set, we kick off the prompt to uh to our
+agent so that it can build the Flutter
+Anti-Gravity can split the uh task into
+multiple sub-agents, a feature where a
+primary orchestrator agent is able to
+delegate to multiple specialized agents.
+So, as an example, you can have one
+sub-agent working on the front end,
+another one working on the back end, and
+another one working on
+internationalization so that everybody
+can use your app.
+Now, a quick piece of advice here is to
+have a vision when you're working on
+your task, and really feel free to push
+back on the agent and guide it. So, that
+if it's going in one way that you're not
+a fan of, feel free to chime in and
+correct it so that it really reaches the
+vision that you had in mind. And this
+really makes sure that you can download
+the exact behavior.
+And we certainly did this with
+DashLander.
+So, within about 5 minutes, we had
+something that probably would have taken
+us weeks to develop without AI, but of
+course, it was not realistically
+anywhere close to where we wanted it.
+You saw a second ago that there were
+only three hardcoded levels. That's not
+nearly enough.
+The camera is also not following the
+lander right now, so you can play for
+like a couple more seconds, and then
+you're going to have a hard time.
+These numbers in the HUD are also pretty
+funky. If they're right, then the lander
+is about the size of the Empire State
+Building. So, that seems wrong.
+It's also just really slow and terribly
+boring, so that we didn't want that.
+And then there was no leaderboard or
+challenge mode yet. That one wasn't
+really Gemini's fault because we had yet
+to even conceive of the idea at this
+time, so of course, that code had not
+yet been written.
+So, all in all, it would take about
+another 100, 150 prompts maybe to get
+the game where it is today. And a good
+percentage of those, maybe about a
+third, were all about code organization
+and adding tests. Everybody has their
+own personal relationship with reading
+the code that you get from AI's these
+days, but I like to maintain a sort of
+kind of cognitive ownership over the
+code that I'm working with. So, I read a
+lot of what anti-gravity was giving me,
+and I would often ask it to go back and
+refactor things for clarity or
+reusability.
+Now, however,
+this is just between us. Please, nobody
+tell my old university, which once upon
+a time bestowed a math minor on to me,
+but I'm not very good at trigonometry.
+And there is a lot of trigonometry in
+Dash Lander. So, no matter how much I
+would read that code, my understanding
+stayed pretty much at zero.
+And this was a problem because I
+couldn't assess it, and whenever I would
+play the game, things weren't adding up.
+And then the agent would tell me, like,
+"Don't worry, I have perfectly
+implemented your landing scoring and HUD
+metrics fixes." And then I would just
+play it. It's like, "Well, it's not
+adding up, so you didn't."
+So, I added a debug mode where behind a
+super top-secret keyboard shortcut,
+additional overlays would appear in the
+game and show me more kind of backstage,
+like back of house information about the
+state of the game. This allowed me to
+inspect for myself with my own eyes, as
+Darth Vader would say, what the what
+like piece of land the game thought the
+lander was over, the relative tilts
+between them. Now, this was just a clip
+of me flying into a cliff, so it didn't
+really help me land the lander any
+better, but it did help me squash a lot
+And for that challenge mode that we
+discussed earlier, we realized that
+we're going to first need a leaderboard
+so that we can actually point the game
+at a historical session. So, I asked
+Gemini to work on that feature, and it
+did a really great job reading through
+all of our code, our context, the
+comments, and it even added new data
+models that were suitable for
+persistence. It connected the app to
+Cloud Firestore, it started to read and
+write documents from that collection,
+and it gave us the screen
+that we see right here.
+But then, once I was able to start
+playing the challenge mode, it like kind
+of seemed like it worked at first, but
+things were not adding up. There were
+some logical mismatches that I had to
+So, here you can see a play-through that
+I had against what was at that time the
+highest score.
+And the ghost ship is rendering nicely
+Uh it's a it looks just like us, but
+it's a little see-through, just like I
+wanted. And we're floating along, having
+a good time. Little can you tell this
+ghost ship is slowly starting to desync
+from its original self.
+And then, at the end, despite the person
+having, you know, feathered back and
+forth ever so delicately to stick the
+landing just right, the ship ultimately
+is going to come in
+and not have a very good time and crash.
+Which is happening in about three
+So, it's obviously something was wrong.
+Now, for anyone who's seen my old talk
+from FlutterCon Berlin a few years ago
+called "A Year of Headaches: How Not to
+Build a Real-Time Multiplayer Game", you
+may know that I have already banged my
+head against this very problem pretty
+extensively.
+And it turns out that despite capturing
+the exact local time of every single
+event in the game session, that is not
+enough to faithfully recreate that game
+session later on.
+And the cause for this is that you can
+tell a program to run a piece of code a
+certain amount of milliseconds in the
+and that code will probably be run
+really really really really really
+really really really close to when you
+asked, but it cannot guarantee perfect
+And the reason for this, amongst other
+things, is that code can't even
+guarantee that it will have the
+operating system's attention at the
+given millisecond. This isn't Dart's
+fault, it's not any other program's
+fault, it's just an aspect of modern
+computer architecture we have to build
+So, to solve this, I had to make like it
+was 2023 and turn my own brain on and
+think about things for myself. Really,
+uh it was a blast from the past. The
+solution I came up with was to store a
+more complete representation of the
+lander's physical state at the moment of
+turning on or off any thruster.
+In this way, when that replay logic is
+chewing through the past events of the
+previous play session, it can compare
+the actual perfect values for where the
+lander should have been with whatever it
+is simulating in the present. And this
+is important because that replay that we
+were seeing, it's not a rasterized video
+of the original session, it's another
+simulation. But, if you're turning the
+thrusters on like 1 millisecond early or
+late, then you're going to get different
+flight paths. And then Gemini, after I
+had the idea cuz I'm so smart, did a
+great job weaving into our code the
+actual logic of comparing those things
+and resolving different discrepancies.
+And that fix ended up not creating any
+visual artifacts at all, but it did
+remove the problem of make-believe
+Procedural levels were very, very fun to
+implement, especially because
+anti-gravity and Gemini did such a good
+job with the implementation. But, now
+that we're done with that, we had this
+new ambitious question in mind, which
+was, "How is scoring going to work?"
+Originally, our scoring system uh
+rewarded points for conserving fuel and
+also landing very gently. And that was
+really easy to
+to do if the landing pad is right below
+your starting point. Um and after
+extensive testing and lots of failed
+scoring systems, um we decided we had to
+switch things up a little bit because
+otherwise you'd be incentivized to just
+go straight into the the the landing pad
+right below your starting point. So,
+instead, we settled on assigning a score
+multiplier based on different attributes
+of how you landed into the landing pad.
+So, the primary attribute is the
+distance of your starting point to your
+destination landing pad. So now, if you
+start in a level where there's a landing
+pad right below you and there's a
+landing pad on the other side of the
+you would score more points if you went
+to the other side of the meteor and
+landed there instead of landing directly
+below your starting point.
+So, before pushing to the App Store or
+to the Google Play Store, we chose to
+launch this on web as a first MVP to
+really validate and like test out the
+core mechanics before we thought about
+things such as integrating monetization
+or like ads or like in-app purchases.
+You might be great at writing games, but
+you also may heart hate marketing them.
+The good news is you don't have to do it
+Using tools like Stitch or Gemini
+Canvas, we can generate landing pages
+from a single prompt. Stitch acts like a
+design sandbox for rapid iteration. We
+can simply take screenshots of a running
+game and provide context about it as
+well as generated App Store metadata,
+and then just ask Stitch to build us
+this marketing landing page.
+Once the design is ready, we can
+download the HTML into Antigravity.
+And because we're building with Dart, we
+can use Jasper, which is a web framework
+that maps HTML directly to Dart widgets,
+making the conversion seamless.
+Gemini does a great job at mapping these
+HTML into Jasper components since Jasper
+components are just plain old HTML,
+and they're not Flutter widgets.
+This allows us to share code across our
+game and app in case you need industry
+standard web features like SEO indexing
+or wanting to expose user-generated
+content that you made within your
+Flutter app.
+I just love that it matched really well.
+And now for the final phase, publishing.
+All that's left is the dreaded problem
+of figuring out how do you get this code
+that runs on your computer to run on
+somebody else's computer.
+Luckily, with Flutter web and Firebase
+hosting, this is pretty much solved
+right out of the box.
+So, this deploy script is quite simple.
+We used Antigravity to build our Flutter
+app, copy over its build directory over
+to Jasper, run Jasper's own build
+script, and then finally deploy all this
+into Firebase hosting, all in one step.
+And remember, this is Flutter. So, while
+we stop short of the Google app uh Apple
+App and Google Play Store's, you don't
+have to. Flutter runs on a wide range of
+devices from iOS to Android, the web of
+course, all three desktop platforms. We
+all know this. Embedded, but also the
+new exciting esoteric places like
+Toyota's RAV4 infotainment center, and
+webOS for LG's hundreds of millions of
+smart displays.
+And in all of those environments, on all
+of those screens, Flutter is going to
+bring pixel-perfect rendering and
+rock-solid performance.
+And that's how you can vibe once, run
+anywhere with Google's Antigravity and
+I know this seems like a lot to take in.
+What we wanted to show today is a
+vignette of a modern builder's workflow.
+Antigravity and Flutter makes the wide
+open frontier easier to navigate, and
+the landscape is yours to conquer.
+Be sure to check out our resources and
+code labs to get started. And yes, you
+can even try out the game we built
+&gt;&gt; [snorts]
+&gt;&gt; So, we invite you all to pull out your
+visit dashlander.com,
+or scan this QR code that hopefully
+and try for the highest score. The
+mobile controls are a real work in
+We're open to feedback.
+It's much easier on a keyboard, so when
+you get home, it's a lot more fun, to be
+honest. Thank you so much for coming. We
+cannot wait to see what you're going to
+&gt;&gt; [music]

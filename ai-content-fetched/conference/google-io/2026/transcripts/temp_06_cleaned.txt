@@ -1,0 +1,1011 @@
+Kind: captions
+Language: en
+&gt;&gt; All right, it is great to see you all. I
+think most of you are here for the air
+conditioning, but nonetheless
+&gt;&gt; [laughter]
+&gt;&gt; this will be good for you regardless.
+So, welcome. That was a great dev
+keynote earlier if you all got to watch
+being able to see how much all of us
+could create software from prompts, from
+our voice, from context. How amazing is
+that with anti-gravity 2.0, with AI
+studio? This is amazing time to build.
+So, we're going to have some fun today
+doing a lot with this. Now, first we
+just built this game in uh AI studio. If
+you saw the dev keynote earlier, you saw
+that they were building games, doing all
+kinds of stuff. Let's have some fun. So,
+when you build a game like this, you
+might click publish. You might deploy it
+to something like Cloud Run in Firebase.
+And hey, no credit card required as you
+start shipping your first two
+applications, which is amazing. We all
+love day one. Day one is amazing. You
+ship it, you feel good. But then there's
+day two. There's real traffic. There's
+things that go wrong. There's edge cases
+you haven't considered. So,
+what I want to do though is, you know, I
+want to introduce first my friends
+Christina and then uh Denise are here to
+help me out. They've built some amazing
+things. Yes. [cheering]
+They're both
+both amazing. What I want you to do is
+take out your phone, scan this QR code,
+and let's play this game. Seriously. I
+want to see if it can survive IO
+traffic. I have my doubts.
+Christina's job depends on this. There's
+no stakes here. It'll be fine.
+So, what I want to see, let's let's try
+to play the game for a minute and see if
+you all can break it with load or it'll
+be completely fine and your job will be
+safe. Either way,
+it's not a big deal.
+So, we're going to go here. We'll look
+at the leaderboard, I think. We'll see
+Oh, yeah. Let's I'm going to go.
+You're unbelievable at the game, Denise.
+So, let's see. Let's see if I could beat
+this. It's looking good so far.
+&gt;&gt; You only need to survive 10 seconds.
+&gt;&gt; How's the leaderboard doing? Okay.
+&gt;&gt; Oh. Okay. All right, let's see how the
+leaderboard's is
+&gt;&gt; check out the leaderboard, see if we're
+holding on.
+Uh-oh. Uh-oh.
+Well, I'd like to thank Christina for
+being here at Google. Uh we'll
+&gt;&gt; [laughter]
+&gt;&gt; give you your paycheck at the back.
+Uh-oh. Oh. We'll pay out your vacation.
+We're very humane with that. No, it's
+great so far, but this stuff happens,
+right? Things can break, day two
+happens, load happens, things like that.
+So, how do we have to think about a
+little more than that? Cuz if you ask
+most developers, where are you spending
+your time with AI? Guess what you're not
+doing. Day two stuff. Deployment,
+monitoring, fixing. Most devs are like,
+"Hey, I'm using it to build document
+code." That's awesome.
+But not enough of us yet are making this
+part of our day two journey. So, how do
+we think about that a little bit more?
+How do we actually take advantage of
+what AI can do for us on day two? So,
+over these next 30-ish minutes or so,
+we're going to show three agent-first
+workflows. These are going to take these
+prototypes and turn them into something
+more reliable, more production grade.
+We're going to use antigravity, Google
+Cloud, a number of components. Let's do
+something to make any of these fun
+vibe-coded apps something more legit.
+So, we want to start with agent-first
+debugging. I mean, some of you might
+like debugging. It's fine. You're
+probably fun at parties because you talk
+about this a lot. [laughter]
+But Denise, can you set the stage for us
+here? What's it look like to do real
+agent-first debugging? Yeah, so I mean,
+when something crashes, most of the time
+you're going to have to go through all
+of these logs, and who really wants to
+do that? Cuz I know I don't. You know,
+you got to go look at your
+configurations, see if you made a
+mistake. You go look at the performance
+metrics to see if there's any issues
+with latency and everything, but nobody
+wants to do that.
+You know, so what if we took our agent,
+our agentic developer tool, in our case
+we're going to use antigravity,
+and what if we took that and we let it
+do the job for us? Right? Why do all of
+that manual task ourselves?
+it crashed, and we want to know what
+happened. So, let I am going to use,
+because I'm kind of lazy, I don't want
+to actually type it. I'm going to use
+the voice input and ask,
+"Find out what's wrong with Dino Quest."
+So, going to kick it off, and notice how
+I do not actually tell it, "Where is my
+logs? Where is my Dino Quest service?"
+I was able to do it all with just
+telling it what to do.
+And the reason why I was able to do that
+is because we have the Google-managed
+MCP servers. To be able to safely
+connect our agentic tool to MCPs and our
+Cloud Run and our services.
+And so, by doing that, and as you can
+see, there's lots and lots of them
+available, we don't have to juggle with
+API keys. We don't have to go into the
+console and go click around and do all
+of that stuff. All of our data and our
+services from from Google Cloud is
+available for the agent.
+So, let's go back to Any Gravity and see
+Look at it right there. So, as I was
+talking, all of that happened, right?
+Like, would you normally be able to do
+that if you were manually debugging?
+Nope. So, it told me that this is
+actually caused by a 503 service
+unavailable. I think all of you putting
+it there put a lot of the issues onto a
+load. So, going on, um
+we know what the issue is now. We want
+to actually fix the problem. So, I'm
+going to ask Any Gravity again. Okay.
+"Can you look at the code for the Dino
+Quest game and fix what caused the
+send it through,
+and it is going to go and work and do
+all of that. But, as it's going,
+Richard, why don't you tell us about the
+developer knowledge MCP? Because I think
+that's a great MCP for people to use.
+Yeah, I mean, you mentioned Look,
+there's over 50 of those managed MCP
+servers you can use today from
+everything from BigQuery to Cloud Run.
+One of them, which everybody should use,
+is called the developer knowledge API or
+developer knowledge MCP. What this is is
+an MCP server that fronts over a dozen
+different Google Doc bases, from AI to
+Cloud to Firebase to all these different
+components. So, you can just say, "Hey,
+I need something." And it goes and
+searches any of our docs and pulls back
+the latest version into your coding
+tool. So, all of a sudden, you're not
+guessing, "Am I using the wrong version,
+the right version?" You're getting a 8
+to 12-hour at the latest snapshot of the
+documentation into your agentic tooling.
+So, doesn't matter if you're using Cloud
+Code, you're using Code X, you're using
+Anti-gravity, pull the latest of Google
+documentation into your tool and make it
+easy to use.
+Yeah, I mean, that's very helpful
+because one of the problems is always
+using outdated date like outdated
+information. And then your agent's not
+going to actually do what you want it to
+&gt;&gt; All right, so let's go on and and looks
+like Anti-gravity has finished and it
+said that the issue was actually in our
+leaderboard. And it went ahead and made
+the code changes for us over here in the
+main.py file. I didn't have to actually
+do anything myself. I just let it go.
+And so, typically what we would want to
+do is go and commit it to GitHub and
+we're going to redeploy and Anti-gravity
+can do this for me. But because we have
+a little thing a few things up our
+sleeve later on, I'm not going to
+actually deploy it now so that we can
+show you something better later. I like
+&gt;&gt; Christina.
+Sounds good. I know here in Google we're
+all about transparency, right? And
+things like this happen, we wanted to
+make it out for people, right? So, for
+those of you who kind of suffer through
+the game, we want to give you some
+treats back in the game. And as you
+what we have right here is Data Agent
+Kids. Data Agent Kids gives me some kind
+of visibility into my data source. The
+reason why I talk about data source is
+because I live coded this game 3:00 a.m.
+in the morning. Well done. You're a
+Right. This is where my dark circle came
+from. It was it got very fuzzy
+at the end. I kind of forgot where I
+store everything.
+And this is where this came very helpful
+because I was able to kind of figure out
+where things are without me needing me
+to actually go in and figure out things
+out. So, what I'm going to do here, I
+have the data agent kit installed in my
+antigravity right here.
+um, let's go ahead and then start to
+head over to our antigravity.
+So, what I'm going to do is I'm going to
+ask our antigravity with data agent kit
+to look through all my data sources. And
+as a treat for you, as you can see all
+the document databases that I have cuz
+I've been live coding with AI Studio and
+AI Studio directly uses most of the time
+it goes to use Firestore as my database
+and it's a document database. And to
+update it is not as simple as, "Oh, I'm
+just going to write a sequel." It's not
+as simple. Sometimes you have to write
+code to insert a document. So, it's kind
+of a messy thing to do. So, yeah, so I
+want to use natural language. Let's head
+over here and then let's go ahead and do
+Add five treats for all users.
+And I'm going to send it in. So, what
+happens now is this data agent kit, not
+only it has access to the MCP server, it
+also comes with skills. The skill has
+the know-how, so it doesn't just
+communicate to my server, it also knows
+how to do that properly. So, as you can
+see right here, the agent actually
+it actually wrote a Python file and it
+wants to execute this Python file. And
+it doesn't just execute because
+antigravity is aware of what's going on.
+It doesn't just go want to go ahead and
+just run application. It's not so
+secure. Yeah. So, it's going to ask for
+my permission.
+&gt;&gt; That's good. And I'm going to go ahead
+and run it. So, it's going to answer
+five treats to three users.
+Awesome. We only have three users. Huh,
+I thought we had more. I don't know.
+They crashed on three users, huh? Oh,
+that's right. Oops. All right, so let's
+head over to the Dino Quest and see if
+we have the treat added. Awesome. As you
+can see, we have added five treats to
+And as for the announcement, because we
+want all of you to know that
+announcements here
+and you know, with the with the
+announcement, it's even worse because I
+also forgot where I stored it, which is
+not a good idea to code at 3:00 a.m. in
+the morning. Um so, you know what I'm
+going to do? I'm going to also ask
+Antigravity to do it for me again. So,
+here I am. I'm going to head over here
+add an announcement with title sorry for
+the crash with a message that says they
+each get five treats.
+And I'm going to ask it to do it for me.
+So, what this agent does, it's going to
+go through all my data store and
+luckily, this is not a very complex use
+case, so it was able to figure out where
+I'm storing my announcement. It will
+then create the document for me and even
+formulate a message for me. As you know,
+my English is not that good, so it's
+going to formulate a very nice sorry
+message so everybody can see. So, for
+those for those of you wants to see the
+message, if you go over here and refresh
+the message, there you go. The message
+has been inserted into the document.
+Isn't that great, Richard? That is
+You've redeemed yourself.
+Uh so, that was awesome. I mean, it's
+you're you're interacting with the
+database, doing things that not all of
+us have every skill, but you actually
+are baking skills into your workflow
+where you can do all these things.
+That's amazing.
+Those agent first workflows, though, if
+you see that, this is a mindset shift,
+right? This isn't how we're all used to
+working. There's something new here. And
+part of this, too, is thinking about
+this new way to debug. We're connecting
+to live environments, pulling logs,
+iterating on this. So, how do we think
+about this new approach and plan and and
+and specifications, things like that.
+It's pretty exciting.
+But, let's look at kind of this next
+piece. Now that we have happy users,
+hopefully, you can try it again and keep
+messing around with it. How do we grow
+the app? How do we fix it, optimize it,
+make it even better, add performance
+improvements? So, our very second
+workflow we want to do is how do we
+optimize? How do we understand user
+behavior? How do we fine-tune the game
+to make it even more competitive for
+players? And
+the log data might actually tell us what
+kind of dinosaurs people are making,
+playing, whatever. But, instead of
+writing all the pipelines with ETL and
+analyzing data, there's probably a
+better way to do this with an agent.
+There's always a better way. Why do we
+want to do things manually, right? Like,
+that's just time-consuming.
+And so, by doing that, it's like we can
+use the data agent kit again.
+And here, data agent kit is an extension
+for our IDE, and we can see that we can
+have access to all these big query
+And so, in addition to using the data
+agent kit, we're going to be using the
+big query MCP, as well as a custom agent
+skill that we built for this actual
+purpose. And here, I have our skill
+open, just so it's not magic. You can
+see that we actually have a skill here,
+and it's going to lay out what it's
+going to do.
+This skill provides us a blueprint to
+automate a zero ETL analytics pipeline.
+So, what it's going to do is it's going
+to create a log writer sync to be able
+to stream the live logs directly into
+the big query data set. And that means
+no manual data plumbing that you needed
+Then it's going to use the big query MCP
+to be able to run a series of parallel
+queries, and then just extract all that
+data that we got from the logs. And then
+lastly, it takes all of that data and
+it's going to create us an interactive
+And so, question is how do we run the
+skill? Well, we can run the skill
+directly in Anagog Gravity. And as you
+see the theme, we can do everything all
+in one place. But because this takes a
+little bit of time because we have a lot
+of data there, I've run this beforehand
+cuz I'm pretty sure right now at what is
+it? 3:30 something, you don't want to be
+sitting here watching me run this. So,
+I've run this beforehand and all I had
+to do is tell it to run that report for
+my DynoQuest app and then it told me the
+actual pipeline that I had shown
+And then it goes and says it created a
+log report and it created our feature
+insights so that we know what we want
+from our next version and created an
+interactive dashboard. So, let's take a
+look at the dashboard that we have and
+here it is. So, this was what was
+generated. So, now we can see what the
+traffic overview, how many requests
+there were, um how many server logs and
+the win rate by dyno type. So, I
+probably should have
+cho- chose speedy earlier because
+apparently speedy is a 54% win.
+I know. I did choose tank. Well, at
+least it wasn't too bad. I balanced was
+And then how many treats per outcome and
+the top reused dinosaur. We could assume
+that if somebody uses this dinosaur a
+lot, it's probably a good dinosaur. Um
+but let's go back over here. So, in
+addition to building this dashboard, you
+actually now have all of the data from
+And you can just go straight into
+Antigravity and start asking it
+questions in natural language. No more
+need of getting sick, how do I build my
+SQL query? I mean, it's been a long time
+since I've actually thought about all
+the select statements and you know, all
+of that stuff. And go and ask it. But in
+addition to asking it information, you
+can draw the distribution graphs just
+straight here. So, what's really nice
+about this is that you don't have to go
+click back to the console, do SQL
+queries, do, you know, come and give my
+graph and then you can do everything all
+in one place, no context switching. And
+I'm pretty sure there's no way that even
+though I said it it takes a little bit
+of time of 9 minutes, there's no way you
+could have done this manually in that
+short period of time. So, what do you
+think about that? It's impressive. I
+mean, be honest with me, how much of a
+data person are you? Like, was a lot of
+this just helping you do things with the
+skills and the tools where this isn't
+your wheelhouse? Or how should people
+here feel like you're doing some pretty
+sophisticated things here? It's been a
+while since I've been messing with SQL,
+and you know, we we do a lot of coding
+more for the front end, but not so much
+of all of this. So, for me of thinking
+about how am I going to put these
+queries is just something I just don't
+think about from my everyday basis.
+Amazing. So, we went from millions of
+logs and things like that or potentially
+into some sort of clear actionable
+features in a couple of minutes. That's
+the sort of leverage you hope to get
+from skills and tools in this agentic
+workflow. If I were building an app a
+year ago, I mean, I might be
+intimidated. So, I was asking you, it's
+a big query and doing these
+sophisticated queries, ETL pipelines,
+that's not my wheelhouse. But you're
+showing how using these skills and MCPs
+and tools, a lot of us can just get
+different work done. Which is pretty
+wild stuff. And that data agent kit,
+should check that out. It's all managed.
+All those skills and MCPs get updated.
+You get the latest and greatest whenever
+we improve that.
+So, we've debugged.
+We've optimized with these agent-first
+I think let's go up a notch for that
+final demo. How do we think about an
+agent-first remediation, actually detect
+and fix problems?
+Yeah, I mean,
+nobody wants to get We all know crashes
+happen at any time, right? Like, right
+now there could be a crash at somebody's
+app right now. I hope not, but I'm
+pretty sure there is. And nobody wants
+to just drop everything that they're
+doing or if it's in the middle of the
+night, you know, Christina might be up
+at 3:00 a.m., but not everybody's going
+to be up at 3:00 a.m. to debug these
+issues. Nobody wants to be debugging.
+So, what if we did all the stuff
+manually? And I'm By manually, now I'm
+talking about us anti-gravity and doing
+it. It was faster, but we don't want to
+&gt;&gt; You're still involved.
+&gt;&gt; Right? We still We still have to go do
+it. So, what if we did all of that 24/7
+autonomously without us even watching?
+So, we decided that we are going to
+build a self-healing system.
+So, introduce to you our Dino agents.
+These are our custom agents. And of
+course, they're called Dino agents cuz
+we have a Dino game. Um you know, we
+It's got to be Go with the theme. And
+so, these are our Dino agents. There's
+the remediation agent, the CI agent, and
+the CD agent.
+These are three custom agents that we
+built, and they all specialize in
+different tasks.
+We hosted these agents on Cloud Run
+because this is where our Dino Quest
+game is hosted as well. So, by having it
+on the same platform as our actual app,
+we're able to get a secure, low latency,
+and cost-effective architecture. And
+this shifts all our manual
+troubleshooting into an intelligent and
+scalable assistant.
+These Dinos, these agents of ours, use
+uh the Agent Development Kit ADK as our
+framework. And you By using ADK, it
+saves us from writing a custom
+boilerplate for state management, tool
+routing, and retry logic. We also take
+advantage of ADK's skill tool set to be
+able to get the Dinos' expertise cuz
+we're able to load custom domain
+playbooks in order to codify all of that
+knowledge that they have into a
+repeatable work workflow.
+And what's nice is that all of these
+agents are production-ready observable
+&gt;&gt; [snorts]
+&gt;&gt; So, we're going to see all our agents in
+action later, but let's focus on our
+first agent, the remediation agent.
+Our remediation agent is an always-on
+SRE and is able to catch and fix
+failures on its own and fix the root
+So, the way that it works is that our
+app is always going to be logging into
+our cloud logging, and that's by
+default, right? Whenever it sees an
+error, it's going to trigger our event
+arc and our pub/sub.
+That is going to wake up our remediation
+agent, and our remediation agent is
+going to go and investigate the issue,
+and it's going to go fix the issue using
+So, after all of that is done, that it
+remediation agent does its job, and it's
+going to go and open a GitHub PR with
+the fix, and it notifies you with Slack.
+So, all you have to do is, oh, I got a
+Slack notification. You don't actually
+have to be at your computer. You could
+actually have it on your phone with your
+Slack. So, all of this is an is an
+asynchronous event-driven process that
+turns every error into an actionable
+job. Awesome.
+&gt;&gt; want to show them how it works?
+&gt;&gt; Exactly. That's where the agents work.
+So, while you two are, you know, uh
+talking right here, I uh deployed our
+Dino agents into the system, right? So,
+sorry, Richard. I have to break your app
+&gt;&gt; Again? Again. Sorry. Just got back in my
+good graces.
+&gt;&gt; breaking things. I have to do it. So,
+let's head over here and start breaking
+the system, right? But this time,
+I think we'll be fine cuz we have the
+Dino agent, right? So, if we come over
+and look in here, this is By the way,
+there is a little code right on the
+left-hand side where you can see our
+Dino agents are working, right? So,
+let's see. Looks like our system is
+working hard trying to uh
+It's working hard to crash.
+&gt;&gt; Crash. Right. [laughter] Right. It's
+working really hard to crash. Your 3:00
+a.m. system looks like a fever dream. I
+know, right?
+&gt;&gt; That was pretty intense-looking. Ooh.
+Looks like it didn't crash for some
+reason. No. No?
+&gt;&gt; You can't break it on purpose. I don't
+know I if I can.
+Maybe it's trying to self-remediate.
+&gt;&gt; Yeah, maybe it already helped and
+self-remediated while you had to deploy
+&gt;&gt; that's okay. So, we'll see how that
+Did the Dino Quest Okay, perfect. It
+&gt;&gt; It died. All right, sorry. Thank you.
+So, what you're seeing right here, feel
+free to watch this live. It's right
+here. There is This is how the agent
+works. So, you have the remediation
+agent listening to all the problems, and
+I'm going to just visualize it for you
+right here. So, the remediation kind of
+comes up and work, and it figures out,
+you know, your system kind of just
+crashed, so I'm going to help you
+remediate it. So, that's why it went off
+and remediated. But, not only does that,
+Yeah. remember what Denise was talking
+about like it went off and fixing the
+code, right? So, it went off and fixed
+the code. Not only fixes the code, it
+actually pushes things into our GitHub
+repository, right?
+&gt;&gt; Awesome. So, as you can see here, um
+So, I don't know cuz our agent right
+here, you can see now, "Hey, That's
+&gt;&gt; it kind of breaks, right?" So, you can
+kind of see it creates a leaderboard PR,
+so it tells us exactly what went wrong,
+right? It's cool. And it tells us, you
+know, "Since something went wrong, I'm
+going to help you fix it." So, it even
+creates a very nice
+branch right here that tells you in this
+particular instance, this is the the
+code that was fixed for you, right? So,
+very nice. And in the
+in the Slack message, I'm also getting a
+message coming from the Dino Quest,
+which, you know, kind of tells us
+exactly what went wrong. Perfect.
+Awesome. So, I hope you are following us
+at this moment. So, see this agents are
+working. Did you Did you see when you
+were looking at the monitor, did you see
+that the agents starting to dance with
+each other? Yeah. That's the part where
+we have the A2A.
+So we are not just having one single
+agent, we have multiple agents. They're
+trying to work together. There you go.
+You see that? They're working together.
+Okay. Is that what that is? That's yeah,
+so that's why I have the the swarms of
+agents working together.
+&gt;&gt; See, they love working with you.
+&gt;&gt; Settle down, agents. Exactly. Perfect.
+Yeah, so that's it. Um Richard, so you
+know what we This is what we have so
+As you can see, we have our agent. This
+is how it's built. So all these dancing
+funny agents and all that kind of stuff
+was built with ADK. Yep. And also
+it has everything that you need in order
+to make it secure. So every agent
+inherits I am
+um securities. So my CI agent doesn't go
+off and deploy things. Mhm. And my
+really agent doesn't have access to
+build my image. So everything is
+inherited, so it doesn't go off and do
+crazy stuff. And also because we are
+accessing a lot of external systems like
+the messaging system that we have back
+there and also the GitHubs, we want to
+store all the secrets somewhere very
+secure. So this is why we're storing it
+in the secret managers. Awesome. Isn't
+that amazing? That was awesome. Yeah.
+And [applause] because of
+Thank you very much. I know you're
+impressed, but you know, it's okay. Keep
+monitoring the agents. Um so if you if
+you all the agents are are deployed on
+Right? Yeah. And the Cloud Run, the good
+thing about Cloud Run is it goes dormant
+when it's when we're not using it.
+And when there's errors, it wakes up.
+And after it wakes up, what does it do?
+It fixes bugs for me.
+&gt;&gt; Work. Yeah, exactly. Puts them into
+work, working hard for me, so I don't
+you know, called in the middle of my
+date or my dinner with my friends.
+&gt;&gt; [laughter]
+&gt;&gt; Um and then when it's done, it will then
+shut down and
+you don't have to pay for it. Isn't that
+&gt;&gt; That's the best.
+I know money is great. I know all of you
+care about money much, but I'm pretty
+sure a nerd like you and hopefully
+me and hopefully you,
+really like to see how agents are built,
+right? So, this is one of the tools I
+want to introduce to you that how I
+built my agent. I built everything from
+ADK and building from scratch is never
+easy, right? So, you want to have some
+kind of tools to help you to how to how
+to build this. And I'm using something
+called agent CLI. The agent CLI
+It's Okay, let me put it on the top so
+everybody can see it.
+This is typing life, right? Make it a
+tad bigger for everybody. Can you zoom
+in a tad? There you go. Thank you.
+All right. So, this agent CLI
+allows us to It helps us to build,
+govern, also scale and optimize our
+agent. So, I'm going to So, do you want
+to see how I built the agent, right?
+Awesome. But, we don't want to be here
+all day. So, I'm going to show you how
+we get started.
+&gt;&gt; [laughter]
+&gt;&gt; Unless you want to stay here with me all
+&gt;&gt; us off. Yeah, I'm sure.
+So, let's create a new agent. And what
+do you want to call this agent? Well,
+since we have dinosaurs and everything's
+dinosaur themed, let's do a T-Rex agent.
+You like the T-Rex name? Yeah.
+You don't want to spell Rex as Rex.
+&gt;&gt; to think about it. What the T-Rex
+agent's actually going to do [laughter]
+though? We'll figure it out. We'll vibe
+Anyway, so call it agent. Since
+I feel like I've been talking for a long
+time, so let's just go ahead and create
+prototype. Mhm.
+And then just go ahead and create. Yes.
+So, what it will do is going to create a
+boiler plate code that has everything
+there for me. So, if you head over to
+and then let's see what's inside the
+T-Rex. It actually creates a lot of the
+things for me already. So it creates
+an agent code right here. So if you can
+kind of quickly see what's in the agent.
+So you can see it creates
+it creates an 88 code. It shows you what
+is in agent. It shows you how to build
+an agent with the instructions. So this
+is how your agent should behave and also
+a lot of the tools that you can include
+in your agent. So it's all there for me.
+And as well as it
+it includes all the test. So I can use
+it to test and evaluate my agents.
+&gt;&gt; That's great. Yeah, isn't it great? And
+also we also have all the um
+the files needed to containerize it so I
+can deploy later on.
+That's great, right? Amazing. Awesome.
+So now we have all the agents ready.
+Let's go ahead and hand it over back to
+you, Richard. Yeah, so agent CLI, check
+that out. Free, easy to use. You've seen
+data toolkit, a lot of these things easy
+to use, tap into. So more than that, I
+want to highlight this. This is
+something you all have been asking for
+for a long time. I'm sorry it's taken a
+But how do we make sure we have more
+control over our our cloud cost spend?
+So coming very soon are these spend
+caps. These are in private preview, but
+these help you set and enforce budgets
+on the APIs for things like Cloud Run,
+Gemini APIs and more.
+And what happens here is these these
+particular caps pause traffic once your
+budget is reached. So you can't blow it
+up and then wake up in the morning and
+destroy your budget. So we're going to
+add this to more and more services, give
+you more confidence that you're not
+going to destroy your spending plans.
+Pretty good stuff.
+All right, so this was some great
+engineering. Agent CLI is pretty awesome
+It's opinionated. Like you saw it had a
+set structure for e-vals and and certain
+codes. So all those sorts of things you
+can still customize that as you want.
+But now that we've stabilized this game,
+is it completely bonkers to maybe ask
+for another feature, another level or
+something like that, we can do that,
+So, can we can we ship this code on
+another branch and ship a new feature of
+We definitely
+&gt;&gt; for you to do it cuz this keeps
+breaking, but
+we could try. Why do you keep on asking
+her for to do extra things?
+&gt;&gt; keep testing her. Raise the bar.
+&gt;&gt; [laughter]
+&gt;&gt; So, yes, we definitely can. Um so, we
+created our own autonomous CI CD
+pipeline. You kind of already seen a lot
+of the details earlier, but before we're
+going to get into the details, you know,
+CI CD pipelines take a little bit of
+time. So, we're going to kick it off
+first and then we're going to talk about
+it. So, this time I'm actually going to
+kick it off on Slack, which means that I
+can kick it off from any at any time,
+anywhere. So, here I'm going to go in
+and do CI agent run CI on branch level
+So, going to kick it off. Oops. Let's go
+show that at the bottom. So, going to go
+on and start start running this. But, so
+what we did is that we are while this is
+all running, we're going to look at the
+details and what we did was we have our
+last two agents that we showed earlier.
+We have our CI agent to be able to do
+our continuous integration. Um you want
+to go next slide? Yep. Um and so, we
+have our CI agent with our continuous
+integration and then that agent is
+supposed to remediate all of the issues
+that it has as well as doing um a
+security scan as well as testing. Then
+we have our CD agent, which is our
+continuous delivery agent, and it
+deploys the app, it learns the
+deployment patterns, and it does
+monitoring with auto rollback. So, if
+there's any failures with the
+deployment, it's going to roll back to
+make sure that our app is in a good
+So, all of these agents talks to each
+other with agent to agent, A to A, and
+this almost makes it where it's like a
+team member collaborating. Rather than
+one agent telling some general agent
+some message to tell the other agent, it
+can actually talk to each other like
+normal human beings.
+We can also communicate with Slack as
+you see. We were able to get
+notifications. We're able to kick it off
+from the pipeline from Slack and we're
+using the Slack webhook that's
+And this, unlike static pipelines, this
+these agents are very intelligent and it
+can actually make decisions for us so we
+don't always have to tell it what to do.
+Cool. You want to show Of course. Yeah.
+These agents
+with the two agents that we built so
+far, right? And there could be more
+agents in your environment. And if you
+want to put them to work together, you
+need to know where they are. Yeah. And
+this is where why where we have the
+agent registry. And this is where we
+have looks like we our agent doesn't
+have a lot of friends.
+I mean, we'll give them some social work
+maybe sometimes skills later, but these
+agents we have three of them. CI agents,
+CD agents, and our cycle agents as well.
+So, if you look into it, so if if you
+look into registry, so these are the
+friends and that tells you how to locate
+your agents. Where do they live? How do
+you call them? And it also provides a
+personality like knowing what this agent
+does, right? So, there's description of
+what this agent actually thinks and how
+it process things. Not only that, it
+also provides you with all the tools it
+has access to. So, now if I want to use
+this agent, I know what other things I
+can do with this agent. So, it gives you
+a much more clarity onto things that you
+use and to do that.
+Perfect. Um
+right here. So,
+awesome. So, if we look at our CI agent,
+right? So, our CI agent is right here.
+And what it does, it actually takes in
+notifications and it takes in
+um things to do from my other agents.
+So, it communicates with A2A, right? And
+it also take messages coming from Slack.
+And it also
+uses a lot of things together, right?
+So, it takes in decisions, it uses a
+skill to think about things, and then
+what it does, it use this information
+that's given from the Slack messages,
+from the other agents, it will determine
+if I want to run what kind of test. So,
+it will if you have a lot of front-end
+code, it will do run front-end test. If
+it does, you know, quick change some
+things, it will go through security,
+right? So, that's what it do. So, it's
+smart. It doesn't do a traditional
+pipeline, which is kind of does one and
+two and three. It's not sequential,
+because it thinks for itself. And then
+it's going to use a lot of the Google
+very well battle-tested services, like
+Workload Build, that helps you to build
+images, and also Artifact Artifact
+Registry to help you hold the images as
+well, right? And after it's done, it's
+going to send the um the notification or
+message to the CD agents, and the CD
+agent is our release manager. Uh when I
+was kind of coding this, when I was
+having fun with like running all these
+three agents, kind of they're running
+together, actually there's once where I
+made a small mistake, and the message
+well, I accidentally deleted one of the
+revision, and the CI agent was telling
+the CD agents like,
+um you know, can you please deploy this
+image that doesn't even exist? You know
+what happened? The CD agent actually
+went back and tell CI agents like, "Hey
+dude, what do you mean? I haven't seen
+this message." And they um back and
+forth, back and forth, until they figure
+out what's wrong, and the CI agent we
+ran the whole thing, and the CD agent
+eventually does the whole release. So,
+it's very smart. I was very surprised,
+and you can see them kind of doing the
+dance back and forth, cuz I was testing
+the image. It was super fun. Wow. So,
+the CD agents gets it um it um sees the
+changes, looking into all the changes in
+your code, and get decide on the risk
+score. The risk score is on how much
+What's the risk of, you know, deploying
+that into the environment and things can
+go wrong. So, it will use a score to
+actually determine the canary release.
+And it will monitor this for a duration,
+and since this is a demo, we'll look for
+like 30 seconds.
+Um and then we'll deploy everything into
+production. So, that will be That's
+That's the whole process of um
+of our C of of our CD pipelines. Wow.
+pretty cool system. It's learning. It's
+scary to me, but uh your system learns.
+That's great. So, we showed that live,
+right? Throughout this session we've
+seen examples of Agentic tools doing
+different steps we see here. We plug
+this into antigravity thanks to MCPs,
+thanks to skills pulling in live log
+information, doing database queries.
+That's amazing. Now, you can build your
+own Agentic workflows. We showed you
+with that Agentic CLI, that Agent CLI.
+You can build your own things here, and
+I don't know. We won't want to always
+spend all of our time on day two. So, if
+we can use these tools to use the
+platform that backs our agents, it just
+makes life a lot easier. So,
+all the problem-solving that we love as
+engineers hasn't gone away. It's just
+shifted around. We're doing design work.
+We're planning work. We're interacting
+with the systems. I think that's pretty
+So, enough talking. Level two is
+shipped, right? You shipped it? It's
+there. All right. So, if you scan this
+we can see who can play now in the
+apparently terrifying volcano for these
+distressed dinosaurs,
+and see how this works. You have to pass
+level one in order to get get to level
+two, but I got past level one. Yes. You
+have to pass level one. Getting through
+level one is hard. Shortcuts? Yeah. Left
+right left right? No. B A start? No.
+We should have coded that in.
+Awesome. So,
+you're going to be playing that in your
+free time. But look, if you want to
+incorporate these three agentic
+workflows in your own applications, you
+can scan these QR codes and actually
+follow the tutorials, which has all the
+code that we demo today. How awesome is
+that? They took everything they built
+and put this into a lab that you two all
+of you can run yourselves. So, I'll keep
+that up for just a second. Cuz again,
+this shouldn't just be something we all
+watched here. It should be something
+let's go try it. This whole event is
+about getting hands-on, building the
+confidence to go do some of this
+ourselves. So, take advantage of those
+code labs and see what you can do. So,
+let's go build. Let's go have some fun
+and uh thank you for joining us today
+and staying cool.
+&gt;&gt; [music]
